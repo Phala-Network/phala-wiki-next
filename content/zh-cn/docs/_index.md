@@ -4,38 +4,27 @@ weight: 1
 draft: false
 ---
 
-## Lack of Confidentiality in Blockchains
+Phala Network是一个Web3.0共享云平台，旨在解决计算云中的信任问题。基于TEE可信硬件的分布式计算，Phala云计算可在不牺牲数据机密性的情况下实现大规模云计算处理，其计算系统是可信的。Phala通过将共识机制与计算分离，确保处理能力具有高度可延展性。不同于传统云服务平台，Phala的计算节点哪怕不在数据中心也可以提供安全、机密性好、边缘化的云服务，这使得Phala为强大安全和可扩展的无信任计算云创建了共享经济模型的基础设施。
 
-A Blockchain is a kind of distributed ledger which indelibly records transactions in an ever-growing list of blocks. The  basis of our trust in the blockchain is the fact that the execution of every transaction can be verified by any user of the blockchain. Existing blockchains, such as BTC and ETH, live up to this promise in an intuitive way: they make everything public, including the transactions and the internal states of smart contracts. This brings us to the problem: confidential data cannot be processed by these blockchains.
+## 常用网站
 
-Phala Network tackles this challenging problem. It seeks to provide strong guarantees of *confidentiality* without sacrificing *cross-contract interoperability*, which means the confidential contracts in Phala Network can interact with other confidential contracts freely. Further, as a Polkadot parachain, Phala Network enables *cross-chain interoperability* of smart contracts to confidentially operate assets on another blockchain.
+官网: https://phala.network/
 
-On May 14th, 2021, Khala Network, Phala's canary network, has won the slot auction with 132,281 raised KSM and successfully registered the 4th Kusama [parachain](https://parachains.info/details/khala) with Para ID 2004 🎉🎉🎉.
-
-<div style="text-align: center">
-    <img src="/images/docs/parachain-auction.png">
-</div>
-
-
-## Phala Web Directory
-
-- Official Website: <https://phala.network/>
 - Twitter: <https://twitter.com/PhalaNetwork>
-- Telegram: <https://t.me/phalanetwork>
-- Discord: <https://discord.gg/DWdHXFm8>
-- Forum: <https://forum.phala.network/>
+- Telegram: <https://t.me/phalaCN>
+- Discord: <https://discord.gg/YUxXV5xrj7>
+- 论坛: <https://forum.phala.network/>
 - Medium: <https://medium.com/phala-network>
 - Github: <https://github.com/Phala-Network>
-
 
 ## Please choose a topic
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 
-{{< button "spec" "Tech Spec" >}}
+{{< button "spec" "技术规范" >}}
 
-{{< button "khala-mining" "Mine on Khala" >}}
+{{< button "khala-mining" "Khala 挖矿" >}}
 
-{{< button "gatekeeper" "Run a Gatekeeper" >}}
+{{< button "gatekeeper" "运行 Gatekeeper" >}}
 
-{{< button "pdiem" "Learn pDiem" >}}
+{{< button "pdiem" "学习 pDiem" >}}
