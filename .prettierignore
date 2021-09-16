@@ -1,0 +1,12 @@
+node_modules
+.next
+yarn.lock
+package-lock.json
+public
+**/node_modules/*
+**/out/*
+**/.next/*
+env.config.js
+env.development.config.js
+next.config.js
+pnpm-lock.yaml
