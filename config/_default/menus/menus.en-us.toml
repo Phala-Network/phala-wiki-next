@@ -19,7 +19,7 @@
 [[main]]
   identifier = "docs"
   name = "Docs"
-  url = "/docs/overview/index"
+  url = "/docs/overview/"
   weight = 1
 
 [[social]]

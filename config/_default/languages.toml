@@ -3,18 +3,18 @@
   contentDir = "content/en-us"
   weight = 10
   [en-us.params]
-    languageISO = "en-us"
+    languageISO = "English"
 
 [zh-cn]
   languageName = "中文"
   contentDir = "content/zh-cn"
   weight = 15
   [zh-cn.params]
-    languageISO = "zh-cn"
+    languageISO = "中文"
 
 [fr-fr]
   languageName = "français"
   contentDir = "content/fr-fr"
   weight = 20
   [fr-fr.params]
-    languageISO = "fr-fr"
+    languageISO = "français"

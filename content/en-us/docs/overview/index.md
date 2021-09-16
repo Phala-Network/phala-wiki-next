@@ -2,6 +2,9 @@
 title: Phala Network
 weight: 1
 draft: false
+menu:
+  docs:
+    path: "overview"
 ---
 
 ## Lack of Confidentiality in Blockchains
