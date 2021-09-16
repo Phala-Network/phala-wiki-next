@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://phala-wiki-preview.netlify.app"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
