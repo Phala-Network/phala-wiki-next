@@ -2,6 +2,9 @@
 title: "Archived: Contract Development"
 weight: 100
 draft: false
+menu:
+  docs:
+    parent: "docs"
 ---
 
 ## What is a Confidential Contract
@@ -49,11 +52,12 @@ In fact, besides the contract states, the inputs and outputs of the contract are
 > **Side notes: Private variable are not private on Ethereum.**
 >
 > Though you can define variables with "private" attribute, the data is still public on the blockchain. According to [the solidity doc](https://solidity.readthedocs.io/en/v0.7.3/contracts.html):
+>
 > > Everything that is inside a contract is visible to all observers external to the blockchain. Making something private only prevents other contracts from reading or modifying the information, but it will still be visible to the whole world outside of the blockchain.
 
 ## The Root of Trust: TEE
 
-Phala provides confidentiality guarantee based on trusted hardwares, or *Trusted Execution Environment*, which means your code and data are safe even if your operating system is compromised. A contract executing in the TEE is just like the priest in the confessional room: You know who he is, you can tell him what you want and he will reply, but only God knows what's going on there. The most important thing is: All your secrets are safe.
+Phala provides confidentiality guarantee based on trusted hardwares, or _Trusted Execution Environment_, which means your code and data are safe even if your operating system is compromised. A contract executing in the TEE is just like the priest in the confessional room: You know who he is, you can tell him what you want and he will reply, but only God knows what's going on there. The most important thing is: All your secrets are safe.
 
 Phala adopts one of the most popular implementations of TEE, i.e., Intel SGX. Intel SGX introduces a small set of instructions to encrypt the data in memory, and attackers cannot decrypt it without cracking the CPU and extracting the secret key in it. Unlike existing blockchains in which all contract states are public on chain, the states of confidential contracts are encrypted and sealed in SGX.
 

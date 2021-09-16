@@ -1,9 +1,9 @@
 name = "Phala Wiki"
 license = "MIT"
-licenselink = "https://github.com/h-enk/doks/blob/master/LICENSE"
+licenselink = "https://github.com/Phala-Network/phala-wiki-next/blob/master/LICENSE"
 description = "Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
 
-homepage = "https://github.com/h-enk/doks"
+homepage = "https://github.com/Phala-Network/phala-wiki-next"
 demosite = "https://doks.netlify.app"
 
 tags = ["landing page", "documentation", "blog", "minimal", "modern", "customizable", "search", "dark mode", "bootstrap"]

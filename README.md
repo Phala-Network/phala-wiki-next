@@ -17,13 +17,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/h-enk/doks/blob/master/LICENSE">
+  <a href="https://github.com/Phala-Network/phala-wiki-next/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/h-enk/doks?style=flat-square" alt="GitHub">
   </a>
-  <a href="https://github.com/h-enk/doks/releases">
+  <a href="https://github.com/Phala-Network/phala-wiki-next/releases">
     <img src="https://img.shields.io/github/v/release/h-enk/doks?include_prereleases&style=flat-square"alt="GitHub release (latest SemVer including pre-releases)">
   </a>
-  <a href="https://github.com/h-enk/doks/actions?query=workflow%3A%22Hyas+CI%22">
+  <a href="https://github.com/Phala-Network/phala-wiki-next/actions?query=workflow%3A%22Hyas+CI%22">
     <img src="https://img.shields.io/github/workflow/status/h-enk/doks/Hyas%20CI/master?style=flat-square" alt="GitHub Workflow Status (branch)">
   </a>
   <a href="https://app.netlify.com/sites/doks/deploys">
@@ -41,23 +41,23 @@
 
 Nine reasons why you should use Doks:
 
-1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
+1. **Security aware**. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
-2. __Fast by default__. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637) by default. Doks removes unused css, prefetches links, and lazy loads images.
+2. **Fast by default**. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637) by default. Doks removes unused css, prefetches links, and lazy loads images.
 
-3. __SEO-ready__. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
+3. **SEO-ready**. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
 
-4. __Development tools__. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
+4. **Development tools**. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
 
-5. __Bootstrap framework__. Build robust, flexible, and intuitive websites with Bootstrap 5. Easily customize your Doks site with the source Sass files.
+5. **Bootstrap framework**. Build robust, flexible, and intuitive websites with Bootstrap 5. Easily customize your Doks site with the source Sass files.
 
-6. __Netlify-ready__. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
+6. **Netlify-ready**. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
 
-7. __Full text search__. Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.
+7. **Full text search**. Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.
 
-8. __Page layouts__. Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.
+8. **Page layouts**. Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.
 
-9. __Dark mode__. Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.
+9. **Dark mode**. Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.
 
 ## Requirements
 
@@ -73,21 +73,21 @@ Start a new Doks project in three steps:
 
 Doks is available as a child theme, and a starter theme:
 
-- Use the Doks child theme, if you do __not__ plan to customize a lot, and/or need future Doks updates.
-- Use the Doks starter theme, if you plan to customize a lot, and/or do __not__ need future Doks updates.
+- Use the Doks child theme, if you do **not** plan to customize a lot, and/or need future Doks updates.
+- Use the Doks starter theme, if you plan to customize a lot, and/or do **not** need future Doks updates.
 
 Not quite sure? Use the Doks child theme.
 
 #### Doks child theme
 
 ```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site && cd my-doks-site
+git clone https://github.com/Phala-Network/phala-wiki-next-child-theme.git my-doks-site && cd my-doks-site
 ```
 
 #### Doks starter theme
 
 ```bash
-git clone https://github.com/h-enk/doks.git my-doks-site && cd my-doks-site
+git clone https://github.com/Phala-Network/phala-wiki-next.git my-doks-site && cd my-doks-site
 ```
 
 ### 2. Install dependencies
@@ -116,4 +116,4 @@ Doks comes with [commands](https://getdoks.org/docs/prologue/commands/) for comm
 
 - [Netlify Community](https://community.netlify.com/)
 - [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+- [Doks Discussions](https://github.com/Phala-Network/phala-wiki-next/discussions)
