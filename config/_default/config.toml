@@ -10,7 +10,7 @@ paginate = 7
 rssLimit = 10
 
 # Multilingual
-defaultContentLanguage = "en"
+defaultContentLanguage = "en-us"
 # disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = true
 

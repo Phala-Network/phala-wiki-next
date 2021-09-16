@@ -1,32 +1,20 @@
-[en]
+[en-us]
   languageName = "English"
-  contentDir = "content/en"
+  contentDir = "content/en-us"
   weight = 10
-  [en.params]
-    languageISO = "EN"
+  [en-us.params]
+    languageISO = "en-us"
 
 [zh-cn]
-  languageName = "Chinese"
+  languageName = "中文"
   contentDir = "content/zh-cn"
-  weight = 10
+  weight = 15
   [zh-cn.params]
     languageISO = "zh-cn"
 
-[de]
-  languageName = "German"
-  contentDir = "content/de"
-  weight = 15
-  [de.params]
-    languageISO = "DE"
-
-[nl]
-  languageName = "Nederlands"
-  contentDir = "content/nl"
+[fr-fr]
+  languageName = "français"
+  contentDir = "content/fr-fr"
   weight = 20
-  [nl.params]
-    languageISO = "NL"
-    titleAddition = "Modern documentatie-thema"
-    description = "Doks is een Hugo-thema waarmee je moderne documentatie-websites kunt bouwen die veilig, snel en klaar voor SEO zijn — standaard."
-    titleHome = "Doks thema"
-    footer = "Mogelijk gemaakt door <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, en <a href=\"https://getdoks.org/\">Doks</a>"
-    alertText = "Introductie van het Doks-kinderthema, verschillende DX + UX-updates en meer! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Bekijk Doks v0.2</a>"
+  [fr-fr.params]
+    languageISO = "fr-fr"
