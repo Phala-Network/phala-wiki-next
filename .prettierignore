@@ -4,6 +4,7 @@ yarn.lock
 package-lock.json
 public
 **/*.html
+**/*.scss
 **/node_modules/*
 **/out/*
 **/.next/*
