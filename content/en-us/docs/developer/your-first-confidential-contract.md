@@ -1,5 +1,8 @@
 ---
 title: "1.2 Hello World: your first confidential contract"
+menu:
+  docs:
+    parent: "developer"
 ---
 
 > Basic understanding of Rust language programming and smart contract development knowledge is necessary to follow this tutorial.

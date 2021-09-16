@@ -1,5 +1,8 @@
 ---
 title: "1.3 Troubleshooting"
+menu:
+  docs:
+    parent: "developer"
 ---
 
 ## `phala-blockchain`

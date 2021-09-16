@@ -1,12 +1,15 @@
 ---
 title: "1.1 Run a Local Development Network"
+menu:
+  docs:
+    parent: "developer"
 ---
 
 > Basic understanding of Linux shell and compiling is necessary to follow this tutorial.
 
 ## Overview
 
-In this tutorial,  we're going to set up a "Hello World" development environment. We are going to deploy a full stack of the core blockchain and connect the Web UI to the blockchain. By the end of the tutorial, you will be able to:
+In this tutorial, we're going to set up a "Hello World" development environment. We are going to deploy a full stack of the core blockchain and connect the Web UI to the blockchain. By the end of the tutorial, you will be able to:
 
 - Send confidential transactions
 - Get a ready-to-hack version of Phala Network for building your own confidential Dapps
@@ -23,47 +26,47 @@ The Web UI is at [Phala-Network/apps-ng](https://github.com/Phala-Network/apps-n
 
 The development environment of Phala Network requires Linux, because it relies on [Linux Intel SGX SDK](https://01.org/intel-software-guard-extensions/downloads). Virtual machines should generally work. Phala Network doesn't work on Windows or macOS natively (sorry, Mac lovers), however we haven't tested WLS yet. Please let us know if you are the first to run it on WLS successfully!
 
-In this tutorial we assume the operating system is *Ubuntu 18.04*. Though not tested yet, it should work with Ubuntu 20.04 out-of-box. Other Linux distributions should also work, but the instructions or command may vary.
+In this tutorial we assume the operating system is _Ubuntu 18.04_. Though not tested yet, it should work with Ubuntu 20.04 out-of-box. Other Linux distributions should also work, but the instructions or command may vary.
 
 It's required to have at least 4 cores and 8GB ram to build the project including the core blockchain and the Web UI. Less than 4GB ram may fail to build the Web UI.
 
 Follow the commands below to prepare the environment. Some can be skipped if already installed.
 
-* Install the system level dependencies
+- Install the system level dependencies
 
-    ```bash
-    sudo apt update
-    sudo apt install -y build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev git cmake perl pkg-config curl llvm-10 clang-10 libclang-10-dev
-    ```
+  ```bash
+  sudo apt update
+  sudo apt install -y build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev git cmake perl pkg-config curl llvm-10 clang-10 libclang-10-dev
+  ```
 
-    > Notes on LLVM: We require at least LLVM-9, but higher versions are also supported. Older version like LLVM 6.0 breaks the core blockchain compilation.
+  > Notes on LLVM: We require at least LLVM-9, but higher versions are also supported. Older version like LLVM 6.0 breaks the core blockchain compilation.
 
-* Install Rust. Please choose the default toolchain
+- Install Rust. Please choose the default toolchain
 
-    ```bash
-    curl https://sh.rustup.rs -sSf | sh
-    source ~/.cargo/env
-    ```
+  ```bash
+  curl https://sh.rustup.rs -sSf | sh
+  source ~/.cargo/env
+  ```
 
-* Install Intel SGX SDK
+- Install Intel SGX SDK
 
-    ```bash
-    wget https://download.01.org/intel-sgx/sgx-linux/2.12/distro/ubuntu18.04-server/sgx_linux_x64_sdk_2.12.100.3.bin
-    chmod +x ./sgx_linux_x64_sdk_2.12.100.3.bin
-    echo -e 'no\n/opt/intel' | sudo ./sgx_linux_x64_sdk_2.12.100.3.bin
-    source /opt/intel/sgxsdk/environment
-    ```
+  ```bash
+  wget https://download.01.org/intel-sgx/sgx-linux/2.12/distro/ubuntu18.04-server/sgx_linux_x64_sdk_2.12.100.3.bin
+  chmod +x ./sgx_linux_x64_sdk_2.12.100.3.bin
+  echo -e 'no\n/opt/intel' | sudo ./sgx_linux_x64_sdk_2.12.100.3.bin
+  source /opt/intel/sgxsdk/environment
+  ```
 
-    > You can add `source /opt/sgxsdk/environment` to your `~/.bashrc` (or `~/.zshrc` depends on which shell you're using).
+  > You can add `source /opt/sgxsdk/environment` to your `~/.bashrc` (or `~/.zshrc` depends on which shell you're using).
 
-* Install Node.js (>= v12) & yarn 2
+- Install Node.js (>= v12) & yarn 2
 
-    ```bash
-    curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    sudo npm install -g yarn
-    yarn set version berry
-    ```
+  ```bash
+  curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+  sudo npm install -g yarn
+  yarn set version berry
+  ```
 
 You can test the installation by running the following commands. The output should match the sample outputs, or with a slightly higher version.
 
@@ -128,6 +131,7 @@ SGX_MODE=SW make
 > **Notes on Build the core blockchain**
 >
 > You would usually use the latest version of Substrate and the Rust compiler to build the core blockchain. The build would therefore be simplified to:
+>
 > ```bash
 > # Build the core blockchain
 > cd phala-blockchain/
@@ -167,10 +171,10 @@ Once they are launched successfully, they should output logs as shown in the GIF
 The three core blockchain components are connected via TCP (WebSocket and HTTP). Please ensure your system have the TCP ports not occupied with other programs. By default they use the following ports:
 
 - `phala-node`
-    - 9944: Substrate WebSocket RPC port
-    - 30333: Substrate P2P network port
+  - 9944: Substrate WebSocket RPC port
+  - 30333: Substrate P2P network port
 - `pruntime`
-    - 8000: HTTP Restful RPC port
+  - 8000: HTTP Restful RPC port
 
 `phost` doesn't listen to any ports but connect to `phala-node`'s WebSocket port and `pruntime`'s HTTP RPC port.
 
@@ -210,10 +214,13 @@ The Web UI connects to both `phala-node` and `pruntime` by their default RPC end
 > **Notes for Remote Access**
 >
 > In a case where you run your blockchain and WEB UI on your REMOTE_SERVER and try to access them elsewhere, you can forward the ports with `ssh` command. For example,
+>
 > ```bash
 > ssh -N -f USER@REMOTE_SERVER -L 3000:localhost:3000 -L 9944:localhost:9944 -L 8000:localhost:8000
 > ```
+>
 > This forwards all the necessary ports:
+>
 > - 3000: HTTP port of Web UI
 > - 9944: Substrate WebSocket RPC port of `phala-node`
 > - 8000: HTTP Restful RPC port of `pruntime`
@@ -262,5 +269,3 @@ Congratulations! Finally, you have followed the tutorial to:
 Now you are familiar with building and running a development network. Hold tight! In the next chapter, we are going to build the first confidential contract together!
 
 Join our [Discord server](https://discord.gg/zzhfUjU) and feel free to ask for help!
-
-
