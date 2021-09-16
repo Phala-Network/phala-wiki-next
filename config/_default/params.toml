@@ -3,27 +3,27 @@
 ## Homepage
 title = "Phala Wiki"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "Phala Wiki Website"
+description = "Phala Wiki Website"
 
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+titleHome = "Phala Wiki"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@PhalaNetwork"
+twitterCreator = "@PhalaNetwork"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
+schemaName = "Phala"
+schemaAuthor = "Phala"
+schemaAuthorTwitter = "https://twitter.com/PhalaNetwork"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaAuthorGitHub = "https://github.com/Phala-Network"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -31,9 +31,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/PhalaNetwork"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/Phala-Network"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -53,7 +53,7 @@ lqipWidth = "20x"
 footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) 2021 Phala"
 
 # Alert
 alert = false
@@ -62,8 +62,8 @@ alertDismissable = true
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
 # Edit Page
-docsRepo = "https://github.com/h-enk/doks"
-editPage = false
+docsRepo = "https://github.com/Phala-Network/phala-wiki-next"
+editPage = true
 
 [options]
   lazySizes = true
