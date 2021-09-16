@@ -2,6 +2,9 @@
 title: "Apply for Khala Gatekeeper"
 weight: 7
 draft: true
+menu:
+  docs:
+    parent: "gatekeeper"
 ---
 
 ## Coming Soon

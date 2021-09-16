@@ -2,9 +2,6 @@
 title: "Archived: Contract Development"
 weight: 100
 draft: false
-menu:
-  docs:
-    parent: "docs"
 ---
 
 ## What is a Confidential Contract

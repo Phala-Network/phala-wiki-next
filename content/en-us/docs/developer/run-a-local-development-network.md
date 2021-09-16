@@ -1,6 +1,5 @@
 ---
 title: "1.1 Run a Local Development Network"
-toc: true
 menu:
   docs:
     parent: "developer"

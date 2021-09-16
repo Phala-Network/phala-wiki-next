@@ -2,23 +2,27 @@
 title: "Run a Gatekeeper"
 date: 2020-07-10T01:16:05+08:00
 draft: true
+menu:
+  docs:
+    parent: "gatekeeper"
 ---
 
 ## Setup Environment
 
--   **Hardware**
-    -   **CPU**: 6th generation or newer Intel Core/Pentium/Celeron/Atom series.
-    -  **Memory**: 2GB - 8GB. 2GB is indeed the minimum memory you should operate your Gatekeeper with. For better performance, you can bump it up to 4GB or 8GB, but memory more than that is unnecessary. In order to compile the binary yourself, you will need around 8GB memory.
-    -   **Mainboard**: SGX-supported mainboard, and newer mainboards can support more SGX features. **We strongly recommend you to consult our Miner Community team about the SGX module before purchasing a board to mine PHA.**
-    - **Storage** - A NVMe solid state drive, and should be reasonably sized to deal with blockchain growth. A SSD of 80GB - 160GB will be enough for the first six months of Phala Network, but this requirement needs to be re-evaluated every six months.
+- **Hardware**
+
+  - **CPU**: 6th generation or newer Intel Core/Pentium/Celeron/Atom series.
+  - **Memory**: 2GB - 8GB. 2GB is indeed the minimum memory you should operate your Gatekeeper with. For better performance, you can bump it up to 4GB or 8GB, but memory more than that is unnecessary. In order to compile the binary yourself, you will need around 8GB memory.
+  - **Mainboard**: SGX-supported mainboard, and newer mainboards can support more SGX features. **We strongly recommend you to consult our Miner Community team about the SGX module before purchasing a board to mine PHA.**
+  - **Storage** - A NVMe solid state drive, and should be reasonably sized to deal with blockchain growth. A SSD of 80GB - 160GB will be enough for the first six months of Phala Network, but this requirement needs to be re-evaluated every six months.
     For more detail, you may refer to the [miner node requirement](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/).
 
--   **Software**
+- **Software**
 
-    -   Ubuntu 18.04/20.04
-    -   Install [Docker-CE](https://wiki.phala.network/en-us/docs/poc3/1-2-software-configuration/#install-docker-ce)
-    -   Install [SGX drivers](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/#sgx-driver-installation)
-	  -   Bandwidth：the stabler, the better
+  - Ubuntu 18.04/20.04
+  - Install [Docker-CE](https://wiki.phala.network/en-us/docs/poc3/1-2-software-configuration/#install-docker-ce)
+  - Install [SGX drivers](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/#sgx-driver-installation)
+  - Bandwidth：the stabler, the better
 
 The specs posted above are by no means the minimum specs that you could use when running a
 **Gatekeeper**.
@@ -30,19 +34,19 @@ The specs posted above are by no means the minimum specs that you could use when
 1.  Download the [GK setup package](https://drive.google.com/file/d/1meYBcEwZViezeY0ksC34K0qAe6AiFlsv/view?usp=sharing).
 2.  Open your Terminal and run the commands below:
 
-	```bash
-	sudo cp ./poc3_validator.service /etc/systemd/system
-	sudo systemctl enable poc3_validator.service
-	sudo systemctl start poc3_validator.service
-	```
+    ```bash
+    sudo cp ./poc3_validator.service /etc/systemd/system
+    sudo systemctl enable poc3_validator.service
+    sudo systemctl start poc3_validator.service
+    ```
 
 3.  Type in `vim validator.sh` , press `a`, and replace `YOUR NAME` with a cool node name you like. 🤟
 
-4.  Press `ESC`,  and press `Shift` + `;` , type in `wq` , and press `Enter` to save and return.
+4.  Press `ESC`, and press `Shift` + `;` , type in `wq` , and press `Enter` to save and return.
 
 5.  Go to [https://telemetry.polkadot.io/#list/Phala PoC-3](https://telemetry.polkadot.io/#list/Phala%20PoC-3), find your node name, and wait for its block synchronization until it's the same with others. The synchronization may take 1-2 hours and the exact duration depends on your bandwidth.
 
-### *To Compile Your Gatekeeper Node
+### \*To Compile Your Gatekeeper Node
 
 Download the latest Phala Network binary from the Github [release page](https://github.com/Phala-Network/phala-blockchain/releases).
 
@@ -126,12 +130,12 @@ verified. You can then compare that to the current highest block via
 
 ## Bond PHA
 
->The steps below have to be processed on the device you have set up.
+> The steps below have to be processed on the device you have set up.
 
 1.  [Create 2 accounts](https://www.notion.so/Create-Accounts-710e6dccac6f45d2953f5ea84206a58e) and be ensured that you have saved **the mnemonics of your controller** account correctly.
 2.  [Claim test tokens](https://www.notion.so/Claim-Test-Tokens-9f53f6b805634f84bd44f202ef53b11c) and be ensured that there are over `100 tPHA` in the stash account and the controller account.
 3.  Go to `Network` → `Staking` → `Account Actions` → `+Stash`
-4. Type in an amount of tPHA that you would like to bond.
+4.  Type in an amount of tPHA that you would like to bond.
 5.  Click `Bond` and Sign.
 
 > - **Stash account** - Select your Stash account. In this example, we will bond 100 PHA - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
@@ -157,6 +161,7 @@ After a few seconds, you should see an "ExtrinsicSuccess" message. You should no
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what associates your Gatekeeper node with your Controller account in Phala Network.
 
 #### Option 1: PolkadotJS-APPS
+
 1. Click the Phala logo → `DEVELOPMENT`, and type in `ws://127.0.0.1:9944` , and click `Switch`.
 2. Go to `Developers` → `RPC Calls`, choose `author` → `rotateKeys()`, and click `Submit`. The number string on the page is exactly your session key. Copy your session key.
 3. Go back to `Network` → `Staking` → `Account Actions`, click `Set Sessionkey` right next to your bonded accounts. Paste the session key and save.
@@ -177,6 +182,7 @@ public keys. Save this result for a later step.
 You can restart your node at this point, omitting the `--unsafe-rpc-expose` flag as it is no longer needed.
 
 ### Set Your Sessions Keys
+
 1. Go to `Network` → `Staking` → `Account Actions`, click `Set Sessionkey` right next to your bonded accounts. Paste the number string and save.
 2. Now we go to `Developers` → `Extrinsics`, choose your stash account at the first line, choose `phalaModule` → `setStash(controller)` at the second line, choose your controller account at the third line. Click `Submit Transaction`.
 
@@ -186,23 +192,24 @@ You can restart your node at this point, omitting the `--unsafe-rpc-expose` flag
 <br>
 
 ## pRuntime Setup
+
 1.  Type in `sudo docker pull phalanetwork/phala-poc3-pruntime` to pull Phala pRuntime mirror files. It may take 10-30 mins according to the bandwidth of your network.
 2.  Choose and type the commands below based on your driver.
     **DCAP driver:**
-    ```bash
-    sudo docker run -d -ti --rm --name phala-pruntime -p 8000:8000 -v $HOME/phala-pruntime-data:/root/data --device /dev/sgx/enclave --device /dev/sgx/provision phalanetwork/phala-poc3-pruntime
-    ```
+    `bash sudo docker run -d -ti --rm --name phala-pruntime -p 8000:8000 -v $HOME/phala-pruntime-data:/root/data --device /dev/sgx/enclave --device /dev/sgx/provision phalanetwork/phala-poc3-pruntime `
 
-    **SGX driver:**
-    ```bash
-    sudo docker run -d -ti --rm --name phala-pruntime -p 8000:8000 -v $HOME/phala-pruntime-data:/root/data --device /dev/isgx phalanetwork/phala-poc3-pruntime
-    ```
-> How to check the driver type of your computer?
-> - Run `ls /dev/isgx` and it returns feedback: you are using **SGX driver**;
-> - Run `ls /dev/sgx` and it returns feedback: you are using **DCAP driver**
->
->  If both of the commands work, use the commands of the DCAP driver in the following steps.
->  If none of them work, please refer to [the SGX driver installation](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/#sgx-driver-installation) in Phala Guide.
+        **SGX driver:**
+        ```bash
+        sudo docker run -d -ti --rm --name phala-pruntime -p 8000:8000 -v $HOME/phala-pruntime-data:/root/data --device /dev/isgx phalanetwork/phala-poc3-pruntime
+        ```
+
+    > How to check the driver type of your computer?
+    >
+    > - Run `ls /dev/isgx` and it returns feedback: you are using **SGX driver**;
+    > - Run `ls /dev/sgx` and it returns feedback: you are using **DCAP driver**
+    >
+    > If both of the commands work, use the commands of the DCAP driver in the following steps.
+    > If none of them work, please refer to [the SGX driver installation](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/#sgx-driver-installation) in Phala Guide.
 
 <br>
 
@@ -246,4 +253,5 @@ node is selected to join the Gatekeeper set, your node will become an active Gat
 <br>
 
 ### Miner Community
+
 [![](https://img.shields.io/discord/697726436211163147?label=Phala%20Discord)](https://discord.gg/FUtZzYH) [![](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/joinchat/PDXFHFI9RXcOKMaumhTTvw)

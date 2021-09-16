@@ -1,15 +1,3 @@
-[[docs]]
-  name = "Prologue"
-  weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
-
-[[docs]]
-  name = "Help"
-  weight = 60
-  identifier = "help"
-  url = "/docs/help/"
-
 [[main]]
   name = "Docs"
   url = "/docs/"

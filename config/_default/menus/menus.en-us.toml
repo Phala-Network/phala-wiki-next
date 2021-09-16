@@ -1,7 +1,21 @@
+
+[[docs]]
+  name = "Developer"
+  weight = 10
+  identifier = "developer"
+  url = "/docs/developer/"
+
+[[docs]]
+  name = "Governance"
+  weight = 60
+  identifier = "governance"
+  url = "/docs/governance/"
+
 [[main]]
+  identifier = "docs"
   name = "Docs"
   url = "/docs/"
-  weight = 10
+  weight = 1
 
 [[social]]
   name = "GitHub"
