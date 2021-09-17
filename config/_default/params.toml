@@ -50,7 +50,7 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "COPYRIGHT © 2021 PHALA.LTD ALL RIGHTS RESERVED."
 
 # Feed
 copyRight = "Copyright (c) 2021 Phala"

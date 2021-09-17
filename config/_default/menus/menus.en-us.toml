@@ -19,7 +19,7 @@
 [[main]]
   identifier = "docs"
   name = "Docs"
-  url = "/docs/overview/"
+  url = "/docs/overview/phala-network/"
   weight = 1
 
 [[social]]
