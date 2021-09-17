@@ -70,7 +70,7 @@ Source:
     document: {
       id: 'id',
       store: [
-        "href", "title", "description"
+        "href", "title", "description", "content"
       ],
       index: ["title", "description", "content"]
     },
@@ -99,6 +99,12 @@ Source:
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
+  function stripHtml(html) {
+    let tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || "";
+  }
+
   {{ $list := (where .Site.Pages "Section" "docs") -}}
   {{ $len := (len $list) -}}
 
@@ -109,7 +115,7 @@ Source:
         href: "{{ .Permalink }}",
         title: {{ .Title | jsonify }},
         description: {{ .Params.description | jsonify }},
-        content: {{ .Content | jsonify }}
+        content: stripHtml({{ .Content | jsonify }})
       })
       {{ if ne (add $index 1) $len -}}
         .add(
@@ -146,7 +152,7 @@ Source:
 
         entry.querySelector('a').href = href;
         entry.querySelector('span:first-child').textContent = doc.title;
-        entry.querySelector('span:nth-child(2)').textContent = doc.description;
+        entry.querySelector('span:nth-child(2)').textContent = doc.content.slice(0, 100);
 
         suggestions.appendChild(entry);
         if(suggestions.childElementCount == maxResult) break;
