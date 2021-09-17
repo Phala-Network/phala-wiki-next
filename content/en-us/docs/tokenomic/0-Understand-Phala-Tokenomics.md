@@ -1,5 +1,5 @@
 ---
-title: "tokenomic2"
+title: "Understand Phala Tokenomics"
 weight: 2
 draft: false
 menu:
