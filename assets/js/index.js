@@ -73,6 +73,10 @@ Source:
         "href", "title", "description"
       ],
       index: ["title", "description", "content"]
+    },
+    encode: false,
+    tokenize: function(str){
+        return str.replace(/[\x00-\x7F]/g, "").split("");
     }
   });
 

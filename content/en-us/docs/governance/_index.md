@@ -1,7 +1,9 @@
 ---
 title: "Governance"
-weight: 3
-draft: false
+weight: 10
+menu:
+  docs:
+    parent: "governance"
 ---
 
 The early Khala network will use a governance mechanism consistent with Polkadot and Kusama, enabling it to evolve gracefully over time at the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of the stake can always command the network.
