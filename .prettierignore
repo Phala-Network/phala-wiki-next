@@ -13,3 +13,4 @@ env.development.config.js
 next.config.js
 pnpm-lock.yaml
 layouts/_default/list.algolia.json
+**/*.js
