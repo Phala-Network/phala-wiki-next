@@ -1,36 +1,35 @@
 [[docs]]
   name = "Overview"
-  weight = 1
   identifier = "overview"
   url = "/docs/overview/"
 
 [[docs]]
+  name = "Khala Mining"
+  identifier = "khala-mining"
+  url = "/docs/khala-mining/"
+
+[[docs]]
   name = "Tokenomic"
-  weight = 2
   identifier = "tokenomic"
   url = "/docs/tokenomic/"
 
 [[docs]]
   name = "Spec"
-  weight = 2
   identifier = "spec"
   url = "/docs/spec/"
 
 [[docs]]
   name = "Gatekeeper"
-  weight = 2
   identifier = "gatekeeper"
   url = "/docs/gatekeeper/"
 
 [[docs]]
   name = "Developer"
-  weight = 10
   identifier = "developer"
   url = "/docs/developer/"
 
 [[docs]]
   name = "Governance"
-  weight = 60
   identifier = "governance"
   url = "/docs/governance/"
 

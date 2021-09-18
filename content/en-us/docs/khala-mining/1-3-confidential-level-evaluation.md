@@ -1,5 +1,8 @@
 ---
 title: "1.3 Check the SGX Capability and Confidence Level"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
 ## Double Check the SGX Capability
@@ -107,13 +110,13 @@ If you can't run Phala pRuntime with both of them tagged as ✔, you may have to
 
 ## Confidence Level of a Miner
 
-| Level | isvEnclaveQuoteStatus | advisoryIDs |
-|---|---|---|
-| Tier 1 | OK | None |
-| Tier 2 | SW_HARDENING_NEEDED | None |
-| Tier 3 | CONFIGURATION_NEEDED, CONFIGURATION_AND_SW_HARDENING_NEEDED | Whitelisted* |
+| Level  | isvEnclaveQuoteStatus                                       | advisoryIDs               |
+| ------ | ----------------------------------------------------------- | ------------------------- |
+| Tier 1 | OK                                                          | None                      |
+| Tier 2 | SW_HARDENING_NEEDED                                         | None                      |
+| Tier 3 | CONFIGURATION_NEEDED, CONFIGURATION_AND_SW_HARDENING_NEEDED | Whitelisted\*             |
 | Tier 4 | CONFIGURATION_NEEDED, CONFIGURATION_AND_SW_HARDENING_NEEDED | Some beyond the whitelist |
-| Tier 5 | GROUP_OUT_OF_DATE | Any value |
+| Tier 5 | GROUP_OUT_OF_DATE                                           | Any value                 |
 
 The confidence level measures how secure the SGX Enclave execution environment is. It's determined by the Remote Attestation report from Intel. Among them, `isvEnclaveQuoteStatus` indicates if the platform is vulnerable to some known problems, and `advisoryIDs` indicates the actual affected problems.
 
@@ -124,7 +127,7 @@ Not all the `advisoryIDs` are problematic. Some advisories doesn't affect Phala'
 - INTEL-SA-00334
 - INTEL-SA-00381
 - INTEL-SA-00389
-{{< /tip >}}
+  {{< /tip >}}
 
 Tier 1, 2, 3 are considered with the best security level because they are either not affected by any known vulnerability, or the adversary is known trivial. It's good to run highest valuable apps on these workers, for instance:
 

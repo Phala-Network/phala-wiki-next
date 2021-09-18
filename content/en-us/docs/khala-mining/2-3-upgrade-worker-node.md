@@ -1,5 +1,8 @@
 ---
 title: "2.3 Upgrade Worker Node"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
 To upgrade your worker requires it to stop first.

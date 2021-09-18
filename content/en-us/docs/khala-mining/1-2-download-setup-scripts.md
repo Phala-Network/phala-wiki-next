@@ -1,5 +1,8 @@
 ---
 title: "1.2 Install Phala Tools"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
 ## Prerequisites
@@ -17,11 +20,13 @@ cd ~
 wget https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/main.zip
 unzip main.zip
 ```
+
 {{< tip "warning" >}}
 If you are running on testnet, please refer to: [Para2 testnet mining]({{< relref "docs/para-mining" >}})
 {{< /tip >}}
 
 ## Activate SGX Software with sgx_enable
+
 Execute the following commands in the terminal, the computer should reboot after execution.
 
 ```shell
@@ -40,6 +45,7 @@ cd ~/solo-mining-scripts-main
 chmod +x install.sh
 sudo ./install.sh en
 ```
+
 > This script will install the docker, sgx driver and pull all the Phala docker images.
 
 Congratulation! You have successfully installed needed Phala tools.

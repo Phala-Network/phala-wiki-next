@@ -1,5 +1,8 @@
 ---
 title: "4 Frequently Asked Questions"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
 > To be updated.

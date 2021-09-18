@@ -1,7 +1,9 @@
 ---
 title: "2 Solo mining configuration"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
-
 
 {{< tip >}}
 If you have successfully installed the SGX driver and finished the benchmarking, you can skip the following tutorials.

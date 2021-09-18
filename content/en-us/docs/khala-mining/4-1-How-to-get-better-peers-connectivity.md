@@ -1,5 +1,8 @@
 ---
 title: "4.1 How to get better peers connectivity"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
 ## The problem

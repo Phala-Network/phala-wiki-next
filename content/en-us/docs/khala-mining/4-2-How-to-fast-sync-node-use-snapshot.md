@@ -1,5 +1,8 @@
 ---
 title: "4.2 How to fast sync your node to you haven't fully synced yet"
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
 ## Problem
@@ -59,4 +62,4 @@ If you're solo miner, do
 sudo phala start
 ```
 
-to restart services, then you shall find out your node has fast forward to a very close to latest status, then waiting few minutes or hours,  then the node will catching up, and you can start mining now.
+to restart services, then you shall find out your node has fast forward to a very close to latest status, then waiting few minutes or hours, then the node will catching up, and you can start mining now.
