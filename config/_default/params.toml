@@ -1,16 +1,16 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Phala Wiki"
+title = "Phala Network Wiki"
 titleSeparator = "-"
-titleAddition = "Phala Wiki Website"
-description = "Phala Wiki Website"
+titleAddition = "Phala Network Wiki Website"
+description = "Phala Network Wiki Website"
 
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
-titleHome = "Phala Wiki"
+titleHome = "Phala Network Wiki"
 
 ## Twitter Cards
 twitterSite = "@PhalaNetwork"
