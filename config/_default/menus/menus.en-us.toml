@@ -1,62 +1,73 @@
 [[docs]]
-  name = "Overview"
-  identifier = "overview"
-  url = "/docs/overview/"
-
-[[docs]]
-  name = "Khala Mining"
-  identifier = "khala-mining"
-  url = "/docs/khala-mining/"
-
-[[docs]]
-  name = "Tokenomic"
-  identifier = "tokenomic"
-  url = "/docs/tokenomic/"
+  name = "Phala Network"
+  identifier = "phala-network"
+  url = "/docs/phala-network/"
+  weight = 10
 
 [[docs]]
   name = "Spec"
   identifier = "spec"
   url = "/docs/spec/"
+  weight = 20
 
 [[docs]]
-  name = "Gatekeeper"
-  identifier = "gatekeeper"
-  url = "/docs/gatekeeper/"
-
-[[docs]]
-  name = "Developer"
-  identifier = "developer"
-  url = "/docs/developer/"
+  name = "Tokenomic"
+  identifier = "tokenomic"
+  url = "/docs/tokenomic/"
+  weight = 30
 
 [[docs]]
   name = "Governance"
   identifier = "governance"
   url = "/docs/governance/"
+  weight = 40
 
 [[docs]]
   name = "Khala User"
   identifier = "khala-user"
   url = "/docs/khala-user/"
+  weight = 50
 
 [[docs]]
-  name = "Maintain"
-  identifier = "maintain"
-  url = "/docs/maintain/"
+  name = "Khala Mining"
+  identifier = "khala-mining"
+  url = "/docs/khala-mining/"
+  weight = 60
 
 [[docs]]
   name = "Para Mining"
   identifier = "para-mining"
   url = "/docs/para-mining/"
+  weight = 70
 
 [[docs]]
   name = "Prb"
   identifier = "prb"
   url = "/docs/prb/"
+  weight = 80
+
+[[docs]]
+  name = "Maintain"
+  identifier = "maintain"
+  url = "/docs/maintain/"
+  weight = 90
 
 [[docs]]
   name = "pDiem"
   identifier = "pDiem"
   url = "/docs/pDiem/"
+  weight = 100
+
+[[docs]]
+  name = "Developer"
+  identifier = "developer"
+  url = "/docs/developer/"
+  weight = 110
+
+# [[docs]]
+#   name = "Gatekeeper"
+#   identifier = "gatekeeper"
+#   url = "/docs/gatekeeper/"
 
 [[social]]
   name = "GitHub"
