@@ -17,6 +17,12 @@
   url = "/docs/spec/"
 
 [[docs]]
+  name = "Gatekeeper"
+  weight = 2
+  identifier = "gatekeeper"
+  url = "/docs/gatekeeper/"
+
+[[docs]]
   name = "Developer"
   weight = 10
   identifier = "developer"
