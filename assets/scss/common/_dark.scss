@@ -320,7 +320,7 @@ $navbar-dark-active-color:          $link-color-dark;
 }
 
 [data-dark-mode] body blockquote {
-  border-left: 3px solid $border-dark;
+  background-color: #333333;
 }
 
 [data-dark-mode] body .footer {
