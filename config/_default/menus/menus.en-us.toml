@@ -11,6 +11,12 @@
   url = "/docs/tokenomic/"
 
 [[docs]]
+  name = "Spec"
+  weight = 2
+  identifier = "spec"
+  url = "/docs/spec/"
+
+[[docs]]
   name = "Developer"
   weight = 10
   identifier = "developer"
