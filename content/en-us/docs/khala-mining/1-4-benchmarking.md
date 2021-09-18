@@ -1,5 +1,6 @@
 ---
 title: "1.4 Benchmarking"
+weight: 6014
 menu:
   docs:
     parent: "khala-mining"

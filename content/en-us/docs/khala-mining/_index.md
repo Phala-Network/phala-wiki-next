@@ -1,5 +1,5 @@
 ---
 title: "khala-mining"
-weight: 5
+weight: 6000
 draft: false
 ---

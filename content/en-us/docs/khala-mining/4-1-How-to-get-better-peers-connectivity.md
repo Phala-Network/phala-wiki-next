@@ -1,5 +1,6 @@
 ---
 title: "4.1 How to get better peers connectivity"
+weight: 6041
 menu:
   docs:
     parent: "khala-mining"

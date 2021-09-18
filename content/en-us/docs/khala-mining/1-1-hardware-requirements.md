@@ -1,5 +1,6 @@
 ---
 title: "1.1 Check Your Hardware, BIOS and System"
+weight: 6011
 menu:
   docs:
     parent: "khala-mining"

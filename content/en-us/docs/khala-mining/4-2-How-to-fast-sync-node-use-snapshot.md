@@ -1,5 +1,6 @@
 ---
 title: "4.2 How to fast sync your node to you haven't fully synced yet"
+weight: 6042
 menu:
   docs:
     parent: "khala-mining"

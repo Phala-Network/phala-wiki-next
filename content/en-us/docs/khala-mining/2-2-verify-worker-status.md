@@ -1,5 +1,6 @@
 ---
 title: "2.2 Verify Worker Status"
+weight: 6022
 menu:
   docs:
     parent: "khala-mining"

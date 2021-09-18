@@ -1,5 +1,6 @@
 ---
 title: "2.1 Deploy Worker Node"
+weight: 6021
 menu:
   docs:
     parent: "khala-mining"

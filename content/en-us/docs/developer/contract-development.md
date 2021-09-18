@@ -1,6 +1,6 @@
 ---
 title: "Archived: Contract Development"
-weight: 100
+weight: 11000
 draft: false
 menu:
   docs:

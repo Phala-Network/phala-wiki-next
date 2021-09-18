@@ -1,5 +1,6 @@
 ---
 title: "1.3 Check the SGX Capability and Confidence Level"
+weight: 6013
 menu:
   docs:
     parent: "khala-mining"

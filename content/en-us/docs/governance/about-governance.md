@@ -1,6 +1,6 @@
 ---
 title: "About Governance"
-weight: 10
+weight: 4001
 menu:
   docs:
     parent: "governance"

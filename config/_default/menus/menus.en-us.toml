@@ -2,67 +2,67 @@
   name = "Phala Network"
   identifier = "phala-network"
   url = "/docs/phala-network/"
-  weight = 10
+  weight = 1000
 
 [[docs]]
   name = "Spec"
   identifier = "spec"
   url = "/docs/spec/"
-  weight = 20
+  weight = 2000
 
 [[docs]]
   name = "Tokenomic"
   identifier = "tokenomic"
   url = "/docs/tokenomic/"
-  weight = 30
+  weight = 3000
 
 [[docs]]
   name = "Governance"
   identifier = "governance"
   url = "/docs/governance/"
-  weight = 40
+  weight = 4000
 
 [[docs]]
   name = "Khala User"
   identifier = "khala-user"
   url = "/docs/khala-user/"
-  weight = 50
+  weight = 5000
 
 [[docs]]
   name = "Khala Mining"
   identifier = "khala-mining"
   url = "/docs/khala-mining/"
-  weight = 60
+  weight = 6000
 
 [[docs]]
   name = "Para Mining"
   identifier = "para-mining"
   url = "/docs/para-mining/"
-  weight = 70
+  weight = 7000
 
 [[docs]]
   name = "Prb"
   identifier = "prb"
   url = "/docs/prb/"
-  weight = 80
+  weight = 8000
 
 [[docs]]
   name = "Maintain"
   identifier = "maintain"
   url = "/docs/maintain/"
-  weight = 90
+  weight = 9000
 
 [[docs]]
   name = "pDiem"
   identifier = "pDiem"
   url = "/docs/pDiem/"
-  weight = 100
+  weight = 10000
 
 [[docs]]
   name = "Developer"
   identifier = "developer"
   url = "/docs/developer/"
-  weight = 110
+  weight = 11000
 
 # [[docs]]
 #   name = "Gatekeeper"

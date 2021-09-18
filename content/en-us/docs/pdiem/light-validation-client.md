@@ -1,6 +1,6 @@
 ---
 title: "Light Validation Client"
-weight: 4
+weight: 10005
 draft: false
 menu:
   docs:

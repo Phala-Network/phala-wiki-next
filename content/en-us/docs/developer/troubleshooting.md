@@ -1,5 +1,6 @@
 ---
 title: "1.3 Troubleshooting"
+weight: 11013
 menu:
   docs:
     parent: "developer"

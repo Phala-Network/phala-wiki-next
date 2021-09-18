@@ -1,5 +1,6 @@
 ---
 title: "3 Voting for Councillors"
+weight: 4004
 menu:
   docs:
     parent: "governance"

@@ -1,5 +1,6 @@
 ---
 title: "1.2 Hello World: your first confidential contract"
+weight: 11012
 menu:
   docs:
     parent: "developer"

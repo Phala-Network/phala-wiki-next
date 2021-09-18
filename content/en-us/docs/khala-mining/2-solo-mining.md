@@ -1,5 +1,6 @@
 ---
 title: "2 Solo mining configuration"
+weight: 6020
 menu:
   docs:
     parent: "khala-mining"

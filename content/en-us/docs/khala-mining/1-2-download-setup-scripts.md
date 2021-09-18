@@ -1,5 +1,6 @@
 ---
 title: "1.2 Install Phala Tools"
+weight: 6012
 menu:
   docs:
     parent: "khala-mining"

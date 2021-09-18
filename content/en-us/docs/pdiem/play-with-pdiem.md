@@ -1,6 +1,6 @@
 ---
 title: "Play with pDiem"
-weight: 2
+weight: 10003
 draft: false
 menu:
   docs:

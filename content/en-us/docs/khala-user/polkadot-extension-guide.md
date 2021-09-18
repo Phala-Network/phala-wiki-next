@@ -1,6 +1,6 @@
 ---
 title: "Polkadot{.js} Extension Guide"
-weight: 4
+weight: 5001
 draft: false
 menu:
   docs:

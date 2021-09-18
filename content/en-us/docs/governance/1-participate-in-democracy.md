@@ -1,5 +1,6 @@
 ---
 title: "1 Participate in Democracy"
+weight: 4002
 menu:
   docs:
     parent: "governance"

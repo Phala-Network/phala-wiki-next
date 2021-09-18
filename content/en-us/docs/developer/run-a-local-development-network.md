@@ -1,5 +1,6 @@
 ---
 title: "1.1 Run a Local Development Network"
+weight: 11011
 menu:
   docs:
     parent: "developer"

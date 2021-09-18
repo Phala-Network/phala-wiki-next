@@ -1,5 +1,5 @@
 ---
 title: "tokenomic"
-weight: 2
+weight: 3000
 draft: false
 ---

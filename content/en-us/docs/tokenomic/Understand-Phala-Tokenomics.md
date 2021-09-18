@@ -1,6 +1,6 @@
 ---
 title: "Understand Phala Tokenomics"
-weight: 2
+weight: 3001
 draft: false
 menu:
   docs:

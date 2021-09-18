@@ -1,5 +1,6 @@
 ---
 title: "1 TEE Mining Staking"
+weight: 3002
 menu:
   docs:
     parent: "tokenomic"

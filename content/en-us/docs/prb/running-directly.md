@@ -1,6 +1,6 @@
 ---
 title: "Running Directly in Linux"
-weight: 3
+weight: 8003
 menu:
   docs:
     parent: "prb"

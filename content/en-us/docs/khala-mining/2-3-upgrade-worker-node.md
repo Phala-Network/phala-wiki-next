@@ -1,5 +1,6 @@
 ---
 title: "2.3 Upgrade Worker Node"
+weight: 6023
 menu:
   docs:
     parent: "khala-mining"

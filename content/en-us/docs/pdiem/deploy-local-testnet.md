@@ -1,6 +1,6 @@
 ---
 title: "Deploy Local Testnet"
-weight: 1
+weight: 10002
 draft: false
 menu:
   docs:

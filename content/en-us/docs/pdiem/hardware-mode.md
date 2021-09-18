@@ -1,6 +1,6 @@
 ---
 title: "Advanced: Hardware Mode"
-weight: 8
+weight: 10009
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: Collator
-weight: 10
+weight: 9002
 draft: false
 menu:
   docs:
