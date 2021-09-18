@@ -2,6 +2,9 @@
 title: "Polkadot{.js} Extension Guide"
 weight: 4
 draft: false
+menu:
+  docs:
+    parent: "khala-user"
 ---
 
 In this tutorial, we present how to use Polkadot{.js} Extension to create/import Khala account.
@@ -15,7 +18,6 @@ Khala Network, as the parachain of Kusama, shares the accounts of Kusama Relay C
 
 2. Choose Chrome or Firefox Extension according to your explorer
 
-
 ## Create New Account
 
 1. Choose your installed Polkadot{.js} Extension;
@@ -27,7 +29,6 @@ Khala Network, as the parachain of Kusama, shares the accounts of Kusama Relay C
 4. Choose Network "Allow use on any chain", fill in the descriptive name and password, and click "Add the account with the generated seed".
 
 ![](/images/docs/khala-user/choose-network.png)
-
 
 ## Import Existed Account
 

@@ -1,9 +1,13 @@
 ---
 title: "Deployment with Containers: An Example with Docker Compose"
 weight: 2
+menu:
+  docs:
+    parent: "prb"
 ---
 
 Every release of `prb` is publish on [Docker Hub](https://hub.docker.com/r/phalanetwork/prb) once it gets on the Github release page, you can get the latest release by running:
+
 ```bash
 docker pull phalanetwork/prb
 ```
@@ -13,6 +17,7 @@ The `prb` is designed to be simple, basic and easily integrated with RPC without
 > **Note:** This expample explains the relationship between services only, you should design your setup regrading your own requirements.
 
 ## Requirements
+
 - Ubuntu LTS 20.04
 - Docker 20.10 or newer
 - Docker Compose 1.29 or newer
@@ -41,6 +46,7 @@ RocksDB/LevelDB will save data in `PHALA_DB_PREFIX` specified in environment var
 Run `docker-compose up -d fetch` to start the `fetch` service.
 
 It requires 3 CPU cores to:
+
 1. Fetch headers with justification from the parent chain.
 2. Fetch headers and storage changes from the parachain.
 3. Encode them in formats that `pruntime` consumes by block.

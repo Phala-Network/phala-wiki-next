@@ -1,6 +1,9 @@
 ---
 title: "Running Directly in Linux"
 weight: 3
+menu:
+  docs:
+    parent: "prb"
 ---
 
 Running `prb` directly in a Linux shell is not recommended since using Docker is more convenient in both development and production.

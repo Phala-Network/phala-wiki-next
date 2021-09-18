@@ -1,8 +1,12 @@
 ---
 title: "Claim Test Token from Telegram Bot"
+menu:
+  docs:
+    parent: "para-mining"
 ---
 
 The following tutorials apply to Para-2 Testnet, which shares the same tokenomics parameters as the future Khala.
+
 <!-- The difference between Para-2 Testnet and Khala is the underlying relaychain, which should be opaque to the miners. -->
 
 Before you start mining in Para-2 Testnet, you need to first [get a Khala account]({{< relref "docs/khala-user" >}}) and acquire test token from faucet (real PHA is needed in future Khala mining).

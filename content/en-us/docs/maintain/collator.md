@@ -1,7 +1,10 @@
 ---
 title: Collator
-weight: 1
+weight: 10
 draft: false
+menu:
+  docs:
+    parent: "maintain"
 ---
 
 {{< tip "warning" >}}
@@ -30,8 +33,8 @@ The `CollatorSelection` pallet is a minimal PoS system. It has a configurable bo
 1. Create an account with a minimum amount of bound available (16 PHA by default)
 2. Deploy a collator full node with the `--collator` flag enabled
 3. Generate a session key. Two options:
-    1. Call RPC `api.rpc.author.rotateKeys()` to generate a new session key in the node, and note the public key it outputs
-    2. Generate the session key externally (dangerous), calculate the public key, and note it
+   1. Call RPC `api.rpc.author.rotateKeys()` to generate a new session key in the node, and note the public key it outputs
+   2. Generate the session key externally (dangerous), calculate the public key, and note it
 4. Set the session (public) key of the collator account by calling `session.setKeys()`
 5. Start the collator node
 

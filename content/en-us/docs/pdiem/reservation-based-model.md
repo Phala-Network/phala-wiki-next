@@ -2,6 +2,9 @@
 title: "Reservation-based Model"
 weight: 3
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 A bridge connects the local blockchain to a remote blockchain. pDiem follows the "reservation asset" cross-chain asset transferring pattern (see the equivalent pattern defined in [XCM Format](https://github.com/paritytech/xcm-format#depositreserveasset)). In our case, pDiem (and its parachain) is the local blockchain, and Diem is the remote blockchain.
@@ -14,10 +17,10 @@ When a user transfer some Diem assets to Polkadot side, he first sends the asset
 
 ## Transfer
 
-The pDiem ledger exposes a series of p-tokens on the parachain side  (*pXUS* to *XUS* on Diem), which can be transferred between Polkadot accounts as any typical token. The pDiem contract also follows the Polkadot XCM token standard. So it can be transferred between any parachain that accepts standard XCM assets.
+The pDiem ledger exposes a series of p-tokens on the parachain side (_pXUS_ to _XUS_ on Diem), which can be transferred between Polkadot accounts as any typical token. The pDiem contract also follows the Polkadot XCM token standard. So it can be transferred between any parachain that accepts standard XCM assets.
 
 > Currently Diem has a builtin native token `XUS`, but its design supports multiple tokens. When multiple tokens exist, pDiem can accept any number of different tokens, and the ledger in the pDiem Contract will reflect all the assets in the reservation correspondingly.
 
 ## Withdraw
 
-When a user wants to withdraw *pXUS* back to the Diem blockchain, he sends a request to the pDiem Contract. The contract will burn the token, and sign a Diem transaction to unlock the token from the sovereign account to the withdraw account. The transaction will be broadcasted by the relayers, and take effect once confirmed by the Diem blockchain.
+When a user wants to withdraw _pXUS_ back to the Diem blockchain, he sends a request to the pDiem Contract. The contract will burn the token, and sign a Diem transaction to unlock the token from the sovereign account to the withdraw account. The transaction will be broadcasted by the relayers, and take effect once confirmed by the Diem blockchain.

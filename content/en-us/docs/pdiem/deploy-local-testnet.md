@@ -2,6 +2,9 @@
 title: "Deploy Local Testnet"
 weight: 1
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 There are two options to run the pdiem demo:
@@ -11,15 +14,15 @@ There are two options to run the pdiem demo:
 
 This guide will only cover the Docker Compose approach because it handles everything automatically for you. It installs the dependencies, builds the code, starts the network with the components connected correctly, and start them.
 
-{{< tip >}} In the development environment we build the code natively. The pro users who want to hack on our code can look into the Dockerfiles and docker-compose file to learn how the system is configured. If you need any help, don't hesitate to ask in our Discord #dev group. {{< /tip >}} 
+{{< tip >}} In the development environment we build the code natively. The pro users who want to hack on our code can look into the Dockerfiles and docker-compose file to learn how the system is configured. If you need any help, don't hesitate to ask in our Discord #dev group. {{< /tip >}}
 
 ## Prepare
 
 Requirements to run the demo:
 
 1. A Linux computer with Docker and Docker Compose installed
-    - [Docker installation guide](https://docs.docker.com/engine/install/)
-    - [Docker Compose installation guide](https://docs.docker.com/compose/install/)
+   - [Docker installation guide](https://docs.docker.com/engine/install/)
+   - [Docker Compose installation guide](https://docs.docker.com/compose/install/)
 2. 50G free disk space (SSD is preferred because the compilation takes longer on HDDs)
 3. A powerful CPU
 
@@ -66,7 +69,8 @@ docker-compose ps
 
 {{< tip >}}
 Tips:
+
 - The state of `diem-cli` should be "Exit 0" because we will start it manually on demand.
 - Don't keep it running for a long time. Diem writes ~1MB/s to the disk.
 - `pdiem-m3` also supports [SGX Hardware mode]({{< relref "docs/pdiem/hardware-mode" >}})
-{{< /tip >}}
+  {{< /tip >}}

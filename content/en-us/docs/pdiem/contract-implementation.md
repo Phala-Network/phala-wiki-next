@@ -2,6 +2,9 @@
 title: "Contract Implementation"
 weight: 5
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 The pdiem contract implements a Diem light client and wallet. On the one hand, the pdiem relayers talks to the contract to sync the transactiosn between Diem side and pdiem side. On the other hand, it provides the interface for users to manage their cross-chain assets.
@@ -48,6 +51,7 @@ There's no specific command to update the ledger state. Instead, a `LedgerInfoWi
 {{< tip >}}
 The Diem specific serialization, the cryptographics, and the verification logics are extracted from the original Diem codebase, and ported to SGX build target by the pdiem team, located at [/diem](https://github.com/Phala-Network/phala-blockchain/tree/master/diem) directory.
 {{< /tip >}}
+
 ## Receive deposit transactions
 
 Before a user can deposit Diem assets to pdiem, a deposit address must be generated, similar to a token exchange in the real world. This is done by the pdiem contract. Any user can ask the contract to generate a deposit address. The contract will generate a new private key, save it in the contract storage, and reveal the address to the user.

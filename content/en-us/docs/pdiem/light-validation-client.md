@@ -2,11 +2,14 @@
 title: "Light Validation Client"
 weight: 4
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 ## The Basics
 
-A minimal cross-chain bridge can transfer assets between the two blockchains. In the reservation-based model, it requires that the local blockchain can confirm some deposit to its sovereign accounts, and the remote blockchain can confirm the withdraw commands from the local blockchain. The validation of the blockchain is done by full nodes, but they are too heavy to fit into a smart contract or blockchain, in terms of the computation and the storage. Instead, the validation is is usually done by a *light client*.
+A minimal cross-chain bridge can transfer assets between the two blockchains. In the reservation-based model, it requires that the local blockchain can confirm some deposit to its sovereign accounts, and the remote blockchain can confirm the withdraw commands from the local blockchain. The validation of the blockchain is done by full nodes, but they are too heavy to fit into a smart contract or blockchain, in terms of the computation and the storage. Instead, the validation is is usually done by a _light client_.
 
 A light client is a mini client that can verify some claims on a blockchain, but doesn't require a full sync and validation of the blockchain history. On PoW blockchains, the validation can be done by SPV clients. On PoS blockchains, it can be done with light validation clients. The clients are designed to work with the corresponding consensus algorithm.
 

@@ -2,6 +2,9 @@
 title: "Play with pDiem"
 weight: 2
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 ![](/images/docs/pdiem/docker-compose-structure.png)
@@ -37,7 +40,6 @@ diem% account mint 1 100 XUS
 
 The `diem-cli` tool is a light wallet connecting to the diem node via RPC. It can be used to manage accounts, transfer tokens, and query the blockchain. In the above steps, we created two accounts (indexed by 0 & 1), and mint some test `XUS` token to the account.
 
-
 {{< tip >}}
 Among them, the `account 0` is a special account that hard-coded in the pdiem-m3 demo contract as the deposit address. Usually `diem-cli` generates random accounts. But in the pdiem-m3 demo, the seed to generate the wallets is pinned with a special file [client.mnemonic](https://github.com/Phala-Network/phala-docker/blob/pdiem-m3/dockerfile.d/client.mnemonic) so that everytime it generates the same hard-coded account.
 {{< /tip >}}
@@ -69,6 +71,7 @@ All the transactiosn received by `pdiem` contract are validated against the late
 ```bash
 ./phala-console.sh pdiem-tx
 ```
+
 ## Prepare subaccounts for two-way transfer
 
 pdiem-m3 uses Diem's subaccount feature to create deposit accounts. Any user can create its Diem deposit subaccount by sending a `NewAccount` command:
@@ -82,7 +85,6 @@ The above command will send `Command::NewAccount` to the `pdiem` contract from S
 {{< tip >}}
 The first argument of `pdiem-new-account` is the sequence id of the new account transaction on Diem. Similar to the other blockchains, Diem also requires every transaction has incremented sequence id. So when creating another new subaccount, run `./phala-console.sh pdiem-new-account 1 '//Charlie'`.
 {{< /tip >}}
-
 
 Then you can get a full list of the Diem accounts by a query:
 

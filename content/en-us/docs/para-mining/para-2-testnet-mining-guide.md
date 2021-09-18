@@ -2,6 +2,9 @@
 title: "Para-2 Testnet Mining Guide"
 weight: 5
 draft: false
+menu:
+  docs:
+    parent: "para-mining"
 ---
 
 {{< tip "warning" >}}
@@ -13,6 +16,7 @@ Khala Network is Phala's canary network on Kusama Parachain featuring decentrali
 We highly recommend miners to first read about Phala's [tokenomic]({{< relref "docs/tokenomic" >}}) and [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}}) to understand the calculation of incomings and how the mining proceeds.
 
 If you have any questions, you can always reach out for help:
+
 - Telegram: https://t.me/phalanetwork
 - Discord: https://discord.gg/DWdHXFm8
 - Forum: https://forum.phala.network/
