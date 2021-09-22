@@ -27,6 +27,13 @@ pre code {
   scrollbar-color: transparent transparent;
 }
 
+.has-jax {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
 .hljs {
   padding: 1.5rem !important;
 }
@@ -45,22 +52,22 @@ pre code {
 }
 
 pre code::-webkit-scrollbar,
-.MathJax::-webkit-scrollbar {
+.has-jax::-webkit-scrollbar {
   height: 5px;
 }
 
 pre code::-webkit-scrollbar-thumb,
-.MathJax::-webkit-scrollbar-thumb {
+.has-jax::-webkit-scrollbar-thumb {
   background: $gray-400;
 }
 
 pre code:hover,
-.MathJax:hover {
+.has-jax:hover {
   scrollbar-width: thin;
   scrollbar-color: $gray-500 transparent;
 }
 
-.MathJax::-webkit-scrollbar-thumb:hover,
+.has-jax::-webkit-scrollbar-thumb:hover,
 pre code::-webkit-scrollbar-thumb:hover {
   background: $gray-500;
 }
