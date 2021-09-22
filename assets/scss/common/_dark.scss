@@ -301,6 +301,7 @@ $navbar-dark-active-color:          $link-color-dark;
   border-top: 1px solid $border-dark;
 }
 
+[data-dark-mode] body .MathJax::-webkit-scrollbar-thumb,
 [data-dark-mode] body pre code::-webkit-scrollbar-thumb {
   background: $gray-400;
 }
@@ -310,7 +311,8 @@ $navbar-dark-active-color:          $link-color-dark;
   color: $body-color-dark;
 }
 
-[data-dark-mode] body pre code:hover {
+[data-dark-mode] body pre code:hover,
+[data-dark-mode] body .MathJax:hover {
   scrollbar-width: thin;
   scrollbar-color: $border-dark transparent;
 }

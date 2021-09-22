@@ -17,7 +17,7 @@ pre {
   margin: 2rem 0;
 }
 
-pre code {
+pre code, .MathJax {
   display: block;
   overflow-x: auto;
   line-height: $line-height-base;
@@ -44,19 +44,23 @@ pre code {
   }
 }
 
-pre code::-webkit-scrollbar {
+pre code::-webkit-scrollbar,
+.MathJax::-webkit-scrollbar {
   height: 5px;
 }
 
-pre code::-webkit-scrollbar-thumb {
+pre code::-webkit-scrollbar-thumb,
+.MathJax::-webkit-scrollbar-thumb {
   background: $gray-400;
 }
 
-pre code:hover {
+pre code:hover,
+.MathJax:hover {
   scrollbar-width: thin;
   scrollbar-color: $gray-500 transparent;
 }
 
+.MathJax::-webkit-scrollbar-thumb:hover,
 pre code::-webkit-scrollbar-thumb:hover {
   background: $gray-500;
 }
