@@ -206,6 +206,31 @@ pre {
   background-size: 1.5rem;
 }
 
+.btn-next {
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  color: #8C8C8C;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-next:hover {
+  color:white;
+  background-color: $primary;
+  border-color: $primary;
+  text-decoration: none !important;
+}
+
+[data-dark-mode] .btn-next {
+  color: #8C8C8C;
+  border: 1px solid #404040;
+}
+
+[data-dark-mode] .btn-next:hover {
+  color: #282828;
+}
+
 .offcanvas-header .btn-close {
   margin-right: 0 !important;
 }
