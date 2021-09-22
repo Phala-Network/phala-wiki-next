@@ -523,3 +523,19 @@ $navbar-dark-active-color:          $link-color-dark;
     border-color: $border-dark;
   }
 }
+
+.dark-show {
+  display: none;
+}
+
+[data-dark-mode] body .dark-show {
+  display: block;
+}
+
+.light-show {
+  display: block;
+}
+
+[data-dark-mode] body .light-show {
+  display: none !important;
+}
