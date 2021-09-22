@@ -37,7 +37,7 @@
 
 .docs-links h3,
 .page-links h3 {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: $font-size-base;
   margin: 1.25rem 0 0.5rem 0;
   padding: 1.5rem 0 0 0;
@@ -56,10 +56,10 @@
 }
 
 a.docs-link {
-  color: $body-color;
+  color: #8C8C8C;
   display: block;
   padding: 0.125rem 0;
-  font-size: $font-size-base;
+  font-size: 16px;
 }
 
 .page-links li {
