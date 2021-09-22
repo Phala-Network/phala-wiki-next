@@ -39,6 +39,7 @@ h5.offcanvas-title {
 }
 
 body {
+  color: #404040;
   background-color: #F5F5F5;
 }
 
@@ -48,8 +49,8 @@ body.docs {
 
 @include media-breakpoint-up(md) {
   body {
-    font-size: 16px;
-    font-weight: 300;
+    // font-size: 16px;
+    // font-weight: 300;
 
     /*
     padding-top: 4rem !important;
