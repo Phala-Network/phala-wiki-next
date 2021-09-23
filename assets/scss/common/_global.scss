@@ -41,6 +41,8 @@ h5.offcanvas-title {
 body {
   color: #404040;
   background-color: #F5F5F5;
+  font-family: Lato Light;
+  font-size: 16px;
 }
 
 body.docs {
@@ -49,12 +51,6 @@ body.docs {
 
 @include media-breakpoint-up(md) {
   body {
-    // font-size: 16px;
-    // font-weight: 300;
-
-    /*
-    padding-top: 4rem !important;
-    */
   }
 
   h1,
