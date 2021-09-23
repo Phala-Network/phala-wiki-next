@@ -1,6 +1,90 @@
 <footer class="footer text-muted">
   <div class="container-xxl">
     <div class="row">
+      <div class="col-md-8">
+        <!-- <div class={styles.left}>
+        </div> -->
+      </div>
+      <div class="col-md-8">
+        <!-- <div class={styles.right}> -->
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="listMenu">
+                <div class="title">{{ i18n "Participate" }}</div>
+                <div class="items">
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Miner-Link" }}">{{ i18n "Miner" }}</a>
+                  </div>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Node-Link" }}">
+                      {{ i18n "Node" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Community-Link" }}">
+                      {{ i18n "Community" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "About-Us-Link" }}">
+                      {{ i18n "About-Us" }}</div>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="listMenu">
+                <div class="title">{{ i18n "Resources" }}</div>
+
+                <div class="items">
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Technical-Whitepaper-Link" }}">
+                      {{ i18n "Technical-Whitepaper" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Token-Economics-Link" }}">
+                      {{ i18n "Token-Economics" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Wiki-Link" }}">
+                      {{ i18n "Wiki" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Github-Link" }}">
+                      {{ i18n "Github" }}</div>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-5">
+              <div class="listMenu">
+                <div class="title md-hidden" style="color: transparent;">{{ i18n "Resources" }}</div>
+
+                <div class="items">
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Testnet-Link" }}">
+                      {{ i18n "Testnet" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Explorer-Link" }}">
+                      {{ i18n "Explorer" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Careers-Link" }}">
+                      {{ i18n "Careers" }}</div>
+                    </a>
+                  <div class="item">
+                    <a target="_blank" href="{{ i18n "Responsible-Disclosure-Link" }}">
+                      {{ i18n "Responsible-Disclosure" }}</div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="row">
       <div class="col-lg-8 order-last order-lg-first">
         <ul class="list-inline">
           <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
@@ -9,7 +93,7 @@
       <div class="col-lg-8 order-first order-lg-last text-lg-end">
         <ul class="list-inline">
           {{ range .Site.Menus.footer -}}
-            <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            <li class="list-inline-item"><a target="_blank" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
           {{ end -}}
         </ul>
       </div>

@@ -1,0 +1,61 @@
+[Home]
+  other = 'Home'
+
+[Participate]
+  other = 'Participate'
+[Miner]
+  other = 'Miner'
+[Miner-Link]
+  other = 'https://phala.network/en/miner/'
+[Node]
+  other = 'Node'
+[Node-Link]
+  other = 'https://phala.network/en/node'
+[Community]
+  other = 'Community'
+[Community-Link]
+  other = 'https://phala.network/en/community'
+[About-Us]
+  other = 'About Us'
+[About-Us-Link]
+  other = 'https://phala.network/en/aboutUs'
+
+
+[Resources]
+  other = 'Resources'
+[Technical-Whitepaper]
+  other = 'Technical Whitepaper'
+[Technical-Whitepaper-Link]
+  other = 'https://files.phala.network/phala-paper.pdf'
+[Token-Economics]
+  other = 'Token Economics'
+[Token-Economics-Link]
+  other = 'https://files.phala.network/phala-token-economics-en.pdf'
+[Wiki]
+  other = 'Wiki'
+[Wiki-Link]
+  other = 'https://wiki.phala.network/en-us/docs/'
+[Github]
+  other = 'Github'
+[Github-Link]
+  other = 'https://github.com/Phala-Network'
+[Testnet]
+  other = 'Testnet'
+[Testnet-Link]
+  other = 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer'
+[Explorer]
+  other = 'Explorer'
+[Explorer-Link]
+  other = 'https://khala.subscan.io/'
+[Careers]
+  other = 'Careers'
+[Careers-Link]
+  other = 'https://angel.co/company/phala-network'
+[Responsible-Disclosure]
+  other = 'Responsible Disclosure'
+[Responsible-Disclosure-Link]
+  other = 'https://phala.network/en/Phala-Network-Responsible-Disclosure.pdf'
+
+
+[PhaSe-Wallet]
+  other = 'PhaSe Wallet'
