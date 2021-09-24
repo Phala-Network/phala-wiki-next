@@ -43,6 +43,10 @@ body {
   background-color: #F5F5F5;
   font-family: Lato Light;
   font-size: 16px;
+
+  &.win {
+    font-family: Lato !important;
+  }
 }
 
 body.docs {

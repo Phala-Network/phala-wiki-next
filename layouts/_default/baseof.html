@@ -24,4 +24,10 @@
     {{ partial "footer/footer.html" . }}
     {{ partial "footer/script-footer.html" . }}
   </body>
+
+  <script>
+    if(navigator.userAgent.indexOf('Win') !== -1) {
+      document.body.classList.add('win');
+    }
+  </script>
 </html>

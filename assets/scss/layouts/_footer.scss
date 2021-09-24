@@ -22,8 +22,8 @@
 
 .footer {
   .listMenu {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -6px;
+    margin-right: -6px;
     @media (max-width: md) {
       // border-top: 1px solid rgba(69, 173, 177, 0.6);
       padding-top: 16px;
@@ -107,7 +107,7 @@
 
 
 .mediaList {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,9 +157,10 @@
 }
 
 .emailInput {
+  background: #191919;
   margin-top: 30px;
   border: 1px solid white;
-  padding: 12px;
+  padding: 8px 8px 8px 12px;
   display: flex;
   align-items: center;
 
@@ -208,11 +209,11 @@
     }
 
     &:hover .iconArrow {
-      stroke: $primary;
+      fill: $primary;
     }
 
     .iconArrow {
-      stroke: gray;
+      fill: gray;
       transition: all 0.1s ease;
       width: 32px;
       height: 32px;
@@ -250,5 +251,13 @@
 
   .subscribe-description {
     color: #8C8C8C;
+  }
+}
+
+.copyright {
+  text-align: left;
+
+  @media (max-width: md) {
+    text-align: right;
   }
 }
