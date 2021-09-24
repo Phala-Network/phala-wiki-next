@@ -56,6 +56,7 @@
 [Responsible-Disclosure-Link]
   other = 'https://phala.network/en/Phala-Network-Responsible-Disclosure.pdf'
 
-
-[PhaSe-Wallet]
-  other = 'PhaSe Wallet'
+[Subscribe]
+  other = 'Subscribe'
+[SubscribeDescription]
+  other = 'Subscribe to the newsletter to hear about Phala Network updates and events.'

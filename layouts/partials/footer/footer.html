@@ -1,9 +1,19 @@
 <footer class="footer text-muted">
   <div class="container-xxl">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-5">
+        <div class="subscribe-title">
+          {{ i18n "Subscribe" }}
+        </div>
+        <div class="subscribe-description">
+          {{ i18n "SubscribeDescription" }}
+        </div>
+
+        {{ partial "footer/footer-icons.html" . }}
         <!-- <div class={styles.left}>
         </div> -->
+      </div>
+      <div class="col-md-3">
       </div>
       <div class="col-md-8">
         <!-- <div class={styles.right}> -->

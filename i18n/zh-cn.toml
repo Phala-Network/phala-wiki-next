@@ -55,5 +55,7 @@
 [Responsible-Disclosure-Link]
   other = 'https://phala.network/zh/Phala-Network-Responsible-Disclosure.pdf'
 
-[PhaSe-Wallet]
-  other = '暗钱包'
+[Subscribe]
+  other = '订阅'
+[SubscribeDescription]
+  other = '订阅Phala Network邮件，获取最新消息和活动'
