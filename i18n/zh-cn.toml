@@ -59,3 +59,14 @@
   other = '订阅'
 [SubscribeDescription]
   other = '订阅Phala Network邮件，获取最新消息和活动'
+
+[email-success]
+  other = '感谢你的订阅！'
+[email-error]
+  other = '邮件发送失败'
+[email-placeholder]
+  other = '请输入邮箱地址'
+[email-format-wrong]
+  other = '邮箱格式错误'
+[email-is-sending]
+  other = '正在发送...'

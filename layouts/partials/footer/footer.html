@@ -10,7 +10,7 @@
         </div>
 
         <div class="emailInput">
-          <input id="emailInput" placeholder="Enter your email address" type="text" value="" />
+          <input id="emailInput" placeholder="{{ i18n "email-placeholder"}}" type="text" value="" />
             <div class="icon"><div>
             <div id="iconArrow" class="iconArrow">
               <svg class="iconArrow" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,6 +141,8 @@
 
       if (value && checkEmail(value)) {
         // is sending
+        infoText.innerHTML = {{ i18n "email-is-sending"}};
+
         fetch(url, {
           method: 'POST',
           headers: {
@@ -157,13 +159,16 @@
           }),
         }).then(response => {
           // is success
-          if(response.status === 200) {
-
-            console.log('response', response)
-
-            infoText.innerHTML = 'Thank you for subscribing to our newsletter!';
+          if (response.status === 200) {
+            infoText.innerHTML = {{ i18n "email-success"}};
+          } else {
+            // is error
+            infoText.innerHTML = {{ i18n "email-error"}};
           }
         })
+      } else {
+        // email format is wrong
+        infoText.innerHTML = {{ i18n "email-format-wrong"}};
       }
     });
 

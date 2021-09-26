@@ -60,3 +60,14 @@
   other = 'Subscribe'
 [SubscribeDescription]
   other = 'Subscribe to the newsletter to hear about Phala Network updates and events.'
+
+[email-success]
+  other = 'Thank you for subscribing to our newsletter!'
+[email-error]
+  other = 'There was an error subscribing to our newsletter. Please try again later.'
+[email-placeholder]
+  other = 'Enter your email address'
+[email-format-wrong]
+  other = 'Please enter a valid email address.'
+[email-is-sending]
+  other = 'Sending...'
