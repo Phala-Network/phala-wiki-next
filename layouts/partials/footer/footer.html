@@ -10,9 +10,9 @@
         </div>
 
         <div class="emailInput">
-          <input placeholder="Enter your email address" type="text" value="">
+          <input id="emailInput" placeholder="Enter your email address" type="text" value="" />
             <div class="icon"><div>
-            <div class="iconArrow">
+            <div id="iconArrow" class="iconArrow">
               <svg class="iconArrow" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="iconArrow" d="M12.1528 10.1732L12.1488 10.1771L1.84718 0L0 1.82488L10.3016 12.002L0.00397206 22.1751L1.85118 24L12.1488 13.8268L13.996 12.002L14 11.998L12.1528 10.1732Z" />
               </svg>
@@ -20,6 +20,7 @@
             </div>
           </div>
         </div>
+        <div id="infoText"></div>
 
         {{ partial "footer/footer-icons.html" . }}
         <!-- <div class={styles.left}>
@@ -124,3 +125,51 @@
     </div> -->
   </div>
 </footer>
+
+<script>
+  window.addEventListener('load', function() {
+    const portalId = '20647882';
+    const formId = '0b071cad-c7bd-44dd-9f2d-e1a822e2e1cf';
+    const url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + portalId + '/' + formId;
+    const emailInput = document.querySelector('#emailInput');
+    const icon = document.querySelector('.icon');
+    const iconArrow = document.querySelector('#iconArrow');
+    const infoText = document.querySelector('#infoText');
+
+    iconArrow.addEventListener('click', function() {
+      const value = emailInput.value;
+
+      if (value && checkEmail(value)) {
+        // is sending
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            fields:[
+              {
+                name: "email",
+                value
+              }
+            ]
+          }),
+        }).then(response => {
+          // is success
+          if(response.status === 200) {
+
+            console.log('response', response)
+
+            infoText.innerHTML = 'Thank you for subscribing to our newsletter!';
+          }
+        })
+      }
+    });
+
+    function checkEmail(email) {
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+  });
+</script>
