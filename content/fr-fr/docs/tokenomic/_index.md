@@ -4,26 +4,6 @@ weight: 2
 draft: false
 ---
 
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[', '\\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    }
-  };
-  window.addEventListener('load', (event) => {
-      document.querySelectorAll("mjx-container").forEach(function(x){
-        x.parentElement.classList += 'has-jax'})
-    });
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 > This article is a preview of Konstantin Shamruk's upcoming "Phala Economics White Paper V0.9". It will also be submitted to the Khala Network Council as a proposal, and will be launched after the democratic referendum is passed.
 
 ## Design targets
@@ -31,14 +11,14 @@ draft: false
 The overall economic design is built to address these points:
 
 1. Support Phala Network's trustless cloud computing architecture
-    - Consensus-Computation Separation
-    - Linearly-scalable computing workers (100k order of magnitude number of miners)
-3. Incentivize miners to join the network
-    - Ensure payment for power supplied irrespective of demand, especially at network bootstrap
-    - Subsidize mining pool with 70% of the initial supply over time
-    - Bitcoin-like budget halving schedule
-4. Application pricing
-5. On-chain performance
+   - Consensus-Computation Separation
+   - Linearly-scalable computing workers (100k order of magnitude number of miners)
+2. Incentivize miners to join the network
+   - Ensure payment for power supplied irrespective of demand, especially at network bootstrap
+   - Subsidize mining pool with 70% of the initial supply over time
+   - Bitcoin-like budget halving schedule
+3. Application pricing
+4. On-chain performance
 
 The following details some key elements of the economic model.
 
@@ -49,19 +29,18 @@ The following details some key elements of the economic model.
 - A virtual score for an individual miner representing value earned which is payable in the future, to motivate miners to behave honestly and reliably
 - Equal to the expected value of the revenues earned by the miner for providing power for the platform
 - Changes dynamically based on the miner's behaviors and the repayment of Rewards
-    - Mining honestly: $V$ grows gradually over time
-    - Harmful conduct: punished by reduction of $V$
+  - Mining honestly: $V$ grows gradually over time
+  - Harmful conduct: punished by reduction of $V$
 
 ### Initial $V$
 
-A Miner will run a ***Performance Test*** and stake some tokens to get the initial $V$:
+A Miner will run a **_Performance Test_** and stake some tokens to get the initial $V$:
 
 $$V^e = f(R^e, \text{ConfidenceScore}) \times (S + C)$$
 
-
-- $R^e > 1$ is a ***Stake Multiplier*** set by the network (Khala or Phala).
-- $S$ is the miner stake; a ***Minimum Stake*** is required to start mining. Stake can't be increased or decreased while mining, but can be set higher than the Minimum.
-- $C$ is the estimated cost of the miner rigs, inferred from the ***Performance Test***.
+- $R^e > 1$ is a **_Stake Multiplier_** set by the network (Khala or Phala).
+- $S$ is the miner stake; a **_Minimum Stake_** is required to start mining. Stake can't be increased or decreased while mining, but can be set higher than the Minimum.
+- $C$ is the estimated cost of the miner rigs, inferred from the **_Performance Test_**.
 - $\text{ConfidenceScore}$ is based on the miner's SGX capabilities
 - $f(R^e, \text{ConfidenceScore}) = 1 + (\text{ConfidenceScore} \cdot (R^e - 1))$
 
@@ -70,9 +49,9 @@ Params used in simulation:
 - $R^e_{\text{Khala}} = 1.5$
 - $R^e_{\text{Phala}} = 1.3$
 - $\text{ConfidenceScore}$ for different [Confidence Levels](https://wiki.phala.network/en-us/docs/poc3/1-4-software-configuration/#confidence-level-of-a-miner)
-    - $\text{ConfidenceScore}_{1,2,3} = 1$
-    - $\text{ConfidenceScore}_{4} = 0.8$
-    - $\text{ConfidenceScore}_{5} = 0.7$
+  - $\text{ConfidenceScore}_{1,2,3} = 1$
+  - $\text{ConfidenceScore}_{4} = 0.8$
+  - $\text{ConfidenceScore}_{5} = 0.7$
 
 ### Performance test
 
@@ -82,24 +61,24 @@ $$P = \frac{\text{Iterations}}{\Delta t}$$
 
 For reference,
 
-| Platform | Cores | Score | Approximate Price |
-| -------- | -------- | -------- | -------- |
-| Low-End Celeron | 4 | 450 | $150 |
-| Mid-End i5 10-Gen | 8 | 2000 | $500 |
-| High-End i9 9-Gen | 10 | 2800 | $790 |
+| Platform          | Cores | Score | Approximate Price |
+| ----------------- | ----- | ----- | ----------------- |
+| Low-End Celeron   | 4     | 450   | $150              |
+| Mid-End i5 10-Gen | 8     | 2000  | $500              |
+| High-End i9 9-Gen | 10    | 2800  | $790              |
 
 > The table is based on the version while writing of this doc and is subject to changes.
 
 The performance test will be performed:
 
-1. **Before mining** to determine the ***Minimum Stake***
+1. **Before mining** to determine the **_Minimum Stake_**
 2. **During mining** to measure the current performance, and to adjust the $V$ increment dynamically
 
 ### Minimum Stake
 
 $$S_{min}=k \sqrt{P}$$
 
-- $P$ - ***Performance Test*** score
+- $P$ - **_Performance Test_** score
 - $k$ - adjustable multiplier factor
 
 Proposed parameter:
@@ -113,9 +92,8 @@ Proposed parameter:
 
 $$C = \frac{0.3 P}{\phi}$$
 
-
 - $\phi$ is the current PHA/USD quote, dynamically updated on-chain via Oracles
-- $P$ is the initial ***Performance Test*** score.
+- $P$ is the initial **_Performance Test_** score.
 - In the early stages we are compensating the equipment cost $C$ with a higher Value Promise.
 - In the future we plan to compensate for higher amortization costs (adding equipment amortization cost to the running costs $c^i$ and $c^a$), thus increasing the speed of growth of the Miner's $V$.
 
@@ -129,17 +107,17 @@ Each individual's $V$ is updated at every block:
 
 - Increased by $\Delta V_t$ if the worker keeps mining
 - Decreased by $w(V_t)$ if the miner got a payout
-- Decreased according to the ***Slash Rules*** if the miner misbehaves
+- Decreased according to the **_Slash Rules_** if the miner misbehaves
 
-When a miner gets a payout $w(V_t)$, they will receive the amount immediately in their Phala wallet. The payout follows ***Payout Schedule*** and cannot exceed the ***Subsidy Budget***.
+When a miner gets a payout $w(V_t)$, they will receive the amount immediately in their Phala wallet. The payout follows **_Payout Schedule_** and cannot exceed the **_Subsidy Budget_**.
 
 Finally, once the miner decides to stop mining, they will wait for a Cooling Down period $\delta$. They will receive an one-time final payout after the cooldown.
 
-| Block number | $t$ | $t+1$ | $\dots$ | $T$ | $\dots$ | $T+\delta$ |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|
-|Value Promise|$V_t$|$V_{t+1}$|$\dots$|$V_T$|$\dots$|$\dots$|
-| Payment | $w(V_t)$ | $w(V_{t+1})$ | $\dots$ | $w(V_T)$ | $0$ | $\kappa \min(V_T, V^e)$ |
-|| Block reward | ... | ... | Block reward | Cooling off for $\delta$ blocks | Final payout |
+| Block number  |     $t$      |    $t+1$     | $\dots$ |     $T$      |             $\dots$             |       $T+\delta$        |
+| :------------ | :----------: | :----------: | :-----: | :----------: | :-----------------------------: | :---------------------: |
+| Value Promise |    $V_t$     |  $V_{t+1}$   | $\dots$ |    $V_T$     |             $\dots$             |         $\dots$         |
+| Payment       |   $w(V_t)$   | $w(V_{t+1})$ | $\dots$ |   $w(V_T)$   |               $0$               | $\kappa \min(V_T, V^e)$ |
+|               | Block reward |     ...      |   ...   | Block reward | Cooling off for $\delta$ blocks |      Final payout       |
 
 Proposed parameter:
 
@@ -156,7 +134,6 @@ $$\Delta V_t = k_p \cdot \big(\rho^m V_t + c(s_t) + \gamma(V_t)h(V_t)\big)$$
 - $\gamma(V_t)h(V_t)$ represents a factor to compesate for accidental/unintentional slashing (ignored in simulated charts)
 - $k_p = \min(\frac{P_t}{P}, 120\\%)$, where $P_t$ is the instant performance score, and $P$ is the initial score
 
-
 Proposed parameters:
 
 - $\rho^m_{\text{Khala}} = 1.00020$ (hourly)
@@ -164,7 +141,7 @@ Proposed parameters:
 
 ### Payout event
 
-In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current ***Miner Shares***. However, the payout is also capped to ensure the payout doesn't cause $V$ to drop lower than it in the last payout event:
+In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current **_Miner Shares_**. However, the payout is also capped to ensure the payout doesn't cause $V$ to drop lower than it in the last payout event:
 
 $$w(V_t) = \min(B \frac{\text{share}}{\Sigma \text{share}}, V_t - V_\text{last}),$$
 
@@ -190,14 +167,14 @@ Proposed algorithm:
 
 ### Subsidy Budget
 
-|     | Total   |   Khala   |  Phala  |
-|-----|:-------:|:---------:|:-------:|
-| Relaychain | / |   Kusama   |   Polkadot    |
-| Budget for Mining | 700 mln |   10 mln   |   690 mln  |
-| Halving Period | / |   45 days   |   180 days |
-| Halving Discount | 25% per period|   25%   |   25% |
-| Treasure Share | / |   20%   |   20% |
-| First Month Reward | / |   1.8 mln   |   21.6 mln |
+|                    |     Total      |  Khala  |  Phala   |
+| ------------------ | :------------: | :-----: | :------: |
+| Relaychain         |       /        | Kusama  | Polkadot |
+| Budget for Mining  |    700 mln     | 10 mln  | 690 mln  |
+| Halving Period     |       /        | 45 days | 180 days |
+| Halving Discount   | 25% per period |   25%   |   25%    |
+| Treasure Share     |       /        |   20%   |   20%    |
+| First Month Reward |       /        | 1.8 mln | 21.6 mln |
 
 ### Heartbeat & Payout Schedule
 
@@ -209,7 +186,7 @@ If they fail to send the Heartbeat transaction to the chain within the challenge
 
 $$\Delta V_t = - h(V_t),$$
 
-and their status is changed to *unresponsive*, and they will get repeatedly punished until they send a heartbeat, or stop mining. The slash amount $h$ is defined in the ***Slash*** section.
+and their status is changed to _unresponsive_, and they will get repeatedly punished until they send a heartbeat, or stop mining. The slash amount $h$ is defined in the **_Slash_** section.
 
 The target is to process around 20 heartbeat challenges per block. The heartbeat challenge probability $\gamma(V_t)$ will be adjusted to target this number of challenges.
 
@@ -221,12 +198,12 @@ Potential parameters:
 
 The slash rules for miners are defined below. Note that currently only the Level 1 slash is currently implemented.
 
-| Severity | Fault | Punishment |
-| -----|-------|------|
-| Level1	| Worker offline	| 0.1% V per hour (deducted block by block) |
-| Level2	| Good faith with bad result	| 1% from V |
-| Level3	| Malicious intent or mass error	| 10% from V |
-| Level4	| Serious security risk to the system	| 100% from V |
+| Severity | Fault                               | Punishment                                |
+| -------- | ----------------------------------- | ----------------------------------------- |
+| Level1   | Worker offline                      | 0.1% V per hour (deducted block by block) |
+| Level2   | Good faith with bad result          | 1% from V                                 |
+| Level3   | Malicious intent or mass error      | 10% from V                                |
+| Level4   | Serious security risk to the system | 100% from V                               |
 
 ### Final payout
 

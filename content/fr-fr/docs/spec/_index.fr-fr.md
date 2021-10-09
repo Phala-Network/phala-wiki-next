@@ -4,38 +4,15 @@ weight: 1
 draft: false
 ---
 
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[', '\\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    }
-  };
-  window.addEventListener('load', (event) => {
-      document.querySelectorAll("mjx-container").forEach(function(x){
-        x.parentElement.classList += 'has-jax'})
-    });
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
-
 Ce document décrit les spécifications techniques du Phala-Network, y compris le protocole global, la structure et l'algorithme détaillés des données. Ce travail est encore en cours.
-
 
 ## Les entités Blockchain
 
 Dans Phala-Network, il existe trois types d'entités :
 
-- *Client*, qui fonctionne sur des appareils normaux sans aucune exigence matérielle particulière ;
-- *Worker*, qui fonctionne sur TEE (*Trusted Execution Environment* / Environnement d'exécution de confiance) et sert de nœuds de calcul pour les contrats intelligents confidentiels ;
-- *Gatekeeper*, qui opère sur TEE et sert d'autorités et de gestionnaires de clés ;
+- _Client_, qui fonctionne sur des appareils normaux sans aucune exigence matérielle particulière ;
+- _Worker_, qui fonctionne sur TEE (_Trusted Execution Environment_ / Environnement d'exécution de confiance) et sert de nœuds de calcul pour les contrats intelligents confidentiels ;
+- _Gatekeeper_, qui opère sur TEE et sert d'autorités et de gestionnaires de clés ;
 
 Nous présentons les interactions entre les différentes entités comme ci-dessous :
 ![Phala Network](/images/docs/spec/phala-design.png)
@@ -47,9 +24,9 @@ La conception de base de Phala Network visait à assurer la sécurité et la con
 Dans Phala, la communication entre toutes les entités doit être cryptée, de sorte que chaque entité génère les paires de clés d'entité ci-dessous à l'aide d'un générateur de nombres pseudo-aléatoires lors de l'initialisation :
 
 1. `Clé d'identité`
-    - une paire de clés "secp256k1" pour identifier de manière unique une entité ;
+   - une paire de clés "secp256k1" pour identifier de manière unique une entité ;
 2. `Clé Ecdh`
-    - une paire de clés "secp256r1" pour une communication sécurisée ;
+   - une paire de clés "secp256r1" pour une communication sécurisée ;
 
 > **[Amélioration]**
 >
@@ -57,13 +34,11 @@ Dans Phala, la communication entre toutes les entités doit être cryptée, de s
 
 Pour les clients, les paires de clés sont générées par le portefeuille de l'utilisateur. Alors que pour les workers et les gateKeepers, les paires de clés sont entièrement gérées par `pRuntime` et leur utilisation est strictement limitée.
 
-
 ### L'Initialisation de `pRuntime`
 
-Lors de l'initialisation, `pRuntime` génère automatiquement les paires de clés d'entité ci-dessus avec un générateur de nombres pseudo-aléatoires. Les paires de clés générées sont gérées dans `pRuntime` dans TEE, ce qui signifie que les workers et les contrôleurs d'accès ne peuvent l'utiliser qu'avec les API limitées exportées par  `pRuntime`, et ne peuvent jamais obtenir les paires de clés en clair pour lire les données chiffrées hors de TEE.
+Lors de l'initialisation, `pRuntime` génère automatiquement les paires de clés d'entité ci-dessus avec un générateur de nombres pseudo-aléatoires. Les paires de clés générées sont gérées dans `pRuntime` dans TEE, ce qui signifie que les workers et les contrôleurs d'accès ne peuvent l'utiliser qu'avec les API limitées exportées par `pRuntime`, et ne peuvent jamais obtenir les paires de clés en clair pour lire les données chiffrées hors de TEE.
 
 Les paires de clés générées peuvent être chiffrées localement et mises en cache sur le disque par « SGX Sealing / Scellage SGX ». Elles peuvent être déchiffrées et chargées lors du redémarrage. Cela s'applique à la fois aux gateKeepers et aux workers.
-
 
 ### Les canaux de communication sécurisés
 
@@ -83,10 +58,13 @@ Les messages sont E2EE avec `aes-gcm-256`.
 La clé publique des entités est enregistrée sur la chaîne. Nous pouvons donc construire des canaux de communication en chaîne ou hors chaîne :
 
 - Communication en chaîne
+
 1. « A » et « B » connaissent chacun la clé publique de l'autre à partir de la blockchain. Ils peuvent dériver `CommKey(A, B)`;
 2. « A » envoie un message chiffré crypté par « CommKey(A, B) » à la blockchain ;
 3. « B » le reçoit et le déchiffre avec « CommKey(A, B) » ;
+
 - Hors chaîne (`A` est hors chaîne et `B` est un worker en chaîne) Communication
+
 1. « A » peut connaître la clé publique de « B » à partir de la blockchain et dériver « CommKey(A, B) » ;
 2. « A » connait le point de terminaison API de « B » à partir de son « WorkerInfo » dans « WorkerState » sur la chaîne ;
 3. « A » envoi un message chiffré signé (crypté par « CommKey(A, B) ») avec sa clé publique à « B » directement ;
@@ -114,7 +92,6 @@ Un client communique avec un worker uniquement pour l'invocation d'un contrat. U
 - Étant donné qu'un worker peut exécuter plusieurs contrats (ou même différentes instances du même contrat), `to` est nécessaire pour spécifier la cible d'appel.
 - `input` code la fonction et les arguments invoqués, il doit être sérialisé selon l'ABI des contrats.
 
-
 > **[Amélioration]**
 >
 > ### Sérialisation
@@ -124,7 +101,6 @@ Un client communique avec un worker uniquement pour l'invocation d'un contrat. U
 > ### `EcdhKey` Rotation
 >
 > Contrairement à la `IdentityKey` qui montre l'identité d'un worker ou d'un gateKeeper, celle-ci ne doit pas être modifiée, nous recommandons une rotation régulière de la `EcdhKey` pour assurer la sécurité des canaux de communication entre les différentes entités. À l'avenir, `pRuntime` fera automatiquement tourner la clé gérée `EcdhKey` après un certain intervalle de temps.
-
 
 ## Worker
 
@@ -140,7 +116,6 @@ Le rapport d'attestation est relayé à la blockchain par l'appel `register_work
 
 1. La signature du rapport doit être correcte ;
 2. Le hachage intégré dans le rapport doit correspondre au hachage du `WorkerInfo` soumis ;
-
 
 `register_worker()` est appelé par les workers, et un worker ne peut se voir attribuer des contrats que lorsqu'il dispose d'un certain nombre de jetons PHA de jalonnement. Sur la blockchain, il existe une carte « WorkerState » du worker à l'entrée `WorkerInfo`. Les gateKeepers mettront à jour la carte `WorkerState` après avoir reçu et vérifié les `WorkerInfo` soumis.
 
@@ -175,15 +150,16 @@ Dans le pré-mainnet de Phala Network, la liste des gatekeepers est codée en du
 La `MasterKey` est utilisée pour dériver les clés permettant de crypter les états des smart contracts confidentiels et de communiquer. Dans le réseau Phala, seul le `pRuntime` d'un gatekeeper est autorisé à gérer la `MasterKey`. Notez que puisque `MasterKey` est géré par `pRuntime` et que son utilisation est limitée, même un gatekeeper malveillant ne pourrait décrypter un état de contrat sans compromettre complètement le TEE et `pRuntime`.
 
 `MasterKey` est une paire de clés `secp256k1` générée et gérée par les gatekeepers.
+
 > **[Amélioration]**
 >
 > Passez à `sr25519` dans le futur.
 
 Dans le pré-mainnet du réseau Phala, tous les gatekeepers partagent la même `MasterKey` pré-générée.
+
 > **[Amélioration]**
 >
-> Introduire DKG (*[distributed key generation](https://en.wikipedia.org/wiki/Distributed_key_generation)*) de sorte que plus d'un gatekeeper soit nécessaire pour produire la `MasterKey`, et que chaque gatekeeper ne détienne qu'une part de la clé. Lorsque DKG est activé, les parts de clé du contrat sont fournies aux workers par les gatekeepers séparément.
-
+> Introduire DKG (_[distributed key generation](https://en.wikipedia.org/wiki/Distributed_key_generation)_) de sorte que plus d'un gatekeeper soit nécessaire pour produire la `MasterKey`, et que chaque gatekeeper ne détienne qu'une part de la clé. Lorsque DKG est activé, les parts de clé du contrat sont fournies aux workers par les gatekeepers séparément.
 
 > **[Amélioration]**
 > Rotation de la `MasterKey` partagée
@@ -202,14 +178,13 @@ Dans le pré-mainnet du réseau Phala, tous les gatekeepers partagent la même `
 
 Nous devons nous assurer que les données peuvent être migrées vers une nouvelle version de la blockchain et de pRuntime sans en révéler le contenu. La migration de l'état est déclenchée par une décision de gouvernance sur la chaîne, dénotée par un événement, et peut être réalisée de la même manière que nous avons proposé pour la rotation de `MasterKey`.
 
-
 ### Smart Contracts confidentiels
 
 ### Génération de la clé du contrat
 
 Un client doit télécharger le code du contrat signé avec le hash du code sur la blockchain. Lorsqu'un client télécharge un contrat confidentiel sur la blockchain, il émet un événement `ContractUploaded(deployer_id, code_hash, sequence)`. Les gatekeepers restent à l'écoute de ces événements, et génèrent une clé de contrat pour chaque contrat nouvellement déployé.
 
-The contract key is generated by a KDF (*[key derivation function](https://en.wikipedia.org/wiki/Key_derivation_function)*). In pre-mainnet, we adopt the [child key derivation (CKD) functions](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#child-key-derivation-ckd-functions) from Bitcoin, and extra data like `deployer_id` serves as entropy during key derivation:
+The contract key is generated by a KDF (_[key derivation function](https://en.wikipedia.org/wiki/Key_derivation_function)_). In pre-mainnet, we adopt the [child key derivation (CKD) functions](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#child-key-derivation-ckd-functions) from Bitcoin, and extra data like `deployer_id` serves as entropy during key derivation:
 
 $$
 ContractKey_{deployer\\_id, code\\_hash, sequence} = KDF(MasterKey, deployer\\_id, code\\_hash, sequence)
@@ -218,11 +193,11 @@ $$
 Les clés suivantes sont nécessaires pour un contrat, et sont dérivées de la `ContractKey` :
 
 - `IdentityKey`
-    - une paire de clés `secp256k1`, utilisée pour signer les messages de sortie du contrat ;
+  - une paire de clés `secp256k1`, utilisée pour signer les messages de sortie du contrat ;
 - `EcdhKey`
-    - une paire de clés `secp256r1`, utilisée pour chiffrer les entrées-sorties du contrat (y compris les commandes et les requêtes) ;
+  - une paire de clés `secp256r1`, utilisée pour chiffrer les entrées-sorties du contrat (y compris les commandes et les requêtes) ;
 - `StorageKey`
-    - une clé `aes-256-gcm`. `StorageKey` peut être générée de la même manière que `EcdhKey` en introduisant un paramètre 'nonce' supplémentaire, elle est utilisée pour crypter les états du contrat (c'est-à-dire les paires clé-valeur dans le stockage du contrat) ;
+  - une clé `aes-256-gcm`. `StorageKey` peut être générée de la même manière que `EcdhKey` en introduisant un paramètre 'nonce' supplémentaire, elle est utilisée pour crypter les états du contrat (c'est-à-dire les paires clé-valeur dans le stockage du contrat) ;
 
 Dans le pré-mainnet du Réseau Phala, les clés de contrat ci-dessus n'ont pas besoin d'être stockées dans le stockage `pRuntime` des gatekeepers car il est facile de les générer à la volée.
 
@@ -237,11 +212,12 @@ Les gatekeepers ne fourniront les clés qu'aux workers qualifiés. Il établit u
 > **[Amélioration]**
 >
 > Permettre aux déployeurs de spécifier les exigences matérielles et le nombre de réplications dans `ContractInfo` et les gatekeepers devraient affecter les workers souhaités.
+
  <!-- ==TODO2 : une manière plus légère d'assigner les tâches avant de travailler sur un véritable algorithme ?== -->
 
- > **[TODO]**
- >
- > Permettre de créer une liste blanche de workers (sous-réseau), permettre aux utilisateurs de choisir quelle liste pour déployer les contrats. Tous les workers d'un sous-réseau sont des répliques.
+> **[TODO]**
+>
+> Permettre de créer une liste blanche de workers (sous-réseau), permettre aux utilisateurs de choisir quelle liste pour déployer les contrats. Tous les workers d'un sous-réseau sont des répliques.
 
 Les gatekeepers émettent un événement `ContractDeployed(Worker_IdentityKey, ContractKey)` (plusieurs événements devraient être émis s'il y a plusieurs workers). Nous gardons une carte `ContractState` de `ContractKey` au workers sur la chaîne. Les gatekeepers garderont la carte `ContractState` à jour pour que les déployeurs puissent localiser les workers assignés.
 
@@ -257,7 +233,6 @@ Notez que puisque les données d'invocation sont cryptées avec un secret géné
 
 Le worker doit continuer à écouter les événements `ContractCommand` pour le contrat après le déploiement.
 
-
 #### Invocation de requêtes
 
 Un client peut envoyer un `ContractQuery(query_id, ContractKey, Client_IdentityKey, encrypted_data)` de la même manière que ci-dessus. Les workers doivent écouter ces événements et retourner un `ContractReturn(return_id, query_id, encrypted_return_value)` en conséquence.
@@ -265,6 +240,7 @@ Un client peut envoyer un `ContractQuery(query_id, ContractKey, Client_IdentityK
 > **[Amélioration]**
 >
 > Nous inclurons le point de terminaison de l'API des workers dans `WorkerState`. Un client peut directement obtenir les workers de certains contrats en écoutant les événements `ContractDeployed`, puis il établit un canal de communication sécurisé avec les workers et envoie des requêtes.
+
 <!-- ==TODO : supposez que tous les workers ont un endpoint API *public accessible== -->
 
 > **[TODO]**
@@ -274,6 +250,7 @@ Un client peut envoyer un `ContractQuery(query_id, ContractKey, Client_IdentityK
 > **[TODO]**
 >
 > Comment punir les workers inaccessibles ?
+>
 > > Avant d'avoir un moyen de rendre la connectivité stable, nous devons soit utiliser une liste blanche (l'utilisateur peut faire confiance aux opérateurs), soit autoriser les requêtes sur la blockchain (latence très élevée et coûteuse).
 
 ### Exécution du contrat
