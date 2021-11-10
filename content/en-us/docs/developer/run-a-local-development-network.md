@@ -21,6 +21,11 @@ A full Phala Network stack has three components plus a Web UI. The core componen
 - `pRuntime`: The TEE runtime. Contracts runs in pRuntime
 - `phost`: The Substrate-TEE bridge relayer. Connects the blockchain and pRuntime
 
+<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
+
+(Phala architecture overview)
+
+
 The Web UI is at [Phala-Network/apps-ng](https://github.com/Phala-Network/apps-ng). The Web UI needs to connect to both the blockchain and the pRuntime in order to send transaction and queries.
 
 ## Environment
