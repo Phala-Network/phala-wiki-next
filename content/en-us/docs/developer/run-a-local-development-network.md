@@ -32,14 +32,17 @@ The Web UI is at [Phala-Network/apps-ng](https://github.com/Phala-Network/apps-n
 
 The development environment of Phala Network requires Linux, because it relies on [Linux Intel SGX SDK](https://01.org/intel-software-guard-extensions/downloads). Virtual machines should generally work. Phala Network doesn't work on Windows or macOS natively (sorry, Mac lovers), however we haven't tested WLS yet. Please let us know if you are the first to run it on WLS successfully!
 
-In this tutorial we assume the operating system is _Ubuntu 18.04_. Though not tested yet, it should work with Ubuntu 20.04 out-of-box. Other Linux distributions should also work, but the instructions or command may vary.
+In this tutorial we assume the operating system is _Ubuntu 18.04_ or _Ubuntu 20.04_. Other Linux distributions should also work, but the instructions or command may vary.
 
-It's required to have at least 4 cores and 8GB ram to build the project including the core blockchain and the Web UI. Less than 4GB ram may fail to build the Web UI.
+It's required to have at least 4 cores and 8GB RAM to build the project including the core blockchain and the Web UI. Less than 4GB RAM may fail to build the Web UI.
 
 Follow the commands below to prepare the environment. Some can be skipped if already installed.
 
-- Run the Script to install and check required dependencies for pahala
-Download the script:
+### Linux
+
+#### Install Dependencies (Linux)
+- Run the script to install and check required dependencies for Phala
+download the script (successfully tested on Ubuntu 20.04):
 ```bash
 wget https://raw.githubusercontent.com/hauni97/phala_quick_run/main/phala_quick_install.sh
 ```
@@ -51,7 +54,7 @@ Excute it to automate the next three manual steps to get the environment ready:
 ```bash
 sudo ./phala_quick_install.sh
 ```
-
+#### Manual Installation (Linux)
 - Install the system level dependencies (manual steps)
 
   ```bash
@@ -87,7 +90,7 @@ sudo ./phala_quick_install.sh
   sudo npm install -g yarn
   yarn set version berry
   ```
-
+#### Test the Installation
 You can test the installation by running the following commands. The output should match the sample outputs, or with a slightly higher version.
 
 ```bash
@@ -131,6 +134,8 @@ cd apps-ng/
 git submodule update --init
 cd ..
 ```
+### Windows
+### Mac
 
 ## Build the core blockchain
 
