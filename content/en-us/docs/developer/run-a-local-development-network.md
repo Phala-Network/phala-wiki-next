@@ -38,7 +38,21 @@ It's required to have at least 4 cores and 8GB ram to build the project includin
 
 Follow the commands below to prepare the environment. Some can be skipped if already installed.
 
-- Install the system level dependencies
+- Run the Script to install and check required dependencies for pahala
+Download the script:
+```bash
+wget https://raw.githubusercontent.com/hauni97/phala_quick_run/main/phala_quick_install.sh
+```
+Make it executable:
+```bash
+chmod +x phala_quick_install.sh
+```
+Excute it to automate the next three manual steps to get the environment ready:
+```bash
+sudo ./phala_quick_install.sh
+```
+
+- Install the system level dependencies (manual steps)
 
   ```bash
   sudo apt update
