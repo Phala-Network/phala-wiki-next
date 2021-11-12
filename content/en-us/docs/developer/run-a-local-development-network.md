@@ -41,8 +41,10 @@ Follow the commands below to prepare the environment. Some can be skipped if alr
 ### Linux
 
 #### Install Dependencies (Linux)
+
 - Run the script to install and check required dependencies for Phala
-download the script (successfully tested on Ubuntu 20.04):
+
+Download the script (successfully tested on Ubuntu 20.04):
 ```bash
 wget https://raw.githubusercontent.com/hauni97/phala_quick_run/main/phala_quick_install.sh
 ```
@@ -55,6 +57,7 @@ Excute it to automate the next three manual steps to get the environment ready:
 sudo ./phala_quick_install.sh
 ```
 #### Manual Installation (Linux)
+
 - Install the system level dependencies (manual steps)
 
   ```bash
@@ -91,6 +94,7 @@ sudo ./phala_quick_install.sh
   yarn set version berry
   ```
 #### Test the Installation
+
 You can test the installation by running the following commands. The output should match the sample outputs, or with a slightly higher version.
 
 ```bash
