@@ -108,9 +108,11 @@ echo $SGX_SDK
 # /opt/intel/sgxsdk
 
 # LLVM-9 or higher versions are fine
-llvm-ar-10 --version
-# LLVM (http://llvm.org/):
-#   LLVM version 10.0.0
+clang --version
+# clang version 10.0.0-4ubuntu1
+# Target: x86_64-pc-linux-gnu
+# Thread model: posix
+# InstalledDir: /usr/bin
 
 node --version
 # v12.16.3
@@ -298,3 +300,4 @@ Congratulations! Finally, you have followed the tutorial to:
 Now you are familiar with building and running a development network. Hold tight! In the next chapter, we are going to build the first confidential contract together!
 
 Join our [Discord server](https://discord.gg/zzhfUjU) and feel free to ask for help!
+
