@@ -56,6 +56,11 @@ Excute it to automate the next three manual steps to get the environment ready:
 ```bash
 sudo ./phala_quick_install.sh
 ```
+
+![](/images/docs/auto-install.gif)
+
+(Walkthough of how a successfull environement setup looks like when script is run)
+
 #### Manual Installation (Linux)
 
 - Install the system level dependencies (manual steps)
