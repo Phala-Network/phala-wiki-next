@@ -126,27 +126,23 @@ yarn --version
 # 2.1.1
 ```
 
-Finally let's clone the code and run the initialization script to update the Rust toolchain. Please note that the entire tutorial is on the **`helloworld` branch** for both the blockchain and the Web UI repo.
+Finally, let’s clone the code. Notice that the entire tutorial is on the `encode-hackathon-2021` *branch* for the blockchain.
 
 ```bash
 # Clone the core blockchain repo
-git clone --branch helloworld https://github.com/Phala-Network/phala-blockchain.git
-# Clone the Web UI repo
-git clone --branch helloworld https://github.com/Phala-Network/apps-ng.git
-
-# Run the init script to update Rust toolchain and git submodule
-cd phala-blockchain/
-git submodule update --init
-./scripts/init.sh
-cd ..
-
-# Update the git submodule
-cd apps-ng/
-git submodule update --init
-cd ..
+git clone --recursive --branch encode-hackathon-2021 https://github.com/Phala-Network/phala-blockchain.git
+# Clone the JS SDK repo
+git clone https://github.com/Phala-Network/js-sdk
 ```
 ### Windows
+
+More content coming soon. (WSL to be tested).
+
 ### Mac
+
+> Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM). Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWSs</a>.
+
+Specific instructions using a VM from MacOS to be added soon...
 
 ## Build the core blockchain
 
