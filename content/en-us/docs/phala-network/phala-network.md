@@ -5,7 +5,7 @@ draft: false
 description: "A Blockchain is a kind of distributed ledger which indelibly records transactions in an ever-growing list of blocks. The basis of our trust in the blockchain is the fact that the execution of every transaction can be verified by any user of the blockchain. Existing blockchains, such as BTC and ETH, live up to this promise in an intuitive way: they make everything public, including the transactions and the internal states of smart contracts. This brings us to the problem: confidential data cannot be processed by these blockchains."
 menu:
   docs:
-    parent: "phala-network"
+    parent: "docs"
 ---
 
 ## Phala Network
@@ -16,13 +16,14 @@ Phala Network is a Web 3.0 computing cloud that supports data privacy while rema
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 
-{{< button "spec" "Tech Spec" >}}
+{{< button "technical-specification" "Tech Specs" >}}
 
 {{< button "khala-mining" "Mine on Khala" >}}
 
 {{< button "gatekeeper" "Run a Gatekeeper" >}}
 
 {{< button "pdiem" "Learn pDiem" >}}
+
 
 
 ## Phala Web Directory

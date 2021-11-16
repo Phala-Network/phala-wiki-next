@@ -4,7 +4,7 @@ weight: 2001
 draft: false
 menu:
   docs:
-    parent: "spec"
+    parent: "phala-network"
 ---
 
 This document describes the the technical specification of Phala Network including the overall protocol and the detailed data structure and algorithm. It's still a work-in-progress.
