@@ -5,12 +5,6 @@
   weight = 1000
 
 [[docs]]
-  name = "Spec"
-  identifier = "spec"
-  url = "/docs/spec/"
-  weight = 2000
-
-[[docs]]
   name = "Tokenomic"
   identifier = "tokenomic"
   url = "/docs/tokenomic/"

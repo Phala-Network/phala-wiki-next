@@ -38,4 +38,4 @@ On May 14th, 2021, Khala Network, Phala's canary network, has won the slot aucti
 
 {{< button "pdiem" "Learn pDiem" >}}
 
-[Link button](http://example.com/){: .btn }
+

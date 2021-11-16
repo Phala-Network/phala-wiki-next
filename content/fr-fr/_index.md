@@ -8,7 +8,7 @@ draft: false
 
 # Le réseau Phala
 
-Le réseau Phala garantit l'exécution fiable des contrats intelligents tout en gardant les données secrètes. Les contrats confidentiels sont exécutés dans des nœuds de travail TEE dotés de matériels informatiques de confiance, ce qui garantit le secret des données du contrat..
+Le réseau Phala garantit l'exécution fiable des contrats intelligents tout en gardant les données secrètes. Les contrats confidentiels sont exécutés dans des nœuds de travail TEE dotés de matériels informatiques de confiance, ce qui garantit le secret des données du contrat.
 
 {{< button "docs/" "Docs" >}} {{< button "https://phala.network" "Page d'accueil" >}}
 
