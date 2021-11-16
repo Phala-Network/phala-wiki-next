@@ -53,7 +53,7 @@
   weight = 10000
 
 [[docs]]
-  name = "Developer"
+  name = "Developer Guide"
   identifier = "developer"
   url = "/docs/developer/"
   weight = 11000

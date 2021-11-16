@@ -26,7 +26,7 @@ On May 14th, 2021, Khala Network, Phala's canary network, has won the slot aucti
 
 (Our roadmap. 🚀🚀🚀)
 
-## Please choose a topic
+## Choose a Topic
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 

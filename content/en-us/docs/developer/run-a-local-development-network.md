@@ -1,12 +1,12 @@
 ---
-title: "1.1 Run a Local Development Network"
+title: "1.2 Run a Local Development Network"
 weight: 11011
 menu:
   docs:
     parent: "developer"
 ---
 
-> Basic understanding of Linux shell and compiling is necessary to follow this tutorial.
+> Understanding of Linux shell is necessary to follow this tutorial. <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> may help.
 
 ## Overview
 
@@ -18,8 +18,8 @@ In this tutorial, we're going to set up a "Hello World" development environment.
 A full Phala Network stack has three components plus a Web UI. The core components are at [Phala-Network/phala-blockchain](https://github.com/Phala-Network/phala-blockchain):
 
 - `phala-node`: The Substrate blockchain node
-- `pRuntime`: The TEE runtime. Contracts runs in pRuntime
-- `phost`: The Substrate-TEE bridge relayer. Connects the blockchain and pRuntime
+- `pRuntime`: The TEE runtime. Contracts runs in `pRuntime`
+- `phost`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
 <img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
 
