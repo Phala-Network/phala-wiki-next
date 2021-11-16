@@ -1,3 +1,9 @@
+[[docs]]
+  name = "Phala Network"
+  identifier = "phala-network"
+  url = "/fr-fr/docs/phala-network/"
+  weight = 1000
+
 [[main]]
   name = "Docs"
   url = "/docs/"
