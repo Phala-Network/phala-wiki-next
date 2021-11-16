@@ -10,7 +10,7 @@ draft: false
 
 Phala Network is a Web 3.0 computing cloud that supports data privacy while remaining trustless. Unlike centralized cloud service, Phala doesn’t own any server or data center. Anyone can provide permissionless servers into Phala Network, and because of a clever combination of blockchain and trusted execution environments (TEE), we can make sure the servers can’t be evil even when they are in an edge network situation. Together, this creates the infrastructure for a powerful, secure, and scalable trustless computing cloud.
 
-{{< button "docs/" "Docs" >}} {{< button "https://phala.network" "Homepage" >}}
+{{< button "phala-network/phala-network/" "Docs" >}} {{< button "https://phala.network" "Homepage" >}}
 
 {{< /column >}}
 {{< column >}}
