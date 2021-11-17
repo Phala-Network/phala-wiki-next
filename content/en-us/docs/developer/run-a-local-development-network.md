@@ -140,7 +140,7 @@ More content coming soon. (WSL to be tested).
 
 ### Mac
 
-> Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM). Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWSs</a>.
+> Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM). Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWS</a>.
 
 Specific instructions using a VM from MacOS to be added soon...
 
