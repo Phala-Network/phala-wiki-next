@@ -46,7 +46,7 @@ It will also need a motherboard and BIOS which support using Intel SGX to run a 
 
 ## Check Your Storage
 
-Storing your blockchain data on a mechanical HDD will result in *extremely* slow sync speeds, taking several days to complete at each restart of `pruntime`. [See bug #554.](https://github.com/Phala-Network/phala-blockchain/issues/554) For this reason in practice it is *required* to use SSDs to run Phala, currently a unit over 512GB is the bare minimum while a 1TB is a sensible choice for the near future.
+Storing your blockchain data on a mechanical HDD will result in *extremely* slow sync speeds, taking several days to complete at each restart of `pruntime`. [See bug #554.](https://github.com/Phala-Network/phala-blockchain/issues/554) For this reason in practice it is *required* to use SSDs to run Phala Network, currently a unit over 512GB is the bare minimum while a 1TB is a sensible choice for the near future.
 
 ## Supported Operating Systems: Ubuntu 18.04 and 20.04
 
