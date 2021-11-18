@@ -12,7 +12,7 @@ In this chapter, we try to give a brief introduction to the structure of Phala b
 
 - `phala-node`: The Substrate blockchain node
 - `pRuntime`: The TEE runtime. Contracts runs in `pRuntime`
-- `phost`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
+- `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
 <img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
 

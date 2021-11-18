@@ -19,7 +19,7 @@ A full Phala Network stack has three components plus a Web UI. The core componen
 
 - `phala-node`: The Substrate blockchain node
 - `pRuntime`: The TEE runtime. Contracts runs in `pRuntime`
-- `phost`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
+- `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
 <img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
 
@@ -98,16 +98,27 @@ sudo ./phala_quick_install.sh
   sudo npm install -g yarn
   yarn set version berry
   ```
+
+### Windows
+
+More content coming soon. (WSL to be tested).
+
+### Mac
+
+> Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM). Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWS</a>.
+
+Specific instructions using a VM from MacOS to be added soon...
+
 #### Test the Installation
 
 You can test the installation by running the following commands. The output should match the sample outputs, or with a slightly higher version.
 
 ```bash
 rustup --version
-# rustup 1.22.1 (b01adbbc3 2020-07-08)
+# rustup 1.24.3 (ce5817a94 2021-05-31)
 
 cargo --version
-# cargo 1.46.0 (149022b1d 2020-07-17)
+# cargo 1.55.0 (32da73ab1 2021-08-23)
 
 echo $SGX_SDK
 # /opt/intel/sgxsdk
@@ -120,10 +131,10 @@ clang --version
 # InstalledDir: /usr/bin
 
 node --version
-# v12.16.3
+# v16.10.0
 
 yarn --version
-# 2.1.1
+# 1.22.15
 ```
 
 Finally, let’s clone the code. Notice that the entire tutorial is on the `encode-hackathon-2021` *branch* for the blockchain.
@@ -134,71 +145,55 @@ git clone --recursive --branch encode-hackathon-2021 https://github.com/Phala-Ne
 # Clone the JS SDK repo
 git clone https://github.com/Phala-Network/js-sdk
 ```
-### Windows
-
-More content coming soon. (WSL to be tested).
-
-### Mac
-
-> Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM). Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWS</a>.
-
-Specific instructions using a VM from MacOS to be added soon...
 
 ## Build the core blockchain
 
-Now we already have the both repos `phala-blockchain` and `apps-ng` in the working directory. Let's start to build the the core blockchain first. The blockchain on the **`helloworld` branch** is based on an old version of Substrate, therefore we'll use an old version of Rust to build it.
+Now we have both repos `phala-blockchain` and `js-sdk` in the working directory. Let’s start to build the core blockchain first.
 
 ```bash
 # Build the core blockchain
-rustup install nightly-2020-10-01-x86_64-unknown-linux-gnu
-rustup target add wasm32-unknown-unknown --toolchain nightly-2020-10-01
 cd phala-blockchain/
-cargo +nightly-2020-10-01 build --release
+cargo build --release
+```
+To build `pRuntime` execute the following command:
 
+```bash
 # Build pRuntime (TEE Enclave)
-cd ./pruntime/
+cd ./standalone/pruntime/
 SGX_MODE=SW make
 ```
 
-> **Notes on Build the core blockchain**
+> **Notes on building the core blockchain**
 >
-> You would usually use the latest version of Substrate and the Rust compiler to build the core blockchain. The build would therefore be simplified to:
+>The compilation takes from 20 mins to 60 mins depending on your internet connection and CPU performance. After building, you will get the three binary files:
 >
-> ```bash
-> # Build the core blockchain
-> cd phala-blockchain/
-> cargo build --release
-> ```
-
-The compilation takes from 20 mins to 60 mins depending on your internet connection and CPU performance. After building, you will get the three binary files:
-
-- `./target/release/phala-node`: The Substrate node
-- `./target/release/phost`: The Substrate-to-TEE bridge relayer
-- `./pruntime/bin/app`: The TEE worker
+>- `./target/release/phala-node`: The Substrate node
+>- `./target/release/pherry`: The Substrate-to-TEE bridge relayer
+>- `./standalone/pruntime/bin/app`: The TEE worker
 
 > **Notes on `SGX_MODE`**
 >
-> The SGX SDK supports software simulation mode and hardware mode. `SGX_MODE=SW` enables the simulation mode. The software mode is for easy development, where the hardware enclave is not required. You can even run it on a virtual machine or a computer with an AMD cpu. However, only the hardware mode can guarantee the security and the confidentiality of the trusted execution. To enable the hardware mode, you have to install [Intel SGX DCAP Driver](https://download.01.org/intel-sgx/sgx-dcap/1.8/linux/distro/ubuntu18.04-server/) and the platform software shipped with the driver, and pass `SGX_MODE=HW` to the toolchain.
+> The SGX SDK supports software simulation mode and hardware mode. `SGX_MODE=SW` enables the simulation mode. The software mode is for easy development, where the hardware enclave is not required. You can even run it on a virtual machine or a computer with an AMD cpu. However, only the hardware mode can guarantee the security and the confidentiality of the trusted execution. To enable the hardware mode, you have to install [Intel SGX DCAP Driver](https://download.01.org/intel-sgx/sgx-dcap/1.12/linux/distro/ubuntu20.04-server/) and the platform software shipped with the driver, and pass `SGX_MODE=HW` to the toolchain.
 
-The three core blockchain components work together to bring the full functionalities. Among them, `phala-node` and `pruntime` should be launched first, and `phost` follows:
+The three core blockchain components work together to bring the full functionalities. Among them, `phala-node` and `pruntime` should be launched first, and `pherry` follows:
 
 ```bash
 # In terminal window 1: phala-node
 ./target/release/phala-node --dev
 
 # In terminal window 2: pruntime
-cd pruntime/bin
-./app
+cd standalone/pruntime/bin
+./app -c 0
 
-# In terminal window 3: phost
-./target/release/phost --dev
+# In terminal window 3: pherry
+./target/release/pherry --dev --no-wait
 ```
 
 ![](/images/docs/core-terminal.gif)
 
-(Core components running and producing logs)
+(Core components running and producing logs. _Directory varies in newer versions of phala_)
 
-Once they are launched successfully, they should output logs as shown in the GIF above. Notice that we pass the `--dev` flag to `phala-node` and `phost` to indicate we are in the development network.
+Once they are launched successfully, they should output logs as shown in the GIF above. Notice that we pass the `--dev` flag to `phala-node` and `pherry` to indicate we are in the development network.
 
 The three core blockchain components are connected via TCP (WebSocket and HTTP). Please ensure your system have the TCP ports not occupied with other programs. By default they use the following ports:
 
@@ -208,44 +203,39 @@ The three core blockchain components are connected via TCP (WebSocket and HTTP).
 - `pruntime`
   - 8000: HTTP Restful RPC port
 
-`phost` doesn't listen to any ports but connect to `phala-node`'s WebSocket port and `pruntime`'s HTTP RPC port.
+`pherry` doesn’t listen to any ports but connects to `phala-node`’s WebSocket port and `pruntime`’s HTTP RPC port. You can change the default ports of `phala-node` and `pherry` with command line arguments (check the latest argument list with the suffix `--help`). And for `pruntime`, just edit the `Rocket.toml` config file under `pruntime/bin` and restart it.
 
-You can safely shutdown the three program by <kbd>Ctrl</kbd> + <kbd>C</kbd>. `phala-node` saves the blockchain database on your disk. So if the blockchain gets messed up, you may want to reset it by:
-
-```bash
-./target/release/phala-node purge-chain --dev
-```
+You can safely shutdown the three program by <kbd>Ctrl</kbd> + <kbd>C</kbd>. Since `--tmp` is specified for `phala-node`, no database will be left after you shut it down. So a fresh start every time you run it!
 
 ## Build the Web UI
 
-The Web UI frontend is developed with `node.js`, `yarn` and `react`. It's easy to build and launch the frontend.
+The Web UI frontend is developed with `node.js` and managed by `yarn`. It provides the frontend you need to interact with our `GuessNumber` and `BtcPriceBot` demo contracts. Just give it a try!
 
 ```bash
-cd apps-ng
+cd js-sdk/packages/example
+# you need to set the `NEXT_PUBLIC_BASE_URL` to the port of `pruntime`
+# and `NEXT_PUBLIC_WS_ENDPOINT` to `phala-node` ws port
+cp .env .env.local
+
 yarn
 yarn dev
 ```
 
-It may take a few minutes to download the dependencies and build the frontend. By default the page is served at <http://localhost:3000>. So make sure the port 3000 is available. Then it should produce some logs like below:
+It may take a few minutes to download the dependencies and to build the frontend. By default the page is served at <http://localhost:3000>. So make sure the port 3000 is available. Then should produce the following logs:
 
 ```log
-ready - started server on http://localhost:3000
-> Using "webpackDevMiddleware" config function defined in default.
-> Using external babel configuration
-event - compiled successfully
-event - build page: /[...slug]
-event - build page: /
+rready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /home/user/phala-network/js-sdk/packages/example/.env.local
+info  - Loaded env from /home/user/phala-network/js-sdk/packages/example/.env
+info  - Using webpack 5. Reason: Enabled by default https://nextjs.org/docs/messages/webpack5
 event - compiled successfully
 ```
 
-![](/images/docs/apps-ng-landing.png)
-(Web UI landing page)
-
-The Web UI connects to both `phala-node` and `pruntime` by their default RPC endpoints. If everything is configured correctly, you will see the wallet unlock screen in the landing page as shown above. You should be able to select the well-known development accounts (Alice, Bob, etc) in the drop box.
+The Web UI connects to both `phala-node` and `pruntime` by their default RPC endpoints.
 
 > **Notes for Remote Access**
 >
-> In a case where you run your blockchain and WEB UI on your REMOTE_SERVER and try to access them elsewhere, you can forward the ports with `ssh` command. For example,
+> In a case where you run your blockchain and WEB UI on your REMOTE_SERVER and try to access them elsewhere, you can forward the ports with `ssh` in the CLI. For example:
 >
 > ```bash
 > ssh -N -f USER@REMOTE_SERVER -L 3000:localhost:3000 -L 9944:localhost:9944 -L 8000:localhost:8000
@@ -257,46 +247,63 @@ The Web UI connects to both `phala-node` and `pruntime` by their default RPC end
 > - 9944: Substrate WebSocket RPC port of `phala-node`
 > - 8000: HTTP Restful RPC port of `pruntime`
 >
-> and you can visit the Web UI at <http://localhost:3000>.
+> Now, you may visit the Web UI at <http://localhost:3000>.
 
-## Send some secret tokens
+The main page of Web UI looks like this:
 
-In the last two sections, we have built and launched `phala-node`, `pruntime`, and `phost` in development mode, and connect the Web UI to the development network. Now we are ready to try the secret wallet feature in Phala Network!
+![](/images/docs/js-sdk-1.png)
 
-Let's select Alice and unlock the wallet. Alice is a built-in test account with 10,000 PHA on the blockchain. This PHA token is the native token. It's transparent on-chain like a typical Substrate blockchain, managed by Balances pallet.
+To experience the demo contracts, you will need an account. For development, we recommend not to use your real Substrate account with funds. A good choice is for development to import `Alice` to your _Polkadot.js_ extension since she is the pre-defined root account and is allowed to invoke privileged operations. **DO NOT** transfer real funds to your `Alice` account.
 
-![](/images/docs/apps-ng-init-wallet.png)
-(Secret wallet dapp)
+You can get the secret seed of `Alice` with the following command:
 
-However, the "secret assets" wallet below is very different. Secret assets are stored in confidential contracts inside TEE enclaves. Like what the name says, the secret assets are private and invisible on the blockchain.
+```bash
+# in phala-blockchain folder
+./target/release/phala-node key inspect //Alice
+# Secret Key URI `//Alice` is account:
+#   Secret seed:       0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a
+#   Public key (hex):  0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d
+#   Public key (SS58): 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+#   Account ID:        0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d
+#   SS58 Address:      5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+```
 
-Click "Convert to Secret PHA" button to transfer **PHA** to **Secret PHA**. You will see your PHA balance reduced first, and after around ten seconds, the Secret PHA balance will increase by the same amount, except some transaction fee.
+Then import the secret seed into your Polkadot.js extension
 
-> What just happend?
->
-> You created a Substrate transaction to send some funds to the Phala pallet. The funds are stored in the pallet, and it triggered a **confidential transaction** to issue the same amount of the token in the secret wallet in TEE enclaves.
->
-> It takes ~6s to include a Substrate transaction in the blockchain, and then another 6s to finalize the block. Once the transaction is finalized, it triggers a "TransferToTee" event, relayed to `pruntime` via the relayer, and the confidential contract increases the balance. Finally the Web UI queries the confidential contract to get the updated balance.
+![](/images/docs/js-sdk-2.png)
 
-There are plenty of things you can play with the secret wallet:
+and paste the secret seed regardless of the mnemonic hint
 
-- convert the secret assets back to on-chain assets;
-- transfer secret assets just like ordinary assets on every Substrate blockchain;
-- and even issue or destroy your own secret tokens
+![](/images/docs/js-sdk-3.png)
 
-All the above functions are made by confidential transaction. Nobody can see the content of the transaction because the body is encrypted. By clicking "Polkadot UI" button in the navigation bar, it will bring you to the polkadot.js apps you are familiar with. After sending an encrypted transaction by clicking the "Secret Transfer" button, you can find the encrypted transaction wrapped by `phalaModel.pushCommand` extrinsic from the block explorer as shown below.
+Now you are good to go.
 
-<img src="/images/docs/polkadotjs-pushCommand.png" style="max-height: 200px;">
+### Play the `GuessNumber`
 
-(An encrypted confidential transaction on a blockchain explorer)
+#Authorization
+Now let’s play with a contract. Recall the knowledge about **Commands and Queries in previous chapter**. The first thing our contract propose is to sign a certificate. Such a temporary certificate is used to encrypt all the Queries. While every time you try to send a Command, the Polkadot.js extension will ask for your signature (since Commands can change the state, it is more critical than Queries).
+
+![](/images/docs/js-sdk-4.png)
+
+Don’t miss the prompt since there are not always pop-ups.
+
+![](/images/docs/js-sdk-5.png)
+
+### Play with it
+
+![](/images/docs/js-sdk-6.png)
+
+By default, the random number is 0. Click `Reset Number`, sign the Command, and start the game. If you log in as the root account or contract owner, there is a cheat button for you to peek at the secret. So no more spoiling, just play with it.
+
+If you are curious about how this contract is implemented, the following chapter will walk you through it.
 
 ## Conclusion
 
 Congratulations! Finally, you have followed the tutorial to:
 
-- Prepare a ready-to-hack development environment
-- Download, build, and started a full stack development mode Phala Network
-- Connect to the network via the Web UI and try the secret wallet dapp
+- Prepare a ready-to-hack development environment.
+- Download, build, and started a full stack development mode Phala Network.
+- Connect to the network via the Web UI and try the `GuessNumber` game.
 
 Now you are familiar with building and running a development network. Hold tight! In the next chapter, we are going to build the first confidential contract together!
 

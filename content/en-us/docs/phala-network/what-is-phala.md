@@ -30,12 +30,12 @@ On May 14th, 2021, Khala Network, Phala's canary network, has won the slot aucti
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 
-{{< button "/tech-specs/technical-specification" "Tech Spec" >}}
+{{< button "/en-us/docs/phala-network/what-is-phala/" "What is Phala?" >}}
 
-{{< button "khala-mining" "Mine on Khala" >}}
+{{< button "/en-us/docs/phala-network/technical-specification/" "Tech Specs" >}}
 
-{{< button "gatekeeper" "Run a Gatekeeper" >}}
+{{< button "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Mine on Khala" >}}
 
-{{< button "pdiem" "Learn pDiem" >}}
+{{< button "/en-us/docs/pdiem/about-pdiem/" "Learn pDiem" >}}
 
 
