@@ -9,9 +9,10 @@ menu:
 
 Khala Network is Phala's canary network on Kusama Parachain featuring decentralized TEE mining. We provide an overview to setup the mining environment, followed by a detailed explanation of each step.
 
-We highly recommend miners to first read about Phala's [tokenomic]({{< relref "docs/tokenomic/" >}}) and [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}}) to understand the calculation of incomings and how the mining proceeds.
+We highly recommend miners to first read about Phala's [tokenomics]({{< relref "docs/tokenomic/" >}}) and [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}}) to understand the calculation of incomings and how the mining proceeds.
 
-If you have any questions, you can always reach out for help:
+## Community
+If you have any questions, you can always reach out to the Phala community for help:
 
 <div class="mediaList">
   <div class="item">
@@ -44,31 +45,45 @@ If you have any questions, you can always reach out for help:
   </div>
 </div>
 
-Here are some note that Khala needs.
+## Khala Components
 
-- Khala Polkadot.js UI: [Link](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/explorer)
+Khala requires the following components:
+
+<div class="mediaList">
+  <div class="item">
+     <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/explorer" target="_blank">
+        <svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <img src="/images/docs/polkadot-js.svg" alt="Khala Polkadot.js UI"> <p>Khala Polkadot.js</p>
+        </svg>
+     </a>
+  </div>
+  <div class="item">
+     <a href="https://khala.subscan.io/" target="_blank">
+        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <img src="/images/docs/khala-button.webp" alt="\nKhala Blockchain Explorer">
+           <p>Khala Blockchain Explorer</p>
+        </svg>
+     </a>
+  </div>
+  <div class="item">
+     <a href="https://app.phala.network/en/" target="_blank" rel="noopener noreferrer">
+        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <img src="/images/docs/Phala_logo_blk.jpeg" alt="\nKhala App">
+           <p>Khala App</p>
+        </svg>
+     </a>
+  </div>
+</div>
+
 - Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
-- Khala blockchain explorer: <https://khala.subscan.io/>
-- Khala App：<https://app.phala.network/>
-- Khala Console: <https://app.phala.network/console>
+- Khala Console: <a href="https://app.phala.network/en/mining/" target="_blank">Mining Console</a>
 
-### I. Getting Started
+## Please choose a topic
 
-- [1.1 Check Your Hardware, BIOS and System]({{< relref "docs/khala-mining/1-1-hardware-requirements" >}})
-- [1.2 Install Phala Tools]({{< relref "docs/khala-mining/1-2-download-setup-scripts" >}})
-- [1.3 Check the SGX Capability and Confidence Level]({{< relref "1-3-confidential-level-evaluation" >}})
-- [1.4 Benchmarking]({{< relref "docs/khala-mining/1-4-benchmarking" >}})
+<!-- {{< button "developer" "Build on Phala" >}} -->
 
-### II. Deploying Khala Network
+{{< button "/en-us/docs/khala-mining/1-1-hardware-requirements/" "Getting Started" >}}
 
-- [2.1 Configuration]({{< relref "docs/khala-mining/2-solo-mining" >}})
-- [2.2 Deploy Worker Node]({{< relref "docs/khala-mining/2-1-deploy-worker-node" >}})
-- [2.3 Verify Worker Status]({{< relref "docs/khala-mining/2-2-verify-worker-status" >}})
-- [2.4 Upgrade Worker Node]({{< relref "docs/khala-mining/2-3-upgrade-worker-node" >}})
-- [2.5 Use Console to Manage Your Mining]({{< relref "docs/khala-mining/2-4-console" >}})
+{{< button "/en-us/docs/khala-mining/2-solo-mining/" "Deploy Khala Node" >}}
 
-### III. FAQ
-
-- [Frequently Asked Questions]({{< relref "docs/khala-mining/4-faq" >}})
-- [How to get better peers connectivity]({{< relref "docs/khala-mining/4-1-How-to-get-better-peers-connectivity" >}})
-- [How to fast sync your node to you haven't fully synced yet]({{< relref "docs/khala-mining/4-2-How-to-fast-sync-node-use-snapshot" >}})
+{{< button "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Troubleshoot" >}}
