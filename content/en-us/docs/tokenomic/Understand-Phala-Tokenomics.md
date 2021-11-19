@@ -4,7 +4,7 @@ weight: 3001
 draft: false
 menu:
   docs:
-    parent: "tokenomic"
+    parent: "Tokenomics"
 ---
 
 > This article is a preview of Konstantin Shamruk’s upcoming “Phala Economics White Paper V0.9”. It will also be submitted to the Khala Network Council as a proposal, and will be launched after the democratic referendum is passed.
