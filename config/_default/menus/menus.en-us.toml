@@ -5,9 +5,9 @@
   weight = 1000
 
 [[docs]]
-  name = "Tokenomic"
-  identifier = "tokenomic"
-  url = "/docs/tokenomic/"
+  name = "Tokenomics"
+  identifier = "tokenomics"
+  url = "/docs/tokenomics/"
   weight = 3000
 
 [[docs]]

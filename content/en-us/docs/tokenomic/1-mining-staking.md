@@ -1,9 +1,9 @@
 ---
-title: "1 TEE Mining Staking"
+title: "TEE Mining Staking"
 weight: 3002
 menu:
   docs:
-    parent: "Tokenomics"
+    parent: "tokenomics"
 ---
 
 ## Introduction
