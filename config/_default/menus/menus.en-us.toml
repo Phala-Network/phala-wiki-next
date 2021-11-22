@@ -5,6 +5,12 @@
   weight = 1000
 
 [[docs]]
+  name = "Developer Guide"
+  identifier = "developer"
+  url = "/docs/developer/"
+  weight = 11000
+
+[[docs]]
   name = "Tokenomics"
   identifier = "tokenomics"
   url = "/docs/tokenomics/"
@@ -29,13 +35,13 @@
   weight = 6000
 
 [[docs]]
-  name = "Para Mining"
+  name = "Para-2 Testnet"
   identifier = "para-mining"
   url = "/docs/para-mining/"
   weight = 7000
 
 [[docs]]
-  name = "Prb"
+  name = "Runtime Bridge"
   identifier = "prb"
   url = "/docs/prb/"
   weight = 8000
@@ -51,12 +57,6 @@
   identifier = "pDiem"
   url = "/docs/pDiem/"
   weight = 10000
-
-[[docs]]
-  name = "Developer Guide"
-  identifier = "developer"
-  url = "/docs/developer/"
-  weight = 11000
 
 # [[docs]]
 #   name = "Gatekeeper"
