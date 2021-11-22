@@ -85,6 +85,7 @@ Even though combined both Logan and Kevin vote with more PHA than Peter, the loc
 
 Depending on which entity proposed the proposal and whether all council members voted yes, there are three different scenarios. We can use the following table for reference.
 
+
 |          **Entity**          |                   **Metric**                   |
 | :--------------------------: | :--------------------------------------------: |
 |            Public            | Positive Turnout Bias (Super-Majority Approve) |
@@ -148,12 +149,14 @@ turnout = 750
 electorate = 1500
 ```
 
+
 ![\Large \frac{450}{\sqrt{750}}&space;<&space;\frac{600}{\sqrt{1500}}](https://latex.codecogs.com/svg.latex?\large&space;\frac{450}{\sqrt{750}}&space;<&space;\frac{600}{\sqrt{1500}})
 
 ![\Large {16.432}&space;<&space;{15.492}](https://latex.codecogs.com/svg.latex?\large&space;{16.432}&space;<&space;{15.492})
 
 Since the above example is a public referendum, `Super-Majority Approve` would be used to calculate the result. `Super-Majority Approve` requires more `aye` votes to pass the referendum when turnout is low, therefore, based on the above result, the referendum will be rejected. In addition, only the winning voter's tokens are locked. If the voters on the losing side of the referendum believe that the outcome will have negative effects, their tokens are transferrable so they will not be locked into the decision. Moreover, winning proposals are autonomously enacted only after some enactment
 period.
+
 
 #### Voluntary Locking
 
@@ -214,6 +217,7 @@ For a referendum to be proposed by the council, a strict majority of members mus
 Council motions which pass with a 3/5 (60%) super-majority - but without reaching unanimous
 support - will move to a public referendum under a neutral, majority-carries voting scheme. In the case that all members of the council vote in favor of a motion, the vote is considered unanimous and becomes a referendum with negative adaptive quorum biasing.
 
+
 ### Canceling
 
 A proposal can be canceled if the technical committee unanimously agrees to
@@ -258,6 +262,7 @@ Let's take a look at the example below.
 
 The above example shows that candidate C wins the election in round 1, while candidates A, B, D & E keep remaining on the candidates' list for the next round.
 
+
 |      Round 2      |     |                |     |     |
 | :---------------: | :-: | :------------: | :-: | :-: |
 | **Token Holders** |     | **Candidates** |     |     |
@@ -274,12 +279,13 @@ This is a temporary governance configuration for the initial phase of Phala. If 
 
 ### Prime Members
 
-The council, being an instantiation of Substrate's Collective pallet, implements what's called a _prime member_ whose vote acts as the default for other members that fail
+The council, being an instantiation of Substrate's Collective pallet,  implements what's called a _prime member_ whose vote acts as the default for other members that fail
 to vote before the timeout.
 
 The prime member is chosen based on a Borda count.
 
 The purpose of having a prime member of the council is to ensure a quorum, even when several members abstain from a vote. Council members might be tempted to vote a "soft rejection" or a "soft approval" by not voting and letting the others vote. With the existence of a prime member, it forces councillors to be explicit in their votes or have their vote counted for whatever is voted on by the prime.
+
 
 ## Technical Committee
 
