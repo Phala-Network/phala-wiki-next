@@ -29,7 +29,7 @@ It will also need a motherboard and BIOS which support using Intel SGX to run a 
 
    (This image shows a CPU that supports SGX.)
 
-## Check BIOS settings
+## Check BIOS Settings
 
 1. Boot your computer into BIOS: either search the internet for the right method to boot into BIOS on your computer or look for instructions on screen immediately after a cold boot; this varies by computer model.
 2. **Disable Secure Boot**. Go to `Security` -> `Secure Boot`, set it to `Disabled`.
@@ -43,6 +43,10 @@ It will also need a motherboard and BIOS which support using Intel SGX to run a 
    > sudo ./sgx_enable
    > ```
 5. Save and reboot.
+
+## Check Your Storage
+
+Storing your blockchain data on a mechanical HDD will result in *extremely* slow sync speeds, taking several days to complete at each restart of `pruntime`. [See bug #554.](https://github.com/Phala-Network/phala-blockchain/issues/554) For this reason in practice it is *required* to use SSDs to run Phala Network, currently a unit over 512GB is the bare minimum while a 1TB is a sensible choice for the near future.
 
 ## Supported Operating Systems: Ubuntu 18.04 and 20.04
 
