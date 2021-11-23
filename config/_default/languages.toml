@@ -13,8 +13,8 @@
     languageISO = "中文"
 
 [fr-fr]
-  languageName = "français"
+  languageName = "Français"
   contentDir = "content/fr-fr"
   weight = 20
   [fr-fr.params]
-    languageISO = "français"
+    languageISO = "Français"

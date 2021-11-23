@@ -7,9 +7,7 @@ menu:
     parent: "maintain"
 ---
 
-{{< tip "warning" >}}
-Collators on Phala (Khala) are supposed to be Gatekeepers, who also run the `pRuntime` as the Gatekeeper role, helping manage the keys in the network. However, Gatekeeper is not open for election now.
-{{< /tip >}}
+> Collators on Phala (Khala) are supposed to be Gatekeepers, who also run the `pRuntime` as the Gatekeeper role, helping manage the keys in the network. However, Gatekeeper is not open for election now.
 
 ## Concepts
 
@@ -33,8 +31,8 @@ The `CollatorSelection` pallet is a minimal PoS system. It has a configurable bo
 1. Create an account with a minimum amount of bound available (16 PHA by default)
 2. Deploy a collator full node with the `--collator` flag enabled
 3. Generate a session key. Two options:
-   1. Call RPC `api.rpc.author.rotateKeys()` to generate a new session key in the node, and note the public key it outputs
-   2. Generate the session key externally (dangerous), calculate the public key, and note it
+    1. Call RPC `api.rpc.author.rotateKeys()` to generate a new session key in the node, and note the public key it outputs
+    2. Generate the session key externally (dangerous), calculate the public key, and note it
 4. Set the session (public) key of the collator account by calling `session.setKeys()`
 5. Start the collator node
 

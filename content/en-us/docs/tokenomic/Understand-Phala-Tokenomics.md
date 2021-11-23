@@ -4,12 +4,12 @@ weight: 3001
 draft: false
 menu:
   docs:
-    parent: "tokenomic"
+    parent: "tokenomics"
 ---
 
-> This article is a preview of Konstantin Shamruk's upcoming "Phala Economics White Paper V0.9". It will also be submitted to the Khala Network Council as a proposal, and will be launched after the democratic referendum is passed.
+> This article is a preview of Konstantin Shamruk’s upcoming “Phala Economics White Paper V0.9”. It will also be submitted to the Khala Network Council as a proposal, and will be launched after the democratic referendum is passed.
 
-## Design targets
+## Design Targets
 
 The overall economic design is built to address these points:
 
@@ -56,7 +56,7 @@ Params used in simulation:
   - $\text{ConfidenceScore}_{4} = 0.8$
   - $\text{ConfidenceScore}_{5} = 0.7$
 
-### Performance test
+### Performance Test
 
 A performance test measures how much computation can be done in a unit time:
 
@@ -142,7 +142,7 @@ Proposed parameters:
 - $\rho^m_{\text{Khala}} = 1.00020$ (hourly)
 - $\rho^m_{\text{Phala}} = 1.00020$ (hourly)
 
-### Payout event
+### Payout Event
 
 In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current **_Miner Shares_**. However, the payout is also capped to ensure the payout doesn't cause $V$ to drop lower than it in the last payout event:
 
@@ -150,9 +150,7 @@ $$w(V_t) = \min(B \frac{\text{share}}{\Sigma \text{share}}, V_t - V_\text{last})
 
 where $B$ is the current network subsidy budget for the given payout period, and $V_\text{last}$ is the value promised at the last payout event, or $V^e$ if this is the first payout.
 
-{{< tip >}}
-Capping the payout is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise if V decreases over the time, miners are incentivezed to constantly reset their mining session.
-{{< /tip >}}
+> Capping the payout is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise if V decreases over the time, miners are incentivezed to constantly reset their mining session.
 
 Whenever $w(V_t)$ is paid to a miner, his $V$ will be updated accordingly:
 
