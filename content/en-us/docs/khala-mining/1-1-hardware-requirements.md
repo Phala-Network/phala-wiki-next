@@ -12,13 +12,24 @@ A system can potentially mine Phala if it meets these general requirements:
 
 ![](/images/docs/poc3/1-3.1.png)
 
-A motherboard and BIOS that supports [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) to run the Trusted Execution Environment (TEE) is required. 
+### Requirements Checklist
+
+- [x] An [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html)  compatible processor. 
+   - [Lookup your CPU](#1-lookup-your-processor) and see if it is compatible.
+   - [How to find new Intel® SGX processors](#2-confirm-the-cpu-supports-intel-sgx) if mine is not compatible.
+- [x] A motherboard and BIOS that supports [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) to run the [Trusted Execution Environment (TEE)](https://murdoch.is/talks/rhul14tee.pdf) is required.
+   - [Check BIOS compatability](#check-your-bios).
+- [x] A Solid-state drive (SSD) storage device
+   - Storing your blockchain data on a mechanical HDD will result in slow syncronosation speeds. At a minimum a 512GB SSD drive is recommended. 
+      - Refer to [issue #554.](https://github.com/Phala-Network/phala-blockchain/issues/554)
+- [x] Have a supported version of Ubuntu (18.04, 20.04, 21.04) installed and booted from it.
+   - See [Suported OS requirements](#supported-operating-systems). 
 
 ## Check Your CPU
 
 > Currently, only [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) is supported, hence an [Intel® SGX compatible CPU](https://www.intel.com/content/www/us/en/support/articles/000028173/processors.html) is a requirement.
 
-### 1. Look up your **Processor**
+### 1. Lookup Your **Processor**
 
 #### Windows
 
@@ -55,7 +66,7 @@ lscpu
 
 (Looking up the CPU model with the `lscpu` command in the Linux shell)
 
-### 2. Confirm the **CPU supports Intel® SGX**
+### 2. Confirm the **CPU Supports Intel® SGX**
 
 > Once you know your CPU's model name:
 > -  Lookup your Processor's Intel® SGX compatability in the [Intel® product specifications (ARK)](https://ark.intel.com/content/www/us/en/ark.html#@Processors)
@@ -111,23 +122,32 @@ If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced 
 > Do not forget to save your BIOS settings. 
 > - Reboot your machine after the settings are saved.
 
+## Supported Operating Systems 
 
-## Check Your Storage
+Ubuntu is recommended. You need to be able to boot your computer into a supported version of Ubuntu to mine. The following OS versions of Ubuntu have been reported to mine.
 
-Storing your blockchain data on a mechanical HDD will result in *extremely* slow sync speeds, taking several days to complete at each restart of `pruntime`. [See bug #554.](https://github.com/Phala-Network/phala-blockchain/issues/554) For this reason in practice it is *required* to use SSDs to run Phala Network, currently a unit over 512GB is the bare minimum while a 1TB is a sensible choice for the near future.
+> More information on how to [install Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview).
 
-## Supported Operating Systems: 
+### Ubuntu 18.04
 
-### Ubuntu 18.04 
+More information to be added soon.
 
 ### Ubuntu 20.04
 
-You'll need to be able to boot your computer into a supported version of Ubuntu to mine. Versions above 18.04 and 20.04 should work, but are not guaranteed.
+Using a Linux kernel version of `5.8.0-xxx` is recommended for Ubuntu 20.04.
 
-[Installing Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
+To find your Linux kernel version type:
 
-### References
+```bash
+hostnamectl | grep Kernel
+```
 
-1. [What is a Trusted Execution Environment (TEE)?
-   ](https://www.trustonic.com/technical-articles/what-is-a-trusted-execution-environment-tee/)
-2. [What is Intel SGX](https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html)
+More information to be added soon.
+
+### Ubuntu 21.04
+
+More information to be added soon.
+
+If you have any issues feel free to reach out to the community.
+
+
