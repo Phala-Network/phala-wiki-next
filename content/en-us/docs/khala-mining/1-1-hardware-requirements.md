@@ -1,5 +1,5 @@
 ---
-title: "1.1 Check Your Hardware, BIOS and System"
+title: "1.1 Hardware, BIOS and System Compatability"
 weight: 6011
 menu:
   docs:
@@ -12,43 +12,115 @@ A system can potentially mine Phala if it meets these general requirements:
 
 ![](/images/docs/poc3/1-3.1.png)
 
-It will also need a motherboard and BIOS which support using Intel SGX to run a Trusted Execution Environment (TEE).
+A motherboard and BIOS that supports [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) to run the Trusted Execution Environment (TEE) is required. 
 
 ## Check Your CPU
 
-1. Look up your computer's **Processor**. On Windows, you can find this in Control Panel/Settings, or right-click on the Start icon and select System. On Ubuntu, click in the upper-right corner, pick Settings, and then pick About.
+> Currently, only [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) is supported, hence an [Intel® SGX compatible CPU](https://www.intel.com/content/www/us/en/support/articles/000028173/processors.html) is a requirement.
 
-   ![](/images/docs/poc3/1-3.2.png)
+### 1. Look up your **Processor**
 
-2. Confirm the **CPU supports SGX**
+#### Windows
 
-   Open Intel's website at ark.intel.com and search for your exact CPU; and confirm that CPU supports Intel Software Guard Extensions (Intel SGX).
+> `Start` > `Settings` > `Control Panel`
+>> Note that you require a [supported Linux OS](#supported-operating-systems) to run a Phala miner.
 
-   ![](/images/docs/poc3/1-3.3.png)
-   ![](/images/docs/poc3/1-3.4.png)
+On Windows, head over to 'Control Panel/Settings,' or right-click on the Start icon and select 'System.' 
 
-   (This image shows a CPU that supports SGX.)
+#### Linux
 
-## Check BIOS Settings
+- #### With a GUI
 
-1. Boot your computer into BIOS: either search the internet for the right method to boot into BIOS on your computer or look for instructions on screen immediately after a cold boot; this varies by computer model.
-2. **Disable Secure Boot**. Go to `Security` -> `Secure Boot`, set it to `Disabled`.
-3. **Use UEFI Boot**. Go to `Boot` -> `Boot Mode`, and make it's set to `UEFI`.
-4. **Enable SGX Extensions**. Go to `Security` -> `SGX` (The exact name may vary by manufacturer), set it to `Enabled`.
-   > If you only see the `SGX: Software Controlled` option, you will have to later run [Intel's sgx-software-enable](https://github.com/intel/sgx-software-enable) in Ubuntu. You can follow Intel's instructions to build it from source and execute it. We also provide a prebuilt binary for Ubuntu 18.04 / 20.04 that can be found [here](https://github.com/Phala-Network/sgx-tools/releases/tag/0.1). You can download and execute it with the following commands:
+>  `Settings` > `About`
+
+On Ubuntu, click in the upper-right corner, pick 'Settings,' select 'About,' and look for 'Processor.'
+
+<p class="aligncenter">
+<img src="/images/docs/khala-mining/linux_settings.png" >
+</p>
+
+(Navigating to 'Settings' on a Desktop GUI to look up CPU specs)
+
+- #### Without GUI
+
+In case you do not have a GUI, enter the following command into your shell and look for your CPU's 'Model name:'
+
+```bash
+lscpu
+```
+
+<p class="aligncenter">
+<img src="/images/docs/khala-mining/CPU_Linux_check.gif" height="400">
+</p>
+
+(Looking up the CPU model with the `lscpu` command in the Linux shell)
+
+### 2. Confirm the **CPU supports Intel® SGX**
+
+> Once you know your CPU's model name:
+> -  Lookup your Processor's Intel® SGX compatability in the [Intel® product specifications (ARK)](https://ark.intel.com/content/www/us/en/ark.html#@Processors)
+
+On the [Intel® product specifications (ARK)](https://ark.intel.com/content/www/us/en/ark.html#@Processors)
+website, you will find information about your CPU's Intel® SGX compatibility. In addition, under the 'Security & Reliability' section, it will mention if your CPU is compatible or not.
+Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i78700-processor-12m-cache-up-to-4-60-ghz.html), a screenshot taken from the Intel® product specifications (ARK).
+
+<p class="aligncenter">
+<img src="/images/docs/khala-mining/SGX_comptible_ARK.png" >
+</p>
+
+(This image shows a CPU that supports Intel® SGX.)
+
+If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced search](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_SoftwareGuardExtensions=Yes%20with%20Intel%C2%AE%20ME&3_CoreCount-Min=8&2_StatusCodeText=4) option at the Intel® website to find your next processor. In general terms, the newer the processor is and the more cores it has, the greater the compatibility and the miner rating. 
+
+## Check Your BIOS
+
+> A mainboard supporting Intel® SGX and the BIOS settings listed below is required.
+
+### 1. Boot into BIOS. 
+
+   > Refer to these resources to 'boot into BIOS mode' from [Microsoft©](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) or [wikiHow](https://www.wikihow.com/Enter-BIOS).
+
+   Look for instructions to boot into your BIOS on the screen immediately after a cold boot; this varies by manufacturer. 
+
+### 2. **Disable Secure Boot**. 
+
+   > In the BIOS settings go to: `Security` > `Secure Boot` and set it to `Disabled`
+   > -  The terms in the BIOS menu may differ depending on your mainboard manufacturer.
+
+### 3. **Use UEFI Boot**. 
+
+   > In the BIOS menu under `Boot` > `Boot Mode` set it to `UEFI`.
+   > -  Refer to ['boot into UEFI mode'](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) for additional information.
+
+### 4. **Enable SGX Extensions**. 
+
+   > Go to `Security` > `Intel® SGX` (The exact name may vary by manufacturer), set it to `Enabled`.
    >
-   > ```bash
-   > wget https://github.com/Phala-Network/sgx-tools/releases/download/0.1/sgx_enable
-   > chmod +x sgx_enable
-   > sudo ./sgx_enable
-   > ```
-5. Save and reboot.
+   >> - Note: If you only see the Intel® `SGX: Software Controlled` or similar, you need to run the [Intel® Software Guard Extensions Software Enabling Application for Linux](https://github.com/intel/sgx-software-enable) after booting into your Ubuntu OS. Before executing the script, refer to the [Supported Operating Systems](#supported-operating-systems) section.
+   >>
+   >> - Phala also provides a prebuilt binary [here](https://github.com/Phala-Network/sgx-tools/releases/tag/0.1). 
+   >>  You can download and execute it with the following commands:
+   >> ```bash
+   >> wget https://github.com/Phala-Network/sgx-tools/releases/download/0.1/sgx_enable
+   >> chmod +x sgx_enable
+   >> sudo ./sgx_enable
+   >> ```
+
+### 5. Save & Reboot
+
+> Do not forget to save your BIOS settings. 
+> - Reboot your machine after the settings are saved.
+
 
 ## Check Your Storage
 
 Storing your blockchain data on a mechanical HDD will result in *extremely* slow sync speeds, taking several days to complete at each restart of `pruntime`. [See bug #554.](https://github.com/Phala-Network/phala-blockchain/issues/554) For this reason in practice it is *required* to use SSDs to run Phala Network, currently a unit over 512GB is the bare minimum while a 1TB is a sensible choice for the near future.
 
-## Supported Operating Systems: Ubuntu 18.04 and 20.04
+## Supported Operating Systems: 
+
+### Ubuntu 18.04 
+
+### Ubuntu 20.04
 
 You'll need to be able to boot your computer into a supported version of Ubuntu to mine. Versions above 18.04 and 20.04 should work, but are not guaranteed.
 
