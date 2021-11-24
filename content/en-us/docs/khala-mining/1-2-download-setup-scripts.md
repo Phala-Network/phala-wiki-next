@@ -12,7 +12,7 @@ Before you go further, please ensure that your have correct setup your hardware,
 
 ## Download Phala Scripts
 
-The Phala tools are availbale at [https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/main.zip](https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/main.zip), it can be downloaded with `wget` by executing the following commands in the terminal:
+The Phala mining tools are availbale on our [Phala Mining Script](https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/main.zip) repository on GitHub, it can be downloaded with `wget` by executing the following commands in the terminal:
 
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
