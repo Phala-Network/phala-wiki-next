@@ -1,5 +1,5 @@
 ---
-title: "2.4 Use Console to Manage Your Mining"
+title: "2.4 Use the Phala App to Manage Your Mining"
 weight: 6024
 menu:
   docs:
