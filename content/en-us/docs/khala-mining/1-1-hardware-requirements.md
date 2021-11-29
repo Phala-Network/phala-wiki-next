@@ -36,7 +36,7 @@ A system can potentially mine Phala if it meets these general requirements:
 
 #### Windows
 
-> `Start` > `Settings` > `Control Panel`
+> `Start` > :gear:`Settings` > :control_knobs:`Control Panel`
 >> Note that you require a [supported Linux OS](#supported-operating-systems) to run a Phala miner.
 
 On Windows, head over to 'Control Panel/Settings,' or right-click on the Start icon and select 'System.' 
