@@ -86,6 +86,8 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 
 If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced search](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_SoftwareGuardExtensions=Yes%20with%20Intel%C2%AE%20ME&3_CoreCount-Min=8&2_StatusCodeText=4) option at the Intel® website to find your next processor. In general terms, the newer the processor is and the more cores it has, the greater the compatibility and the miner rating. 
 
+:information_source: 
+
 ## Check Your BIOS
 
 > A mainboard supporting Intel® SGX and the BIOS settings listed below is required.
@@ -150,6 +152,49 @@ More information to be added soon.
 ### Ubuntu 21.04
 
 More information to be added soon.
+
+### Ubuntu 21.10
+
+For Ubuntu 21.10 we recommend kernel version `5.13.0-xxx`. 
+
+To find your Linux kernel version type:
+
+```bash
+hostnamectl | grep Kernel
+```
+Some packages do not come natively installed. It is therefore recommended to install the most crucial ones now as instructed below. 
+
+#### DCAP Driver for Intel® SGX
+
+First, install Rust with [rustup](https://rustup.rs/). This is needed to install the driver. 
+
+To install rustup:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+After successfully installing Rust, you need to install Rust nightly with the following command:
+
+```bash
+rustup default nightly
+```
+
+Then install the Foranix EDP target through executing:
+
+```bash
+rustup target add x86_64-fortanix-unknown-sgx --toolchain nightly
+```
+
+Now you are ready to Install the Intel® SGX driver. 
+
+```bash
+echo "deb https://download.fortanix.com/linux/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/fortanix.list >/dev/null
+curl -sSL "https://download.fortanix.com/linux/apt/fortanix.gpg" | sudo -E apt-key add -
+sudo apt-get update
+sudo apt-get install intel-sgx-dkms
+```
+
+You are now ready to proceed to the next section.
 
 If you have any issues feel free to reach out to the community.
 
