@@ -132,6 +132,9 @@ If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced 
 Ubuntu is recommended. You need to be able to boot your computer into a supported version of Ubuntu to mine. The following OS versions of Ubuntu have been reported to be compatible to mine.
 
 > More information on how to [install Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview).
+> - If you have no GUI or physicall access to the machine, you may want to use SSH. 
+>   - <a href="https://youtu.be/hQWRp-FdTpc?t=40" target="_blank">SSH crash course</a> expaining what SSH is and how to use it, may be a usefull resource.
+>   - <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> provides an overview of Linux and how to use the shell.
 
 ### Ubuntu 18.04
 <details><summary>Expand for installation instructions for Ubuntu 18.04</summary>
