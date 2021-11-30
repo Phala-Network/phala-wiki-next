@@ -40,6 +40,9 @@ Follow the commands below to prepare the environment. Some can be skipped if alr
 
 ### Linux
 
+<details><summary>Expand to see installation instrcutions for Linux</summary>
+<p>
+
 #### Install Dependencies (Linux)
 
 - Run the script to install and check required dependencies for Phala
@@ -98,6 +101,9 @@ sudo ./phala_quick_install.sh
   sudo npm install -g yarn
   yarn set version berry
   ```
+
+  </p>
+</details>
 
 ### Windows
 
