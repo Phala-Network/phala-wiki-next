@@ -174,6 +174,33 @@ To find your Linux kernel version type:
 hostnamectl | grep Kernel
 ```
 
+<details><summary>How to get the correct Kernel version.
+</summary>
+<p>
+
+Get the Linux Kernel utilities for Ubuntu 20.04.
+
+```bash
+git clone https://github.com/mtompkins/linux-kernel-utilities.git
+```
+
+```bash 
+cd linux-kernel-utilities/
+chmod +x *.sh
+```
+
+To see a list of available Kernel versions for your machine, execute the following command:
+
+```bash
+./compile_linux_kernel.sh
+```
+
+It is recommended to follow the instructions and select to install Ubuntu 20.04 Kernel version 5.8.
+
+</p>
+</details>
+
+\
 More information to be added soon.
 
 </p>
