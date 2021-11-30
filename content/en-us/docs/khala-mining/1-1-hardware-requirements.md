@@ -26,7 +26,7 @@ A system can potentially mine Phala if it meets these general requirements:
    - See [Suported OS requirements](#supported-operating-systems). 
 - [x] You require a minimum amount of 3 PHA to mine
    - Furthermore, you require [$S_{min}=k \sqrt{P}$](/en-us/docs/tokenomic/understand-phala-tokenomics/#minimum-stake) tokens to stake.
-      - Feel free to use our [spreadsheet](#TODO) containing the formulas from the PHA [tokenomics section](/en-us/docs/tokenomic/understand-phala-tokenomics) for your earnings estimates.
+      - Feel free to use our [spreadsheet](#TODO) containing the formulas from the PHA [tokenomics section](/en-us/docs/tokenomic/understand-phala-tokenomics) to estimate your required minimum tokens to stake.
       - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/docs/khala-user/stake-pool/) on how to delegate. 
 
 ## Check Your CPU
@@ -268,7 +268,8 @@ You are now ready to proceed to the next section.
 </details>
 
 \
-If you have any issues feel free to reach out to the community.
+\
+:point_down: If you have any issues feel free to reach out to the community. :point_down:
 
 <div class="mediaList">
   <div class="item">
