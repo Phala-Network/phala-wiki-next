@@ -10,7 +10,7 @@ menu:
 
 A system can potentially mine Phala if it meets these general requirements:
 
-![](/images/docs/poc3/1-3.1.png)
+![](/images/docs/khala-mining/mining_requirements_table.png)
 
 ### Requirements Checklist
 
