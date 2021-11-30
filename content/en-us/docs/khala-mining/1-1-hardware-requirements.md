@@ -129,15 +129,23 @@ If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced 
 
 ## Supported Operating Systems 
 
-Ubuntu is recommended. You need to be able to boot your computer into a supported version of Ubuntu to mine. The following OS versions of Ubuntu have been reported to mine.
+Ubuntu is recommended. You need to be able to boot your computer into a supported version of Ubuntu to mine. The following OS versions of Ubuntu have been reported to be compatible to mine.
 
 > More information on how to [install Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview).
 
 ### Ubuntu 18.04
+<details><summary>Expand for installation instructions for Ubuntu 18.04</summary>
+<p>
 
 More information to be added soon.
 
+</p>
+</details>
+
 ### Ubuntu 20.04
+
+<details><summary>Expand for installation instructions for Ubuntu 20.04</summary>
+<p>
 
 Using a Linux kernel version of `5.8.0-xxx` is recommended for Ubuntu 20.04.
 
@@ -149,11 +157,25 @@ hostnamectl | grep Kernel
 
 More information to be added soon.
 
+</p>
+</details>
+
 ### Ubuntu 21.04
+
+<details><summary>Expand for installation instructions for Ubuntu 21.04</summary>
+<p>
 
 More information to be added soon.
 
+</p>
+</details>
+
 ### Ubuntu 21.10
+
+Ubuntu 21.10 is currently the recommended Ubuntu version to use for mining.
+
+<details><summary>Expand for installation instructions for Ubuntu 21.10</summary>
+<p>
 
 For Ubuntu 21.10 we recommend kernel version `5.13.0-xxx`. 
 
@@ -179,7 +201,7 @@ After successfully installing Rust, you need to install Rust nightly with the fo
 rustup default nightly
 ```
 
-Then install the Foranix EDP target through executing:
+To install the Foranix EDP target through executing:
 
 ```bash
 rustup target add x86_64-fortanix-unknown-sgx --toolchain nightly
@@ -196,6 +218,10 @@ sudo apt-get install intel-sgx-dkms
 
 You are now ready to proceed to the next section.
 
+</p>
+</details>
+
+\
 If you have any issues feel free to reach out to the community.
 
 <div class="mediaList">
