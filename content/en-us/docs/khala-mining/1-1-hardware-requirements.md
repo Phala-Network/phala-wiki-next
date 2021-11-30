@@ -36,12 +36,21 @@ A system can potentially mine Phala if it meets these general requirements:
 
 #### Windows
 
+<details><summary>See how to lookup your CPU on Windows</summary>
+<p>
+
 > `Start` > :gear:`Settings` > :control_knobs:`Control Panel`
 >> Note that you require a [supported Linux OS](#supported-operating-systems) to run a Phala miner.
 
 On Windows, head over to 'Control Panel/Settings,' or right-click on the Start icon and select 'System.' 
 
+</p>
+</details>
+
 #### Linux
+
+<details><summary>See how to lookup your CPU's model on Linux</summary>
+<p>
 
 - #### With a GUI
 
@@ -69,6 +78,9 @@ lscpu
 
 (Looking up the CPU model with the `lscpu` command in the Linux shell)
 
+</p>
+</details>
+
 ### 2. Confirm the **CPU Supports Intel® SGX**
 
 > Once you know your CPU's model name:
@@ -84,9 +96,7 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 
 (This image shows a CPU that supports Intel® SGX.)
 
-If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced search](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_SoftwareGuardExtensions=Yes%20with%20Intel%C2%AE%20ME&3_CoreCount-Min=8&2_StatusCodeText=4) option at the Intel® website to find your next processor. In general terms, the newer the processor is and the more cores it has, the greater the compatibility and the miner rating. 
-
-:information_source: 
+:information_source: If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced search](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_SoftwareGuardExtensions=Yes%20with%20Intel%C2%AE%20ME&3_CoreCount-Min=8&2_StatusCodeText=4) option at the Intel® website to find your next processor. In general terms, the newer the processor is and the more cores it has, the greater the compatibility and the miner rating. 
 
 ## Check Your BIOS
 
@@ -108,10 +118,17 @@ If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced 
    > In the BIOS menu under `Boot` > `Boot Mode` set it to `UEFI`.
    > -  Refer to ['boot into UEFI mode'](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) for additional information.
 
-### 4. **Enable Intel® SGX Extensions**. 
+### 4. Save & Reboot
+
+> Do not forget to save your BIOS settings. 
+> - Reboot your machine after the settings are saved.
+
+### 5. **Enable Intel® SGX Extensions**. 
 
    > Go to `Security` > `Intel® SGX` (The exact name may vary by manufacturer), set it to `Enabled`.
    >
+   >> <details><summary> Expand for critical additional information :information_source: </summary> <p>
+   >>
    >> - Note: If you only see the Intel® `SGX: Software Controlled` or similar, you need to run the [Intel® Software Guard Extensions Software Enabling Application for Linux](https://github.com/intel/sgx-software-enable) after booting into your Ubuntu OS. Before executing the script, refer to the [Supported Operating Systems](#supported-operating-systems) section.
    >>
    >> - Phala also provides a prebuilt binary [here](https://github.com/Phala-Network/sgx-tools/releases/tag/0.1). 
@@ -121,11 +138,8 @@ If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced 
    >> chmod +x sgx_enable
    >> sudo ./sgx_enable
    >> ```
-
-### 5. Save & Reboot
-
-> Do not forget to save your BIOS settings. 
-> - Reboot your machine after the settings are saved.
+   >> </p>
+</details>
 
 ## Supported Operating Systems 
 
@@ -137,6 +151,7 @@ Ubuntu is recommended. You need to be able to boot your computer into a supporte
 >   - <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> provides an overview of Linux and how to use the shell.
 
 ### Ubuntu 18.04
+
 <details><summary>Expand for installation instructions for Ubuntu 18.04</summary>
 <p>
 
