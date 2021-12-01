@@ -109,12 +109,12 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 
    Look for instructions to boot into your BIOS on the screen immediately after a cold boot; this varies by manufacturer. 
 
-### 2. **Disable Secure Boot**. 
+### 2. **Disable Secure Boot** 
 
    > In the BIOS settings go to: `Security` > `Secure Boot` and set it to `Disabled`
    > -  The terms in the BIOS menu may differ depending on your mainboard manufacturer.
 
-### 3. **Use UEFI Boot**. 
+### 3. **Use UEFI Boot** 
 
    > In the BIOS menu under `Boot` > `Boot Mode` set it to `UEFI`.
    > -  Refer to ['boot into UEFI mode'](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) for additional information.
@@ -124,7 +124,7 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 > Do not forget to save your BIOS settings. 
 > - Reboot your machine after the settings are saved.
 
-### 5. **Enable Intel® SGX Extensions**. 
+### 5. **Enable Intel® SGX Extensions**
 
    > Go to `Security` > `Intel® SGX` (The exact name may vary by manufacturer), set it to `Enabled`.
    >

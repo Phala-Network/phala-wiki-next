@@ -6,15 +6,17 @@ menu:
     parent: "khala-mining"
 ---
 
-## Double Check the SGX Capability
+## Double Check the Intel® SGX Capability
 
 After the installation of your driver, please use the following utility to double check if everything goes well.
 
-- You can run the SGX test by the Phala scripts
+- You can run the Intel® SGX test by the Phala scripts
 
   ```bash
   sudo phala sgx-test
   ```
+
+> This script will install the docker, the Intel® SGX drivers and pull all the necessary Phala docker images.
 
 Please pay attention to the following checks:
 
