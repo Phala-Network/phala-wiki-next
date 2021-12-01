@@ -6,37 +6,44 @@ menu:
     parent: "developer"
 ---
 
-> Understanding of Linux shell is necessary to follow this tutorial. <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> may help.
+> Basic understanding of Linux shell and compilation is necessary to follow this tutorial. <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> may help.
 
 ## Overview
 
-In this tutorial, we're going to set up a "Hello World" development environment. We are going to deploy a full stack of the core blockchain and connect the Web UI to the blockchain. By the end of the tutorial, you will be able to:
+In this tutorial, we're going to set up a development environment. We are going to deploy a full stack of the core blockchain and connect the Web UI to the blockchain. By the end of the tutorial, you will be able to:
 
-- Send confidential transactions
-- Get a ready-to-hack version of Phala Network for building your own confidential Dapps
+- Send confidential Commands and Queries
+- Get a ready-to-hack version of Phala Network for building your confidential DApps
 
-A full Phala Network stack has three components plus a Web UI. The core components are at [Phala-Network/phala-blockchain](https://github.com/Phala-Network/phala-blockchain):
+A full Phala Network stack has three components, with an optional Javascript SDK. The core components are available at [Phala-Network/phala-blockchain](https://github.com/Phala-Network/phala-blockchain):
 
 - `phala-node`: The Substrate blockchain node
-- `pRuntime`: The TEE runtime. Contracts runs in `pRuntime`
+- `pRuntime`: The TEE runtime. Contracts run in `pRuntime`
 - `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
-<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
-
-(Phala architecture overview)
-
-
-The Web UI is at [Phala-Network/apps-ng](https://github.com/Phala-Network/apps-ng). The Web UI needs to connect to both the blockchain and the pRuntime in order to send transaction and queries.
+The Javascript SDK is at [Phala-Network/js-sdk](https://github.com/Phala-Network/js-sdk). The Web UI based on our SDK needs to connect to both the blockchain and the `pRuntime` to send Commands and Queries.
 
 ## Environment
 
-The development environment of Phala Network requires Linux, because it relies on [Linux Intel SGX SDK](https://01.org/intel-software-guard-extensions/downloads). Virtual machines should generally work. Phala Network doesn't work on Windows or macOS natively (sorry, Mac lovers), however we haven't tested WLS yet. Please let us know if you are the first to run it on WLS successfully!
+The development environment of Phala Network requires Linux because it relies on [Linux Intel SGX SDK](https://01.org/intel-software-guard-extensions/downloads). Virtual machines should generally work. Phala Network does work on Windows with some configuration changes, but does not work on macOS natively (sorry, Mac lovers).
 
-In this tutorial we assume the operating system is _Ubuntu 18.04_ or _Ubuntu 20.04_. Other Linux distributions should also work, but the instructions or command may vary.
-
+In this tutorial, we assume the operating system is *Ubuntu 20.04*. Though not tested yet, it should work with Ubuntu 18.04 out-of-box. Other Linux distributions should also work, but the instructions or commands may vary.
 It's required to have at least 4 cores and 8GB RAM to build the project including the core blockchain and the Web UI. Less than 4GB RAM may fail to build the Web UI.
 
 Follow the commands below to prepare the environment. Some can be skipped if already installed.
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Ubuntu</a>
+    <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Fedora</a>
+    <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Windows WSL</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+</div>
 
 ### Linux
 
