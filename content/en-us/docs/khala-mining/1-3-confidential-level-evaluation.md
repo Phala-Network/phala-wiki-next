@@ -16,7 +16,8 @@ After the installation of your driver, please use the following utility to doubl
   sudo phala sgx-test
   ```
 
-> This script will install the docker, the Intel® SGX drivers and pull all the necessary Phala docker images.
+> This script will install :whale: Docker, the required Intel® SGX drivers, and pull all the necessary Docker images for your Phala miner :rock::pick:.
+> - Please follow the instruction during installation.
 
 Please pay attention to the following checks:
 
@@ -110,6 +111,8 @@ debug: cause: aesm error code GetLicensetokenError_6
 ```
 
 If you can't run Phala pRuntime with both of them tagged as ✔, you may have to check whether your BIOS is the latest version with latest security patches. If you still can't run Phala pRuntime docker with the latest BIOS of your motherboard manufacturer, we are afraid you can't mine PHA for now with this motherboard.
+
+Your confidence level, referred to as the "Tier" in the table below, will appear in the last line of the report after executing `sudo phala sgx-test`.
 
 ## Confidence Level of a Miner
 

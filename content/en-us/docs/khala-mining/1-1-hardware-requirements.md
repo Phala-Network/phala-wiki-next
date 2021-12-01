@@ -241,6 +241,11 @@ To install rustup:
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+Follow the instructions in the script.
+
+> Do not forget to execute `source $HOME/.cargo/env` for the installation to work.
+
 After successfully installing Rust, you need to install Rust nightly with the following command:
 
 ```bash
@@ -261,6 +266,8 @@ curl -sSL "https://download.fortanix.com/linux/apt/fortanix.gpg" | sudo -E apt-k
 sudo apt-get update
 sudo apt-get install intel-sgx-dkms
 ```
+
+Follow the instructions in the installation script. You may need to reboot after successful completion.
 
 You are now ready to proceed to the next section.
 
