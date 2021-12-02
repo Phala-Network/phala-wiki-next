@@ -1,26 +1,73 @@
-.footer {
-  border-top: 1px solid $gray-200;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #EBEBEB;
-}
+.mediaList {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.footer ul {
-  margin-bottom: 0;
-}
+  @media (max-width: md) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 
-.footer li {
-  font-size: $font-size-sm;
-  margin-bottom: 0;
-}
+  .qrcode {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    border: 2px solid $primary;
+    z-index: 100;
+    display: none;
+    width: 200px;
+    height: 200px;
 
-@include media-breakpoint-up(md) {
-  .footer li {
-    font-size: $font-size-base;
+    > div {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 3px solid $black;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .item {
+    position: relative;
+
+    &.wechat:hover .qrcode {
+      display: block;
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $primary;
+        }
+      }
+    }
   }
 }
 
 .footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ebebeb;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base;
+    }
+  }
+
   .listMenu {
     margin-top: 20px;
 
@@ -30,7 +77,7 @@
     }
 
     .title {
-      font-family: Lato;
+      font-family: $font-family-base;
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
@@ -56,12 +103,12 @@
 
     .item {
       margin-top: 30px;
-      font-family: Lato;
+      font-family: $font-family-base;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 19px;
-      color: #8C8C8C;
+      color: #8c8c8c;
 
       @media (max-width: sm) {
         font-size: 14px;
@@ -70,7 +117,7 @@
       }
 
       a {
-        color: #8C8C8C;
+        color: #8c8c8c;
         text-decoration: none;
       }
 
@@ -81,7 +128,8 @@
   }
 
   .subscribe-title {
-    font-family: Lato-Black;
+    font-family: $font-family-base;
+    font-weight: bold;
     color: #282828;
     font-size: 60px;
     line-height: 60px;
@@ -89,69 +137,12 @@
 
   .subscribe-description {
     margin-top: 30px;
-    font-family: Lato;
+    font-family: $font-family-base;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #8C8C8C;
-  }
-
-  .mediaList {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-}
-
-
-.mediaList {
-  margin: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: md) {
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
-
-  .item {
-    position: relative;
-
-    &.wechat:hover .qrcode {
-      display: block;
-    }
-
-    &:hover {
-      svg {
-        path {
-          fill: $primary;
-        }
-      }
-    }
-  }
-
-  .qrcode {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    border: 2px solid $primary;
-    z-index: 100;
-    display: none;
-    width: 200px;
-    height: 200px;
-
-    > div {
-      width: 100%;
-      height: 100%;
-      display: block;
-      border: 3px solid $black;
-    }
-
-    img {
-      width: 100%;
-    }
+    color: #8c8c8c;
   }
 }
 
@@ -167,10 +158,6 @@
     padding: 0 11px;
   }
 
-  &.success input {
-    color: white;
-  }
-
   input {
     flex: 1;
     display: block;
@@ -179,7 +166,7 @@
     color: $primary;
     background-color: transparent;
     height: 29px;
-    font-family: Lato;
+    font-family: $font-family-base;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -196,20 +183,16 @@
     }
   }
 
+  &.success input {
+    color: white;
+  }
+
   .icon {
     margin-left: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &:active .iconArrow {
-      transform: translate3d(2px, 0, 0);
-    }
-
-    &:hover .iconArrow {
-      fill: $primary;
-    }
 
     .iconArrow {
       fill: gray;
@@ -221,6 +204,14 @@
         width: 23px;
         height: 23px;
       }
+    }
+
+    &:active .iconArrow {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    &:hover .iconArrow {
+      fill: $primary;
     }
   }
 }
@@ -245,22 +236,22 @@
   }
 
   .subscribe-title {
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .subscribe-description {
-    color: #8C8C8C;
+    color: #8c8c8c;
   }
 }
 
 .copyright {
-  font-family: Lato;
+  font-family: $font-family-base;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: right;
-  color: #D9D9D9;
+  color: #d9d9d9;
   margin-top: 30px;
 
   @include media-breakpoint-down(sm) {
