@@ -21,7 +21,7 @@ A full Phala Network stack has three components plus a Web UI. The core componen
 - `pRuntime`: The TEE runtime. Contracts runs in `pRuntime`
 - `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
-<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
+<img src="/images/docs/simple_architecture.png" alt="drawing" class="center"/>
 
 (Phala architecture overview)
 
