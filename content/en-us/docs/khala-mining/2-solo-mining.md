@@ -1,5 +1,5 @@
 ---
-title: "2 Solo mining configuration"
+title: "2 Solo Mining Configuration"
 weight: 6020
 menu:
   docs:
@@ -20,9 +20,7 @@ sudo phala install
 
 By default, all the configurations are set automatically. If you want to manually config the tools, use the following commands and set the parameters.
 
-{{< tip "warning" >}}
-DO NOT share the same gas fee account across multiple solo mining setup.
-{{< /tip >}}
+> :warning: DO NOT share the same gas fee account across multiple solo mining setups.
 
 ```bash
 sudo phala config set

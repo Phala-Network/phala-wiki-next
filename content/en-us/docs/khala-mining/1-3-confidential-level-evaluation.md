@@ -1,5 +1,5 @@
 ---
-title: "1.3 Check the SGX Capability and Confidence Level"
+title: "1.3 Check the Intel® SGX Capability and Confidence Level"
 weight: 6013
 menu:
   docs:
