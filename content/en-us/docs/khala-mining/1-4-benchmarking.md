@@ -1,9 +1,11 @@
 ---
 title: "Archived: 1.4 Benchmarking"
 weight: 6014
+draft: false
 menu:
   docs:
     parent: "khala-mining"
+#Decommissioned, as benchmarking is no longer supported.
 ---
 
 ## Benchmark Your Worker

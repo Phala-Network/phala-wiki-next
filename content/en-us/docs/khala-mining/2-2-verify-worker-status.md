@@ -1,5 +1,5 @@
 ---
-title: "2.2 Verify Worker Status"
+title: "2.2 Verify Miner Status"
 weight: 6022
 menu:
   docs:
@@ -8,7 +8,7 @@ menu:
 
 ## Verify Worker Status
 
-Read the worker status with:
+Check your miner's status with:
 
 ```bash
 sudo phala status

@@ -6,28 +6,53 @@ menu:
     parent: "khala-mining"
 ---
 
-{{< tip >}}
-If you have successfully installed the SGX driver and finished the benchmarking, you can skip the following tutorials.
-{{< /tip >}}
+## Get the Miner Ready
 
-## Install
+This section shows you how to set up your Phala mining CLI, the respective tools, and setting the last parameters for your drivers.
 
-You can use the following commands to install Phala tools. It will automatically set the number of CPU cores to use, node name, gas fee account mnemonic and pool owner account.
+Execute the following command to get your miner ready to launch for mining.
 
 ```bash
 sudo phala install
 ```
 
-By default, all the configurations are set automatically. If you want to manually config the tools, use the following commands and set the parameters.
+>`phala install` will update the miner to use your newly installed driver settings and configuration. This is required for first-time miners or whenever you update or change your driver configuration for this change to take effect.
 
-> :warning: DO NOT share the same gas fee account across multiple solo mining setups.
+## Miner Configuration
+
+> :warning: DO NOT reuse the same gas fee account across multiple solo miners.
+
+### Set Wallet Address & More
+
+Use the following command to set your parameters.
 
 ```bash
 sudo phala config set
 ```
+You will be prompted to set:
+- the number of CPU cores to use
+  - <details><summary>How to look up your CPU cores?</summary>
+    <p>
 
-> The script will ask for re-enter if the received parameter is invalid.
-> To ensure the proceeding of mining, the balance of gas fee account should be greater than 0.1 PHA.
+    If you do not know your CPUs utilizable cores, you may look them up by executing the following command:
+
+    ```bash
+    lscpu | grep -E '^Thread|^Core|^Socket|^CPU\('
+    ```
+
+    </p>
+    </details>
+- node name
+- gas fee account mnemonic
+- the pool owner account
+
+> If any entered parameter is invalid, the script will ask to re-enter the information.\
+> \
+> :information: To ensure the proceeding of mining, the balance of the gas fee account should be >2 PHA.
+
+### Check Current Configuration
+
+> Note, the following command will show sensitive information (mnemonic seed).
 
 You can get the current parameters in use with
 

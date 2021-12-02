@@ -6,7 +6,7 @@ menu:
     parent: "khala-mining"
 ---
 
-> We highly recommend to read [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}}) before using the Phala App.
+> We highly recommend to read about our [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}}) before using the Phala App.
 
 [The Console](http://app-test.phala.network/console)
 

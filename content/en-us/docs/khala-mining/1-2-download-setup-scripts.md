@@ -1,5 +1,5 @@
 ---
-title: "1.2 Install Phala Tools"
+title: "1.1 Installing Phala Mining Tools"
 weight: 6012
 menu:
   docs:

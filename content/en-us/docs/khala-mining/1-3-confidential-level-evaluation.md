@@ -1,12 +1,12 @@
 ---
-title: "1.3 Check the Intel® SGX Capability and Confidence Level"
+title: "1.2 Checking Intel® SGX Capability and Confidence Level"
 weight: 6013
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-## Double Check the Intel® SGX Capability
+## Double Check your Intel® SGX Capability
 
 After the installation of your driver, please use the following utility to double check if everything goes well.
 

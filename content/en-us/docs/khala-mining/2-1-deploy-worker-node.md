@@ -6,14 +6,11 @@ menu:
     parent: "khala-mining"
 ---
 
-{{< tip "warning" >}}
-You cannot start mining before Khala mining starts. But you can follow this command to pre-sync your Khala node:
-
-```bash
-sudo phala presync
-```
-
-{{< /tip >}}
+> You cannot start mining before Khala mner has been verified. But you can follow this command to pre-sync your Khala node:
+>
+> ```bash
+> sudo phala presync
+> ```
 
 ## Start Mining
 
