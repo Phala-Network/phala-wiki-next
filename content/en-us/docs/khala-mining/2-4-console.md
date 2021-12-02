@@ -29,7 +29,7 @@ Miners and pool owners can use teh Phala App to manage Workers/ Miners and Stake
    - Click "Confirm" in the pop-up window;
    - Sign the transaction in the Polkadot{.js} Extension and wait;
    - The created pool will be listed in Stakepool;
-3. (Optional) Configure StakePool
+3. Configure StakePool (Optional) 
    - Set Payout
      - Click "Set Payout Pref" of the target pool;
      - Type in the payout in the pop-up window; the default payout is 0, and it can be set between 0-100%;
@@ -40,12 +40,12 @@ Miners and pool owners can use teh Phala App to manage Workers/ Miners and Stake
      - Type in the Staking capacity in the pop-up window; the default capacity is unlimited, and it can be set between "Total Stake Now" to unlimited number;
      - Submit the transaction;
      - The capacity value will be updated in Stakepool list;
-4. Bind Worker
-   - Click "Add Worker" of the target pool;
+4. Add a Miner
+   - Select `...` (next to "Info") "Add Worker" (highlited red) in the target pool;
      ![](/images/docs/khala-mining/add-worker.png)
-   - Type in the WorkerPublicKey of Worker in the pop-up window;
+   - Copy & paste your `WorkerPublicKey` of your miner in the pop-up window;
    - Submit the transaction;
-   - The bound Worker will be listed;
+   - Your miner will now be listed;
 5. Staking
    - After creating the StakePool, you can invite other Stakers to invest or stake yourself;
    - To stake yourself
