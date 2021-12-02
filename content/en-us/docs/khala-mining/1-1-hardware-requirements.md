@@ -103,7 +103,7 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 
 > A mainboard supporting Intel® SGX and the BIOS settings listed below is required.
 
-### 1. Boot into BIOS. 
+### 1. Boot into BIOS
 
    > Refer to these resources to 'boot into BIOS mode' from [Microsoft©](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) or [wikiHow](https://www.wikihow.com/Enter-BIOS).
 
