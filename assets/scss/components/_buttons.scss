@@ -207,23 +207,23 @@ pre {
 }
 
 .btn-next {
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   box-sizing: border-box;
-  color: #8C8C8C;
+  color: #8c8c8c;
   padding: 8px 18px;
   display: flex;
   align-items: center;
 }
 
 .btn-next:hover {
-  color:white;
+  color: white;
   background-color: $primary;
   border-color: $primary;
   text-decoration: none !important;
 }
 
 [data-dark-mode] .btn-next {
-  color: #8C8C8C;
+  color: #8c8c8c;
   border: 1px solid #404040;
 }
 

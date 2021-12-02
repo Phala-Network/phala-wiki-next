@@ -40,13 +40,9 @@ h5.offcanvas-title {
 
 body {
   color: #404040;
-  background-color: #F5F5F5;
-  font-family: Lato Light;
+  background-color: #f5f5f5;
+  font-family: $font-family-base;
   font-size: 16px;
-
-  &.win {
-    font-family: Lato !important;
-  }
 }
 
 body.docs {
@@ -54,9 +50,6 @@ body.docs {
 }
 
 @include media-breakpoint-up(md) {
-  body {
-  }
-
   h1,
   h2,
   h3,
