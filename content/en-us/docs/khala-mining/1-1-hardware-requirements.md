@@ -24,10 +24,9 @@ A system can potentially mine Phala if it meets these general requirements:
       - Refer to [issue #554](https://github.com/Phala-Network/phala-blockchain/issues/554) for more info.
 - [x] Have a supported version of Ubuntu (18.04, 20.04, 21.04) installed and booted from it.
    - See [Suported OS requirements](#supported-operating-systems). 
-- [x] You require a minimum amount of 3 PHA to mine
-   - Furthermore, you require [$S_{min}=k \sqrt{P}$](/en-us/docs/tokenomic/understand-phala-tokenomics/#minimum-stake) tokens to stake.
-      - Feel free to use our [spreadsheet](#TODO) containing the formulas from the PHA [tokenomics section](/en-us/docs/tokenomic/understand-phala-tokenomics) to estimate your required minimum tokens to stake.
-      - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/docs/khala-user/stake-pool/) on how to delegate. 
+- [x] You require [$S_{min}=k \sqrt{P}$](/en-us/docs/tokenomic/understand-phala-tokenomics/#minimum-stake) tokens to stake when starting your miner.
+   - Feel free to use our [spreadsheet](#TODO) (coming soon) containing the formulas from the PHA [tokenomics section](/en-us/docs/tokenomic/understand-phala-tokenomics) to estimate your required minimum tokens to stake.
+    - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/docs/khala-user/stake-pool/) on how to delegate. 
 
 ## Check Your CPU
 
