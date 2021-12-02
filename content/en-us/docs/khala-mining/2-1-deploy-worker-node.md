@@ -6,7 +6,7 @@ menu:
     parent: "khala-mining"
 ---
 
-> You cannot start mining before Khala mner has been verified. But you can follow this command to pre-sync your Khala node:
+> You cannot start mining before Khala miner has been verified. But you can follow this command to pre-sync your Khala node:
 >
 > ```bash
 > sudo phala presync

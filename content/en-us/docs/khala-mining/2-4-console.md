@@ -21,11 +21,10 @@ Miners and pool owners can use teh Phala App to manage Workers/ Miners and Stake
 
 ### Phala App Operations
 
-<!-- TODO.zhe: the link in yuque is outdated -->
-
 1. [Connect your Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}).
 2. Create StakePool
-   - Click "Create Stakepool";
+   - In the left Menu make sure zou selecte dthe 
+   - Click "Create Stakepool" in the top right corner;
      ![](/images/docs/khala-mining/create-pool.png)
    - Click "Confirm" in the pop-up window;
    - Sign the transaction in the Polkadot{.js} Extension and wait;
