@@ -159,7 +159,7 @@ cd pruntime/bin
 ./target/release/phost --dev
 ```
 
-![](/images/docs/core-terminal.gif)
+![](/images/docs/developer/core-terminal.gif)
 
 (Les composants de base s'exécutent et produisent des journaux)
 
@@ -203,7 +203,7 @@ event - build page: /
 event - compiled successfully
 ```
 
-![](/images/docs/apps-ng-landing.png)
+![](/images/docs/developer/apps-ng-landing.png)
 (Page d'accueil de l'interface utilisateur Web)
 
 L'interface Web se connecte à la fois à `phala-node` et à `pruntime` par leurs points de terminaison RPC par défaut. Si tout est configuré correctement, vous verrez l'écran de déverrouillage du portefeuille dans la page d'accueil comme indiqué ci-dessus. Vous devriez être en mesure de sélectionner les comptes de développement bien connus (Alice, Bob, etc) dans la boîte de dépôt.
@@ -227,7 +227,7 @@ Dans les deux dernières sections, nous avons construit et lancé `phala-node`, 
 
 Sélectionnons Alice et déverrouillons le porte-monnaie. Alice est un compte test intégré avec 10,000 PHA sur la blockchain. Ce jeton PHA est le jeton natif. Il est transparent sur la chaîne comme une blockchain Substrate typique, géré par la palette Balances.
 
-![](/images/docs/apps-ng-init-wallet.png)
+![](/images/docs/developer/apps-ng-init-wallet.png)
 (Dapp de portefeuille secret)
 
 Cependant, le portefeuille "actifs secrets" ci-dessous est très différent. Les actifs secrets sont stockés dans des contrats confidentiels à l'intérieur des enclaves TEE. Comme son nom l'indique, les actifs secrets sont privés et invisibles sur la blockchain.

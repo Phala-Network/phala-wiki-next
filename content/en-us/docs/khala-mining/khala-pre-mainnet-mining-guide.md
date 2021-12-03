@@ -54,7 +54,7 @@ Khala requires the following components:
   <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/explorer" target="_blank">
         <svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/polkadot-js.svg" alt="Khala Polkadot.js UI" width="60 class="center"> 
+           <img src="/images/docs/khala-mining/polkadot-js.svg" alt="Khala Polkadot.js UI" width="60 class="center"> 
            <p>Khala Polkadot.js</p>
         </svg>
      </a>

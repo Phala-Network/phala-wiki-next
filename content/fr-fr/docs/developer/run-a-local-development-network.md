@@ -158,7 +158,7 @@ cd pruntime/bin
 ./target/release/phost --dev
 ```
 
-![](/images/docs/core-terminal.gif)
+![](/images/docs/developer/core-terminal.gif)
 
 (Core components running and producing logs)
 
@@ -202,7 +202,7 @@ event - build page: /
 event - compiled successfully
 ```
 
-![](/images/docs/apps-ng-landing.png)
+![](/images/docs/developer/apps-ng-landing.png)
 (Web UI landing page)
 
 The Web UI connects to both `phala-node` and `pruntime` by their default RPC endpoints. If everything is configured correctly, you will see the wallet unlock screen in the landing page as shown above. You should be able to select the well-known development accounts (Alice, Bob, etc) in the drop box.
@@ -226,7 +226,7 @@ In the last two sections, we have built and launched `phala-node`, `pruntime`, a
 
 Let's select Alice and unlock the wallet. Alice is a built-in test account with 10,000 PHA on the blockchain. This PHA token is the native token. It's transparent on-chain like a typical Substrate blockchain, managed by Balances pallet.
 
-![](/images/docs/apps-ng-init-wallet.png)
+![](/images/docs/developer/apps-ng-init-wallet.png)
 (Secret wallet dapp)
 
 However, the "secret assets" wallet below is very different. Secret assets are stored in confidential contracts inside TEE enclaves. Like what the name says, the secret assets are private and invisible on the blockchain.
