@@ -21,6 +21,10 @@ A full Phala Network stack has three components, with an optional Javascript SDK
 - `pRuntime`: The TEE runtime. Contracts run in `pRuntime`
 - `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
+<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
+
+(Phala architecture overview)
+
 The Javascript SDK is at [Phala-Network/js-sdk](https://github.com/Phala-Network/js-sdk). The Web UI based on our SDK needs to connect to both the blockchain and the `pRuntime` to send Commands and Queries.
 
 ## Environment
@@ -53,7 +57,27 @@ Follow the commands below to prepare the environment. Some can be skipped if alr
   <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <br>
 
-Install the system level dependencies for Ubuntu
+**Install dependencies via script for Ubuntu**
+- Run the script to install and check required dependencies for Phala
+
+Download the script (successfully tested on Ubuntu 20.04):
+```bash
+wget https://raw.githubusercontent.com/hauni97/phala_quick_run/main/phala_quick_install.sh
+```
+Make it executable:
+```bash
+chmod +x phala_quick_install.sh
+```
+Excute it to automate the next three manual steps to get the environment ready:
+```bash
+sudo ./phala_quick_install.sh
+```
+
+![](/images/docs/auto-install.gif)
+
+<br>
+
+**Install the system level dependencies manually for Ubuntu**
 
 ```bash
 sudo apt update
@@ -271,7 +295,7 @@ git clone --recursive --branch encode-hackathon-2021 https://github.com/Phala-Ne
 git clone https://github.com/Phala-Network/js-sdk
 ```
 
-## Build the core blockchain
+## Build the Core Blockchain
 
 Now we have both repos `phala-blockchain` and `js-sdk` in the working directory. Let's start to build the core blockchain first.
 
@@ -367,7 +391,7 @@ event - compiled successfully
 
 The main page of Web UI looks like this:
 
-![](/static/images/docs/developer/js-sdk-1.png)
+![](/images/docs/developer/js-sdk-1.png)
 
 To experience the demo contracts, you will need an account. For development, we recommend not to use your real Substrate account with funds. A good choice is for development to import `Alice` to your Polkadot.js extension since she is the pre-defined root account and is allowed to invoke privileged operations. **DO NOT** transfer real funds to your `Alice` account.
 
@@ -386,11 +410,11 @@ You can get the secret seed of `Alice` with the following command
 
 Then import the secret seed into your Polkadot.js extension
 
-![](/static/images/docs/developer/js-sdk-2.png)
+![](/images/docs/developer/js-sdk-2.png)
 
 and paste the secret seed regardless of the mnemonic hint
 
-![](/static/images/docs/developer/js-sdk-3.png)
+![](/images/docs/developer/js-sdk-3.png)
 
 Now you are good to go.
 
@@ -401,15 +425,15 @@ Now you are good to go.
 
 Now let's play with a contract. Recall the knowledge about Commands and Queries in [previous chapter]({{< relref "docs/developer/_index.md" >}}). The first thing our contract propose is to sign a certificate. Such a temporary certificate is used to encrypt all the Queries. While every time you try to send a Command, the Polkadot.js extension will ask for your signature (since Commands can change the state, it is more critical than Queries).
 
-![](/static/images/docs/developer/js-sdk-4.png)
+![](/images/docs/developer/js-sdk-4.png)
 
 Don't miss the prompt since there are not always pop-ups.
 
-![](/static/images/docs/developer/js-sdk-5.png)
+![](/images/docs/developer/js-sdk-5.png)
 
 ### Play with it
 
-![](/static/images/docs/developer/js-sdk-6.png)
+![](/images/docs/developer/js-sdk-6.png)
 
 By default, the random number is 0. Click `Reset Number`, sign the Command, and start the game. If you log in as the root account or contract owner, there is a cheat button for you to peek at the secret. So no more spoiling, just play with it.
 
