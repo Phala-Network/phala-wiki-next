@@ -51,25 +51,26 @@ If you have any questions, you can always reach out to the Phala community for h
 Khala requires the following components:
 
 <div class="mediaList">
-  <div class="item">
+  <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/explorer" target="_blank">
         <svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/polkadot-js.svg" alt="Khala Polkadot.js UI"> <p>Khala Polkadot.js</p>
+           <img src="/images/docs/polkadot-js.svg" alt="Khala Polkadot.js UI" width="60 class="center"> 
+           <p>Khala Polkadot.js</p>
         </svg>
      </a>
   </div>
-  <div class="item">
+  <div class="item" style="text-align:center">
      <a href="https://khala.subscan.io/" target="_blank">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/khala-button.webp" alt="\nKhala Blockchain Explorer">
-           <p>Khala Blockchain Explorer</p>
+           <img src="/images/docs/khala-mining/khala.png" alt="Khala Blockchain Explorer" width="60" class="center">
+           <p>Khala Explorer</p>
         </svg>
      </a>
   </div>
-  <div class="item">
+  <div class="item" style="text-align:center">
      <a href="https://app.phala.network/en/" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/Phala_logo_blk.jpeg" alt="\nKhala App">
+           <img src="/images/docs/khala-mining/phala_logo.png" alt="Khala App" width="60" class="center">
            <p>Khala App</p>
         </svg>
      </a>
@@ -79,7 +80,7 @@ Khala requires the following components:
 - Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
 - Khala Console: <a href="https://app.phala.network/en/mining/" target="_blank">Mining Console</a>
 
-## Please choose a topic
+## Please Choose a Topic
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 
@@ -87,4 +88,4 @@ Khala requires the following components:
 
 {{< button "/en-us/docs/khala-mining/2-solo-mining/" "Deploy Khala Node" >}}
 
-{{< button "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Troubleshoot" >}}
+{{< button "https://github.com/Phala-Network/solo-mining-scripts#troubleshooting" "Troubleshooting" >}}
