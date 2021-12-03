@@ -1,7 +1,10 @@
 ---
 title: "Jouez avec pDiem"
-weight: 2
+weight: 10003
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 ![](/images/docs/pdiem/docker-compose-structure.png)

@@ -1,7 +1,10 @@
 ---
 title: "Travaux à venir"
-weight: 7
+weight: 10008
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 pDiem est un projet en pleine expansion. Nous prévoyons d'ajouter les fonctionnalités ci-dessous dans un avenir proche :

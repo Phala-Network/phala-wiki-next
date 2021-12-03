@@ -1,5 +1,9 @@
 ---
 title: "1.1 Lançer un réseau de développement local"
+weight: 11011
+menu:
+  docs:
+    parent: "developer"
 ---
 
 > Une compréhension de base du shell Linux et de la compilation est nécessaire pour suivre ce tutoriel.
@@ -248,7 +252,7 @@ Il y a beaucoup d'autres choses que vous pouvez essayer avec le porte-feuille se
 
 Toutes les fonctions ci-dessus sont réalisées par transaction confidentielle. Personne ne peut voir le contenu de la transaction, car le corps de celle-ci est crypté. En cliquant sur le bouton "Polkadot UI" dans la barre de navigation, cela vous amènera aux applications polkadot.js que vous connaissez. Après avoir envoyé une transaction chiffrée en cliquant sur le bouton "Secret Transfer", vous pouvez trouver la transaction chiffrée enveloppée par l'extrinsèque `phalaModel.pushCommand` à partir de l'explorateur de blocs comme indiqué ci-dessous.
 
-<img src="/images/docs/polkadotjs-pushCommand.png" style="max-height: 200px;">
+<img src="/images/docs/developer/polkadotjs-pushCommand.png" style="max-height: 200px;">
 
 (Une transaction confidentielle cryptée sur un explorateur de blockchain)
 

@@ -34,11 +34,11 @@
   url = "/docs/khala-mining/"
   weight = 6000
 
-[[docs]]
-  name = "Para-2 Testnet"
-  identifier = "para-mining"
-  url = "/docs/para-mining/"
-  weight = 7000
+#[[docs]]
+#  name = "Para-2 Testnet"
+#  identifier = "para-mining"
+#  url = "/docs/para-mining/"
+# weight = 7000
 
 [[docs]]
   name = "Runtime Bridge"

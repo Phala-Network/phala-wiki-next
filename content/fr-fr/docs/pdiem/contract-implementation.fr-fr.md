@@ -1,7 +1,10 @@
 ---
-title: "Mise en œuvre du contrat"
-weight: 5
+title: "Contract Implementation"
+weight: 10006
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 

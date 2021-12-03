@@ -1,7 +1,10 @@
 ---
 title: "Déployer le réseau de test en local"
-weight: 1
+weight: 10002
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 Il y a deux options pour exécuter la démo de pdiem :
