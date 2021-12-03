@@ -1,7 +1,7 @@
 ---
 title: "Archived: 1.4 Benchmarking"
 weight: 6014
-draft: false
+draft: true
 menu:
   docs:
     parent: "khala-mining"

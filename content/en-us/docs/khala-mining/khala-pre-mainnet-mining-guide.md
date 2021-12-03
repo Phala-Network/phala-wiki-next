@@ -84,8 +84,8 @@ Khala requires the following components:
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 
-{{< button "/en-us/docs/khala-mining/1-1-hardware-requirements/" "Getting Started" >}}
+{{< button "/en-us/docs/khala-mining/1-0-hardware-requirements/" "Getting Started" >}}
 
-{{< button "/en-us/docs/khala-mining/2-solo-mining/" "Deploy Khala Node" >}}
+{{< button "/en-us/docs/khala-mining/2-0-solo-mining/" "Deploy Khala Node" >}}
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts#troubleshooting" "Troubleshooting" >}}

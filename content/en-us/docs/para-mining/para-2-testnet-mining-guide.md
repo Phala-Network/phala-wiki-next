@@ -1,7 +1,7 @@
 ---
 title: "Para-2 Testnet Mining Guide"
 weight: 7001
-draft: false
+draft: true
 menu:
   docs:
     parent: "para-mining"
@@ -59,19 +59,19 @@ Here are some note that Para-2 needs.
 
 ### I. Getting Started
 
-- [1 Check Your Hardware, BIOS and System]({{< relref "docs/khala-mining/1-1-hardware-requirements" >}})
+- [1 Check Your Hardware, BIOS and System]({{< relref "docs/khala-mining/1-0-hardware-requirements" >}})
 - [1.2 Install Phala Tools]({{< relref "docs/khala-mining/1-2-download-setup-scripts" >}})
-- [1.3 Check the SGX Capability and Confidence Level]({{< relref "1-3-confidential-level-evaluation" >}})
+- [1.3 Check the SGX Capability and Confidence Level]({{< relref "1-2-confidential-level-evaluation" >}})
 - [1.4 Benchmarking]({{< relref "docs/khala-mining/1-4-benchmarking" >}})
 
 ### II. Deploying Khala Network
 
-- [2 Solo mining]({{< relref "docs/khala-mining/2-solo-mining" >}})
+- [2 Solo mining]({{< relref "docs/khala-mining/2-0-solo-mining" >}})
 - [2.1 Deploy Worker Node]({{< relref "docs/khala-mining/2-1-deploy-worker-node" >}})
 - [2.2 Verify Worker Status]({{< relref "docs/khala-mining/2-2-verify-worker-status" >}})
 - [2.3 Upgrade Worker Node]({{< relref "docs/khala-mining/2-3-upgrade-worker-node" >}})
-- [2.4 Use Console to Manage Your Mining]({{< relref "docs/khala-mining/2-4-console" >}})
+- [2.4 Use Console to Manage Your Mining]({{< relref "docs/khala-mining/3-0-console" >}})
 
 ### III. FAQ
 
-- [Frequently Asked Questions]({{< relref "docs/khala-mining/4-faq" >}})
+- [Frequently Asked Questions]({{< relref "docs/khala-mining/4-0-faq" >}})

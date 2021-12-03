@@ -23,7 +23,7 @@ Khala Network是Phala在Kusama上的平行链，具有去中心化的TEE挖矿�
   
 ### I. 部署前的检查（**请记得按照上述部分更改您的脚本下载链接**）
 
-- [1.1 检查你的硬件、BIOS和系统"]({{< relref "docs/khala-mining/1-1-hardware-requirements" >}})
+- [1.1 检查你的硬件、BIOS和系统"]({{< relref "docs/khala-mining/1-0-hardware-requirements" >}})
 - [1.2 安装Phala脚本]({{< relref "docs/khala-mining/1-2-download-setup-scripts" >}})
 - [1.3 SGX测试和信任分级]({{< relref "1-3-confidential-level-evaluation" >}})
 - [1.4 测试Worker性能分]({{< relref "docs/khala-mining/1-4-benchmarking" >}})

@@ -8,7 +8,7 @@ menu:
 
 ## Prerequisites
 
-Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "docs/khala-mining/1-1-hardware-requirements">}}).
+Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "docs/khala-mining/1-0-hardware-requirements">}}).
 
 ## Download the Phala Scripts
 
@@ -21,10 +21,6 @@ cd ~
 wget https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/main.zip
 unzip main.zip
 ```
-
-{{< tip "warning" >}}
-If you are running on testnet, please refer to: [Para2 testnet mining]({{< relref "docs/para-mining" >}})
-{{< /tip >}}
 
 ## Activate the Intel® SGX Software 
 

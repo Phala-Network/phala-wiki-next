@@ -1,12 +1,12 @@
 ---
-title: "3 Phala App to Manage Mining"
+title: "3. Phala App to Manage Mining"
 weight: 6024
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-> We highly recommend to read about our [staking mechanism]({{< relref "docs/tokenomic//1-mining-staking" >}}) before using the Phala App.
+> We highly recommend reading about our [staking mechanism]({{< relref "docs/tokenomic//1-mining-staking" >}}) before using the Phala App.
 
 [The Phala App](https://app.phala.network/en/mining/)
 
@@ -34,12 +34,12 @@ Miners and pool owners can use teh Phala App to manage Workers/ Miners and Stake
      - Click "Set Payout Pref" of the target pool;
      - Type in the payout in the pop-up window; the default payout is 0, and it can be set between 0-100%;
      - Click "Confirm" to send the transaction;
-     - The payout value will be updated in Stakepool list;
+     - The payout value will be updated in the Stakepool list;
    - Set Staking Capacity
      - Click "Set Cap" of the target pool;
      - Type in the Staking capacity in the pop-up window; the default capacity is unlimited, and it can be set between "Total Stake Now" to unlimited number;
      - Submit the transaction;
-     - The capacity value will be updated in Stakepool list;
+     - The capacity value will be updated in the Stakepool list;
 4. Add a Miner
    - Select `...` (next to "Info") "Add Worker" (highlited red) in the target pool;
      ![](/images/docs/khala-mining/add-worker.png)
