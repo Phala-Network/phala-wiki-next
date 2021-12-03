@@ -367,7 +367,7 @@ event - compiled successfully
 
 The main page of Web UI looks like this:
 
-![](/images/docs/developer/js-sdk-1.png)
+![](/static/images/docs/developer/js-sdk-1.png)
 
 To experience the demo contracts, you will need an account. For development, we recommend not to use your real Substrate account with funds. A good choice is for development to import `Alice` to your Polkadot.js extension since she is the pre-defined root account and is allowed to invoke privileged operations. **DO NOT** transfer real funds to your `Alice` account.
 
@@ -386,11 +386,11 @@ You can get the secret seed of `Alice` with the following command
 
 Then import the secret seed into your Polkadot.js extension
 
-![](/images/docs/developer/js-sdk-2.png)
+![](/static/images/docs/developer/js-sdk-2.png)
 
 and paste the secret seed regardless of the mnemonic hint
 
-![](/images/docs/developer/js-sdk-3.png)
+![](/static/images/docs/developer/js-sdk-3.png)
 
 Now you are good to go.
 
@@ -401,15 +401,15 @@ Now you are good to go.
 
 Now let's play with a contract. Recall the knowledge about Commands and Queries in [previous chapter]({{< relref "docs/developer/_index.md" >}}). The first thing our contract propose is to sign a certificate. Such a temporary certificate is used to encrypt all the Queries. While every time you try to send a Command, the Polkadot.js extension will ask for your signature (since Commands can change the state, it is more critical than Queries).
 
-![](/images/docs/developer/js-sdk-4.png)
+![](/static/images/docs/developer/js-sdk-4.png)
 
 Don't miss the prompt since there are not always pop-ups.
 
-![](/images/docs/developer/js-sdk-5.png)
+![](/static/images/docs/developer/js-sdk-5.png)
 
 ### Play with it
 
-![](/images/docs/developer/js-sdk-6.png)
+![](/statis/images/docs/developer/js-sdk-6.png)
 
 By default, the random number is 0. Click `Reset Number`, sign the Command, and start the game. If you log in as the root account or contract owner, there is a cheat button for you to peek at the secret. So no more spoiling, just play with it.
 
