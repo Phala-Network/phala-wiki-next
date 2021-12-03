@@ -409,7 +409,7 @@ Don't miss the prompt since there are not always pop-ups.
 
 ### Play with it
 
-![](/statis/images/docs/developer/js-sdk-6.png)
+![](/static/images/docs/developer/js-sdk-6.png)
 
 By default, the random number is 0. Click `Reset Number`, sign the Command, and start the game. If you log in as the root account or contract owner, there is a cheat button for you to peek at the secret. So no more spoiling, just play with it.
 
