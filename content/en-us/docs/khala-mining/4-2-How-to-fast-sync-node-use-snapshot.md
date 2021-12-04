@@ -52,11 +52,11 @@ d1ad677bb2421d17e12f7bed2af95beaf7343a2f9c79b4b07b85a0faa521467c  khala-snapshot
 To extract the file execute:
 
 ```bash
-unzip khala-snapshot-210915.tar.gz
+tar -xvzf khala-snapshot-210915.tar.gz
 ```
 
-After extraction you should get a folder named `khala-node`.
-To verify this you can list your files with `ls` where you extracted the snapshot.
+The extraction will take a while to complete as well. After extraction, you should get a folder named `khala-node`.
+You can list your files with `ls` to verify where you extracted the snapshot.
 
 ### Use the Snapshot
 
@@ -76,8 +76,8 @@ rm -r /var/khala-dev-node/polkadot
 Now move the snapshot into the correct directory.
 
 ```bash
-mv /khala-node/chains /var/khala-dev-node
-mv /khala-node/polkadot /var/khala-dev-node
+mv ~/khala-node/chains/ /var/khala-dev-node
+mv ~/khala-node/polkadot/ /var/khala-dev-node
 ```
 
 Delete all files and folders inside `/var/khala-dev-node`，move all files and folders from `khala-node` into `/var/khala-dev-node`
