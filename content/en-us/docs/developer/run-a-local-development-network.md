@@ -21,7 +21,7 @@ A full Phala Network stack has three components plus a Web UI. The core componen
 - `pRuntime`: The TEE runtime. Contracts runs in `pRuntime`
 - `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
-<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
+<img src="/images/docs/developer/simple_architecture.png" alt="drawing" class="center"/>
 
 (Phala architecture overview)
 
@@ -40,6 +40,9 @@ Follow the commands below to prepare the environment. Some can be skipped if alr
 
 ### Linux
 
+<details><summary>Expand to see installation instrcutions for Linux</summary>
+<p>
+
 #### Install Dependencies (Linux)
 
 - Run the script to install and check required dependencies for Phala
@@ -57,7 +60,7 @@ Excute it to automate the next three manual steps to get the environment ready:
 sudo ./phala_quick_install.sh
 ```
 
-![](/images/docs/auto-install.gif)
+![](/images/docs/developer/auto-install.gif)
 
 (Walkthough of how a successfull environement setup looks like when script is run)
 
@@ -98,6 +101,9 @@ sudo ./phala_quick_install.sh
   sudo npm install -g yarn
   yarn set version berry
   ```
+
+  </p>
+</details>
 
 ### Windows
 
@@ -189,7 +195,7 @@ cd standalone/pruntime/bin
 ./target/release/pherry --dev --no-wait
 ```
 
-![](/images/docs/core-terminal.gif)
+![](/images/docs/developer/core-terminal.gif)
 
 (Core components running and producing logs. _Directory varies in newer versions of phala_)
 
@@ -251,7 +257,7 @@ The Web UI connects to both `phala-node` and `pruntime` by their default RPC end
 
 The main page of Web UI looks like this:
 
-![](/images/docs/js-sdk-1.png)
+![](/images/docs/developer/js-sdk-1.png)
 
 To experience the demo contracts, you will need an account. For development, we recommend not to use your real Substrate account with funds. A good choice is for development to import `Alice` to your _Polkadot.js_ extension since she is the pre-defined root account and is allowed to invoke privileged operations. **DO NOT** transfer real funds to your `Alice` account.
 
@@ -270,11 +276,11 @@ You can get the secret seed of `Alice` with the following command:
 
 Then import the secret seed into your Polkadot.js extension
 
-![](/images/docs/js-sdk-2.png)
+![](/images/docs/developer/js-sdk-2.png)
 
 and paste the secret seed regardless of the mnemonic hint
 
-![](/images/docs/js-sdk-3.png)
+![](/images/docs/developer/js-sdk-3.png)
 
 Now you are good to go.
 
@@ -283,15 +289,15 @@ Now you are good to go.
 #Authorization
 Now let’s play with a contract. Recall the knowledge about **Commands and Queries in previous chapter**. The first thing our contract propose is to sign a certificate. Such a temporary certificate is used to encrypt all the Queries. While every time you try to send a Command, the Polkadot.js extension will ask for your signature (since Commands can change the state, it is more critical than Queries).
 
-![](/images/docs/js-sdk-4.png)
+![](/images/docs/developer/js-sdk-4.png)
 
 Don’t miss the prompt since there are not always pop-ups.
 
-![](/images/docs/js-sdk-5.png)
+![](/images/docs/developer/js-sdk-5.png)
 
 ### Play with it
 
-![](/images/docs/js-sdk-6.png)
+![](/images/docs/developer/js-sdk-6.png)
 
 By default, the random number is 0. Click `Reset Number`, sign the Command, and start the game. If you log in as the root account or contract owner, there is a cheat button for you to peek at the secret. So no more spoiling, just play with it.
 

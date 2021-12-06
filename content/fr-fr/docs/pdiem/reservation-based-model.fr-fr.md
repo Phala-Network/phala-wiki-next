@@ -1,7 +1,10 @@
 ---
 title: "Modèle basé sur la réservation"
-weight: 3
+weight: 10004
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 Un bridge relie la blockchain locale à une blockchain distante. pDiem suit le modèle de transfert d'actifs cross-chain " réservation d'actifs " (voir le modèle équivalent défini dans [XCM Format](https://github.com/paritytech/xcm-format#depositreserveasset)). Dans notre cas, pDiem (et sa parachain) est la blockchain locale, et Diem est la blockchain distante.

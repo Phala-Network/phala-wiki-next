@@ -17,12 +17,12 @@ Phala Network tackles this challenging problem. It seeks to provide strong guara
 On May 14th, 2021, Khala Network, Phala's canary network, has won the slot auction with 132,281 raised KSM and successfully registered the 4th Kusama [parachain](https://parachains.info/details/khala) with Para ID 2004 🎉🎉🎉.
 
 <div style="text-align: center">
-    <img style="max-width: 100%" src="/images/docs/parachain-auction.png">
+    <img style="max-width: 100%" src="/images/docs/phala-network/parachain-auction.png">
 </div>
 
 ## Phala Roadmap
 
-![](/images/docs/roadmap.png)
+![](/images/docs/phala-network/roadmap.png)
 
 (Our roadmap. 🚀🚀🚀)
 

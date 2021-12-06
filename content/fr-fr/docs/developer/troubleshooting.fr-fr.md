@@ -1,5 +1,9 @@
 ---
 title: "1.3 Dépannage"
+weight: 11013
+menu:
+  docs:
+    parent: "developer"
 ---
 
 ## `Blockchain Phala`

@@ -1,10 +1,11 @@
 ---
 title: "Archived: Contract Development"
 weight: 11000
-draft: false
+draft: true
 menu:
   docs:
     parent: "developer"
+#parent was 'developer,' this is now archived (hidden).
 ---
 
 ## What is a Confidential Contract

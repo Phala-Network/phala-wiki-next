@@ -1,6 +1,7 @@
 ---
 title: "Claim Test Token from Telegram Bot"
 weight: 7002
+draft: true
 menu:
   docs:
     parent: "para-mining"

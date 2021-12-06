@@ -1,7 +1,10 @@
 ---
 title: "Client pour la validation légère"
-weight: 4
+weight: 10005
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 ## Les bases.

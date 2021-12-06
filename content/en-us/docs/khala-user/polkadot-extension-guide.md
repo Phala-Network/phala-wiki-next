@@ -32,9 +32,9 @@ Khala Network, as the parachain of Kusama, shares the accounts of Kusama Relay C
 ![](/images/docs/khala-user/choose-network.png)
 
 
-## Import Existed Account
+## Import Existing Account
 
-There are two ways to import an existed account:
+There are two ways to import an existing account:
 
 ### Import with Mnemonic
 

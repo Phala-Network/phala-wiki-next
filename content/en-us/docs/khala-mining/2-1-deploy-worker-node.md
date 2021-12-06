@@ -1,19 +1,16 @@
 ---
-title: "2.1 Deploy Worker Node"
+title: "2.1 Deploy a Worker Node"
 weight: 6021
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-{{< tip "warning" >}}
-You cannot start mining before Khala mining starts. But you can follow this command to pre-sync your Khala node:
-
-```bash
-sudo phala presync
-```
-
-{{< /tip >}}
+> You cannot start mining before Khala miner has been verified. But you can follow this command to pre-sync your Khala node:
+>
+> ```bash
+> sudo phala presync
+> ```
 
 ## Start Mining
 

@@ -1,7 +1,10 @@
 ---
 title: "Le Relayeur"
-weight: 6
+weight: 10007
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 Le relayeur pdiem est le composant qui synchronise les données entre pdiem et la blockchain Diem. Il s'exécute hors chaîne, se connecte aux deux blockchains et surveille les transactions liées.
