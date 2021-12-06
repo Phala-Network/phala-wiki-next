@@ -1,10 +1,11 @@
 ---
 title: "Contract Development"
 weight: 11000
-draft: false
+draft: true
 menu:
   docs:
     parent: "developer"
+#parent was 'developer,' this is now archived (hidden).
 ---
 ## Developer Community
 If you have any questions, the following Phala developer communities are good places to ask.

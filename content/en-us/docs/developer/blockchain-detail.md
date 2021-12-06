@@ -14,7 +14,7 @@ In this chapter, we try to give a brief introduction to the structure of Phala b
 - `pRuntime`: The TEE runtime. Contracts run in `pRuntime`
 - `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
-<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
+<img src="/images/docs/developer/simple_architecture.png" alt="drawing" class="center"/>
 
 (Phala architecture overview)
 

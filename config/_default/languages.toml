@@ -7,14 +7,14 @@
 
 [zh-cn]
   languageName = "中文"
-  contentDir = "content/zh-cn"
+  contentDir = "content/zh-cn/"
   weight = 15
   [zh-cn.params]
     languageISO = "中文"
 
 [fr-fr]
   languageName = "Français"
-  contentDir = "content/fr-fr"
+  contentDir = "content/fr-fr/"
   weight = 20
   [fr-fr.params]
     languageISO = "Français"

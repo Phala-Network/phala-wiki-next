@@ -1,5 +1,9 @@
 ---
 title: "1.2 Hello World : votre premier contrat confidentiel"
+weight: 11013
+menu:
+  docs:
+    parent: "developer"
 ---
 
 > Une connaissance de base de la programmation en langage Rust et du développement de contrats intelligents est nécessaire pour suivre ce tutoriel.

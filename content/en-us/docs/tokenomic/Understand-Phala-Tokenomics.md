@@ -42,9 +42,9 @@ A Miner will run a **_Performance Test_** and stake some tokens to get the initi
 $$V^e = f(R^e, \text{ConfidenceScore}) \times (S + C)$$
 
 - $R^e > 1$ is a **_Stake Multiplier_** set by the network (Khala or Phala).
-- $S$ is the miner stake; a **_Minimum Stake_** is required to start mining. Stake can't be increased or decreased while mining, but can be set higher than the Minimum.
+- $S$ is the miner stake; a **_Minimum Stake_** is required to start mining. The stake can't be increased or decreased while mining, but can be set higher than the Minimum.
 - $C$ is the estimated cost of the miner rigs, inferred from the **_Performance Test_**.
-- $\text{ConfidenceScore}$ is based on the miner's SGX capabilities
+- $\text{ConfidenceScore}$ is based on the miner's Intel© SGX capabilities
 - $f(R^e, \text{ConfidenceScore}) = 1 + (\text{ConfidenceScore} \cdot (R^e - 1))$
 
 Params used in simulation:
@@ -70,7 +70,7 @@ For reference,
 | Mid-End i5 10-Gen | 8     | 2000  | $500              |
 | High-End i9 9-Gen | 10    | 2800  | $790              |
 
-> The table is based on the version while writing of this doc and is subject to changes.
+> The table is based on the version while writing of this documentation and is subject to changes.
 
 The performance test will be performed:
 

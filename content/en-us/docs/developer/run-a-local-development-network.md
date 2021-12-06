@@ -21,7 +21,7 @@ A full Phala Network stack has three components, with an optional Javascript SDK
 - `pRuntime`: The TEE runtime. Contracts run in `pRuntime`
 - `pherry`: The Substrate-TEE bridge relayer. Connects the blockchain and `pRuntime`
 
-<img src="/images/docs/simple_architecture.png" alt="drawing" style="width:500px;" alt="Paris" class="center"/>
+<img src="/images/docs/developer/simple_architecture.png" alt="drawing" class="center"/>
 
 (Phala architecture overview)
 
@@ -73,7 +73,7 @@ Excute it to automate the next three manual steps to get the environment ready:
 sudo ./phala_quick_install.sh
 ```
 
-![](/images/docs/auto-install.gif)
+![](/images/docs/developer/auto-install.gif)
 
 <br>
 
@@ -338,6 +338,7 @@ cd ../../..
 ```
 
 Once they are launched successfully, they should output logs. Notice that we pass the `--dev` flag to `phala-node` and `pherry` to indicate we are in the development network. This is important since for now, smart contract functionalities are only enabled under development mode.
+![](/images/docs/developer/core-terminal.gif)
 
 The three core blockchain components are connected via TCP (WebSocket and HTTP). Please ensure your system have the TCP ports not occupied by other programs. By default they use the following ports:
 

@@ -13,7 +13,7 @@
 </h3>
 
 <p align="center">
-  The go to source for your phala documentation.
+  The go to source for your Phala documentation.
 </p>
 
 <p align="center">

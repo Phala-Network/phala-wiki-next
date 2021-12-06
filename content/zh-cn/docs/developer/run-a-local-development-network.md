@@ -158,7 +158,7 @@ cd pruntime/bin
 ./target/release/phost --dev
 ```
 
-![](/images/docs/core-terminal.gif)
+![](/images/docs/developer/core-terminal.gif)
 
 (Core components running and producing logs)
 
@@ -202,7 +202,7 @@ event - build page: /
 event - compiled successfully
 ```
 
-![](/images/docs/apps-ng-landing.png)
+![](/images/docs/developer/apps-ng-landing.png)
 (Web UI landing page)
 
 The Web UI connects to both `phala-node` and `pruntime` by their default RPC endpoints. If everything is configured correctly, you will see the wallet unlock screen in the landing page as shown above. You should be able to select the well-known development accounts (Alice, Bob, etc) in the drop box.
@@ -226,7 +226,7 @@ In the last two sections, we have built and launched `phala-node`, `pruntime`, a
 
 Let's select Alice and unlock the wallet. Alice is a built-in test account with 10,000 PHA on the blockchain. This PHA token is the native token. It's transparent on-chain like a typical Substrate blockchain, managed by Balances pallet.
 
-![](/images/docs/apps-ng-init-wallet.png)
+![](/images/docs/developer/apps-ng-init-wallet.png)
 (Secret wallet dapp)
 
 However, the "secret assets" wallet below is very different. Secret assets are stored in confidential contracts inside TEE enclaves. Like what the name says, the secret assets are private and invisible on the blockchain.
@@ -247,7 +247,7 @@ There are plenty of things you can play with the secret wallet:
 
 All the above functions are made by confidential transaction. Nobody can see the content of the transaction because the body is encrypted. By clicking "Polkadot UI" button in the navigation bar, it will bring you to the polkadot.js apps you are familiar with. After sending an encrypted transaction by clicking the "Secret Transfer" button, you can find the encrypted transaction wrapped by `phalaModel.pushCommand` extrinsic from the block explorer as shown below.
 
-<img src="/images/docs/polkadotjs-pushCommand.png" style="max-height: 200px;">
+<img src="/images/docs/developer/polkadotjs-pushCommand.png" style="max-height: 200px;">
 
 (An encrypted confidential transaction on a blockchain explorer)
 

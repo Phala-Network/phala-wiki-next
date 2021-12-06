@@ -1,16 +1,23 @@
 ---
-title: "1.3 Check the SGX Capability and Confidence Level"
+title: "1.2 Checking Intel® SGX Capability and Confidence Level"
+weight: 6013
+menu:
+  docs:
+    parent: "khala-mining"
 ---
 
-## Double Check the SGX Capability
+## Double Check your Intel® SGX Capability
 
 After the installation of your driver, please use the following utility to double check if everything goes well.
 
-- You can run the SGX test by the Phala scripts
+- You can run the Intel® SGX test by the Phala scripts
 
   ```bash
   sudo phala sgx-test
   ```
+
+> This script will install :whale: Docker, the required Intel® SGX drivers, and pull all the necessary Docker images for your Phala miner :rock::pick:.
+> - Please follow the instruction during installation.
 
 Please pay attention to the following checks:
 
@@ -105,15 +112,17 @@ debug: cause: aesm error code GetLicensetokenError_6
 
 If you can't run Phala pRuntime with both of them tagged as ✔, you may have to check whether your BIOS is the latest version with latest security patches. If you still can't run Phala pRuntime docker with the latest BIOS of your motherboard manufacturer, we are afraid you can't mine PHA for now with this motherboard.
 
+Your confidence level, referred to as the "Tier" in the table below, will appear in the last line of the report after executing `sudo phala sgx-test`.
+
 ## Confidence Level of a Miner
 
-| Level | isvEnclaveQuoteStatus | advisoryIDs |
-|---|---|---|
-| Tier 1 | OK | None |
-| Tier 2 | SW_HARDENING_NEEDED | None |
-| Tier 3 | CONFIGURATION_NEEDED, CONFIGURATION_AND_SW_HARDENING_NEEDED | Whitelisted* |
+| Level  | isvEnclaveQuoteStatus                                       | advisoryIDs               |
+| ------ | ----------------------------------------------------------- | ------------------------- |
+| Tier 1 | OK                                                          | None                      |
+| Tier 2 | SW_HARDENING_NEEDED                                         | None                      |
+| Tier 3 | CONFIGURATION_NEEDED, CONFIGURATION_AND_SW_HARDENING_NEEDED | Whitelisted\*             |
 | Tier 4 | CONFIGURATION_NEEDED, CONFIGURATION_AND_SW_HARDENING_NEEDED | Some beyond the whitelist |
-| Tier 5 | GROUP_OUT_OF_DATE | Any value |
+| Tier 5 | GROUP_OUT_OF_DATE                                           | Any value                 |
 
 The confidence level measures how secure the SGX Enclave execution environment is. It's determined by the Remote Attestation report from Intel. Among them, `isvEnclaveQuoteStatus` indicates if the platform is vulnerable to some known problems, and `advisoryIDs` indicates the actual affected problems.
 
@@ -124,7 +133,7 @@ Not all the `advisoryIDs` are problematic. Some advisories doesn't affect Phala'
 - INTEL-SA-00334
 - INTEL-SA-00381
 - INTEL-SA-00389
-{{< /tip >}}
+  {{< /tip >}}
 
 Tier 1, 2, 3 are considered with the best security level because they are either not affected by any known vulnerability, or the adversary is known trivial. It's good to run highest valuable apps on these workers, for instance:
 

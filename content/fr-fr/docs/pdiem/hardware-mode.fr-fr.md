@@ -1,7 +1,10 @@
 ---
 title: "Avancé: Mode Matériel"
-weight: 8
+weight: 10009
 draft: false
+menu:
+  docs:
+    parent: "pDiem"
 ---
 
 Par défaut, la démo est construite avec le mode logiciel SGX SDK. Elle est conçue pour un environnement de développement. Cependant, pour protéger les données et la logique à l'intérieur de l'Enclave, elle doit fonctionner en mode matériel.

@@ -8,7 +8,7 @@ menu:
     parent: "phala-network"
 ---
 
-![](/images/docs/phala_landing.png)
+![](/images/docs/phala-network/phala_landing.png)
 
 ## Phala Network
 

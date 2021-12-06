@@ -8,7 +8,7 @@ menu:
 
 ## Introduction
 
-To secure the cloud of Workers and the jobs they are assigned, the network will set [Confidence Level]({{< relref "docs/khala-mining/1-3-confidential-level-evaluation#confidence-level-of-a-miner" >}}) for each worker’s CPU and will require **_Staking_** to enable mining. Each worker can only earn value $V$ if it first stakes a number of PHA tokens based on its CPU score, after which it can enter the mining system and start TEE Mining.
+To secure the cloud of Workers and the jobs they are assigned, the network will set [Confidence Level]({{< relref "docs/khala-mining/1-2-confidential-level-evaluation#confidence-level-of-a-miner" >}}) for each worker’s CPU and will require **_Staking_** to enable mining. Each worker can only earn value $V$ if it first stakes a number of PHA tokens based on its CPU score, after which it can enter the mining system and start TEE Mining.
 
 If a worker misbehaves or fails to respond, it will be punished by slashing the $V$, which strongly incentivizes participants to ensure their workers are running properly and disincentivizes attempts to cheat.
 

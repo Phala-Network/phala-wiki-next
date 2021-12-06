@@ -1,52 +1,51 @@
 ---
-title: "2.4 Use Console to Manage Your Mining"
+title: "3. Phala App to Manage Mining"
 weight: 6024
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-> We highly recommend to read [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}}) before using the Console.
+> We highly recommend reading about our [staking mechanism]({{< relref "docs/tokenomic//1-mining-staking" >}}) before using the Phala App.
 
-[The Console](http://app-test.phala.network/console)
+[The Phala App](https://app.phala.network/en/mining/)
 
-Miners and pool owners can use Console to manage Workers and StakePools. Also it provides an overview of the status of all the managed Workers and StakePools.
+Miners and pool owners can use teh Phala App to manage Workers/ Miners and StakePools. It also provides an overview of the status of all the managed Workers/ Miners and StakePools.
 
-## Console Manual
+## Phala App Manual
 
 ### Prerequisites
 
-1. [Create a Khala account]({{< relref "docs/khala-user" >}}) as the pool Owner and Worker operator;
+1. [Create a Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}) as the pool Owner and Worker operator;
 2. Get the WorkerPublicKey from Worker and has bound the Worker to the Khala account above.
 
-### Console Operations
+### Phala App Operations
 
-<!-- TODO.zhe: the link in yuque is outdated -->
-
-1. Connect your Khala account ([You can follow this page to create/import your account]({{< relref "docs/khala-user" >}}));
+1. [Connect your Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}).
 2. Create StakePool
-   - Click "Create Stakepool";
+   - In the left menu, make sure you select 'Mining.'
+   - Click "Create Stakepool" in the top right corner;
      ![](/images/docs/khala-mining/create-pool.png)
    - Click "Confirm" in the pop-up window;
-   - Sign the transaction in the Polkadot{.js} Extension and wait for about 20 seconds;
-   - Created pool will be listed in Stakepool;
-3. (Optional) Configure StakePool
+   - Sign the transaction in the Polkadot{.js} Extension and wait;
+   - The created pool will be listed in Stakepool;
+3. Configure StakePool (Optional) 
    - Set Payout
      - Click "Set Payout Pref" of the target pool;
      - Type in the payout in the pop-up window; the default payout is 0, and it can be set between 0-100%;
      - Click "Confirm" to send the transaction;
-     - The payout value will be updated in Stakepool list;
+     - The payout value will be updated in the Stakepool list;
    - Set Staking Capacity
      - Click "Set Cap" of the target pool;
      - Type in the Staking capacity in the pop-up window; the default capacity is unlimited, and it can be set between "Total Stake Now" to unlimited number;
      - Submit the transaction;
-     - The capacity value will be updated in Stakepool list;
-4. Bind Worker
-   - Click "Add Worker" of the target pool;
+     - The capacity value will be updated in the Stakepool list;
+4. Add a Miner
+   - Select `...` (next to "Info") "Add Worker" (highlited red) in the target pool;
      ![](/images/docs/khala-mining/add-worker.png)
-   - Type in the WorkerPublicKey of Worker in the pop-up window;
+   - Copy & paste your `WorkerPublicKey` of your miner in the pop-up window;
    - Submit the transaction;
-   - The bound Worker will be listed;
+   - Your miner will now be listed;
 5. Staking
    - After creating the StakePool, you can invite other Stakers to invest or stake yourself;
    - To stake yourself
