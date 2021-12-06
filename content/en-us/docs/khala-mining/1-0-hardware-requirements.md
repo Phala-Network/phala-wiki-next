@@ -14,26 +14,26 @@ A system can potentially mine Phala if it meets these general requirements:
 
 ### Requirements Checklist
 
-- [x] An [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html)  compatible processor. 
+- [x] An [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html)  compatible processor.
    - [Lookup your CPU](#1-lookup-your-processor) and see if it is compatible.
    - [How to find new Intel® SGX processors](#2-confirm-the-cpu-supports-intel-sgx) if mine is not compatible.
 - [x] A motherboard and BIOS that supports [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) to run the [Trusted Execution Environment (TEE)](https://murdoch.is/talks/rhul14tee.pdf) is required.
    - [Check BIOS compatability](#check-your-bios).
 - [x] A Solid-state drive (SSD) storage device
-   - Storing your blockchain data on a mechanical HDD will result in slow synchronization speeds. At a minimum a 512GB SSD drive is recommended. 
+   - Storing your blockchain data on a mechanical HDD will result in slow synchronization speeds. At a minimum a 512GB SSD drive is recommended.
       - Refer to [issue #554](https://github.com/Phala-Network/phala-blockchain/issues/554) for more info.
 - [x] Have a supported version of Ubuntu (18.04, 20.04, 21.04) installed and booted from it.
-   - See [Suported OS requirements](#supported-operating-systems). 
+   - See [Suported OS requirements](#supported-operating-systems).
 - [x] You require [$S_{min}=k \sqrt{P}$](/en-us/docs/tokenomic/understand-phala-tokenomics/#minimum-stake) tokens to stake when starting your miner.
    - As an example an [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i78700-processor-12m-cache-up-to-4-60-ghz.html) had a `P` value (miner/ worker score) between `1400` and `1700` during testing.
    - Feel free to use our [spreadsheet](#TODO) (coming soon) containing the formulas from the PHA [tokenomics section](/en-us/docs/tokenomic/understand-phala-tokenomics) to estimate your required minimum tokens to stake.
-    - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/docs/khala-user/stake-pool/) on how to delegate. 
+    - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/docs/khala-user/stake-pool/) on how to delegate.
 
 ## Check Your CPU
 
 > Currently, only [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) is supported, hence an [Intel® SGX compatible CPU](https://www.intel.com/content/www/us/en/support/articles/000028173/processors.html) is a requirement.
 
-### 1. Lookup Your **Processor**
+### 1. Lookup Your Processor
 
 #### Windows
 
@@ -43,7 +43,7 @@ A system can potentially mine Phala if it meets these general requirements:
 > `Start` > :gear:`Settings` > :control_knobs:`Control Panel`
 >> Note that you require a [supported Linux OS](#supported-operating-systems) to run a Phala miner.
 
-On Windows, head over to 'Control Panel/Settings,' or right-click on the Start icon and select 'System.' 
+On Windows, head over to 'Control Panel/Settings,' or right-click on the Start icon and select 'System.'
 
 </p>
 </details>
@@ -82,7 +82,7 @@ lscpu
 </p>
 </details>
 
-### 2. Confirm the **CPU Supports Intel® SGX**
+### 2. Confirm the CPU Supports Intel® SGX
 
 > Once you know your CPU's model name:
 > -  Lookup your Processor's Intel® SGX compatability in the [Intel® product specifications (ARK)](https://ark.intel.com/content/www/us/en/ark.html#@Processors)
@@ -97,7 +97,7 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 
 (This image shows a CPU that supports Intel® SGX.)
 
-:information_source: If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced search](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_SoftwareGuardExtensions=Yes%20with%20Intel%C2%AE%20ME&3_CoreCount-Min=8&2_StatusCodeText=4) option at the Intel® website to find your next processor. In general terms, the newer the processor is and the more cores it has, the greater the compatibility and the miner rating. 
+:information_source: If you do not have an Intel® SGX compatible CPU yet, you may use the [advanced search](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_SoftwareGuardExtensions=Yes%20with%20Intel%C2%AE%20ME&3_CoreCount-Min=8&2_StatusCodeText=4) option at the Intel® website to find your next processor. In general terms, the newer the processor is and the more cores it has, the greater the compatibility and the miner rating.
 
 ## Check Your BIOS
 
@@ -107,24 +107,24 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
 
    > Refer to these resources to 'boot into BIOS mode' from [Microsoft©](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) or [wikiHow](https://www.wikihow.com/Enter-BIOS).
 
-   Look for instructions to boot into your BIOS on the screen immediately after a cold boot; this varies by manufacturer. 
+   Look for instructions to boot into your BIOS on the screen immediately after a cold boot; this varies by manufacturer.
 
-### 2. **Disable Secure Boot** 
+### 2. Disable Secure Boot
 
    > In the BIOS settings go to: `Security` > `Secure Boot` and set it to `Disabled`
    > -  The terms in the BIOS menu may differ depending on your mainboard manufacturer.
 
-### 3. **Use UEFI Boot** 
+### 3. Use UEFI Boot
 
    > In the BIOS menu under `Boot` > `Boot Mode` set it to `UEFI`.
    > -  Refer to ['boot into UEFI mode'](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11) for additional information.
 
 ### 4. Save & Reboot
 
-> Do not forget to save your BIOS settings. 
+> Do not forget to save your BIOS settings.
 > - Reboot your machine after the settings are saved.
 
-### 5. **Enable Intel® SGX Extensions**
+### 5. Enable Intel® SGX Extensions
 
    > Go to `Security` > `Intel® SGX` (The exact name may vary by manufacturer), set it to `Enabled`.
    >
@@ -132,7 +132,7 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
    >>
    >> - Note: If you only see the Intel® `SGX: Software Controlled` or similar, you need to run the [Intel® Software Guard Extensions Software Enabling Application for Linux](https://github.com/intel/sgx-software-enable) after booting into your Ubuntu OS. Before executing the script, refer to the [Supported Operating Systems](#supported-operating-systems) section.
    >>
-   >> - Phala also provides a prebuilt binary [here](https://github.com/Phala-Network/sgx-tools/releases/tag/0.1). 
+   >> - Phala also provides a prebuilt binary [here](https://github.com/Phala-Network/sgx-tools/releases/tag/0.1).
    >>  You can download and execute it with the following commands:
    >> ```bash
    >> wget https://github.com/Phala-Network/sgx-tools/releases/download/0.1/sgx_enable
@@ -142,12 +142,12 @@ Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.i
    >> </p>
 </details>
 
-## Supported Operating Systems 
+## Supported Operating Systems
 
 Ubuntu is recommended. You need to be able to boot your computer into a supported version of Ubuntu to mine. The following OS versions of Ubuntu have been reported to be compatible to mine.
 
 > More information on how to [install Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview).
-> - If you have no GUI or physicall access to the machine, you may want to use SSH. 
+> - If you have no GUI or physicall access to the machine, you may want to use SSH.
 >   - <a href="https://youtu.be/hQWRp-FdTpc?t=40" target="_blank">SSH crash course</a> expaining what SSH is and how to use it, may be a usefull resource.
 >   - <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> provides an overview of Linux and how to use the shell.
 
@@ -184,7 +184,7 @@ Get the Linux Kernel utilities for Ubuntu 20.04.
 git clone https://github.com/mtompkins/linux-kernel-utilities.git
 ```
 
-```bash 
+```bash
 cd linux-kernel-utilities/
 chmod +x *.sh
 ```
@@ -223,18 +223,18 @@ Ubuntu 21.10 is currently the recommended Ubuntu version to use for mining.
 <details><summary>Expand for installation instructions for Ubuntu 21.10</summary>
 <p>
 
-For Ubuntu 21.10 we recommend kernel version `5.13.0-xxx`. 
+For Ubuntu 21.10 we recommend kernel version `5.13.0-xxx`.
 
 To find your Linux kernel version type:
 
 ```bash
 hostnamectl | grep Kernel
 ```
-Some packages do not come natively installed. It is therefore recommended to install the most crucial ones now as instructed below. 
+Some packages do not come natively installed. It is therefore recommended to install the most crucial ones now as instructed below.
 
 #### DCAP Driver for Intel® SGX
 
-First, install Rust with [rustup](https://rustup.rs/). This is needed to install the driver. 
+First, install Rust with [rustup](https://rustup.rs/). This is needed to install the driver.
 
 To install rustup:
 
@@ -258,7 +258,7 @@ To install the Foranix EDP target through executing:
 rustup target add x86_64-fortanix-unknown-sgx --toolchain nightly
 ```
 
-Now you are ready to Install the Intel® SGX driver. 
+Now you are ready to Install the Intel® SGX driver.
 
 ```bash
 echo "deb https://download.fortanix.com/linux/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/fortanix.list >/dev/null
@@ -279,6 +279,13 @@ You are now ready to proceed to the next section.
 :point_down: If you have any issues feel free to reach out to the community. :point_down:
 
 <div class="mediaList">
+   <div class="item">
+     <a href="https://discord.gg/C6E4hQjk" target="_blank">
+        <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.8 1.3l.3.3C5.9 2.8 4 4.6 4 4.6l1.3-.7c2.5-1 4.5-1.4 5.3-1.4h.4a19.5 19.5 0 0111.6 2.1s-1.8-1.7-5.7-3l.3-.3s3.1 0 6.5 2.4c0 0 3.3 6 3.3 13.5 0 0-2 3.3-7 3.5 0 0-1-1-1.6-1.9 3-.8 4.2-2.7 4.2-2.7-1 .6-1.9 1-2.7 1.3a16.2 16.2 0 01-12.7 0 13.5 13.5 0 01-1.8-.8h-.1l-.1-.1-.6-.4s1 1.8 4 2.7l-1.5 2C1.9 20.4 0 17.1 0 17.1 0 9.8 3.3 3.7 3.3 3.7c3.2-2.4 6.2-2.4 6.5-2.4zm-.6 8.6c-1.3 0-2.4 1.2-2.4 2.6 0 1.4 1 2.5 2.4 2.5 1.3 0 2.3-1.1 2.3-2.5s-1-2.6-2.3-2.6zm8.4 0c-1.3 0-2.3 1.2-2.3 2.6 0 1.4 1 2.5 2.3 2.5C19 15 20 14 20 12.5s-1-2.6-2.4-2.6z" fill="#8C8C8C"></path>
+        </svg>
+     </a>
+  </div>
   <div class="item">
      <a href="https://t.me/phalaminer" target="_blank">
         <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -297,13 +304,6 @@ You are now ready to proceed to the next section.
      <a href="https://github.com/Phala-Network/solo-mining-scripts" target="_blank">
         <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M23.43 11.88C23.4521 14.3236 22.6757 16.7077 21.219 18.6698C19.8159 20.6299 17.8249 22.092 15.5347 22.8443C15.3307 22.9011 15.1119 22.8616 14.9407 22.737C14.817 22.6194 14.7507 22.4537 14.7592 22.2833V19.1153C14.8259 18.3223 14.5391 17.5403 13.9755 16.9785C14.4927 16.9278 15.0056 16.8396 15.51 16.7145C16.0051 16.5817 16.4797 16.3818 16.9207 16.1205C17.3828 15.8685 17.794 15.5328 18.1335 15.1305C18.5063 14.6595 18.7862 14.122 18.9585 13.5465C19.1774 12.8105 19.2831 12.0455 19.272 11.2778C19.2977 10.1289 18.8676 9.01665 18.0757 8.184C18.4479 7.18651 18.4063 6.08169 17.9602 5.115C17.5487 5.03997 17.124 5.09775 16.7475 5.28C16.2648 5.45357 15.8005 5.67466 15.3615 5.94L14.7922 6.29475C12.9034 5.76673 10.906 5.76673 9.01723 6.29475C8.85223 6.17925 8.64598 6.0555 8.38198 5.8905C7.97102 5.65096 7.54048 5.44672 7.09498 5.28C6.69553 5.07717 6.24242 5.00502 5.79973 5.07375C5.35491 6.04992 5.31632 7.16287 5.69248 8.1675C4.91161 9.01313 4.4862 10.1269 4.50448 11.2778C4.49272 12.0401 4.59846 12.7998 4.81798 13.53C4.99699 14.1027 5.27634 14.639 5.64298 15.114C5.9749 15.5282 6.38749 15.8706 6.85573 16.1205C7.30251 16.3702 7.77567 16.5694 8.26648 16.7145C8.77358 16.8401 9.28921 16.9284 9.80923 16.9785C9.37742 17.3851 9.11269 17.9381 9.06673 18.5295C8.84969 18.6328 8.61917 18.705 8.38198 18.744C8.11 18.7952 7.83372 18.82 7.55698 18.8183C7.17796 18.8207 6.80805 18.7022 6.50098 18.48C6.15906 18.2322 5.87713 17.9108 5.67598 17.5395C5.49392 17.2285 5.24615 16.961 4.94998 16.7558C4.72927 16.5863 4.47678 16.4628 4.20748 16.3928H3.91048C3.76173 16.3841 3.61281 16.4066 3.47323 16.4588C3.39073 16.5083 3.36598 16.566 3.39898 16.632C3.43803 16.7057 3.48507 16.7748 3.53923 16.8383C3.59899 16.9077 3.66529 16.9713 3.73723 17.028L3.84448 17.094C4.10341 17.2333 4.32869 17.4276 4.50448 17.6633C4.68861 17.8982 4.84631 18.1528 4.97473 18.4223L5.12323 18.7688C5.24028 19.1409 5.47112 19.467 5.78323 19.701C6.0801 19.9162 6.42106 20.0627 6.78148 20.13C7.12335 20.2016 7.47171 20.2375 7.82098 20.2373C8.09714 20.2423 8.37321 20.223 8.64598 20.1795L8.99248 20.1218V22.2833C8.99566 22.4561 8.92337 22.6218 8.79448 22.737C8.61978 22.8608 8.39893 22.9001 8.19223 22.8443C5.90917 22.0824 3.92918 20.6111 2.54098 18.645C1.07673 16.6962 0.299242 14.3174 0.329979 11.88C0.317931 9.85051 0.853767 7.85538 1.88098 6.105C2.88982 4.34759 4.34757 2.88985 6.10498 1.881C7.85535 0.85379 9.85049 0.317954 11.88 0.330002C13.9095 0.317954 15.9046 0.85379 17.655 1.881C19.4124 2.88985 20.8701 4.34759 21.879 6.105C22.907 7.85506 23.4428 9.85041 23.43 11.88Z" fill="#8C8C8C"></path>
-        </svg>
-     </a>
-  </div>
-  <div class="item">
-     <a href="https://discord.gg/C6E4hQjk" target="_blank">
-        <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M9.8 1.3l.3.3C5.9 2.8 4 4.6 4 4.6l1.3-.7c2.5-1 4.5-1.4 5.3-1.4h.4a19.5 19.5 0 0111.6 2.1s-1.8-1.7-5.7-3l.3-.3s3.1 0 6.5 2.4c0 0 3.3 6 3.3 13.5 0 0-2 3.3-7 3.5 0 0-1-1-1.6-1.9 3-.8 4.2-2.7 4.2-2.7-1 .6-1.9 1-2.7 1.3a16.2 16.2 0 01-12.7 0 13.5 13.5 0 01-1.8-.8h-.1l-.1-.1-.6-.4s1 1.8 4 2.7l-1.5 2C1.9 20.4 0 17.1 0 17.1 0 9.8 3.3 3.7 3.3 3.7c3.2-2.4 6.2-2.4 6.5-2.4zm-.6 8.6c-1.3 0-2.4 1.2-2.4 2.6 0 1.4 1 2.5 2.4 2.5 1.3 0 2.3-1.1 2.3-2.5s-1-2.6-2.3-2.6zm8.4 0c-1.3 0-2.3 1.2-2.3 2.6 0 1.4 1 2.5 2.3 2.5C19 15 20 14 20 12.5s-1-2.6-2.4-2.6z" fill="#8C8C8C"></path>
         </svg>
      </a>
   </div>
