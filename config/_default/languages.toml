@@ -5,13 +5,6 @@
   [en-us.params]
     languageISO = "English"
 
-[zh-cn]
-  languageName = "中文"
-  contentDir = "content/zh-cn/"
-  weight = 15
-  [zh-cn.params]
-    languageISO = "中文"
-
 [fr-fr]
   languageName = "Français"
   contentDir = "content/fr-fr/"
