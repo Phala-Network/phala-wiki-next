@@ -178,8 +178,7 @@ sudo npm install -g yarn
   <br>
 
 > Instructions for (but not limited to) a relatively clean Windows11/WSL2 environment (Ubuntu 20.04LTS, and git correctly installed) are preceded by the mention "For WSL2"
->> Install WSL2 (Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11)
->>More infos at: https://docs.microsoft.com/en-us/windows/wsl/install
+>> [Install WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) (Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11)
 >>in PowerShell or Windows Command Prompt
 
 ```bash
@@ -248,7 +247,7 @@ sudo npm install -g yarn
   <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
   <br>
 
-> MacOS users can opt to use a Virtual Machine running Ubuntu and follow the Ubuntu configuration steps.
+> Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM) with OS *Ubuntu 20.04*. Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWS</a>.
 
   </div>
 </div>
