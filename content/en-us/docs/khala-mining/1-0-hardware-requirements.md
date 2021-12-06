@@ -151,7 +151,7 @@ Ubuntu is recommended. You need to be able to boot your computer into a supporte
 >   - <a href="https://youtu.be/hQWRp-FdTpc?t=40" target="_blank">SSH crash course</a> expaining what SSH is and how to use it, may be a usefull resource.
 >   - <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> provides an overview of Linux and how to use the shell.
 
-### Ubuntu 18.04
+<!-- ### Ubuntu 18.04
 
 <details><summary>Expand for installation instructions for Ubuntu 18.04</summary>
 <p>
@@ -159,7 +159,7 @@ Ubuntu is recommended. You need to be able to boot your computer into a supporte
 More information to be added soon.
 
 </p>
-</details>
+</details> -->
 
 ### Ubuntu 20.04
 
@@ -206,7 +206,7 @@ More information to be added soon.
 </p>
 </details>
 
-### Ubuntu 21.04
+<!-- ### Ubuntu 21.04
 
 <details><summary>Expand for installation instructions for Ubuntu 21.04</summary>
 <p>
@@ -214,7 +214,7 @@ More information to be added soon.
 More information to be added soon.
 
 </p>
-</details>
+</details> -->
 
 ### Ubuntu 21.10
 
