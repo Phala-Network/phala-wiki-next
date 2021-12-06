@@ -151,7 +151,28 @@ Ubuntu is recommended. You need to be able to boot your computer into a supporte
 >   - <a href="https://youtu.be/hQWRp-FdTpc?t=40" target="_blank">SSH crash course</a> expaining what SSH is and how to use it, may be a usefull resource.
 >   - <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> provides an overview of Linux and how to use the shell.
 
-<!-- ### Ubuntu 18.04
+[//]: # (May need to convert to shortcode to reduce code & reusability in future.)
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+<!--  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Ubuntu 18.04</button>
+  </li> -->
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Ubuntu 20.04</button>
+  </li>
+<!--  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Ubuntu 21.04</button>
+  </li> -->
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Ubuntu 21.10</button>
+  </li>
+</ul>
+
+<!-- <div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <br>
+
+### Ubuntu 18.04
 
 <details><summary>Expand for installation instructions for Ubuntu 18.04</summary>
 <p>
@@ -159,12 +180,15 @@ Ubuntu is recommended. You need to be able to boot your computer into a supporte
 More information to be added soon.
 
 </p>
-</details> -->
+</details> 
+
+<br> -->
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <br>
 
 ### Ubuntu 20.04
-
-<details><summary>Expand for installation instructions for Ubuntu 20.04</summary>
-<p>
 
 Using a Linux kernel version of `5.8.0-xxx` is recommended for Ubuntu 20.04.
 
@@ -173,10 +197,6 @@ To find your Linux kernel version type:
 ```bash
 hostnamectl | grep Kernel
 ```
-
-<details><summary>How to get the correct Kernel version.
-</summary>
-<p>
 
 Get the Linux Kernel utilities for Ubuntu 20.04.
 
@@ -197,16 +217,13 @@ To see a list of available Kernel versions for your machine, execute the followi
 
 It is recommended to follow the instructions and select to install Ubuntu 20.04 Kernel version 5.8.
 
-</p>
-</details>
+<br>
 
-\
-More information to be added soon.
+<!-- <div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <br>
 
-</p>
-</details>
-
-<!-- ### Ubuntu 21.04
+### Ubuntu 21.04
 
 <details><summary>Expand for installation instructions for Ubuntu 21.04</summary>
 <p>
@@ -214,14 +231,17 @@ More information to be added soon.
 More information to be added soon.
 
 </p>
-</details> -->
+</details> 
+
+<br> -->
+
+  </div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <br>
 
 ### Ubuntu 21.10
 
 Ubuntu 21.10 is currently the recommended Ubuntu version to use for mining.
-
-<details><summary>Expand for installation instructions for Ubuntu 21.10</summary>
-<p>
 
 For Ubuntu 21.10 we recommend kernel version `5.13.0-xxx`.
 
@@ -271,8 +291,18 @@ Follow the instructions in the installation script. You may need to reboot after
 
 You are now ready to proceed to the next section.
 
-</p>
-</details>
+<br>
+
+  </div>
+</div>
+
+<script>
+  var firstTabEl = document.querySelector('#myTab li:last-child a')
+  var firstTab = new bootstrap.Tab(firstTabEl)
+
+  firstTab.show()
+</script>
+
 
 \
 \
