@@ -50,7 +50,6 @@ If you have any questions, you can always reach out to the Phala community for h
 
 Khala requires the following components:
 
-<!--
 <div class="mediaList">
   <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/explorer" target="_blank">
@@ -77,7 +76,6 @@ Khala requires the following components:
      </a>
   </div>
 </div>
--->
 
 - Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
 - Khala Console: <a href="https://app.phala.network/en/mining/" target="_blank">Mining Console</a>
