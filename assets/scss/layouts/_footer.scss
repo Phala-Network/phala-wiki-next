@@ -3,7 +3,7 @@
   margin: 50px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   @media (max-width: md) {
     margin-top: 60px;
@@ -49,11 +49,15 @@
   }
 }
 
-.footer {
+.main-footer {
   border-top: 1px solid $gray-200;
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #ebebeb;
+
+  .mediaList {
+    justify-content: space-between;
+  }
 
   ul {
     margin-bottom: 0;
