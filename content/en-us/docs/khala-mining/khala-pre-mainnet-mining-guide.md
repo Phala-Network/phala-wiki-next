@@ -82,7 +82,7 @@ Khala requires the following components:
 
 ## Please Choose a Topic
 
-{{< button "developer" "Build on Phala" >}}
+<!-- {{< button "developer" "Build on Phala" >}} -->
 
 {{< button "/en-us/docs/khala-mining/1-0-hardware-requirements/" "Getting Started" >}}
 
