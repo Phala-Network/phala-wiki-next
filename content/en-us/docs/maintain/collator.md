@@ -38,10 +38,16 @@ The `CollatorSelection` pallet is a minimal PoS system. It has a configurable bo
 
 ## Enable an invulnerable collator
 
-Call `collatorSelection.setInvulnerables(list)`, where `list` is the full list of all the invulnerables collators including the old ones. The current invulnerable collator list can be found from `collatorSelection.invulnerables()`.
+> This operation can only be done with the Sudo permission. To apply for a public collator, please refer to the next section.
 
-This operation can only be done with the Sudo permission.
+Call `collatorSelection.setInvulnerables(list)`, where `list` is the full list of all the invulnerables collators including the old ones. The current invulnerable collator list can be found from `collatorSelection.invulnerables()`.
 
 ## Apply for a public collator
 
-(Not officially supported yet.)
+To become a public collator, you will need to put a fixed amount of the deposit. The deposit can be found at `collatorSelection.candidacyBond()`. Up to a certain number of the public collators are allowed (the genesis collators are not included). The number can be found at `collatorSelection.desiredCandidates()`, and the current candidates can be found at `collatorSelection.candidates()`.  As of writing, the bond is 1000 PHA, and the desired candidate number is 12.
+
+After the collator account and the node is setup correctly, submit a proposal by calling `collatorSelection.registerAsCandidate()` from the account. Once it's submitted, you will need to wait for two sessions to become a collator.
+
+The blockchain will detect offline collators. If the produced blocks in a session is under a threshold, it will be kicked out from the collator candidate list, and the bond will be returned in full.
+
+At any time, a collator account can signal the intention to leave the collator candidate list by calling `collatorSelection.leaveIntent()`.
