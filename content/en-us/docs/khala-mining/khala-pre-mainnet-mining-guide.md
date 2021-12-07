@@ -15,7 +15,6 @@ We highly recommend miners to first read about Phala's [tokenomics]({{< relref "
 
 If you have any questions, you can always reach out to the Phala community for help:
 
-<!--
 <div class="mediaList">
   <div class="item">
      <a href="https://t.me/phalanetwork" target="_blank">
@@ -49,6 +48,7 @@ If you have any questions, you can always reach out to the Phala community for h
 
 ## Khala Components
 
+<!--
 Khala requires the following components:
 
 <div class="mediaList">
@@ -77,16 +77,17 @@ Khala requires the following components:
      </a>
   </div>
 </div>
+-->
 
 - Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
 - Khala Console: <a href="https://app.phala.network/en/mining/" target="_blank">Mining Console</a>
 
 ## Please Choose a Topic
 
-<!-- {{< button "developer" "Build on Phala" >}} -->
+{{< button "developer" "Build on Phala" >}}
 
 {{< button "/en-us/docs/khala-mining/1-0-hardware-requirements/" "Getting Started" >}}
 
 {{< button "/en-us/docs/khala-mining/2-0-solo-mining/" "Deploy Khala Node" >}}
 
-{{< button "https://github.com/Phala-Network/solo-mining-scripts#troubleshooting" "Troubleshooting" >}} -->
+{{< button "https://github.com/Phala-Network/solo-mining-scripts#troubleshooting" "Troubleshooting" >}}
