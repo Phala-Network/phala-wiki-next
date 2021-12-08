@@ -26,15 +26,14 @@
   <a href="https://github.com/Phala-Network/phala-wiki-next/actions?query=workflow%3A%22Hyas+CI%22">
     <img src="https://img.shields.io/github/workflow/status/h-enk/doks/Hyas%20CI/master?style=flat-square" alt="GitHub Workflow Status (branch)">
   </a>
-  <a href="https://phala-wiki-preview.netlify.app/">
+  <a href="https://wiki.phala.network">
     <img src="https://img.shields.io/netlify/8a1009d5-88ac-413e-96ef-3f928674a083?style=flat-square" alt="Netlify">
   </a>
 </p>
 
-## Demo
+## Website
 
-- [phala.wiki.netlify.app](https://phala-wiki-preview.netlify.app/)
-
+- [wiki.phala.network](https://wiki.phala.network/)
 
 ## Requirements
 
