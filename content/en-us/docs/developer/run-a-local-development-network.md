@@ -57,6 +57,8 @@ Follow the commands below to prepare the environment. Some can be skipped if alr
   <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <br>
 
+### Ubuntu
+
 **Install dependencies via script for Ubuntu**
 - Run the script to install and check required dependencies for Phala
 
@@ -76,6 +78,8 @@ sudo ./phala_quick_install.sh
 ![](/images/docs/developer/auto-install.gif)
 
 <br>
+
+<details><summary> Expand for details on manual system dependency installation for Ubuntu</summary> <p>
 
 **Install the system level dependencies manually for Ubuntu**
 
@@ -123,9 +127,14 @@ sudo apt-get install -y nodejs
 sudo npm install -g yarn
 ```
 
+</p>
+</details>
+
   </div>
   <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
   <br>
+
+### Fedora
 
 Install the system level dependencies for Fedora
 
@@ -177,8 +186,10 @@ sudo npm install -g yarn
   <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
   <br>
 
+### Windows WSL
+
 > Instructions for (but not limited to) a relatively clean Windows11/WSL2 environment (Ubuntu 20.04LTS, and git correctly installed) are preceded by the mention "For WSL2"
->> [Install WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) (Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11)
+>> [Install WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) (Windows 10 version 2004 and higher for Build 19041 and higher or Windows 11)
 >>in PowerShell or Windows Command Prompt
 
 ```bash
@@ -247,6 +258,8 @@ sudo npm install -g yarn
   <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
   <br>
 
+### MacOS
+
 > Currently, Mac is not supported. However, if you wish to run a simulated Phala environment for this tutorial, you may create a Virtual Machine (VM) with OS *Ubuntu 20.04*. Furthermore, MacOS is a UNIX-based Operating System; you may easily use SSH to connect to your VM without additional tools. A free resource is Amazon Web Services <a href="https://aws.amazon.com/getting-started/launch-a-virtual-machine-B-0/" target="_blank">AWS</a>.
 
   </div>
@@ -259,6 +272,7 @@ sudo npm install -g yarn
   firstTab.show()
 </script>
 
+\
 You can test the installation by running the following commands. The output should match the sample outputs, or with a slightly higher version.
 
 ```bash
