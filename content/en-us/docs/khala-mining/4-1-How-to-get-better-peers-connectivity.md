@@ -5,6 +5,7 @@ draft: true
 menu:
   docs:
     parent: "khala-mining"
+# Moved to the GitHub README to improve readability and minimize overall verbosity.
 ---
 
 Some users running nodes may find their nodes are struggling to connect to peers, which causes nodes to be dropped from the network. Here you will learn more about the root causes and solve them.

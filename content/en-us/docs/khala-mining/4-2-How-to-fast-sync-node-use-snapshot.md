@@ -1,10 +1,14 @@
 ---
 title: "4.2 Speed Up Node Synching"
 weight: 6042
+draft: true
 menu:
   docs:
     parent: "khala-mining"
+# Moved to the GitHub README to improve readability and minimize overall verbosity.
 ---
+
+
 
 ## Check Your Status
 
