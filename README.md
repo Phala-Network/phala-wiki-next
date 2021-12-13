@@ -33,7 +33,7 @@
 
 ## Website
 
-- [wiki.phala.network](https://wiki.phala.network/)
+[![Phala Wiki](https://user-images.githubusercontent.com/37558304/145890328-35ee96db-2713-4f53-8d62-d90aad16ab8c.png)](https://wiki.phala.network/)
 
 ## Requirements
 
