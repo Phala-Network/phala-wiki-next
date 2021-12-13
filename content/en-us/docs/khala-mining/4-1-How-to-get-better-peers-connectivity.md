@@ -1,6 +1,7 @@
 ---
 title: "4.1 Improve Peer Connectivity"
 weight: 6041
+draft: true
 menu:
   docs:
     parent: "khala-mining"
