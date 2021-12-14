@@ -1,3 +1,25 @@
+[[main]]
+  name = "Docs"
+  url = "/en-us/docs/"
+  weight = 10
+
+[[main]]
+  name = "Getting Started"
+  url = "/en-us/quick-start/mining/mine-phala/"
+  weight = 20
+
+[[docs]]
+  name = "Mining"
+  identifier = "mining"
+  url = "/en-us/quick-start/mining"
+  weight = 10
+
+[[docs]]
+  name = "Mining"
+  identifier = "stake"
+  url = "/en-us/quick-start/stake"
+  weight = 10
+
 [[docs]]
   name = "Phala Network"
   identifier = "phala-network"
@@ -89,14 +111,3 @@
 
 # New Simple Articles (wiki)
 
-[[docs]]
-  name = "Beginner"
-  weight = 50
-  identifier = "khala-mining"
-  url = "/docs/beginner"
-
-[[docs]]
-  name = "Beginner"
-  weight = 50
-  identifier = "khala-mining"
-  url = "/quick-start/mining"

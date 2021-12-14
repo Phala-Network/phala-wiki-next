@@ -35,7 +35,7 @@ menu:
   <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
   <br>
 
-> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation]({{< relref "docs/khala-mining/1-0-hardware-requirements">}}).
+> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/docs/khala-mining/1-0-hardware-requirements).
 
   </div>
 </div>
@@ -49,7 +49,7 @@ menu:
 
 ### Wallet
 
-If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) in your browser. 
+If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser. 
 
 <div class="mediaList">
   
@@ -71,19 +71,20 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   </div>
 </div>
 
+> Have the details of your Wallet (address, seed) ready when installing the miner. 
+
 ## Quick Start
 
 <p align="left">
     <img alt="Phala Network" src="https://user-images.githubusercontent.com/37558304/145892648-bc3562f8-47e0-4cc9-a8a1-05b1ee8baab1.png" width="30">
-    <b class="heading">Ubuntu 21.10</b> <sub> GUI setup script [v0.01]</sub>
+    <b class="heading">Ubuntu 21.10</b> <sub> GUI miner setup script [v0.01]</sub>
   </a>
 </p>
 
 ```bash
 wget -O - https://raw.githubusercontent.com/Phala-Network/solo-mining-scripts/improvement-test/gui.sh | bash
 ```
-
-> Have the details of your Wallet (address, seed) ready when installing the miner. 
+If you experience an issues with the installation script, you can always install the miner manually from our [GitHub repository](https://github.com/Phala-Network/solo-mining-scripts#manual-installation).
 
 ## Manage Miners
 
