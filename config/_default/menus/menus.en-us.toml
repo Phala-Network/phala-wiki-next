@@ -86,3 +86,17 @@
 #   name = "Privacy"
 #   url = "/privacy-policy/"
 #   weight = 10
+
+# New Simple Articles (wiki)
+
+[[docs]]
+  name = "Beginner"
+  weight = 50
+  identifier = "khala-mining"
+  url = "/docs/beginner"
+
+[[docs]]
+  name = "Beginner"
+  weight = 50
+  identifier = "khala-mining"
+  url = "/quick-start/mining"

@@ -68,7 +68,7 @@ Khala requires the following components:
      </a>
   </div>
   <div class="item" style="text-align:center">
-     <a href="https://app.phala.network/mining/" target="_blank" rel="noopener noreferrer">
+     <a href="https://app.phala.network/en/" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
            <img src="/images/docs/khala-mining/phala_logo.png" alt="Khala App" width="60" class="center"/>
            <p>Khala App</p>
