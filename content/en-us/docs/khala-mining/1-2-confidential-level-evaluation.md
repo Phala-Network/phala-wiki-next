@@ -1,25 +1,23 @@
 ---
-title: "1.2 Checking Intel® SGX Capability and Confidence Level"
+title: "Miner Confidence Level"
 weight: 6013
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-## Double Check your Intel® SGX Capability
+## Test your Intel® SGX Capability
 
-After the installation of your driver, please use the following utility to double check if everything goes well.
-
-- You can run the Intel® SGX test by the Phala scripts
+The confidence level impacts your miner's score. Before configuring your miner, the necessary drivers are required, and the `sgx-test` option determines your Intel® SGX Capability alongside the confidence level.
 
   ```bash
   sudo phala sgx-test
   ```
 
-> This script will install :whale: Docker, the required Intel® SGX drivers, and pull all the necessary Docker images for your Phala miner :rock::pick:.
+> This command will install :whale: Docker, the required Intel® SGX drivers, and pull all the necessary Docker images for your Phala miner :rock::pick:.
 > - Please follow the instruction during installation.
 
-Please pay attention to the following checks:
+Information about the checks conducted during execution of the command:
 
 1. SGX system software → Able to launch enclaves → `Production Mode`
 2. Flexible launch control → `Able to launch production mode enclave`
@@ -29,7 +27,7 @@ Among them, **the first one is a must to run Phala Network pRuntime**. If it's n
 
 The latter two are not a must, though it is suggested to be checked as it would be essential to install the DCAP driver.
 
-The report below would be a positive result:
+The example below shows a positive result:
 
 ```txt
 Detecting SGX, this may take a minute...
@@ -70,47 +68,7 @@ advisoryIDs = "INTEL-SA-00219", "INTEL-SA-00289", "INTEL-SA-00320", "INTEL-SA-00
 confidenceLevel = 5
 ```
 
-If your got a report like below, please screenshot it, and send it to [Phala Discord Server](https://discord.gg/zjdJ7d844d) or [Telegram Miner Group](https://t.me/phalaminer) for help.
-
-```txt
-Detecting SGX, this may take a minute...
-✔  SGX instruction set
-  ✔  CPU support // if tagged with ❌: it does not suppoort SGX function, you would need to use other types of CPU.
-  ✔  CPU configuration // if tagged with ❌: you would need to check BIOS updates.
-  ✔  Enclave attributes // if tagged with ❌: probably caused by [CPU support issue] and [CPU configuration]
-  ✔  Enclave Page Cache // if tagged with ❌: probably caused by [CPU support issue] and [CPU configuration]
-  SGX features
-    ✘  SGX2  ✘  EXINFO  ✘  ENCLV  ✘  OVERSUB  ✘  KSS // It's OK if SGX2 was tagged with ❌. Phala has not integrated with SGX2 technology in the current stage.
-    Total EPC size: 94.0MiB
-✘  Flexible launch control
-  ✔  CPU support
-  ✘  CPU configuration // if tagged with ❌: you can give it a try but your miner might be affected when the SGX driver upgrades in the future.
-✔  SGX system software
-  ✔  SGX kernel device (/dev/isgx)
-  ✔  libsgx_enclave_common
-  ✔  AESM service
-  ✔  Able to launch enclaves
-    ✔  Debug mode
-    ✘  Production mode // if tagged with ❌: you would need to check BIOS updates.
-    ✔  Production mode (Intel whitelisted)
-
-🕮  Flexible launch control > CPU configuration
-Your hardware supports Flexible Launch Control, but it's not enabled in the BIOS. Reboot your machine and try to enable FLC in your BIOS. Alternatively, try updating your BIOS to the latest version or contact your BIOS vendor.
-
-debug: MSR 3Ah IA32_FEATURE_CONTROL.SGX_LC = 0
-
-More information: https://edp.fortanix.com/docs/installation/help/#flc-cpu-configuration
-
-🕮  SGX system software > Able to launch enclaves > Production mode
-The enclave could not be launched. This might indicate a problem with FLC.
-
-debug: failed to load report enclave
-debug: cause: failed to load report enclave
-debug: cause: The EINITTOKEN provider didn't provide a token
-debug: cause: aesm error code GetLicensetokenError_6
-```
-
-If you can't run Phala pRuntime with both of them tagged as ✔, you may have to check whether your BIOS is the latest version with latest security patches. If you still can't run Phala pRuntime docker with the latest BIOS of your motherboard manufacturer, we are afraid you can't mine PHA for now with this motherboard.
+If you can not run Phala pRuntime with both of them tagged as ✔, you may have to check whether your BIOS is the latest version with latest security patches. If you still can't run Phala pRuntime docker with the latest BIOS of your motherboard manufacturer, we are afraid you can't mine PHA for now with this motherboard.
 
 Your confidence level, referred to as the "Tier" in the table below, will appear in the last line of the report after executing `sudo phala sgx-test`.
 

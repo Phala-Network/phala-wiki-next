@@ -1,21 +1,24 @@
 ---
-title: "2.1 Deploy a Worker Node"
+title: "Deploy the Miner"
 weight: 6021
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-> You cannot start mining before Khala miner has been verified. But you can follow this command to pre-sync your Khala node:
->
-> ```bash
-> sudo phala presync
-> ```
+## Optional: Pre-Sync
+
+> *Optional:* You cannot start mining before your miner has been verified (fully synced). But you can execute the command below to pre-sync your Khala node.
+
+ ```bash
+ sudo phala presync
+ ```
 
 ## Start Mining
 
-After all the installation and configuration, let's start mining!
+Let's start mining!
 
 ```bash
 sudo phala start
 ```
+

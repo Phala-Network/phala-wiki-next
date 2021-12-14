@@ -1,5 +1,5 @@
 ---
-title: "3. Phala App to Manage Mining"
+title: "Manage the Miner"
 weight: 6024
 menu:
   docs:

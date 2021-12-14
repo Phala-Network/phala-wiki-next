@@ -1,5 +1,5 @@
 ---
-title: "4. Frequently Asked Questions"
+title: "Troubleshooting"
 weight: 6040
 menu:
   docs:

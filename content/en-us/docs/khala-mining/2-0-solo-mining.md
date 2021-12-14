@@ -1,5 +1,5 @@
 ---
-title: "2. Solo Mining Configuration"
+title: "Configure the Miner"
 weight: 6020
 menu:
   docs:

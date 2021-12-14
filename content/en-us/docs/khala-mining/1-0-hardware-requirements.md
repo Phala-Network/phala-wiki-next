@@ -1,5 +1,5 @@
 ---
-title: "1. Hardware & System Compatability"
+title: "Requirements"
 weight: 6011
 menu:
   docs:

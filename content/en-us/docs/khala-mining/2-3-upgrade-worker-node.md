@@ -1,5 +1,5 @@
 ---
-title: "2.3 Upgrade Worker Node"
+title: "Update your Miner's Node"
 weight: 6023
 menu:
   docs:

@@ -1,5 +1,5 @@
 ---
-title: "Khala Pre-mainnet Mining Guide"
+title: "Khala Mining Guide"
 weight: 6010
 draft: false
 menu:
@@ -79,13 +79,3 @@ Khala requires the following components:
 
 - Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
 - Khala Console: <a href="https://app.phala.network/en/mining/" target="_blank">Mining Console</a>
-
-## Please Choose a Topic
-
-<!-- {{< button "developer" "Build on Phala" >}} -->
-
-{{< button "/en-us/docs/khala-mining/1-0-hardware-requirements/" "Getting Started" >}}
-
-{{< button "/en-us/docs/khala-mining/2-0-solo-mining/" "Deploy Khala Node" >}}
-
-{{< button "https://github.com/Phala-Network/solo-mining-scripts#troubleshooting" "Troubleshooting" >}}
