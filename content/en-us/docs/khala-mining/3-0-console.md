@@ -12,7 +12,7 @@ Miners and pool owners can use the Phala App to manage Workers/ Miners and Stake
 
 ## Miners Phala App Manual 
 
-> #### Prerequisites
+### Prerequisites
 >
 > 1. The same [Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}) the Miners run on, as the pool Owner and Miner operator.
 > 2. `miner public key`: The Miner must be ready and synced. This miner must use the same Khala Account as the one you use for the Khala App.
@@ -131,7 +131,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
    - State: Includes Ready, Mining, Unresponsive and CoolingDown (will turn to Ready after 7 days);
    - Total Reward: All the historical rewards of the Worker;
 
-#### Stake Info
+#### Staking Info
 
 1. Withdraw Queue lists all the funds to be withdrawn, ordered by the issue time. Noted that unmet withdrawal requests can cause **ALL** the Workers to stop mining.
    - Staker: The Staker sending the withdrawal requests.

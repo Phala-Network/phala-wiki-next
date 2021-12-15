@@ -21,8 +21,9 @@ menu:
   <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <br>
 
-> We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30"> > <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide).</sub> > </a>
->
+> We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30">
+>    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide).</sub>
+>  </a>
 > </p>
 
 Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/docs/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/docs/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
