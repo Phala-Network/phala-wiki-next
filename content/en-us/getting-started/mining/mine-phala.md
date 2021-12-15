@@ -1,12 +1,12 @@
 ---
 title: "Mine Khala"
-weight: 1000
+weight: 1001
 menu:
   gettingstarted:
-    parent: "gettingstarted"
+    parent: "Mining"
 ---
 
-## Requirements
+### Hardware
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

@@ -3,7 +3,7 @@ title: "Stake Khala"
 weight: 2000
 menu:
   gettingstarted:
-    parent: "gettingstarted"
+    parent: "Staking"
 ---
 
 ## TODO
