@@ -6,18 +6,46 @@ menu:
     parent: "khala-mining"
 ---
 
-> We highly recommend reading about our [staking mechanism]({{< relref "docs/tokenomic//1-mining-staking" >}}) before using the Phala App.
+> We highly recommend reading about our [staking mechanism]({{< relref "docs/tokenomic//1-mining-staking" >}}) before using the [Phala App](https://app.phala.network/en/mining/).
 
-[The Phala App](https://app.phala.network/en/mining/)
+Miners and pool owners can use the Phala App to manage Workers/ Miners and StakePools. It also provides an overview of the status of all the managed Miners and Stake Pools.
 
-Miners and pool owners can use teh Phala App to manage Workers/ Miners and StakePools. It also provides an overview of the status of all the managed Workers/ Miners and StakePools.
+## Miners Phala App Manual 
 
-## Phala App Manual
+> #### Prerequisites
+>
+> 1. The same [Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}) the Miners run on, as the pool Owner and Miner operator.
+> 2. `miner public key`: The Miner must be ready and synced. This miner must use the same Khala Account as the one you use for the Khala App.
 
-### Prerequisites
+If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser. 
 
-1. [Create a Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}) as the pool Owner and Worker operator;
-2. Get the WorkerPublicKey from Worker and has bound the Worker to the Khala account above.
+<div class="mediaList">
+  
+  <div class="item" style="text-align:center">
+     <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts" target="_blank" rel="noopener noreferrer">
+        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <img src="https://polkadot.js.org/apps/static/khala.3558f6d9.svg" alt="Khala App" width="60" class="center"/>
+           <p>Khala Wallet</p>
+        </svg>
+     </a>
+  </div>
+    <div class="item" style="text-align:center">
+     <a href="https://polkadot.js.org/extension/" target="_blank" rel="noopener noreferrer">
+        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <img src="/images/docs/khala-mining/polkadot-js.svg" alt="Khala App" width="60" class="center"/>
+           <p>Polkadot{.js} Extension</p>
+        </svg>
+     </a>
+  </div>
+  <div class="item" style="text-align:center">
+     <a href="https://app.phala.network/mining/" target="_blank" rel="noopener noreferrer">
+        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <img src="/images/docs/khala-mining/phala_logo.png" alt="Khala App" width="60" class="center"/>
+           <p>Khala App</p>
+        </svg>
+     </a>
+  </div>
+</div>
 
 ### Phala App Operations
 
@@ -43,7 +71,7 @@ Miners and pool owners can use teh Phala App to manage Workers/ Miners and Stake
 4. Add a Miner
    - Select `...` (next to "Info") "Add Worker" (highlited red) in the target pool;
      ![](/images/docs/khala-mining/add-worker.png)
-   - Copy & paste your `WorkerPublicKey` of your miner in the pop-up window;
+   - Copy & paste your `miner public key` of your miner in the pop-up window;
    - Submit the transaction;
    - Your miner will now be listed;
 5. Staking
