@@ -1,5 +1,5 @@
 ---
-title: "Mine Khala 2"
+title: "Stake Khala"
 weight: 2000
 menu:
   gettingstarted:
