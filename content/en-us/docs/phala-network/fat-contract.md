@@ -7,7 +7,7 @@ menu:
     parent: "phala-network"
 ---
 
-# The Next Generation Smart Contract
+## The Next Generation Smart Contract
 
 What's your expectation of smart contracts?
 
@@ -15,9 +15,10 @@ My answer would be:
 
 > Provide rich features like normal programs with better performance and larger computing power by the concurrency of multiple computing nodes.
 
-The smart contracts introduced by Ethereum blockchain are really an innovation to extend the capability of blockchain. At the first time, all the rules are defined and enforced with unchangeable code and irreversible transactions. Correspondingly, we have seen its wide adoption in decentralized finance, where trust is valuable. Despite the success in trust-needed financial cases, from the perspective of developers, the current smart contract platforms are closed: you cannot easily access the data and services out of them. Such a problem even requires creating some ad-hoc [Oracle](https://en.wikipedia.org/wiki/Blockchain_oracle) blockchains to solve! Let alone the platitudes to improve the performance of existing blockchains.
+The smart contracts introduced by Ethereum blockchain are really an innovation to extend the capability of blockchain. First, all the rules are defined and enforced with unchangeable code and irreversible transactions. Correspondingly, we have seen its wide adoption in decentralized finance, where trust is valuable. However, despite the success in trust-needed financial cases, developers' perspective, the current smart contract platforms are closed: you cannot easily access the data and services out of them. Such a problem even requires creating some ad-hoc [Oracle](https://en.wikipedia.org/wiki/Blockchain_oracle) blockchains to solve! Let alone the platitudes to improve the performance of existing blockchains.
 
-Phala is committed to providing a universal decentralized computing network that can be freely combined with decentralized smart contracts, storage protocols, and data indexing services. What we have achieved is a trustless cloud of more than 20,000 workers. These computing nodes are organized under a framework that enables the *decoupling of execution and consensus*: Unlike existing platforms where all the contracts are executed by a single miner during the block production process (with other miners doing duplicated execution for validation), Phala enforces the faithful execution in each worker without (or only with a small factor of) duplication, thus its computing power increases linearly to the number of workers. We believe this is the prerequisite towards a decentralized computing cloud with the power to carry the Web3 world.
+Phala is committed to providing a universal decentralized computing network that can be freely combined with decentralized smart contracts, storage protocols, and data indexing services. What we have achieved is a trustless cloud of more than 20,000 workers. These computing nodes are organized under a framework that enables the decoupling of execution and consensus: Unlike existing platforms where a single miner executes all the contracts during the block production process (with other miners doing duplicated execution for validation), Phala enforces the faithful execution in each worker without (or only with a small factor of) duplication; thus its computing power increases linearly to the number of workers. We believe this is the prerequisite towards a decentralized computing cloud with the power to carry the Web3 world.
+
 
 ![](https://i.imgur.com/3p6M1DQ.png)
 
