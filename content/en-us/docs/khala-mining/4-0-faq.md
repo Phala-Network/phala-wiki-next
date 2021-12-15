@@ -52,54 +52,162 @@ menu:
   </div>
 </div>
 
-## Confidence Level
 
-Currently, Tier 1, 2, 3 are treated the same way. Therefore, no operation is needed if your setup is in those tier categories. However, if you are at Tier 4 or 5, you can try the aspects mentioned below.
+## General
 
-### `CONFIGURATION_NEEDED` `CONFIGURATION_AND_SW_HARDENING_NEEDED`
-
-> The EPID signature of the ISV enclave QUOTE has been verified correctly, but the additional configuration of the Intel® SGX platform may be needed (for further details, see Advisory IDs). The platform has not been identified as compromised, and thus, it is not revoked. It is up to the Service Provider to decide whether or not to trust the content of the QUOTE and whether or not to trust the platform performing the attestation to protect specific sensitive information.
->
-> - See [Intel IAS API Spec](https://api.trustedservices.intel.com/documents/IAS-API-Spec-rev-4.0.pdf) for detailed information.
-
-The BIOS may be misconfigured, or the BIOS firmware is misbuilt. You can try:
-
-- Upgrade to the latest BIOS firmware (you may want to write to the motherboard manufacturers asking for a fix, too)
-- Disable Hyper Threading in the BIOS
-- Disable the integral graphics in the BIOS
-- Disable advanced power management (disable the power-saving mode)
-- Check the exact `adversoryIds` and their description pages for the detailed fixes
-
-{{< tip >}}
-Linux provides the option to override the microcode. However it doesn't help the Intel® SGX setup, because Intel® SGX measures the microcode carried by the BIOS only.
-{{< /tip >}}
-
-### `GROUP_OUT_OF_DATE`
-
-> The EPID signature of the ISV enclave QUOTE has been verified correctly, but the TCB level of the Intel® SGX platform is outdated (for further details, see Advisory IDs). The platform has not been identified as compromised, and thus it is not revoked. It is up to the Service Provider to decide whether or not to trust the content of the QUOTE and whether or not to trust the platform performing the attestation to protect specific sensitive information.
-
-The BIOS firmware (specifically, the CPU microcode it carries) is out-of-date and must be upgraded. Attempt the following:
-
-- Upgrade to the latest BIOS firmware (you may wish to contact your manufacturer).
-
-> :information: Linux provides the option to override the microcode. However, it does not help the Intel® SGX setup because Intel® SGX measures the microcode carried by the BIOS.
-
-## Upgrade Miner from Para2 to Khala
-
-You need to clean all node & pruntime data. Execute:
+Most symptoms are solved by restarting your node. If you experience issues running your node, try stopping the node by:
 
 ```bash
-sudo phala update clean
+sudo phala stop
 ```
 
-Follow this command to uninstall your phala mining scripts:
+And attempt a restart with 
+```bash
+sudo phala start
+```
+
+If you still have issues attempt to [update the script](/en-us/docs/khala-mining/2-3-upgrade-worker-node/).
+
+## Investigating the Issue
+
+First, check if all required containers are running. 
+
+```bash
+sudo docker ps
+```
+
+You should have three containers running as shown in this example:
+
+<p align="center">
+  <a href="https://phala.network/">
+    <img alt="Phala Network" src="https://user-images.githubusercontent.com/37558304/145825263-50d69b7e-a7e1-45c9-9eca-cc2d7d3a6b69.png" height="100">
+  </a>
+</p>
+
+(image showing the miner node's running docker containers) 
+
+To get the most recent logs of each container, you may execute:
+
+```bash
+docker logs <container_ID/container_name> -n 100 -f
+```
+Note that `<container_ID/container_name>` must be replaced with the container you wish the receive the logs from. In the example above the `container_ID` is `8dc34f63861e` and `container_name` would be `phala-pherry`.
+\
+If you attempt to post on the phala forum and do not know where the issue lies, please post [the logs](#get-logs) of all three docker containers. Copy-paste the container logs from the terminal into the forum post. 
+
+## Advanced Troubleshooting
+In some cases, it might be beter to reinstall the mining script. 
+To do this, first uninstall the script: 
 
 ```bash
 sudo phala uninstall
-sudo rm -r ~/solo-mining-scripts-para1
-sudo rm -r ~/solo-mining-scripts-main
-sudo rm ~/main.zip
-sudo rm ~/para1.zip
+```
+
+And delete the mining script repository by executing:
+
+```bash
+yes | sudo rm -r solo-mining-scripts-main
+```
+
+Now you may reinstall the mining script.
+
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+sudo apt install wget unzip
+cd ~
+```
+
+```bash
+wget https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/main.zip
+unzip main.zip
+rm -r main.zip #cleaning up the installation
+cd solo-mining-scripts-main/ #note this depends on your current directory
+chmod +x install.sh
+sudo ./install.sh en
+```
+
+You may now restart your node.
+
+```bash
+sudo phala start
+``` 
+
+## Peer Connectivity
+
+Some users running nodes may find their nodes are struggling to connect to peers, which causes nodes to be dropped from the network.
+You can check your node connections through executing:
+
+```bash
+sudo docker logs -f phala-node
+```
+
+For an optimal setup, you should have between 40 and 50 peers.
+
+If you have insufficient peers do the following:
+* Check your firewall settings
+* Ensure there are no NAT or Policy-based filters
+
+Feel free to read [NAT](https://en.wikipedia.org/wiki/Network_address_translation) for more information if you are curious about the root causes. Also, do not hesitate to look for existing [Phala forum posts](https://forum.phala.network/c/mai/42-category/42) before posing your issue if you are stuck. 
+
+## Driver Issues
+
+### DCAP driver Installation
+
+:information_source: The most common issue is that your mainboard may not support a DCAP driver. In this case, the script cannot automatically install the `isgx` driver and results in the following error message.
+
+<p align="center">
+  <a href="https://phala.network/">
+    <img alt="Phala Network" src="https://user-images.githubusercontent.com/37558304/143471619-1116c12f-7ef5-4313-93a5-51f3ed30c355.png" height="250">
+  </a>
+</p>
+
+(image of the terminal showing the DCAP driver error message) 
+
+In this case, prior to running `sudo phala start`, you need to manually install the `isgx` driver:
+
+```bash
+sudo phala install isgx
+```
+
+## Khala Node Stops Synching
+
+If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](#troubleshooting).
+
+If the synchronization still fails, you may try to delete the khala chain database on your miner's node.  
+It is located in `/var/khala-dev-node/chains/khala`.
+
+<p align="center">
+  <a href="https://phala.network/">
+    <img alt="Phala Network" src="https://user-images.githubusercontent.com/37558304/143770078-26a3c457-ce1d-447c-8e26-81ea0e1beb9b.png" height="100">
+  </a>
+</p>
+
+(image showing the khala blockchain files of the miner node) 
+
+It is located in `/var/khala-dev-node/chains/khala`.
+
+First, stop your node with:
+
+```bash
+sudo phala stop
+```
+
+To delete the khala blockchain database on your node, execute the following commands:
+
+```bash
+rm -r /var/khala-dev-node/chains/khala/db
+rm -r /var/khala-dev-node/chains/khala/keystore
+rm -r /var/khala-dev-node/chains/khala/network
+```
+
+Now restart your node.
+
+```bash
+sudo phala stop
+```
+
+```bash
+sudo phala start
 ```
 
 ## Deleting the Mining Scripts
@@ -112,4 +220,4 @@ sudo rm -r ~/solo-mining-scripts-main
 sudo rm ~/main.zip
 ```
 
-You can follow [this tutorial](/en-us/docs/khala-mining/1-2-download-setup-scripts/) to redownload and reinstall the new phala mining scripts.
+You can follow [this tutorial](/en-us/docs/khala-mining/1-1-installing-phala-mining-tools/) to redownload and reinstall the new phala mining scripts.
