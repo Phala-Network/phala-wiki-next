@@ -1,11 +1,17 @@
 [[main]]
   name = "Getting Started"
-  url = "/en-us/quick-start/mining/mine-phala/"
+  url = "/getting-started/mining/mine-phala"
   weight = 10
+
+[[gettingstarted]]
+  name = "Getting Started"
+  identifier = "gettingstarted"
+  url = "/getting-started/mining/"
+  weight = 1000
 
 [[main]]
   name = "Docs"
-  url = "/en-us/docs/"
+  url = "/docs/phala-network/phala-network/"
   weight = 20
 
 [[docs]]

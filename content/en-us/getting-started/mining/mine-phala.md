@@ -1,9 +1,9 @@
 ---
 title: "Mine Khala"
-weight: 6012
+weight: 1000
 menu:
-  docs:
-    parent: "mining"
+  gettingstarted:
+    parent: "gettingstarted"
 ---
 
 ## Requirements
@@ -21,12 +21,11 @@ menu:
   <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <br>
 
-> We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30">
->    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide).</sub>
->  </a>
+> We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30"> > <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide).</sub> > </a>
+>
 > </p>
 
- Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/docs/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers  an Intel® SGX [supported CPU](/en-us/docs/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
+Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/docs/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/docs/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
 
 </p>
 </details>
@@ -49,10 +48,10 @@ menu:
 
 ### Wallet
 
-If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser. 
+If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser.
 
 <div class="mediaList">
-  
+
   <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +70,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   </div>
 </div>
 
-> Have the details of your Wallet (address, seed) ready when installing the miner. 
+> Have the details of your Wallet (address, seed) ready when installing the miner.
 
 ## Quick Start
 
@@ -84,11 +83,12 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 ```bash
 wget -O - https://raw.githubusercontent.com/Phala-Network/solo-mining-scripts/improvement-test/gui.sh | bash
 ```
+
 If you experience an issues with the installation script, you can always install the miner manually from our [GitHub repository](https://github.com/Phala-Network/solo-mining-scripts#manual-installation).
 
 ## Manage Miners
 
-Create a pool if you do not have one yet. Once the miner is registered, you can add them to your pool. 
+Create a pool if you do not have one yet. Once the miner is registered, you can add them to your pool.
 
 <div class="mediaList">
   <div class="item" style="text-align:center">
