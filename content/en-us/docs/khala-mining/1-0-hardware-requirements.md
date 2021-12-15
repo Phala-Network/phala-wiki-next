@@ -29,6 +29,8 @@ A system can potentially mine Phala if it meets these general requirements:
    - Feel free to use our [spreadsheet](#TODO) (coming soon) containing the formulas from the PHA [tokenomics section](/en-us/docs/tokenomic/understand-phala-tokenomics) to estimate your required minimum tokens to stake.
     - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/docs/khala-user/stake-pool/) on how to delegate.
 
+> Alternatively, you can test mining through [renting hardware](/en-us/getting-started/mining/paas-miner/). 
+
 ## Check Your CPU
 
 > Currently, only [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) is supported, hence an [Intel® SGX compatible CPU](https://www.intel.com/content/www/us/en/support/articles/000028173/processors.html) is a requirement.

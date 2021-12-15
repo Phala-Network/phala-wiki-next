@@ -6,9 +6,18 @@ menu:
     parent: "khala-mining"
 ---
 
-## Confidence Level
+## Quick Links
 
-Currently, Tier 1, 2, 3 are treated the same way. Therefore, no operation is needed if your setup is in those tier categories. However, if you are at Tier 4 or 5, you can try the following tips.\
+{{< button "https://github.com/Phala-Network/solo-mining-scripts#navigate" "General" >}}
+
+{{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
+
+{{< button "/en-us/docs/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+
+{{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
+
+{{< button "https://forum.phala.network/c/mai/42-category/42" "Forum" >}}
+
 \
 :point_down: You can also join our Discord or Telegram miner group to discuss your issue. :point_down:
 
@@ -42,6 +51,10 @@ Currently, Tier 1, 2, 3 are treated the same way. Therefore, no operation is nee
      </a>
   </div>
 </div>
+
+## Confidence Level
+
+Currently, Tier 1, 2, 3 are treated the same way. Therefore, no operation is needed if your setup is in those tier categories. However, if you are at Tier 4 or 5, you can try the aspects mentioned below.
 
 ### `CONFIGURATION_NEEDED` `CONFIGURATION_AND_SW_HARDENING_NEEDED`
 

@@ -103,3 +103,15 @@ Create a pool if you do not have one yet. Once the miner is registered, you can 
 </div>
 
 > We have a detailed guide on how to use the Khala App [here](/en-us/docs/khala-mining/3-0-console/).
+
+## Troubleshoot
+
+{{< button "https://github.com/Phala-Network/solo-mining-scripts#navigate" "General" >}}
+
+{{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
+
+{{< button "/en-us/docs/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+
+{{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
+
+{{< button "https://forum.phala.network/c/mai/42-category/42" "Forum" >}}
