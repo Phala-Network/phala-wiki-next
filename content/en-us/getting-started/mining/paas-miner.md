@@ -4,7 +4,7 @@ weight: 1000
 draft: false
 menu:
   gettingstarted:
-    parent: "Mining"
+    parent: "mining"
 ---
 
 ## Khala Miner on Vultr

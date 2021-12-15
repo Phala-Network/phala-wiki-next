@@ -9,6 +9,25 @@
   url = "/getting-started/mining/"
   weight = 1000
 
+[[gettingstarted]]
+  name = "Mining"
+  identifier = "mining"
+  url = "/getting-started/mining/"
+  weight = 1000
+
+[[gettingstarted]]
+  name = "Staking"
+  identifier = "staking"
+  url = "/getting-started/staking/"
+  weight = 2000
+
+[[gettingstarted]]
+  name = "Phala Developer"
+  identifier = "phala-developer"
+  url = "/getting-started/phala-developer/"
+  weight = 3000
+
+
 [[main]]
   name = "Docs"
   url = "/docs/phala-network/phala-network/"

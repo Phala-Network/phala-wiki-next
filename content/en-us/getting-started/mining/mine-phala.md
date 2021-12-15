@@ -3,7 +3,7 @@ title: "Mine Khala"
 weight: 1001
 menu:
   gettingstarted:
-    parent: "Mining"
+    parent: "mining"
 ---
 
 ### Hardware

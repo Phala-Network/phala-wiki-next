@@ -1,10 +1,10 @@
 ---
-title: "Introduction of Fat Contract"
-weight: 2000
+title: "Fat Contract"
+weight: 3000
 draft: false
 menu:
-  docs:
-    parent: "phala-network"
+  gettingstarted:
+    parent: "phala-developer"
 ---
 
 ## The Next Generation Smart Contract
@@ -33,6 +33,8 @@ Most importantly, such powerful Fat Contracts are executed inside our *secure wo
 Back to our starting question, we try to jump out of the stereotype of the current smart contract and rethink how the contract should be like in a real computing cloud. This is the motivation that we design and implement Fat Contract: it should first behave like a normal program instead of a smart contract, and then we will empower it with the decentralized and trustless nature of blockchain. We call it "fat" to show the rich features it can provide compared with the existing smart contracts. To clarify again:
 
 > Fat Contract is a kind of decentralized program instead of the smart contract, which supports real-time computation-intensive tasks and have the access to all the services even they are out of the blockchains.
+
+## Start Building
 
 Our faith in the Fat Contract also comes from the feedback of our community. During our last hackathon, we have seen some talented developers' [creations](https://github.com/Phala-Network/Encode-Hackathon-2021/issues/21) with the powerful Fat Contract.
 For now, there are two ways to play with Fat Contract:
