@@ -16,7 +16,7 @@ Phala Network is a Web 3.0 computing cloud that supports data privacy while rema
 
 ## Please choose a topic
 
-<!-- {{< button "developer" "Build on Phala" >}} -->
+<!-- {{< button "developer" "Build on Phala" >}} 
 
 {{< button "/en-us/docs/phala-network/what-is-phala/" "What is Phala?" >}}
 
@@ -24,7 +24,7 @@ Phala Network is a Web 3.0 computing cloud that supports data privacy while rema
 
 {{< button "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Mine on Khala" >}}
 
-{{< button "/en-us/docs/pdiem/about-pdiem/" "Learn pDiem" >}}
+{{< button "/en-us/docs/pdiem/about-pdiem/" "Learn pDiem" >}}-->
 
 ## Phala Web Directory
 
