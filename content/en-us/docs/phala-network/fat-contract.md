@@ -7,7 +7,7 @@ menu:
     parent: "phala-network"
 ---
 
-# A Call for the Next Generation Smart Contract
+# The Next Generation Smart Contract
 
 What's your expectation of smart contracts?
 
@@ -35,7 +35,7 @@ Back to our starting question, we try to jump out of the stereotype of the curre
 
 Our faith in the Fat Contract also comes from the feedback of our community. During our last hackathon, we have seen some talented developers' [creations](https://github.com/Phala-Network/Encode-Hackathon-2021/issues/21) with the powerful Fat Contract.
 For now, there are two ways to play with Fat Contract:
-- You can now revisit our hackathon [tutorial](https://wiki.phala.network/en-us/docs/developer/) and follow it to fork our codebase and make the changes. This will give you an immediate experience of the abilities of Fat Contract;
+- You can now revisit our hackathon [tutorial](/en-us/docs/developer/run-a-local-development-network/) and follow it to fork our codebase and make the changes. This will give you an immediate experience of the abilities of Fat Contract;
 - Our support for *Parity's [Ink! Contract](https://github.com/paritytech/ink)* is on its way. You can develop your contract with the secure and efficient Rust programming language, and enjoy the performance improvement from our off-chain workers without the necessity to fork our large codebase.
 
 Just like Fat Contract, Phala meant to be open and keep improving. We welcome feedback from developers all over the world to add more inspiring features to the Fat Contract. Why not join our community now and get your hands dirty with the Fat Contract?
