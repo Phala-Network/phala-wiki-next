@@ -22,7 +22,7 @@ menu:
   <br>
 
 > We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30">
->    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide).</sub>
+>    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/getting-started/mining/paas-miner/).</sub>
 >  </a>
 > </p>
 
