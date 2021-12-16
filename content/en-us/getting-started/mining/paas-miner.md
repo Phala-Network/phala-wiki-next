@@ -26,6 +26,7 @@ After successfully signing up and increasing your credit limit, it is time to pi
 * Go to [Deploy](https://my.vultr.com/deploy/)
   - Select 'Bare Metal'
   - Pick an available location geographically closest to you.
+  - Select `Intel E-2286G`
   - Choose the 64 bit OS Ubuntu 21.10 x64
   - Leave any remaining options as default.
   - Add a meaningful 'Server Hostname & Label'
