@@ -1,5 +1,5 @@
 ---
-title: "About Governance"
+title: "About Phala Governance"
 weight: 4001
 menu:
   docs:
