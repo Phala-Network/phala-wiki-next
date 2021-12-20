@@ -1,5 +1,5 @@
 ---
-title: Guidance of Delegation StakePool
+title: 'Staking: Delegate to a StakePool'
 weight: 5002
 draft: false
 menu:
