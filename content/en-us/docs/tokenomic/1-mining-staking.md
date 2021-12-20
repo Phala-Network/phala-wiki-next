@@ -1,5 +1,5 @@
 ---
-title: "TEE Mining Staking"
+title: "TEE Mining & Staking"
 weight: 3002
 menu:
   docs:
