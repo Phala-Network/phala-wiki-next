@@ -58,13 +58,13 @@
   weight = 4000
 
 [[docs]]
-  name = "Khala User"
+  name = "Phala Wallets & More"
   identifier = "khala-user"
   url = "/docs/khala-user/"
   weight = 5000
 
 [[docs]]
-  name = "Khala Mining"
+  name = "Mine Khala"
   identifier = "khala-mining"
   url = "/docs/khala-mining/"
   weight = 6000
