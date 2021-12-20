@@ -14,6 +14,14 @@ menu:
 
 Phala Network is a Web 3.0 computing cloud that supports data privacy while remaining trustless. Unlike centralized cloud service, Phala doesn’t own any server or data center. Anyone can provide permissionless servers into Phala Network, and because of a clever combination of blockchain and trusted execution environments (TEE), we can make sure the servers can’t be evil even when they are in an edge network situation. Together, this creates the infrastructure for a powerful, secure, and scalable trustless computing cloud.
 
+Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, that is, a standard decentralized computing cloud based on Web 3.0.
+
+Trustless is not only the first feature of Phala recognized by the community but also the cornerstone of Phala becoming a reliable distributed computing network.
+In addition, the “sharing economy” model is also Phala’s Web 3.0 characteristic. To ensure that network users and computing power providers won’t be controlled by centralized Internet companies, we must adopt the blockchain protocol, allowing any computing node to join the network and provide usable and stable computing services. This is also the foundation of the Secure Worker Mining mechanism.
+At present, Secure Worker Mining mechanism has been running steadily on Khala Network for over two months. Although Khala’s Mining reward is only 10% of Phala’s, there are still more than 20,000 computing nodes successfully registered on Khala. Among them, more than 15,000 servers are running on Khala steadily for some time. These servers provide more than 120,000 vCPUs, which contribute large-scale computing services for the Web 3.0 world — such computing resource scale is second to none in the Crypto field! On Khala Network alone, we already have nearly 1% of the AWS computing power. We believe on Phala Network mainnet, the number of trusted computing nodes can be used in the Web 3.0 world will exceed 100,000 in the future!
+
+We strongly agree that Web 3.0 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web 3.0 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
+
 <!--  ## Please choose a topic
 
 {{< button "developer" "Build on Phala" >}} 
@@ -25,6 +33,21 @@ Phala Network is a Web 3.0 computing cloud that supports data privacy while rema
 {{< button "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Mine on Khala" >}}
 
 {{< button "/en-us/docs/pdiem/about-pdiem/" "Learn pDiem" >}}-->
+
+## Phala Products
+
+### Fat Contract
+
+> Get started with our Fat Contract :point_right: [read more here](/en-us/getting-started/phala-developer/fat-contract/)
+
+A new type of smart contract product that focuses on serving Web 3.0 back-end function-level services.
+
+The Fat Contract is designed for the following use cases:
+
+* For low latency requirements, such as in multiplayer online games
+* Scenarios of off-chain interoperation, such as oracle, decentralized chat or communication services (Telegram or email)
+* Fat Contract such as API interface, data market platform
+* Large-scale real-time computing programs, such as Metaverse, games, NFT rendering, artificial intelligence (recommendation engine, etc.)
 
 ## Phala Web Directory
 
