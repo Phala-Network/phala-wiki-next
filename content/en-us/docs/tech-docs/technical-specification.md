@@ -1,10 +1,10 @@
 ---
 title: "Technical Specification"
-weight: 2001
+weight: 1000
 draft: false
 menu:
   docs:
-    parent: "phala-network"
+    parent: "tech-docs"
 ---
 
 This document describes the technical specification of Phala Network including the overall protocol and the detailed data structure and algorithm. It's still a work-in-progress.
