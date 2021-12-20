@@ -27,7 +27,6 @@
   url = "/getting-started/phala-developer/"
   weight = 3000
 
-
 [[main]]
   name = "Docs"
   url = "/docs/phala-network/phala-network/"
@@ -40,6 +39,12 @@
   weight = 1000
 
 [[docs]]
+  name = "Phala Wallets & More"
+  identifier = "khala-user"
+  url = "/docs/khala-user/"
+  weight = 2000
+
+[[docs]]
   name = "Developer Guide"
   identifier = "developer"
   url = "/docs/developer/"
@@ -49,24 +54,18 @@
   name = "Tokenomics"
   identifier = "tokenomics"
   url = "/docs/tokenomics/"
-  weight = 3000
-
-[[docs]]
-  name = "Governance"
-  identifier = "governance"
-  url = "/docs/governance/"
   weight = 4000
-
-[[docs]]
-  name = "Phala Wallets & More"
-  identifier = "khala-user"
-  url = "/docs/khala-user/"
-  weight = 5000
 
 [[docs]]
   name = "Mine Khala"
   identifier = "khala-mining"
   url = "/docs/khala-mining/"
+  weight = 5000
+
+[[docs]]
+  name = "Governance"
+  identifier = "governance"
+  url = "/docs/governance/"
   weight = 6000
 
 [[docs]]
