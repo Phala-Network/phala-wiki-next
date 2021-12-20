@@ -1,10 +1,10 @@
 ---
 title: Collator
-weight: 9002
-draft: true
+weight: 3004
+draft: false
 menu:
   docs:
-    parent: "maintain"
+    parent: "tokenomics"
 ---
 
 > Collators on Phala (Khala) are supposed to be Gatekeepers, who also run the `pRuntime` as the Gatekeeper role, helping manage the keys in the network. However, Gatekeeper is not open for election now.

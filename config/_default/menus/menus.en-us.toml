@@ -81,11 +81,11 @@
   url = "/docs/prb/"
   weight = 8000
 
-[[docs]]
-  name = "Maintain"
-  identifier = "maintain"
-  url = "/docs/maintain/"
-  weight = 9000
+# [[docs]]
+#  name = "Maintain"
+#  identifier = "maintain"
+#  url = "/docs/maintain/"
+#  weight = 9000
 
 [[docs]]
   name = "pDiem"
