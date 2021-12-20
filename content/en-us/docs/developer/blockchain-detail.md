@@ -1,5 +1,5 @@
 ---
-title: "1.1 Phala Blockchain in Detail"
+title: "About Phala Blockchain in Detail"
 weight: 11011
 menu:
   docs:
