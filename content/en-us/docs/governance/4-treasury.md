@@ -1,5 +1,5 @@
 ---
-title: "4 Khala Treasury"
+title: "Khala Treasury"
 weight: 4005
 menu:
   docs:
