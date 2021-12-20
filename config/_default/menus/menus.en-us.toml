@@ -45,12 +45,6 @@
   weight = 2000
 
 [[docs]]
-  name = "Developer Guide"
-  identifier = "developer"
-  url = "/docs/developer/"
-  weight = 11000
-
-[[docs]]
   name = "Tokenomics"
   identifier = "tokenomics"
   url = "/docs/tokenomics/"
@@ -67,12 +61,6 @@
   identifier = "governance"
   url = "/docs/governance/"
   weight = 6000
-
-[[docs]]
-  name = "Technical Documentation"
-  identifier = "tech-docs"
-  url = "/docs/tech-docs/"
-  weight = 7000
 
 #[[docs]]
 #  name = "Para-2 Testnet"
@@ -97,6 +85,19 @@
   identifier = "pDiem"
   url = "/docs/pDiem/"
   weight = 10000
+
+[[docs]]
+  name = "Technical Documentation"
+  identifier = "tech-docs"
+  url = "/docs/tech-docs/"
+  weight = 11000
+
+[[docs]]
+  name = "Developer Guide"
+  identifier = "developer"
+  url = "/docs/developer/"
+  weight = 12000
+
 
 # [[docs]]
 #   name = "Gatekeeper"
