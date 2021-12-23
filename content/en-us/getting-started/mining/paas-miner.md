@@ -22,7 +22,7 @@ menu:
 ## Deploy Instance
 
 After successfully signing up and increasing your credit limit, it is time to pick the correct instance. 
-\
+
 * Go to [Deploy](https://my.vultr.com/deploy/)
   - Select 'Bare Metal'
   - Pick an available location geographically closest to you.
