@@ -106,7 +106,7 @@ sudo phala uninstall
 And delete the mining script repository by executing:
 
 ```bash
-yes | sudo rm -r solo-mining-scripts-main
+rm -rf $HOME/solo-mining-scripts-main
 ```
 
 Now you may reinstall the mining script.
@@ -191,12 +191,14 @@ sudo phala stop
 To delete the khala blockchain database on your node, execute the following commands:
 
 ```bash
-rm -r /var/khala-dev-node/chains/khala/db
-rm -r /var/khala-dev-node/chains/khala/keystore
-rm -r /var/khala-dev-node/chains/khala/network
+rm -rf /var/khala-dev-node/chains/khala
 ```
 
-Now [restart your node](/en-us/docs/khala-mining/4-0-faq/#general).
+To delete the Kusama blockchain , run:
+
+```bash
+rm -rf /var/khala-dev-node/chains/polkadot
+```
 
 ## Deleting the Mining Scripts
 
