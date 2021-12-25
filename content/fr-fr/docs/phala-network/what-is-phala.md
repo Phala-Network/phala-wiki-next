@@ -1,12 +1,14 @@
 ---
-titre : Qu'est-ce que Phala ?
-poids : 1001
-draft : false
+title: Qu'est-ce que Phala ?
+weight: 1001
+draft: false
 description : "Une blockchain est une sorte de registre distribué qui enregistre de manière indélébile les transactions dans une liste de blocs qui ne cesse de s'allonger. La base de notre confiance dans la blockchain est le fait que l'exécution de chaque transaction peut être vérifiée par tout utilisateur de la blockchain. Les blockchains existantes, telles que BTC et ETH, tiennent cette promesse de manière intuitive : elles rendent la totalité des transactions publiques, y compris les transactions et les états internes des contrats intelligents. Cela nous amène au problème suivant : les données confidentielles ne peuvent être traitées par ces blockchains."
-menu :
-  docs :
-    parent : "phala-network"
+menu:
+  docs:
+    parent: "phala-network"
 ---
+
+## Manque de confidentialité dans les blockchains
 
 Une blockchain est une sorte de registre distribué qui enregistre de manière indélébile les transactions dans une liste de blocs qui ne cesse de s'allonger. La base de notre confiance dans la blockchain est le fait que l'exécution de chaque transaction peut être vérifiée par tout utilisateur de la blockchain. Les blockchains existantes, telles que BTC et ETH, tiennent cette promesse de manière intuitive : elles rendent la totalité des transactions publiques, y compris les transactions et les états internes des contrats intelligents. Cela nous amène au problème suivant : les données confidentielles ne peuvent être traitées par ces blockchains.
 
