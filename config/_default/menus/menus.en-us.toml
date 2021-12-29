@@ -1,6 +1,6 @@
 [[main]]
   name = "General"
-  url = "/general/phala-network/"
+  url = "/general/phala-network/phala-network"
   weight = 10
 
 [[main]]
@@ -24,9 +24,19 @@
   weight = 50
 
 [[general]]
-  name = "General"
+  name = "Phala Network"
   url = "/general/phala-network/"
   weight = 10
+
+[[general]]
+  name = "Phala Wallet"
+  url = "/general/phala-wallet/"
+  weight = 20
+
+[[general]]
+  name = "Phala Applications"
+  url = "/general/phala-applications/"
+  weight = 30
 
 [[gettingstarted]]
   name = ""

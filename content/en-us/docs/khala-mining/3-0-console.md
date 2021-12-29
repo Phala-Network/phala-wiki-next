@@ -14,7 +14,7 @@ Miners and pool owners can use the Phala App to manage Workers/ Miners and Stake
 
 ### Prerequisites
 >
-> 1. The same [Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}) the Miners run on, as the pool Owner and Miner operator.
+> 1. The same [Khala account]({{< relref "general/phala-wallet/polkadot-extension-guide" >}}) the Miners run on, as the pool Owner and Miner operator.
 > 2. `miner public key`: The Miner must be ready and synced. This miner must use the same Khala Account as the one you use for the Khala App.
 
 If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser. 
@@ -49,7 +49,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 ### Phala App Operations
 
-1. [Connect your Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}).
+1. [Connect your Khala account]({{< relref "general/phala-wallet/polkadot-extension-guide" >}}).
 2. Create StakePool
    - In the left menu, make sure you select 'Mining.'
    - Click "Create Stakepool" in the top right corner;
