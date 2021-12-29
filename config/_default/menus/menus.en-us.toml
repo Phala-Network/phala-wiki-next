@@ -1,6 +1,6 @@
 [[main]]
   name = "General"
-  url = "/docs/phala-network/phala-network/"
+  url = "/general/phala-network/"
   weight = 10
 
 [[main]]
@@ -22,6 +22,11 @@
   name = "Getting Started"
   url = "/getting-started/mining/mine-phala"
   weight = 50
+
+[[general]]
+  name = "General"
+  url = "/general/phala-network/"
+  weight = 10
 
 [[gettingstarted]]
   name = ""
