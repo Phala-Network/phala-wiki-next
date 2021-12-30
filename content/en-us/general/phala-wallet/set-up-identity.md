@@ -4,7 +4,7 @@ description: Learn about on-chain identity, judgments, and registrars.
 weight: 5002
 draft: false
 menu:
-  docs:
+  general:
     parent: "phala-wallet"
 ---
 

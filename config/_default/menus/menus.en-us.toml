@@ -42,12 +42,6 @@
   weight = 3000
 
 [[gettingstarted]]
-  name = ""
-  identifier = "gettingstarted"
-  url = "/getting-started/mining/"
-  weight = 1000
-
-[[gettingstarted]]
   name = "Mining"
   identifier = "mining"
   url = "/getting-started/mining/"
