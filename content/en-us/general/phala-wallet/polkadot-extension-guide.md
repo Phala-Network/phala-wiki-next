@@ -3,7 +3,7 @@ title: "Polkadot{.js} Extension Guide"
 weight: 5001
 draft: false
 menu:
-  docs:
+  general:
     parent: "phala-wallet"
 ---
 
