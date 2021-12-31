@@ -7,8 +7,12 @@ menu:
     parent: "phala-wallet"
 ---
 
-In this tutorial, we present how to use Polkadot{.js} Extension to create/import Khala account.
-Khala Network, as the parachain of Kusama, shares the accounts of Kusama Relay Chain.
+## Browser Extension: Polkadot{.js} Extension
+
+The browser extension Polkadot{.js} is a UI wallet that allows the usage of decentralized applications (daap) in the Polkadot ecosystem through your browser. In addition, it allows you to sign transactions (verifying your on-chain identity) with your accounts easily and is needed to use the Phala App. 
+
+In this tutorial, we present how to use Polkadot{.js} Extension to create/import your Khala account.
+Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Relay Chain.
 
 ## Install Polkadot{.js} Extension
 
