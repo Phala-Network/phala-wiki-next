@@ -1,5 +1,5 @@
 ---
-title: "Polkadot{.js} Extension Guide"
+title: "Browser Account Extension Guide"
 weight: 5001
 draft: false
 menu:
