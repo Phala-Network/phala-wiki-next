@@ -1,7 +1,7 @@
 ---
 title: Mine
 weight: 1001
-draft: true
+draft: false
 menu:
   learn:
     parent: "maintain"

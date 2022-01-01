@@ -1,7 +1,7 @@
 ---
 title: Fat Contract
 weight: 1000
-draft: true
+draft: false
 menu:
   learn:
     parent: "developer"
@@ -11,5 +11,5 @@ menu:
 
  https://medium.com/phala-network/introduction-of-fat-contract-dea79ffcf0dc
 
- Break from tech specs
+ Break from tech specs.
 
