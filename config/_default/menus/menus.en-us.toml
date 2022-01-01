@@ -5,7 +5,7 @@
 
 [[main]]
   name = "Learn"
-  url = "/en-us/docs/learn/"
+  url = "/en-us/learn/"
   weight = 20
 
 [[main]]
@@ -40,6 +40,42 @@
   identifier = "phala-applications"
   url = "/general/phala-applications/"
   weight = 3000
+
+[[learn]]
+  name = "Phala Blockchain"
+  identifier = "phala-blockchain"
+  url = "/learn/phala-blockchain/"
+  weight = 1000
+
+[[learn]]
+  name = "Products"
+  identifier = "products"
+  url = "/learn/products/"
+  weight = 2000
+
+[[learn]]
+  name = "Maintain"
+  identifier = "maintain"
+  url = "/learn/maintain/"
+  weight = 3000
+
+[[learn]]
+  name = "Governance"
+  identifier = "governance"
+  url = "/learn/governance/"
+  weight = 4000
+
+[[learn]]
+  name = "Tokenomics"
+  identifier = "tokenomics"
+  url = "/learn/tokenomics/"
+  weight = 5000
+
+[[learn]]
+  name = "Developer"
+  identifier = "developer"
+  url = "/learn/developer/"
+  weight = 6000
 
 [[gettingstarted]]
   name = "Mining"
