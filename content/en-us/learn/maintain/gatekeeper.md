@@ -13,7 +13,7 @@ Running a Gatekeeper (GK) in Phala Network means responsibility. You will be acc
 
 ## Gatekeeper Election
 
-Gatekeepers share the same `pRuntime` as normal workers. To distinguish gatekeepers, their `IdentityKey` public keys are recorded in the `GatekeeperState` list on blockchain.
+Gatekeepers share the same `pRuntime` as normal workers (miners). To distinguish gatekeepers, their `IdentityKey` public keys are recorded in the `GatekeeperState` list on blockchain.
 
 In the pre-mainnet of Phala Network, the list of gatekeepers is hard-coded in the genesis block of the blockchain.
 
@@ -29,7 +29,7 @@ In the pre-mainnet of Phala Network, the list of gatekeepers is hard-coded in th
 
 In the pre-mainnet of Phala Network, all the gatekeepers share the same pre-generated `MasterKey`.
 
-> Through DKG (_[distributed key generation](https://en.wikipedia.org/wiki/Distributed_key_generation)_) more than one gatekeeper is required to produce a `MasterKey`, and each gatekeeper only hold a share of this key. When DKG is enabled, the contract key shares are provisioned to the workers by the gatekeepers separately.
+> Through DKG (_[distributed key generation](https://en.wikipedia.org/wiki/Distributed_key_generation)_) more than one gatekeeper is required to produce a `MasterKey`, and each gatekeeper only hold a share of this key. When DKG is enabled, the contract key shares are provisioned to the workers (miners) by the gatekeepers separately.
 
 ##  Shared MasterKey Rotation
 
