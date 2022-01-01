@@ -1,6 +1,6 @@
 ---
-title: "Fat Contract"
-weight: 3000
+title: Fat Contract
+weight: 10001
 draft: false
 menu:
   learn:
