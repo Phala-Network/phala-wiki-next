@@ -7,7 +7,7 @@ menu:
     parent: "phala-network"
 ---
 
-Ce document décrit les spécifications techniques du réseau Phala, y compris le protocole global et la structure de données et l'algorithme détaillés. C'est un travail encore en cours.
+Ce document décrit les spécifications techniques de Phala Network, y compris le protocole global et la structure de données et l'algorithme détaillés. C'est un travail encore en cours.
 
 ## Blockchain Entities
 
@@ -146,7 +146,7 @@ Dans le pré-mainnet de Phala Network, la liste des gatekeepers est codée en du
 
 ### Génération de la `MasterKey`
 
-La `MasterKey` est utilisée pour dériver les clés permettant de crypter les états des smart contracts confidentiels et de communiquer. Dans le réseau Phala, seul le `pRuntime` d'un gatekeeper est autorisé à gérer la `MasterKey`. Notez que puisque `MasterKey` est géré par `pRuntime` et que son utilisation est limitée, même un gatekeeper malveillant ne peut décrypter aucun état de contrat sans compromettre complètement le TEE et `pRuntime`.
+La `MasterKey` est utilisée pour dériver les clés permettant de crypter les états des smart contracts confidentiels et de communiquer. Dans Phala Network, seul le `pRuntime` d'un gatekeeper est autorisé à gérer la `MasterKey`. Notez que puisque `MasterKey` est géré par `pRuntime` et que son utilisation est limitée, même un gatekeeper malveillant ne peut décrypter aucun état de contrat sans compromettre complètement le TEE et `pRuntime`.
 
 `MasterKey` est une paire de clés `secp256k1` générée et gérée par les gatekeepers.
 
