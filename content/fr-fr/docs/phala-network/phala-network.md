@@ -18,13 +18,13 @@ Le réseau Phala est un cloud informatique Web 3.0 qui prend en charge la confid
 
 <!-- {{< button "developer" "Build on Phala" >}} -->
 
-{{< button "/fr-fr/docs/phala-network/what-is-phala/" "What is Phala?" >}}
+{{< button "/fr-fr/docs/phala-network/what-is-phala/" "Qu'est-ce que Phala ?" >}}
 
 {{< button "/fr-fr/docs/phala-network/technical-specification/" "Tech Specs" >}}
 
-{{< button "/fr-fr/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Mine on Khala" >}}
+{{< button "/fr-fr/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Miner sur Khala" >}}
 
-{{< button "/fr-fr/docs/pdiem/about-pdiem/" "Learn pDiem" >}}
+{{< button "/fr-fr/docs/pdiem/about-pdiem/" "Connaître pDiem" >}}
 
 ## Phala Web Directory
 
