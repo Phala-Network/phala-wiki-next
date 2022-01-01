@@ -1,5 +1,5 @@
 ---
-title: "About Phala Governance"
+title: "Phala Governance"
 weight: 4001
 menu:
   learn:

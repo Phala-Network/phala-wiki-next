@@ -1,5 +1,5 @@
 ---
-title: "About Phala Tokenomics"
+title: "Phala Tokenomics"
 weight: 3001
 draft: false
 menu:
