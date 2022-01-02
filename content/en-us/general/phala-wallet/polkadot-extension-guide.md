@@ -7,18 +7,23 @@ menu:
     parent: "phala-wallet"
 ---
 
-## Browser Extension: Polkadot{.js} Extension
+## Polkadot{.js} Extension
 
 The browser extension Polkadot{.js} is a UI wallet that allows the usage of decentralized applications (daap) in the Polkadot ecosystem through your browser. In addition, it allows you to sign transactions (verifying your on-chain identity) with your accounts easily and is needed to use the Phala App. 
 
-In this tutorial, we present how to use Polkadot{.js} Extension to create/import your Khala account.
+In this tutorial, we show you how to use Polkadot{.js} Extension and to create or import your Khala account.
+\
 Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Relay Chain.
 
 ## Install Polkadot{.js} Extension
 
-1. Get extension from [polkadot.js.org](https://polkadot.js.org/extension/)
+1. Get the extension from <a href="https://polkadot.js.org/extension/"><img alt="polkadot.js" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> [polkadot.js.org](https://polkadot.js.org/extension/) 
 
-    ![](/images/docs/khala-user/polkadot-js.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/polkadot-js.png" height="250">
+  </a>
+</p>
 
 2. Choose Chrome or Firefox Extension according to your explorer
 
@@ -28,54 +33,93 @@ Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Rel
 1. Choose your installed Polkadot{.js} Extension;
 2. Click "+", and choose "Create new account";
 
-![](/images/docs/khala-user/new-account.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/new-account.png" height="250">
+  </a>
+</p>
 
 3. Keep mnemonic seed safe;
 4. Choose Network "Allow use on any chain", fill in the descriptive name and password, and click "Add the account with the generated seed".
 
-![](/images/docs/khala-user/choose-network.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/choose-network.png" height="250">
+  </a>
+</p>
 
+## Import an Existing Account
 
-## Import Existing Account
-
-There are two ways to import an existing account:
+There are two ways to import an existing account. Either by using your [mnemonic seed](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-mnemonic) or an [existing JSON file](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-json). 
 
 ### Import with Mnemonic
 
 1. Choose your installed Polkadot{.js} Extension;
 2. Click "+", and choose "Import account from pre-existing seed";
 
-    ![](/images/docs/khala-user/import-mne-1.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-mne-1.png" height="250">
+  </a>
+</p>
 
 3. Type in your 12-word mnemonic seed (DO NOT let others know it), separate each word with space. Choose Network "Allow use on any chain". Click Next;
 
-    ![](/images/docs/khala-user/import-mne-2.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-mne-2.png" height="250">
+  </a>
+</p>
 
 4. Fill in the descriptive name and password, and click "Add the account with the supplied seed";
 
-    ![](/images/docs/khala-user/import-mne-3.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-mne-3.png" height="250">
+  </a>
+</p>
 
-5. Congratulation!
+5. Congratulations!
 
-    ![](/images/docs/khala-user/import-mne-4.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-mne-4.png" height="250">
+  </a>
+</p>
 
 ### Import with JSON
 
-1. Choose your installed Polkadot{.js} Extension;
-2. Click "+", and choose "Restore account from backup JSON file";
+1. Head to your installed Polkadot{.js} Extension;
+2. Click "+", and select "Restore account from backup JSON file";
 
-    ![](/images/docs/khala-user/import-json-1.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-json-1.png" height="250">
+  </a>
+</p>
 
 3. Choose your saved JSON file;
 
-    ![](/images/docs/khala-user/import-json-2.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-json-2.png" height="250">
+  </a>
+</p>
 
-4. Type in your password and click Restore;
+4. Type in your password and hit "Restore";
 
-    ![](/images/docs/khala-user/import-json-3.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-json-3.png" height="250">
+  </a>
+</p>
 
 5. Choose "Allow use on any chain";
 
-    ![](/images/docs/khala-user/import-json-4.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/import-json-4.png" height="250">
+  </a>
+</p>
 
-6. Congratulation!
+6. Congratulations!
