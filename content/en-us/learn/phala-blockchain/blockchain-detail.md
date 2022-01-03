@@ -1,6 +1,6 @@
 ---
 title: "Phala Blockchain in Detail"
-weight: 11011
+weight: 1000
 menu:
   learn:
     parent: "phala-blockchain"
