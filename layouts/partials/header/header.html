@@ -35,6 +35,7 @@
             {{- $active = or $active (eq .Name $current.Title) -}}
             {{- $active = or $active (and (eq .Name "Getting Started") (eq $current.Section "getting-started")) -}}
             {{- $active = or $active (and (eq .Name "General") (eq $current.Section "general")) -}}
+            {{- $active = or $active (and (eq .Name "Learn") (eq $current.Section "learn")) -}}
             {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
             <li class="nav-item">
@@ -112,6 +113,26 @@
   <aside class="doks-sidebar">
     <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
       {{ partial "sidebar/general-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+{{ end -}}
+
+{{ if eq .Section "learn" -}}
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/learn-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+{{ end -}}
+
+{{ if eq .Section "build" -}}
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/build-menu.html" . }}
     </nav>
   </aside>
 </div>
