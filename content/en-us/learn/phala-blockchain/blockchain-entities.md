@@ -23,4 +23,4 @@ The image below visualizes the interaction between Phala's entities.
 
 The basic design of Phala Network is meant to ensure the security and confidentiality of the blockchain and its smart contracts. However, with more security improvements, Phala Network can defend against advanced attacks.
 
-> Read more technical information about [Entity Key Initialisation](/en-us/learn/developer/blockchain-entities-technical/#entity-key-initialization), [Secure Communication](en-us/learn/developer/blockchain-entities-technical/#secure-communication), and more in the [Developer Section](en-us/learn/developer/blockchain-entities-technical/) of Lean.
+> Read more technical information about [Entity Key Initialisation](/en-us/learn/developer/blockchain-entities-technical/#entity-key-initialization), [Secure Communication](/en-us/learn/developer/blockchain-entities-technical/#secure-communication), and more in the [Developer Section](/en-us/learn/developer/blockchain-entities-technical/) of Lean.
