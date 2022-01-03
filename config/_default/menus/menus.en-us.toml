@@ -77,6 +77,24 @@
   url = "/learn/developer/"
   weight = 6000
 
+[[build]]
+  name = "Developer Guide"
+  identifier = "developer-guide"
+  url = "/learn/developer-guide/"
+  weight = 1000
+
+[[build]]
+  name = "pDiem"
+  identifier = "pdiem"
+  url = "/learn/pdiem/"
+  weight = 2000
+
+[[build]]
+  name = "Runtime Bridge"
+  identifier = "runtime-bridge"
+  url = "/learn/runtime-bridge/"
+  weight = 3000
+
 [[gettingstarted]]
   name = "Mining"
   identifier = "mining"
