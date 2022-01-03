@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Build"
-  url = "/en-us/docs/build/"
+  url = "/en-us/build/developer/fat-contract-examples/"
   weight = 30
 
 [[main]]
