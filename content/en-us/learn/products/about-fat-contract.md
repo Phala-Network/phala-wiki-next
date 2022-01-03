@@ -9,12 +9,6 @@ menu:
 
 ## The Next Generation Smart Contract
 
-What's your expectation of smart contracts?
-
-My answer would be:
-
-> Provide rich features like normal programs with better performance and larger computing power by the concurrency of multiple computing nodes.
-
 The smart contracts introduced by Ethereum blockchain are really an innovation to extend the capability of blockchain. First, all the rules are defined and enforced with unchangeable code and irreversible transactions. Correspondingly, we have seen its wide adoption in decentralized finance, where trust is valuable. However, despite the success in trust-needed financial cases, developers' perspective, the current smart contract platforms are closed: you cannot easily access the data and services out of them. Such a problem even requires creating some ad-hoc [Oracle](https://en.wikipedia.org/wiki/Blockchain_oracle) blockchains to solve! Let alone the platitudes to improve the performance of existing blockchains.
 
 Phala is committed to providing a universal decentralized computing network that can be freely combined with decentralized smart contracts, storage protocols, and data indexing services. What we have achieved is a trustless cloud of more than 20,000 workers. These computing nodes are organized under a framework that enables the decoupling of execution and consensus: Unlike existing platforms where a single miner executes all the contracts during the block production process (with other miners doing duplicated execution for validation), Phala enforces the faithful execution in each worker without (or only with a small factor of) duplication; thus its computing power increases linearly to the number of workers. We believe this is the prerequisite towards a decentralized computing cloud with the power to carry the Web3 world.
@@ -33,12 +27,3 @@ Most importantly, such powerful Fat Contracts are executed inside our *secure wo
 Back to our starting question, we try to jump out of the stereotype of the current smart contract and rethink how the contract should be like in a real computing cloud. This is the motivation that we design and implement Fat Contract: it should first behave like a normal program instead of a smart contract, and then we will empower it with the decentralized and trustless nature of blockchain. We call it "fat" to show the rich features it can provide compared with the existing smart contracts. To clarify again:
 
 > Fat Contract is a kind of decentralized program instead of the smart contract, which supports real-time computation-intensive tasks and have the access to all the services even they are out of the blockchains.
-
-## Start Building
-
-Our faith in the Fat Contract also comes from the feedback of our community. During our last hackathon, we have seen some talented developers' [creations](https://github.com/Phala-Network/Encode-Hackathon-2021/issues/21) with the powerful Fat Contract.
-For now, there are two ways to play with Fat Contract:
-- You can now revisit our hackathon [tutorial](/en-us/docs/developer/run-a-local-development-network/) and follow it to fork our codebase and make the changes. This will give you an immediate experience of the abilities of Fat Contract;
-- Our support for *Parity's [Ink! Contract](https://github.com/paritytech/ink)* is on its way. You can develop your contract with the secure and efficient Rust programming language, and enjoy the performance improvement from our off-chain workers without the necessity to fork our large codebase.
-
-Just like Fat Contract, Phala meant to be open and keep improving. We welcome feedback from developers all over the world to add more inspiring features to the Fat Contract. Why not join our community now and get your hands dirty with the Fat Contract?
