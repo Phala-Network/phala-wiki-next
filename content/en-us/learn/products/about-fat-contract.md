@@ -29,7 +29,7 @@ Most importantly, such powerful Fat Contracts are executed inside our *secure wo
 
 Back to our starting question, we try to jump out of the stereotype of the current smart contract and rethink how the contract should be like in a real computing cloud. This is the motivation that we design and implement Fat Contract: it should first behave like a normal program instead of a smart contract, and then we will empower it with the decentralized and trustless nature of blockchain. We call it "fat" to show the rich features it can provide compared with the existing smart contracts. To clarify again:
 
-> Fat Contract is a kind of decentralized program instead of the smart contract, which supports real-time computation-intensive tasks and have the access to all the services even they are out of the blockchains.
+> Fat Contract is a kind of decentralized program instead of the smart contract, which supports real-time computation-intensive tasks and has the access to all the services even they are out of the blockchains.
 
 ## Learn Fat Contract
 
