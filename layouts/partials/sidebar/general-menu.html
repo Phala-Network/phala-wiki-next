@@ -15,7 +15,7 @@
 
     {{ range .Children -}}
 
-      {{- $active := or ($currentPage.IsMenuCurrent "general" .) ($currentPage.HasMenuCurrent "getting-started" .) -}}
+      {{- $active := or ($currentPage.IsMenuCurrent "general" .) ($currentPage.HasMenuCurrent "general" .) -}}
 
       {{- $active = or $active (eq .Name $currentPage.Title) -}}
 
