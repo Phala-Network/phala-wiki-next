@@ -1,5 +1,5 @@
 ---
-title: "Deployment with Containers: An Example with Docker Compose"
+title: "Container Deployement: Docker Compose"
 weight: 8002
 menu:
   docs:
