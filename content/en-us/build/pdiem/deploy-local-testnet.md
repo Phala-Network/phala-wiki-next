@@ -3,8 +3,8 @@ title: "Deploy Local Testnet"
 weight: 10002
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 There are two options to run the pdiem demo:

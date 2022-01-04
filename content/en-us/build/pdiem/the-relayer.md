@@ -3,7 +3,7 @@ title: "The Relayer"
 weight: 10007
 draft: false
 menu:
-  docs:
+  build:
     parent: "pDiem"
 ---
 

@@ -3,8 +3,8 @@ title: "Contract Implementation"
 weight: 10006
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 The pdiem contract implements a Diem light client and wallet. On the one hand, the pdiem relayers talks to the contract to sync the transactiosn between Diem side and pdiem side. On the other hand, it provides the interface for users to manage their cross-chain assets.

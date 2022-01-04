@@ -3,8 +3,8 @@ title: "Reservation-based Model"
 weight: 10004
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 A bridge connects the local blockchain to a remote blockchain. pDiem follows the "reservation asset" cross-chain asset transferring pattern (see the equivalent pattern defined in [XCM Format](https://github.com/paritytech/xcm-format#depositreserveasset)). In our case, pDiem (and its parachain) is the local blockchain, and Diem is the remote blockchain.

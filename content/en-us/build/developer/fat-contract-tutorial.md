@@ -1,5 +1,5 @@
 ---
-title: "Fat Contract Examples"
+title: "Fat Contract Tutorial"
 weight: 11012
 menu:
   build:

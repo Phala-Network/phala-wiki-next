@@ -36,6 +36,7 @@
             {{- $active = or $active (and (eq .Name "Getting Started") (eq $current.Section "getting-started")) -}}
             {{- $active = or $active (and (eq .Name "General") (eq $current.Section "general")) -}}
             {{- $active = or $active (and (eq .Name "Learn") (eq $current.Section "learn")) -}}
+            {{- $active = or $active (and (eq .Name "Build") (eq $current.Section "build")) -}}
             {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
             <li class="nav-item">

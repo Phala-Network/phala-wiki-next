@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Build"
-  url = "/en-us/build/developer/fat-contract-examples/"
+  url = "/build/developer/fat-contract-examples/"
   weight = 30
 
 [[main]]
@@ -79,14 +79,14 @@
 
 [[build]]
   name = "Developer Guide"
-  identifier = "developer-guide"
-  url = "/learn/developer-guide/"
+  identifier = "developer"
+  url = "/build/developer/"
   weight = 1000
 
 [[build]]
   name = "pDiem"
   identifier = "pdiem"
-  url = "/learn/pdiem/"
+  url = "/build/pdiem/"
   weight = 2000
 
 [[gettingstarted]]

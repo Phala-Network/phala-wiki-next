@@ -3,8 +3,8 @@ title: "Advanced: Hardware Mode"
 weight: 10009
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 By default, the demo is built with SGX SDK software mode. It's designed for development environment. However, to protect the data and logic inside the Enclave, it must run in hardware mode.

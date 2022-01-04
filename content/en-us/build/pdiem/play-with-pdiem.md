@@ -3,8 +3,8 @@ title: "Play with pDiem"
 weight: 10003
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 ![](/images/docs/pdiem/docker-compose-structure.png)
