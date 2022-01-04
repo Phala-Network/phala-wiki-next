@@ -1,5 +1,5 @@
 ---
-title: "3 Voting for Councillors"
+title: "Voting for Councillors"
 weight: 4004
 menu:
   docs:
