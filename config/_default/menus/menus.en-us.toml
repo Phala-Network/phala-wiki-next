@@ -143,12 +143,11 @@
 #  url = "/docs/para-mining/"
 # weight = 7000
 
-
 [[docs]]
-   name = "Gatekeeper"
-   identifier = "gatekeeper"
-   url = "/docs/gatekeeper/"
-   weight = 7000
+  name = "Gatekeeper"
+  identifier = "gatekeeper"
+  url = "/docs/gatekeeper/"
+  weight = 6000
 
 [[docs]]
   name = "Runtime Bridge"

@@ -1,10 +1,10 @@
 ---
 title: Gatekeeper
 weight: 3003
-draft: true
+draft: false
 menu:
   docs:
-    parent: "tokenomics"
+    parent: "gatekeeper"
 ---
 
 Gatekeeper is a special role that manages the secrets in the network and runs the tokenomic model. Gatekeepers are supposed to be elected by the PHA token holders with NPoS, and should also run as a collator. However, as of now, Gatekeepers are designated by the council directly, not associated with collators, because collator binding and NPoS are still under development.
