@@ -1,7 +1,7 @@
 ---
 title: "Light Validation Client"
 weight: 10005
-draft: false
+draft: true
 menu:
   docs:
     parent: "pDiem"

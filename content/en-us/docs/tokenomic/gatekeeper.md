@@ -1,7 +1,7 @@
 ---
 title: Gatekeeper
 weight: 3003
-draft: false
+draft: true
 menu:
   docs:
     parent: "tokenomics"

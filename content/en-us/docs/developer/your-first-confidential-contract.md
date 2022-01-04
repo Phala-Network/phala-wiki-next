@@ -1,5 +1,6 @@
 ---
 title: "Confidential Contract Examples"
+draft: true
 weight: 11012
 menu:
   docs:

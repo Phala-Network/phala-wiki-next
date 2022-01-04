@@ -1,6 +1,6 @@
 ---
 title: About pDiem
-weight: 10001
+weight: 10002
 draft: false
 menu:
   learn:
@@ -38,15 +38,15 @@ Among the components listed in the diagram, the **pDiem Contract** and the **pDi
 
 pDiem receives assets from the Diem blockchain, generates **pdiem bridged tokens** on the Polkadot side, and can also transfer them back to redeem the original assets. This is achieved by a combination of different components. In the docs, we will introduce:
 
-- [The Reservation-based Model]({{< relref "docs/pdiem/reservation-based-model" >}}),
-- [The Light Validation Client]({{< relref "docs/pdiem/light-validation-client.md" >}}),
-- and its [Contract Implementation]({{< relref "docs/pdiem/contract-implementation.md" >}}),
-- [The Relayer]({{< relref "docs/pdiem/the-relayer.md" >}}),
-- and finally, the [Future Works](< relref "docs/pdiem/future-works.md" >).
+- [The Reservation-based Model]({{< relref "build/pdiem/reservation-based-model" >}}),
+- [The Light Validation Client]({{< relref "build/pdiem/light-validation-client.md" >}}),
+- and its [Contract Implementation]({{< relref "build/pdiem/contract-implementation.md" >}}),
+- [The Relayer]({{< relref "build/pdiem/the-relayer.md" >}}),
+- and finally, the [Future Works](< relref "build/pdiem/future-works.md" >).
 
 Appendix:
 
-- [Advanced: Hardware Mode]({{< relref "docs/pdiem/hardware-mode" >}})
+- [Advanced: Hardware Mode]({{< relref "build/pdiem/hardware-mode" >}})
 
 ## Web3 Foundation Grants
 

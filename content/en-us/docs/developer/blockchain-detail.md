@@ -1,5 +1,6 @@
 ---
 title: "About Phala Blockchain in Detail"
+draft: true
 weight: 11011
 menu:
   docs:

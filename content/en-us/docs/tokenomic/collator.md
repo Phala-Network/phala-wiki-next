@@ -1,7 +1,7 @@
 ---
 title: Collator
 weight: 3004
-draft: false
+draft: true
 menu:
   docs:
     parent: "tokenomics"

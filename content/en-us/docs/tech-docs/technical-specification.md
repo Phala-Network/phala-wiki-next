@@ -1,7 +1,7 @@
 ---
 title: "Technical Specification"
 weight: 1000
-draft: false
+draft: true
 menu:
   docs:
     parent: "tech-docs"
