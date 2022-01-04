@@ -19,9 +19,9 @@ pDiem is a compliant privacy-preserving layer for [Diem](<https://en.wikipedia.o
 
 pDiem is at [Milestone 3](#web3-foundation-grants). This milestone focuses on the core of the bridge: the validation of the deposit transactions. In this demo, you can connect pDiem to the Diem testnet, validate and accept incoming deposit transactions.
 
-{{< button "deploy-local-testnet" "Deploy Local Testnet" >}}
+{{< button "/en-us/build/pdiem/deploy-local-testnet/" "Deploy Local Testnet" >}}
 
-{{< button "play-with-pdiem" "Play With pDiem" >}}
+{{< button "/en-us/build/pdiem/play-with-pdiem/" "Play With pDiem" >}}
 
 ## The System
 
@@ -50,7 +50,7 @@ Appendix:
 
 ## Web3 Foundation Grants
 
-pDiem received [a General Grant](https://github.com/w3f/General-Grants-Program/blob/8a23ef68c7512fa0d437554640601ef28cea3fca/grants/speculative/pLIBRA.md) from Web3 Foundataion on Aug 28, 2019. In the grant plan, we have splitted the development progress into a few milestones, as shown below.
+pDiem received [a General Grant](https://github.com/w3f/General-Grants-Program/blob/8a23ef68c7512fa0d437554640601ef28cea3fca/grants/speculative/pLIBRA.md) from Web3 Foundation on Aug 28, 2019. In the grant plan, we have splitted the development progress into a few milestones, as shown below.
 
 <table>
     <thead>
