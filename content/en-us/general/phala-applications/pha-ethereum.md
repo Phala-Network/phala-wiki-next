@@ -1,6 +1,6 @@
 ---
 title: 'Transfer PHA from Ethereum to Khala'
-weight: 5002
+weight: 5001
 draft: false
 menu:
   general:
