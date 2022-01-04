@@ -1,6 +1,6 @@
 ---
 title: Gatekeeper
-weight: 2000
+weight: 10001
 draft: false
 menu:
   learn:
@@ -9,7 +9,7 @@ menu:
 
 Gatekeepers contribute to the security of the decentralized Phala network.
 \
-Running a Gatekeeper (GK) in Phala Network means responsibility. You will be accountable for your stake and the stakes of your nominators. That said, your reputation and stake may be slashed if you make mistakes. 
+Running a Gatekeeper (GK) in Phala Network means responsibility. You will be accountable for your stake and the stakes of your nominators. That said, your reputation and stake may be slashed if you make mistakes.
 
 ## Gatekeeper Election
 

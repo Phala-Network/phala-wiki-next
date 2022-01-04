@@ -1,11 +1,10 @@
 ---
 title: Video Tutorials
 weight: 1001
-draft: false
+draft: true
 menu:
   learn:
     parent: "developer"
 ---
 
 ## TODO
-

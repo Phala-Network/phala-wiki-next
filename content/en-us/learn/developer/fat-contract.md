@@ -1,6 +1,6 @@
 ---
 title: Fat Contract
-weight: 1000
+weight: 10002
 draft: false
 menu:
   learn:
@@ -37,5 +37,3 @@ For now, there are two ways to play with Fat Contract:
 - Our support for *Parity's [Ink! Contract](https://github.com/paritytech/ink)* is on its way. You can develop your contract with the secure and efficient Rust programming language, and enjoy the performance improvement from our off-chain workers without the necessity to fork our large codebase.
 
 Just like Fat Contract, Phala meant to be open and keep improving. We welcome feedback from developers all over the world to add more inspiring features to the Fat Contract. Why not join our community now and get your hands dirty with the Fat Contract?
-
-

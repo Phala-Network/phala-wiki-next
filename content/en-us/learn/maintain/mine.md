@@ -1,6 +1,6 @@
 ---
 title: Mine
-weight: 1000
+weight: 10002
 draft: false
 menu:
   learn:
