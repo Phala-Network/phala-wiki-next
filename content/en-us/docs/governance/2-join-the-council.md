@@ -1,5 +1,5 @@
 ---
-title: "2 Join the Council"
+title: "Join the Council"
 weight: 4003
 menu:
   docs:

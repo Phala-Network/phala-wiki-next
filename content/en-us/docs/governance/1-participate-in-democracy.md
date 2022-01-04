@@ -1,5 +1,5 @@
 ---
-title: "1 Participate in Democracy"
+title: "Participate in Democracy"
 weight: 4002
 menu:
   docs:
