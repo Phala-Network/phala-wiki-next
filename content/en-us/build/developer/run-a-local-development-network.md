@@ -1,9 +1,9 @@
 ---
 title: "Run a Local Development Network"
-weight: 11012
+weight: 10002
 menu:
   build:
-    parent: "developer"
+    parent: "developer-guide"
 ---
 
 > Basic understanding of Linux shell and compilation is necessary to follow this tutorial. <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> may help.

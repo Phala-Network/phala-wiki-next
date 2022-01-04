@@ -3,26 +3,6 @@
   url = "/general/phala-network/phala-network"
   weight = 10
 
-[[main]]
-  name = "Learn"
-  url = "/learn/phala-blockchain/blockchain-detail/"
-  weight = 20
-
-[[main]]
-  name = "Build"
-  url = "/en-us/docs/build/"
-  weight = 30
-
-[[main]]
-  name = "Maintain"
-  url = "/en-us/docs/maintain/"
-  weight = 40
-
-[[main]]
-  name = "Getting Started"
-  url = "/getting-started/mining/mine-phala"
-  weight = 50
-
 [[general]]
   name = "Phala Network"
   identifier = "phala-network"
@@ -40,6 +20,11 @@
   identifier = "phala-applications"
   url = "/general/phala-applications/"
   weight = 3000
+
+[[main]]
+  name = "Learn"
+  url = "/learn/phala-blockchain/blockchain-detail/"
+  weight = 20
 
 [[learn]]
   name = "Phala Blockchain"
@@ -77,17 +62,32 @@
   url = "/learn/developer/"
   weight = 6000
 
+[[main]]
+  name = "Build"
+  url = "/build/developer/fat-contract-examples/"
+  weight = 30
+
 [[build]]
   name = "Developer Guide"
   identifier = "developer-guide"
-  url = "/learn/developer-guide/"
+  url = "/build/developer/"
   weight = 1000
 
 [[build]]
   name = "pDiem"
   identifier = "pdiem"
-  url = "/learn/pdiem/"
+  url = "/build/pdiem/"
   weight = 2000
+
+[[main]]
+  name = "Maintain"
+  url = "/en-us/docs/maintain/"
+  weight = 40
+
+[[main]]
+  name = "Getting Started"
+  url = "/getting-started/mining/mine-phala"
+  weight = 50
 
 [[gettingstarted]]
   name = "Mining"

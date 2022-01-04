@@ -3,8 +3,8 @@ title: "Future Works"
 weight: 10008
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+   build:
+    parent: "pdiem"
 ---
 
 pDiem is a fast growing project. We plan to add the features below in the near future:

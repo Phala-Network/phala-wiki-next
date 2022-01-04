@@ -3,8 +3,8 @@ title: "The Relayer"
 weight: 10007
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 The pdiem relayer is the component to sync data between pdiem and the Diem blockchain. It runs off-chain, connects to the both blockchains, and watch the related transactions.

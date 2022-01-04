@@ -3,8 +3,8 @@ title: "Light Validation Client"
 weight: 10005
 draft: false
 menu:
-  docs:
-    parent: "pDiem"
+  build:
+    parent: "pdiem"
 ---
 
 ## The Basics

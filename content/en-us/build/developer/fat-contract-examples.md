@@ -1,9 +1,9 @@
 ---
 title: "Fat Contract Examples"
-weight: 11012
+weight: 10001
 menu:
   build:
-    parent: "developer"
+    parent: "developer-guide"
 ---
 
-
+## TODO
