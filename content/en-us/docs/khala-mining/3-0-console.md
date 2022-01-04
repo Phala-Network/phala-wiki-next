@@ -1,13 +1,13 @@
 ---
 title: "Manage the Miner"
-draft: true
+draft: false
 weight: 6024
 menu:
   docs:
     parent: "khala-mining"
 ---
 
-> We highly recommend reading about our [staking mechanism]({{< relref "docs/tokenomic//1-mining-staking" >}}) before using the [Phala App](https://app.phala.network/en/mining/).
+> We highly recommend reading about our [staking mechanism](/en-us/learn/tokenomics/mining-staking) before using the [Phala App](https://app.phala.network/en/mining/).
 
 Miners and pool owners can use the Phala App to manage Workers/ Miners and StakePools. It also provides an overview of the status of all the managed Miners and Stake Pools.
 
@@ -15,7 +15,7 @@ Miners and pool owners can use the Phala App to manage Workers/ Miners and Stake
 
 ### Prerequisites
 >
-> 1. The same [Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}) the Miners run on, as the pool Owner and Miner operator.
+> 1. The same [Khala account](/en-us/general/phala-wallet/polkadot-extension-guide/) the Miners run on, as the pool Owner and Miner operator.
 > 2. `miner public key`: The Miner must be ready and synced. This miner must use the same Khala Account as the one you use for the Khala App.
 
 If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser. 
@@ -50,7 +50,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 ### Phala App Operations
 
-1. [Connect your Khala account]({{< relref "docs/khala-user/polkadot-extension-guide" >}}).
+1. [Connect your Khala account](/en-us/general/phala-wallet/polkadot-extension-guide/).
 2. Create StakePool
    - In the left menu, make sure you select 'Mining.'
    - Click "Create Stakepool" in the top right corner;
@@ -102,7 +102,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
    - Click "Withdraw" in the pop-up window;
    - Type in the amount to withdraw;
    - Submit the transaction;
-   - You may wait for at most 14 days to get all your staking (check [staking mechanism]({{< relref "docs/tokenomic/1-mining-staking" >}})). You can check the frozen amount in the "Withdraw Queue" of "Stake" pop-up;
+   - You may wait for at most 14 days to get all your staking (check [staking mechanism](/en-us/learn/tokenomics/mining-staking). You can check the frozen amount in the "Withdraw Queue" of "Stake" pop-up;
 2. Stop Mining
    - Click "Stop" of the Worker in "Mining" or "Unresponsive" state;
    - Submit the transaction;
