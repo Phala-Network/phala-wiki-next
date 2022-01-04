@@ -81,8 +81,32 @@
 
 [[main]]
   name = "Maintain"
-  url = "/en-us/docs/maintain/"
+  url = "/maintain/khala-mining/1-0-hardware-requirements"
   weight = 40
+
+[[maintain]]
+  name = "Mine Khala"
+  identifier = "khala-mining"
+  url = "/maintain/khala-mining"
+  weight = 1000
+
+[[maintain]]
+  name = "Governance"
+  identifier = "maintain-governance"
+  url = "/maintain/governance"
+  weight = 2000
+
+[[maintain]]
+  name = "Gatekeeper"
+  identifier = "maintain-gatekeeper"
+  url = "/maintain/gatekeeper"
+  weight = 3000
+
+[[maintain]]
+  name = "Runtime Bridge"
+  identifier = "maintain-prb"
+  url = "/maintain/prb"
+  weight = 4000
 
 [[main]]
   name = "Getting Started"
