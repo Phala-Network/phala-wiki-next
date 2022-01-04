@@ -1,5 +1,6 @@
 ---
 title: "About Phala Governance"
+draft: true
 weight: 4001
 menu:
   docs:
