@@ -50,7 +50,7 @@ The public key of the entities are registered on-chain. So we can build on-chain
 
 ### Client-worker Payload Example
 
-A client communicates with a worker only for contract invocation. An invocation is consisted of at least the following payloads.
+A client communicates with a worker only for contract invocation. An invocation consists of at least the following payloads.
 
 ```js
 {
