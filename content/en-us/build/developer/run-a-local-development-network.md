@@ -1,6 +1,6 @@
 ---
 title: "Run a Local Development Network"
-weight: 11012
+weight: 1000
 menu:
   build:
     parent: "developer"

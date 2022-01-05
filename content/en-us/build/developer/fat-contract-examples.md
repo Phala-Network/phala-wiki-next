@@ -1,6 +1,6 @@
 ---
 title: "Fat Contract Examples"
-weight: 11012
+weight: 10003
 draft: false
 menu:
   build:
