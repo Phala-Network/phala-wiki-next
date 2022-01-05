@@ -1,5 +1,5 @@
 ---
-title: "Deployement: Docker Compose"
+title: "Deployment: Docker Compose"
 weight: 8002
 menu:
   docs:
