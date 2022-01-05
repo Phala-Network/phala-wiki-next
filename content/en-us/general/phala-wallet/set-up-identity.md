@@ -20,19 +20,28 @@ After your identity is added, it can be used in many applications in Phala or Kh
 
 ## Setting an Identity
 
-Users can set an identity by registering through default fields such as legal name, display name, website, Twitter handle, Riot handle, etc. along with some extra, custom fields for which they would like attestations (see [Judgements](#judgements)).
+Users can set an identity by registering through default fields including:
 
-Users must reserve funds in a bond to store their information on chain:` identity_reserve_funds `, and ` identity_field_funds`  per each field beyond the legal name. These funds are _locked_, not spent - they are returned when the identity is cleared.
+* legal name 
+* display name 
+* website 
+* Twitter handle 
+* Element (formerly known as Riot) handle
 
-These amounts can also be extracted by querying constants through the [Chain state constants](https://polkadot.js.org/apps/#/chainstate/constants) tab on polkadot.js/apps.
+You can also add extra custom fields for which you can attest. Personalized fields are elaborated in the  [judgements](#judgements) section.
 
-First, select `identity` as the `selected constant query`.
+> Users must reserve funds in a bond to store their information on chain:` identity_reserve_funds `, and ` identity_field_funds`  per each field beyond the legal name. These funds are _locked_, can not be spent - they will be returned when the identity is cleared.
+>
+> These amounts can also be extracted by querying constants through the "[Chain state constants](https://polkadot.js.org/apps/#/chainstate/constants)" tab on polkadot.js/apps.
 
-Then on the right-hand side, you can select the constants that you would like to view and add them onto the webpage by clicking the "plus" icon at the end of the bar.
+### Getting Started
 
-Each field can store up to 32 bytes of information, so the data must be less than that. When inputting the data manually through the [Extrinsics UI](https://polkadot.js.org/apps/#/extrinsics), a [UTF8 to bytes](https://onlineutf8tools.com/convert-utf8-to-bytes) converter can help.
+1. To get started, head over to your [My Accounts](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) tab of Khala (Switch to "Khala Network" -> "Accounts").
 
-The easiest way to add the built-in fields is to click the gear icon next to your account and select "Set on-chain identity".
+>Each field can store up to 32 bytes of information, so the data must be less than that. When inputting the data manually through the [Extrinsics UI](https://polkadot.js.org/apps/#/extrinsics), a [UTF8 to bytes](https://onlineutf8tools.com/convert-utf8-to-bytes) converter can help.
+
+
+2. Click the gear icon next to your account and select "Set on-chain identity".
 
 <p align="center">
   <a href="https://polkadot.js.org/apps/#/explorer">
@@ -48,7 +57,11 @@ A popup will appear, offering the default fields.
   </a>
 </p>
 
-To add custom fields beyond the default ones, use the Extrinsics UI to submit a raw transaction by first clicking "Add Item" and adding any field name you like. The display name also has to be provided, otherwise, the Identity pallet would consider it wiped if we submitted it with the "None" option still selected. That is to say, every time you make a change to your identity values, you need to re-submit the entire set of fields: the write operation is always "overwrite", never "append".
+#### Adding Custom Fields
+
+To add custom fields beyond the default ones, use the Extrinsics UI ("Developer" -> "Extrinsics"). 
+Select for  `submit the following extrinsic ` "identity" and in the field to the immediate right "setidentity(info)".
+To submit a raw transaction, first click "Add Item" and add any field name you like. The display name also must be provided; otherwise, the Identity pallet would consider it wiped if you submitted it with "None" selected. Every time you change your identity values, you need to re-submit the entire set of fields: the write operation is always "overwrite" and never "append."
 
 <p align="center">
   <a href="https://polkadot.js.org/apps/#/explorer">
@@ -56,9 +69,9 @@ To add custom fields beyond the default ones, use the Extrinsics UI to submit a 
   </a>
 </p>
 
-Note that custom fields are not shown in the UI by default.
+> Note that custom fields are not shown in the UI by default.
 
-The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of PolkadotJS, the team prefers to only show official fields for now. If you want to check that the values are still stored, use the [Chain State UI](https://polkadot.js.org/apps/#/chainstate) to query the active account's identity info:
+The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of Polkadot{.js} <img alt="polkadot-js icon" src="/images/docs/khala-mining/polkadot-js.svg" width="30">, the team prefers to only show official fields for now. If you want to check that the values are still stored, use the [Chain State UI](https://polkadot.js.org/apps/#/chainstate) to query the active account's identity info:
 
 <p align="center">
   <a href="https://polkadot.js.org/apps/#/accounts">
@@ -72,9 +85,9 @@ You can have a maximum of 100 custom fields.
 
 ### Format Caveat
 
-Please note the following caveat: because the fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters. 
+> Since fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters. 
 
-The PolkadotJS UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards crystallize, things will become easier to use but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take, or support multiple formats and then attempt multiple encodings until the output makes sense.
+The <img alt="polkadot-js icon" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> Polkadot{.js} UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards crystallize, things will become easier to use but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take, or support multiple formats and then attempt multiple encodings until the output makes sense.
 
 ## Judgements
 
@@ -177,7 +190,7 @@ You can use [polkadot.js/apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkha
 
 ## Clearing and Killing an Identity
 
-**Clearing:** Users can clear their identity information and have their deposit returned. Clearing an identity also clears all sub accounts and returns their deposits.
+> Users can clear their identity information and have their deposit returned. Clearing an identity also clears all sub accounts and returns their deposits.
 
 To clear an identity:
 
