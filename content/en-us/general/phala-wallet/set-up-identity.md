@@ -12,7 +12,11 @@ Phala Network provides a naming system that allows participants to add personal 
 
 After your identity is added, it can be used in many applications in Phala or Khala ecosystem. For example, in Secure Worker Mining, this will help you attracting delegators to trust and vote for you.
 
-![](/images/docs/khala-user/identity-0.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/identity-0.png" height="250">
+  </a>
+</p>
 
 ## Setting an Identity
 
@@ -30,21 +34,37 @@ Each field can store up to 32 bytes of information, so the data must be less tha
 
 The easiest way to add the built-in fields is to click the gear icon next to your account and select "Set on-chain identity".
 
-![](/images/docs/khala-user/identity-1.png)
+<p align="center">
+  <a href="https://polkadot.js.org/apps/#/explorer">
+    <img alt="Phala Network" src="/images/docs/khala-user/identity-1.png" height="250">
+  </a>
+</p>
 
 A popup will appear, offering the default fields.
 
-![](/images/docs/khala-user/identity-2.png)
+<p align="center">
+  <a href="https://polkadot.js.org/apps/#/explorer">
+    <img alt="Phala Network" src="/images/docs/khala-user/identity-2.png" height="250">
+  </a>
+</p>
 
 To add custom fields beyond the default ones, use the Extrinsics UI to submit a raw transaction by first clicking "Add Item" and adding any field name you like. The display name also has to be provided, otherwise, the Identity pallet would consider it wiped if we submitted it with the "None" option still selected. That is to say, every time you make a change to your identity values, you need to re-submit the entire set of fields: the write operation is always "overwrite", never "append".
 
-![](/images/docs/khala-user/identity-3.png)
+<p align="center">
+  <a href="https://polkadot.js.org/apps/#/explorer">
+    <img alt="Phala Network" src="/images/docs/khala-user/identity-3.png" height="400">
+  </a>
+</p>
 
 Note that custom fields are not shown in the UI by default.
 
 The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of PolkadotJS, the team prefers to only show official fields for now. If you want to check that the values are still stored, use the [Chain State UI](https://polkadot.js.org/apps/#/chainstate) to query the active account's identity info:
 
-![](/images/docs/khala-user/identity-4.png)
+<p align="center">
+  <a href="https://polkadot.js.org/apps/#/accounts">
+    <img alt="Phala Network" src="/images/docs/khala-user/identity-4.png" height="200">
+  </a>
+</p>
 
 It is up to your own UI or dapp to then do with this data as it pleases. The data will remain available for querying via the Polkadot API, so you don't have to rely on the PolkadotJS UI.
 
@@ -81,7 +101,11 @@ If you don't know which registrar to pick, first check the available registrars 
 
 Requesting judgement follows the same process regardless of whether you're on the Khala or Phala networks. Select one of the registrars from the query you made above.
 
-![](/images/docs/khala-user/identity-5.png)
+<p align="center">
+  <a href="https://polkadot.js.org/extension/">
+    <img alt="Phala Network" src="/images/docs/khala-user/identity-5.png" height="250">
+  </a>
+</p>
 
 This will make your identity go from unjudged to "waiting":
 
@@ -89,9 +113,13 @@ At this point, direct contact with the registrar is required - the contact info 
 
 Once the registrar has confirmed the identity, a green checkmark should appear next to your account name with the appropriate confidence level:
 
-![](/images/docs/khala-user/identity-6.png)
+<p align="center">
+  <a href="https://polkadot.js.org/apps/#/explorer">
+    <img alt="Wallet" src="/images/docs/khala-user/identity-6.png" height="400">
+  </a>
+</p>
 
-_Note that changing even a single field's value after you've been verified will un-verify your account and you will need to start the judgement process anew. However, you can still change fields while the judgement is going on - it's up to the registrar to keep an eye on the changes._
+_Note that changing even a single field's value after you've been verified will un-verify your account and you will need to start the judgement process again. However, you can still change fields while the judgement is going on - it's up to the registrar to keep an eye on the changes._
 
 ### Cancelling a Judgement
 
@@ -101,8 +129,6 @@ To do this, first, go to the ["Extrinsics UI"](https://polkadot.js.org/apps/#/ex
 the `identity` pallet, then `cancelRequest`. Ensure that you are calling this from the correct account (the one for which you initially requested judgement). For the `reg_index`, put the index of the registrar from which you requested judgement.
 
 Submit the transaction, and the requested judgement will be cancelled.
-
-
 
 ### Khala Registrars
 
@@ -139,7 +165,11 @@ An account can have a maximum of 100 sub-accounts.
 
 To register a sub-account on an existing account, you must currently use the [Extrinsics UI](https://polkadot.js.org/apps/#/extrinsics). There, select the identity pallet, then `setSubs` as the function to use. Click "Add Item" for every child account you want to add to the parent sender account. The value to put into the Data field of each parent is the optional name of the sub-account. If omitted, the sub-account will inherit the parent's name and be displayed as `parent/parent` instead of `parent/child`.
 
-![](/images/docs/khala-user/identity-7.png)
+<p align="center">
+  <a href="https://polkadot.js.org/apps/#/explorer">
+    <img alt="Phala Blockchain Explorer" src="/images/docs/khala-user/identity-7.png" height="300">
+  </a>
+</p>
 
 Note that a deposit of  `identity_sub_reserve_funds`  is required for every sub-account.
 
