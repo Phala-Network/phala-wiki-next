@@ -62,6 +62,8 @@ If you do not hold any PHA yet, you can purchase PHA from any of the following e
   </div>
 </div>
 
+> Not all brokers may be available in your jurisdiction. Note that some brokers require you to have an account with them for a certain period before you can transfer your funds to another wallet, such as the [Khala Wallet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts). 
+
 ## Wallet
 
 If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser.
@@ -88,4 +90,14 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 > We have a detailed guide on how to use the Khala App [here](/en-us/docs/khala-mining/3-0-console/).
 
-## Tokens
+## Start Staking: Delegate
+
+As soon as you have:
+- [x] PHA Tokens
+- [x] Khala Account 
+- [x] [Polkadot{.js}](https://polkadot.js.org/extension/) <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/polkadot-js.svg" width="20"> Extension
+
+
+You are ready to over to the <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/phala_logo.png" width="30"> [Phala App](https://app.phala.network/) & start to :point_right: [Delegate](https://app.phala.network/delegate/).
+
+> If you have issues Delegating/ Staking feel free to check our [detailed guide](/en-us/general/phala-applications/stake-pool/).
