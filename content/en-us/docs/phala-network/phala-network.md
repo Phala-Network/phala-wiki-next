@@ -12,13 +12,13 @@ menu:
 
 ## Phala Network
 
-Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, that is, a standard decentralized computing cloud based on Web 3.0.
+Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, that is, a standard decentralized computing cloud based on Web3.
 
 Trustless is not only the first feature of Phala recognized by the community but also the cornerstone of Phala becoming a reliable distributed computing network.
-In addition, the “sharing economy” model is also Phala’s Web 3.0 characteristic. To ensure that network users and computing power providers won’t be controlled by centralized Internet companies, we must adopt the blockchain protocol, allowing any computing node to join the network and provide usable and stable computing services. This is also the foundation of the Secure Worker Mining mechanism.
-At present, Secure Worker Mining mechanism has been running steadily on Khala Network for over two months. Although Khala’s Mining reward is only 10% of Phala’s, there are still more than 20,000 computing nodes successfully registered on Khala. Among them, more than 15,000 servers are running on Khala steadily for some time. These servers provide more than 120,000 vCPUs, which contribute large-scale computing services for the Web 3.0 world — such computing resource scale is second to none in the Crypto field! On Khala Network alone, we already have nearly 1% of the AWS computing power. We believe on Phala Network mainnet, the number of trusted computing nodes can be used in the Web 3.0 world will exceed 100,000 in the future!
+In addition, the “sharing economy” model is also Phala’s Web3 characteristic. To ensure that network users and computing power providers won’t be controlled by centralized Internet companies, we must adopt the blockchain protocol, allowing any computing node to join the network and provide usable and stable computing services. This is also the foundation of the Secure Worker Mining mechanism.
+At present, Secure Worker Mining mechanism has been running steadily on Khala Network for over two months. Although Khala’s Mining reward is only 10% of Phala’s, there are still more than 20,000 computing nodes successfully registered on Khala. Among them, more than 15,000 servers are running on Khala steadily for some time. These servers provide more than 120,000 vCPUs, which contribute large-scale computing services for the Web3 world — such computing resource scale is second to none in the Crypto field! On Khala Network alone, we already have nearly 1% of the AWS computing power. We believe on Phala Network mainnet, the number of trusted computing nodes can be used in the Web3 world will exceed 100,000 in the future!
 
-We strongly agree that Web 3.0 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web 3.0 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
+We strongly agree that Web3 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web3 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
 
 <!--  ## Please choose a topic
 
@@ -38,7 +38,7 @@ We strongly agree that Web 3.0 will be the most powerful innovation driving forc
 
 > Get started with our Fat Contract :point_right: [read more here](/en-us/getting-started/phala-developer/fat-contract/)
 
-A new type of smart contract product that focuses on serving Web 3.0 back-end function-level services.
+A new type of smart contract product that focuses on serving Web3 back-end function-level services.
 
 The Fat Contract is designed for the following use cases:
 
