@@ -21,7 +21,7 @@ You delegate your tokens to a StakePool. StakePools are controlled by account ow
 
 Enter [Phala Network’s delegation page]( https://app.phala.network/delegate/ )
 
-![stakepool delegate](/images/docs/khala-user/stakepool-delegate.jpg)
+![stakepool delegate](/images/docs/khala-user/stakepool-delegate.png)
 
 The first page of delegation is a list of StakePools, which allows users to select and delegate. All data in the list can be sorted. You can check below to learn how to choose StakePool:
 
