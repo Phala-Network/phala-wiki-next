@@ -13,7 +13,7 @@ Phala Network provides a naming system that allows participants to add personal 
 After your identity is added, it can be used in many applications in Phala or Khala ecosystem. For example, in Secure Worker Mining, this will help you attracting delegators to trust and vote for you.
 
 <p align="center">
-  <a href="https://polkadot.js.org/extension/">
+  <a href="https://app.phala.network/delegate/">
     <img alt="Phala Network" src="/images/docs/khala-user/identity-0.png" height="250">
   </a>
 </p>
