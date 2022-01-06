@@ -9,13 +9,13 @@ menu:
 
 ## Delegator
 
-Token holders (i.e. delegators) can obtain mining rewards by delegating PHA to the StakePool, which can be understood as "depositing to earn interest". This guide will introduce how to earn rewards through delegation in Phala Network.
+If you hold PHA tokens, you can stake them on the [Phala App](https://app.phala.network/delegate/). When you stake your tokens, we refer to the term delegating PHA, which can be understood as depositing and earning interest on your PHA. Therefore, this process makes you a delegator.
 
 ## How to Delegate
 
 ### Introduction of Delegation
 
-Phala Network’s protocol allows token holders to delegate PHA into StakePool. The owner of the StakePool uses the PHA to mine and stake. The mining rewards will be distributed to the delegators according to the delegation share.
+You delegate your tokens to a StakePool. StakePools are controlled by account owners that provide miners (workers) to the community. Miners will add their miners to their StakingPools. Your tokens provide liquidation to the miners in the respective StakePool. The mining rewards will be distributed to the delegators according to the delegation share.
 
 ### Choose StakePool
 
@@ -34,7 +34,7 @@ The first page of delegation is a list of StakePools, which allows users to sele
     - Please refer to the Phala Network’s [new token economics](https://medium.com/phala-network/reading-phala-network-economic-paper-preview-5f33b7019861) for worker reward rules, treasury’s processing fees rate is 20%, which is fixed. StakePool commission rate is set by StakePool’s Owner, which means the mining rewards of Workers will be distributed to Owners according to a certain proportion.
     - **Cap Gap**: The maximum number of tokens that a StakePool can accept to delegate currently.
 
-2. If you have higher requirements for token flexibility, Please pay attention to the ** Free Delegation ** of the StakePool to determine the required withdrawal time for the delegation.
+2. If you have higher requirements for token flexibility, please pay attention to the ** Free Delegation ** of the StakePool to determine the required withdrawal time for the delegation.
 
 ### How to Delegate
 
