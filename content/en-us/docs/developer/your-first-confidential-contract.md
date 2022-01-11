@@ -1,6 +1,6 @@
 ---
-title: "1.3 Confidential Contract Examples"
-weight: 11012
+title: "1.4 Confidential Contract Examples"
+weight: 11013
 menu:
   docs:
     parent: "developer"
