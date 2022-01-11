@@ -1,5 +1,5 @@
 ---
-title: "1.2 Run a Local Development Network"
+title: "1.2 Fat Contracts Tutorial"
 weight: 11011
 menu:
   docs:
