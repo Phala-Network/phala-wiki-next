@@ -1,5 +1,5 @@
 ---
-title: "1.2 Fat Contracts Tutorial"
+title: "1.2 Fat Contract Tutorial"
 weight: 11011
 menu:
   docs:
@@ -12,7 +12,7 @@ This is a simple tutorial demonstrating how to write a Phala confidential-preser
 
 ### Introduction
 
-Fat Contract is the programming model adopted by Phala Network. Fat Contract is **NOT** smart contract.
+[Fat Contract](https://wiki.phala.network/en-us/docs/phala-network/fat-contract/) is the programming model adopted by Phala Network. Fat Contract is **NOT** smart contract.
 
 Instead, it aims to provide the rich features that ordinary smart contracts cannot offer, including:
 
@@ -53,26 +53,25 @@ cargo contract new flipper
 > ```
 
 ### Compile the contract
+```sh
+cd flipper
+cargo contract build
+```
 > Please note that you will need to use the nightly builds to build the contract. Run the following to resolve build failures or check out the [ink! repo](https://github.com/paritytech/cargo-contract#build-requires-the-nightly-toolchain).
 >```sh
 > cargo +nightly contract build
 >```
 
-```sh
-cd flipper
-cargo contract build
-```
-
 You will find the compile result at `./target/ink`:
 
-> ```bash
-> ~ ls -h target/ink
-> flipper.contract  flipper.wasm  metadata.json
-> ```
+```bash
+~ ls -h target/ink
+flipper.contract  flipper.wasm  metadata.json
+```
 
 ### Deploy
 
-Collect the above three files and create the contract in a local testnet.
+Collect the above three files (`flipper.contract`, `flipper.wasm`, `metadata.json`) and create the contract in a local testnet.
 
 #### Run the local testnet
 
@@ -100,7 +99,7 @@ Now, make sure you have [Polkadot.js Extension](https://polkadot.js.org/extensio
 
 ![](/images/docs/developer/fat-contracts/fat-contract-query-workers.gif)
 
-**One-off job.** Navigate to "Developer > Sudo" and send the following transaction. This only needs to be done once in a deployment.
+**One-off job.** Navigate to "Developer > **Sudo**" and send the following transaction. This only needs to be done **once** in a deployment.
 
 ```
 phalaRegistry.registerGatekeeper(0x3a3d45dc55b57bf542f4c6ff41af080ec675317f4ed50ae1d2713bf9f892692d)
@@ -161,7 +160,7 @@ You should be able to see the following event:
 phalaRegistry.contractKey()
 ```
 
-- include option: off
+- include option: **off**
 
 > ```
 > [
@@ -174,7 +173,7 @@ phalaRegistry.contractKey()
 > ]
 > ```
 
-Now the contract is up and running at your worker (0x3a3d45dc55b57bf542f4c6ff41af080ec675317f4ed50ae1d2713bf9f892692d), with the contract id `0xcf4b9fd7eb64dc1fe5ca550e715a49fae9f5a2de88afd3c32daa137fcc8ca5b7`.
+Now the contract is up and running at your worker (0x3a3d45dc55b57bf542f4c6ff41af080ec675317f4ed50ae1d2713bf9f892692d), with the **contract id** `0xcf4b9fd7eb64dc1fe5ca550e715a49fae9f5a2de88afd3c32daa137fcc8ca5b7`.
 
 Please keep the contract id. It will be used in the next step.
 
@@ -182,7 +181,7 @@ Please keep the contract id. It will be used in the next step.
 
 #### Prerequest
 
-1. Install Node (>= v14) and yarn.
+1. Install [Node](https://nodejs.org/en/download/package-manager/) (>= v14) and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable).
 2. Download and build Phala-Network/js-sdk (**fat-contract-workshop** branch)
 
     ```sh
@@ -218,6 +217,7 @@ Open the app in your browser. You can use it to flip the bit in the flipper cont
    > Every time when you deploy a new contract, you will need to update the ABI and the contract address.
 
    > ![](/images/docs/developer/fat-contracts/fat-contract-copy-metadata-create-contract-gui.gif)
+
 5. Click "Query" to call `get()`, and read the value
 6. Click "Command" to call `flip()`
 7. After around 6s, click "Query" to call `get()`. You should read a flipped value.
