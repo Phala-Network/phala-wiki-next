@@ -9,12 +9,11 @@ menu:
 
 ## Introduction
 
-To secure the cloud of workers (miners) and the jobs they are assigned, the network will set [Confidence Level]({{< relref "docs/khala-mining/1-2-confidential-level-evaluation#confidence-level-of-a-miner" >}}) for each worker’s CPU and will require **_Staking_** to enable mining. Each worker can only earn value $V$ if it first stakes a number of PHA tokens based on its CPU score, after which it can enter the mining system and start TEE Mining.
+To secure the cloud of workers (miners) and the assigned jobs, the network will set a [Confidence Level](/en-us/docs/khala-mining/1-2-confidential-level-evaluation/#confidence-level-of-a-miner) for each worker’s CPU and require Staking (a delegation) to mine. Each worker can only earn value V if it first stakes several PHA tokens based on its CPU score, after which it can enter the mining system and start TEE Mining.
 
-If a worker misbehaves or fails to respond, it will be punished by slashing the $V$, which strongly incentivizes participants to ensure their workers are running properly and disincentivizes attempts to cheat.
+Suppose a worker misbehaves or fails to respond. In that case, it will be punished by slashing the V, which strongly incentivizes participants to ensure their workers are running properly and disincentivizes attempts to cheat.
 
-Unlike Polkadot or other Proof-of-Stake consensus systems, Phala can manage as many as one million CPU cores from over 100k nodes, which requires our staking mechanism to outperform existing PoS in both performance and efficiency.
-That's why we propose **Stake Delegation**, which introduces an extra role of StakePool into our system to connect computing nodes with PHA holders. Anyone is allowed to create a StakePool, and a PHA holder can delegate his/her PHA to the pool. Then the pool Owner can manage and stake for any Workers belong to the pool.
+Unlike Polkadot or other Proof-of-Stake consensus systems, Phala can manage as many as one million CPU cores from over 100k nodes, which requires our staking mechanism to outperform existing PoS in both performance and efficiency. That’s why we propose **Stake Delegation**, which introduces an extra role of StakePool into our system to connect computing nodes with PHA holders. Anyone can create a StakePool, and a PHA holder can delegate their PHA to the pool. Then the pool Owner can manage and stake for any Workers belonging to the pool.
 
 ## TEE Mining Roles
 
