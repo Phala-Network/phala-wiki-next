@@ -120,10 +120,10 @@ Assuming Worker-A and Worker-B require staking of 2000 PHA, respectively. And Wo
 
 ### Case 2: Commission Setup and Reward Distribution
 
-![](/images/docs/tokenomic/staking.007.png)
+![](/images/docs/tokenomic/staking.007.gif)
 <center>Figure 4</center>
 
-Scenario 1 in Figure 4 shows the whole process of reward distribution and the commission rate's effect on it:
+**Scenario 1 in Figure 4** shows the whole process of reward distribution and the commission rate's effect on it:
 1. Pool-1 is created, and it adds Worker {A, B, C, D} with a minimum total staking of 10000 PHA. Its Commission is set to 60%;
 2. 5 Delegators each delegates 1400 PHA to the pool. Now there are 7000 PHA in the pool;
 3. Pool-1 stakes 7000 PHA for the Worker {A, B, C}, and Worker-D has no staking since there are not enough PHA;
@@ -131,7 +131,7 @@ Scenario 1 in Figure 4 shows the whole process of reward distribution and the co
 5. Phala Blockchain rewards 10 PHA to Pool-1 for its computing power;
 6. Pool-1 divides its rewards into two parts according to the 60% Commission: 4 PHA is distributed equally to the 5 Delegators, with 0.8 PHA for each; 6 PHA to the pool Owner;
 
-Scenario 2 in Figure 4 shows the case of reward distribution when there are Free Delegation since the delegated tokens are more than those that have been staked:
+**Scenario 2 in Figure 4** shows the case of reward distribution when there are Free Delegation since the delegated tokens are more than those that have been staked:
 1. Pool-1 is created, and it adds Worker {A, B, C, D} with a minimum total staking of 10000 PHA. Its Commission is set to 60%;
 2. 5 Delegators each delegate 1400 PHA to the pool, and one more Delegator-Rich delegates 5000 PHA. Now there are 12000 PHA in the pool;
 3. Pool-1 only stakes the necessary amount of tokens for each Worker (10000 PHA in total), and leaves 2000 PHA Free Delegation;
@@ -152,13 +152,13 @@ As shown in the first scenario in Figure 6, if a Delegator sends a withdrawal re
 
 While if the requested amount is larger than the Free Delegation, he can only get the Free Delegation and has to wait for the rest to be available.
 
-In the second scenario in Figure 6, the Delegator wants to withdraw 4000 PHA, while there are only 2000 PHA Free Delegation in the pool, he will immediately get 2000 PHA, and needs to wait for the rest 2000 PHA.
+In the second scenario in Figure 6, the Delegator wants to withdraw 4000 PHA; while there are only 2000 PHA Free Delegation in the pool, he will immediately get 2000 PHA and needs to wait for the rest of 2000 PHA.
 
 At this time, there is a funding gap of 2000 PHA, and the Owner of Pool-1 has two choices:
 
-In the third scenario in Figure 6, if no extra PHA is delegated to the pool within 7 days, then all its Workers will be forced to stop mining and enter a 7-day freeze period. This freeze period cannot be interrupted by anyone. After 7 days, the withdrawal request will be fulfilled.
+In the third scenario in Figure 6, if no extra PHA is delegated to the pool within seven days, then all its Workers will be forced to stop mining and enter a 7-day freeze period. This freeze period cannot be interrupted by anyone. Therefore, after seven days, the withdrawal request will be fulfilled.
 
-As shown in the fourth scenario in Figure 6, within 7 days, if additional PHA is delegated to the pool or workers stop mining and release the staking, then this Free Delegation will be sent to the owed Delegator until his withdrawal request is fulfilled.
+As shown in the fourth scenario in Figure 6, within seven days, if additional PHA is delegated to the pool or workers stop mining and release the staking, then this Free Delegation will be sent to the owed Delegator until his withdrawal request is fulfilled.
 
 In conclude:
 - A Delegator can exit staking in at most 14 days;
