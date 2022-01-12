@@ -59,10 +59,10 @@ Illustrated in the secondary visualization of Figure 1, a StakePool can add or m
 
 ## The Relationship between Delegator and Worker
 
-![](/images/docs/tokenomic/staking.003.png)
-<center>Figure 3</center>
+![](/images/docs/tokenomic/staking.003.gif)
+<center>Figure 2</center>
 
-Figure 3 shows the relationship between Worker, StakePool, and Delegator:
+In the baseline situation, Figure 2 shows the relationship between Worker, StakePool, and Delegator:
 
 - A StakePool can add and manage Workers;
 - A Delegator delegates his/her PHA tokens to the StakePool;
@@ -70,10 +70,8 @@ Figure 3 shows the relationship between Worker, StakePool, and Delegator:
 
 It is worth noting that during the staking, all the PHA tokens are kept at Delegators' addresses, and no transfer will occur.
 
-![](/images/docs/tokenomic/staking.004.png)
-<center>Figure 4</center>
+Figure 2, its secondary state, shows the full lifecycle of our mining process:
 
-Figure 4 shows the full lifecycle of our mining process:
 1. Pool-1 is created, and it adds Worker {A, B, C, D};
 2. A PHA holder delegates his/her PHA tokens to Pool-1;
 3. Pool-1 stakes Delegator's PHA from its Workers;
