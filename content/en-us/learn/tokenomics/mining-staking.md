@@ -163,7 +163,7 @@ As shown in the fourth scenario in Figure 5, within seven days, if additional PH
 ### Summary
 
 - A Delegator can exit staking in at most 14 days;
-- The Owner of the StakePool should take care of the Free Delegation, and introduce extra delegation or reduce mining Workers as needed. Or all the Workers in the pool can be forced to stop mining;
+- The Owner of the StakePool should take care of the Free Delegation, and introduce extra delegation or reduce mining Workers as needed. Or all the Workers in the pool can be forced to stop mining.
 
 <script>
   MathJax = {
