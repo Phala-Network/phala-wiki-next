@@ -146,21 +146,22 @@ Assuming Worker-A and Worker-B require staking of 2000 PHA, respectively. And Wo
 If the Owner and Delegators want to quit mining and withdraw all their own staked PHA, they first suspend mining. After the request is initiated, the funds that were staked will undergo a 7-day freeze period in the StakePool, after which the balance will be unfrozen and returned. The Owner cannot withdraw other Delegators' deposits.
 
 ![](/images/docs/tokenomic/staking.008.gif)
-<center>Figure 6</center>
+<center>Figure 5</center>
 
-As shown in the first scenario in Figure 6, if a Delegator sends a withdrawal request, and the amount he requests is less than the Free Delegation in the pool, he can immediately get his funds back.
+As shown in the first scenario in Figure 5, if a Delegator sends a withdrawal request, and the amount he requests is less than the Free Delegation in the pool, he can immediately get his funds back.
 
 While if the requested amount is larger than the Free Delegation, he can only get the Free Delegation and has to wait for the rest to be available.
 
-In the second scenario in Figure 6, the Delegator wants to withdraw 4000 PHA; while there are only 2000 PHA Free Delegation in the pool, he will immediately get 2000 PHA and needs to wait for the rest of 2000 PHA.
+In the second scenario in Figure 5, the Delegator wants to withdraw 4000 PHA; while there are only 2000 PHA Free Delegation in the pool, he will immediately get 2000 PHA and needs to wait for the rest of 2000 PHA.
 
 At this time, there is a funding gap of 2000 PHA, and the Owner of Pool-1 has two choices:
 
-In the third scenario in Figure 6, if no extra PHA is delegated to the pool within seven days, then all its Workers will be forced to stop mining and enter a 7-day freeze period. This freeze period cannot be interrupted by anyone. Therefore, after seven days, the withdrawal request will be fulfilled.
+In the third scenario in Figure 5, if no extra PHA is delegated to the pool within seven days, then all its Workers will be forced to stop mining and enter a 7-day freeze period. This freeze period cannot be interrupted by anyone. Therefore, after seven days, the withdrawal request will be fulfilled.
 
-As shown in the fourth scenario in Figure 6, within seven days, if additional PHA is delegated to the pool or workers stop mining and release the staking, then this Free Delegation will be sent to the owed Delegator until his withdrawal request is fulfilled.
+As shown in the fourth scenario in Figure 5, within seven days, if additional PHA is delegated to the pool or workers stop mining and release the staking, then this Free Delegation will be sent to the owed Delegator until his withdrawal request is fulfilled.
 
-In conclude:
+### Summary
+
 - A Delegator can exit staking in at most 14 days;
 - The Owner of the StakePool should take care of the Free Delegation, and introduce extra delegation or reduce mining Workers as needed. Or all the Workers in the pool can be forced to stop mining;
 
