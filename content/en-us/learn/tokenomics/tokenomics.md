@@ -67,6 +67,7 @@ For reference,
 | Platform          | Cores | Score | Approximate Price |
 | ----------------- | ----- | ----- | ----------------- |
 | Low-End Celeron   | 4     | 450   | $150              |
+| Intel Xeon E Processor| 8     | 1900  | $500              |
 | Mid-End i5 10-Gen | 8     | 2000  | $500              |
 | High-End i9 9-Gen | 10    | 2800  | $790              |
 
