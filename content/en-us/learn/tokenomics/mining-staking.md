@@ -160,6 +160,10 @@ In the third scenario in Figure 5, if no extra PHA is delegated to the pool with
 
 As shown in the fourth scenario in Figure 5, within seven days, if additional PHA is delegated to the pool or workers stop mining and release the staking, then this Free Delegation will be sent to the owed Delegator until his withdrawal request is fulfilled.
 
+### How to reclaim
+
+<iframe width="616" height="297" src="https://www.youtube.com/embed/U0yJ0SqR5hg?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Summary
 
 - A Delegator can exit staking in at most 14 days;
