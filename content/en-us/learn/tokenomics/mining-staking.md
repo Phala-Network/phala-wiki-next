@@ -38,26 +38,23 @@ It is vital to note two different roles in the mining (**worker**) and staking p
 
 ## The Relationship between Worker and StakePool
 
-![](/images/docs/tokenomic/staking.001.png)
+![](/images/docs/tokenomic/staking.001.gif)
 <center>Figure 1</center>
 
-As shown in Figure 1,
+As shown in the initial image of Figure 1 above,
 
 - Owner-A creates Worker {A, B, C, D};
 - Owner-A creates Pool-1;
 - Owner-B creates Pool-2;
 
-![](/images/docs/tokenomic/staking.002.png)
-<center>Figure 2</center>
-
-As shown in Figure 2, a StakePool can add or manage a Worker only if the Operator of the Worker is the Owner of the pool. In this case,
+Illustrated in the secondary visualization of Figure 1, a StakePool can add or manage a Worker only if the Operator of the Worker is the Owner of the pool. In this case,
 
 - Since Owner-A is both the Owner of Pool-1 and the Operator of Worker {A, B, C, D}, Pool-1 can bind Worker {A, B, C, D} to it, and Pool-1 can stake its PHA tokens for these Workers;
 - Owner-B is the Owner of Pool-2, while Pool-2 cannot add or manage any one of Worker {A, B, C, D} since Owner-B is not their Operator;
 
 > **Other cases:**
 > - After Worker-A authorized Owner-A as an Operator, it cannot authorize Owner-B at the same time. If Worker-A wants to transfer its control to Owner-B, it must first stop mining for Owner-A;
-> - No ownership transfer for StakePool for now;
+> - An ownership transfer of a StakePool is currently not supported;
 
 
 ## The Relationship between Delegator and Worker
