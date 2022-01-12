@@ -143,12 +143,12 @@ Assuming Worker-A and Worker-B require staking of 2000 PHA, respectively. And Wo
 
 ## Exit Staking
 
-If the Owner and Delegators want to quit mining and withdraw all their own staked PHA, they first suspend mining. After the request is initiated, the funds that were staked will undergo a 7-day freeze period in the StakePool, after which the balance will be unfrozen and returned. The Owner cannot withdraw other Delegators' deposits.
+If the Owner and Delegators want to quit mining and withdraw their own staked PHA, they first suspend mining. After the request is initiated, the staked funds will undergo a 7-day freeze period in the StakePool, after which the balance will be unfrozen and returned. The Owner cannot withdraw other Delegators' deposits.
 
 ![](/images/docs/tokenomic/staking.008.gif)
 <center>Figure 5</center>
 
-As shown in the first scenario in Figure 5, if a Delegator sends a withdrawal request, and the amount he requests is less than the Free Delegation in the pool, he can immediately get his funds back.
+As shown in the first scenario in Figure 5, if a Delegator sends a withdrawal request, and the amount he requests is less than the Free Delegation in the pool, gets his funds back.
 
 While if the requested amount is larger than the Free Delegation, he can only get the Free Delegation and has to wait for the rest to be available.
 
