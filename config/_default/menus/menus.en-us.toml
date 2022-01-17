@@ -1,67 +1,135 @@
-[[docs]]
+[[main]]
+  name = "General"
+  url = "/general/phala-network/phala-network"
+  weight = 10
+
+[[main]]
+  name = "Learn"
+  url = "/en-us/learn/phala-blockchain/blockchain-detail/"
+  weight = 20
+
+[[main]]
+  name = "Build"
+  url = "/en-us/build/developer/fat-contract-examples/"
+  weight = 30
+
+[[main]]
+  name = "Maintain"
+  url = "/en-us/maintain/khala-mining/khala-pre-mainnet-mining-guide/"
+  weight = 40
+
+[[main]]
+  name = "Getting Started"
+  url = "/getting-started/mining/mine-phala"
+  weight = 50
+
+[[general]]
   name = "Phala Network"
   identifier = "phala-network"
-  url = "/docs/phala-network/"
+  url = "/getting-started/phala-network/"
   weight = 1000
 
-[[docs]]
-  name = "Developer Guide"
-  identifier = "developer"
-  url = "/docs/developer/"
-  weight = 11000
+[[general]]
+  name = "Phala Wallet"
+  identifier = "phala-wallet"
+  url = "/general/phala-wallet/"
+  weight = 2000
 
-[[docs]]
-  name = "Tokenomics"
-  identifier = "tokenomics"
-  url = "/docs/tokenomics/"
+[[general]]
+  name = "Phala Applications"
+  identifier = "phala-applications"
+  url = "/general/phala-applications/"
   weight = 3000
 
-[[docs]]
-  name = "Governance"
-  identifier = "governance"
-  url = "/docs/governance/"
-  weight = 4000
+[[learn]]
+  name = "Phala Blockchain"
+  identifier = "phala-blockchain"
+  url = "/learn/phala-blockchain/"
+  weight = 1000
 
-[[docs]]
-  name = "Khala User"
-  identifier = "khala-user"
-  url = "/docs/khala-user/"
-  weight = 5000
+[[learn]]
+  name = "Products"
+  identifier = "products"
+  url = "/learn/products/"
+  weight = 2000
 
-[[docs]]
-  name = "Khala Mining"
-  identifier = "khala-mining"
-  url = "/docs/khala-mining/"
-  weight = 6000
-
-#[[docs]]
-#  name = "Para-2 Testnet"
-#  identifier = "para-mining"
-#  url = "/docs/para-mining/"
-# weight = 7000
-
-[[docs]]
-  name = "Runtime Bridge"
-  identifier = "prb"
-  url = "/docs/prb/"
-  weight = 8000
-
-[[docs]]
+[[learn]]
   name = "Maintain"
   identifier = "maintain"
-  url = "/docs/maintain/"
-  weight = 9000
+  url = "/learn/maintain/"
+  weight = 3000
 
-[[docs]]
+[[learn]]
+  name = "Governance"
+  identifier = "governance"
+  url = "/learn/governance/"
+  weight = 4000
+
+[[learn]]
+  name = "Tokenomics"
+  identifier = "tokenomics"
+  url = "/learn/tokenomics/"
+  weight = 5000
+
+[[learn]]
+  name = "Developer"
+  identifier = "developer"
+  url = "/learn/developer/"
+  weight = 6000
+
+[[build]]
+  name = "Developer Guide"
+  identifier = "developer"
+  url = "/build/developer/"
+  weight = 1000
+
+[[build]]
   name = "pDiem"
-  identifier = "pDiem"
-  url = "/docs/pDiem/"
-  weight = 10000
+  identifier = "pdiem"
+  url = "/build/pdiem/"
+  weight = 2000
 
-# [[docs]]
-#   name = "Gatekeeper"
-#   identifier = "gatekeeper"
-#   url = "/docs/gatekeeper/"
+[[maintain]]
+  name = "Mine Khala"
+  identifier = "khala-mining"
+  url = "/maintain/khala-mining/"
+  weight = 1000
+
+[[maintain]]
+  name = "Governance"
+  identifier = "maintain-governance"
+  url = "/maintain/governance/"
+  weight = 2000
+
+[[maintain]]
+  name = "Gatekeeper"
+  identifier = "maintain-gatekeeper"
+  url = "/maintain/gatekeeper/"
+  weight = 3000
+
+[[maintain]]
+  name = "Runtime Bridge"
+  identifier = "maintain-prb"
+  url = "/maintain/prb/"
+  weight = 4000
+
+[[gettingstarted]]
+  name = "Mining"
+  identifier = "mining"
+  url = "/getting-started/mining/"
+  weight = 1000
+
+[[gettingstarted]]
+  name = "Staking"
+  identifier = "staking"
+  url = "/getting-started/staking/"
+  weight = 2000
+
+[[gettingstarted]]
+  name = "Phala Developer"
+  identifier = "phala-developer"
+  url = "/getting-started/phala-developer/"
+  weight = 3000
 
 [[social]]
   name = "GitHub"
@@ -86,3 +154,5 @@
 #   name = "Privacy"
 #   url = "/privacy-policy/"
 #   weight = 10
+
+# New Simple Articles (wiki)

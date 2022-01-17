@@ -33,8 +33,11 @@
           {{ range .Site.Menus.main -}}
             {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
             {{- $active = or $active (eq .Name $current.Title) -}}
-            {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+            {{- $active = or $active (and (eq .Name "Getting Started") (eq $current.Section "getting-started")) -}}
+            {{- $active = or $active (and (eq .Name "General") (eq $current.Section "general")) -}}
+            {{- $active = or $active (and (eq .Name "Learn") (eq $current.Section "learn")) -}}
+            {{- $active = or $active (and (eq .Name "Build") (eq $current.Section "build")) -}}
+            {{- $active = or $active (and (eq .Name "Maintain") (eq $current.Section "docs")) -}}
             <li class="nav-item">
               <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
             </li>
@@ -95,13 +98,100 @@
 </div>
 {{ end -}}
 
+{{ if eq .Section "getting-started" -}}
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/getting-started-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+<button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed{{ if eq .Site.Params.options.flexSearch false }} ms-auto{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+</button>
+{{ end -}}
+
+{{ if eq .Section "general" -}}
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/general-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+<button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed{{ if eq .Site.Params.options.flexSearch false }} ms-auto{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+</button>
+{{ end -}}
+
+{{ if eq .Section "learn" -}}
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/learn-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+<button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed{{ if eq .Site.Params.options.flexSearch false }} ms-auto{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+</button>
+{{ end -}}
+
+{{ if eq .Section "build" -}}<!--
+<nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
+  <div class="container-xxl d-flex align-items-md-center">
+
+    {{ if .Site.Params.options.flexSearch -}}
+    <form class="doks-search position-relative flex-grow-1 me-auto">
+      <input id="search" class="form-control is-search" type="search" placeholder="Search build..." aria-label="Search build..." autocomplete="off">
+      <div id="suggestions" class="shadow bg-white rounded d-none"></div>
+    </form>
+    {{ end -}}
+-->
+    {{ if eq .Site.Params.options.docsVersioning true -}}
+    <div class="dropdown ms-3">
+      <button class="btn btn-doks-light dropdown-toggle" id="doks-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" aria-label="Toggle version menu">
+        <span class="d-none d-lg-inline">Doks</span> v5.0
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="doks-versions">
+        <li><a class="dropdown-item current" aria-current="true" href="/docs/5.0/">Latest (5.0.x)</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+      </ul>
+    </div>
+    {{ end -}}
+
+    <button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed{{ if eq .Site.Params.options.flexSearch false }} ms-auto{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </button>
+
+  </div>
+</nav>
+
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/build-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+{{ end -}}
+
 {{ if eq .Section "docs" -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 
     {{ if .Site.Params.options.flexSearch -}}
     <form class="doks-search position-relative flex-grow-1 me-auto">
-      <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
+      <input id="search" class="form-control is-search" type="search" placeholder="Search maintain..." aria-label="Search maintain..." autocomplete="off">
       <div id="suggestions" class="shadow bg-white rounded d-none"></div>
     </form>
     {{ end -}}

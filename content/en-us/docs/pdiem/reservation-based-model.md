@@ -1,7 +1,7 @@
 ---
 title: "Reservation-based Model"
 weight: 10004
-draft: false
+draft: true
 menu:
   docs:
     parent: "pDiem"

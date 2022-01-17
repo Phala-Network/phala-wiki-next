@@ -1,7 +1,7 @@
 ---
-title: "Understand Phala Tokenomics"
+title: "About Phala Tokenomics"
 weight: 3001
-draft: false
+draft: true
 menu:
   docs:
     parent: "tokenomics"

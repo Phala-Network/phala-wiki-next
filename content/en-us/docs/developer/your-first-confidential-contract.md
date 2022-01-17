@@ -1,5 +1,6 @@
 ---
-title: "1.3 Confidential Contract Examples"
+title: "Confidential Contract Examples"
+draft: true
 weight: 11012
 menu:
   docs:

@@ -1,7 +1,7 @@
 ---
 title: "Advanced: Hardware Mode"
 weight: 10009
-draft: false
+draft: true
 menu:
   docs:
     parent: "pDiem"
