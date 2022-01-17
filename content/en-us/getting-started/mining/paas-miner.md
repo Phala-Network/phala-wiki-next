@@ -1,6 +1,6 @@
 ---
 title: "Rent Hardware"
-weight: 1000
+weight: 1001
 draft: false
 menu:
   gettingstarted:
@@ -21,7 +21,7 @@ menu:
 
 ## Deploy Instance
 
-After successfully signing up and increasing your credit limit, it is time to pick the correct instance. 
+After successfully signing up and increasing your credit limit, it is time to pick the correct instance.
 
 * Go to [Deploy](https://my.vultr.com/deploy/)
   - Select 'Bare Metal'
@@ -31,16 +31,16 @@ After successfully signing up and increasing your credit limit, it is time to pi
   - Leave any remaining options as default.
   - Add a meaningful 'Server Hostname & Label'
   - You are ready to hit 'Deploy Now'
-  - Wait for 5-15 minutes: Get a cup of coffee :coffee: until your instance is ready 
+  - Wait for 5-15 minutes: Get a cup of coffee :coffee: until your instance is ready
 
 ## Instance Settings
 
-Once your new instance is displayed as 'Running,' there are currently no additional steps required to adjust the machine's BIOS. The instance works out of the box. 
+Once your new instance is displayed as 'Running,' there are currently no additional steps required to adjust the machine's BIOS. The instance works out of the box.
 
 > _Optional:_ To optimize the miner's score, you can reboot the instance, head over to the console, and enter the BIOS with F11, to adjust the BIOS settings mentioned in [this guide](/en-us/docs/khala-mining/1-0-hardware-requirements/#check-your-bios).
 
 You can get the correct drivers from our guide [here](en-us/docs/khala-mining/1-0-hardware-requirements/#supported-operating-systems) under the Ubuntu 21.10 tab.
 
-Once the drivers are installed, you may now turn your instance into a Phala miner. 
+Once the drivers are installed, you may now turn your instance into a Phala miner.
 \
  :point_right:  [Get mining scipts](/en-us/getting-started/mining/mine-phala/#quick-start)

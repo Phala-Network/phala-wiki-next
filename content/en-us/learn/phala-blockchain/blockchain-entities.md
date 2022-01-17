@@ -9,7 +9,7 @@ menu:
 
 ## Overview
 
-The last chapter covered Phala's architecture, whereas this page will touch on Phala's entities, the type of nodes that make Phala Network. 
+The last chapter covered Phala's architecture, whereas this page will touch on Phala's entities, the type of nodes that make Phala Network.
 
 In Phala Network, there are three kinds of entities:
 

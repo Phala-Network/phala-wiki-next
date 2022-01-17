@@ -1,6 +1,6 @@
 ---
 title: "Browser Account Extension Guide"
-weight: 5001
+weight: 1001
 draft: false
 menu:
   general:
@@ -9,7 +9,7 @@ menu:
 
 ## Polkadot{.js} Extension
 
-The browser extension Polkadot{.js} is a UI wallet that allows the usage of decentralized applications (daap) in the Polkadot ecosystem through your browser. In addition, it allows you to sign transactions (verifying your on-chain identity) with your accounts easily and is needed to use the Phala App. 
+The browser extension Polkadot{.js} is a UI wallet that allows the usage of decentralized applications (dApp) in the Polkadot ecosystem through your browser. In addition, it allows you to sign transactions (verifying your on-chain identity) with your accounts easily and is needed to use the Phala App.
 
 In this tutorial, we show you how to use Polkadot{.js} Extension and to create or import your Khala account.
 \
@@ -17,7 +17,7 @@ Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Rel
 
 ## Install Polkadot{.js} Extension
 
-1. Get the extension from <a href="https://polkadot.js.org/extension/"><img alt="polkadot.js" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> [polkadot.js.org](https://polkadot.js.org/extension/) 
+1. Get the extension from <a href="https://polkadot.js.org/extension/"><img alt="polkadot.js" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> [polkadot.js.org](https://polkadot.js.org/extension/)
 
 <p align="center">
   <a href="https://polkadot.js.org/extension/">
@@ -50,7 +50,7 @@ Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Rel
 
 ## Import an Existing Account
 
-There are two ways to import an existing account. Either by using your [mnemonic seed](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-mnemonic) or an [existing JSON file](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-json). 
+There are two ways to import an existing account. Either by using your [mnemonic seed](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-mnemonic) or an [existing JSON file](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-json).
 
 ### Import with Mnemonic
 

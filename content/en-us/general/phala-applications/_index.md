@@ -1,5 +1,5 @@
 ---
 title: "phala-wallet"
-weight: 5000
+weight: 1000
 draft: false
 ---

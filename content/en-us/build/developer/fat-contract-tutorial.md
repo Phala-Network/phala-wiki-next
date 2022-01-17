@@ -1,6 +1,6 @@
 ---
 title: "Fat Contract Tutorials"
-weight: 10002
+weight: 1002
 menu:
   build:
     parent: "developer"

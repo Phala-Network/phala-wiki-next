@@ -1,6 +1,6 @@
 ---
 title: About pDiem
-weight: 10002
+weight: 1002
 draft: false
 menu:
   learn:

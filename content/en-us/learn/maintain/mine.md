@@ -1,13 +1,13 @@
 ---
 title: Mine
-weight: 1000
+weight: 1001
 draft: false
 menu:
   learn:
     parent: "maintain"
 ---
 
-Miners, also referred to as "workers," provide computing power to the Phala Network. Anyone with the appropriate hardware can participate.
+Miners, also referred to as "Workers" in Phala blockchain, provide computing power to the Phala Network. Anyone with the appropriate hardware can participate.
 
 > More information about hardware requirements: :point_right: [here](/en-us/docs/khala-mining/1-0-hardware-requirements/#general-khala-hardware-requirements)
 

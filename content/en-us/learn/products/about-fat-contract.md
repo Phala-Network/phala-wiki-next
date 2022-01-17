@@ -1,6 +1,6 @@
 ---
 title: About Fat Contract
-weight: 10001
+weight: 1001
 draft: false
 menu:
   learn:
@@ -19,7 +19,7 @@ Phala was well-known as the confidential blockchain by combining TEE and blockch
 
 ## Fat Contract Features
 
-Our Fat contract has the following features, providing off-chain computation value: 
+Our Fat contract has the following features, providing off-chain computation value:
 
 - Support computation-intensive tasks. For the first time, even a single contract can fully utilize the computing power of a worker, needless to worry about blocking the whole blockchain. For example, the requirements for image/video rendering are boosted with the popularity of the NFT and Metaverse, while the rendering jobs are CPU-intensive and expensive. By leveraging the [Gramine Project](https://github.com/gramineproject/gramine), we have finished the proof-of-concept to run the unmodified open-source renderer [Blender](https://www.blender.org/) in our workers. With concurrent programming, it is possible to combine the power of multiple workers and serve the heavy jobs;
 - Serve low-latency real-time computation. The response time for Metaverse and game interaction should not exceed one second. However, traditional blockchain smart contracts cannot meet the requirement of low-latency services (since they are executed at block intervals). Fat Contract can achieve millisecond-level read and write responses, making it a perfect choice to deploy Metaverse and game services;

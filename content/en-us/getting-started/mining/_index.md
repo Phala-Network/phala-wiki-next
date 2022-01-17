@@ -1,5 +1,5 @@
 ---
 title: "mining"
-weight: 6000
+weight: 1000
 draft: false
 ---

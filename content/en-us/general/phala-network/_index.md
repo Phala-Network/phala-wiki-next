@@ -1,5 +1,5 @@
 ---
 title: "general"
-weight: 10000
+weight: 1000
 draft: false
 ---

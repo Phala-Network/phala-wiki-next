@@ -1,6 +1,6 @@
 ---
 title: 'Staking: Delegate to a StakePool'
-weight: 5002
+weight: 1001
 draft: false
 menu:
   general:

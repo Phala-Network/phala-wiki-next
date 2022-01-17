@@ -1,6 +1,6 @@
 ---
-title: Blockchain Entities Technical
-weight: 1000
+title: Blockchain Entities
+weight: 1001
 draft: false
 menu:
   learn:

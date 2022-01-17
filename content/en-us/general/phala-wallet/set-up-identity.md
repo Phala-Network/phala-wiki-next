@@ -1,7 +1,7 @@
 ---
 title: Wallet Identity
 description: Learn about on-chain identity, judgments, and registrars.
-weight: 5002
+weight: 1002
 draft: false
 menu:
   general:
@@ -22,10 +22,10 @@ After your identity is added, it can be used in many applications in Phala or Kh
 
 Users can set an identity by registering through default fields including:
 
-* legal name 
-* display name 
-* website 
-* Twitter handle 
+* legal name
+* display name
+* website
+* Twitter handle
 * Element (formerly known as Riot) handle
 
 You can also add extra custom fields for which you can attest. Personalized fields are elaborated in the  [judgements](#judgements) section.
@@ -59,7 +59,7 @@ A popup will appear, offering the default fields.
 
 #### Adding Custom Fields
 
-To add custom fields beyond the default ones, use the Extrinsics UI ("Developer" -> "Extrinsics"). 
+To add custom fields beyond the default ones, use the Extrinsics UI ("Developer" -> "Extrinsics").
 Select for  `submit the following extrinsic ` "identity" and in the field to the immediate right "setidentity(info)".
 To submit a raw transaction, first click "Add Item" and add any field name you like. The display name also must be provided; otherwise, the Identity pallet would consider it wiped if you submitted it with "None" selected. Every time you change your identity values, you need to re-submit the entire set of fields: the write operation is always "overwrite" and never "append."
 
@@ -85,7 +85,7 @@ You can have a maximum of 100 custom fields.
 
 ### Format Caveat
 
-> Since fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters. 
+> Since fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters.
 
 The <img alt="polkadot-js icon" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> Polkadot{.js} UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards crystallize, things will become easier to use but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take, or support multiple formats and then attempt multiple encodings until the output makes sense.
 

@@ -1,6 +1,6 @@
 ---
 title: "Mining & Staking"
-weight: 3002
+weight: 1002
 draft: false
 menu:
   learn:

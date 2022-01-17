@@ -1,6 +1,6 @@
 ---
 title: "Phala Tokenomics"
-weight: 3001
+weight: 1001
 draft: false
 menu:
   learn:

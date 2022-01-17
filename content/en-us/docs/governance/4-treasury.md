@@ -14,7 +14,7 @@ The Treasury is also used to fund spending proposals submitted by community memb
 
 ### Tipping
 
-Tips can be suggested by anyone holding PH and are endorsed by Council members. Tips do not have any fixed value: The final value is decided based on the median of all tips issued by the councilors.
+Tips can be suggested by anyone holding PHA and are endorsed by Council members. Tips do not have any fixed value: The final value is decided based on the median of all tips issued by the councilors.
 
 ### Bounty Spending
 

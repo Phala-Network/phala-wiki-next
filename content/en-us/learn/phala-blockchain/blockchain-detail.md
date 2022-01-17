@@ -1,6 +1,6 @@
 ---
 title: "Phala Blockchain in Detail"
-weight: 1000
+weight: 1001
 menu:
   learn:
     parent: "phala-blockchain"
@@ -8,12 +8,12 @@ menu:
 
 ## An Overview
 
-Phala is a trustless cloud computing solution for the next generation's internet, the [Web3](https://web3.foundation/). We build on [Parity's Substrate](https://www.parity.io/technologies/substrate/) and operate in the Polkadot ecosystem on the [Kusama](https://kusama.network/) parachain. 
+Phala is a trustless cloud computing solution for the next generation's internet, the [Web3](https://web3.foundation/). We build on [Parity's Substrate](https://www.parity.io/technologies/substrate/) and operate in the Polkadot ecosystem on the [Kusama](https://kusama.network/) parachain.
 \
 Phala tackles the privacy issue of legacy blockchain solutions operated in a cloud environment by decoupling the computation from the chain to off-chain secure workers (miners).
 \
 \
-Our secure workers utilize specific TEE ([trusted execution environment](https://www.securetechalliance.org/wp-content/uploads/TEE-101-White-Paper-V1.1-FINAL-June-2018.pdf)) hardware that ensures confidentiality, security, and performance of blockchain computation. Furthermore, our code is all open source. 
+Our secure workers utilize specific TEE ([Trusted Execution Environment](https://en.wikipedia.org/wiki/Trusted_execution_environment)) hardware that ensures confidentiality, security, and performance of blockchain computation. Furthermore, our code is all open source.
 
 ## The Architecture
 
@@ -25,7 +25,7 @@ In general, Phala Network consists of the Phala blockchain and the off-chain TEE
 
 <img src="/images/docs/developer/simple_architecture.png" alt="drawing" class="center"/>
 
-(Phala architecture overview)
+*Phala architecture overview*
 
 ### Transaction Security
 

@@ -1,6 +1,6 @@
 ---
 title: "Fat Contract Examples"
-weight: 10003
+weight: 1003
 draft: false
 menu:
   build:
@@ -20,7 +20,7 @@ Repository](https://github.com/Phala-Network/fat-contract-workshop)
 
 2. [Binaryen wasm toolchain](https://github.com/WebAssembly/binaryen). Install via a package manager or just put the release binaries to your $PATH environment. You will need at least version 99.
 
-3. ink! contract toolkit 
+3. ink! contract toolkit
 
     ```sh
     cargo install cargo-contract --force

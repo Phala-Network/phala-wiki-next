@@ -1,6 +1,6 @@
 ---
 title: Welcome to the Phala Wiki!
-weight: 1000
+weight: 1001
 draft: false
 description: "A Blockchain is a kind of distributed ledger which indelibly records transactions in an ever-growing list of blocks. The basis of our trust in the blockchain is the fact that the execution of every transaction can be verified by any user of the blockchain. Existing blockchains, such as BTC and ETH, live up to this promise in an intuitive way: they make everything public, including the transactions and the internal states of smart contracts. This brings us to the problem: confidential data cannot be processed by these blockchains."
 menu:
@@ -22,7 +22,7 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 <!--  ## Please choose a topic
 
-{{< button "developer" "Build on Phala" >}} 
+{{< button "developer" "Build on Phala" >}}
 
 {{< button "/en-us/docs/phala-network/what-is-phala/" "What is Phala?" >}}
 
@@ -43,8 +43,8 @@ A new type of smart contract product that focuses on serving Web3 back-end funct
 The Fat Contract is designed for the following use cases:
 
 * For low latency requirements, such as in multiplayer online games
-* Scenarios of off-chain interoperation, such as oracle, decentralized chat or communication services (Telegram or email)
-* Fat Contract such as API interface, data market platform
+* Scenarios of off-chain interoperation, such as Oracle, decentralized chat or communication services (Telegram or email)
+* Scenarios where privary matters, such as data market platform
 * Large-scale real-time computing programs, such as Metaverse, games, NFT rendering, artificial intelligence (recommendation engine, etc.)
 
 ## Phala Web Directory

@@ -1,6 +1,6 @@
 ---
 title: "Fat Contract"
-weight: 3000
+weight: 1001
 draft: false
 menu:
   gettingstarted:

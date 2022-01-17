@@ -1,6 +1,6 @@
 ---
 title: "Phala Governance"
-weight: 4001
+weight: 1001
 menu:
   learn:
     parent: "governance"
