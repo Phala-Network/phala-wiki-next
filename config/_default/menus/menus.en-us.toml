@@ -15,7 +15,7 @@
 
 [[main]]
   name = "Maintain"
-  url = "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/"
+  url = "/en-us/maintain/khala-mining/khala-pre-mainnet-mining-guide/"
   weight = 40
 
 [[main]]
@@ -89,6 +89,30 @@
   url = "/build/pdiem/"
   weight = 2000
 
+[[maintain]]
+  name = "Mine Khala"
+  identifier = "khala-mining"
+  url = "/maintain/khala-mining/"
+  weight = 1000
+
+[[maintain]]
+  name = "Governance"
+  identifier = "maintain-governance"
+  url = "/maintain/governance/"
+  weight = 2000
+
+[[maintain]]
+  name = "Gatekeeper"
+  identifier = "maintain-gatekeeper"
+  url = "/maintain/gatekeeper/"
+  weight = 3000
+
+[[maintain]]
+  name = "Runtime Bridge"
+  identifier = "maintain-prb"
+  url = "/maintain/prb/"
+  weight = 4000
+
 [[gettingstarted]]
   name = "Mining"
   identifier = "mining"
@@ -106,78 +130,6 @@
   identifier = "phala-developer"
   url = "/getting-started/phala-developer/"
   weight = 3000
-
-# [[docs]]
-#  name = "Phala Network"
-#  identifier = "phala-network"
-#  url = "/docs/phala-network/"
-#  weight = 1000
-
-#[[docs]]
-#  name = "Phala Wallets & More"
-#  identifier = "khala-user"
-#  url = "/docs/khala-user/"
-#  weight = 2000
-
-#[[docs]]
-#  name = "Tokenomics"
-#  identifier = "tokenomics"
-#  url = "/docs/tokenomics/"
-#  weight = 4000
-
-[[docs]]
-  name = "Mine Khala"
-  identifier = "khala-mining"
-  url = "/docs/khala-mining/"
-  weight = 5000
-
-[[docs]]
-  name = "Governance"
-  identifier = "governance"
-  url = "/docs/governance/"
-  weight = 6000
-
-#[[docs]]
-#  name = "Para-2 Testnet"
-#  identifier = "para-mining"
-#  url = "/docs/para-mining/"
-# weight = 7000
-
-[[docs]]
-  name = "Gatekeeper"
-  identifier = "gatekeeper"
-  url = "/docs/gatekeeper/"
-  weight = 6000
-
-[[docs]]
-  name = "Runtime Bridge"
-  identifier = "prb"
-  url = "/docs/prb/"
-  weight = 8000
-
-# [[docs]]
-#  name = "Maintain"
-#  identifier = "maintain"
-#  url = "/docs/maintain/"
-#  weight = 9000
-
-#[[docs]]
-#  name = "pDiem"
-#  identifier = "pDiem"
-#  url = "/docs/pDiem/"
-#  weight = 10000
-
-#[[docs]]
-#  name = "Technical Documentation"
-#  identifier = "tech-docs"
-#  url = "/docs/tech-docs/"
-#  weight = 11000
-
-#[[docs]]
-#  name = "Developer Guide"
-#  identifier = "developer"
-#  url = "/docs/developer/"
-#  weight = 12000
 
 [[social]]
   name = "GitHub"
@@ -204,4 +156,3 @@
 #   weight = 10
 
 # New Simple Articles (wiki)
-

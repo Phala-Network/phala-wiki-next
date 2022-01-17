@@ -10,7 +10,7 @@
 
     {{ range .Children -}}
 
-      {{- $active := or ($currentPage.IsMenuCurrent "learn" .) ($currentPage.HasMenuCurrent "getting-started" .) -}}
+      {{- $active := or ($currentPage.IsMenuCurrent "learn" .) ($currentPage.HasMenuCurrent "learn" .) -}}
 
       {{- $active = or $active (eq .Name $currentPage.Title) -}}
 
@@ -26,4 +26,4 @@
 
 <!--
 <h3 class="sidebar-link"><a href="/docs/help/faq/#can-i-get-support">Get Support →</a></h3>
---> 
+-->
