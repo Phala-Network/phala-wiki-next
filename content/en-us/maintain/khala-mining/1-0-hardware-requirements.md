@@ -243,7 +243,7 @@ More information to be added soon.
 
 ### Ubuntu 21.10
 
-Ubuntu 21.10 is currently the recommended Ubuntu version to use for mining.
+<!-- Ubuntu 21.10 is currently the recommended Ubuntu version to use for mining. -->
 
 For Ubuntu 21.10 we recommend kernel version `5.13.0-xxx`.
 
