@@ -7,6 +7,22 @@ menu:
     parent: "developer"
 ---
 
+## Introduction
+
+[Fat Contract](https://wiki.phala.network/en-us/getting-started/phala-developer/fat-contract.md) is the programming model adopted by Phala Network. Fat Contract is **NOT** smart contract.
+
+Instead, it aims to provide the rich features that ordinary smart contracts cannot offer, including:
+
+- CPU extensive computation: exclusive off-chain execution at the full CPU speed
+- Network access: the ability to send the HTTP requests
+- Low latency: non-consensus-sensitive operations may not hit the blockchain at all, removing the block latency
+- Strong consistency: consensus-sensitive operations remain globally consistent
+- Confidentiality: contract state is hidden by default unless you specifically expose it via the read call
+
+> Network access feature is available in native contracts now. It will be supported in ink! contracts soon.
+
+Fat Contract is 100% compatible with Substrate's `pallet-contracts`. It fully supports the unmodified ink! smart contracts. Therefore you can still stick to your favorite toolchain including `cargo-contract`,  `@polkadot/contract-api`, and the Polkadot.js Extension.
+
 This tutorial is from our workshop and will demonstrate how to deploy an ink! smart contract on a local Phala testnet, and show how to make a "secret flip" Dapp that only the contract owner can see the flip result.
 
 ## Fat Contract Workshop
@@ -82,6 +98,10 @@ Now, make sure you have [Polkadot.js Extension](https://polkadot.js.org/extensio
 
 ### Deploy the contract
 
+**Query for workers.** Navigate to "Developer > Chain State", and select workers & deselect include option to get the listed workers for the next step.
+
+![](/images/docs/developer/fat-contracts/fat-contract-query-workers.gif)
+
 **One-off job.** Navigate to "Developer > Sudo" and send the following transaction. This only needs to be done once in a deployment.
 
 ```
@@ -89,6 +109,8 @@ phalaRegistry.registerGatekeeper(0x3a3d45dc55b57bf542f4c6ff41af080ec675317f4ed50
 ```
 
 > The argument is the worker id (worker public key). This is the only (hard-coded) worker in your local deployment.
+
+![](/images/docs/developer/fat-contracts/fat-contract-set-gatekeeper-verify.gif)
 
 **First step.** Upload the contract code. Navigate to "Developer > Extrinsics", and select
 
@@ -100,6 +122,8 @@ You should select the wasm file you got from the "Compile" section. Once it's do
 
 > phalaRegistry.CodeUploaded
 > 0x911dd86247a3f196379e70c14357bdbb398b6283842d4bfc2213d44b5680eb2c (example, may vary in your build)
+
+![](/images/docs/developer/fat-contracts/fat-contract-upload-flipper-code.gif)
 
 **Next step.** Please note the code hash. Then navigate back to "Developer > Extrinsic" and select
 
@@ -130,6 +154,8 @@ You should be able to see the following event:
 >     instantiateData: 0xed4b9d1b
 >   }
 > ```
+
+![](/images/docs/developer/fat-contracts/fat-contract-instantiate-code.gif)
 
 **The final step.** Navigate to "Developer > Chain State" to get the contract id:
 
@@ -193,11 +219,15 @@ Open the app in your browser. You can use it to flip the bit in the flipper cont
 
     > Every time when you deploy a new contract, you will need to update the ABI and the contract address.
 
+    > ![](/images/docs/developer/fat-contracts/fat-contract-copy-metadata-create-contract-gui.gif)
+
 5. Click "Query" to call `get()`, and read the value
 6. Click "Command" to call `flip()`
 7. After around 6s, click "Query" to call `get()`. You should read a flipped value.
 
     > The 6s delay is due to the block finalization.
+
+    > ![](/images/docs/developer/fat-contracts/fat-contract-interact-contract.gif)
 
 ![](./static/demo-ui.png)
 
