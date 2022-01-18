@@ -9,6 +9,7 @@
 
 .anchor {
   visibility: hidden;
+  padding-left: 0.5rem;
 }
 
 h1:hover a,
@@ -46,6 +47,11 @@ h4:hover a {
 .edit-page svg,
 .last-modified svg {
   margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.edit-page svg {
+  margin-right: 0.5rem;
   margin-bottom: 0.25rem;
 }
 
