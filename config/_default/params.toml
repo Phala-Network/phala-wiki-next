@@ -50,10 +50,10 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "COPYRIGHT © 2021 PHALA.LTD ALL RIGHTS RESERVED."
+footer = "COPYRIGHT © 2022 PHALA.LTD ALL RIGHTS RESERVED."
 
 # Feed
-copyRight = "Copyright (c) 2021 Phala"
+copyRight = "Copyright (c) 2022 Phala"
 
 # Alert
 alert = false
@@ -73,6 +73,7 @@ editPage = true
   flexSearch = true
   darkMode = true
   bootStrapJs = true
+  lastMod = false
   breadCrumb = false
   highLight = true
   kaTex = false
