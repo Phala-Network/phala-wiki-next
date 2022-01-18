@@ -37,7 +37,7 @@
             {{- $active = or $active (and (eq .Name "General") (eq $current.Section "general")) -}}
             {{- $active = or $active (and (eq .Name "Learn") (eq $current.Section "learn")) -}}
             {{- $active = or $active (and (eq .Name "Build") (eq $current.Section "build")) -}}
-            {{- $active = or $active (and (eq .Name "Maintain") (eq $current.Section "docs")) -}}
+            {{- $active = or $active (and (eq .Name "Maintain") (eq $current.Section "maintain")) -}}
             <li class="nav-item">
               <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
             </li>
