@@ -62,9 +62,11 @@ alertDismissable = true
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
 # Edit Page
+repoHost = "GitHub"
 docsRepo = "https://github.com/Phala-Network/phala-wiki-next"
 docsRepoBranch = "master"
 editPage = true
+lastMod = true
 
 [options]
   lazySizes = true
