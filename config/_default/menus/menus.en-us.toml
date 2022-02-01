@@ -113,6 +113,12 @@
   url = "/maintain/prb/"
   weight = 4000
 
+[[maintain]]
+  name = "Runtime Bridge 2 (Beta)"
+  identifier = "maintain-prb-next"
+  url = "/maintain/prb-next/"
+  weight = 5000
+
 [[gettingstarted]]
   name = "Mining"
   identifier = "mining"
