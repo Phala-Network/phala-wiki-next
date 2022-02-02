@@ -110,7 +110,7 @@ Create a pool if you do not have one yet. Once the miner is registered, you can 
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
 
-{{< button "/en-us/docs/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+{{< button "/en-us/maintain/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
 
