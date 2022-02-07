@@ -1,7 +1,7 @@
 ---
-title: "4.2 Speed Up Node Synching"
-weight: 4002
-draft: true
+title: "Speed Up Node Synching"
+weight: 3999
+draft: false
 menu:
   maintain:
     parent: "khala-mining"
@@ -64,7 +64,7 @@ You can list your files with `ls` to verify where you extracted the snapshot.
 
 ### Use the Snapshot
 
-Please ensure all Phala services are stopped on your node. Hence, to stope them use:
+Please ensure all Phala services are stopped on your node. Hence, to stop them use:
 
 ```bash
 sudo phala stop
