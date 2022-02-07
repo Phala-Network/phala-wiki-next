@@ -1,7 +1,7 @@
 ---
 title: "Speed Up Node Synching"
 weight: 3999
-draft: false
+draft: true
 menu:
   maintain:
     parent: "khala-mining"
