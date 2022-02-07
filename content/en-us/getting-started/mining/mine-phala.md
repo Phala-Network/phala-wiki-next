@@ -26,7 +26,7 @@ menu:
 >  </a>
 > </p>
 
-Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/docs/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/docs/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
+Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/maintain/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/docs/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
 
 </p>
 </details>
@@ -102,7 +102,7 @@ Create a pool if you do not have one yet. Once the miner is registered, you can 
   </div>
 </div>
 
-> We have a detailed guide on how to use the Khala App [here](/en-us/docs/khala-mining/3-0-console/).
+> We have a detailed guide on how to use the Khala App [here](/en-us/maintain/khala-mining/3-0-console/).
 
 ## Troubleshoot
 

@@ -12,7 +12,7 @@ menu:
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
 
-{{< button "/en-us/docs/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+{{< button "/en-us/maintain/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
 
@@ -167,7 +167,7 @@ chmod +x install.sh
 sudo ./install.sh en
 ```
 
-You may now [restart your node](/en-us/docs/khala-mining/4-0-faq/#general).
+You may now [restart your node](/en-us/maintain/khala-mining/4-0-faq/#general).
 
 ## Peer Connectivity
 
@@ -208,7 +208,7 @@ sudo phala install isgx
 
 ## Khala Node Stops Synching
 
-If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/docs/khala-mining/4-0-faq/#general).
+If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/maintain/khala-mining/4-0-faq/#general).
 
 If the synchronization still fails, you may try to delete the khala chain database on your miner's node.
 It is located in `/var/khala-dev-node/chains/khala`.

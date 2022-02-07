@@ -24,7 +24,7 @@ unzip main.zip
 
 ## Activate the Intel® SGX Software
 
-> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/docs/khala-mining/1-1-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/docs/khala-mining/1-2-download-setup-scripts/#install-phala-tools) if talready activated.
+> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/maintain/khala-mining/1-1-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/maintain/khala-mining/1-2-download-setup-scripts/#install-phala-tools) if talready activated.
 
 Execute the following commands in the terminal, the computer should reboot after execution.
 

@@ -78,7 +78,7 @@ Collect the above three files and create the contract in a local testnet.
 
 ### Run the local testnet
 
-Please follow the _Environment_ and _Build the Core Blockchain_ section in [this tutorial](https://wiki.phala.network/en-us/docs/developer/run-a-local-development-network/#environment) to build a local testnet, but use the branch **master** instead (**important!**).
+Please follow the _Environment_ and _Build the Core Blockchain_ section in [this tutorial](https://wiki.phala.network/en-us/build/developer/run-a-local-development-network/#environment) to build a local testnet, but use the branch **master** instead (**important!**).
 
 You should run all the three programs, `phala-node`, `pherry`, and `pruntime`, according to the _Build the Core Blockchain_ section in the tutorial.
 
