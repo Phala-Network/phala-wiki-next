@@ -1,6 +1,6 @@
 ---
 title: "Mine Khala"
-weight: 1002
+weight: 1001
 menu:
   gettingstarted:
     parent: "mining"
@@ -22,11 +22,12 @@ menu:
   <br>
 
 > We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30">
->    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/).</b> <sub> Miner on VULTR [documentation](/en-us/getting-started/mining/paas-miner/).</sub>
+>    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/). </b> Miner on VULTR [documentation](/en-us/getting-started/mining/paas-miner/).
 >  </a>
 > </p>
 
-Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/maintain/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/docs/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
+
+Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/maintain/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/maintain/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
 
 </p>
 </details>
@@ -35,7 +36,7 @@ Support is not limited to VULTR, as long as the provider allows you to set the r
   <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
   <br>
 
-> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/docs/khala-mining/1-0-hardware-requirements).
+> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/maintain/khala-mining/1-0-hardware-requirements).
 
   </div>
 </div>
