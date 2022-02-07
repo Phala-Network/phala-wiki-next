@@ -213,6 +213,6 @@ When a miner chooses to disconnect from the platform, they send an Exit Transact
 
 After the cooling down period, the miner gets their final payout, representing the return of the initial stake. However, if $V_T$ goes lower than the initial $V^e$, the miner will get less stake returned as a punishment:
 
-$$w(T + \sigma) = \min(\frac{V_T}{V^e}, 100\%) \cdot S$$
+$$w(T + \sigma) = \min(\frac{V_T}{V^e}, 100\\%) \cdot S$$
 
 where $S$ is the initial stake.
