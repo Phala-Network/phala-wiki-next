@@ -1,7 +1,6 @@
 ---
-title: Blockchain Entities
+title: "Entities in Blockchain"
 weight: 1002
-draft: false
 menu:
   learn:
     parent: "phala-blockchain"

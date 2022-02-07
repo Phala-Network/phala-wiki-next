@@ -1,5 +1,5 @@
 ---
-title: Blockchain Entities
+title: "Blockchain Entities"
 weight: 1001
 draft: false
 menu:
@@ -7,7 +7,7 @@ menu:
     parent: "developer"
 ---
 
-The [Blockchain Entities](/en-us/learn/phala-blockchain/blockchain-entities/) section in Learn provides a generally high introduction level, while this section briefly introduces the technical concepts of Phala's blockchain entities.
+The [Entities in Blockchain](/en-us/learn/phala-blockchain/blockchain-entities/) section above provides a generally high introduction level, while this section briefly introduces the technical concepts of Phala's blockchain entities.
 
 ## Entity Key Initialization
 
