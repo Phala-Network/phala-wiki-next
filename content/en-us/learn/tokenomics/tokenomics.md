@@ -51,7 +51,7 @@ Params used in simulation:
 
 - $R^e_{\text{Khala}} = 1.5$
 - $R^e_{\text{Phala}} = 1.3$
-- $\text{ConfidenceScore}$ for different [Confidence Levels](https://wiki.phala.network/en-us/docs/poc3/1-4-software-configuration/#confidence-level-of-a-miner)
+- $\text{ConfidenceScore}$ for different [Confidence Levels](/en-us/maintain/khala-mining/1-2-confidential-level-evaluation/#confidence-level-of-a-miner)
   - $\text{ConfidenceScore}_{1,2,3} = 1$
   - $\text{ConfidenceScore}_{4} = 0.8$
   - $\text{ConfidenceScore}_{5} = 0.7$

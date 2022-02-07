@@ -2,7 +2,7 @@
 title: "Khala Treasury"
 weight: 1004
 menu:
-  maintaint:
+  maintain:
     parent: "maintain-governance"
 ---
 
@@ -22,7 +22,7 @@ Bounties Spending proposals aim to delegate the curation activity of spending pr
 
 ## Treasury
 
-The Treasury is a pot of funds collected through transaction fees, slashing, Secure Worker mining rate (20%) , etc. The funds held in the Treasury can be spent by making a spending proposal that, if approved by the [Council](https://wiki.phala.network/en-us/docs/governance/2-join-the-council/), will enter a waiting period before distribution. This waiting period is known as the budget period, and its duration is subject to [governance](https://wiki.phala.network/en-us/docs/governance/), with the current default set to 1 day. The Treasury attempts to spend as many proposals in the queue as it can without running out of funds.
+The Treasury is a pot of funds collected through transaction fees, slashing, Secure Worker mining rate (20%) , etc. The funds held in the Treasury can be spent by making a spending proposal that, if approved by the [Council](/en-us/maintain/governance/2-join-the-council/), will enter a waiting period before distribution. This waiting period is known as the budget period, and its duration is subject to [governance](/en-us/learn/governance/governance/), with the current default set to 1 day. The Treasury attempts to spend as many proposals in the queue as it can without running out of funds.
 
 If the Treasury ends a budget period without spending all of its funds, it suffers a burn of a percentage of its funds -- thereby causing deflationary pressure. This percentage is currently at 0% on Phala.
 
@@ -37,7 +37,7 @@ Proposals may consist of (but are not limited to):
 - Community events and outreach (meetups, pizza parties, hackerspaces).
 - Software development (wallets and wallet integration, clients and client upgrades).
 
-The Treasury is ultimately controlled by the [Council](https://wiki.phala.network/en-us/docs/governance/2-join-the-council/), and how the funds will be spent is up to their judgment.
+The Treasury is ultimately controlled by the [Council](/en-us/maintain/governance/2-join-the-council/), and how the funds will be spent is up to their judgment.
 
 The Treasury is funded from different sources:
 
@@ -47,7 +47,7 @@ The Treasury is funded from different sources:
 
 ### Creating a Treasury Proposal
 
-The proposer has to deposit 5% of the requested amount or 1 PHA (whichever is higher) as an anti-spam measure. This amount is burned if the proposal is rejected, or refunded otherwise. These values are subject to [governance](https://wiki.phala.network/en-us/docs/governance/) so they may change in the future.
+The proposer has to deposit 5% of the requested amount or 1 PHA (whichever is higher) as an anti-spam measure. This amount is burned if the proposal is rejected, or refunded otherwise. These values are subject to [governance](/en-us/learn/governance/governance/) so they may change in the future.
 
 Please note that there is no way for a user to revoke a treasury proposal after it has been submitted. The Council will either accept or reject the proposal, and if the proposal is rejected, the bonded funds are burned.
 

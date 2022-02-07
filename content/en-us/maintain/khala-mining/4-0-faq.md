@@ -12,7 +12,7 @@ menu:
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
 
-{{< button "/en-us/docs/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+{{< button "/en-us/maintain/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
 
@@ -66,7 +66,7 @@ And attempt a restart with
 sudo phala start
 ```
 
-If you still have issues attempt to [update the script](/en-us/docs/khala-mining/2-3-upgrade-worker-node/).
+If you still have issues attempt to [update the script](/en-us/maintain/khala-mining/2-3-upgrade-worker-node/).
 
 ## Investigating the Issue
 
@@ -167,7 +167,7 @@ chmod +x install.sh
 sudo ./install.sh en
 ```
 
-You may now [restart your node](/en-us/docs/khala-mining/4-0-faq/#general).
+You may now [restart your node](/en-us/maintain/khala-mining/4-0-faq/#general).
 
 ## Peer Connectivity
 
@@ -190,7 +190,7 @@ Feel free to read [NAT](https://en.wikipedia.org/wiki/Network_address_translatio
 
 ### DCAP driver Installation
 
-:information_source: The most common issue is that your mainboard may not support a DCAP driver. In this case, the script cannot automatically install the `isgx` driver and results in the following error message.
+:information_source: The most common issue is that your motherboard may not support a DCAP driver. In this case, the script cannot automatically install the `isgx` driver and results in the following error message.
 
 <p align="center">
   <a href="https://phala.network/">
@@ -208,7 +208,7 @@ sudo phala install isgx
 
 ## Khala Node Stops Synching
 
-If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/docs/khala-mining/4-0-faq/#general).
+If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/maintain/khala-mining/4-0-faq/#general).
 
 If the synchronization still fails, you may try to delete the khala chain database on your miner's node.
 It is located in `/var/khala-dev-node/chains/khala`.
@@ -251,4 +251,4 @@ sudo rm -r ~/solo-mining-scripts-main
 sudo rm ~/main.zip
 ```
 
-You can follow [this tutorial](/en-us/docs/khala-mining/1-1-installing-phala-mining-tools/) to redownload and reinstall the new phala mining scripts.
+You can follow [this tutorial](/en-us/maintain/khala-mining/1-1-installing-phala-mining-tools/) to redownload and reinstall the new phala mining scripts.
