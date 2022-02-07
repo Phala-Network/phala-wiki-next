@@ -12,7 +12,7 @@ Before you go further, please ensure that your have correct setup your hardware,
 
 ## Download the Phala Scripts
 
-The Phala mining tools are availbale on our [Phala Mining Script](https://github.com/Phala-Network/solo-mining-scripts/) repository on GitHub, it can be downloaded with `wget` by executing the following commands in the terminal:
+The Phala mining tools are available on our [Phala Mining Script](https://github.com/Phala-Network/solo-mining-scripts/) repository on GitHub, it can be downloaded with `wget` by executing the following commands in the terminal:
 
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
@@ -24,7 +24,8 @@ unzip main.zip
 
 ## Activate the Intel® SGX Software
 
-> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/maintain/khala-mining/1-1-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/maintain/khala-mining/1-2-download-setup-scripts/#install-phala-tools) if talready activated.
+
+> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/maintain/khala-mining/1-0-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/maintain/khala-mining/1-1-installing-phala-mining-tools/#install-phala-tools) if already activated.
 
 Execute the following commands in the terminal, the computer should reboot after execution.
 

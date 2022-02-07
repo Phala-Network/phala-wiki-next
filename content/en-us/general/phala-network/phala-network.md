@@ -20,18 +20,6 @@ At present, Secure Worker Mining mechanism has been running steadily on Khala Ne
 
 We strongly agree that Web3 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web3 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
 
-<!--  ## Please choose a topic
-
-{{< button "developer" "Build on Phala" >}}
-
-{{< button "/en-us/docs/phala-network/what-is-phala/" "What is Phala?" >}}
-
-{{< button "/en-us/docs/phala-network/technical-specification/" "Tech Specs" >}}
-
-{{< button "/en-us/docs/khala-mining/khala-pre-mainnet-mining-guide/" "Mine on Khala" >}}
-
-{{< button "/en-us/docs/pdiem/about-pdiem/" "Learn pDiem" >}}-->
-
 ## Phala Products
 
 ### Fat Contract
