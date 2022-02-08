@@ -131,7 +131,7 @@ Proposed parameter:
 
 When there's no payout or slash event:
 
-$$\Delta V_t = k_p \cdot \big(\rho^m V_t + c(s_t) + \gamma(V_t)h(V_t)\big)$$
+$$\Delta V_t = k_p \cdot \big((\rho^m - 1) V_t + c(s_t) + \gamma(V_t)h(V_t)\big)$$
 
 - $\rho^m$ is the unconditional $V$ increment factor for miner
 - $c(s_t)$ is the operational cost to run the miner
