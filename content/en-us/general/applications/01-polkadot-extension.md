@@ -1,10 +1,10 @@
 ---
-title: "Browser Account Extension Guide"
+title: "Install Browser Extension"
 weight: 1001
 draft: false
 menu:
   general:
-    parent: "phala-wallet"
+    parent: "applications"
 ---
 
 ## Polkadot{.js} Extension

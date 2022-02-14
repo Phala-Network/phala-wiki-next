@@ -1,14 +1,14 @@
 ---
-title: Wallet Identity
+title: Setup Account Identity
 description: Learn about on-chain identity, judgments, and registrars.
 weight: 1002
 draft: false
 menu:
   general:
-    parent: "phala-wallet"
+    parent: "applications"
 ---
 
-Phala Network provides a naming system that allows participants to add personal information to their on-chain account and subsequently ask for verification of this information by [registrars](#registrars).
+Phala Network provides a naming system that allows participants to add personal information to their on-chain account and subsequently ask for verification of this information by [registrars](#khala-registrars).
 
 After your identity is added, it can be used in many applications in Phala or Khala ecosystem. For example, in Secure Worker Mining, this will help you attracting delegators to trust and vote for you.
 

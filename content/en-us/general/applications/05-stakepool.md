@@ -1,10 +1,10 @@
 ---
-title: 'Staking: Delegate to a StakePool'
-weight: 1001
+title: 'Delegate to a Stakepool'
+weight: 1004
 draft: false
 menu:
   general:
-    parent: "phala-applications"
+    parent: "applications"
 ---
 
 ## Delegator

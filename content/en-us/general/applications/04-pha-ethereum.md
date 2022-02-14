@@ -1,10 +1,10 @@
 ---
 title: 'Transfer PHA from Ethereum to Khala'
-weight: 1002
+weight: 1004
 draft: true
 menu:
   general:
-    parent: "phala-applications"
+    parent: "applications"
 ---
 
 ## TODO

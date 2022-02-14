@@ -26,20 +26,14 @@
 [[general]]
   name = "Phala Network"
   identifier = "phala-network"
-  url = "/getting-started/phala-network/"
+  url = "/general/phala-network/"
   weight = 1000
 
 [[general]]
-  name = "Phala Wallet"
-  identifier = "phala-wallet"
-  url = "/general/phala-wallet/"
+  name = "Applications"
+  identifier = "applications"
+  url = "/general/applications/"
   weight = 2000
-
-[[general]]
-  name = "Phala Applications"
-  identifier = "phala-applications"
-  url = "/general/phala-applications/"
-  weight = 3000
 
 [[learn]]
   name = "Phala Blockchain"

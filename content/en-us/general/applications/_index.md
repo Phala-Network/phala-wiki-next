@@ -1,5 +1,5 @@
 ---
-title: "phala-applications"
+title: "applications"
 weight: 1000
 draft: false
 ---
