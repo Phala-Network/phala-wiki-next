@@ -3,8 +3,8 @@ title: "Fat Contract"
 weight: 1001
 draft: false
 menu:
-  gettingstarted:
-    parent: "phala-developer"
+  general:
+    parent: "general-developing"
 ---
 
 ## The Next Generation Smart Contract

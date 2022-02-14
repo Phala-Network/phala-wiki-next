@@ -1,9 +1,9 @@
 ---
-title: "Mine Khala"
+title: "Mine PHA in Khala"
 weight: 1001
 menu:
-  gettingstarted:
-    parent: "mining"
+  general:
+    parent: "general-mining"
 ---
 
 ### Hardware
@@ -22,7 +22,7 @@ menu:
   <br>
 
 > We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30">
->    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/). </b> Miner on VULTR [documentation](/en-us/getting-started/mining/paas-miner/).
+>    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/). </b> Miner on VULTR [documentation](/en-us/general/mining/paas-miner/).
 >  </a>
 > </p>
 

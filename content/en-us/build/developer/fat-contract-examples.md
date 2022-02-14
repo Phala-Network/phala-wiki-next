@@ -9,7 +9,7 @@ menu:
 
 ## Introduction
 
-[Fat Contract](https://wiki.phala.network/en-us/getting-started/phala-developer/fat-contract.md) is the programming model adopted by Phala Network. Fat Contract is **NOT** smart contract.
+[Fat Contract](/en-us/general/developing/fat-contract) is the programming model adopted by Phala Network. Fat Contract is **NOT** smart contract.
 
 Instead, it aims to provide the rich features that ordinary smart contracts cannot offer, including:
 

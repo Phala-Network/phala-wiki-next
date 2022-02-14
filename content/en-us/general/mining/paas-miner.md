@@ -3,8 +3,8 @@ title: "Rent Hardware"
 weight: 1002
 draft: false
 menu:
-  gettingstarted:
-    parent: "mining"
+  general:
+    parent: "general-mining"
 ---
 
 ## Khala Miner on Vultr
@@ -43,4 +43,4 @@ You can get the correct drivers from our guide [here](/en-us/maintain/khala-mini
 
 Once the drivers are installed, you may now turn your instance into a Phala miner.
 \
- :point_right:  [Get mining scipts](/en-us/getting-started/mining/mine-phala/#quick-start)
+ :point_right:  [Get mining scipts](/en-us/general/mining/mine-phala/#quick-start)

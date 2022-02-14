@@ -18,11 +18,6 @@
   url = "/en-us/maintain/khala-mining/khala-pre-mainnet-mining-guide/"
   weight = 40
 
-[[main]]
-  name = "Getting Started"
-  url = "/getting-started/mining/mine-phala"
-  weight = 50
-
 [[general]]
   name = "Phala Network"
   identifier = "phala-network"
@@ -34,6 +29,18 @@
   identifier = "applications"
   url = "/general/applications/"
   weight = 2000
+
+[[general]]
+  name = "Developing"
+  identifier = "general-developing"
+  url = "/general/developing/"
+  weight = 3000
+
+[[general]]
+  name = "Mining"
+  identifier = "general-mining"
+  url = "/general/mining/"
+  weight = 4000
 
 [[learn]]
   name = "Phala Blockchain"
@@ -106,24 +113,6 @@
   identifier = "maintain-prb"
   url = "/maintain/prb/"
   weight = 4000
-
-[[gettingstarted]]
-  name = "Mining"
-  identifier = "mining"
-  url = "/getting-started/mining/"
-  weight = 1000
-
-[[gettingstarted]]
-  name = "Staking"
-  identifier = "staking"
-  url = "/getting-started/staking/"
-  weight = 2000
-
-[[gettingstarted]]
-  name = "Phala Developer"
-  identifier = "phala-developer"
-  url = "/getting-started/phala-developer/"
-  weight = 3000
 
 [[social]]
   name = "GitHub"

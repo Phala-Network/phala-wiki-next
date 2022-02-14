@@ -13,7 +13,7 @@ Miners, also referred to as "Workers" in Phala blockchain, provide computing pow
 
 This section provides some theory about the mining concepts of Phala and additional background information.
 
-> To get directly started, feel free to check the quick start guide: :point_right: [here](/en-us/getting-started/mining/mine-phala/)
+> To get directly started, feel free to check the quick start guide: :point_right: [here](/en-us/general/mining/mine-phala/)
 
 ## Worker Registration
 

@@ -29,7 +29,7 @@ A system can potentially mine Phala if it meets these general requirements:
    - Feel free to use our [spreadsheet](#TODO) (coming soon) containing the formulas from the PHA [tokenomics section](/en-us/learn/tokenomics/tokenomics/) to estimate your required minimum tokens to stake.
     - Alternatively, you may also use a [pool and delegate](https://app.phala.network/en/delegate/). There is a guide [here](/en-us/learn/tokenomics/mining-staking/) on how to delegate.
 
-> Alternatively, you can test mining through [renting hardware](/en-us/getting-started/mining/paas-miner/).
+> Alternatively, you can test mining through [renting hardware](/en-us/general/mining/paas-miner/).
 
 ## Check Your CPU
 
