@@ -1,5 +1,5 @@
 ---
-title: Fat Contract
+title: Fat Contract Features
 weight: 1002
 draft: false
 menu:
