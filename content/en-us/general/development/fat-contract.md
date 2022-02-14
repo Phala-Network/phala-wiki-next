@@ -4,7 +4,7 @@ weight: 1001
 draft: false
 menu:
   general:
-    parent: "general-developing"
+    parent: "general-development"
 ---
 
 ## The Next Generation Smart Contract

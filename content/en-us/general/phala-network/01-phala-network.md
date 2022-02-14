@@ -24,7 +24,7 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 ### Fat Contract
 
-> Get started with our Fat Contract :point_right: [read more here](/en-us/general/developing/fat-contract)
+> Get started with our Fat Contract :point_right: [read more here](/en-us/general/development/fat-contract)
 
 A new type of smart contract product that focuses on serving Web3 back-end function-level services.
 

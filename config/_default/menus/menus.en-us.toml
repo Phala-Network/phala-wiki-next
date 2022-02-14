@@ -31,9 +31,9 @@
   weight = 2000
 
 [[general]]
-  name = "Developing"
-  identifier = "general-developing"
-  url = "/general/developing/"
+  name = "Developmnent"
+  identifier = "general-development"
+  url = "/general/development/"
   weight = 3000
 
 [[general]]
