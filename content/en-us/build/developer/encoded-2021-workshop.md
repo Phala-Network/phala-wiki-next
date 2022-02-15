@@ -1,34 +1,15 @@
 ---
-title: "Fat Contract Examples"
-weight: 1001
+title: "Archived: Phala x Encode Club Workshop"
+weight: 1004
 draft: false
 menu:
   build:
     parent: "developer"
 ---
 
-## Introduction
-
-[Fat Contract](/en-us/general/development/fat-contract) is the programming model adopted by Phala Network. Fat Contract is **NOT** smart contract.
-
-Instead, it aims to provide the rich features that ordinary smart contracts cannot offer, including:
-
-- CPU extensive computation: exclusive off-chain execution at the full CPU speed
-- Network access: the ability to send the HTTP requests
-- Low latency: non-consensus-sensitive operations may not hit the blockchain at all, removing the block latency
-- Strong consistency: consensus-sensitive operations remain globally consistent
-- Confidentiality: contract state is hidden by default unless you specifically expose it via the read call
-
-> Network access feature is available in native contracts now. It will be supported in ink! contracts soon.
-
-Fat Contract is 100% compatible with Substrate's `pallet-contracts`. It fully supports the unmodified ink! smart contracts. Therefore you can still stick to your favorite toolchain including `cargo-contract`,  `@polkadot/contract-api`, and the Polkadot.js Extension.
-
-This tutorial is from our workshop and will demonstrate how to deploy an ink! smart contract on a local Phala testnet, and show how to make a "secret flip" Dapp that only the contract owner can see the flip result.
-
 ## Fat Contract Workshop
 
-> To get the code visit our [Fat Contract Workshop
-Repository](https://github.com/Phala-Network/fat-contract-workshop)
+> To get the code visit our [Fat Contract Workshop Repository](https://github.com/Phala-Network/fat-contract-workshop/tree/workshop-0.1)
 
 ## Prepare
 
