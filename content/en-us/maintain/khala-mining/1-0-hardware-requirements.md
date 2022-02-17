@@ -10,7 +10,30 @@ menu:
 
 A system can potentially mine Phala if it meets these general requirements:
 
-![](/images/docs/khala-mining/mining_requirements_table.png)
+<table>
+    <thead>
+        <tr>
+            <th>CPU</th>
+            <th>System</th>
+            <th>Memory</th>
+            <th>Storage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SGX-compatible Processor</td>
+        </tr>
+        <tr>
+            <td>SGX-compatible BIOS</td>
+            <td rowspan=3>Ubuntu 20.04</td>
+            <td rowspan=3>&ge; 2G per core</td>
+            <td rowspan=3>&ge; 1T</td>
+        </tr>
+        <tr>
+            <td>&ge; 2 cores</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Requirements Checklist
 
@@ -23,7 +46,7 @@ A system can potentially mine Phala if it meets these general requirements:
    - Storing your blockchain data on a mechanical HDD will result in slow synchronization speeds. At a minimum a 512GB SSD drive is recommended.
       - Refer to [issue #554](https://github.com/Phala-Network/phala-blockchain/issues/554) for more info.
 - [x] Have a supported version of Ubuntu (18.04, 20.04, 21.04) installed and booted from it.
-   - See [Suported OS requirements](#supported-operating-systems).
+   - See [Supported OS requirements](#supported-operating-systems).
 - [x] You require [$S_{min}=k \sqrt{P}$](/en-us/learn/tokenomics/tokenomics/#minimum-stake) tokens to stake when starting your miner.
    - As an example an [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i78700-processor-12m-cache-up-to-4-60-ghz.html) had a `P` value (miner/ worker score) between `1400` and `1700` during testing.
    - Feel free to use our [spreadsheet](#TODO) (coming soon) containing the formulas from the PHA [tokenomics section](/en-us/learn/tokenomics/tokenomics/) to estimate your required minimum tokens to stake.
