@@ -139,7 +139,7 @@ $$\Delta V_t = k_p \cdot \big((\rho^m - 1) V_t + c(s_t) + \gamma(V_t)h(V_t)\big)
 - $c(s_t)$ is the operational cost to run the miner
 - $\gamma(V_t)h(V_t)$ represents a factor to compesate for accidental/unintentional slashing (ignored in simulated charts)
 - $k_p = \min(\frac{P_t}{P}, 120\\%)$, where $P_t$ is the instant performance score, and $P$ is the initial score
-- If $V > V_{max}$ after the update, it will capped to $V_{max}$
+- If $V > V_{max}$ after the update, it will be capped to $V_{max}$
 
 Proposed parameters:
 
