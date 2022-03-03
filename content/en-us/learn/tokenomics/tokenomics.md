@@ -44,8 +44,9 @@ $$V^e = f(R^e, \text{ConfidenceScore}) \times (S + C)$$
 - $R^e > 1$ is a **_Stake Multiplier_** set by the network (Khala or Phala).
 - $S$ is the miner stake; a **_Minimum Stake_** is required to start mining. The stake can't be increased or decreased while mining, but can be set higher than the Minimum.
 - $C$ is the estimated cost of the miner rigs, inferred from the **_Performance Test_**.
-- $\text{ConfidenceScore}$ is based on the miner's Intel© SGX capabilities
+- $\text{ConfidenceScore}$ is based on the miner's Intel© SGX capabilities.
 - $f(R^e, \text{ConfidenceScore}) = 1 + (\text{ConfidenceScore} \cdot (R^e - 1))$
+- $V$ is always less than or equals to $V_{max}$.
 
 Params used in simulation:
 
@@ -55,6 +56,7 @@ Params used in simulation:
   - $\text{ConfidenceScore}_{1,2,3} = 1$
   - $\text{ConfidenceScore}_{4} = 0.8$
   - $\text{ConfidenceScore}_{5} = 0.7$
+- $V_{max} = 30000$
 
 ### Performance Test
 
@@ -137,6 +139,7 @@ $$\Delta V_t = k_p \cdot \big((\rho^m - 1) V_t + c(s_t) + \gamma(V_t)h(V_t)\big)
 - $c(s_t)$ is the operational cost to run the miner
 - $\gamma(V_t)h(V_t)$ represents a factor to compesate for accidental/unintentional slashing (ignored in simulated charts)
 - $k_p = \min(\frac{P_t}{P}, 120\\%)$, where $P_t$ is the instant performance score, and $P$ is the initial score
+- If $V > V_{max}$ after the update, it will capped to $V_{max}$
 
 Proposed parameters:
 
