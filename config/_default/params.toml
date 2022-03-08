@@ -50,10 +50,10 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "COPYRIGHT © 2021 PHALA.LTD ALL RIGHTS RESERVED."
+footer = "COPYRIGHT © 2022 PHALA.LTD ALL RIGHTS RESERVED."
 
 # Feed
-copyRight = "Copyright (c) 2021 Phala"
+copyRight = "Copyright (c) 2022 Phala"
 
 # Alert
 alert = false
@@ -62,9 +62,11 @@ alertDismissable = true
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
 # Edit Page
+repoHost = "GitHub"
 docsRepo = "https://github.com/Phala-Network/phala-wiki-next"
 docsRepoBranch = "master"
 editPage = true
+lastMod = true
 
 [options]
   lazySizes = true
@@ -73,6 +75,7 @@ editPage = true
   flexSearch = true
   darkMode = true
   bootStrapJs = true
+  lastMod = false
   breadCrumb = false
   highLight = true
   kaTex = false
