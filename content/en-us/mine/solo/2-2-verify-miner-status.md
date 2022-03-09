@@ -1,9 +1,9 @@
 ---
 title: "Monitor Miner's Status"
-weight: 2002
+weight: 1022
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 
@@ -25,4 +25,4 @@ Your miner's status shows the
 
 > A warning will be sent if your gas account balance is under 2 PHA so you can recharge your GAS account on time.
 
-![](/images/docs/khala-mining/2-3-1.png)
+![](/images/docs/mine-solo/2-3-1.png)

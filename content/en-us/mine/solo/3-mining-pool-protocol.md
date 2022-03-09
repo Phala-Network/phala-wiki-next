@@ -1,10 +1,10 @@
 ---
 title: "3 Phala Runtime Bridge"
-weight: 3001
+weight: 1031
 draft: true
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 Github: https://github.com/Phala-Network/runtime-bridge

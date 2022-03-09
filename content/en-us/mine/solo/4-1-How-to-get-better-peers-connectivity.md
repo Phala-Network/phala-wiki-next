@@ -1,10 +1,10 @@
 ---
 title: "4.1 Improve Peer Connectivity"
-weight: 4001
+weight: 1041
 draft: true
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 # Moved to the GitHub README to improve readability and minimize overall verbosity.
 ---
 

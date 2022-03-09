@@ -1,9 +1,9 @@
 ---
 title: "Configure the Miner"
-weight: 2000
+weight: 1020
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 ## Get the Miner Ready

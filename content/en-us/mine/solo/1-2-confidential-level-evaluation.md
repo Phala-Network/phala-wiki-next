@@ -2,8 +2,8 @@
 title: "Miner Confidence Level"
 weight: 1003
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 ## Test your Intel® SGX Capability

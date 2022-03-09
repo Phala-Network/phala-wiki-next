@@ -1,9 +1,9 @@
 ---
 title: "About Runtime Bridge"
-weight: 5001
+weight: 3000
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-prb"
 ---
 
 In the solo mining scenario, [pherry](https://github.com/Phala-Network/phala-blockchain/tree/master/standalone/pherry) plays the part of fetching blocks from the network and send them to the TEE runtime. It works gracefully but enconters some productivity and performance issues in the pool mining scenario. Thus, Phala [Runtime Bridge](https://github.com/Phala-Network/runtime-bridge) a.k.a. `prb` is introduced to take advantage of the mining pool machanism introduced in Tokenomic v0.9 and reduces the complexity of using standalone pherry.

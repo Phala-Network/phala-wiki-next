@@ -14,9 +14,14 @@
   weight = 30
 
 [[main]]
-  name = "Maintain"
-  url = "/en-us/maintain/khala-mining/khala-pre-mainnet-mining-guide/"
+  name = "Mine"
+  url = "/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/"
   weight = 40
+
+[[main]]
+  name = "Maintain"
+  url = "/en-us/maintain/governance/1-participate-in-democracy/"
+  weight = 50
 
 [[general]]
   name = "Phala Network"
@@ -90,11 +95,29 @@
   url = "/build/pdiem/"
   weight = 2000
 
-[[maintain]]
+[[mine]]
   name = "Mine Khala"
   identifier = "khala-mining"
-  url = "/maintain/khala-mining/"
+  url = "/mine/khala-mining/"
   weight = 1000
+
+[[mine]]
+  name = "Solo Mining Guide"
+  identifier = "mine-solo"
+  url = "/mine/solo/"
+  weight = 1000
+
+[[mine]]
+  name = "Runtime Bridge v2"
+  identifier = "mine-prb2"
+  url = "/mine/prb2/"
+  weight = 2000
+
+[[mine]]
+  name = "Runtime Bridge v0"
+  identifier = "mine-prb"
+  url = "/mine/prb/"
+  weight = 2001
 
 [[maintain]]
   name = "Governance"
@@ -107,12 +130,6 @@
   identifier = "maintain-gatekeeper"
   url = "/maintain/gatekeeper/"
   weight = 3000
-
-[[maintain]]
-  name = "Runtime Bridge"
-  identifier = "maintain-prb"
-  url = "/maintain/prb/"
-  weight = 4000
 
 [[social]]
   name = "GitHub"

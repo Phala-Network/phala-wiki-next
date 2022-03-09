@@ -2,7 +2,7 @@
 title: "Requirements"
 weight: 1001
 menu:
-  maintain:
+  mine:
     parent: "khala-mining"
 ---
 
@@ -85,7 +85,7 @@ On Windows, head over to 'Control Panel/Settings,' or right-click on the Start i
 On Ubuntu, click in the upper-right corner, pick 'Settings,' select 'About,' and look for 'Processor.'
 
 <p class="aligncenter">
-<img src="/images/docs/khala-mining/linux_settings.png" >
+<img src="/images/docs/mine-solo/linux_settings.png" >
 </p>
 
 (Navigating to 'Settings' on a Desktop GUI to look up CPU specs)
@@ -99,7 +99,7 @@ lscpu
 ```
 
 <p class="aligncenter">
-<img src="/images/docs/khala-mining/CPU_Linux_check.gif" height="400">
+<img src="/images/docs/mine-solo/CPU_Linux_check.gif" height="400">
 </p>
 
 (Looking up the CPU model with the `lscpu` command in the Linux shell)
@@ -117,7 +117,7 @@ website, you will find information about your CPU's Intel® SGX compatibility. I
 Below is an example of the [Intel® Core™ i7-8700 CPU @ 3.20GHz](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i78700-processor-12m-cache-up-to-4-60-ghz.html), a screenshot taken from the Intel® product specifications (ARK).
 
 <p class="aligncenter">
-<img src="/images/docs/khala-mining/SGX_comptible_ARK.png" >
+<img src="/images/docs/mine-solo/SGX_comptible_ARK.png" >
 </p>
 
 (This image shows a CPU that supports Intel® SGX.)
