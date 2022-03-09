@@ -30,7 +30,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
     <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/extension/" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/mine-solo/polkadot-js.svg" alt="Khala App" width="60" class="center"/>
+           <img src="/images/docs/khala-mining/polkadot-js.svg" alt="Khala App" width="60" class="center"/>
            <p>Polkadot{.js} Extension</p>
         </svg>
      </a>
@@ -38,7 +38,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   <div class="item" style="text-align:center">
      <a href="https://app.phala.network/mining/" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/mine-solo/phala_logo.png" alt="Khala App" width="60" class="center"/>
+           <img src="/images/docs/khala-mining/phala_logo.png" alt="Khala App" width="60" class="center"/>
            <p>Khala App</p>
         </svg>
      </a>
@@ -53,7 +53,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 2. Create StakePool
    - In the left menu, make sure you select 'Mining.'
    - Click "Create Stakepool" in the top right corner;
-     ![](/images/docs/mine-solo/create-pool.png)
+     ![](/images/docs/khala-mining/create-pool.png)
    - Click "Confirm" in the pop-up window;
    - Sign the transaction in the Polkadot{.js} Extension and wait;
    - The created pool will be listed in Stakepool;
@@ -77,7 +77,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
    - Select `...` (next to "Info") "Add Worker" (highlited red) in the target pool;
 
-     ![](/images/docs/mine-solo/add-worker.png)
+     ![](/images/docs/khala-mining/add-worker.png)
 
    - Copy & paste your `miner public key` of your miner in the pop-up window;
    - Submit the transaction;
