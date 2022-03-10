@@ -17,16 +17,16 @@ Before you start mining in Para-2 Testnet, you need to first [get a Khala accoun
 
 1. Get to Phala Faucet https://t.me/phalafaucet. You may need to download and install Telegram as prompted. Click "VIEW IN TELEGRAM" to join the group.
 
-![](/images/docs/mine-solo/faucet-1.png)
+![](/images/docs/khala-mining/faucet-1.png)
 
 2. Answer the arithmetic CAPTCHA from the bot after you join the group. For example, you should reply 16 in the following case.
 
-![](/images/docs/mine-solo/faucet-2.png)
+![](/images/docs/khala-mining/faucet-2.png)
 
 3. Choose a username. Click "Settings - Edit - Username" to set your username, or bot cannot recognize your applications.
 
-![](/images/docs/mine-solo/faucet-3.png)
+![](/images/docs/khala-mining/faucet-3.png)
 
 4. Send **/drip [your_account]** to get test token.
 
-![](/images/docs/mine-solo/faucet-4.png)
+![](/images/docs/khala-mining/faucet-4.png)

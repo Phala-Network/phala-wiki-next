@@ -81,23 +81,23 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/extension/" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/mine-solo/polkadot-js.svg" alt="Khala App" width="60" class="center"/>
+           <img src="/images/docs/khala-mining/polkadot-js.svg" alt="Khala App" width="60" class="center"/>
            <p>Polkadot{.js} Extension</p>
         </svg>
      </a>
   </div>
 </div>
 
-> We have a guide on how to use the Khala App [here](/en-us/maintain/mine-solo/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
+> We have a guide on how to use the Khala App [here](/en-us/mine/solo/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
 
 ## Start Staking: Delegate
 
 As soon as you have:
 - [x] PHA Tokens
 - [x] Khala Account
-- [x] [Polkadot{.js}](https://polkadot.js.org/extension/) <a ><img alt="Polkadot{.js}" src="/images/docs/mine-solo/polkadot-js.svg" width="20"> Extension
+- [x] [Polkadot{.js}](https://polkadot.js.org/extension/) <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/polkadot-js.svg" width="20"> Extension
 
 
-You are ready to over to the <a ><img alt="Polkadot{.js}" src="/images/docs/mine-solo/phala_logo.png" width="30"> [Phala App](https://app.phala.network/) & start to :point_right: [Delegate](https://app.phala.network/delegate/).
+You are ready to over to the <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/phala_logo.png" width="30"> [Phala App](https://app.phala.network/) & start to :point_right: [Delegate](https://app.phala.network/delegate/).
 
 > If you have issues Delegating/Staking, feel free to check our [detailed guide](/en-us/general/applications/05-stakepool/).

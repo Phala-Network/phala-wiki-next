@@ -24,7 +24,7 @@ unzip main.zip
 
 ## Activate the Intel® SGX Software
 
-> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/maintain/mine-solo/1-0-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/mine/mine-solo/1-1-installing-phala-mining-tools/#install-phala-tools) if already activated.
+> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/mine/solo/1-0-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/mine/mine-solo/1-1-installing-phala-mining-tools/#install-phala-tools) if already activated.
 
 Execute the following commands in the terminal, the computer should reboot after execution.
 

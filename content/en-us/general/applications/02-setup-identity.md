@@ -71,7 +71,7 @@ To submit a raw transaction, first click "Add Item" and add any field name you l
 
 > Note that custom fields are not shown in the UI by default.
 
-The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of Polkadot{.js} <img alt="polkadot-js icon" src="/images/docs/mine-solo/polkadot-js.svg" width="30">, the team prefers to only show official fields for now. If you want to check that the values are still stored, use the [Chain State UI](https://polkadot.js.org/apps/#/chainstate) to query the active account's identity info:
+The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of Polkadot{.js} <img alt="polkadot-js icon" src="/images/docs/khala-mining/polkadot-js.svg" width="30">, the team prefers to only show official fields for now. If you want to check that the values are still stored, use the [Chain State UI](https://polkadot.js.org/apps/#/chainstate) to query the active account's identity info:
 
 <p align="center">
   <a href="https://polkadot.js.org/apps/#/accounts">
@@ -87,7 +87,7 @@ You can have a maximum of 100 custom fields.
 
 > Since fields support different formats, from raw bytes to various hashes, a UI has no way of telling how to encode a given field it encounters.
 
-The <img alt="polkadot-js icon" src="/images/docs/mine-solo/polkadot-js.svg" width="30"> Polkadot{.js} UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards crystallize, things will become easier to use but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take, or support multiple formats and then attempt multiple encodings until the output makes sense.
+The <img alt="polkadot-js icon" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> Polkadot{.js} UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable on-screen. However, given that there are no restrictions on the values that can be placed into these fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This means any field stored as raw bytes will become unreadable by that specific UI. As field standards crystallize, things will become easier to use but for now, every custom implementation of displaying user information will likely have to make a conscious decision on the approach to take, or support multiple formats and then attempt multiple encodings until the output makes sense.
 
 ## Judgements
 

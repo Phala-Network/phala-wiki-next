@@ -10,19 +10,19 @@ menu:
 
 Following services make a Runtime Bridge setup work:
 
-- Data Provider(a.k.a `data_provider`):
+- Data Provider (a.k.a `data_provider`):
     - Fetches and analyses block data from Substrate,
     - Makes pre-encoded blobs that `pRuntime` consumes,
     - Serves pre-encoded blobs for lifecycle managers;
-- Lifecycle Manager(a.k.a `lifecycle`):
+- Lifecycle Manager (a.k.a `lifecycle`):
     - Sends block data blobs to workers(`pRuntime`),
     - Registers worker on the chain,
     - Starts mining with configured stake amount,
     - Provides API to query workers and pools.
-- Trader(a.k.a `trade`):
+- Trader (a.k.a `trade`):
     - Sends transactions from queue to the chain.
 
-Every service above uses https://github.com/Phala-Network/runtime-bridge-walkie as a communication method built on `libp2p` and Protocol Buffer. On the first startup of each service, an RSA key pair will be generated(by default saved in `/var/data/keys/id`) to be used as the identity in the `libp2p` protocol. The current identity public key can be found in the stdout of running service by searching `Got my peer id` in the base58 format. And for lifecycle managers, the key pair is used to encrypt critical information. **DO BACK THE KEYS UP AND KEEP THE KEYS SAFE.**
+Every service above uses [Runtime Bridge Walkie](https://github.com/Phala-Network/runtime-bridge-walkie) as a communication method built on `libp2p` and Protocol Buffer. On the first startup of each service, an RSA key pair will be generated(by default saved in `/var/data/keys/id`) to be used as the identity in the `libp2p` protocol. The current identity public key can be found in the stdout of running service by searching `Got my peer id` in the base58 format. And for lifecycle managers, the key pair is used to encrypt critical information. **DO BACK THE KEYS UP AND KEEP THE KEYS SAFE.**
 
 When the lifecycle manager has finished the initial blob synchronization, it will attempt to sync messages in the message queue between the `pRuntime` and the blockchain. After that, it will try to register workers and do the “start mining” operation on the blockchain.
 
@@ -90,7 +90,7 @@ Change the docker entrypoint to `node -trace-warnings -experimental-json-modules
 
 ## Using the monitor
 
-The monitor([https://github.com/Phala-Network/runtime-bridge/tree/next](https://github.com/Phala-Network/runtime-bridge/tree/next)) is an example of the Walkie usage. It provides a simple management ability to play with Runtime Bridge.
+The [monitor](https://github.com/Phala-Network/runtime-bridge/tree/next) is an example of the Walkie usage. It provides a simple management ability to play with Runtime Bridge.
 
 It also implements a JSON proxy to the Walkie API.
 

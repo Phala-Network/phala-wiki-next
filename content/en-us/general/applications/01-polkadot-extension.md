@@ -17,7 +17,7 @@ Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Rel
 
 ## Install Polkadot{.js} Extension
 
-1. Get the extension from <a href="https://polkadot.js.org/extension/"><img alt="polkadot.js" src="/images/docs/mine-solo/polkadot-js.svg" width="30"> [polkadot.js.org](https://polkadot.js.org/extension/)
+1. Get the extension from <a href="https://polkadot.js.org/extension/"><img alt="polkadot.js" src="/images/docs/khala-mining/polkadot-js.svg" width="30"> [polkadot.js.org](https://polkadot.js.org/extension/)
 
 <p align="center">
   <a href="https://polkadot.js.org/extension/">
