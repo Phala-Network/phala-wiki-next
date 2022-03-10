@@ -1,5 +1,5 @@
 ---
-title: Mine
+title: Mining
 weight: 1001
 draft: false
 menu:
