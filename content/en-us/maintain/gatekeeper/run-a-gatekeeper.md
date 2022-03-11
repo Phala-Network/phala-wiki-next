@@ -15,7 +15,7 @@ menu:
   - **Memory**: 2GB - 8GB. 2GB is indeed the minimum memory you should operate your Gatekeeper with. For better performance, you can bump it up to 4GB or 8GB, but memory more than that is unnecessary. In order to compile the binary yourself, you will need around 8GB memory.
   - **Motherboard**: SGX-supported motherboard, and newer motherboards can support more SGX features. **We strongly recommend you to consult our Miner Community team about the SGX module before purchasing a board to mine PHA.**
   - **Storage** - A NVMe solid state drive, and should be reasonably sized to deal with blockchain growth. A SSD of 80GB - 160GB will be enough for the first six months of Phala Network, but this requirement needs to be re-evaluated every six months.
-    For more detail, you may refer to the [miner node requirement](/en-us/mine/solo/1-0-hardware-requirements/).
+    For more detail, you may refer to the [miner node requirement](/en-us/mine/khala-mining/1-0-hardware-requirements/).
 
 - **Software**
 
