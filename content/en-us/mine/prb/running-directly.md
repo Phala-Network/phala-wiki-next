@@ -1,9 +1,9 @@
 ---
 title: "Running Directly in Linux"
-weight: 1002
+weight: 3002
 menu:
-  maintain:
-    parent: "maintain-prb"
+  mine:
+    parent: "mine-prb"
 ---
 
 Running `prb` directly in a Linux shell is not recommended since using Docker is more convenient in both development and production.

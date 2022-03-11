@@ -1,9 +1,9 @@
 ---
 title: "Manage the Miner"
-weight: 3000
+weight: 1030
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 > We highly recommend reading about our [staking mechanism](/en-us/learn/tokenomics/mining-staking) before using the [Phala App](https://app.phala.network/en/mining/).

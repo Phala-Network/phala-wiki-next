@@ -1,9 +1,9 @@
 ---
 title: "Troubleshooting"
-weight: 4000
+weight: 1040
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 ## Quick Links
@@ -12,7 +12,7 @@ menu:
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
 
-{{< button "/en-us/maintain/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+{{< button "/en-us/mine/solo/4-0-faq/#confidence-level" "Confidence Level" >}}
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
 
@@ -66,7 +66,7 @@ And attempt a restart with
 sudo phala start
 ```
 
-If you still have issues attempt to [update the script](/en-us/maintain/khala-mining/2-3-upgrade-worker-node/).
+If you still have issues attempt to [update the script](/en-us/mine/solo/2-3-upgrade-worker-node/).
 
 ## Investigating the Issue
 
@@ -167,7 +167,7 @@ chmod +x install.sh
 sudo ./install.sh en
 ```
 
-You may now [restart your node](/en-us/maintain/khala-mining/4-0-faq/#general).
+You may now [restart your node](/en-us/mine/solo/4-0-faq/#general).
 
 ## Peer Connectivity
 
@@ -208,7 +208,7 @@ sudo phala install isgx
 
 ## Khala Node Stops Synching
 
-If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/maintain/khala-mining/4-0-faq/#general).
+If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/mine/solo/4-0-faq/#general).
 
 If the synchronization still fails, you may try to delete the khala chain database on your miner's node.
 It is located in `/var/khala-dev-node/chains/khala`.
@@ -251,4 +251,4 @@ sudo rm -r ~/solo-mining-scripts-main
 sudo rm ~/main.zip
 ```
 
-You can follow [this tutorial](/en-us/maintain/khala-mining/1-1-installing-phala-mining-tools/) to redownload and reinstall the new phala mining scripts.
+You can follow [this tutorial](/en-us/mine/solo/1-1-installing-phala-mining-tools/) to redownload and reinstall the new phala mining scripts.

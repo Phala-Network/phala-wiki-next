@@ -30,8 +30,8 @@
 
 [[docs]]
   name = "Khala Mining"
-  identifier = "khala-mining"
-  url = "/docs/khala-mining/"
+  identifier = "mine-solo"
+  url = "/docs/mine-solo/"
   weight = 6000
 
 [[docs]]

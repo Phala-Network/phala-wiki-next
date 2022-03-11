@@ -50,7 +50,7 @@ Khala Network, as the parachain of Kusama, shares the accounts of the Kusama Rel
 
 ## Import an Existing Account
 
-There are two ways to import an existing account. Either by using your [mnemonic seed](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-mnemonic) or an [existing JSON file](/en-us/general/phala-wallet/polkadot-extension-guide/#import-with-json).
+There are two ways to import an existing account. Either by using your [mnemonic seed](/en-us/general/applications/01-polkadot-extension/#import-with-mnemonic) or an [existing JSON file](/en-us/general/applications/01-polkadot-extension/#import-with-json).
 
 ### Import with Mnemonic
 

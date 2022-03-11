@@ -3,8 +3,8 @@ title: "Archived: 1.4 Benchmarking"
 weight: 1004
 draft: true
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 #Decommissioned, as benchmarking is no longer supported.
 ---
 

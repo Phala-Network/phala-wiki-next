@@ -2,13 +2,13 @@
 title: "Installing Phala Mining Tools"
 weight: 1002
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 ## Prerequisites
 
-Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "maintain/khala-mining/1-0-hardware-requirements">}}).
+Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "mine/khala-mining/1-0-hardware-requirements">}}).
 
 ## Download the Phala Scripts
 
@@ -24,7 +24,7 @@ unzip main.zip
 
 ## Activate the Intel® SGX Software
 
-> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/maintain/khala-mining/1-0-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/maintain/khala-mining/1-1-installing-phala-mining-tools/#install-phala-tools) if already activated.
+> :information: You may have already enabled the Intel® SGX Extensions during your hardware setup in the [previous section](/en-us/mine/khala-mining/1-0-hardware-requirements/#5-enable-intel-sgx-extensions). Skip and proceed to :point_right:[Install Phala Tools](/en-us/mine/mine-solo/1-1-installing-phala-mining-tools/#install-phala-tools) if already activated.
 
 Execute the following commands in the terminal, the computer should reboot after execution.
 

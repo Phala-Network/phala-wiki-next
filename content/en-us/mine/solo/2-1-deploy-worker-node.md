@@ -1,9 +1,9 @@
 ---
 title: "Deploy the Miner"
-weight: 2001
+weight: 1021
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 ## Optional: Pre-Sync

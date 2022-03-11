@@ -26,7 +26,7 @@ menu:
 >  </a>
 > </p>
 
-Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/maintain/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/maintain/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
+Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/mine/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/mine/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
 
 </p>
 </details>
@@ -35,7 +35,7 @@ Support is not limited to VULTR, as long as the provider allows you to set the r
   <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
   <br>
 
-> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/maintain/khala-mining/1-0-hardware-requirements).
+> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/mine/khala-mining/1-0-hardware-requirements).
 
   </div>
 </div>
@@ -102,7 +102,7 @@ Create a pool if you do not have one yet. Once the miner is registered, you can 
   </div>
 </div>
 
-> We have a detailed guide on how to use the Khala App [here](/en-us/maintain/khala-mining/3-0-console/).
+> We have a detailed guide on how to use the Khala App [here](/en-us/mine/solo/3-0-console/).
 
 ## Troubleshoot
 
@@ -110,7 +110,7 @@ Create a pool if you do not have one yet. Once the miner is registered, you can 
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts#investigating-the-issue" "Investigate" >}}
 
-{{< button "/en-us/maintain/khala-mining/4-0-faq/#confidence-level" "Confidence Level" >}}
+{{< button "/en-us/mine/solo/4-0-faq/#confidence-level" "Confidence Level" >}}
 
 {{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
 

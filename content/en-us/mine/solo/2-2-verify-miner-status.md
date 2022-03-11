@@ -1,9 +1,9 @@
 ---
 title: "Monitor Miner's Status"
-weight: 2002
+weight: 1022
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 

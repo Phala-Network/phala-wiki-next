@@ -1,9 +1,9 @@
 ---
 title: "Update your Miner's Node"
-weight: 2003
+weight: 1023
 menu:
-  maintain:
-    parent: "khala-mining"
+  mine:
+    parent: "mine-solo"
 ---
 
 To upgrade your worker requires it to stop first.

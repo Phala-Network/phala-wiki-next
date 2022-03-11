@@ -2,7 +2,7 @@
 title: "Requirements"
 weight: 1001
 menu:
-  maintain:
+  mine:
     parent: "khala-mining"
 ---
 

@@ -88,7 +88,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   </div>
 </div>
 
-> We have a guide on how to use the Khala App [here](/en-us/maintain/khala-mining/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
+> We have a guide on how to use the Khala App [here](/en-us/mine/solo/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
 
 ## Start Staking: Delegate
 

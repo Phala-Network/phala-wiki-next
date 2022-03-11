@@ -37,6 +37,7 @@
             {{- $active = or $active (and (eq .Name "General") (eq $current.Section "general")) -}}
             {{- $active = or $active (and (eq .Name "Learn") (eq $current.Section "learn")) -}}
             {{- $active = or $active (and (eq .Name "Build") (eq $current.Section "build")) -}}
+            {{- $active = or $active (and (eq .Name "Mine") (eq $current.Section "mine")) -}}
             {{- $active = or $active (and (eq .Name "Maintain") (eq $current.Section "maintain")) -}}
             <li class="nav-item">
               <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
@@ -98,21 +99,7 @@
 </div>
 {{ end -}}
 
-{{ if eq .Section "getting-started" -}}
-<div class="container-xxl">
-  <aside class="doks-sidebar">
-    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-      {{ partial "sidebar/getting-started-menu.html" . }}
-    </nav>
-  </aside>
-</div>
-<button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed{{ if eq .Site.Params.options.flexSearch false }} ms-auto{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-</button>
-{{ end -}}
-
-{{ if eq .Section "general" -}}
+{{ if or (eq .Section "general") (eq .Section "learn") (eq .Section "build") (eq .Section "mine") (eq .Section "maintain") -}}
 <div class="container-xxl">
   <aside class="doks-sidebar">
     <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
@@ -125,7 +112,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
 </button>
 {{ end -}}
-
+<!--
 {{ if eq .Section "learn" -}}
 <div class="container-xxl">
   <aside class="doks-sidebar">
@@ -140,7 +127,7 @@
 </button>
 {{ end -}}
 
-{{ if eq .Section "build" -}}<!--
+{{ if eq .Section "build" -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 
@@ -150,7 +137,7 @@
       <div id="suggestions" class="shadow bg-white rounded d-none"></div>
     </form>
     {{ end -}}
--->
+
     {{ if eq .Site.Params.options.docsVersioning true -}}
     <div class="dropdown ms-3">
       <button class="btn btn-doks-light dropdown-toggle" id="doks-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" aria-label="Toggle version menu">
@@ -229,3 +216,4 @@
   </aside>
 </div>
 {{ end -}}
+-->
