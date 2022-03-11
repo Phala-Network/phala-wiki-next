@@ -43,7 +43,7 @@ A system can potentially mine Phala if it meets these general requirements:
 - [x] A motherboard and BIOS that supports [Intel® SGX](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions.html) to run the [Trusted Execution Environment (TEE)](https://murdoch.is/talks/rhul14tee.pdf) is required.
    - [Check BIOS compatability](#check-your-bios).
 - [x] A Solid-state drive (SSD) storage device
-   - Storing your blockchain data on a mechanical HDD will result in slow synchronization speeds. At a minimum a 512GB SSD drive is recommended.
+   - Storing your blockchain data on a mechanical HDD will result in extremely slow synchronization speeds. At a minimum a 1TB SSD drive is recommended.
       - Refer to [issue #554](https://github.com/Phala-Network/phala-blockchain/issues/554) for more info.
 - [x] Have a supported version of Ubuntu (18.04, 20.04, 21.04) installed and booted from it.
    - See [Supported OS requirements](#supported-operating-systems).
