@@ -12,7 +12,9 @@ menu:
 
 ## Phala Network: Web3.0 Compute Cloud
 
-Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, that is, a standard decentralized computing cloud based on Web3.
+<!-- TODO.shelven: Shorten this and highlight the important things. -->
+
+Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, a standard decentralized computing cloud based on Web3.
 
 Trustless is not only the first feature of Phala recognized by the community but also the cornerstone of Phala becoming a reliable distributed computing network.
 In addition, the “sharing economy” model is also Phala’s Web3 characteristic. To ensure that network users and computing power providers won’t be controlled by centralized Internet companies, we must adopt the blockchain protocol, allowing any computing node to join the network and provide usable and stable computing services. This is also the foundation of the Secure Worker Mining mechanism.
@@ -24,16 +26,23 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 ### Fat Contract
 
-> Get started with our Fat Contract :point_right: [read more here](/en-us/general/development/fat-contract)
-
-A new type of smart contract product that focuses on serving Web3 back-end function-level services.
+A new type of smart contract product that focuses on serving Web3 backend function-level services.
+Fat Contract is meant to be the complement to existing smart contract by supporting complex program logic.
 
 The Fat Contract is designed for the following use cases:
 
-* For low latency requirements, such as in multiplayer online games
-* Scenarios of off-chain interoperation, such as Oracle, decentralized chat or communication services (Telegram or email)
-* Scenarios where privary matters, such as data market platform
-* Large-scale real-time computing programs, such as Metaverse, games, NFT rendering, artificial intelligence (recommendation engine, etc.)
+- Game or Metaverse backends with ***low latency*** requirement;
+- NFT rendering, machine learning, big data analytics and other ***compute-intensive*** programs;
+- Decentralized exchange and others where ***privacy*** matters;
+- Oracle, price bots and other applications ***composable*** of off-chain Web2/Web3 services and on-chain contracts;
+
+> Learn more [technical details](/en-us/general/development/fat-contract), or start building with Fat Contract following our [tutorial](/en-us/build/developer/fat-contract-tutorial).
+
+### Phala World
+
+A Metaverse based on the Phala Network blockchain.
+
+> Go to Phala World [official website](https://www.phalaworld.com/).
 
 ## Phala Web Directory
 
