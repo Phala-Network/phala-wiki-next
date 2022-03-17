@@ -54,12 +54,6 @@
   weight = 1000
 
 [[learn]]
-  name = "Products"
-  identifier = "products"
-  url = "/learn/products/"
-  weight = 2000
-
-[[learn]]
   name = "Developer"
   identifier = "developer"
   url = "/learn/developer/"
