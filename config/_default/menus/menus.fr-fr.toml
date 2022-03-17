@@ -52,12 +52,6 @@
   url = "/docs/maintain/"
   weight = 9000
 
-[[docs]]
-  name = "pDiem"
-  identifier = "pDiem"
-  url = "/docs/pDiem/"
-  weight = 10000
-
 # [[docs]]
 #   name = "Gatekeeper"
 #   identifier = "gatekeeper"

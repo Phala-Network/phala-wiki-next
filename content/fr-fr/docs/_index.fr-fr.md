@@ -15,5 +15,4 @@ Phala Network s'attaque à ce problème difficile. Il cherche à fournir de soli
 
 {{< button "poc4" "Miner sur Phala" >}}
 {{< button "developer" "Programmer sur Phala" >}}
-{{< button "pdiem" "Apprendre pDiem" >}}
 {{< button "spec" "Spécifications Techniques" >}}
