@@ -8,9 +8,9 @@ menu:
     parent: "phala-network"
 ---
 
-![](/images/docs/phala-network/phala_landing.png)
+![](/images/general/landing.jpg)
 
-## Phala Network
+## Phala Network: Web3.0 Compute Cloud
 
 Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, that is, a standard decentralized computing cloud based on Web3.
 
