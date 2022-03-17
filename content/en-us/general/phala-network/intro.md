@@ -22,29 +22,15 @@ At present, Secure Worker Mining mechanism has been running steadily on Khala Ne
 
 We strongly agree that Web3 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web3 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
 
-## Phala Products
+<!-- ## Choose a Topic
 
-### Fat Contract
+<!-- {{< button "developer" "Build on Phala" >}} -->
 
-A new type of smart contract product that focuses on serving Web3 backend function-level services.
-Fat Contract is meant to be the complement to existing smart contract by supporting complex program logic.
+## Roadmap
 
-The Fat Contract is designed for the following use cases:
+![](/images/docs/phala-network/roadmap.png)
 
-- Game or Metaverse backends with ***low latency*** requirement;
-- NFT rendering, machine learning, big data analytics and other ***compute-intensive*** programs;
-- Decentralized exchange and others where ***privacy*** matters;
-- Oracle, price bots and other applications ***composable*** of off-chain Web2/Web3 services and on-chain contracts;
-
-> Learn more [technical details](/en-us/general/development/fat-contract), or start building with Fat Contract following our [tutorial](/en-us/build/developer/fat-contract-tutorial).
-
-### Phala World
-
-A Metaverse based on the Phala Network blockchain.
-
-> Go to Phala World [official website](https://www.phalaworld.com/).
-
-## Phala Web Directory
+## Web Directory
 
 <div class="mediaList">
    <div class="item">
