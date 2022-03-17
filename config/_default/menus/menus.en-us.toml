@@ -30,13 +30,13 @@
   weight = 1000
 
 [[general]]
-  name = "Applications"
+  name = "Staking"
   identifier = "applications"
   url = "/general/applications/"
   weight = 2000
 
 [[general]]
-  name = "Developmnent"
+  name = "Development"
   identifier = "general-development"
   url = "/general/development/"
   weight = 3000
