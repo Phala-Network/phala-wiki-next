@@ -90,6 +90,15 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 > We have a guide on how to use the Khala App [here](/en-us/mine/solo/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
 
+## Learn Staking Mechanism
+
+Despite the secure system design of Phala, you can still receive less than expected profits from staking for many reasons.
+So before you really delegate your PHA to the workers, we recommend to first learn about the [potential risks](/en-us/general/applications/05-stakepool/#potential-risks).
+
+Further, to know when such risks happen, you can dig deep into our staking mechanism:
+- Read our [Tokenimics](/en-us/learn/tokenomics/tokenomics) to learn about the payout for miners of different hardwares and network situation, and the cases where they can be *slashed*;
+- Learn about the [detailed staking tutorial](/en-us/learn/tokenomics/mining-staking) to understand how you get your share from the workers' commission. And more importantly, the [frozen period](/en-us/learn/tokenomics/mining-staking/#exit-staking) you may have to wait for when exiting staking;
+
 ## Start Staking: Delegate
 
 As soon as you have:
