@@ -28,14 +28,15 @@
 }
 
 .docs-content {
-  ol, ul {
+  ol,
+  ul {
     padding-left: 20px;
   }
-  
+
   li {
     list-style-position: inside;
   }
-  
+
   table {
     display: block;
     overflow-x: auto;
