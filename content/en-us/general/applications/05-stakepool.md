@@ -71,7 +71,7 @@ There are two potential risks for the delegators:
   };
   window.addEventListener('load', (event) => {
       document.querySelectorAll("mjx-container").forEach(function(x){
-        x.parentElement.classList += 'has-jax'})
+        x.parentElement.classList += ' has-jax'})
     });
 </script>
 <script type="text/javascript" id="MathJax-script" async
