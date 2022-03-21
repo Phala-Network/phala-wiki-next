@@ -7,6 +7,25 @@ menu:
     parent: "developer"
 ---
 
+## Overview
+
+The last chapter covered Phala's architecture, whereas this page will touch on Phala's entities, the types of nodes that make Phala Network.
+
+In Phala Network, there are three kinds of entities:
+
+- _Client_, which operates on normal devices without any special hardware requirements;
+- _Worker_, which operates on Secure Enclave and serves as the computation nodes for confidential smart contracts;
+- _Gatekeeper_, which operates on Secure Enclave and serves as the authorities and key managers;
+
+The image below visualizes the interaction between Phala's entities.
+
+![Phala Network](/images/docs/spec/phala-design.png)
+
+The basic design of Phala Network is meant to ensure the security and confidentiality of the blockchain and its smart contracts. However, with more security improvements, Phala Network can defend against advanced attacks.
+
+<!-- TODO.shelven: fix the link -->
+> Read more information about the [technical details](/en-us/learn/developer/).
+
 The [Entities in Blockchain](/en-us/learn/phala-blockchain/blockchain-entities/) section above provides a generally high introduction level, while this section briefly introduces the technical concepts of Phala's blockchain entities.
 
 ## Entity Key Initialization

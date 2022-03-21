@@ -54,9 +54,9 @@
   weight = 1000
 
 [[learn]]
-  name = "Tokenomics"
-  identifier = "tokenomics"
-  url = "/learn/tokenomics/"
+  name = "Developer"
+  identifier = "developer"
+  url = "/learn/developer/"
   weight = 2000
 
 [[learn]]
@@ -64,12 +64,6 @@
   identifier = "maintain"
   url = "/learn/maintain/"
   weight = 3000
-
-[[learn]]
-  name = "Developer"
-  identifier = "developer"
-  url = "/learn/developer/"
-  weight = 4000
 
 [[build]]
   name = "Developer Guide"

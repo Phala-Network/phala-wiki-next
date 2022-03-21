@@ -96,8 +96,8 @@ Despite the secure system design of Phala, you can still receive less than expec
 So before you really delegate your PHA to the workers, we recommend to first learn about the [potential risks](/en-us/general/applications/05-stakepool/#potential-risks).
 
 Further, to know when such risks happen, you can dig deep into our staking mechanism:
-- Read our [Tokenimics](/en-us/learn/tokenomics/tokenomics) to learn about the payout for miners of different hardwares and network situation, and the cases where they can be *slashed*;
-- Learn about the [detailed staking tutorial](/en-us/learn/tokenomics/mining-staking) to understand how you get your share from the workers' commission. And more importantly, the [frozen period](/en-us/learn/tokenomics/mining-staking/#exit-staking) you may have to wait for when exiting staking;
+- Read our [Tokenimics](/en-us/learn/phala-blockchain/tokenomics) to learn about the payout for miners of different hardwares and network situation, and the cases where they can be *slashed*;
+- Learn about the [detailed staking tutorial](/en-us/learn/maintain/mining-staking) to understand how you get your share from the workers' commission. And more importantly, the [frozen period](/en-us/learn/maintain/mining-staking/#exit-staking) you may have to wait for when exiting staking;
 
 ## Start Staking: Delegate
 

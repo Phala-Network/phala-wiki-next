@@ -1,10 +1,10 @@
 ---
 title: "Mining & Staking"
-weight: 1002
+weight: 1001
 draft: false
 menu:
   learn:
-    parent: "tokenomics"
+    parent: "maintain"
 ---
 
 ## Introduction

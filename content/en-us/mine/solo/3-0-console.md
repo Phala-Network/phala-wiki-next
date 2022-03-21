@@ -6,7 +6,7 @@ menu:
     parent: "mine-solo"
 ---
 
-> We highly recommend reading about our [staking mechanism](/en-us/learn/tokenomics/mining-staking) before using the [Phala App](https://app.phala.network/en/mining/).
+> We highly recommend reading about our [staking mechanism](/en-us/learn/maintain/mining-staking) before using the [Phala App](https://app.phala.network/en/mining/).
 
 Miners and pool owners can use the Phala App to manage Workers/ Miners and StakePools. It also provides an overview of the status of all the managed Miners and Stake Pools.
 
@@ -116,7 +116,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
    - Click "Withdraw" in the pop-up window;
    - Type in the amount to withdraw;
    - Submit the transaction;
-   - You may wait for at most 14 days to get all your staking (check [staking mechanism](/en-us/learn/tokenomics/mining-staking). You can check the frozen amount in the "Withdraw Queue" of "Stake" pop-up;
+   - You may wait for at most 14 days to get all your staking (check [staking mechanism](/en-us/learn/maintain/mining-staking). You can check the frozen amount in the "Withdraw Queue" of "Stake" pop-up;
 
 ### Stop Mining
 
