@@ -29,8 +29,9 @@ h6,
 }
 
 .offcanvas-header {
+  border-top: 4px solid $primary;
   border-bottom: 1px solid $gray-300;
-  padding-top: 1.0625rem;
+  padding-top: 0.8125rem;
   padding-bottom: 0.8125rem;
 }
 
