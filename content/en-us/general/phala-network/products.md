@@ -23,7 +23,7 @@ The Fat Contract is designed for the following use cases:
 - Decentralized exchange and others where ***privacy*** matters;
 - Oracle, price bots and other applications ***composable*** of off-chain Web2/Web3 services and on-chain contracts;
 
-> Learn more [technical details](/en-us/general/development/fat-contract), or start building with Fat Contract following our [tutorial](/en-us/build/developer/fat-contract-tutorial).
+> Learn [more](/en-us/general/development/fat-contract) about Fat Contract's unique features and use cases, or start building with it right now following our [tutorial](/en-us/build/developer/fat-contract-tutorial).
 
 ## Phala World
 

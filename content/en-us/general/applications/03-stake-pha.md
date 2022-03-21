@@ -6,6 +6,12 @@ menu:
     parent: "applications"
 ---
 
+## Why Staking?
+
+Phala allows any people who possess a hardware with Secure Enclave to join the network as workers and share their computing power. To ensure the stable service from workers, they are required to stake a security deposit of PHA based on their computing power in case of denial-of-service attacks.
+
+By delegating your PHA to the workers and staking for them, it saves the fundraising time for workers to get their workers running. This also enable you to share the profits from their mining process.
+
 ## Get your Phala Tokens (PHA)
 
 If you do not hold any PHA yet, you can purchase PHA from any of the following exchanges:
@@ -73,7 +79,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="https://polkadot.js.org/apps/static/khala.3558f6d9.svg" alt="Khala App" width="60" class="center"/>
+           <img src="/images/general/khala.3558f6d9.svg" alt="Khala App" width="60" class="center"/>
            <p>Khala Wallet</p>
         </svg>
      </a>

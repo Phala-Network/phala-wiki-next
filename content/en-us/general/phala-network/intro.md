@@ -30,7 +30,7 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 ![](/images/general/roadmap.jpg)
 
-A more detailed [roadmap explanation](https://medium.com/phala-network/phala-network-roadmap-of-2022-f857ba765938).
+> A more detailed [roadmap explanation](https://medium.com/phala-network/phala-network-roadmap-of-2022-f857ba765938).
 
 ## Web Directory
 
