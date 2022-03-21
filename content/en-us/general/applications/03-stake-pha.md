@@ -100,4 +100,4 @@ As soon as you have:
 
 You are ready to over to the <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/phala_logo.png" width="30"> [Phala App](https://app.phala.network/) & start to :point_right: [Delegate](https://app.phala.network/delegate/).
 
-> If you have issues Delegating/Staking, feel free to check our [detailed guide](/en-us/general/applications/05-stakepool/).
+> If you have issues Delegating/Staking, feel free to check our [detailed guide](/en-us/general/applications/stakepool/).
