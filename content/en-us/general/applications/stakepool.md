@@ -38,7 +38,7 @@ Delegation is the method of "stake to earn" in Phala and Khala Network (both rep
 
 ### FAQ
 
-#### Can I delegate PHA to any StakePool?
+#### 1. Can I delegate PHA to any StakePool?
 
 As long as the remaining amount of the StakePool is sufficient in a StakePool, you can delegate PHA into it.
 
@@ -50,11 +50,11 @@ The remaining amount is the hard cap of the StakePool (the maximum amount that c
 
 > Note: The owner can also delegate into his own StakePool as a delegator, and share the rewards as a delegator.
 
-#### Will I be rewarded for delegating PHA into the Stakepool?
+#### 2. Will I be rewarded for delegating PHA into the Stakepool?
 
 Simply delegating into the StakePool **DOES NOT** guarantee rewards. For example, if there are no running Workers in the StakePool, and the commission is set to 100%, there will be no reward.
 
-#### How are the rewards distributed?
+#### 3. How are the rewards distributed?
 
 The output and distribution process of the reward is as follows:
 
@@ -62,15 +62,15 @@ The output and distribution process of the reward is as follows:
 - The tokens mined by each Worker are first distributed to the Owner according to the commission set;
 - The rest is distributed to all delegators according to the delegation amount.
 
-#### How long will it take to receive the reward?
+#### 4. How long will it take to receive the reward?
 
 If it is not in the above scenario, your reward should be received within **two days**.
 
-#### How to claim the award?
+#### 5. How to claim the award?
 
 You can get the reward in Phala App. Please refer to the [delegation tutorial](/en-us/general/applications/phala-app) for details.
 
-#### How is reward size affected?
+#### 6. How is reward size affected?
 
 Learn about the [Reward Formulas](/en-us/general/applications/reward-calculation) to estimate your reward. In general, human factors fall into the following categories:
 
@@ -81,7 +81,7 @@ Learn about the [Reward Formulas](/en-us/general/applications/reward-calculation
     2. Delegated⬇️
 1. Among them, a generally does not fluctuate greatly. b depends on the credit of the owner of the StakePool, and c may change steadily
 
-#### Can the funds delegated to the StakePool be withdrawn immediately?
+#### 7. Can the funds delegated to the StakePool be withdrawn immediately?
 
 It depends. The fastest can be put forward immediately, and the slowest takes 14 days. Detailed principles are as follows:
 - The delegator initiates a withdrawal, and if the free funds in the StakePool are greater than or equals to the withdrawal amount, all of the withdrawal can be withdrawn immediately;
