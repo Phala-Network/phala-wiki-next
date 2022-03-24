@@ -36,8 +36,8 @@
   weight = 2000
 
 [[general]]
-  name = "Staking"
-  identifier = "general-staking"
+  name = "Delegation"
+  identifier = "general-delegation"
   url = "/general/applications/"
   weight = 3000
 

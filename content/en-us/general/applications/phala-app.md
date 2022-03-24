@@ -4,7 +4,7 @@ weight: 1006
 draft: false
 menu:
   general:
-    parent: "general-staking"
+    parent: "general-delegation"
 ---
 
 ## Delegate

@@ -1,10 +1,10 @@
 ---
 title: 'Delegate to a Stakepool'
-weight: 1005
+weight: 1004
 draft: false
 menu:
   general:
-    parent: "general-staking"
+    parent: "general-delegation"
 ---
 
 ## Why Delegation is Needed?

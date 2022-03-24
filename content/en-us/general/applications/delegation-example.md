@@ -1,13 +1,13 @@
 ---
 title: 'Examples of Delegation'
-weight: 1004
+weight: 1005
 draft: false
 menu:
   general:
-    parent: "general-staking"
+    parent: "general-delegation"
 ---
 
-Before the explanation of the complex underlying mechanism, we first use two examples to demonstrate the real-world cases of delegation.
+After the explanation of the complex underlying mechanism, we use two examples to demonstrate the real-world cases of delegation.
 
 ## Example 1: Reward Distribution
 

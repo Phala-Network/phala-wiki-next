@@ -4,7 +4,7 @@ weight: 1007
 draft: false
 menu:
   general:
-    parent: "general-staking"
+    parent: "general-delegation"
 ---
 
 ![](/images/general/delegate.png)

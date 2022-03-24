@@ -1,9 +1,9 @@
 ---
-title: "Get PHA and Stake"
+title: "Get PHA and Delegate"
 weight: 1003
 menu:
   general:
-    parent: "general-staking"
+    parent: "general-delegation"
 ---
 
 ## Get your Phala Tokens (PHA)
@@ -90,7 +90,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 > We have a guide on how to use the Khala App [here](/en-us/mine/solo/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
 
-## Start Staking: Delegate
+## Start Delegating
 
 As soon as you have:
 - [x] PHA Tokens
@@ -100,4 +100,4 @@ As soon as you have:
 
 You are ready to over to the <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/phala_logo.png" width="30"> [Phala App](https://app.phala.network/) & start to :point_right: [Delegate](https://app.phala.network/delegate/).
 
-> If you have issues Delegating/Staking, feel free to check our [detailed guide](/en-us/general/applications/stakepool/).
+> If you have issues Delegating, feel free to check our [detailed guide](/en-us/general/applications/stakepool/).
