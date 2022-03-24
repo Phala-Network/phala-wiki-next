@@ -19,7 +19,7 @@ The Owner stakes 2,500 PHA on Worker A and starts running.
 
 The StakePool commission set by the owner is 40%. After a period of time, Worker A mined 10 PHA. 20% of it will be handed over to the Treasury, which is 2 PHA, and then 40% of the commission, which is 3.2 PHA, is left to the owner. The rest is distributed to the delegators according to the delegation. 1.6 PHA is distributed to Delegator A and 3.2 PHA is distributed to Delegator B.
 
-## Example 2: Reward Withdraw
+## Example 2: Reward Withdraw Timetable
 
 ![](/images/general/reward-withdraw.png)
 

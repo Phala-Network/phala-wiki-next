@@ -1,5 +1,5 @@
 ---
-title: 'Estimate Your Reword'
+title: 'Estimate Your Reward'
 weight: 1007
 draft: false
 menu:
