@@ -3,7 +3,7 @@ title: "Get PHA and Stake"
 weight: 1003
 menu:
   general:
-    parent: "applications"
+    parent: "general-staking"
 ---
 
 ## Get your Phala Tokens (PHA)

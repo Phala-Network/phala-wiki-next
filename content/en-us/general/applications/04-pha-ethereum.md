@@ -4,7 +4,7 @@ weight: 1004
 draft: true
 menu:
   general:
-    parent: "applications"
+    parent: "general-staking"
 ---
 
 ## TODO

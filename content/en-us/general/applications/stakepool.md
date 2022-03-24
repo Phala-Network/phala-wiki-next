@@ -1,10 +1,10 @@
 ---
 title: 'Delegate to a Stakepool'
-weight: 1004
+weight: 1005
 draft: false
 menu:
   general:
-    parent: "applications"
+    parent: "general-staking"
 ---
 
 ## Why Delegation is Needed?
@@ -43,7 +43,7 @@ Delegation is the method of "stake to earn" in Phala and Khala Network (both rep
 As long as the remaining amount of the StakePool is sufficient in a StakePool, you can delegate PHA into it.
 
 <p align="center">
-  <img src="/images/general/stakepool.png" />
+  <img src="/images/general/stakepool.png" width="360"/>
 </p>
 
 The remaining amount is the hard cap of the StakePool (the maximum amount that can be delegated to StakePool set by the owner, which is unlimited by default)  minus the amount that has been delegated.
@@ -53,6 +53,8 @@ The remaining amount is the hard cap of the StakePool (the maximum amount that c
 #### 2. Will I be rewarded for delegating PHA into the Stakepool?
 
 Simply delegating into the StakePool **DOES NOT** guarantee rewards. For example, if there are no running Workers in the StakePool, and the commission is set to 100%, there will be no reward.
+
+> Refer to [Reward Calculation](/en-us/general/applications/reward-calculation/) to estimate your reward.
 
 #### 3. How are the rewards distributed?
 
@@ -64,9 +66,9 @@ The output and distribution process of the reward is as follows:
 
 #### 4. How long will it take to receive the reward?
 
-If it is not in the above scenario, your reward should be received within **two days**.
+If it is not in the scenarios mentioned in [Question 2](/en-us/general/applications/stakepool/#2-will-i-be-rewarded-for-delegating-pha-into-the-stakepool), your reward should be received within **two days**.
 
-#### 5. How to claim the award?
+#### 5. How to claim the reward?
 
 You can get the reward in Phala App. Please refer to the [delegation tutorial](/en-us/general/applications/phala-app) for details.
 
@@ -74,16 +76,20 @@ You can get the reward in Phala App. Please refer to the [delegation tutorial](/
 
 Learn about the [Reward Formulas](/en-us/general/applications/reward-calculation) to estimate your reward. In general, human factors fall into the following categories:
 
-**FIX THIS**
+1. The better the performance:up_arrow: of the workers in the StakePool, the more rewards:up_arrow: mined, and the more rewards:up_arrow: the delegators get;
+2. The higher the commission:up_arrow:, the less reward:down_arrow: the delegators get;
+3. The higher the amount of delegation:up_arrow: in the StakePool, the less reward:down_arrow: the delegators get.
 
--PoolMined The overall performance of miners⬆️, namely PoolMined
-    1. Commission⬇️
-    2. Delegated⬇️
-1. Among them, a generally does not fluctuate greatly. b depends on the credit of the owner of the StakePool, and c may change steadily
+Among them, the 1st generally does not fluctuate greatly. The 2nd depends on the credit of the owner of the StakePool, and the 3rd may change steadily.
 
 #### 7. Can the funds delegated to the StakePool be withdrawn immediately?
 
 It depends. The fastest can be put forward immediately, and the slowest takes 14 days. Detailed principles are as follows:
+
+<p align="center">
+  <img src="/images/general/withdraw.png" width="400"/>
+</p>
+
 - The delegator initiates a withdrawal, and if the free funds in the StakePool are greater than or equals to the withdrawal amount, all of the withdrawal can be withdrawn immediately;
 - If the free funds are less than the withdrawal amount, all the free funds will be withdrawn. The remaining funds will enter the withdrawing queue. The fetches in the waiting queue will be satisfied when
   - There are new funds delegated to the StakePool;

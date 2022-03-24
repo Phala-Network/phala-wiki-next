@@ -1,10 +1,10 @@
 ---
 title: 'Use Phala App'
-weight: 1005
+weight: 1006
 draft: false
 menu:
   general:
-    parent: "applications"
+    parent: "general-staking"
 ---
 
 ## Phala App Delegation Tutorial

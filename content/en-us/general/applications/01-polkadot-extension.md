@@ -4,7 +4,7 @@ weight: 1001
 draft: false
 menu:
   general:
-    parent: "applications"
+    parent: "general-basic"
 ---
 
 ## Polkadot{.js} Extension
