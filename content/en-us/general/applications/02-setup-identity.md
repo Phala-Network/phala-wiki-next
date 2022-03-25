@@ -5,7 +5,7 @@ weight: 1002
 draft: false
 menu:
   general:
-    parent: "applications"
+    parent: "general-basic"
 ---
 
 Phala Network provides a naming system that allows participants to add personal information to their on-chain account and subsequently ask for verification of this information by [registrars](#khala-registrars).
