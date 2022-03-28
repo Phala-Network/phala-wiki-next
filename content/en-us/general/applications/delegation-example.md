@@ -1,6 +1,6 @@
 ---
 title: 'Examples of Delegation'
-weight: 1005
+weight: 1006
 draft: false
 menu:
   general:
