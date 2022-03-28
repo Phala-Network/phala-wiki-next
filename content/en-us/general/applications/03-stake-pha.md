@@ -73,7 +73,7 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   <div class="item" style="text-align:center">
      <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="https://polkadot.js.org/apps/static/khala.3558f6d9.svg" alt="Khala App" width="60" class="center"/>
+           <img src="/images/general/khala.3558f6d9.svg" alt="Khala App" width="60" class="center"/>
            <p>Khala Wallet</p>
         </svg>
      </a>
