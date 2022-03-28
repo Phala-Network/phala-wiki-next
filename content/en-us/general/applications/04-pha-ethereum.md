@@ -3,7 +3,7 @@ title: 'SubBridge: Khala <-> Karura'
 weight: 1004
 menu:
   general:
-    parent: "general-delegation"
+    parent: "general-basic"
 ---
 
 Phala is about to open [PHA/kUSD Bootstrap](https://twitter.com/PhalaNetwork/status/1506240002367229958) at Karura block height #1697502.

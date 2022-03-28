@@ -3,7 +3,7 @@ title: "Get PHA and Delegate"
 weight: 1003
 menu:
   general:
-    parent: "general-delegation"
+    parent: "general-basic"
 ---
 
 ## Get your Phala Tokens (PHA)
