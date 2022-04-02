@@ -8,7 +8,7 @@ menu:
 
 ## What is SubBridge?
 
-SubBridge is the asset hub of the parachains, bridging Dotsama and Ethereum and assets in other ecosystems.
+SubBridge is the cross-chain router of the parachains, bridging Dotsama and Ethereum and assets in other ecosystems.
 
 ![](/images/general/subbridge-intro.jpg)
 
