@@ -90,6 +90,10 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 > We have a guide on how to use the Khala App [here](/en-us/mine/solo/3-0-console/) & a video on how to create a wallet [here](https://youtu.be/Q3yHQqKrMl4?list=PLdAYriWvzwzqDXUp226VGVOntofoG5KRq).
 
+## Transfer PHA from/to Other Chains
+
+For now, you can transfer your PHA from Ethereum to Khala (Phala on Kusama) or from Khala to Karura with our SubBridge, refer to the [introduction](/en-us/general/subbridge/intro/) and our [tutorial](/en-us/general/subbridge/pha-karura/) for more details.
+
 ## Start Delegating
 
 As soon as you have:

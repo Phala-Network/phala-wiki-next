@@ -36,22 +36,28 @@
   weight = 2000
 
 [[general]]
+  name = "SubBridge"
+  identifier = "general-bridge"
+  url = "/general/subbridge/"
+  weight = 3000
+
+[[general]]
   name = "Delegation"
   identifier = "general-delegation"
   url = "/general/applications/"
-  weight = 3000
+  weight = 4000
 
 [[general]]
   name = "Developmnent"
   identifier = "general-development"
   url = "/general/development/"
-  weight = 4000
+  weight = 5000
 
 [[general]]
   name = "Mining"
   identifier = "general-mining"
   url = "/general/mining/"
-  weight = 5000
+  weight = 6000
 
 [[learn]]
   name = "Phala Blockchain"
