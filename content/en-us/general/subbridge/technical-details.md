@@ -51,7 +51,7 @@ What we do in practice is that we incorporate other non-parachains into sub-addr
 MultiLocation::new(1, X4(Parachain(2004), GeneralKey(bridge), GeneralIndex(chain), GeneralKey(account)))
 ```
 
-> Among them, `bridge` represents a specific bridge, for example, Chainbridge uses “cb” to represent; CelerBridge uses “cr” to represent; `chain` represents the ID of the EVM chain under the SubBridge system. Currently, Ethereum is 0 and Moonriver is 2; `account` represents the ID on the EVM chain. An account, usually a 20-byte hexadecimal string.
+> Among them, `bridge` represents a specific bridge, for example, Chainbridge uses "cb" to represent; CelerBridge uses "cr" to represent; `chain` represents the ID of the EVM chain under the SubBridge system. Currently, Ethereum is 0 and Moonriver is 2; `account` represents the ID on the EVM chain. An account, usually a 20-byte hexadecimal string.
 >
 
 Similarly, the assets of any chain also need to be unified. The assets on the parachain are defined by the team of the parachain to define their corresponding MultiAsset; the EVM chain assets based on SubBridge are also defined as the sub-asset of the Khala network like the account address. That is, the usual asset location would be represented as:
@@ -88,22 +88,16 @@ Similarly, when a cross-chain transfer is initiated from EVM Chains, the ChainBr
 
 Subbridge's Chainbridge cross-chain bridge module is maintained and developed by the Phala team and is responsible for running three Relayers. The Relayer of the Chainbridge cross-chain bridge constructs the captured origin chain cross-chain transaction into a proposal, and then the three relayers vote on the Proposal. After the vote is passed, the proposal will be executed and the assets will be deposited in the user address.
 
-About Chainbridge can refer to：https://github.com/ChainSafe/ChainBridge
+About Chainbridge, you can refer t：[https://github.com/ChainSafe/ChainBridge](https://github.com/ChainSafe/ChainBridge).
 
-For the Phala Ethereum Chainbridge contract, please refer to：[https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge)
+For the Phala Ethereum Chainbridge contract, please refer t：[https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
 
-## Quote
+## Reference
 
-XCM format：https://github.com/paritytech/xcm-format
-
-MultiAsset definition：[https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs)
-
-MultiLocation definition：[https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs)
-
-Phala Chainbridge Solidity contract：[https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge)
-
-Pallet-assets implementation：[https://github.com/paritytech/substrate/tree/master/frame/assets](https://github.com/paritytech/substrate/tree/master/frame/assets)
-
-Introduction to ChainBridge：[https://chainbridge.chainsafe.io/](https://chainbridge.chainsafe.io/)
-
-Introduction to CelerBridge：[https://cbridge-docs.celer.network/](https://cbridge-docs.celer.network/)
+- XCM format：[https://github.com/paritytech/xcm-format](https://github.com/paritytech/xcm-format)
+- MultiAsset definition：[https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs)
+- MultiLocation definition：[https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs)
+- Phala Chainbridge Solidity contract：[https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge)
+- Pallet-assets implementation：[https://github.com/paritytech/substrate/tree/master/frame/assets](https://github.com/paritytech/substrate/tree/master/frame/assets)
+- Introduction to ChainBridge：[https://chainbridge.chainsafe.io/](https://chainbridge.chainsafe.io/)
+- Introduction to CelerBridge：[https://cbridge-docs.celer.network/](https://cbridge-docs.celer.network/)
