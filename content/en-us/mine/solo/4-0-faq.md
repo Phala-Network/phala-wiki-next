@@ -163,8 +163,7 @@ wget https://github.com/Phala-Network/solo-mining-scripts/archive/refs/heads/mai
 unzip main.zip
 rm -r main.zip #cleaning up the installation
 cd solo-mining-scripts-main/ #note this depends on your current directory
-chmod +x install.sh
-sudo ./install.sh en
+sudo ./phala.sh install
 ```
 
 You may now [restart your node](/en-us/mine/solo/4-0-faq/#general).

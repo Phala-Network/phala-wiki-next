@@ -13,10 +13,10 @@ This section shows you how to set up your Phala mining CLI, the respective tools
 Execute the following command to get your miner ready to launch for mining.
 
 ```bash
-sudo phala install
+sudo ~/solo-mining-scripts-main/phala.sh install
 ```
 
->`phala install` will update the miner to use your newly installed driver settings and configuration. This is required for first-time miners or whenever you update or change your driver configuration for this change to take effect.
+>`phala.sh` will update the miner to use your newly installed driver settings and configuration. This is required for first-time miners or whenever you update or change your driver configuration for this change to take effect.
 
 ## Miner Configuration
 
@@ -27,7 +27,7 @@ sudo phala install
 Use the following command to set your parameters.
 
 ```bash
-sudo phala config set
+sudo phala config
 ```
 You will be prompted to set:
 - the number of CPU cores to use

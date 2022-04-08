@@ -28,9 +28,8 @@ unzip main.zip
 
 Execute the following commands in the terminal, the computer should reboot after execution.
 
-```shell
-cd ~/solo-mining-scripts-main
-sudo chmod +x sgx_enable
+```bash
+cd ~/solo-mining-scripts-main/tools
 sudo ./sgx_enable
 sudo reboot
 ```
@@ -40,9 +39,8 @@ sudo reboot
 Execute the following commands in your terminal:
 
 ```bash
-cd ~/solo-mining-scripts-main
-chmod +x install.sh
-sudo ./install.sh en
+cd ~/solo-mining-scripts-main 
+sudo ./phala.sh install
 ```
 
 > This will install the Phala CLI

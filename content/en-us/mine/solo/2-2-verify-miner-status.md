@@ -22,6 +22,7 @@ Your miner's status shows the
 * `gas account and balance`
 * `StakePool account`
 * `Worker public key`
+* `Alarm of node loss syncing`
 
 > A warning will be sent if your gas account balance is under 2 PHA so you can recharge your GAS account on time.
 
