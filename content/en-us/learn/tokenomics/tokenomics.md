@@ -20,12 +20,17 @@ The overall economic design is built to address these points:
    - Ensure payment for power supplied irrespective of demand, especially at network bootstrap
    - Subsidize mining pool with 70% of the initial supply over time
    - Bitcoin-like budget halving schedule
+   - Power the Phala and Khala at the same time
 3. Application pricing
 4. On-chain performance
 
 The following details some key elements of the economic model.
 
 ## Overall Design
+
+### Related Workers
+
+Phala Tokenomic is applicable to any workers running on Phala or Khala.
 
 ### Value Promise ($V$)
 
@@ -50,8 +55,7 @@ $$V^e = f(R^e, \text{ConfidenceScore}) \times (S + C)$$
 
 Params used in simulation:
 
-- $R^e_{\text{Khala}} = 1.5$
-- $R^e_{\text{Phala}} = 1.3$
+- $R^e_{\text{Phala}} =R^e_{\text{Khala}} = 1.5$
 - $\text{ConfidenceScore}$ for different [Confidence Levels](/en-us/mine/solo/1-2-confidential-level-evaluation/#confidence-level-of-a-miner)
   - $\text{ConfidenceScore}_{1,2,3} = 1$
   - $\text{ConfidenceScore}_{4} = 0.8$
@@ -89,8 +93,7 @@ $$S_{min}=k \sqrt{P}$$
 
 Proposed parameter:
 
-- $k_{\text{Khala}} = 50$
-- $k_{\text{Phala}} = 100$
+- $k_{\text{Phala}} =k_{\text{Khala}} = 50$
 
 > Locked state $PHA token can also be used for mining staking, e.g., Khala Crowdloan reward
 
@@ -143,26 +146,29 @@ $$\Delta V_t = k_p \cdot \big((\rho^m - 1) V_t + c(s_t) + \gamma(V_t)h(V_t)\big)
 
 Proposed parameters:
 
-- $\rho^m_{\text{Khala}} = 1.00020$ (hourly)
-- $\rho^m_{\text{Phala}} = 1.00020$ (hourly)
+- $\rho^m_{\text{Phala}} =\rho^m_{\text{Khala}} = 1.00020$ (hourly)
 
 ### Payout Event
 
-In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current **_Miner Shares_**. However, the payout is also capped to ensure the payout doesn't cause $V$ to drop lower than it in the last payout event:
+In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current **_Miner Shares_**:
 
-$$w(V_t) = \min(B \frac{\text{share}}{\Sigma \text{share}}, V_t - V_\text{last}),$$
+$$w(V_t) = B \frac{\text{share}}{\Sigma \text{share}}$$
 
-where $B$ is the current network subsidy budget for the given payout period, and $V_\text{last}$ is the value promised at the last payout event, or $V^e$ if this is the first payout.
-
-> Capping the payout is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise if V decreases over the time, miners are incentivezed to constantly reset their mining session.
+where $B$ is the current network subsidy budget for the given payout period.
 
 Whenever $w(V_t)$ is paid to a miner, his $V$ will be updated accordingly:
 
-$$\Delta V = -w(V_t).$$
+$$\Delta V = -min(w(V_t),V_t-V_\text{last}).$$
+
+$V_\text{last}$ is the value promised at the last payout event, or $V^e$ if this is the first payout.
+
+> The update of $V$ is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise, miners are incentivized to constantly reset their mining session if $V$ decreases over time.
 
 Share represents how much the miner is paid out from $V$. We expect it will approximate the share baseline, but with minor adjustment to reflect the property of the worker:
 
 $$\text{share}_{\text{Baseline}} = V_t.$$
+
+$\Sigma \text{share}$ contains the share of workers which are running on Phala or Khala with a same subsidy ratio.
 
 Proposed algorithm:
 
