@@ -162,7 +162,7 @@ $$\Delta V = -min(w(V_t),V_t-V_\text{last}).$$
 
 $V_\text{last}$ is the value promised at the last payout event, or $V^e$ if this is the first payout.
 
->The update of V is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise, miners are incentivized to constantly reset their mining session if V decreases over time.
+> The update of $V$ is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise, miners are incentivized to constantly reset their mining session if $V$ decreases over time.
 
 Share represents how much the miner is paid out from $V$. We expect it will approximate the share baseline, but with minor adjustment to reflect the property of the worker:
 
