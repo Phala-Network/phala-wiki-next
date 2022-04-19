@@ -9,7 +9,7 @@ menu:
 ## Transfer PHA: Ethereum <-> Khala
 
 This tutorial takes the transfer of PHA from Ethereum to Khala as an example. You can also refer to this tutorial for other EVM <-> parachain bridge transfers.
-> Note that you can directly transfer from Ethereum to other parachains, like Karura, with no need to transfer to Khala first and then from Khala to Karura.
+<!-- > Note that you can directly transfer from Ethereum to other parachains, like Karura, with no need to transfer to Khala first and then from Khala to Karura. -->
 
 <p align="center">
   <img src="/images/general/subbridge-eth-khala.png" width="400"/>
