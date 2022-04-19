@@ -214,26 +214,16 @@ Please check the `ethdenver-2022-solution` branch.
 
 ### Endpoints
 
-- Chain: `wss://poc5.phala.network/ws` / `wss://poc5-2.phala.network/ws`
+- Chain: `wss://poc5.phala.network/ws`
     - Polkadot.js quick link: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer
 - Workers (with their identity key)
   - https://poc5.phala.network/tee-api-1
       - 0x94a2ded4c77fbb910943f7e452e4d243ee5b60bf1a838a911acf2ffd4bae9b63
-  - https://poc5.phala.network/tee-api-2
-      - 0x50ede2dd7c65716a2d55bb945dfa28d951879154f832e049851d7882c288db76
-  - https://poc5.phala.network/tee-api-3
-      - 0xfe26077a6030e505136855100f335503ca40f6e8afa149b0c6c618e81c1cb53b
-  - https://poc5.phala.network/tee-api-4
-      - 0x6cfc1282880305c7691f0941b98089b9da17acde43b66ef2220022797bb3e370
-  - https://poc5.phala.network/tee-api-5
-      - 0xbed94c30d660a1de5a499e38f9f3afe9ccc1ef5f901530efd48de641679fbc7d
-  - https://poc5-2.phala.network/tee-api-1
-      - 0x6229b2fff6f6bd234d5a1bacceb4b5ad8359b771251a0c15259e34c0820c891c
-  - https://poc5-2.phala.network/tee-api-2
-      - 0x202ff02a30d85c22095219f93897ac1e760ffdaf65b4fc838ffd161458e8025d
-  - https://poc5-2.phala.network/tee-api-3
-      - 0x5435b1117ea605421d46e0bb017b44b07c46fe7d44a8686ad9a191d09021d92b
-  - https://poc5-2.phala.network/tee-api-4
-      - 0x4c6ea744ce31456eb2740e8499b2945ec541c499d36aed29c767ddedc5cb7e73
-  - https://poc5-2.phala.network/tee-api-5
-      - 0x6cc3ac47b16b62a4a39350d09bb76540baa31cd0146192ea8d2064ee1b8b3765
+  - ~~https://poc5.phala.network/tee-api-2~~
+      - ~~0x50ede2dd7c65716a2d55bb945dfa28d951879154f832e049851d7882c288db76~~
+  - ~~https://poc5.phala.network/tee-api-3~~
+      - ~~0xfe26077a6030e505136855100f335503ca40f6e8afa149b0c6c618e81c1cb53b~~
+  - ~~https://poc5.phala.network/tee-api-4~~
+      - ~~0x6cfc1282880305c7691f0941b98089b9da17acde43b66ef2220022797bb3e370~~
+  - ~~https://poc5.phala.network/tee-api-5~~
+      - ~~0xbed94c30d660a1de5a499e38f9f3afe9ccc1ef5f901530efd48de641679fbc7d~~
