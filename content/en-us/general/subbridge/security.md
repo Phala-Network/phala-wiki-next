@@ -18,4 +18,4 @@ Up to now, the contract has been running safely for nearly a year, and the contr
 
 ## Administrator private key multi-signature processing
 
-When it comes to ultra-privileged accounts, multi-signature is often the most effective way to avoid attacks. SubBridge's XCM-related configuration itself is implemented based on Substrate's parliamentary module, and its essence is also a multi-signature implementation; the administrator account of the ChainBridge Solidity contract is used to configure the bridge, and its private key is also managed by multi-signature.
+When it comes to ultra-privileged accounts, multi-signature is often the most effective way to avoid attacks. SubBridge's XCM-related configuration itself is implemented based on Substrate's council module, and its essence is also a multi-signature implementation; the administrator account of the ChainBridge Solidity contract is used to configure the bridge, and its private key is also managed by multi-signature.
