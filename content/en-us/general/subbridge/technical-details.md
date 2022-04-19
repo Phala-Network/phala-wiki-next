@@ -63,7 +63,7 @@ MultiLocation::new(1, X3(Parachain(2004), GeneralIndex(chain), GeneralKey(token)
 > Among them, `token` represents the contract address of a certain ERC20 or ERC721 of EVM.
 >
 
-## Asset registration
+## Asset Registration
 
 The registration of SubBridge assets is mainly divided into two parts:
 
@@ -71,7 +71,7 @@ The first part is to register assets into the pallet-assets module. SubBridge us
 
 The second part is to enable the corresponding EVM bridge. This part is only for the asset settings that want to carry out the cross-chain requirement from Khala to the EVM chain. In SubBridge, the same asset can enable both ChainBridge-based bridges and CelerBridge-based bridges (coming soon). In practice, users are always willing to choose solutions with lower fees.
 
-## The life cycle
+## The Lifecycle of Cross-chain Transaction
 
 <p>
     <img src="/images/general/subbridge-lifecycle.png" style="background-color:white;" alt>
@@ -88,16 +88,25 @@ Similarly, when a cross-chain transfer is initiated from EVM Chains, the ChainBr
 
 Subbridge's Chainbridge cross-chain bridge module is maintained and developed by the Phala team and is responsible for running three Relayers. The Relayer of the Chainbridge cross-chain bridge constructs the captured origin chain cross-chain transaction into a proposal, and then the three relayers vote on the Proposal. After the vote is passed, the proposal will be executed and the assets will be deposited in the user address.
 
-About Chainbridge, you can refer t：[https://github.com/ChainSafe/ChainBridge](https://github.com/ChainSafe/ChainBridge).
+About Chainbridge, you can refer to: [https://github.com/ChainSafe/ChainBridge](https://github.com/ChainSafe/ChainBridge).
 
-For the Phala Ethereum Chainbridge contract, please refer t：[https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
+For the Phala Ethereum Chainbridge contract, please refer to: [https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
+
+## Code Auditing
+
+The bridges currently integrated by SubBridge include two implementations, XCM and ChainBridge.
+
+XCM is a cross-chain message protocol implemented by Parity Tech in the two networks of Polkadot and Kusama. Its code has been audited by a third-party audit firm hired by Parity. The audit report on XCM V2 (the current version of XCM used by SubBridge) can be found here: [https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf](https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf)
+
+Earlier last year, we deployed ChainBridge’s Solidity contract on Ethereum. The contract address is: [https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9](https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9)
+Up to now, the contract has been running safely for nearly a year, and the contract has also been audited by Certik, a third-party auditor hired by Phala. The detailed audit report can be found here: [https://www.certik.com/projects/phalanetwork](https://www.certik.com/projects/phalanetwork)
 
 ## Reference
 
-- XCM format：[https://github.com/paritytech/xcm-format](https://github.com/paritytech/xcm-format)
-- MultiAsset definition：[https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs)
-- MultiLocation definition：[https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs)
-- Phala Chainbridge Solidity contract：[https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge)
-- Pallet-assets implementation：[https://github.com/paritytech/substrate/tree/master/frame/assets](https://github.com/paritytech/substrate/tree/master/frame/assets)
-- Introduction to ChainBridge：[https://chainbridge.chainsafe.io/](https://chainbridge.chainsafe.io/)
-- Introduction to CelerBridge：[https://cbridge-docs.celer.network/](https://cbridge-docs.celer.network/)
+- XCM format: [https://github.com/paritytech/xcm-format](https://github.com/paritytech/xcm-format)
+- MultiAsset definition: [https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multiasset.rs)
+- MultiLocation definition: [https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs](https://github.com/paritytech/polkadot/blob/master/xcm/src/v1/multilocation.rs)
+- Phala Chainbridge Solidity contract: [https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge)
+- Pallet-assets implementation: [https://github.com/paritytech/substrate/tree/master/frame/assets](https://github.com/paritytech/substrate/tree/master/frame/assets)
+- Introduction to ChainBridge: [https://chainbridge.chainsafe.io/](https://chainbridge.chainsafe.io/)
+- Introduction to CelerBridge: [https://cbridge-docs.celer.network/](https://cbridge-docs.celer.network/)

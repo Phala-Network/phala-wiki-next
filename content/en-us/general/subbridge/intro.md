@@ -24,4 +24,4 @@ The security of the SubBridge is of prior concern. In terms of EVM compatibility
 - Admin takes multi-signature management to guarantee asset security;
 - SubBridge consists of several relayers, the operation is guaranteed when there is a single node out of service.
 
-Read the [following section](/en-us/general/subbridge/security) for more details on security.
+Read the [following section](/en-us/general/subbridge/technical-details/#code-auditing) for more details on code auditing.
