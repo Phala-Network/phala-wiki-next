@@ -13,9 +13,9 @@ menu:
 
 ## Before Getting Started
 
-1. Sign up on <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30"> [Vultr](https://vultr.com).
+1. Sign up on <a href="https://www.vultr.com/?ref=9108833-8H"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30"> [Vultr](https://vultr.com).
 2. Enter your [billing information](https://my.vultr.com/billing/).
-3. Request to [increase your limit](https://my.vultr.com/billing/#billinglimits).
+3. Request to [increase your limit](https://my.vultr.com/billing/#billinglimits) may be required.
 
 > Increasing the credit depends on the cloud provider's support's response time.
 
