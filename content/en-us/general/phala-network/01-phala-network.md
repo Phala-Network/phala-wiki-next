@@ -28,12 +28,16 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 A new type of smart contract product that focuses on serving Web3 back-end function-level services.
 
+![](/images/general/fat-features.jpeg)
+
 The Fat Contract is designed for the following use cases:
 
 * For low latency requirements, such as in multiplayer online games
 * Scenarios of off-chain interoperation, such as Oracle, decentralized chat or communication services (Telegram or email)
 * Scenarios where privary matters, such as data market platform
 * Large-scale real-time computing programs, such as Metaverse, games, NFT rendering, artificial intelligence (recommendation engine, etc.)
+
+![](/images/general/fat-usecase.jpeg)
 
 ## Phala Web Directory
 
