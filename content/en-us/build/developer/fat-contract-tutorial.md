@@ -47,6 +47,7 @@ The following toolchains are needed:
         - or download the [release](https://github.com/WebAssembly/binaryen/releases/tag/version_105) and put it under your `$PATH`
     - Install dylint-link toolchain: `cargo install cargo-dylint dylint-link` 
     - Install contract toolchain: `cargo install cargo-contract --force`
+    - For macOS M1 chip users: `rustup component add rust-src --toolchain nightly-aarch64-apple-darwin`
 - Install frontend toolchain
     - Node.js (>=v16), follow the [official tutorial](https://nodejs.org/en/download/package-manager/)
     - Yarn (v1): `npm install --global yarn`
