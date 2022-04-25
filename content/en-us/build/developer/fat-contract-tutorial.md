@@ -45,6 +45,7 @@ The following toolchains are needed:
         - Homebrew for macOS: `brew install binaryen`
         - Apt for Ubuntu: `sudo apt install binaryen`
         - or download the [release](https://github.com/WebAssembly/binaryen/releases/tag/version_105) and put it under your `$PATH`
+    - Install dylint-link toolchain: `cargo install cargo-dylint dylint-link` 
     - Install contract toolchain: `cargo install cargo-contract --force`
 - Install frontend toolchain
     - Node.js (>=v16), follow the [official tutorial](https://nodejs.org/en/download/package-manager/)
