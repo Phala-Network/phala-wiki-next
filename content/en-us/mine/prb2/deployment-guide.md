@@ -28,6 +28,8 @@ When the lifecycle manager has finished the initial blob synchronization, it wil
 
 Extrinsics (transactions) shall be sent to the blockchain for the operation mentioned above. To achieve this, the lifecycle manager shall push the extrinsics data to the trader queue(currently maintained with Redis). The trader will grab jobs from the queue and report the extrinsic results back.
 
+Runtime Bridge doesn't require a SGX environment.
+
 ## Understanding the startup process and internal dependencies
 
 Data providers and lifecycle managers are designed to discover each other using `libp2p`. While starting the service, it connects to the blockchain then analyses the `chainIdentity` from the `parachain`, `libp2p` will be initialized with the identity key and the `chainIdentity`. After the initialization, the service should begin its work and discover other peers via mDNS as well as the bootstrap node configured.
@@ -37,6 +39,168 @@ A data provider fetches data from the `parachain` and the `relaychain`(called `p
 While starting the lifecycle manager, it connects to the Redis server for the trade queue. There should be only 1 lifecycle manager and 1 trader accessing the same Redis server. The trader paired with the lifecycle manager should use the same identity key to ensure that the trader can decrypt the private key of saved pools. While the lifecycle requires a specified Redis server to start, it doesn’t require any data provider to start the service. It will wait until any valid data providers are discovered, which means it’s safe to stop the data provider when the lifecycle manager running, and you can build an HA setup for data providers.
 
 Data in the Redis server should never be persisted since the lifecycle manager always builds states from the blockchain and `pRuntime`. Restart the lifecycle manager, the trader, and the Redis server together when any error occurs.
+
+## Quickstart with Docker Compose
+
+We recommend deploying the services with Docker Compose, to install Docker and Docker Compose, please refer to the documentation:
+- [Installing Docker](https://docs.docker.com/engine/install/#server)
+- [Installing Docker Compose](https://docs.docker.com/compose/install/)
+
+We assume you have already [acknowledged the basic usage](https://docs.docker.com/compose/gettingstarted/) of Docker and Docker Compose to complete this guide.
+
+The `host` network driver is recommended when deploying with Docker to work with the auto discovery feature of Runtime Bridge.
+
+### Data Prodvider
+
+Edit and save following content in `docker-compose.yml`:
+
+```yaml
+version: "3"
+
+x-defaults: &defaults
+  volumes: &default-volume-config
+    - ./data:/var/data
+
+services:
+  data_provider:
+    image: phalanetwork/prb:next
+    hostname: data_provider
+    network_mode: host
+    restart: always
+    volumes: *default-volume-config
+    logging:
+      options:
+        max-size: "1g"
+    environment:
+      - PHALA_MODULE=data_provider
+      - NODE_ENV=development
+      - PHALA_LOGGER_LEVEL=debug
+      - PHALA_PARENT_CHAIN_ENDPOINT=ws://path.to.kusama.node:9945
+      - PHALA_CHAIN_ENDPOINT=ws://path.to.khala.node:9944
+      - PHALA_WALKIE_LISTEN_ADDRESSES=/ip4/0.0.0.0/tcp/28888
+      - PHALA_BRIDGE_IDENTITY=production
+      - PHALA_LIFECYCLE_BLOB_SERVER_SESSION_MAX_MEMORY=64
+    entrypoint:
+      - "node"
+      - "--trace-warnings"
+      - "--experimental-json-modules"
+      - "--es-module-specifier-resolution=node"
+      - "--harmony-top-level-await"
+      - "dist/index"
+
+  monitor:
+    image: phalanetwork/prb-monitor:next
+    hostname: monitor
+    network_mode: host
+    environment:
+      - PTP_BOOT_NODES=/ip4/127.0.0.1/tcp/28888/peer_id_of_data_provider
+
+```
+
+Run `docker-compose up` to start the data provider, open the monitor with `http://localhost:3000` in the browser, you will see the status of the data provider even the `PTP_BOOT_NODES` has not been set properly.
+
+
+### Lifecycle Manager and Trader
+
+Edit and save following content in `docker-compose.yml`:
+
+```yaml
+version: "3"
+
+x-defaults: &defaults
+  volumes: &default-volume-config
+    - ./data:/var/data
+
+services:
+  redis-q:
+    network_mode: host
+    image: redis:alpine
+    hostname: redis-q
+    restart: always
+    logging:
+      options:
+        max-size: "1g"
+    command: ["redis-server", "--port", "63792", "--appendonly", "no", '--save', '']
+
+  arena:
+    network_mode: host
+    image: phalanetwork/prb:next
+    hostname: arena
+    restart: always
+    depends_on:
+      - redis-q
+    environment:
+      - PHALA_MODULE=utils/arena
+      - NODE_ENV=development
+      - PHALA_LOGGER_LEVEL=debug
+      - PHALA_NAMESPACE=default
+      - REDIS_ENDPOINT=redis://127.0.0.1:63792/
+
+  trade:
+    network_mode: host
+    image: phalanetwork/prb:next
+    hostname: trade
+    restart: always
+    volumes: *default-volume-config
+    logging:
+      options:
+        max-size: "1g"
+    depends_on:
+      - redis-q
+    environment:
+      - PHALA_MODULE=trade
+      - NODE_ENV=development
+      - PHALA_DB_NAMESPACE=default
+      - PHALA_DB_FETCH_NAMESPACE=fetch
+      - PHALA_DB_ENDPOINT=redis://127.0.0.1:6666
+      - PHALA_LOGGER_LEVEL=debug
+      - PHALA_PARENT_CHAIN_ENDPOINT=ws://10.87.0.101:9945
+      - PHALA_CHAIN_ENDPOINT=ws://10.87.0.101:9944
+      - PHALA_Q_REDIS_ENDPOINT=redis://127.0.0.1:63792/
+    entrypoint:
+      - "node"
+      - "--trace-warnings"
+      - "--experimental-json-modules"
+      - "--es-module-specifier-resolution=node"
+      - "--harmony-top-level-await"
+      - "dist/index"
+
+  lifecycle:
+    network_mode: host
+    image: phalanetwork/prb:next
+    hostname: lifecycle
+    restart: always
+    depends_on:
+      - redis-q
+    volumes: *default-volume-config
+    logging:
+      options:
+        max-size: "1g"
+    environment:
+      - PHALA_MODULE=lifecycle
+      - NODE_ENV=development
+      - PHALA_PARENT_CHAIN_ENDPOINT=ws://path.to.kusama.node:9945
+      - PHALA_CHAIN_ENDPOINT=ws://path.to.khala.node:9944
+      - PHALA_Q_REDIS_ENDPOINT=redis://127.0.0.1:63792/
+      - PHALA_LRU_CACHE_SIZE=50
+      - PHALA_LRU_CACHE_MAX_AGE=90000
+      - PHALA_RUNNER_MAX_WORKER_NUMBER=100
+      - PHALA_PRPC_REQUEST_TIMEOUT=60000
+      - PHALA_BRIDGE_IDENTITY=production
+      - PHALA_WALKIE_LISTEN_ADDRESSES=/ip4/0.0.0.0/tcp/29888
+      - PHALA_WALKIE_BOOT_NODES=/ip4/ip.of.data.provider/tcp/28888/p2p/some_peer_id
+    entrypoint:
+      - "node"
+      - "--trace-warnings"
+      - "--experimental-json-modules"
+      - "--es-module-specifier-resolution=node"
+      - "--harmony-top-level-await"
+      - "dist/index"
+```
+
+Run `docker-compose up` to start the data provider, the lifecycle manager should be discovered and accessible in the monitor.
+
+Open `http://127.0.0.1:4567` in the browser to check the queue of on-chain transactions.
 
 ## Configuring Runtime Bridge
 
@@ -54,6 +218,7 @@ Services with a Runtime Bridges setup are configured with environment variables.
 | PHALA_PEER_ID_PREFIX | The path storing identity keys, defaults to '/var/data/keys/id'. |
 | PHALA_WALKIE_LISTEN_ADDRESSES | The multiaddr(https://github.com/libp2p/specs/tree/master/addressing) of listen address for libp2p, defaults to '/ip4/0.0.0.0/tcp/0,/ip6/::/tcp/0' which means listen to a random port on every interface. Only TCP protocol is supported. Use a comma between addresses. |
 | PHALA_WALKIE_BOOT_NODES | The multiaddr list of bootstrap nodes for peer discovery, defaults to '/ip4/0.0.0.0/tcp/18888,/ip6/::/tcp/28889' which means no bootstrap node. Only TCP protocol is supported. Use a comma between addresses. |
+| PHALA_BRIDGE_IDENTITY | The bridge identity in the PRB Walkie protocol, used to specify namespace. |
 
 ### Items for data providers
 
@@ -152,3 +317,9 @@ curl --location --request POST 'http://path.to.monitor/ptp/proxy/Qmbz...RjpwY/Cr
 ```
 
 Restart the lifecycle manager after modified pools/workers.
+
+## Community Works
+
+These resources contributed by the community might be useful, use at your own risk:
+- [中文部署教程 / Deployment guide in Chinese](https://github.com/suugee/phala-prb/tree/next)
+- [Staking Calculator](https://phala.one/stake/)
