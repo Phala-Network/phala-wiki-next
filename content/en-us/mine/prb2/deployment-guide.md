@@ -50,6 +50,34 @@ We assume you have already [acknowledged the basic usage](https://docs.docker.co
 
 The `host` network driver is recommended when deploying with Docker to work with the auto discovery feature of Runtime Bridge.
 
+### Local Node
+
+Edit and save following content in `docker-compose.yml`:
+
+```yaml
+version: "3"
+services:
+  node:
+    image: phalanetwork/khala-node:latest
+    container_name: node
+    hostname: node
+    restart: always
+    ports:
+     - "9933:9933"
+     - "9934:9934"
+     - "9944:9944"
+     - "9945:9945"
+     - "30333:30333"
+     - "30334:30334"
+    environment:
+     - NODE_NAME=PNODE
+     - NODE_ROLE=MINER
+    volumes:
+     - /var/khala-dev-node:/root/data
+```
+
+It's recommended to build a TCP load balancer for the node in production environment.
+
 ### Data Prodvider
 
 Edit and save following content in `docker-compose.yml`:
@@ -99,6 +127,7 @@ services:
 
 Run `docker-compose up` to start the data provider, open the monitor with `http://localhost:3000` in the browser, you will see the status of the data provider even the `PTP_BOOT_NODES` has not been set properly.
 
+One data provider can be shared by multiple lifecycle managers.
 
 ### Lifecycle Manager and Trader
 
@@ -149,13 +178,8 @@ services:
       - redis-q
     environment:
       - PHALA_MODULE=trade
-      - NODE_ENV=development
-      - PHALA_DB_NAMESPACE=default
-      - PHALA_DB_FETCH_NAMESPACE=fetch
-      - PHALA_DB_ENDPOINT=redis://127.0.0.1:6666
-      - PHALA_LOGGER_LEVEL=debug
-      - PHALA_PARENT_CHAIN_ENDPOINT=ws://10.87.0.101:9945
-      - PHALA_CHAIN_ENDPOINT=ws://10.87.0.101:9944
+      - PHALA_PARENT_CHAIN_ENDPOINT=ws://path.to.kusama.node:9945
+      - PHALA_CHAIN_ENDPOINT=ws://path.to.khala.node:9944
       - PHALA_Q_REDIS_ENDPOINT=redis://127.0.0.1:63792/
     entrypoint:
       - "node"
@@ -178,7 +202,6 @@ services:
         max-size: "1g"
     environment:
       - PHALA_MODULE=lifecycle
-      - NODE_ENV=development
       - PHALA_PARENT_CHAIN_ENDPOINT=ws://path.to.kusama.node:9945
       - PHALA_CHAIN_ENDPOINT=ws://path.to.khala.node:9944
       - PHALA_Q_REDIS_ENDPOINT=redis://127.0.0.1:63792/
