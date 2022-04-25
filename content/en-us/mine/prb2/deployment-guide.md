@@ -52,7 +52,7 @@ The `host` network driver is recommended when deploying with Docker to work with
 
 ### Local Node
 
-Edit and save following content in `docker-compose.yml`:
+Edit and save following content in `docker-compose.yml` in a directory for node deployment:
 
 ```yaml
 version: "3"
