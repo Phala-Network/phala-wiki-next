@@ -80,7 +80,7 @@ It's recommended to build a TCP load balancer for the node in production environ
 
 ### Data Prodvider
 
-Edit and save following content in `docker-compose.yml`:
+Edit and save following content in `docker-compose.yml` in another directory:
 
 ```yaml
 version: "3"
