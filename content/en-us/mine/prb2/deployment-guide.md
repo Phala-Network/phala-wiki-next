@@ -320,6 +320,6 @@ Restart the lifecycle manager after modified pools/workers.
 
 ## Community Works
 
-These resource contributed by the community might be useful, use at your own risk:
+These resources contributed by the community might be useful, use at your own risk:
 - [中文部署教程 / Deployment guide in Chinese](https://github.com/suugee/phala-prb/tree/next)
 - [Staking Calculator](https://phala.one/stake/)
