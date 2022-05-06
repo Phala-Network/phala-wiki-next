@@ -29,7 +29,7 @@ It can be seen that we can not only realize the cross-chain transfer of assets t
 
 ## MultiAsset and MultiLocation
 
-The purpose of SubBridge is to connect assets in multiple chains. Therefore, how to unify the definitions of assets and locations in multiple chains is the first problem we need to solve. After research, we thought of MultiAsset and MultiLocation in the Polkadot XCM protocol (XCM: https://github.com/paritytech/xcm-format). MultiAsset is used to represent a certain asset on a certain chain. For example, the asset of PHA can be expressed as:
+The purpose of SubBridge is to connect assets in multiple chains. Therefore, how to unify the definitions of assets and locations in multiple chains is the first problem we need to solve. After research, we thought of MultiAsset and MultiLocation in the Polkadot [XCM protocol](https://github.com/paritytech/xcm-format). MultiAsset is used to represent a certain asset on a certain chain. For example, the asset of PHA can be expressed as:
 
 ```rust
 MultiAsset::new(Fungible(amount), Concrete(pha_location))
@@ -131,18 +131,17 @@ Similarly, when a cross-chain transfer is initiated from EVM Chains, the ChainBr
 
 Subbridge's Chainbridge cross-chain bridge module is maintained and developed by the Phala team and is responsible for running three Relayers. The Relayer of the Chainbridge cross-chain bridge constructs the captured origin chain cross-chain transaction into a proposal, and then the three relayers vote on the Proposal. After the vote is passed, the proposal will be executed and the assets will be deposited in the user address.
 
-About Chainbridge, you can refer to: [https://github.com/ChainSafe/ChainBridge](https://github.com/ChainSafe/ChainBridge).
+About Chainbridge, you can refer to their [websit](https://github.com/ChainSafe/ChainBridge).
 
-For the Phala Ethereum Chainbridge contract, please refer to: [https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
+For the Phala Ethereum Chainbridge contract, please refer to source code on [github](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
 
 ## Code Auditing
 
 The bridges currently integrated by SubBridge include two implementations, XCM and ChainBridge.
 
-XCM is a cross-chain message protocol implemented by Parity Tech in the two networks of Polkadot and Kusama. Its code has been audited by a third-party audit firm hired by Parity. The audit report on XCM V2 (the current version of XCM used by SubBridge) can be found here: [https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf](https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf)
+XCM is a cross-chain message protocol implemented by Parity Tech in the two networks of Polkadot and Kusama. Its code has been audited by a third-party audit firm hired by Parity. The audit report on XCM V2 (the current version of XCM used by SubBridge) can be found [here](https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf)
 
-Earlier last year, we deployed ChainBridge’s Solidity contract on Ethereum. The contract address is: [https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9](https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9)
-Up to now, the contract has been running safely for nearly a year, and the contract has also been audited by Certik, a third-party auditor hired by Phala. The detailed audit report can be found here: [https://www.certik.com/projects/phalanetwork](https://www.certik.com/projects/phalanetwork)
+Earlier last year, we deployed ChainBridge’s Solidity contract on Ethereum. The contract info can be found [here](https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9). Recently we migrated the old contract to the new deploy one `0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9`. Up to now, the contract has been running safely for nearly a year, and the contract has also been audited by Certik, a third-party auditor hired by Phala. The detailed audit report can be found [here](https://www.certik.com/projects/phalanetwork)
 
 ## Reference
 
