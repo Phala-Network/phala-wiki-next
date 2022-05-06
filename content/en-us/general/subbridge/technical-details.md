@@ -1,6 +1,6 @@
 ---
 title: 'Technical Details'
-weight: 1003
+weight: 1005
 menu:
   general:
     parent: "general-bridge"
@@ -77,7 +77,7 @@ Steps to do the registration stuff are as follow:
     
     There are several things we need to pay attention to. The first one is that each asset has a bunch of metadata defined in `pallet-assets`, like `name`, `symbol`, etc. We have provided an extrinsic called `forceSetMetadata` in `pallet-registry` which can be used to update metadata of an asset. Another one is that each asset has some sovereign accounts used to manage the asset, like `Issuer` , `Admin`, etc. Different account has different permission. In `asset-registry`, we set all the sovereign accounts of each asset to an account derived by `PalletId(b"phala/ar")`. Which means no external account has permission to do things beyond authority.
     
-    All registered assets can be found at [here]([https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/assets](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/assets)). The asset registration informations are stored on chain, head to [polkadot.js.app](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/chainstate) and choose rpc `assetsRegistry→registryInfoByIds` to see details. Here is a screenshoot of KSM registration information:
+    All registered assets can be found at [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/assets). The asset registration informations are stored on chain, head to [polkadot.js.app](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/chainstate) and choose rpc `assetsRegistry→registryInfoByIds` to see details. Here is a screenshoot of KSM registration information:
 
 <p>
     <img src="/images/general/subbridge-assetinfo.png" style="background-color:white;" alt>
@@ -108,10 +108,10 @@ Steps to do the registration stuff are as follow:
 
     Looking to the ChainBridge filed, the `chainId` is 2 means it has enabled crosschain transfer between Khala network and Moonriver EVM. `ResourceId` is used to bind ZLK on Khala network and ERC20-ZLK on Moonriver EVM. `reserveAccount` is used to save ZLK temporarily when transfer ZLK from Khala network to Moonriver EVM, and will transfer back to recipient account when someone transfer ZLK from Moonriver EVM back to Khala network. `isMintable` is `false` tells the client that should aware of the ZLK balance of reserve account.
 
-- Step3[If Step2 has been done], we also need to config your asset on our ChainBridge [Bridge contract]([https://github.com/Phala-Network/chainbridge-solidity/blob/phala-bridge/contracts/Bridge.sol](https://github.com/Phala-Network/chainbridge-solidity/blob/phala-bridge/contracts/Bridge.sol)) before finally launch the crosschain transfer through ChainBridge. It including:
-    - Binding resource id generated during registration with its ERC20 contract address. This essentially is done by executing method [adminSetResource]([https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L204](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L204)) of Bridge contract.
-    - Set decimals of the asset by executing method [adminSetDecimals]([https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L247](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L247)). SubBridge is compatible with the scenario that asset has different decimals between substrate side and EVM side.
-    - If your asset is burnable and would like to give the mint/burn permission to our contract, we need to tell the contract mark your asset as burnable by executing method [adminSetBurnable]([https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L236](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L236)). With burnable set, when user transfer asset from EVM chains, the asset would  be burned directly from their account, and mint to the recipient account when someone transfer back to EVM chains.
+- Step3[If Step2 has been done], we also need to config your asset on our ChainBridge [Bridge contract](https://github.com/Phala-Network/chainbridge-solidity/blob/phala-bridge/contracts/Bridge.sol) before finally launch the crosschain transfer through ChainBridge. It including:
+    - Binding resource id generated during registration with its ERC20 contract address. This essentially is done by executing method [adminSetResource](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L204) of Bridge contract.
+    - Set decimals of the asset by executing method [adminSetDecimals](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L247). SubBridge is compatible with the scenario that asset has different decimals between substrate side and EVM side.
+    - If your asset is burnable and would like to give the mint/burn permission to our contract, we need to tell the contract mark your asset as burnable by executing method [adminSetBurnable](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L236). With burnable set, when user transfer asset from EVM chains, the asset would  be burned directly from their account, and mint to the recipient account when someone transfer back to EVM chains.
 
 
 ## The Lifecycle of Cross-chain Transaction
