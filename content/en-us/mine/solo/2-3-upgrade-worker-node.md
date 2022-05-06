@@ -1,6 +1,6 @@
 ---
 title: "Update your Miner's Node"
-weight: 1023
+weight: 1024
 menu:
   mine:
     parent: "mine-solo"
