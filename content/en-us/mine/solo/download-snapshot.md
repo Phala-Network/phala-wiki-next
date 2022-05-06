@@ -1,5 +1,5 @@
 ---
-title: "Accelerate Syncing with Snapshot"
+title: "Accelerate Khala Syncing"
 weight: 1023
 menu:
   mine:
@@ -45,35 +45,3 @@ tar -xvzf khala-node-snapshot-2022-04-30.tar.gz
 
 The extraction will take a while to complete as well. After extraction, you should get a folder named `khala-node`.
 You can list your files with `ls` to verify where you extracted the snapshot.
-
-### Use the Snapshot
-
-Please ensure all Phala services are stopped on your node. Hence, to stope them use:
-
-```bash
-sudo phala stop
-```
-
-To replace your block heights with the snapshot, delete the node's current synchronization status.
-
-```bash
-rm -r /var/khala-dev-node/chains
-rm -r /var/khala-dev-node/polkadot
-```
-
-Now move the snapshot into the correct directory.
-
-```bash
-mv ~/khala-node/chains/ /var/khala-dev-node
-mv ~/khala-node/polkadot/ /var/khala-dev-node
-```
-
-Delete all files and folders inside `/var/khala-dev-node`，move all files and folders from `khala-node` into `/var/khala-dev-node`
-
-#### Restart the Phala Node
-
-```bash
-sudo phala start
-```
-
-Your node has now been fast-forwarded and will be usable for mining sooner.

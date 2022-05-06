@@ -1,5 +1,5 @@
 ---
-title: "Accelerate Syncing with Snapshot"
+title: "Accelerate PRB Syncing"
 weight: 2002
 menu:
   mine:
@@ -21,7 +21,3 @@ To extract the file execute:
 ```bash
 tar -xvzf prb-next-snapshot-2022-04-30.tar.gz
 ```
-
-### Use the Snapshot
-
-<!-- TODO -->
