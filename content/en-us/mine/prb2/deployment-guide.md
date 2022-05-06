@@ -78,7 +78,7 @@ services:
 
 It's recommended to build a TCP load balancer for the node in production environment.
 
-### Data Prodvider
+### Data Provider
 
 Edit and save following content in `docker-compose.yml` in another directory:
 
