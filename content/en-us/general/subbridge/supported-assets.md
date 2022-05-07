@@ -6,13 +6,15 @@ menu:
     parent: "general-bridge"
 ---
 
-We have supported the following assets. The asset id is a type of uint32. Each asset except PHA on Khala will have a unique asset id. You can use [pallet-assets](https://github.com/paritytech/substrate/tree/master/frame/assets) to transfer the asset to any accounts within the Khala network. The table below describes the asset id and which chain has supported the asset. For example, we can transfer ZLK between parachains and Moonriver EVM, but we can not transfer it between parachains and Ethereum.
+Currently, we have supported the following assets with the corresponding transfer routes. The table below shows which chains have been supported for each asset. For example, we can transfer ZLK between parachains and Moonriver EVM, but we cannot transfer it between parachains and Ethereum.
 
-| Name | AssetId | Parachains | Ethereum | Moonriver EVM |
-| --- | --- | --- | --- | --- |
-| PHA | Null | ✅ | ✅ | ❌ |
-| KSM | 0 | ✅ | ❌ | ❌ |
-| KAR | 1 | ✅ | ❌ | ❌ |
-| BNC | 2 | ✅ | ❌ | ❌ |
-| ZLK | 3 | ✅ | ❌ | ✅ |
-| aUSD | 4 | ✅ | ❌ | ❌ |
+An asset id of type *uint32* is allocated for each registered asset. Each asset except PHA on Khala will have an unique asset id. You can use [pallet-assets](https://github.com/paritytech/substrate/tree/master/frame/assets) to transfer asset to any accounts within Khala Network.
+
+| Name | Parachains | Ethereum | Moonriver EVM |
+| ---: | :--------: | :------: | :-----------: |
+|  PHA |     ✅      |    ✅     |       ❌       |
+|  KSM |     ✅      |    ❌     |       ❌       |
+|  KAR |     ✅      |    ❌     |       ❌       |
+|  BNC |     ✅      |    ❌     |       ❌       |
+|  ZLK |     ✅      |    ❌     |       ✅       |
+| aUSD |     ✅      |    ❌     |       ❌       |
