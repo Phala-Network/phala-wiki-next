@@ -1,6 +1,6 @@
 ---
 title: 'Technical Details'
-weight: 1003
+weight: 1005
 menu:
   general:
     parent: "general-bridge"
@@ -8,7 +8,7 @@ menu:
 
 SubBridge is different from general cross-chain solutions in that they only realize the transfer of assets and data between two chains.
 
-SubBridge is more like a router linking different cross-chain bridges, and allow asset transfer from one chain to any other chains which have been registered. For example, we have implemented the transfer of ERC20 assets on Moonriver and Ethereum to other parachains in the Polkadot ecosystem through SubBridge. To accomplish this, it is not necessary for the parachain receiving the asset to have an EVM cross-chain bridge integrated into its own runtime. This is done by the SubBridge module that exists on Khala.
+SubBridge is more like a router linking different cross-chain bridges and allows asset transfer from one chain to any other chains which have been registered. For example, we have implemented the transfer of ERC20 assets on Moonriver and Ethereum to other parachains in the Polkadot ecosystem through SubBridge. To accomplish this, it is not necessary for the parachain receiving the asset to have an EVM cross-chain bridge integrated into its runtime. This is done by the SubBridge module that exists on Khala.
 
 <p>
     <img src="/images/general/subbridge-pallets.png" style="background-color:white;" alt>
@@ -29,7 +29,7 @@ It can be seen that we can not only realize the cross-chain transfer of assets t
 
 ## MultiAsset and MultiLocation
 
-The purpose of SubBridge is to connect assets in multiple chains. Therefore, how to unify the definitions of assets and locations in multiple chains is the first problem we need to solve. After research, we thought of MultiAsset and MultiLocation in the Polkadot XCM protocol (XCM: https://github.com/paritytech/xcm-format). MultiAsset is used to represent a certain asset on a certain chain. For example, the asset of PHA can be expressed as:
+The purpose of SubBridge is to connect assets in multiple chains. Therefore, how to unify the definitions of assets and locations in multiple chains is the first problem we need to solve. After research, we thought of MultiAsset and MultiLocation in the Polkadot [XCM protocol](https://github.com/paritytech/xcm-format). MultiAsset is used to represent a certain asset on a certain chain. For example, the asset of PHA can be expressed as:
 
 ```rust
 MultiAsset::new(Fungible(amount), Concrete(pha_location))
@@ -67,9 +67,52 @@ MultiLocation::new(1, X3(Parachain(2004), GeneralIndex(chain), GeneralKey(token)
 
 The registration of SubBridge assets is mainly divided into two parts:
 
-The first part is to register assets into the pallet-assets module. SubBridge uses the pallet-assets module provided by Substrate to manage the registered assets. The registered assets will be assigned an asset id. When registering assets, the asset location mentioned above will be recorded in the assets-wrapper module (which will be replaced by the assets-registry module soon). Unregistered assets will fail regardless of whether they are transferred via the EVM bridge or the XCM bridge.
+The first part is to register assets into the pallet-assets module. SubBridge uses the pallet-assets module provided by Substrate to manage the registered assets. The registered assets will be assigned an asset id. Each asset has an extra [registry info](https://github.com/Phala-Network/khala-parachain/blob/5ab4f77163c811fb4a02d337791ce669b41481ad/pallets/assets-registry/src/lib.rs#L62) which contains information of location, enabled bridges and properties. Unregistered assets will fail regardless of whether they are transferred via the EVM bridge or the XCM bridge.
 
 The second part is to enable the corresponding EVM bridge. This part is only for the asset settings that want to carry out the cross-chain requirement from Khala to the EVM chain. In SubBridge, the same asset can enable both ChainBridge-based bridges and CelerBridge-based bridges (coming soon). In practice, users are always willing to choose solutions with lower fees.
+
+The steps to do the registration stuff are as follow:
+
+- Step1, we schedule a call of `pallet-registry::forceRegisterAsset` with given registration informations. When the council enacted the call, an asset instance will be created by `pallet-assets`, and some extra registration information will be saved in `pallet-registry`.
+    
+    There are several things we need to pay attention to. The first one is that each asset has a bunch of metadata defined in `pallet-assets`, like `name`, `symbol`, etc. We have provided an extrinsic called `forceSetMetadata` in `pallet-registry` which can be used to update the metadata of an asset. Another one is that each asset has some sovereign accounts used to manage the asset, like `Issuer`, `Admin`, etc. Different account has different permission. In `asset-registry`, we set all the sovereign accounts of each asset to an account derived by `PalletId(b"phala/ar")`. This means no external account has permission to do things beyond authority.
+    
+    All registered assets can be found at [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/assets). The asset registration informations are stored on-chain, head to [polkadot.js.app](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/chainstate) and choose RPC `assetsRegistry→registryInfoByIds` to see details. Here is a screenshot of KSM registration information:
+
+<p>
+    <img src="/images/general/subbridge-assetinfo.png" style="background-color:white;" alt>
+    <figcaption align = "center">Registration infomartion of KSM</figcaption>
+</p>
+
+- Step2[optional], after the asset was registered, by default all assets will enable XCM crosschain transfer. If the asset is going to enable ChainBridge, another call named `assetRegistry::forceEnabledChainbridge` should be enacted by the council. This will enable the crosschain transfer to a specific EVM chain. And `assetRegistry::forceDisableChainBridge` is used to disable it. When ChainBridge was enabled for the asset, you will see we have new data being added to the returned registration information. For example, the enabled-bridges information of ZLK is shown below:
+
+    ```sh
+    enabledBridges: [
+        {
+            config: Xcmp
+            metadata: 
+        }
+        {
+            config: {
+            ChainBridge: {
+                chainId: 2
+                resourceId: 0x028da1efb56e124f659fa6d5d95b3cc541ce207cbfee2f4f066061cc92d37bae
+                reserveAccount: 0xde50ca45c8f7323ea372fd5d7929b9f37946690b0b668985beebe60431badcea
+                isMintable: false
+            }
+            }
+            metadata: 0x00
+        }
+    ]
+    ```
+
+    Looking at the ChainBridge filed, the `chainId` is 2 means it has enabled crosschain transfer between the Khala network and Moonriver EVM. `ResourceId` is used to bind ZLK on the Khala network and ERC20-ZLK on Moonriver EVM. `reserveAccount` is used to save ZLK temporarily when transferring ZLK from the Khala network to Moonriver EVM, and will transfer back to the recipient account when someone transfer ZLK from Moonriver EVM back to Khala network. `isMintable` is `false` tells the client that should aware of the ZLK balance of reserve account.
+
+- Step3[If Step2 has been done], we also need to config your asset on our ChainBridge [Bridge contract](https://github.com/Phala-Network/chainbridge-solidity/blob/phala-bridge/contracts/Bridge.sol) before finally launching the crosschain transfer through ChainBridge. It including:
+    - Binding resource id generated during registration with its ERC20 contract address. This essentially is done by executing method [adminSetResource](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L204) of Bridge contract.
+    - Set decimals of the asset by executing method [adminSetDecimals](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L247). SubBridge is compatible with the scenario that asset has different decimals between substrate side and EVM side.
+    - If your asset is burnable and would like to give the mint/burn permission to our contract, we need to tell the contract to mark your asset as burnable by executing method [adminSetBurnable](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L236). With burnable set, when the user transfers asset from EVM chains, the asset would be burned directly from their account, and mint to the recipient account when someone transfers back to EVM chains.
+
 
 ## The Lifecycle of Cross-chain Transaction
 
@@ -88,18 +131,17 @@ Similarly, when a cross-chain transfer is initiated from EVM Chains, the ChainBr
 
 Subbridge's Chainbridge cross-chain bridge module is maintained and developed by the Phala team and is responsible for running three Relayers. The Relayer of the Chainbridge cross-chain bridge constructs the captured origin chain cross-chain transaction into a proposal, and then the three relayers vote on the Proposal. After the vote is passed, the proposal will be executed and the assets will be deposited in the user address.
 
-About Chainbridge, you can refer to: [https://github.com/ChainSafe/ChainBridge](https://github.com/ChainSafe/ChainBridge).
+About Chainbridge, you can refer to their [websit](https://github.com/ChainSafe/ChainBridge).
 
-For the Phala Ethereum Chainbridge contract, please refer to: [https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
+For the Phala Ethereum Chainbridge contract, please refer to the source code on [github](https://github.com/Phala-Network/chainbridge-solidity/tree/phala-bridge).
 
 ## Code Auditing
 
 The bridges currently integrated by SubBridge include two implementations, XCM and ChainBridge.
 
-XCM is a cross-chain message protocol implemented by Parity Tech in the two networks of Polkadot and Kusama. Its code has been audited by a third-party audit firm hired by Parity. The audit report on XCM V2 (the current version of XCM used by SubBridge) can be found here: [https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf](https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf)
+XCM is a cross-chain message protocol implemented by Parity Tech in the two networks of Polkadot and Kusama. Its code has been audited by a third-party audit firm hired by Parity. The audit report on XCM V2 (the current version of XCM used by SubBridge) can be found [here](https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf)
 
-Earlier last year, we deployed ChainBridge’s Solidity contract on Ethereum. The contract address is: [https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9](https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9)
-Up to now, the contract has been running safely for nearly a year, and the contract has also been audited by Certik, a third-party auditor hired by Phala. The detailed audit report can be found here: [https://www.certik.com/projects/phalanetwork](https://www.certik.com/projects/phalanetwork)
+Earlier last year, we deployed ChainBridge’s Solidity contract on Ethereum. The contract info can be found [here](https://etherscan.io/address/0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9). Recently we migrated the old contract to the new deploy one `0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9`. Up to now, the contract has been running safely for nearly a year, and the contract has also been audited by Certik, a third-party auditor hired by Phala. The detailed audit report can be found [here](https://www.certik.com/projects/phalanetwork)
 
 ## Reference
 

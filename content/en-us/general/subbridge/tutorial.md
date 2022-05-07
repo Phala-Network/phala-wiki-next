@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial'
+title: 'User Tutorial'
 weight: 1002
 menu:
   general:
