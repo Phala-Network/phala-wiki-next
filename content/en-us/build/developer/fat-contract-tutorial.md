@@ -45,7 +45,7 @@ The following toolchains are needed:
         - Homebrew for macOS: `brew install binaryen`
         - Apt for Ubuntu: `sudo apt install binaryen`
         - or download the [release](https://github.com/WebAssembly/binaryen/releases/tag/version_105) and put it under your `$PATH`
-    - Install dylint-link toolchain: `cargo install cargo-dylint dylint-link` 
+    - Install dylint-link toolchain: `cargo install cargo-dylint dylint-link`
     - Install contract toolchain: `cargo install cargo-contract --force`
     - For macOS M1 chip users: `rustup component add rust-src --toolchain nightly-aarch64-apple-darwin`
 - Install frontend toolchain
@@ -78,7 +78,7 @@ Our Testnet is launched in the `dev` mode, so there are some pre-defined develop
 
 ![](/images/build/tutor-accounts.png)
 
-Also you can install Polkadot.js extension and create/import the Phala gas account following the [tutorial](/en-us/general/applications/01-polkadot-extension/)
+Also you can install Polkadot.js extension and create/import the Phala gas account following the [official tutorial](https://wiki.polkadot.network/docs/learn-account-generation#polkadotjs-browser-extension)
 - Connect to Phala Testnet
     - Open <https://polkadot.js.org/apps/>;
     - Click left top to switch network;
