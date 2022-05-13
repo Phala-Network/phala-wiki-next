@@ -62,24 +62,24 @@ After the issue is opened, feel free to notify the team on our [Discord channel]
 
 Before onboarding your asset to the Khala network, we must make sure everything works properly on the [Rhala network](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frhala-api.phala.network%2Fws#/explorer), which is our test parachain on Rococo. For parachain assets, you can choose to test the registration locally before running a test with the Phala team on Rococo. We have provided a [config file](https://github.com/Phala-Network/subbridge-integration/blob/main/thala_karura.config.json) which contains the information on how to run our test runtime `Thala` with `polkadot-launch`. Check [here](https://github.com/paritytech/polkadot-launch) to find more about `polkadot-launch`.
 
-For both parachain assets and EVM assets, the necessary step is to test the whole integration stuff on Rococo with the Phala team. The parachain registration on Rococo is maintained by Parity, if you are a parachain asset and you haven't been a Rococo parachain, please **notice the Parity team to onboard your chain on Rococo, also don't forget to let them open HRMP channels between your parachain and Rhala network**. If you are an EVM asset, please **deploy an ERC20 asset on Rinkeby in advance, which will be used to config the EVM bridge.** The architecture of the test net is as follow:
+For both parachain assets and EVM assets, the necessary step is to test the whole integration stuff on Rococo with the Phala team. The parachain registration on Rococo is maintained by Parity, if you are a parachain asset and you haven't been a Rococo parachain, please **notice the Parity team to onboard your chain on Rococo, also don't forget to let them open HRMP channels between your parachain and Rhala network**. If you are an EVM asset, please **deploy an ERC20 asset on Kovan in advance, which will be used to config the EVM bridge.** The architecture of the test net is as follow:
 
 <p>
     <img src="/images/general/subbridge-rhala.png" style="background-color:white;" alt>
     <figcaption align = "center">Rhala Testnet Architecture</figcaption>
 </p>
 
-As shown, we have deployed a test ChainBridge that bridges the Rhala network and Rinkeby, contracts information is as below:
+As shown, we have deployed a test ChainBridge that bridges the Rhala network and Kovan, contracts information is as below:
 
 | Contract     | Address                                    |
 | ------------ | ------------------------------------------ |
-| bridge       | 0x0712Cf53B9fA1A33018d180a4AbcC7f1803F55f4 |
-| erc20Handler | 0x30f8549A46afa69f3F9b46e3C28F456796E6Cf37 |
+| bridge       | 0x0316Ea56000BCdB7D7EAED54fd70898a1fF90C09 |
+| erc20Handler | 0x7b11b07318E2E01b28A75da99F7EB8d635A6d46b |
 
 To start integration testing, please **transfer some assets to our test account in advance**
 
 - For parachain asset, please transfer 10000 of your asset to account `0x7804e66ec9eea3d8daf6273ffbe0a8af25a8879cf43f14d0ebbb30941f578242` on your parachain
-- For EVM asset, please transfer 10000 of your asset(ERC20) to account `0xA29D4E0F035cb50C0d78c8CeBb56Ca292616Ab20` on Rinkeby
+- For EVM asset, please transfer 10000 of your asset(ERC20) to account `0xA29D4E0F035cb50C0d78c8CeBb56Ca292616Ab20` on Kovan
 
 Now it's time to let us know that you have everything ready to do the test with the Phala team on Rococo. We will register your asset on the Rhala network and enable ChainBridge transfer if you are an EVM asset or you certainly want to bridge your parachain asset to EVM chains. Check [**Assets Registration**](../technical-details/#asset-registration) to find more details.
 
@@ -91,7 +91,15 @@ After we have confirmed all functions are working properly on Rococo, we will st
 
 SubBridge contains an XCM-based bridge that can let assets transferred between parachains. If the parachian your asset reserved hasn't opened HRMP channel with Khala network, the first thing we should do is follow these steps to open bi-direction HRMP channels:
 
-> 💡 Steps 1 - 3 are the stuff to open HRMP channels between our two parachains. You can directly jump to Step 4 if it has been done.
+> 💡 Steps 1 - 3 are the stuff to open HRMP channels between our two parachains. You can directly jump to Step 4 if it has been done. **Information of PHA are as follows**:
+
+| Type     | Value                                          |
+| -------- | ---------------------------------------------- |
+| Name     | PHA                                            |
+| Symbol   | PHA                                            |
+| Decimals | 12                                             |
+| ED       | 0.01 PHA                                       |
+| Location | MultiLocation::new(1, X1(Parachain(2004))      |
 
 **Step1: Construct the call to send a request to open the HRMP channel to the Khala network**
 
@@ -228,7 +236,7 @@ An example of transferring 400 PHA from Karura to Ethereum, recipient is `0xA29D
 
 **Example5: transfer an asset from EVM to Khala network**
 
-An example of transferring 100 PHA from Ethereum to the Khala network, the recipient is Alice. Note example code is interact with Bridge contract deployed on Rinkeby test net. Check the [ChainBridge deployment] for more information.
+An example of transferring 100 PHA from Ethereum to the Khala network, the recipient is Alice. Note example code is interact with Bridge contract deployed on Kovan test net. Check the [ChainBridge deployment] for more information.
 
 ```jsx
 0x360000aa00407a10f35a0000000000000000000001010400511f0608636205000650a29d4e0f035cb50c0d78c8cebb56ca292616ab2000bca06501000000
