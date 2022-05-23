@@ -10,11 +10,14 @@ Currently, we have supported the following assets with the corresponding transfe
 
 An asset id of type *uint32* is allocated for each registered asset. Each asset except PHA on Khala will have an unique asset id. You can use [pallet-assets](https://github.com/paritytech/substrate/tree/master/frame/assets) to transfer asset to any accounts within Khala Network.
 
-| Name | Asset ID | Parachains | Ethereum | Moonriver EVM |
-| ---: | :------: | :--------: | :------: | :-----------: |
-|  PHA |   null   |     ✅      |    ✅     |       ❌       |
-|  KSM |     0    |     ✅      |    ❌     |       ❌       |
-|  KAR |     1    |     ✅      |    ❌     |       ❌       |
-|  BNC |     2    |     ✅      |    ❌     |       ❌       |
-|  ZLK |     3    |     ✅      |    ❌     |       ✅       |
-| aUSD |     4    |     ✅      |    ❌     |       ❌       |
+| Name |                     Location                     | Asset ID | Parachains | Ethereum | Moonriver EVM |
+| ---: | :----------------------------------------------: | :------: | :--------: | :------: | :-----------: |
+| PHA  | (1, X1(Parachain(2004)))                         |   null   |     ✅      |    ✅     |      ❌      |
+| KSM  | (1, Here)                                        |     0    |     ✅      |    ❌     |      ❌      |
+| KAR  | (1, X2(Parachain(2000), GeneralKey(0x0080)))     |     1    |     ✅      |    ❌     |      ❌      |
+| BNC  | (1, X2(Parachain(2001), GeneralKey(0x0001)))     |     2    |     ✅      |    ❌     |      ❌      |
+| ZLK  | (1, X2(Parachain(2001), GeneralKey(0x0207)))     |     3    |     ✅      |    ❌     |      ✅      |
+| aUSD | (1, X2(Parachain(2000), GeneralKey(0x0081)))     |     4    |     ✅      |    ❌     |      ❌      |
+| BSX  | (1, X2(Parachain(2090), GeneralKey(0x00000000))) |     5    |     ✅      |    ❌     |      ❌      |
+| MOVR | (1, X2(Parachain(2023), PalletInstance(10)))     |     6    |     ✅      |    ❌     |      ❌      |
+| HKO  | (1, X2(Parachain(2085), GeneralKey("HKO")))      |     7    |     ✅      |    ❌     |      ❌      |
