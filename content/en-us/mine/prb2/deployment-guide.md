@@ -151,44 +151,6 @@ services:
         max-size: "1g"
     command: ["redis-server", "--port", "63792", "--appendonly", "no", '--save', '']
 
-  arena:
-    network_mode: host
-    image: phalanetwork/prb:next
-    hostname: arena
-    restart: always
-    depends_on:
-      - redis-q
-    environment:
-      - PHALA_MODULE=utils/arena
-      - NODE_ENV=development
-      - PHALA_LOGGER_LEVEL=debug
-      - PHALA_NAMESPACE=default
-      - REDIS_ENDPOINT=redis://127.0.0.1:63792/
-
-  trade:
-    network_mode: host
-    image: phalanetwork/prb:next
-    hostname: trade
-    restart: always
-    volumes: *default-volume-config
-    logging:
-      options:
-        max-size: "1g"
-    depends_on:
-      - redis-q
-    environment:
-      - PHALA_MODULE=trade
-      - PHALA_PARENT_CHAIN_ENDPOINT=ws://path.to.kusama.node:9945
-      - PHALA_CHAIN_ENDPOINT=ws://path.to.khala.node:9944
-      - PHALA_Q_REDIS_ENDPOINT=redis://127.0.0.1:63792/
-    entrypoint:
-      - "node"
-      - "--trace-warnings"
-      - "--experimental-json-modules"
-      - "--es-module-specifier-resolution=node"
-      - "--harmony-top-level-await"
-      - "dist/index"
-
   lifecycle:
     network_mode: host
     image: phalanetwork/prb:next
@@ -212,6 +174,8 @@ services:
       - PHALA_BRIDGE_IDENTITY=production
       - PHALA_WALKIE_LISTEN_ADDRESSES=/ip4/0.0.0.0/tcp/29888
       - PHALA_WALKIE_BOOT_NODES=/ip4/ip.of.data.provider/tcp/28888/p2p/some_peer_id
+      - WORKER_KEEPALIVE_ENABLED=true
+      - USE_BUILT_IN_TRADER=true
     entrypoint:
       - "node"
       - "--trace-warnings"
