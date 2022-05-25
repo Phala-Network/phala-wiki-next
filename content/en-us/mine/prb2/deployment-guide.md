@@ -1,6 +1,6 @@
 ---
-title: "Deployment Guide"
-weight: 2001
+title: "Deployment Guide for Latest Version"
+weight: 2000
 menu:
   mine:
     parent: "mine-prb2"
