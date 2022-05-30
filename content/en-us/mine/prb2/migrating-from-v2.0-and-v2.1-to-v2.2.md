@@ -144,6 +144,6 @@ root@pool-controller-active:/opt/prb#  docker-compose up -d
 
 Now the roles are switched. If all went well, your mining should continue where it has left off. If you see major issues, just turn the old active machine back online (after shutdown of the new PRB !)
 
-If all went well i suggest you leave your old-active machine as-is for a few days, but you can restart data_provider to make sure its kept in sync if you need to fail back to the machine. After
+If all went well I suggest you leave your old-active machine as-is for a few days, but you can restart data_provider to make sure it's kept in sync if you need to fail back to the machine. After
 this periode you are advised to upgrade it as well so your HA pair is in version sync again for the next upgrade. Make sure you copy keys to your old active as well. you should also keep the data_old
 folder when you can, at least until you are satisfied the upgrade is successfull.
