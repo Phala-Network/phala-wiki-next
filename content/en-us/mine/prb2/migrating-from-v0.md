@@ -1,6 +1,6 @@
 ---
-title: "Migrating from Runtime Bridge v0"
-weight: 2003
+title: "Migrating from v0"
+weight: 2002
 menu:
   mine:
     parent: "mine-prb2"

@@ -1,6 +1,6 @@
 ---
-title: "Accelerate PRB Syncing"
-weight: 2002
+title: "Snapshot for Data Providers"
+weight: 2003
 menu:
   mine:
     parent: "mine-prb2"

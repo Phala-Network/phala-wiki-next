@@ -126,7 +126,7 @@
   weight = 2000
 
 [[mine]]
-  name = "Runtime Bridge v0"
+  name = "(Deprecated) Runtime Bridge v0"
   identifier = "mine-prb"
   url = "/mine/prb/"
   weight = 2001
