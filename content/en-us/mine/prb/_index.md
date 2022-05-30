@@ -1,4 +1,4 @@
 ---
-title: "Runtime Bridge v0(Deprecated)"
+title: "Deprecated: Runtime Bridge v0"
 weight: 3001
 ---
