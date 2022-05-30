@@ -1,5 +1,5 @@
 ---
-title: "Migrating from v2.0 and v2.1 to v2.2"
+title: "Migrating from v2.x"
 weight: 2001
 menu:
   mine:
