@@ -1,7 +1,7 @@
 ---
 title: "Deploy Local Testnet"
 weight: 10002
-draft: false
+draft: true
 menu:
   docs:
     parent: "pDiem"

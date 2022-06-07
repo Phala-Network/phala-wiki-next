@@ -1,7 +1,7 @@
 ---
 title: "Play with pDiem"
 weight: 10003
-draft: false
+draft: true
 menu:
   docs:
     parent: "pDiem"

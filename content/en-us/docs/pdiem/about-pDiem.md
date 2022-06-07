@@ -1,7 +1,7 @@
 ---
 title: About pDiem
 weight: 10001
-draft: false
+draft: true
 menu:
   docs:
     parent: "pDiem"

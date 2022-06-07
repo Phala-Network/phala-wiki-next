@@ -9,15 +9,15 @@ draft: true
 -   **Hardware**
     -   **CPU**: 6th generation or newer Intel Core/Pentium/Celeron/Atom series.
     -  **Memory**: 2GB - 8GB. 2GB is indeed the minimum memory you should operate your Gatekeeper with. For better performance, you can bump it up to 4GB or 8GB, but memory more than that is unnecessary. In order to compile the binary yourself, you will need around 8GB memory.
-    -   **Mainboard**: SGX-supported mainboard, and newer mainboards can support more SGX features. **We strongly recommend you to consult our Miner Community team about the SGX module before purchasing a board to mine PHA.**
+    -   **Motherboard**: SGX-supported motherboard, and newer motherboards can support more SGX features. **We strongly recommend you to consult our Miner Community team about the SGX module before purchasing a board to mine PHA.**
     - **Storage** - A NVMe solid state drive, and should be reasonably sized to deal with blockchain growth. A SSD of 80GB - 160GB will be enough for the first six months of Phala Network, but this requirement needs to be re-evaluated every six months.
-    For more detail, you may refer to the [miner node requirement](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/).
+    For more detail, you may refer to the [miner node requirement](/en-us/mine/khala-mining/1-0-hardware-requirements/).
 
 -   **Software**
 
     -   Ubuntu 18.04/20.04
-    -   Install [Docker-CE](https://wiki.phala.network/en-us/docs/poc3/1-2-software-configuration/#install-docker-ce)
-    -   Install [SGX drivers](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/#sgx-driver-installation)
+    -   Install [Docker-CE](/en-us/mine/solo/1-1-installing-phala-mining-tools/)
+    -   Install [SGX drivers](/en-us/mine/solo/1-1-installing-phala-mining-tools/)
 	  -   Bandwidth：the stabler, the better
 
 The specs posted above are by no means the minimum specs that you could use when running a
@@ -202,7 +202,7 @@ You can restart your node at this point, omitting the `--unsafe-rpc-expose` flag
 > - Run `ls /dev/sgx` and it returns feedback: you are using **DCAP driver**
 >
 >  If both of the commands work, use the commands of the DCAP driver in the following steps.
->  If none of them work, please refer to [the SGX driver installation](https://wiki.phala.network/en-us/docs/poc3/1-1-hardware-configuration/#sgx-driver-installation) in Phala Guide.
+>  If none of them work, please refer to the [Installing Phala Mining Tools](/en-us/mine/solo/1-1-installing-phala-mining-tools/) in Phala Guide.
 
 <br>
 

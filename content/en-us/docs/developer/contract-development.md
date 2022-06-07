@@ -1,5 +1,6 @@
 ---
 title: "Contract Development"
+draft: true
 weight: 11000
 draft: true
 menu:

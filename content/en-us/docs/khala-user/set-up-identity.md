@@ -1,5 +1,5 @@
 ---
-title: Set Up Identity
+title: Wallet Identity
 description: Learn about on-chain identity, judgments, and registrars.
 weight: 5003
 draft: false

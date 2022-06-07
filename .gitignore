@@ -5,3 +5,6 @@ resources
 .netlify
 TODO
 .DS_Store
+.hugo_build.lock
+
+/.vscode
