@@ -36,7 +36,7 @@ Confirm you have the right images and using the right images in compose:
 ```plain
 root@pool-controller-standby:/opt/prb# docker image ls
 REPOSITORY                 TAG        IMAGE ID       CREATED          SIZE
-phalanetwork/prb           next       8f3e932046bc   16 minutes ago   1.75GB
+phalanetwork/prb           next       0296d8da11bb   16 minutes ago   1.75GB
 
 root@pool-controller-standby:/opt/prb# grep image docker-compose.yml
     image: redis:alpine

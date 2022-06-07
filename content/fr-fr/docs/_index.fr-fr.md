@@ -1,19 +1,23 @@
 ---
-title: Phala Network
-weight: 1
+title: "Phala Network Wiki"
 draft: false
 ---
 
-## Manque de confidentialité des blockchains
+{{< block "grid-2 mt-2" >}}
+{{< column "mt-2">}}
 
-Une blockchain est une sorte de registre distribué qui enregistre de manière indélébile les transactions dans une liste de blocs qui ne cesse de s'allonger. La base de notre confiance dans la blockchain est le fait que l'exécution de chaque transaction peut être vérifiée par n'importe quel utilisateur de la blockchain. Les blockchains existantes, telles que BTC et ETH, tiennent cette promesse de manière intuitive : elles rendent tout public, y compris les transactions et les états internes des contrats intelligents. Cela nous amène à un problème : les données confidentielles ne peuvent pas être traitées par ces blockchains.
+# Phala Network
 
-Phala Network s'attaque à ce problème difficile. Il cherche à fournir de solides garanties de *confidentialité* sans sacrifier l'*interopérabilité inter-contrats*, ce qui signifie que les contrats confidentiels de Phala Network peuvent interagir librement avec d'autres contrats confidentiels. En outre, en tant que parachain Polkadot, le réseau Phala permet une *interopérabilité inter-chaîne* des contrats intelligents pour exploiter de manière confidentielle des actifs sur une autre blockchain.
+Le réseau Phala est un cloud informatique Web 3.0 qui prend en charge la confidentialité des données tout en restant sans confiance. Contrairement aux services de cloud centralisés, Phala ne possède aucun serveur ou data-center. N'importe qui peut fournir des serveurs  au réseau Phala et sans permission, grâce à une combinaison intelligente de blockchain et d'environnements d'exécution de confiance (TEE). Nous pouvons nous assurer que les serveurs ne peuvent être malveillants, même lorsqu'ils se trouvent dans une situation de réseau périphérique. Ensemble, cela crée l'infrastructure d'un puissant cloud informatique sans confiance, sécurisé et évolutif.
 
-## Veuillez choisir un sujet
+{{< button "phala-network/phala-network/" "Docs" >}} {{< button "https://phala.network" "Homepage" >}}
 
+{{< /column >}}
+{{< column >}}
 
-{{< button "poc4" "Miner sur Phala" >}}
-{{< button "developer" "Programmer sur Phala" >}}
-{{< button "pdiem" "Apprendre pDiem" >}}
-{{< button "spec" "Spécifications Techniques" >}}
+<div style="text-align: center">
+    <img src="/images/logo-phala-grn.png" style="max-height: 300px">
+</div>
+
+{{< /column >}}
+{{< /block >}}
