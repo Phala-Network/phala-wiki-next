@@ -13,6 +13,21 @@
   <meta name="twitter:description" content=""/>
   <link rel="stylesheet" href="https://use.typekit.net/iri2qvq.css">
 
+  <!-- algolia -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+  <script>
+    (function() {
+      const search = instantsearch({
+        appId: '{{ getenv "ALGOLIA_APP_ID" }}',
+        apiKey: '{{ getenv "ALGOLIA_READONLY_API_KEY" }}',
+        indexName: '{{ getenv "ALGOLIA_INDEX_NAME" }}',
+        routing: true
+      });
+      search.start();
+    })()
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D26T13SWZ2"></script>
   <script>
