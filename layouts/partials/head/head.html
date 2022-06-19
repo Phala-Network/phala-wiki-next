@@ -14,19 +14,83 @@
   <link rel="stylesheet" href="https://use.typekit.net/iri2qvq.css">
 
   <!-- algolia -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/satellite-min.css" integrity="sha256-TehzF/2QvNKhGQrrNpoOb2Ck4iGZ1J/DI4pkd2oUsBc=" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
   <script>
-    (function() {
+    window.addEventListener('DOMContentLoaded', function() {
+      const algoliaClient = algoliasearch('{{ getenv "ALGOLIA_APP_ID" }}', '{{ getenv "ALGOLIA_READONLY_API_KEY" }}');
+      const searchClient = {
+        ...algoliaClient,
+        search(requests) {
+          if (requests && requests[0] && requests[0].params) {
+            if (!requests[0].params.query) {
+              return Promise.resolve({
+                results: requests.map(() => ({
+                  hits: [],
+                  nbHits: 0,
+                  nbPages: 0,
+                  page: 0,
+                  processingTimeMS: 0,
+                  emptyQuery: true,
+                })),
+              });
+            }
+            return algoliaClient.search(requests);
+          }
+          return Promise.resolve({
+            results: requests.map(() => ({
+              hits: [],
+              nbHits: 0,
+              nbPages: 0,
+              page: 0,
+              processingTimeMS: 0,
+            })),
+          });
+        }
+      }
       const search = instantsearch({
-        appId: '{{ getenv "ALGOLIA_APP_ID" }}',
-        apiKey: '{{ getenv "ALGOLIA_READONLY_API_KEY" }}',
         indexName: '{{ getenv "ALGOLIA_INDEX_NAME" }}',
-        routing: true
+        searchClient,
       });
+
+      search.addWidgets([
+        instantsearch.widgets.searchBox({
+          container: "#searchbox"
+        }),
+
+        instantsearch.widgets.hits({
+          container: "#hits",
+          templates: {
+            item: (item) => {
+              let highlight = ''
+              if (item._highlightResult.description.matchLevel !== 'none') {
+                highlight = instantsearch.highlight({ attribute: 'description', hit: item })
+              } else if (item._highlightResult.summary.matchLevel !== 'none') {
+                highlight = instantsearch.highlight({ attribute: 'summary', hit: item })
+              }
+              return [
+                `<a href="${item.url}" class="search-result-item"><header class="post-heading">`,
+                '<span class="post-type">',
+                item.type,
+                '</span> &gt; <em class="post-title">',
+                item.title,
+                '</em></header>',
+                highlight ? `<div class="post-snippet">${highlight}</div>` : '',
+                '</a>',
+              ].join('')
+            },
+            empty: (results) => {
+              return ''
+            }
+          },
+        }),
+      ]);
+
       search.start();
-    })()
+    }, false);
   </script>
+  <link rel="preconnect" href="https://{{ getenv "ALGOLIA_APP_ID" }}-dsn.algolia.net" crossorigin />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D26T13SWZ2"></script>
