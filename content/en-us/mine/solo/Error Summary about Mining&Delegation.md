@@ -1,5 +1,5 @@
 ---
-title: "Error Summary about Mining&Delegation"
+title: "Error Summary about Mining & Delegation"
 weight: 1020
 menu:
   mine:
