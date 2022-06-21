@@ -8,7 +8,8 @@ menu:
 
 ## Mining
 
-### Worker         
+### Worker        
+
 | Error name | Meaning | Solution |
 | --- | --- | --- |
 | WorkerNotRegistered | The worker is not registered in the registry when adding to the pool | Check the synchronization process and mining status of the worker |
@@ -38,7 +39,9 @@ menu:
 | AlreadyInContributeWhitelist | Can not add the staker to whitelist because the staker is already in whitelist. | - |
 | ExceedWhitelistMaxLen | Too many stakers in contribution whitelist that exceed the limit | remove the useless whitelist in this pool |
 
+
 ## Delegate
+
 
 | Error name | Meaning	 | Solution |
 | --- | --- | --- |
