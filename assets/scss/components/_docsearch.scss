@@ -7,8 +7,11 @@
 #hits {
   position: absolute;
   z-index: 1001;
+  min-width: 24rem;
+  max-width: 340px;
   max-height: 90vh;
   overflow-y: scroll;
+  left: 0;
 }
 
 .ais-SearchBox-form {
@@ -33,6 +36,7 @@
 
 .ais-Hits-item {
   padding: 1rem;
+  background: #fafafa;
 }
 
 .ais-Hits-item:hover {
@@ -54,9 +58,8 @@
   color: #111;
 }
 
-.ais-Highlight-highlighted {
-  background: #9ad100;
-  color: #fff;
+.post-snippet {
+  word-break: break-word;
 }
 
 [data-dark-mode] body .ais-SearchBox-input {
