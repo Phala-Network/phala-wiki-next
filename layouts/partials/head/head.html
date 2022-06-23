@@ -20,32 +20,35 @@
   <script>
     window.addEventListener('DOMContentLoaded', function() {
       const algoliaClient = algoliasearch('{{ getenv "ALGOLIA_APP_ID" }}', '{{ getenv "ALGOLIA_READONLY_API_KEY" }}');
+      const emptyResult = {
+        hits: [],
+        nbHits: 0,
+        nbPages: 0,
+        page: 0,
+        processingTimeMS: 0,
+        emptyQuery: true,
+      }
       const searchClient = {
         ...algoliaClient,
         search(requests) {
           if (requests && requests[0] && requests[0].params) {
             if (!requests[0].params.query) {
               return Promise.resolve({
-                results: requests.map(() => ({
-                  hits: [],
-                  nbHits: 0,
-                  nbPages: 0,
-                  page: 0,
-                  processingTimeMS: 0,
-                  emptyQuery: true,
-                })),
+                results: requests.map(() => Object.assign({}, emptyResult)),
               });
             }
+            requests[0].params.attributesToHighlight = [];
+            requests[0].params.attributesToSnippet = [
+              'content:60', 'summary:60', 'title', 'description:60',
+            ];
+            requests[0].params.facetFilters = [
+              ['kind:page'],
+              ['lang:en-us'],
+            ];
             return algoliaClient.search(requests);
           }
           return Promise.resolve({
-            results: requests.map(() => ({
-              hits: [],
-              nbHits: 0,
-              nbPages: 0,
-              page: 0,
-              processingTimeMS: 0,
-            })),
+            results: requests.map(() => Object.assign({}, emptyResult)),
           });
         }
       }
@@ -63,11 +66,13 @@
           container: "#hits",
           templates: {
             item: (item) => {
-              let highlight = ''
-              if (item._highlightResult.description.matchLevel !== 'none') {
-                highlight = instantsearch.highlight({ attribute: 'description', hit: item })
-              } else if (item._highlightResult.summary.matchLevel !== 'none') {
-                highlight = instantsearch.highlight({ attribute: 'summary', hit: item })
+              let snippet = ''
+              if (item._snippetResult.description.matchLevel !== 'none') {
+                snippet = instantsearch.snippet({ attribute: 'description', hit: item })
+              } else if (item._snippetResult.summary.matchLevel !== 'none') {
+                snippet = instantsearch.snippet({ attribute: 'summary', hit: item })
+              } else if (item._snippetResult.content.matchLevel !== 'none') {
+                snippet = instantsearch.snippet({ attribute: 'content', hit: item })
               }
               return [
                 `<a href="${item.url}" class="search-result-item"><header class="post-heading">`,
@@ -76,7 +81,7 @@
                 '</span> &gt; <em class="post-title">',
                 item.title,
                 '</em></header>',
-                highlight ? `<div class="post-snippet">${highlight}</div>` : '',
+                snippet ? `<div class="post-snippet">${snippet}</div>` : '',
                 '</a>',
               ].join('')
             },
