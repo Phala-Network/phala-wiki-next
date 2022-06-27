@@ -10,13 +10,13 @@
   command = "npm run build"
 
 [context.deploy-preview]
-  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL && npm run algolia"
 
 [context.branch-deploy]
-  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL && npm run algolia"
 
 [context.next]
-  command = "npm run build"
+  command = "npm run build && npm run algolia"
 
 [context.next.environment]
   HUGO_ENV = "next"

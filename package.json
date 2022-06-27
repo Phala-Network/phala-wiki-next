@@ -17,6 +17,7 @@
     "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender",
     "prebuild": "npm run clean",
     "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
+    "deploy": "npm run build && npm run algolia",
     "build:preview": "npm run build -D -F",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
@@ -31,7 +32,8 @@
     "check": "exec-bin node_modules/.bin/hugo/hugo version",
     "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "algolia": "atomic-algolia"
   },
   "devDependencies": {
     "@babel/cli": "^7.15",
@@ -62,5 +64,8 @@
   },
   "otherDependencies": {
     "hugo": "0.88.1"
+  },
+  "dependencies": {
+    "atomic-algolia": "^0.3.19"
   }
 }

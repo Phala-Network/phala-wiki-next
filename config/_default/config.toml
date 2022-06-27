@@ -94,5 +94,5 @@ rel  = "sitemap"
   notAlternative = true
 
 [params.algolia]
-  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink", "content"]
+  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink", "content", "description"]
   params = ["categories", "tags"]
