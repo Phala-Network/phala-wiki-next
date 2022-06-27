@@ -3,7 +3,7 @@ title: "Error Summary about Mining & Delegation"
 weight: 1010
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "Khala-mining"
 ---
 
 ## Mining
