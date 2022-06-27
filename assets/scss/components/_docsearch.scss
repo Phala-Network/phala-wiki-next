@@ -1,0 +1,99 @@
+#searchbox {
+  margin-right: 16px;
+  position: relative;
+  top: 2px;
+}
+
+#hits {
+  position: absolute;
+  z-index: 1001;
+  min-width: 24rem;
+  max-width: 340px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  left: 0;
+}
+
+.ais-SearchBox-form {
+  background-color: transparent;
+  height: 2rem;
+  overflow: hidden;
+}
+
+.ais-SearchBox-input {
+  background-color: #fff;
+}
+
+.ais-SearchBox-input:focus {
+  border-color: #9ad100;
+}
+
+.search-result-item,
+.search-result-item:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.ais-Hits-item {
+  padding: 1rem;
+  background: #fafafa;
+}
+
+.ais-Hits-item:hover {
+  background-color: #f0f0f0;
+}
+
+.post-heading {
+  margin-bottom: 0.75rem;
+  color: #999;
+}
+
+.post-heading .post-type {
+  font-weight: 300;
+}
+
+.post-heading em {
+  font-weight: 500;
+  font-style: normal;
+  color: #111;
+}
+
+.post-snippet {
+  word-break: break-word;
+}
+
+[data-dark-mode] body .ais-SearchBox-input {
+  background-color: #212529;
+  color: #474c50;
+}
+
+[data-dark-mode] body .ais-SearchBox-input:focus {
+  background: #fff;
+}
+
+[data-dark-mode] body .ais-Hits-item,
+[data-dark-mode] body .ais-InfiniteHits-item {
+  background: #343a40;
+}
+
+[data-dark-mode] body .ais-Highlight-highlighted {
+  background: transparent;
+  color: #9ad100;
+}
+
+[data-dark-mode] body .search-result-item,
+[data-dark-mode] body .search-result-item:hover {
+  color: #f0f0f0;
+}
+
+[data-dark-mode] body .ais-Hits-item:hover {
+  background: #555c63;
+}
+
+[data-dark-mode] body .post-heading {
+  color: #d8d8d8;
+}
+
+[data-dark-mode] body .post-heading em {
+  color: #fff;
+}
