@@ -1,9 +1,9 @@
 ---
 title: "Error Summary about Mining & Delegation"
-weight: 1020
+weight: 1010
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-mining"
 ---
 
 ## Mining
