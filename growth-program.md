@@ -2,6 +2,7 @@
 
 > 📢 This program is tracked transparently on GitHub.
 
+![Phala_type_grn (1)](https://user-images.githubusercontent.com/39883171/177089429-21471b67-8cf3-46c9-a8b3-ac90f672ae3b.png)
 # Ambassador Program
 
 ## Overview
