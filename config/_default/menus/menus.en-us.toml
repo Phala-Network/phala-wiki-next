@@ -101,12 +101,6 @@
   url = "/build/developer/"
   weight = 1000
 
-[[build]]
-  name = "pDiem"
-  identifier = "pdiem"
-  url = "/build/pdiem/"
-  weight = 2000
-
 [[mine]]
   name = "Mine Khala"
   identifier = "khala-mining"
