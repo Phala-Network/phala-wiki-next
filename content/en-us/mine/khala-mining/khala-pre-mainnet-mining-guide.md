@@ -77,4 +77,4 @@ Khala requires the following components:
 </div>
 
 - Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
-- Khala Console: <a href="https://app.phala.network/en/mining/" target="_blank">Mining Console</a>
+- Khala Console: <a href="https://app.phala.network/mining/" target="_blank">Mining Console</a>
