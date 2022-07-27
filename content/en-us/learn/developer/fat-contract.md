@@ -9,7 +9,7 @@ menu:
 
 Please read the about section or our medium article for a more general introduction and high-level capability overview of Fat Contract :point_down:.
 
-{{< button "/en-us/learn/products/about-fat-contract/" "About Fat Contract" >}}
+{{< button "/en-us/build/developer/intro/" "About Fat Contract" >}}
 
 {{< button "https://medium.com/phala-network/introduction-of-fat-contract-dea79ffcf0dc" "Medium: Fat Contract" >}}
 
