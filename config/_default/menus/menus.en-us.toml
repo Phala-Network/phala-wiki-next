@@ -48,7 +48,7 @@
   weight = 4000
 
 [[general]]
-  name = "Developmnent"
+  name = "Development"
   identifier = "general-development"
   url = "/general/development/"
   weight = 5000
