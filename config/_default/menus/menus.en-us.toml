@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Build"
-  url = "/en-us/build/developer/fat-contract-tutorial/"
+  url = "/en-us/build/developer/intro/"
   weight = 30
 
 [[main]]
@@ -66,28 +66,16 @@
   weight = 1000
 
 [[learn]]
-  name = "Products"
-  identifier = "products"
-  url = "/learn/products/"
-  weight = 2000
-
-[[learn]]
   name = "Developer"
   identifier = "developer"
   url = "/learn/developer/"
-  weight = 3000
+  weight = 2000
 
 [[learn]]
   name = "Maintain"
   identifier = "maintain"
   url = "/learn/maintain/"
-  weight = 4000
-
-[[learn]]
-  name = "Tokenomics"
-  identifier = "tokenomics"
-  url = "/learn/tokenomics/"
-  weight = 6000
+  weight = 3000
 
 [[build]]
   name = "Developer Guide"

@@ -1,6 +1,6 @@
 ---
 title: Gatekeeper
-weight: 1002
+weight: 1003
 draft: false
 menu:
   learn:
@@ -19,7 +19,7 @@ Gatekeepers share the same `pRuntime` as normal workers (miners). To distinguish
 
 ## MasterKey in Gatekeeper
 
-`MasterKey` is used to derive the keys to encrypt the states of confidential smart contracts and communicate. In Phala Network, only the `pRuntime` of a gatekeeper is authorized to manage the `MasterKey`. Noted that since `MasterKey` is managed by `pRuntime` and its usage is limited, even a malicious gatekeeper cannot decrypt any contract states without fully compromising the TEE and `pRuntime`.
+`MasterKey` is used to derive the keys to encrypt the states of confidential smart contracts and communicate. In Phala Network, only the `pRuntime` of a gatekeeper is authorized to manage the `MasterKey`. Noted that since `MasterKey` is managed by `pRuntime` and its usage is limited, even a malicious gatekeeper cannot decrypt any contract states without fully compromising the Secure Enclave and `pRuntime`.
 
 `MasterKey` is a `sr25519` key pair generated and managed by gatekeepers.
 

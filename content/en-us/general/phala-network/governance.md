@@ -12,6 +12,8 @@ Therefore, the following Khala democratic mechanism basically adopts the same pr
 
 To do this, we bring together various novel mechanisms, including an amorphous state-transition function stored on-chain and defined in a platform-neutral intermediate language (i.e. WebAssembly) and several on-chain voting mechanisms such as referenda with adaptive super-majority thresholds and batch approval voting. All changes to the protocol must be agreed upon by stake-weighted referenda.
 
+> Go to the [Governance](/en-us/maintain/governance/1-participate-in-democracy/) section for more detailed tutorials on voting and Treasury application.
+
 ## Mechanism
 
 To make any changes to the network, the idea is to compose active token holders and the council together to administrate a network upgrade decision. No matter whether the proposal is proposed by the public (PHA token holders) or the council, it finally will have to go through a referendum to let all holders, weighted by stake, make the decision.
