@@ -1,6 +1,6 @@
 [[main]]
   name = "General"
-  url = "/general/phala-network/01-phala-network"
+  url = "/general/phala-network/intro"
   weight = 10
 
 [[main]]

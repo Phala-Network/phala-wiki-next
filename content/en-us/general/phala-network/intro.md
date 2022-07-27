@@ -8,11 +8,11 @@ menu:
     parent: "phala-network"
 ---
 
-![](/images/docs/phala-network/phala_landing.png)
+![](/images/general/landing.jpg)
 
-## Phala Network
+## Phala Network: Web3.0 Compute Cloud
 
-Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, that is, a standard decentralized computing cloud based on Web3.
+Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, a standard decentralized computing cloud based on Web3.
 
 Trustless is not only the first feature of Phala recognized by the community but also the cornerstone of Phala becoming a reliable distributed computing network.
 In addition, the “sharing economy” model is also Phala’s Web3 characteristic. To ensure that network users and computing power providers won’t be controlled by centralized Internet companies, we must adopt the blockchain protocol, allowing any computing node to join the network and provide usable and stable computing services. This is also the foundation of the Secure Worker Mining mechanism.
@@ -20,26 +20,13 @@ At present, Secure Worker Mining mechanism has been running steadily on Khala Ne
 
 We strongly agree that Web3 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web3 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
 
-## Phala Products
+## Roadmap of 2022
 
-### Fat Contract
+![](/images/general/roadmap-2022.jpg)
 
-> Get started with our Fat Contract :point_right: [read more here](/en-us/general/development/fat-contract)
+> A more detailed [roadmap explanation](https://medium.com/phala-network/phala-network-roadmap-of-2022-f857ba765938).
 
-A new type of smart contract product that focuses on serving Web3 back-end function-level services.
-
-![](/images/general/fat-features.jpeg)
-
-The Fat Contract is designed for the following use cases:
-
-* For low latency requirements, such as in multiplayer online games
-* Scenarios of off-chain interoperation, such as Oracle, decentralized chat or communication services (Telegram or email)
-* Scenarios where privary matters, such as data market platform
-* Large-scale real-time computing programs, such as Metaverse, games, NFT rendering, artificial intelligence (recommendation engine, etc.)
-
-![](/images/general/fat-usecase.jpeg)
-
-## Phala Web Directory
+## Web Directory
 
 <div class="mediaList">
    <div class="item">
