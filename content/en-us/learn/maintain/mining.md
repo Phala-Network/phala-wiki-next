@@ -1,5 +1,5 @@
 ---
-title: Mining
+title: Steps of Mining
 weight: 1001
 draft: false
 menu:
@@ -17,7 +17,7 @@ This section provides some theory about the mining concepts of Phala and additio
 
 ## Worker Registration
 
-Registration is required before a worker or gatekeeper can join the network. After that, any parties with TEE-supported devices can serve as workers. To register as a validated worker in the blockchain, TEE runners need to run `pRuntime` and let it send a signed attestation report to gatekeepers.
+Registration is required before a worker or gatekeeper can join the network. After that, any parties with secure-enclave-supported devices can serve as workers. To register as a validated worker in the blockchain, Secure Enclave runners need to run `pRuntime` and let it send a signed attestation report to gatekeepers.
 
 `pRuntime` requests a Remote Attestation with a hash of the `WorkerInfo` committed in the attestation report. `WorkerInfo` includes the public key of `IdentityKey` and `EcdhKey` and other data collected from the enclave. By verifying the report, gatekeepers can know the hardware information of workers and ensure that they are running unmodified `pRuntime`.
 

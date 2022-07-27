@@ -56,7 +56,7 @@ If you are interested in integrating your asset into SubBridge, please go to [in
 - `location` must be a [MultiLocation](https://polkadot.network/blog/xcm-the-cross-consensus-message-format/). For example, the location of `KAR` is `MultiLocation::new(1, X2(Parachain(2000), General(0x0080)))`. If your asset is an EVM asset, the `location` should be `MultiLocation::new(1, X3(Parachain(2004), GeneralIndex(chain_id), GeneralKey(erc20_address)))`. `chain_id` should match the chain your asset deployed on. So far chain id of Ethereum is `0`, and chain id of Moonriver EVM is `2`.
 - `is mintable` represents whether your ERC20 smart contract support `mint`   and `burn`, if set as true, your users will need to give the mint authority to our contract when the first time they use SubBridge. Check [**Assets Registration**](../technical-details/#asset-registration) find more details about what we have done on registration.
 
-After the issue is opened, feel free to notify the team on our [Discord channel](https://discord.com/invite/myBmQu5) if we haven't replied immediately. Now you are ready to work with the team to finish the integration stuff when we approve the request on the issue.
+After the issue is opened, feel free to notify the team on our [Discord channel](https://discord.com/invite/phala) if we haven't replied immediately. Now you are ready to work with the team to finish the integration stuff when we approve the request on the issue.
 
 ## Test Registration
 
@@ -187,17 +187,17 @@ It's better to integrate SubBridge into your App if you'd like to let your users
 
 - Issuing crosschain transfer on other parachains or Khala network
 
-For example, when issuing a crosschain transfer to the Khala network or EVM chains from Karura, you should use the [xtoken>>transfer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura.polkawallet.io#/extrinsics), while issuing a crosschain transfer to other parachains or EVM chains from Khala, you should use the [xtransfer>>transfer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/extrinsics). So interfaces may be different between different parachains depends on its implementation. 
+For example, when issuing a crosschain transfer to the Khala network or EVM chains from Karura, you should use the [xtoken>>transfer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura.polkawallet.io#/extrinsics), while issuing a crosschain transfer to other parachains or EVM chains from Khala, you should use the [xtransfer>>transfer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/extrinsics). So interfaces may be different between different parachains depends on its implementation.
 
 - Issuing crosschain transfer on EVM chains with ChainBridge
 
 So far we only support ChainBridge as an EVM bridge(will integrate more EVM bridges in the future), so the following is based on interaction with our ChainBridge contract. According to the mechanism of the ERC20 protocol, before calling `Bridge.deposit` which is the interface to issue crosschain transfer we need to call [ERC20 approve](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-) method to let user approve the specific amount of assets to our `ERC20Handler` contract. This operation will allow `ERC20Handler` to spend up to the specific number of assets from the user account. According to the `deposit` method defined in our [bridge contract](https://github.com/Phala-Network/chainbridge-solidity/blob/5eef3073ccc75b48e06ce44eee522c2023da974e/contracts/Bridge.sol#L312), there are three parameters you need to provide:
 
 > The first one is `destinationChainID`, so far you can only transfer to the Khala network from EVM, the value would always be `1`.
-> 
+>
 
 > The second one is `resourceID`, this is a 32 bytes indentation representing the EVM asset on a specific chain, which means the same asset with a different chain will have a different `resourceId`. The way we generate the `resourceId` can be found at [here](https://github.com/Phala-Network/khala-parachain/blob/5ab4f77163c811fb4a02d337791ce669b41481ad/pallets/assets-registry/src/lib.rs#L141).
-> 
+>
 
 > The third one is `data`, it is a combination of 32 bytes transfer `amount` and dynamic recipient bytes. The recipient should be an encoded `MultiLocation`.
 >
@@ -244,7 +244,7 @@ An example of transferring 100 PHA from Ethereum to the Khala network, the recip
 
 **Example6: transfer an asset from EVM chain to parachain**
 
-An example of transferring 100 PHA from Ethereum to Karura, the recipient is `Alice`. 
+An example of transferring 100 PHA from Ethereum to Karura, the recipient is `Alice`.
 
 [View snippet code](https://gist.github.com/tolak/ce6b12af0a22b994ed65b533edf4a4ce)
 

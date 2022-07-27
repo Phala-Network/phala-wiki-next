@@ -19,6 +19,6 @@ We keep a list of [contract examples](https://github.com/Phala-Network/phala-blo
 
 ## Handle Upload/Instantiation Failure
 
-Code upload could failed if there are *illegal* instructions in your compiled WASM. Phala uses Substrate's `contract_pallet` for contract execution, check its [code examination mechanism](https://github.com/paritytech/substrate/blob/32a4fe01f110a755bf22eb8f803cdfd7052d4f8b/frame/contracts/src/wasm/prepare.rs#L381-L387) for potential illegal instructions. Report in the #dev channel of our [Discord](https://discord.gg/myBmQu5) and we will help you find the exact reason.
+Code upload could failed if there are *illegal* instructions in your compiled WASM. Phala uses Substrate's `contract_pallet` for contract execution, check its [code examination mechanism](https://github.com/paritytech/substrate/blob/32a4fe01f110a755bf22eb8f803cdfd7052d4f8b/frame/contracts/src/wasm/prepare.rs#L381-L387) for potential illegal instructions. Report in the #dev channel of our [Discord](https://discord.gg/phala) and we will help you find the exact reason.
 
-The contract instantiation could also fail for runtime errors. For now, the contract execution log is not directly available to the developers. Join our [Discord](https://discord.gg/myBmQu5) and we can help forward the Worker logs if necessary.
+The contract instantiation could also fail for runtime errors. For now, the contract execution log is not directly available to the developers. Join our [Discord](https://discord.gg/phala) and we can help forward the Worker logs if necessary.
