@@ -1,5 +1,5 @@
 ---
-title: "Get PHA and Delegate"
+title: "Get PHA and Transfer"
 weight: 1003
 menu:
   general:
@@ -93,15 +93,3 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 ## Transfer PHA from/to Other Chains
 
 For now, you can transfer your PHA from Ethereum to Khala (Phala on Kusama) or from Khala to Karura with our SubBridge, refer to the [introduction](/en-us/general/subbridge/intro/) and our [tutorial](/en-us/general/subbridge/pha-karura/) for more details.
-
-## Start Delegating
-
-As soon as you have:
-- [x] PHA Tokens
-- [x] Khala Account
-- [x] [Polkadot{.js}](https://polkadot.js.org/extension/) <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/polkadot-js.svg" width="20"> Extension
-
-
-You are ready to over to the <a ><img alt="Polkadot{.js}" src="/images/docs/khala-mining/phala_logo.png" width="30"> [Phala App](https://app.phala.network/) & start to :point_right: [Delegate](https://app.phala.network/delegate/).
-
-> If you have issues Delegating, feel free to check our [detailed guide](/en-us/general/applications/stakepool/).
