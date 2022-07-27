@@ -84,12 +84,6 @@
   weight = 4000
 
 [[learn]]
-  name = "Governance"
-  identifier = "governance"
-  url = "/learn/governance/"
-  weight = 5000
-
-[[learn]]
   name = "Tokenomics"
   identifier = "tokenomics"
   url = "/learn/tokenomics/"
