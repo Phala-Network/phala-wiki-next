@@ -157,10 +157,11 @@ If the smart contract of your asset is ERC20 compatible, we can easily integrate
 
 **Ethereum mainnet:**
 
-| Contract     | Address                                    |
-| ------------ | ------------------------------------------ |
-| bridge       | 0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9 |
-| erc20Handler | 0xEEc0fb4913119567cDfC0c5fc2Bf8f9F9B226c2d |
+| Contract      | Address                                    |
+| ------------  | ------------------------------------------ |
+| bridge        | 0x8F92e7353b180937895E0C5937d616E8ea1A2Bb9 |
+| erc20Handler1 | 0xEEc0fb4913119567cDfC0c5fc2Bf8f9F9B226c2d |
+| erc20Handler2 | 0xcd38b15a419491c7c1238b0659f65c755792e257 |
 
 **Moonriver EVM:**
 
