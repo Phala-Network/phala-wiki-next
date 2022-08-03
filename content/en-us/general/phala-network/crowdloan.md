@@ -1,5 +1,5 @@
 ---
-title: Crowdloan
+title: Phala Crowdloan
 weight: 1002
 draft: false
 menu:
