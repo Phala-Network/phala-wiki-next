@@ -92,4 +92,4 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 ## Transfer PHA from/to Other Chains
 
-For now, you can transfer your PHA from Ethereum to Khala (Phala on Kusama) or from Khala to Karura with our SubBridge, refer to the [introduction](/en-us/general/subbridge/intro/) and our [tutorial](/en-us/general/subbridge/pha-karura/) for more details.
+For now, you can transfer your PHA from Ethereum to Khala (Phala on Kusama) or from Khala to Karura with our SubBridge, refer to the [introduction](/en-us/general/subbridge/intro/) and our [tutorial](/en-us/general/subbridge/tutorial/) for more details.

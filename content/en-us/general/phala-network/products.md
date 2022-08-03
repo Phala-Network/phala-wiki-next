@@ -7,28 +7,28 @@ menu:
     parent: "phala-network"
 ---
 
-## Fat Contract
+## Phat Contract
 
 <!-- ![](https://miro.medium.com/max/1400/1*OWyWrBXtTEj4bHcAszSONQ.jpeg) -->
 
-Fat Contract is the innovative programming model enabling *Off-chain Computation*.
+Phat Contract is the innovative programming model enabling *Off-chain Computation*. It's also known as *Fat Contract* as a practice of the "Fat Protocol & Thin Application" concept, and for its rich functionalities compared with existing smart contract.
 
-The Fat Contract inherits the self-enforcing and tamper-proof nature of smart contract, while introducing more advantages including:
+The Phat Contract inherits the self-enforcing and tamper-proof nature of smart contract, while introducing more advantages including:
 
 - Low-cost and zero-latency since most user interactions involve no on-chain transactions;
 - Supporting complex computation and long-live services without the worry about blocking the whole blockchain;
 - Native HTTP request support to connect multiple services;
 
-Fat Contract focuses on serving Web3 backend function-level services, and is meant to be the complement to existing smart contract with its unique functionalities.
+Phat Contract focuses on serving Web3 backend function-level services, and is meant to be the complement to existing smart contract with its unique functionalities.
 
-The Fat Contract is designed for the following use cases:
+The Phat Contract is designed for the following use cases:
 
 - ***Low latency*** services like GameFi or Metaverse backends;
 - ***Compute-intensive*** applications like NFT rendering, machine learning and big data analytics;
 - ***Privacy-preserving*** scenarios like decentralized exchange and others where privacy matters;
 - ***Composable*** applications including Oracle, bots and other applications involving one or more Web2/Web3 services;
 
-> Learn [more](/en-us/general/development/fat-contract) about Fat Contract's unique features and use cases, or start building with it right now following our [tutorial](/en-us/build/developer/fat-contract-tutorial).
+> Learn [more](/en-us/general/development/fat-contract) about Phat Contract's unique features and use cases, or start building with it right now following our [tutorial](/en-us/build/developer/fat-contract-tutorial).
 
 ## SubBridge
 
