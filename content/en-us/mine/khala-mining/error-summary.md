@@ -1,5 +1,5 @@
 ---
-title: "Error Summary about Mining & Delegation"
+title: "Error Summary"
 weight: 1010
 menu:
   mine:
@@ -8,7 +8,7 @@ menu:
 
 ## Mining
 
-### Worker        
+### Worker
 
 | Error name | Meaning | Solution |
 | --- | --- | --- |

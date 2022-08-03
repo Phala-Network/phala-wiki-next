@@ -1,10 +1,10 @@
 ---
 title: "Blockchain Entities"
-weight: 1001
+weight: 1002
 draft: false
 menu:
-  learn:
-    parent: "developer"
+  build:
+    parent: "infra"
 ---
 
 ## Overview
@@ -21,27 +21,22 @@ The image below visualizes the interaction between Phala's entities.
 
 ![Phala Network](/images/docs/spec/phala-design.png)
 
-The basic design of Phala Network is meant to ensure the security and confidentiality of the blockchain and its smart contracts. However, with more security improvements, Phala Network can defend against advanced attacks.
-
-<!-- TODO.shelven: fix the link -->
-> Read more information about the [technical details](/en-us/learn/developer/).
-
-The [Entities in Blockchain](/en-us/learn/phala-blockchain/blockchain-entities/) section above provides a generally high introduction level, while this section briefly introduces the technical concepts of Phala's blockchain entities.
+The basic design of Phala Network is meant to ensure the security and confidentiality of the blockchain and its [Phat Contract](/en-us/build/developer/intro/). However, with more security improvements, Phala Network can defend against advanced attacks.
 
 ## Entity Key Initialization
 
 In Phala, the communication between any entity should be encrypted, so each entity generates the following entities key pairs with a pseudorandom number generator during initialization:
 
 1. `IdentityKey`
-   - a `secp256k1` key pair to uniquely identify an entity;
+   - an `sr25519` key pair to uniquely identify an entity;
 2. `EcdhKey`
-   - a `secp256r1` key pair for secure communication;
+   - an `sr25519` key pair for secure communication;
 
 ### pRuntime Initialization
 
-During initialization, `pRuntime` automatically generates the entity key pairs above with a pseudorandom number generator. The generated key pairs are managed in `pRuntime` in the Secure Enclave, which means the workers and gatekeepers can only use it with the limited APIs exported by `pRuntime`, and can never gain the plaintext key pairs to read the encrypted data out of the Secure Enclave.
+During initialization, `pRuntime` automatically generates the entity key pairs above with a random number generator. The generated key pairs are managed in `pRuntime` in the Secure Enclave, which means the workers and gatekeepers can only use it with the limited APIs exported by `pRuntime`, and can never gain the plaintext key pairs to read the encrypted data out of the Secure Enclave.
 
-The generated key pairs can be locally encrypted and cached on the disk by the `SGX Sealing` and decrypted and loaded when restarting. This applies to both gatekeepers and workers.
+The generated key pairs can be locally encrypted and cached on the disk with [Sealing](https://sgx101.gitbook.io/sgx101/sgx-bootstrap/sealing) and decrypted and loaded when restarting. This applies to both gatekeepers and workers.
 
 ## Secure Communication Channels
 
@@ -49,11 +44,9 @@ The `EcdhKey` public key in the `pRuntime` of a worker or gatekeeper is publicly
 
 A channel between two entities, `A` and `B` is denoted as $Channel(Pk_A, Pk_B)$, where $Pk_A$ and $Pk_B$ is the public key their ECDH key pairs correspondingly. A shared secret can be derived from one's ECDH private key and the counterpart's public key via the Diffie Hellman algorithm. Then the final communication key `CommKey(A, B)` can be calculated via a one-way function. Finally, `CommKey(A, B)` is used to encrypt the messages between the two entities.
 
-{{< tip >}}
-In pre-mainnet, the `EcdhKey` is a `secp256r1` key pair. We can adopt the [child key derivation (CKD) functions](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#child-key-derivation-ckd-functions) from Bitcoin BIP32 to derive `CommKey(A, B)` from the key agreed by ECDH.
-
-The messages are E2EE with `aes-gcm-256`.
-{{< /tip >}}
+> In Khala, the `EcdhKey` is an `sr25519` key pair. We can adopt the [child key derivation (CKD) functions](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#child-key-derivation-ckd-functions) from Bitcoin BIP32 to derive `CommKey(A, B)` from the key agreed by ECDH.
+>
+> The messages are end-to-end encrypted with `aes-gcm-256`.
 
 The public key of the entities are registered on-chain. So we can build on-chain or off-chain communication channels:
 

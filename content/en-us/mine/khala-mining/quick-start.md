@@ -1,9 +1,9 @@
 ---
-title: "Mine PHA in Khala"
+title: "Quick Start"
 weight: 1001
 menu:
-  general:
-    parent: "general-mining"
+  mine:
+    parent: "khala-mining"
 ---
 
 ### Hardware
@@ -26,7 +26,7 @@ menu:
 >  </a>
 > </p>
 
-Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/mine/khala-mining/1-0-hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/mine/khala-mining/1-0-hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
+Support is not limited to VULTR, as long as the provider allows you to set the required [BIOS settings](/en-us/mine/khala-mining/hardware-requirements/#check-your-bios) and offers an Intel® SGX [supported CPU](/en-us/mine/khala-mining/hardware-requirements/#2-confirm-the-cpu-supports-intel-sgx).
 
 </p>
 </details>
@@ -35,7 +35,7 @@ Support is not limited to VULTR, as long as the provider allows you to set the r
   <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
   <br>
 
-> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/mine/khala-mining/1-0-hardware-requirements).
+> Ensure your BIOS and operating system is ready according to our [hardware and setup documentation](/en-us/mine/khala-mining/hardware-requirements).
 
   </div>
 </div>

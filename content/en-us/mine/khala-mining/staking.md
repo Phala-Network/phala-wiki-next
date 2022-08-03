@@ -1,10 +1,10 @@
 ---
 title: Staking Mechanism
-weight: 1002
+weight: 1004
 draft: false
 menu:
-  learn:
-    parent: "maintain"
+  mine:
+    parent: "khala-mining"
 ---
 
 ## Introduction
