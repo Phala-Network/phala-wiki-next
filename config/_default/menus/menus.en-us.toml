@@ -54,16 +54,10 @@
   weight = 4000
 
 [[general]]
-  name = "Development"
-  identifier = "general-development"
-  url = "/general/development/"
-  weight = 5000
-
-[[general]]
   name = "Mining"
   identifier = "general-mining"
   url = "/general/mining/"
-  weight = 6000
+  weight = 5000
 
 [[learn]]
   name = "Phala Blockchain"
