@@ -32,7 +32,7 @@ If you do not hold any PHA yet, you can purchase PHA from any of the following e
      <a href="https://www.okex.com/trade-spot/pha-usdt" target="_blank" rel="noopener noreferrer">
         <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
            <img src="https://phala.network/images/PagePHA/3-OKEx.png" alt="okex" width="50" class="center"/>
-           <p>OKEx</p>
+           <p>OKX</p>
         </svg>
      </a>
   </div>
@@ -92,4 +92,4 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 
 ## Transfer PHA from/to Other Chains
 
-For now, you can transfer your PHA from Ethereum to Khala (Phala on Kusama) or from Khala to Karura with our SubBridge, refer to the [introduction](/en-us/general/subbridge/intro/) and our [tutorial](/en-us/general/subbridge/pha-karura/) for more details.
+For now, you can transfer your PHA from Ethereum to Khala (Phala on Kusama) or from Khala to Karura with our SubBridge, refer to the [introduction](/en-us/general/subbridge/intro/) and our [tutorial](/en-us/general/subbridge/tutorial/) for more details.

@@ -4,24 +4,19 @@
   weight = 10
 
 [[main]]
-  name = "Learn"
-  url = "/en-us/learn/phala-blockchain/blockchain-detail/"
+  name = "Build"
+  url = "/en-us/build/developer/intro/"
   weight = 20
 
 [[main]]
-  name = "Build"
-  url = "/en-us/build/developer/intro/"
-  weight = 30
-
-[[main]]
   name = "Mine"
-  url = "/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/"
-  weight = 40
+  url = "/en-us/mine/khala-mining/khala-mining-guide/"
+  weight = 30
 
 [[main]]
   name = "Maintain"
   url = "/en-us/maintain/governance/1-participate-in-democracy/"
-  weight = 50
+  weight = 40
 
 [[general]]
   name = "Phala Network"
@@ -30,58 +25,40 @@
   weight = 1000
 
 [[general]]
-  name = "Basic"
+  name = "Khala Network"
+  identifier = "khala-network"
+  url = "/general/phala-network/"
+  weight = 2000
+
+[[general]]
+  name = "Basic Guidance"
   identifier = "general-basic"
   url = "/general/applications/"
-  weight = 2000
+  weight = 3000
 
 [[general]]
   name = "SubBridge"
   identifier = "general-bridge"
   url = "/general/subbridge/"
-  weight = 3000
+  weight = 4000
 
 [[general]]
   name = "Delegation"
   identifier = "general-delegation"
   url = "/general/applications/"
-  weight = 4000
-
-[[general]]
-  name = "Development"
-  identifier = "general-development"
-  url = "/general/development/"
   weight = 5000
-
-[[general]]
-  name = "Mining"
-  identifier = "general-mining"
-  url = "/general/mining/"
-  weight = 6000
-
-[[learn]]
-  name = "Phala Blockchain"
-  identifier = "phala-blockchain"
-  url = "/learn/phala-blockchain/"
-  weight = 1000
-
-[[learn]]
-  name = "Developer"
-  identifier = "developer"
-  url = "/learn/developer/"
-  weight = 2000
-
-[[learn]]
-  name = "Maintain"
-  identifier = "maintain"
-  url = "/learn/maintain/"
-  weight = 3000
 
 [[build]]
   name = "Developer Guide"
   identifier = "developer"
   url = "/build/developer/"
   weight = 1000
+
+[[build]]
+  name = "Blockchain Infrastructure"
+  identifier = "infra"
+  url = "/build/infrastructure/"
+  weight = 2000
 
 [[mine]]
   name = "Mine Khala"

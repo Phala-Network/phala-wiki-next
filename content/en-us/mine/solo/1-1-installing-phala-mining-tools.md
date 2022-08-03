@@ -8,7 +8,7 @@ menu:
 
 ## Prerequisites
 
-Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "mine/khala-mining/1-0-hardware-requirements">}}).
+Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "mine/khala-mining/hardware-requirements">}}).
 
 ## Download the Phala Scripts
 
@@ -39,7 +39,7 @@ sudo reboot
 Execute the following commands in your terminal:
 
 ```bash
-cd ~/solo-mining-scripts-main 
+cd ~/solo-mining-scripts-main
 sudo ./phala.sh install
 ```
 

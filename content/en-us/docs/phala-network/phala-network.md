@@ -22,17 +22,17 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 ## Phala Products
 
-### Fat Contract
+### Phat Contract
 
-> Get started with our Fat Contract :point_right: [read more here](/en-us/general/development/fat-contract)
+> Get started with our Phat Contract :point_right: [read more here](/en-us/general/development/fat-contract)
 
 A new type of smart contract product that focuses on serving Web3 back-end function-level services.
 
-The Fat Contract is designed for the following use cases:
+The Phat Contract is designed for the following use cases:
 
 * For low latency requirements, such as in multiplayer online games
 * Scenarios of off-chain interoperation, such as oracle, decentralized chat or communication services (Telegram or email)
-* Fat Contract such as API interface, data market platform
+* Phat Contract such as API interface, data market platform
 * Large-scale real-time computing programs, such as Metaverse, games, NFT rendering, artificial intelligence (recommendation engine, etc.)
 
 ## Phala Web Directory

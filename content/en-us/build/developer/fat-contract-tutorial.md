@@ -1,5 +1,5 @@
 ---
-title: "Fat Contract Tutorial"
+title: "Phat Contract Tutorial"
 weight: 1002
 draft: false
 menu:
@@ -7,13 +7,13 @@ menu:
     parent: "developer"
 ---
 
-This tutorial will demonstrate how to use Fat Contract's HTTP request capability to associate a Phala account with a Github user. Such functionality serves as the core for [Decentralized Identity (DID)](https://www.gsma.com/identity/decentralised-identity). Further, we will show how to deploy your contract in [Phala Testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer) and interact with it through our [frontend SDK](https://github.com/Phala-Network/js-sdk).
+This tutorial will demonstrate how to use Phat Contract's HTTP request capability to associate a Phala account with a Github user. Such functionality serves as the core for [Decentralized Identity (DID)](https://www.gsma.com/identity/decentralised-identity). Further, we will show how to deploy your contract in [Phala Testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer) and interact with it through our [frontend SDK](https://github.com/Phala-Network/js-sdk).
 
 ## Get Things Ready
 
 To get your application running, you will need to download our frontend and backend demo code:
 
-- The backend code, a.k.a. the demo fat contract, is available in our [Fat Contract Workshop Repository](https://github.com/Phala-Network/fat-contract-workshop);
+- The backend code, a.k.a. the demo Phat Contract, is available in our [Phat Contract Workshop Repository](https://github.com/Phala-Network/fat-contract-workshop);
 - The frontend SDK ([JS-SDK](https://github.com/Phala-Network/js-sdk)), which already contains the frontend to interact with contract above as an example.
 
 After your contract is ready, you should upload it to some Contract Cluster in [Phala Testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer) and instantiate it.

@@ -6,10 +6,10 @@ menu:
     parent: "developer"
 ---
 
-## Fat Contract
+## Phat Contract
 
-* [Phala Native Fat Contract Demo](https://www.youtube.com/watch?v=zaogHCuySD0&t=147s)
-* [Phala Fat Contract & ink! a demo with Parity](https://www.youtube.com/watch?v=aZGj4FhkY6A)
+* [Phala Native Phat Contract Demo](https://www.youtube.com/watch?v=zaogHCuySD0&t=147s)
+* [Phala Phat Contract & ink! a demo with Parity](https://www.youtube.com/watch?v=aZGj4FhkY6A)
 
 
 ## Hackathons

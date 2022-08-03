@@ -9,13 +9,13 @@ menu:
 
 ## Ink! Documentation
 
-From a programmer's perspective, you can regard Fat Contract to be a combination of basic [Parity's Ink!](https://paritytech.github.io/ink/) and [Phala's Ink! Extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink).
+From a programmer's perspective, you can regard Phat Contract to be a combination of basic [Parity's Ink!](https://paritytech.github.io/ink/) and [Phala's Ink! Extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink).
 
 We recommend to go through the official [Ink! Documentation](https://paritytech.github.io/ink-docs/) to learn the basics about contract developing.
 
-## Fat Contract Examples
+## Phat Contract Examples
 
-We keep a list of [contract examples](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink/examples) for every extra feature of Fat Contract compared with the original Ink! contract.
+We keep a list of [contract examples](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink/examples) for every extra feature of Phat Contract compared with the original Ink! contract.
 
 ## Handle Upload/Instantiation Failure
 

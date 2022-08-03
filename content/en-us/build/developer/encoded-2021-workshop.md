@@ -7,9 +7,9 @@ menu:
     parent: "developer"
 ---
 
-## Fat Contract Workshop
+## Phat Contract Workshop
 
-> To get the code visit our [Fat Contract Workshop Repository](https://github.com/Phala-Network/fat-contract-workshop/tree/workshop-0.1)
+> To get the code visit our [Phat Contract Workshop Repository](https://github.com/Phala-Network/fat-contract-workshop/tree/workshop-0.1)
 
 ## Prepare
 
@@ -194,7 +194,7 @@ Open the app in your browser. You can use it to flip the bit in the flipper cont
 2. Choose an account with some balances (Alice or Bob) in the right-top drop-down
 3. Click "Sign Certificate"
 
-    > This step is necessary for Fat Contract Dapp because we use a certificate chain to do end-to-end encryption. Whenever you selected a new account, just sign a new certificate.
+    > This step is necessary for Phat Contract Dapp because we use a certificate chain to do end-to-end encryption. Whenever you selected a new account, just sign a new certificate.
 
 4. Paste the content of `metadata.json` to the ABI text box, and enter the contract id
 
@@ -214,7 +214,7 @@ Open the app in your browser. You can use it to flip the bit in the flipper cont
 
 ## Challenge: "Secret" Flipper
 
-We leave a challenge for you to explore the confidentiality of Phala's Fat Contract.
+We leave a challenge for you to explore the confidentiality of Phala's Phat Contract.
 
 ### How is it possible?
 
@@ -222,7 +222,7 @@ Fat Contracts are confidential by default. All the contract inputs, outputs, and
 
 So the only way to read some data from the contract is to send a **query**.
 
-The query is not only end-to-end encrypted but also signed with your wallet key. In this way, the identity is attached to a query. With the signature attached, the ink! contract can determine the identity of the sender. This is done via the Phala Fat Contract executor, who validates the signature before running the contract.
+The query is not only end-to-end encrypted but also signed with your wallet key. In this way, the identity is attached to a query. With the signature attached, the ink! contract can determine the identity of the sender. This is done via the Phala Phat Contract executor, who validates the signature before running the contract.
 
 More specifically, in an ink! query function, you determine the response based on the sender securely:
 
@@ -244,7 +244,7 @@ In the vanilla ink! smart contract, each "query" also comes with a sender. The a
 
 However, it doesn't protect any secret. The sender field in the query is just an account (public key). In other words, anyone can feel free to specify any account as the query sender. The blockchain node doesn't require the sender to sign the query with its wallet.
 
-Indeed, it doesn't make a lot of sense to require the signature. In an ordinary blockchain, all the data must be transparent and shared between all the nodes, as required by the consensus mechanism. As long as you run a full node, you get a full copy of the blockchain database. The query function just reads the data from the blockchain. Assuming we add the signature check just like what we do in Fat Contract, anyone can still make a modified version of the client to perform the query function to bypass any check. However, this doesn't work at Phala Network, because only an unmodified worker program (pRuntime) running in a canonical Secure Enclave can load the contract and get the key to decrypt the contract data. The Secure Enclave provides a strong layer of protection.
+Indeed, it doesn't make a lot of sense to require the signature. In an ordinary blockchain, all the data must be transparent and shared between all the nodes, as required by the consensus mechanism. As long as you run a full node, you get a full copy of the blockchain database. The query function just reads the data from the blockchain. Assuming we add the signature check just like what we do in Phat Contract, anyone can still make a modified version of the client to perform the query function to bypass any check. However, this doesn't work at Phala Network, because only an unmodified worker program (pRuntime) running in a canonical Secure Enclave can load the contract and get the key to decrypt the contract data. The Secure Enclave provides a strong layer of protection.
 
 ### Exercise
 
