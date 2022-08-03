@@ -8,7 +8,9 @@ menu:
 
 Currently, we have supported the following assets with the corresponding transfer routes. The table below shows which chains have been supported for each asset. For example, we can transfer ZLK between parachains and Moonriver EVM, but we cannot transfer it between parachains and Ethereum.
 
-An asset id of type *uint32* is allocated for each registered asset. Each asset except PHA on Khala will have an unique asset id. You can use [pallet-assets](https://github.com/paritytech/substrate/tree/master/frame/assets) to transfer asset to any accounts within Khala Network.
+An asset id of type *uint32* is allocated for each registered asset. Each asset except PHA on Khala/Phala will have an unique asset id. You can use [pallet-assets](https://github.com/paritytech/substrate/tree/master/frame/assets) to transfer asset to any accounts within Khala/Phala Network.
+
+- Assets on Khala network
 
 | Name |                     Location                     | Asset ID | Parachains | Ethereum | Moonriver EVM |
 | ---: | :----------------------------------------------: | :------: | :--------: | :------: | :-----------: |
@@ -18,6 +20,14 @@ An asset id of type *uint32* is allocated for each registered asset. Each asset 
 | BNC  | (1, X2(Parachain(2001), GeneralKey(0x0001)))     |     2    |     ✅      |    ❌     |      ❌      |
 | ZLK  | (1, X2(Parachain(2001), GeneralKey(0x0207)))     |     3    |     ✅      |    ❌     |      ✅      |
 | aUSD | (1, X2(Parachain(2000), GeneralKey(0x0081)))     |     4    |     ✅      |    ❌     |      ❌      |
-| BSX  | (1, X2(Parachain(2090), GeneralKey(0x00000000))) |     5    |     ✅      |    ❌     |      ❌      |
 | MOVR | (1, X2(Parachain(2023), PalletInstance(10)))     |     6    |     ✅      |    ❌     |      ❌      |
 | HKO  | (1, X2(Parachain(2085), GeneralKey("HKO")))      |     7    |     ✅      |    ❌     |      ❌      |
+| KMA  | (1, X2(Parachain(2084)                           |     8    |     ✅      |    ❌     |      ❌      |
+| BSX  | (1, X2(Parachain(2090), GeneralIndex(0)))        |     9    |     ✅      |    ❌     |      ❌      |
+| TUR  | (1, X2(Parachain(2114)                           |    10    |     ✅      |    ❌     |      ❌      |
+
+- Assets on Phala network
+
+| Name |                     Location                     | Asset ID | Parachains | Ethereum | Moonriver EVM |
+| ---: | :----------------------------------------------: | :------: | :--------: | :------: | :-----------: |
+| PHA  | (1, X1(Parachain(2035)))                         |   null   |     ✅      |    ✅     |      ❌      |
