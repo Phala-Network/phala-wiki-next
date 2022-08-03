@@ -1,6 +1,6 @@
 ---
 title: Phala Products
-weight: 1002
+weight: 1005
 draft: false
 menu:
   general:

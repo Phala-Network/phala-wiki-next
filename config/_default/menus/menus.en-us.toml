@@ -30,16 +30,22 @@
   weight = 1000
 
 [[general]]
-  name = "Basic"
+  name = "Khala Network"
+  identifier = "khala-network"
+  url = "/general/phala-network/"
+  weight = 2000
+
+[[general]]
+  name = "Basic Guidance"
   identifier = "general-basic"
   url = "/general/applications/"
-  weight = 2000
+  weight = 3000
 
 [[general]]
   name = "SubBridge"
   identifier = "general-bridge"
   url = "/general/subbridge/"
-  weight = 3000
+  weight = 4000
 
 [[general]]
   name = "Delegation"

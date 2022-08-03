@@ -1,18 +1,18 @@
 ---
-title: "Governance"
+title: "Governance Mechanism"
 weight: 1003
 menu:
   general:
     parent: "phala-network"
 ---
 
+> Go to the [Governance](/en-us/maintain/governance/1-participate-in-democracy/) section for more detailed tutorials on voting and Treasury application.
+
 The early Khala network will use a governance mechanism consistent with Polkadot and Kusama, enabling it to evolve gracefully over time at the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of the stake can always command the network.
 
-Therefore, the following Khala democratic mechanism basically adopts the same process and instructions as the [Polkadot wiki ](https://wiki.polkadot.network/docs/learn-governance).
+Therefore, the following Khala democratic mechanism basically adopts the same process and instructions as the [Polkadot wiki](https://wiki.polkadot.network/docs/learn-governance).
 
 To do this, we bring together various novel mechanisms, including an amorphous state-transition function stored on-chain and defined in a platform-neutral intermediate language (i.e. WebAssembly) and several on-chain voting mechanisms such as referenda with adaptive super-majority thresholds and batch approval voting. All changes to the protocol must be agreed upon by stake-weighted referenda.
-
-> Go to the [Governance](/en-us/maintain/governance/1-participate-in-democracy/) section for more detailed tutorials on voting and Treasury application.
 
 ## Mechanism
 
