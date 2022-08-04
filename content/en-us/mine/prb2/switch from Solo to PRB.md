@@ -41,4 +41,4 @@ Add the endpoint of this pruntime on the Worker page of Prb (the format is: http
 Restart the lifecycle component of prb
 
 ## How to set up a PRB worker
-Just learn from this page: [PRB setup](https://wiki.phala.network/en-us/mine/prb2/deployment-guide/)
+Just learn from this page: [PRB setup](/en-us/mine/prb2/deployment-guide/)
