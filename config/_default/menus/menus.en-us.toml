@@ -5,7 +5,7 @@
 
 [[main]]
   name = "Build"
-  url = "/en-us/build/developer/intro/"
+  url = "/en-us/build/phat-contract/intro/"
   weight = 20
 
 [[main]]
@@ -49,16 +49,22 @@
   weight = 5000
 
 [[build]]
+  name = "Phat Contract"
+  identifier = "phat"
+  url = "/build/phat-contract/"
+  weight = 1000
+
+[[build]]
   name = "Developer Guide"
   identifier = "developer"
   url = "/build/developer/"
-  weight = 1000
+  weight = 2000
 
 [[build]]
   name = "Blockchain Infrastructure"
   identifier = "infra"
   url = "/build/infrastructure/"
-  weight = 2000
+  weight = 3000
 
 [[mine]]
   name = "Mine Khala"
