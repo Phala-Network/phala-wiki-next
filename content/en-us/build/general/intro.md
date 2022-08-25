@@ -4,7 +4,7 @@ weight: 1001
 draft: false
 menu:
   build:
-    parent: "phat"
+    parent: "phat-general"
 ---
 
 ## What is Phat Contract

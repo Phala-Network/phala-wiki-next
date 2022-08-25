@@ -1,9 +1,9 @@
 ---
-title: "Use Case Demonstration"
+title: "Use Cases"
 weight: 1002
 menu:
   build:
-    parent: "phat"
+    parent: "phat-general"
 ---
 
 ## Phat Contract

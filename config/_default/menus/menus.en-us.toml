@@ -5,7 +5,7 @@
 
 [[main]]
   name = "Build"
-  url = "/en-us/build/phat-contract/intro/"
+  url = "/en-us/build/general/intro/"
   weight = 20
 
 [[main]]
@@ -50,14 +50,14 @@
 
 [[build]]
   name = "Phat Contract"
-  identifier = "phat"
-  url = "/build/phat-contract/"
+  identifier = "phat-general"
+  url = "/build/general/"
   weight = 1000
 
 [[build]]
-  name = "Developer Guide"
-  identifier = "developer"
-  url = "/build/developer/"
+  name = "Getting Started"
+  identifier = "phat-basic"
+  url = "/build/getting-started/"
   weight = 2000
 
 [[build]]
@@ -65,6 +65,12 @@
   identifier = "infra"
   url = "/build/infrastructure/"
   weight = 3000
+
+[[build]]
+  name = "Archived"
+  identifier = "phat-archived"
+  url = "/build/archived/"
+  weight = 4000
 
 [[mine]]
   name = "Mine Khala"

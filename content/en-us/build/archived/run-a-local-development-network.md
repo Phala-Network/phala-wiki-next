@@ -1,9 +1,9 @@
 ---
 title: "Archived: Run a Local Development Network"
-weight: 1005
+weight: 1001
 menu:
   build:
-    parent: "developer"
+    parent: "phat-archived"
 ---
 
 > Basic understanding of Linux shell and compilation is necessary to follow this tutorial. <a href="https://academy.hackthebox.com/course/preview/linux-fundamentals" target="_blank">Linux Fundamentals</a> may help.
