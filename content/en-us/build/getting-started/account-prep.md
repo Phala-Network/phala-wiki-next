@@ -1,6 +1,6 @@
 ---
 title: "Prepare Test Account"
-weight: 1001
+weight: 1010
 menu:
   build:
     parent: "phat-basic"
@@ -28,15 +28,16 @@ Our testnet is launched in the `dev` mode, so there are some pre-defined develop
 
 > Never use your personal accounts for testing in case of unexpected financial losses.
 
-1. Choose your installed Polkadot.js Extension;
-2. Click "+", and choose "Create new account";
+1. Install [Polkadot.js extension](https://polkadot.js.org/extension/);
+2. Choose your installed Polkadot.js extension;
+3. Click "+", and choose "Create new account";
 
 <p align="center">
   <img src="/images/docs/khala-user/new-account.png" width="400"/>
 </p>
 
-3. Keep mnemonic seed safe;
-4. Choose Network "Allow use on any chain", fill in the descriptive name and password, and click "Add the account with the generated seed".
+4. Keep mnemonic seed safe;
+5. Choose Network "Allow use on any chain", fill in the descriptive name and password, and click "Add the account with the generated seed".
 
 <p align="center">
   <img src="/images/docs/khala-user/choose-network.png" width="400"/>
@@ -48,7 +49,7 @@ Our testnet is launched in the `dev` mode, so there are some pre-defined develop
 
 The balance of all the accounts is available on the [Polkadot.js app](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/accounts).
 
-1. Send some tokens from any development accounts;
+1. Send some tokens from any development account;
 
 ![](/images/build/tutor-transfer.png)
 
