@@ -41,3 +41,5 @@ cargo +nightly test
 and ensure you see all tests passed.
 
 > Do not add `contract` here, `cargo +nightly test` will give you more details if something goes wrong.
+
+Now you have successfully compiled and locally test your first Phat Contract. Now it's time to deploy it to a real blockchain.
