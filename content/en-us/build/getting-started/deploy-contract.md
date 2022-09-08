@@ -18,6 +18,8 @@ Before you use it, make sure you have prepared your test account, or follow our 
 
 By default, the UI will connect to our [public testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer).
 
+> Unlike other blockchains like Ethereum where you have to call your contracts through transactions, Phat Contracts are finally deployed to the off-chain Secure Workers so you can interact with them directly without submitting any transactions. So the UI will ask for two endpoints, one to connect to the blockchain and another to the Worker.
+
 To connect to our mainnet or your local testnet, you need to specify two endpoints here:
 - An RPC endpoint to connect to one of the Phala blockchain node to read the chain state and send transactions;
 - A pRuntime endpoint to directly connect to one of our Workers where the [off-chain computation](https://medium.com/phala-network/fat-contract-introduce-off-chain-computation-to-smart-contract-dfc5839d5fb8) really happens;
@@ -29,6 +31,12 @@ To connect to our mainnet or your local testnet, you need to specify two endpoin
 
 Choose `Upload` and locate your `.contract` file. The UI will load the metadata of your contract and list all the constructor functions in the `Init Selector` section.
 
+> **About Cluster**
+>
+> Phala has over 10k Secure Workers. They are organized into Clusters so you can use their computing power easily without knowing the underlying details.
+>
+> In our testnet, we have prepared a public good Cluster which anyone can deploy their contracts to.
+
 After you click the `Submit`, it will upload the contract WASM to the blockchain through transaction (the UI will ask for your permission).
 
 After the successful instantiation, you shall see the metadata of the deployed contract.
@@ -38,13 +46,16 @@ After the successful instantiation, you shall see the metadata of the deployed c
 
 ## Interact with Your Contract
 
-Scroll down the webpage and you can see all the interfaces of this contract.
+Scroll down the webpage and you can see all the interfaces of this contract, with their types, selectors and descriptions.
 
 ![](/images/build/phat-ui-interfaces.png)
 
-The interfaces are divided into two classes, labeled by `TX` and `QUERY` respectively. We will explain their difference in the followign sections.
+The interfaces are divided into two types, labeled by `TX` and `QUERY` respectively. We will explain their difference in the following sections.
 
-Click the thunder icon to send the request to the contract. For example, we can invoke the `get()` to get the current value of the flipper coin. Click the bottom status bar to see the execution result.
+Click the thunder icon to send the request to the contract. For example, we can invoke the `get()` to get the current value of the flipper coin. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
+
+The `QUERY` returns immediately since it involves no on-chain transactions (you can call `get()` many times to feel its immediate responses).
+Click the bottom status bar to see the execution result.
 
 ![](/images/build/phat-ui-query-result.png)
 
