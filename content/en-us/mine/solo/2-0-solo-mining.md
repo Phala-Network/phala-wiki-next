@@ -18,17 +18,23 @@ sudo ~/solo-mining-scripts-main/phala.sh install
 
 >`phala.sh` will update the miner to use your newly installed driver settings and configuration. This is required for first-time miners or whenever you update or change your driver configuration for this change to take effect.
 
+## Mode selection
+
+During the installation process, you will receive a prompt like:
+
+```mode select ( full | prune ) (Default: PRUNE):```
+
+The default option here is "prune" mode, which means less hard disk space is used to install node data. Just click `Enter` to go to the next step. 
+
+If your hard disk has more than 2T space and you want to install the complete Kusama node data, type `full` and click `Enter` to go to the next step.
+
+
 ## Miner Configuration
 
 > :warning: DO NOT reuse the same gas fee account across multiple solo miners.
 
 ### Set Wallet Address & More
 
-Use the following command to set your parameters.
-
-```bash
-sudo phala config
-```
 You will be prompted to set:
 - the number of CPU cores to use
   - <details><summary>How to look up your CPU cores?</summary>
@@ -54,8 +60,25 @@ You will be prompted to set:
 
 > Note, the following command will show sensitive information (mnemonic seed).
 
-You can get the current parameters in use with
+During the daily operation of miners (not in the installation process above), You can get the current parameters in use with
 
 ```bash
 sudo phala config show
 ```
+
+And use the following command to reset your parameters.
+
+```bash
+sudo phala config
+```
+
+## Headers update
+
+If you select the "Prune" mode, and this is the first time that you install the mining tools which means there is no headers data in the miner. 
+
+After the Configuration, do remember update headers with
+
+```bash
+sudo phala update headers
+```
+It may take some time to update headers, after the update, the installion is finished.
