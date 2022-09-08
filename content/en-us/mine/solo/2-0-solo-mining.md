@@ -81,4 +81,4 @@ After the Configuration, do remember update headers with
 ```bash
 sudo phala update headers
 ```
-It may take some time to update headers, after the update, the installion is finished.
+It may take some time to update headers, after the update, the installation is finished.
