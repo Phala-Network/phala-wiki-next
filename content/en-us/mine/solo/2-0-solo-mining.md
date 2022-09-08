@@ -76,7 +76,7 @@ sudo phala config
 
 If you select the "Prune" mode, and this is the first time that you install the mining tools which means there is no headers data in the miner. 
 
-After the Configuration, do remember update headers with
+After the Configuration, do remember to update headers with
 
 ```bash
 sudo phala update headers
