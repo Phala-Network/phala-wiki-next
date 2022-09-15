@@ -1,5 +1,5 @@
 ---
-title: "Archived: Run a Local Development Network"
+title: "Run a Local Development Network"
 weight: 1001
 menu:
   build:

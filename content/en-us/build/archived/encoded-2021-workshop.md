@@ -1,5 +1,5 @@
 ---
-title: "Archived: Phala x Encode Club Workshop"
+title: "Phala x Encode Club Workshop"
 weight: 1002
 draft: false
 menu:
