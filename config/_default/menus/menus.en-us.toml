@@ -61,16 +61,28 @@
   weight = 2000
 
 [[build]]
+  name = "Build on Phat Contract"
+  identifier = "phat-stateless"
+  url = "/build/stateless/"
+  weight = 3000
+
+[[build]]
+  name = "Store Contract States"
+  identifier = "phat-stateful"
+  url = "/build/stateful/"
+  weight = 4000
+
+[[build]]
   name = "Blockchain Infrastructure"
   identifier = "infra"
   url = "/build/infrastructure/"
-  weight = 3000
+  weight = 8000
 
 [[build]]
   name = "Archived"
   identifier = "phat-archived"
   url = "/build/archived/"
-  weight = 4000
+  weight = 9000
 
 [[mine]]
   name = "Mine Khala"
