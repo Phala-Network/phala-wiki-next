@@ -82,3 +82,11 @@ After the Configuration, do remember to update headers with
 sudo phala update headers
 ```
 It may take some time to update headers, after the update, the installation is finished.
+
+## Snapshot update
+
+If you need to download node data from the beginning, you can download the node snapshot with
+
+```bash
+sudo phala update snapshot
+```
