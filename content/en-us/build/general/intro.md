@@ -13,6 +13,7 @@ Phat Contract is the innovative programming model enabling [*Off-chain Computati
 
 Although with the name of "contract", Phat Contract is more like the Web3 version of [Amazon Lambda](https://aws.amazon.com/lambda/) backed by the decentralized Phala computing cloud, and meant to support complex computation with low latency and cost.
 
+Join our [Discord server](https://discord.com/invite/phala) and learn more in the `#dev` channel.
 
 ## Why using Phat Contract
 
