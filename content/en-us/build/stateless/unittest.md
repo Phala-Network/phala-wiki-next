@@ -1,6 +1,6 @@
 ---
 title: "Run Unittest Locally"
-weight: 1007
+weight: 1006
 menu:
   build:
     parent: "phat-stateless"
