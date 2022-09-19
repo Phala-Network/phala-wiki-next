@@ -52,8 +52,12 @@ Scroll down the webpage and you can see all the interfaces of this contract, wit
 
 The interfaces are divided into two types, labeled by `TX` and `QUERY` respectively. We will explain their difference in the following sections.
 
-Click the thunder icon to send the request to the contract. For example, we can invoke the `get_eth_balance()` to get the current balance of certain ETH address. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
+![](/images/build/phat-ui-input.png)
+
+Click the run icon to send the request to the contract. For example, we can invoke the `get_eth_balance()` to get the current balance of certain ETH address. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
 
 The `QUERY` returns immediately since it involves no on-chain transactions. Click the bottom status bar to see the execution result.
+
+![](/images/build/phat-ui-result.png)
 
 Congrats🎉! You have finished the basic tutorial of Phat Contract!
