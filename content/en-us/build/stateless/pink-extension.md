@@ -57,5 +57,5 @@ With its confidentiality and HTTP request support, you can safely store an Ether
 
 ### Other Crates
 
-- [fat-contract-examples](https://github.com/Phala-Network/fat-contract-examples) contains the official examples of Phat Contract. The examples are up-to-date, can may use some not-yet-released features;
+- [fat-contract-examples](https://github.com/Phala-Network/fat-contract-examples) contains the official examples of Phat Contract. The examples are up-to-date, and may use some not-yet-released features;
 - [awesome-fat-contracts](https://github.com/Phala-Network/awesome-fat-contracts) collects the learning materials and some Phat Contract examples from previous hackathon submissions.
