@@ -18,6 +18,8 @@ Before you use it, make sure you have prepared your test account, or follow our 
 
 By default, the UI will connect to our [public testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer).
 
+> **Why two endpoints**
+>
 > Unlike other blockchains like Ethereum where you have to call your contracts through transactions, Phat Contracts are finally deployed to the off-chain Secure Workers so you can interact with them directly without submitting any transactions. So the UI will ask for two endpoints, one to connect to the blockchain and another to the Worker.
 
 To connect to our mainnet or your local testnet, you need to specify two endpoints here:
@@ -39,6 +41,12 @@ Choose `Upload` and locate your `.contract` file. The UI will load the metadata 
 
 After you click the `Submit`, it will upload the contract WASM to the blockchain through transaction (the UI will ask for your permission).
 
+> **What happens**
+>
+> Your contract code is uploaded to the blockchain with transaction, that's why your signature is needed. The code is public, together with your instantiation arguments, this is meant to so that everyone can verify the initial state of the contract.
+>
+> The blockchain will automatically push the contract code to the Workers belong to the cluster you choose and instantiate it.
+
 After the successful instantiation, you shall see the metadata of the deployed contract.
 
 ![](/images/build/phat-ui-metadata.png)
@@ -55,6 +63,10 @@ The interfaces are divided into two types, labeled by `TX` and `QUERY` respectiv
 ![](/images/build/phat-ui-input.png)
 
 Click the run icon to send the request to the contract. For example, we can invoke the `get_eth_balance()` to get the current balance of certain ETH address. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
+
+> **What happens**
+>
+> Every transaction or query to the contract is encrypted, thus needs your signature. To save your efforts for signing every query (since query can be frequent), we implement a certificate mechanism to keep your query signature valid for 15 minutes.
 
 The `QUERY` returns immediately since it involves no on-chain transactions. Click the bottom status bar to see the execution result.
 

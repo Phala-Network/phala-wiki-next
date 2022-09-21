@@ -10,7 +10,7 @@ menu:
 
 The Phat Contract uses Rust-based Ink! language, and is finally compiled to WebAssembly (WASM for short).
 
-- You can get your contract compiled on both macOS and Linux distributions (we use Ubuntu 20.04 as the default Linux distribution).
+- You can get your contract compiled on both macOS and Linux distributions (we use Ubuntu 20.04 as the default Linux distribution);
 - For Windows users, we recommend to setup a Linux development environment with virtual machine ([video tutorial](https://www.youtube.com/watch?v=x5MhydijWmc)).
 
 ## Install Toolchains
