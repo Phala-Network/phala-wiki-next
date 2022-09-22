@@ -41,7 +41,7 @@ Choose `Upload` and locate your `.contract` file. The UI will load the metadata 
 
 After you click the `Submit`, it will upload the contract WASM to the blockchain through transaction (the UI will ask for your permission).
 
-> **What happens**
+> **What happened**
 >
 > Your contract code is uploaded to the blockchain with transaction, that's why your signature is needed. The code is public, together with your instantiation arguments, this is meant to so that everyone can verify the initial state of the contract.
 >
