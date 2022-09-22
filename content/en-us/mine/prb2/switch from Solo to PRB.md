@@ -24,7 +24,7 @@ Prb is "Phala Runtime Bridge" which replaces pherry to make a bridge between the
 
 ## Operation steps
 * Step1
-`Sodo phala stop`
+`sudo phala stop`
 * Step 2
 `sudo mkdir ~/prb`
 * Step 3
