@@ -64,7 +64,7 @@ The interfaces are divided into two types, labeled by `TX` and `QUERY` respectiv
 
 Click the run icon to send the request to the contract. For example, we can invoke the `get_eth_balance()` to get the current balance of certain ETH address. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
 
-> **What happens**
+> **What happened**
 >
 > Every transaction or query to the contract is encrypted, thus needs your signature. To save your efforts for signing every query (since query can be frequent), we implement a certificate mechanism to keep your query signature valid for 15 minutes.
 
