@@ -10,9 +10,9 @@ menu:
 
 All the unique capabilities of Phat Contract is implemented in [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink). Informally speaking:
 
-$ Phat\ Contract = Ink! + Pink\ Extension $
+$ Phat\ Contract = ink! + Pink\ Extension $
 
-It is worth noting that the Phat Contract is not a trivial extension of Ink! contract since all these extra functions only work under the off-chain computation.
+It is worth noting that the Phat Contract is not a trivial extension of ink! contract since all these extra functions only work under the off-chain computation.
 
 ## Pink Extension Functions
 

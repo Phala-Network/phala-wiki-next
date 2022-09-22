@@ -8,14 +8,14 @@ menu:
 
 ## Supported Operating Systems
 
-The Phat Contract uses Rust-based Ink! language, and is finally compiled to WebAssembly (WASM for short).
+The Phat Contract uses Rust-based ink! language, and is finally compiled to WebAssembly (WASM for short).
 
 - You can get your contract compiled on both macOS and Linux distributions (we use Ubuntu 20.04 as the default Linux distribution);
 - For Windows users, we recommend to setup a Linux development environment with virtual machine ([video tutorial](https://www.youtube.com/watch?v=x5MhydijWmc)).
 
 ## Install Toolchains
 
-Phat Contract shares the exact same toolchains as Ink!.
+Phat Contract shares the exact same toolchains as ink!.
 
 A prerequisite for compiling Phat contracts is to have Rust and Cargo (Rust's project manager) installed. The Rust official recommends to use `rustup` tool to install and manage different Rust versions. Here's [an installation guide](https://doc.rust-lang.org/cargo/getting-started/installation.html).
 

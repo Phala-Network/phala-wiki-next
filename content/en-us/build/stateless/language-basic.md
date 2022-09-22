@@ -6,13 +6,13 @@ menu:
     parent: "phat-stateless"
 ---
 
-The Phat Contract is written in Ink! language, which is extended from Rust language (more language supports like Python and Nodejs will be provided in the future). It is finally compiled to WebAssembly (WASM), which also takes security into consideration when designed, then you can upload and deploy them.
+The Phat Contract is written in ink! language, which is extended from Rust language (more language supports like Python and Nodejs will be provided in the future). It is finally compiled to WebAssembly (WASM), which also takes security into consideration when designed, then you can upload and deploy them.
 
 Rust is thought to be a hard language, but no worry! It deserves the efforts since Rust is fast and helps prevent many million-dollar bugs. Also I sincerely believe one day you will find it charming since all your enemy is just the Rust compiler itself😼.
 
-The prospering ecosystem is another reason to use Rust-based Ink! to develop your contract. There are many secure and high-performance libraries for you to use without building all the wheels from scratch.
+The prospering ecosystem is another reason to use Rust-based ink! to develop your contract. There are many secure and high-performance libraries for you to use without building all the wheels from scratch.
 
-This section will not teach your about the Rust and Ink! language itself. Instead, it provides some helpful links and comments to get you prepared quickly.
+This section will not teach your about the Rust and ink! language itself. Instead, it provides some helpful links and comments to get you prepared quickly.
 
 
 ## Rust
@@ -32,15 +32,15 @@ The best material is surely the official [Rust book](https://doc.rust-lang.org/b
 There are also many [books recommended by the community](https://www.reddit.com/r/rust/comments/sjclfb/best_book_to_learn_rust/) for more advanced topics.
 
 
-## Ink!
+## ink!
 
-Ink! is the programming language developed by Parity. The native Ink! contracts can run on different blockchains (like Polkadot and Phala), but Phala adds its secret ingredient called [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink) (short for Phala Ink! Extension) to form Phat Contract which is only functional in Phala's off-chain Workers.
+ink! is the programming language developed by Parity. The native ink! contracts can run on different blockchains (like Polkadot and Phala), but Phala adds its secret ingredient called [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink) (short for Phala ink! Extension) to form Phat Contract which is only functional in Phala's off-chain Workers.
 
-> Phat Contract is the superset of Ink! contract.
+> Phat Contract is the superset of ink! contract.
 
-### Ink! Macros
+### ink! Macros
 
-The difference between a Ink! contract and a normal Rust program is the macros in it. As shown in our [example contract](/en-us/build/getting-started/create-contract/#create-and-compile-your-first-contract), you need to annotate the Rust code with Ink! macros so the compiler can learn your contract structure. For example,
+The difference between a ink! contract and a normal Rust program is the macros in it. As shown in our [example contract](/en-us/build/getting-started/create-contract/#create-and-compile-your-first-contract), you need to annotate the Rust code with ink! macros so the compiler can learn your contract structure. For example,
 
 ```rust
 #[ink(storage)]
@@ -69,6 +69,6 @@ For a complete list of these macros and more detailed tutorial, refer to the [of
 
 > If you do not know what's Crate, you may need to go over your Rust book.
 
-[crates.io](https://crates.io/) is the market for the Rust crates. While only the crates with `no_std` support can be used in your Ink! contract. The reason is [explained by the official](https://ink.substrate.io/faq#why-is-rusts-standard-library-stdlib-not-available-in-ink).
+[crates.io](https://crates.io/) is the market for the Rust crates. While only the crates with `no_std` support can be used in your ink! contract. The reason is [explained by the official](https://ink.substrate.io/faq#why-is-rusts-standard-library-stdlib-not-available-in-ink).
 
 We will further provide crate recommendation for different use cases in the following [section](/en-us/build/stateless/rust-crates).

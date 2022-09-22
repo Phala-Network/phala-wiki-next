@@ -49,7 +49,7 @@ You can easily create a new contract instance in unittest by calling its constru
 
 The [ink_env](https://paritytech.github.io/ink/ink_env/test/index.html) crate contains all the functions to setup the blockchain calling context like the caller of the contract functions, the balance of certain account, e.t.c.
 
-We recommend to read the [Ink! official document](https://ink.substrate.io/basics/contract-testing/) to learn about its basic usages. And you can refer to the unittests in [Ink! Examples](https://github.com/paritytech/ink/tree/master/examples) to find useful pieces.
+We recommend to read the [ink! official document](https://ink.substrate.io/basics/contract-testing/) to learn about its basic usages. And you can refer to the unittests in [ink! Examples](https://github.com/paritytech/ink/tree/master/examples) to find useful pieces.
 
 Also, we prepare a cheatsheet for you here:
 

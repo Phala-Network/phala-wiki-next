@@ -9,7 +9,7 @@ menu:
 
 ## What is Phat Contract
 
-Phat Contract is the innovative programming model enabling [*Off-chain Computation*](https://medium.com/phala-network/fat-contract-introduce-off-chain-computation-to-smart-contract-dfc5839d5fb8). It’s also known as Fat Contract as a practice of the "Fat Protocol & Thin Application" concept, and for its rich functionalities compared with existing smart contract. Phat Contract uses Rust-based [Ink! language](https://paritytech.github.io/ink/).
+Phat Contract is the innovative programming model enabling [*Off-chain Computation*](https://medium.com/phala-network/fat-contract-introduce-off-chain-computation-to-smart-contract-dfc5839d5fb8). It’s also known as Fat Contract as a practice of the "Fat Protocol & Thin Application" concept, and for its rich functionalities compared with existing smart contract. Phat Contract uses Rust-based [ink! language](https://paritytech.github.io/ink/).
 
 Although with the name of "contract", Phat Contract is more like the Web3 version of [Amazon Lambda](https://aws.amazon.com/lambda/) backed by the decentralized Phala computing cloud, and meant to support complex computation with low latency and cost.
 
@@ -35,7 +35,7 @@ The Phat Contract inherits the self-enforcing and tamper-proof nature of smart c
 - Privacy-preserving with performance. It’s safe to store and process your secret data in Phat Contract since it’s backed by hardware-based encryption throughout its lifecycle;
 - Zero latency, zero gas fee. The interactions with Phat Contract can involve no on-chain transactions, thus achieving millisecond-level read and write responses with no gas fee;
 - Connectivity with HTTP requests. Phat Contract natively supports HTTP requests. Use it to connect any exiting Web2 services to store data and build Oracle, or an RPC node of other blockchains for easy and safe cross-chain operations;
-- Freedom to use libraries in Rust ecosystem. Write your contract with Rust-based [Ink! language](https://paritytech.github.io/ink/) and use libraries with `no_std` support. We will support `std` in the future Phat Contract version then you can use any libraries you like.
+- Freedom to use libraries in Rust ecosystem. Write your contract with Rust-based [ink! language](https://paritytech.github.io/ink/) and use libraries with `no_std` support. We will support `std` in the future Phat Contract version then you can use any libraries you like.
 
 ### Compared with Web2 Serverless Services
 

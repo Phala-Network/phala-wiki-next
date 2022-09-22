@@ -40,7 +40,7 @@ cargo +nightly test -- --nocapture
 ```
 and ensure you see all tests passed.
 
-> Do not add `contract` here, `cargo +nightly test` will give you more details if something goes wrong.
+> Do not use `cargo +nightly contract test` here, `cargo +nightly test` will give you more details if something goes wrong.
 >
 > `-- --nocapture` is optional to see the output during testing.
 
