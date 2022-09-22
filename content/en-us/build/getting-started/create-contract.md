@@ -32,7 +32,7 @@ The `.contract` file combines the WASM and metadata into one file and needs to b
 
 ## Run Unit Tests Locally
 
-Before you really upload and deploy your contract to our cloud, you are encouraged run local unit tests to check its correctness.
+Before you really upload and deploy your contract to the blockchain, you are encouraged run local unit tests to check its correctness.
 
 In the `phat-hello` folder, run
 ```

@@ -8,19 +8,11 @@ menu:
 
 We recommend to use [Phala Testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer) for contract testing.
 
-To deploy your contract to testnet, you can either
-
-- use the pre-defined development accounts with enough tokens;
-- or generate your own test account and transfer some test tokens to it to ensure you have enough balance to pay for the deployment transaction fee.
+To deploy your contract to testnet, you need to
+-  generate your own test account;
+-  transfer some test tokens to it to ensure you have enough balance to pay for the deployment transaction fee.
 
 In the following tutorial, we use the [Polkadot.js extension](https://polkadot.js.org/extension/) as the default wallet. Other wallets are available [here](/en-us/general/applications/extension-wallet/).
-
-## Use Pre-defined Accounts
-
-Our testnet is launched in the `dev` mode, so there are some pre-defined development accounts with enough tokens for you to use.
-
-![](/images/build/tutor-accounts.png)
-
 
 ## Setup Your Test Account
 

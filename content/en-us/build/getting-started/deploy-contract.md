@@ -31,7 +31,7 @@ To connect to our mainnet or your local testnet, you need to specify two endpoin
 
 ![](/images/build/phat-ui-upload.png)
 
-Choose `Upload` and locate your `.contract` file. The UI will load the metadata of your contract and list all the constructor functions in the `Init Selector` section.
+Choose `Upload` and locate your `.contract` file (it's generated in the [section above](/en-us/build/getting-started/create-contract/#create-and-compile-your-first-contract)). The UI will load the metadata of your contract and list all the constructor functions in the `Init Selector` section.
 
 > **About Cluster**
 >
@@ -54,11 +54,11 @@ After the successful instantiation, you shall see the metadata of the deployed c
 
 ## Interact with Your Contract
 
-Scroll down the webpage and you can see all the interfaces of this contract, with their types, selectors and descriptions.
+Scroll down the webpage and you can see all the interfaces of this contract, with their function names, types and descriptions.
 
 ![](/images/build/phat-ui-interfaces.png)
 
-The interfaces are divided into two types, labeled by `TX` and `QUERY` respectively. We will explain their difference in the following sections.
+The interfaces are divided into two types, labeled by `TX` and `QUERY` respectively. This contract only contains one `QUERY` handler. We will cover the `TX` handler in the following section.
 
 ![](/images/build/phat-ui-input.png)
 
