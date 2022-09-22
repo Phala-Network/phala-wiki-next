@@ -24,9 +24,9 @@ In order to build the contract just execute this command in the `phat-hello` fol
 cargo +nightly contract build
 ```
 
-> Always add `+nightly` when compiling your contract, this could fix a lot of problems.
+> Always add `+nightly` when compiling your contract since ink! toolchain requires the nightly Rust. Otherwise you may encounter a lot of problems.
 
-As a result you'll get the following files in the `target` folder of your contract: a `phat_hello.wasm` file, a `metadata.json` file and a `phat_hello.contract` file.
+As a result you'll get the following files in the `target/ink` folder of your contract: a `phat_hello.wasm` file, a `metadata.json` file and a `phat_hello.contract` file.
 The `.contract` file combines the WASM and metadata into one file and needs to be used when instantiating the contract.
 
 
