@@ -19,7 +19,7 @@ Phat Contract shares the exact same toolchains as ink!.
 
 ### Rust
 
-A prerequisite for compiling Phat contracts is to have Rust and Cargo (Rust's project manager) installed.
+A prerequisite for compiling Phat Contracts is to have Rust and Cargo (Rust's project manager) installed.
 
 The Rust official recommends to use `rustup` tool to install and manage different Rust versions. Here's [an installation guide](https://doc.rust-lang.org/cargo/getting-started/installation.html).
 

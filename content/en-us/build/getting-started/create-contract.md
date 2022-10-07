@@ -8,7 +8,7 @@ menu:
 
 ## Create and Compile Your First Contract
 
-In order to initialize a new Phat contract project you can use our hello world template:
+In order to initialize a new Phat Contract project you can use our hello world template:
 
 ```
 git clone https://github.com/Phala-Network/phat-hello

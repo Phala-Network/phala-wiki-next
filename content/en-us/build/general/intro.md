@@ -26,7 +26,7 @@ The existing smart contract solutions have many limitations:
 - No network access;
 - Few libraries;
 
-Phat Contract fixes these problems so you can do anything you want with one contract.
+Phat Contract is meant to be the missing computational unit for existing smart contracts, so you do not need to deploy your backend programs to centralized cloud anymore.
 
 ![](/images/general/fat-features.jpeg)
 
