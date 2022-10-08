@@ -1,10 +1,10 @@
 ---
-title: "Archived: Phala x Encode Club Workshop"
-weight: 1006
+title: "Phala x Encode Club Workshop"
+weight: 1002
 draft: false
 menu:
   build:
-    parent: "developer"
+    parent: "phat-archived"
 ---
 
 ## Phat Contract Workshop
