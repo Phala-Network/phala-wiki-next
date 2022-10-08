@@ -26,7 +26,7 @@ cargo +nightly contract build
 
 > Always add `+nightly` when compiling your contract since ink! toolchain requires the nightly Rust. Otherwise you may encounter a lot of problems.
 
-As a result you'll get the following files in the `target/ink` folder of your contract: a `phat_hello.wasm` file, a `metadata.json` file and a `phat_hello.contract` file.
+As a result you'll get the following files in the `target/ink` folder of your contract: `phat_hello.wasm`, `metadata.json` and `phat_hello.contract`.
 The `.contract` file combines the WASM and metadata into one file and needs to be used when instantiating the contract.
 
 

@@ -6,7 +6,7 @@ menu:
     parent: "phat-stateless"
 ---
 
-The Phat Contract is written in ink! language, which is extended from Rust language (more language supports like Python and Nodejs will be provided in the future). It is finally compiled to WebAssembly (WASM), which also takes security into consideration when designed, then you can upload and deploy them.
+The Phat Contract is written in ink! language, which is extended from Rust language (more language supports will be provided in the future). It is finally compiled to WebAssembly (WASM), which also takes [security](https://training.linuxfoundation.org/blog/webassembly-security-now-and-in-the-future/) into consideration when designed, then you can upload and deploy them.
 
 Rust is thought to be a hard language, but no worry! It deserves the efforts since Rust is fast and helps prevent many million-dollar bugs. Also I sincerely believe one day you will find it charming since all your enemy is just the Rust compiler itself😼.
 
@@ -34,7 +34,7 @@ There are also many [books recommended by the community](https://www.reddit.com/
 
 ## ink!
 
-ink! is the programming language developed by Parity. The native ink! contracts can run on different blockchains (like Polkadot and Phala), but Phala adds its secret ingredient called [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink) (short for Phala ink! Extension) to form Phat Contract which is only functional in Phala's off-chain Workers.
+ink! is the default contract programming language in Polkadot ecosystem. The native ink! contracts can run on different blockchains (like Polkadot and Phala), but Phala adds its secret ingredient called [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink) (short for Phala ink! Extension) to form Phat Contract which is only functional in Phala cloud.
 
 > Phat Contract is the superset of ink! contract.
 
@@ -52,11 +52,6 @@ pub struct OnchainState;
 ```rust
 #[ink(message)]
 pub fn query_handler(&self, from: AccountId) {
-    // actual implementation
-}
-
-#[ink(message)]
-pub fn transaction_handler(&mut self, from: AccountId) {
     // actual implementation
 }
 ```
