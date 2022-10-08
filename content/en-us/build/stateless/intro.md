@@ -1,20 +1,19 @@
 ---
-title: "Build Stateless DApps"
+title: "Build Stateless Backend"
 weight: 1001
 menu:
   build:
     parent: "phat-stateless"
 ---
 
-## Why Stateless DApps
+## Why starting with stateless backend
 
 Compared with traditional smart-contract-based DApps which store all their states on-chain and require transactions for interaction, the desired use cases of Phat Contract happen off-chain with no (or limited) data stored on-chain. For example, instead of implementing an [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) token with Phat Contract (whose balance has to be stored on-chain), we recommend to deploy your ERC-20 contract on Ethereum, and use Phat Contract to operate it.
 
-Our insight here is that:
+Actually, the Phat Contract itself focuses on the computation instead of storage, so it can be very easy to build stateless backend with Phat Contract (you can connect to other storage services with the HTTP requests in Phat Contract).
+But no worry, backends and especially serverless backends are usually stateless and they worked very well without databases.
 
-> Only a very limited portion of your DApp data really needs to be stored on-chain.
-
-Since the on-chain storage can be expensive (from both monetary and performance perspectives), it's timeworthy to refactor your DApps and move the stateless parts to Phat Contract. The benefits include:
+Also by implementing stateless backend brings immediate benefits at no developing cost:
 
 - **Easy concurrent processing.** In Phala, it's easy to deploy your contract to multiple Workers, then all the instances can handle the users' off-chain requests (called [Query](/en-us/build/stateless/query-and-tx/#whats-query)) concurrently if there is no state-consistency limitation;
 - **Go pure off-chain.** If your contract is stateless, it goes totally off-chain and is no longer limited by gas fee and block latency anymore. Many Phat Contract advantages (like HTTP support) are only allowed off-chain.
