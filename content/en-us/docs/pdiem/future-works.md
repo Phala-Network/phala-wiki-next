@@ -11,7 +11,7 @@ pDiem is a fast growing project. We plan to add the features below in the near f
 
 - Contract
   - Token transfer: integrate with Assets confidential contract and XCM
-  - Move to Ink! confidential smart contract (WASM)
+  - Move to ink! confidential smart contract (WASM)
   - Confirm the successful withdraw
   - Multisig collateral
 - Relayer

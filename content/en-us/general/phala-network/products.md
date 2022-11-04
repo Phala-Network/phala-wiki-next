@@ -40,10 +40,10 @@ SubBridge is based on the "XCM + ChainBridge cross-chain protocol" to realize cr
 
 > Learn [more](/en-us/general/subbridge/intro/) about SubBridge and use it to transfer your assets across different chains, or follow the [Integration Guide](/en-us/general/subbridge/asset-integration/) to add support for your chain and asset.
 
-## Phala World
+## PhalaWorld
 
 ![](/images/general/phala_world.jpg)
 
-A Metaverse based on the Phala Network blockchain. Phala World adopts the concept of Soulbound NFT to mapping the users' off-chain activities to blockchain world.
+A Metaverse based on the Phala Network blockchain. PhalaWorld adopts the concept of Soulbound NFT to mapping the users' off-chain activities to blockchain world.
 
-> Go to Phala World [official website](https://www.phalaworld.com/).
+> Go to PhalaWorld [official website](https://www.phalaworld.com/).
