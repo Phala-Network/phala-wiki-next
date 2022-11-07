@@ -177,14 +177,14 @@ Proposed algorithm:
 
 ### Subsidy Budget
 
-|                    |     Total      |  Khala  |  Phala   |
-| ------------------ | :------------: | :-----: | :------: |
-| Relaychain         |       /        | Kusama  | Polkadot |
-| Budget for Mining  |    700 mln     | 10 mln  | 690 mln  |
-| Halving Period     |       /        | 45 days | 180 days |
-| Halving Discount   | 25% per period |   25%   |   25%    |
-| Treasure Share     |       /        |   20%   |   20%    |
-| First Month Reward |       /        | 1.8 mln | 21.6 mln |
+|                    |    Phala / Khala   |
+| ------------------ |  :---------------: |
+| Relaychain         |  Polkadot/ Kusama  |
+| Budget for Mining  |       700 mln      |
+| Halving Period     |       180 days     |
+| Halving Discount   |         25%        |
+| Treasure Share     |         20%        |
+| First Month Reward |       21.6 mln     |
 
 ### Heartbeat & Payout Schedule
 
