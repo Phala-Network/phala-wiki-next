@@ -206,7 +206,7 @@ Potential parameters:
 
 ### Slash rules
 
-The slash rules for miners are defined below. Note that currently only the Level 1 slash is currently implemented.
+The slash rules for miners are defined below. No slash rules have been implemented at the moment, but will start in the near future.
 
 | Severity | Fault                               | Punishment                                |
 | -------- | ----------------------------------- | ----------------------------------------- |
