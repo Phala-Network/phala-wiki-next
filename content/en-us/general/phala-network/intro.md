@@ -20,6 +20,12 @@ At present, Secure Worker Mining mechanism has been running steadily on Khala Ne
 
 We strongly agree that Web3 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web3 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
 
+## How to use Phala
+
+Through [Phat Contract](/en-us/general/phala-network/products/#phat-contract). You can do serverless computing on Phala by programming and deploying Phat contracts. With "serverless" we mean that you do not need to care about the setup of underlying hardwares anymore, and the network will allocate the computing power for you proportional to the PHA token you stake, i.e., *stake-to-compute*.
+
+Learn [more](/en-us/general/phala-network/products/) about other Phala's products.
+
 ## Roadmap of 2022
 
 ![](/images/general/roadmap-2022.jpg)

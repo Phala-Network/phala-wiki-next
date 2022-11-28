@@ -31,7 +31,8 @@ The Phat Contract inherits the self-enforcing and tamper-proof nature of smart c
 
 Phat Contract provides the same functionalities as our Web2 counterparts, but opens up more possibilities with its Web3 nature.
 
-- Decentralized and trustless. Our infrastructure design is totally public and all its code is available for you to check. To process your sensitive data in Phat Contract implies no trust on the Phala team, but on the code and Secure-Enclave-based hardware;
+- Enforced execution of general-purpose programs. The enforcement of execution is the core feature of smart contract: the developers cannot tamper or stop their programs after deployment, which builds the trust base. With Phat Contract, we bring this to more general-purpose programs. Never under-estimate this since it's why cryptocurrencies can have value;
+- Decentralized and trustless infrastructure. Our infrastructure design is totally public and all its code is available for you to check. To process your sensitive data in Phat Contract implies no trust on the Phala team, but on the code and Secure-Enclave-based hardware;
 - Easier integration with other blockchains. We provide contract templates for easy and safe interactions with existing blockchains. Also you can safely delegate your chain accounts to the trustless Phat Contract with no worry about privacy leakage;
 - Open contract ecosystem. A most typical difference between contracts and Web2 programs is that they are naturally public: you are free to call any existing contracts to compose your own apps with little efforts.
 

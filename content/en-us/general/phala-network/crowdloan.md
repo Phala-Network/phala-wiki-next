@@ -1,6 +1,6 @@
 ---
 title: Phala Crowdloan
-weight: 1002
+weight: 1003
 draft: false
 menu:
   general:

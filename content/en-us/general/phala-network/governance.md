@@ -1,6 +1,6 @@
 ---
 title: "Governance Mechanism"
-weight: 1003
+weight: 1004
 menu:
   general:
     parent: "phala-network"

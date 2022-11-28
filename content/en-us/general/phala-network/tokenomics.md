@@ -1,6 +1,6 @@
 ---
 title: "Tokenomics"
-weight: 1004
+weight: 1005
 menu:
   general:
     parent: "phala-network"
