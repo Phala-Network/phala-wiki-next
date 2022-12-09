@@ -8,11 +8,11 @@ menu:
 
 Khala Network is Phala's canary network on Kusama Parachain featuring decentralized mining. We provide an overview to setup the mining environment, followed by a detailed explanation of each step.
 
-We highly recommend miners to first read about Phala's [tokenomics](/en-us/learn/tokenomics/tokenomics/) and [staking mechanism](/en-us/learn/tokenomics/mining-staking/) to understand the calculation of incomings and how the mining proceeds.
+We highly recommend workers to first read about Phala's [tokenomics](/en-us/learn/tokenomics/tokenomics/) and [staking mechanism](/en-us/learn/tokenomics/mining-staking/) to understand the calculation of incomings and how the mining proceeds.
 
 ## Introduction
 
-Miners, also referred to as "Workers" in Phala blockchain, provide computing power to the Phala Network. Anyone with the appropriate hardware can participate.
+Workers provide computing power to the Phala Network. Anyone with the appropriate hardware can participate.
 
 > More information about hardware requirements: :point_right: [here](/en-us/mine/khala-mining/hardware-requirements/#general-khala-hardware-requirements)
 

@@ -1,5 +1,5 @@
 ---
-title: "Miner Confidence Level"
+title: "Worker Confidence Level"
 weight: 1003
 menu:
   mine:
@@ -8,13 +8,13 @@ menu:
 
 ## Test your Intel® SGX Capability
 
-The confidence level impacts your miner's score. Before configuring your miner, the necessary drivers are required, and the `sgx-test` option determines your Intel® SGX Capability alongside the confidence level.
+The confidence level impacts your worker's score. Before configuring your worker, the necessary drivers are required, and the `sgx-test` option determines your Intel® SGX Capability alongside the confidence level.
 
   ```bash
   sudo phala sgx-test
   ```
 
-> This command will install :whale: Docker, the required Intel® SGX drivers, and pull all the necessary Docker images for your Phala miner :rock::pick:.
+> This command will install :whale: Docker, the required Intel® SGX drivers, and pull all the necessary Docker images for your Phala worker :rock::pick:.
 > - Please follow the instruction during installation.
 
 Information about the checks conducted during execution of the command:
@@ -72,7 +72,7 @@ If you can not run Phala pRuntime with both of them tagged as ✔, you may have 
 
 Your confidence level, referred to as the "Tier" in the table below, will appear in the last line of the report after executing `sudo phala sgx-test`.
 
-## Confidence Level of a Miner
+## Confidence Level of a Worker
 
 | Level  | isvEnclaveQuoteStatus                                       | advisoryIDs               |
 | ------ | ----------------------------------------------------------- | ------------------------- |
@@ -110,4 +110,4 @@ Tier 4, 5 are considered with reduced security, because these machines requires 
 
 Once Phala is open for developers to deploy their apps, there will be an option for them to choose which tiers they will accept. Since Tier 1, 2, 3 have better security, they can potentially get higher chance to win the confidential contract assignment. However, Tier 4, 5 are useful in other use cases, and therefore can be a more economic choice for the developers.
 
-If your miner is in tier 4 or 5, please check the FAQ page for potential fixes.
+If your worker is in tier 4 or 5, please check the FAQ page for potential fixes.

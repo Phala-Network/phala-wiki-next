@@ -1,5 +1,5 @@
 ---
-title: "Manage the Miner"
+title: "Manage the Worker"
 weight: 1030
 menu:
   mine:
@@ -8,12 +8,12 @@ menu:
 
 > We highly recommend reading about our [staking mechanism](/en-us/learn/tokenomics/mining-staking) before using the [Phala App](https://app.phala.network/mining/).
 
-Miners and pool owners can use the Phala App to manage Workers/ Miners and StakePools. It also provides an overview of the status of all the managed Miners and Stake Pools.
+Workers and pool owners can use the Phala App to manage Workers/ Workers and StakePools. It also provides an overview of the status of all the managed Workers and Stake Pools.
 
 ## Prerequisites
 >
-> 1. The same [Khala account](/en-us/general/phala-wallet/polkadot-extension-guide/) the Miners run on, as the pool Owner and Miner operator.
-> 2. `miner public key`: The Miner must be ready and synced. This miner must use the same Khala Account as the one you use for the Khala App.
+> 1. The same [Khala account](/en-us/general/phala-wallet/polkadot-extension-guide/) the Workers run on, as the pool Owner and Worker operator.
+> 2. `worker public key`: The Worker must be ready and synced. This worker must use the same Khala Account as the one you use for the Khala App.
 
 If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/accounts) (+ Add account) and install the [Polkadot{.js} extension](https://polkadot.js.org/extension) for your browser.
 
@@ -73,15 +73,15 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
      - Submit the transaction;
      - The capacity value will be updated in the Stakepool list;
 
-### Add a Miner
+### Add a Worker
 
    - Select `...` (next to "Info") "Add Worker" (highlited red) in the target pool;
 
      ![](/images/docs/khala-mining/add-worker.png)
 
-   - Copy & paste your `miner public key` of your miner in the pop-up window;
+   - Copy & paste your `worker public key` of your worker in the pop-up window;
    - Submit the transaction;
-   - Your miner will now be listed;
+   - Your worker will now be listed;
 
 ### Staking/ Delegating
 

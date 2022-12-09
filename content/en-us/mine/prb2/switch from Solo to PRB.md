@@ -6,9 +6,9 @@ menu:
     parent: "mine-prb2"
 ---
 
-## How Solo miner works
+## How Solo worker works
 
-Solo miner runs 3 Docker containers named Phala-node, Phala-pherry, and Phala-pRuntime. 
+Solo worker runs 3 Docker containers named Phala-node, Phala-pherry, and Phala-pRuntime.
 
 Node provides blockchain node services; PRuntime provides TEE-runtime services; And Pherry acts as a bridge between TEE and blockchain nodes. The only component that really provides decentralized computing services to the network is pRuntime
 
@@ -18,8 +18,8 @@ Prb is "Phala Runtime Bridge" which replaces pherry to make a bridge between the
 
 ## How to switch from Solo mining to PRB mining
 
-* Turn off Pherry service on solo miners
-* Shut down the Node service on solo miners
+* Turn off Pherry service on solo workers
+* Shut down the Node service on solo workers
 * Let pRuntime run alone and add pruntime's endpoint to PRB
 
 ## Operation steps
@@ -33,7 +33,7 @@ Copy the docker-compse.yml and .env files in the Solo mining folder to ~/prb
 `sudo vim docker-compose.yml`
 Edit the docker-compose file and delete the descriptions of the node and pherry services
 * Step 5
-`sudo docker-compose up -d` 
+`sudo docker-compose up -d`
 start pruntime alone
 * Step 6
 Add the endpoint of this pruntime on the Worker page of Prb (the format is: http://xxx.xxx.xxx.xxx:8000)

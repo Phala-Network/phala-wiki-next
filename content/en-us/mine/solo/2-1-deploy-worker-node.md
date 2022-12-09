@@ -1,5 +1,5 @@
 ---
-title: "Deploy the Miner"
+title: "Deploy the Worker"
 weight: 1021
 menu:
   mine:

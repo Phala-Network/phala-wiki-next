@@ -1,5 +1,5 @@
 ---
-title: "Update your Miner's Node"
+title: "Update your Worker's Node"
 weight: 1024
 menu:
   mine:

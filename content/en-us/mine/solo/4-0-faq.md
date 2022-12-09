@@ -14,12 +14,12 @@ menu:
 
 {{< button "/en-us/mine/solo/4-0-faq/#confidence-level" "Confidence Level" >}}
 
-{{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
+{{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Worker" >}}
 
 {{< button "https://forum.phala.network/c/mai/42-category/42" "Forum" >}}
 
 \
-:point_down: You can also join our Discord or Telegram miner group to discuss your issue. :point_down:
+:point_down: You can also join our Discord or Telegram worker group to discuss your issue. :point_down:
 
 <div class="mediaList">
   <div class="item">
@@ -30,7 +30,7 @@ menu:
      </a>
   </div>
   <div class="item">
-     <a href="https://t.me/phalaminer" target="_blank">
+     <a href="https://t.me/phalaworker" target="_blank">
         <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M9.35464 19.5529L9.73964 13.7367L20.2996 4.22167C20.7671 3.79542 20.2034 3.58917 19.5846 3.96042L6.54964 12.1967L0.912142 10.4092C-0.297858 10.0654 -0.311608 9.22667 1.18714 8.62167L23.1459 0.151666C24.1496 -0.302084 25.1121 0.399166 24.7271 1.93917L20.9871 19.5529C20.7259 20.8042 19.9696 21.1067 18.9246 20.5292L13.2321 16.3217L10.4959 18.9754C10.1796 19.2917 9.91839 19.5529 9.35464 19.5529Z" fill="#8C8C8C"></path>
         </svg>
@@ -70,7 +70,7 @@ If you still have issues attempt to [update the script](/en-us/mine/solo/2-3-upg
 
 ## Investigating the Issue
 
-Get an overview of your miner's status first.
+Get an overview of your worker's status first.
 
 ```bash
 sudo phala status
@@ -83,7 +83,7 @@ In case your node is stuck, a typical scenario would look like the following:
     <img alt="Phala Network" src="https://user-images.githubusercontent.com/37558304/147273109-d4d1d5e3-5098-43d1-99f5-2ba995ecd1b6.png" height="250">
   </a>
 </p>
-(image showing stuck node on the miner)
+(image showing stuck node on the worker)
 
 With the symptom in the scenario above, the right method to solve the issue would be restarting the `node` container only, with the commands mentioned [here](stop-docker-separately), and restarting the containers.
 
@@ -106,7 +106,7 @@ You should have three containers running as shown in this example:
   </a>
 </p>
 
-(image showing the miner node's running docker containers)
+(image showing the worker node's running docker containers)
 
 To get the most recent logs of each container, you may execute:
 
@@ -209,7 +209,7 @@ sudo phala install isgx
 
 If the Khala Chain stops synching and is stuck at a specific block and does not continue to sync, we advise you first to [restart your node](/en-us/mine/solo/4-0-faq/#general).
 
-If the synchronization still fails, you may try to delete the khala chain database on your miner's node.
+If the synchronization still fails, you may try to delete the khala chain database on your worker's node.
 It is located in `/var/khala-dev-node/chains/khala`.
 
 <p align="center">
@@ -218,7 +218,7 @@ It is located in `/var/khala-dev-node/chains/khala`.
   </a>
 </p>
 
-(image showing the khala blockchain files of the miner node)
+(image showing the khala blockchain files of the worker node)
 
 It is located in `/var/khala-dev-node/chains/khala`.
 
