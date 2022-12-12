@@ -1,6 +1,6 @@
 ---
 title: "Worker Rewards"
-weight: 1005
+weight: 1006
 menu:
   general:
     parent: "phala-network"

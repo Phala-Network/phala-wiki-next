@@ -17,8 +17,8 @@ The vision our Phala is to become the world’s largest P2P computing network, a
 When we say Phala Network is *trustless*, it means the following features:
 
 - Phala does not own any servers, and anyone with qualified hardware is allowed to join the network to be a *worker* and share the computing power. The live statistic is availabe [here](https://app.phala.network/analytics/);
-- Phala assumes no trust on the worker operators (the human), so any worker must run a Secure-Enclave-based hardware, and needs to prove its integrity during worker registration. This provides the hardware-based promise on the correctness of execution and data privacy;
-- Phala designs its [Supply-end Tokenomics](/en-us/general/phala-network/tokenomics/) to further encourage high-quality services of both performance and stability;
+- All Phala codebases are open-source for review, check our [Github repositories](https://github.com/Phala-Network);
+- Phala assumes no trust on the worker operators (the human), so any worker must run a Secure-Enclave-based hardware, and needs to prove its integrity during worker registration. This provides the hardware-based promise on the correctness of execution and data privacy. Phala further designs its [Supply-end Tokenomics](/en-us/general/phala-network/tokenomics/) to encourage high-quality services of both performance and stability;
 - All the workers are managed by the blockchain, which is governed by the on-chain Council. Phala Network follows the [democratic governance](/en-us/general/phala-network/governance/);
 
 <!-- Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, a standard decentralized computing cloud based on Web3.

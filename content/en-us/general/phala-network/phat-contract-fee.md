@@ -1,6 +1,6 @@
 ---
 title: "Pay for Cloud Service"
-weight: 1006
+weight: 1005
 menu:
   general:
     parent: "phala-network"
@@ -25,13 +25,13 @@ This version is written by [Samuel Häfner](https://samuelhaefner.github.io/). I
 
 ## How to pay for the computing services
 
-This section is related to the Second Layer and consists of 2 parts: query tokenomics and transaction tokenomics.
+This section consists of 2 parts: query tokenomics and transaction tokenomics. It applies to all the public good clusters that are managed by Phala team. In the future, users will be allowed to create their own clusters and define their own rules.
 
 > Every contract must have some stake
 
 ### Query tokenomics
 
-Phat Contract utilizes a very ‘simple’ tokenomics for queries (not considering on-chain tx since it’s trivial). The rules can be summarized below:
+Phat Contract utilizes a very simple tokenomics for queries. The rules can be summarized below:
 
 - The share of computing power a contract receives on each worker equals to the stake’s share of that in the cluster;
 - Anyone can stake to any contract;
