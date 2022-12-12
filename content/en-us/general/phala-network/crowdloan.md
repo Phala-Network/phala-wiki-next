@@ -1,7 +1,7 @@
 ---
 title: Phala Crowdloan
 weight: 1003
-draft: false
+draft: true
 menu:
   general:
     parent: "phala-network"

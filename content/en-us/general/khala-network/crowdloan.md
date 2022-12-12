@@ -1,7 +1,7 @@
 ---
 title: Khala Crowdloan
 weight: 1002
-draft: false
+draft: true
 menu:
   general:
     parent: "khala-network"

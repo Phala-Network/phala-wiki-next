@@ -10,21 +10,34 @@ menu:
 
 ![](/images/general/landing.jpg)
 
-## Phala Network: Web3.0 Compute Cloud
+## Phala Network: Web3 Computing Cloud
 
-Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, a standard decentralized computing cloud based on Web3.
+The vision our Phala is to become the world’s largest P2P computing network, a standard decentralized computing cloud based on Web3. Compared with centralized solutions like Amazon Web Services, Microsoft Azure and Google Cloud Platform, trustless is not only the first feature of Phala recognized by the community but also the cornerstone of Phala becoming a reliable distributed computing network.
+
+When we say Phala Network is *trustless*, it means the following features:
+
+- Phala does not own any servers, and anyone with qualified hardware is allowed to join the network to be a *worker* and share the computing power. The live statistic is availabe [here](https://app.phala.network/analytics/);
+- Phala assumes no trust on the worker operators (the human), so any worker must run a Secure-Enclave-based hardware, and needs to prove its integrity during worker registration. This provides the hardware-based promise on the correctness of execution and data privacy;
+- Phala designs its [Supply-end Tokenomics](/en-us/general/phala-network/tokenomics/) to further encourage high-quality services of both performance and stability;
+- All the workers are managed by the blockchain, which is governed by the on-chain Council. Phala Network follows the [democratic governance](/en-us/general/phala-network/governance/);
+
+<!-- Many people got to know Phala because of its distinctive privacy feature and innovative “blockchain + secure enclave” architecture. However, data privacy is just one of the basic features mentioned in Phala Network’s white paper. Our vision is to become the world’s largest P2P computing network, a standard decentralized computing cloud based on Web3.
 
 Trustless is not only the first feature of Phala recognized by the community but also the cornerstone of Phala becoming a reliable distributed computing network.
 In addition, the “sharing economy” model is also Phala’s Web3 characteristic. To ensure that network users and computing power providers won’t be controlled by centralized Internet companies, we must adopt the blockchain protocol, allowing any computing node to join the network and provide usable and stable computing services. This is also the foundation of the Secure Worker Mining mechanism.
-At present, Secure Worker Mining mechanism has been running steadily on Khala Network for over two months. Although Khala’s Mining reward is only 10% of Phala’s, there are still more than 20,000 computing nodes successfully registered on Khala. Among them, more than 15,000 servers are running on Khala steadily for some time. These servers provide more than 120,000 vCPUs, which contribute large-scale computing services for the Web3 world — such computing resource scale is second to none in the Crypto field! On Khala Network alone, we already have nearly 1% of the AWS computing power. We believe on Phala Network mainnet, the number of trusted computing nodes can be used in the Web3 world will exceed 100,000 in the future!
+At present, Secure Worker Mining mechanism has been running steadily on Khala Network for over two months. Although Khala’s Mining reward is only 10% of Phala’s, there are still more than 20,000 computing nodes successfully registered on Khala. Among them, more than 15,000 servers are running on Khala steadily for some time. These servers provide more than 120,000 vCPUs, which contribute large-scale computing services for the Web3 world — such computing resource scale is second to none in the Crypto field! On Khala Network alone, we already have nearly 1% of the AWS computing power. We believe on Phala Network mainnet, the number of trusted computing nodes can be used in the Web3 world will exceed 100,000 in the future! -->
 
 We strongly agree that Web3 will be the most powerful innovation driving force in the next 20–30 years. Web3 and the evolution of artificial intelligence coexist, otherwise the world might fall into a worse situation. Therefore, we cannot stop and be constrained by previous designs or “fundamentalism” because there is still a long way to go till the success of Web3 revolution. We will replace any centralized services used by the Crypto world step by step to fulfill our vision, which is also the evolutionary goal of Phala Network.
 
-## How to use Phala
+## How to use Phala Cloud
 
-Through [Phat Contract](/en-us/general/phala-network/products/#phat-contract). You can do serverless computing on Phala by programming and deploying Phat contracts. With "serverless" we mean that you do not need to care about the setup of underlying hardwares anymore, and the network will allocate the computing power for you proportional to the PHA token you stake, i.e., *stake-to-compute*.
+<img align="right" width="320" src="/images/build/Phat%20Contract_Standard%20Logo_wht_02.svg">
 
-Learn [more](/en-us/general/phala-network/products/) about other Phala's products.
+Through [Phat Contract](/en-us/general/phala-network/products/#phat-contract).
+
+You can do serverless computing on Phala by programming and deploying Phat contracts. With "serverless" we mean that you do not need to care about the setup of underlying hardwares anymore, and the network will allocate the computing power for you proportional to the PHA token you stake, i.e., *stake-to-compute*.
+
+> Learn about other [Phala's products](/en-us/general/phala-network/products/).
 
 ## Roadmap of 2022
 
