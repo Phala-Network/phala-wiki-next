@@ -1,6 +1,6 @@
 ---
 title: "Monitor Worker's Status"
-weight: 1022
+weight: 2022
 menu:
   mine:
     parent: "mine-solo"

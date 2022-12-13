@@ -1,6 +1,6 @@
 ---
 title: "Create Contract"
-weight: 1002
+weight: 2002
 menu:
   build:
     parent: "phat-basic"

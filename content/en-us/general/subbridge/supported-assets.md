@@ -1,6 +1,6 @@
 ---
 title: 'Supported Assets'
-weight: 1003
+weight: 4003
 menu:
   general:
     parent: "general-bridge"

@@ -1,6 +1,6 @@
 ---
 title: "Phala Blockchain in Detail"
-weight: 1001
+weight: 5001
 menu:
   build:
     parent: "infra"

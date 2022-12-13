@@ -1,6 +1,6 @@
 ---
 title: "Configure the Worker"
-weight: 1020
+weight: 2020
 menu:
   mine:
     parent: "mine-solo"

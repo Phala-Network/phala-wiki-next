@@ -1,6 +1,6 @@
 ---
 title: "Deploy Contract and Interact"
-weight: 1003
+weight: 2003
 menu:
   build:
     parent: "phat-basic"

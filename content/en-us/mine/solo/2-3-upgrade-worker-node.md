@@ -1,6 +1,6 @@
 ---
 title: "Update your Worker's Node"
-weight: 1024
+weight: 2024
 menu:
   mine:
     parent: "mine-solo"

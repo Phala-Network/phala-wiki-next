@@ -1,6 +1,6 @@
 ---
 title: "Language Basics"
-weight: 1002
+weight: 3002
 menu:
   build:
     parent: "phat-stateless"

@@ -1,6 +1,6 @@
 ---
 title: "How to switch from Solo mining to PRB mining"
-weight: 2010
+weight: 3010
 menu:
   mine:
     parent: "mine-prb2"

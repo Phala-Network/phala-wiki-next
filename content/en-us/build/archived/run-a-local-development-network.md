@@ -1,6 +1,6 @@
 ---
 title: "Run a Local Development Network"
-weight: 1001
+weight: 9001
 menu:
   build:
     parent: "phat-archived"

@@ -1,6 +1,6 @@
 ---
 title: Collator
-weight: 1002
+weight: 2002
 draft: false
 menu:
   maintain:

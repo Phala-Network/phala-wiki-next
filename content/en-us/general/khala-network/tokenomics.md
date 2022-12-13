@@ -1,6 +1,6 @@
 ---
 title: Khala Worker Rewards
-weight: 1004
+weight: 2004
 draft: false
 menu:
   general:

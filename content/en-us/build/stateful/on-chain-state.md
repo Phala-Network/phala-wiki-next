@@ -1,6 +1,6 @@
 ---
 title: "Store States on Chain"
-weight: 1003
+weight: 4003
 menu:
   build:
     parent: "phat-stateful"

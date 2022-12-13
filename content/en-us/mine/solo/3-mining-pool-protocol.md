@@ -1,6 +1,6 @@
 ---
 title: "3 Phala Runtime Bridge"
-weight: 1031
+weight: 2031
 draft: true
 menu:
   mine:

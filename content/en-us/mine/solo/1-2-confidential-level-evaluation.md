@@ -1,6 +1,6 @@
 ---
 title: "Worker Confidence Level"
-weight: 1003
+weight: 2003
 menu:
   mine:
     parent: "mine-solo"

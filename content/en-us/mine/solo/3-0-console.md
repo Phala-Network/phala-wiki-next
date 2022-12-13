@@ -1,6 +1,6 @@
 ---
 title: "Manage the Worker"
-weight: 1030
+weight: 2030
 menu:
   mine:
     parent: "mine-solo"

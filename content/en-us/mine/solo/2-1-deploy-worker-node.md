@@ -1,6 +1,6 @@
 ---
 title: "Deploy the Worker"
-weight: 1021
+weight: 2021
 menu:
   mine:
     parent: "mine-solo"

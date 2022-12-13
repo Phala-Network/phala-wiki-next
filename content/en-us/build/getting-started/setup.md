@@ -1,6 +1,6 @@
 ---
 title: "Environment Setup"
-weight: 1001
+weight: 2001
 menu:
   build:
     parent: "phat-basic"

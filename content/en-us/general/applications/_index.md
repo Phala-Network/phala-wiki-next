@@ -1,5 +1,4 @@
 ---
-title: "applications"
-weight: 1000
-draft: false
+title: "Basic Guidance"
+weight: 3000
 ---

@@ -1,4 +1,4 @@
 ---
-title: "node"
-weight: 1000
+title: "Node"
+weight: 3000
 ---

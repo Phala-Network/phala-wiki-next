@@ -1,6 +1,6 @@
 ---
 title: Khala Crowdloan
-weight: 1002
+weight: 2002
 draft: true
 menu:
   general:

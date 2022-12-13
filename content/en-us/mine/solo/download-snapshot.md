@@ -1,6 +1,6 @@
 ---
 title: "Accelerate Khala Syncing"
-weight: 1023
+weight: 2023
 menu:
   mine:
     parent: "mine-solo"

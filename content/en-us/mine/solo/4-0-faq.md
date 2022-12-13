@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting"
-weight: 1040
+weight: 2040
 menu:
   mine:
     parent: "mine-solo"

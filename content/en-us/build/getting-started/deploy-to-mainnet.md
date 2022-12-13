@@ -1,6 +1,6 @@
 ---
 title: "Deploy to Mainnet"
-weight: 1004
+weight: 2004
 menu:
   build:
     parent: "phat-basic"

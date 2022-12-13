@@ -1,6 +1,6 @@
 ---
 title: "Run a Khala node"
-weight: 1001
+weight: 3001
 menu:
   maintain:
     parent: "maintain-node"

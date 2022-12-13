@@ -1,6 +1,6 @@
 ---
 title: "Migrating from v0"
-weight: 2002
+weight: 3002
 menu:
   mine:
     parent: "mine-prb2"

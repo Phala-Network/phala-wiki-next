@@ -1,6 +1,6 @@
 ---
 title: "Prepare Test Account"
-weight: 1010
+weight: 2010
 menu:
   build:
     parent: "phat-basic"

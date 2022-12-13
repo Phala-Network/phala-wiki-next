@@ -1,6 +1,6 @@
 ---
 title: "Test Contract on Testnet"
-weight: 1006
+weight: 3006
 menu:
   build:
     parent: "phat-stateless"

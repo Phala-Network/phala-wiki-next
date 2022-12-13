@@ -1,6 +1,6 @@
 ---
 title: "4.2 Speed Up Node Synching"
-weight: 1042
+weight: 2042
 draft: true
 menu:
   mine:
