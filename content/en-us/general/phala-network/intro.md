@@ -39,11 +39,11 @@ You can do serverless computing on Phala by programming and deploying Phat contr
 
 > Learn about other [Phala's products](/en-us/general/phala-network/products/).
 
-## Roadmap of 2022
+<!-- ## Roadmap of 2022
 
 ![](/images/general/roadmap-2022.jpg)
 
-> A more detailed [roadmap explanation](https://medium.com/phala-network/phala-network-roadmap-of-2022-f857ba765938).
+> A more detailed [roadmap explanation](https://medium.com/phala-network/phala-network-roadmap-of-2022-f857ba765938). -->
 
 ## Web Directory
 
