@@ -1,9 +1,9 @@
 ---
 title: "Environment Setup"
-weight: 2001
+weight: 3001
 menu:
   build:
-    parent: "phat-basic"
+    parent: "phat-stateless"
 ---
 
 ## Supported Operating Systems

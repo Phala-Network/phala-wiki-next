@@ -1,5 +1,5 @@
 ---
-title: "Deploy Contract and Interact"
+title: "Phat Contract Console"
 weight: 2003
 menu:
   build:
