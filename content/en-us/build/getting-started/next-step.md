@@ -6,7 +6,7 @@ menu:
     parent: "phat-basic"
 ---
 
-Now you have experienced the development of your first Phat Contract and deployed it to the serverless Phala compute cloud.
+Now you have experienced the deployment of your first Phat Contract and invoked it on the serverless Phala compute cloud.
 
 You next step can be:
 - Learn how to [use our unique capabilities](/en-us/build/stateless/intro/) including
