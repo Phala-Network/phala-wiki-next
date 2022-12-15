@@ -13,6 +13,10 @@ The Phat Contract uses Rust-based ink! language, and is finally compiled to WebA
 - You can get your contract compiled on both macOS and Linux distributions (we use Ubuntu 20.04 as the default Linux distribution);
 - For Windows users, we recommend to setup a Linux development environment with virtual machine ([video tutorial](https://www.youtube.com/watch?v=x5MhydijWmc)).
 
+<!-- ## Development Tool
+
+Phat Contract also has its one-stop development tool [devPHAse](https://github.com/l00k/devphase). It's contributed by our community members and is still under active development. You may skip the following steps with devPHAse. -->
+
 ## Install Toolchains
 
 Phat Contract shares the exact same toolchains as ink!.

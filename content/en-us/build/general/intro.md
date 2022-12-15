@@ -11,6 +11,14 @@ menu:
 
 Phat Contract is the innovative programming model enabling [*Off-chain Computation*](https://medium.com/phala-network/fat-contract-introduce-off-chain-computation-to-smart-contract-dfc5839d5fb8). It’s also known as Fat Contract as a practice of the "Fat Protocol & Thin Application" concept, and for its rich functionalities compared with existing smart contract. Phat Contract uses Rust-based [ink! language](https://paritytech.github.io/ink/).
 
+> **Hint**
+>
+> Every Phat contract is naturally a *distributed* program since it has multiple instances across every worker in a cluster. All these instances can handle the users' requests concurrently, but they can also cause troubles when they try to update the contract state at the same time.
+>
+> This is why we recommend beginners to start with building stateless applications.
+
+![](/images/build/phat-offchain-comp.png)
+
 Although with the name of "contract", Phat Contract is more like the Web3 version of [Amazon Lambda](https://aws.amazon.com/lambda/) backed by the decentralized Phala computing cloud, and meant to support complex computation with low latency and cost.
 
 You can easily deployed you Phat contract to multiple workers in Phala Network, with each instance handling users' requests in parallel. The contract is running in Secure Enclave, and all its states and input/output are transparently encrypted.

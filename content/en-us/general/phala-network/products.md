@@ -9,6 +9,8 @@ menu:
 
 ## Phat Contract
 
+<img align="right" width="320" style="margin-left: 20px" src="/images/build/Phat%20Contract_Standard%20Logo_wht_02.svg">
+
 <!-- ![](https://miro.medium.com/max/1400/1*OWyWrBXtTEj4bHcAszSONQ.jpeg) -->
 
 Phat Contract is the innovative programming model enabling *Off-chain Computation*. It's also known as *Fat Contract* as a practice of the "Fat Protocol & Thin Application" concept, and for its rich functionalities compared with existing smart contract.

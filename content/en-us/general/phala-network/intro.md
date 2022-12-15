@@ -31,9 +31,9 @@ We strongly agree that Web3 will be the most powerful innovation driving force i
 
 ## How to use Phala Cloud
 
-<img align="right" width="320" src="/images/build/Phat%20Contract_Standard%20Logo_wht_02.svg">
+<img align="right" width="320" style="margin-left: 20px" src="/images/build/Phat%20Contract_Standard%20Logo_wht_02.svg">
 
-Through [Phat Contract](/en-us/general/phala-network/products/#phat-contract).
+Through [Phat Contract](/en-us/build/general/intro/).
 
 You can do serverless computing on Phala by programming and deploying Phat contracts. With "serverless" we mean that you do not need to care about the setup of underlying hardwares anymore, and the network will allocate the computing power for you proportional to the PHA token you stake, i.e., *stake-to-compute*.
 
