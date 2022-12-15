@@ -1,4 +1,4 @@
 ---
-title: "governance"
+title: "Governance"
 weight: 1000
 ---

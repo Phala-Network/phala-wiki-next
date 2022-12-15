@@ -13,10 +13,10 @@ Phat Contract is the innovative programming model enabling [*Off-chain Computati
 
 Although with the name of "contract", Phat Contract is more like the Web3 version of [Amazon Lambda](https://aws.amazon.com/lambda/) backed by the decentralized Phala computing cloud, and meant to support complex computation with low latency and cost.
 
+You can easily deployed you Phat contract to multiple workers in Phala Network, with each instance handling users' requests in parallel. The contract is running in Secure Enclave, and all its states and input/output are transparently encrypted.
+
 Phat Contract is not meant to replace the smart contracts, instead, it tries to be the missing decentralized computation unit for them.
 For example, instead of implementing an [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) token with Phat Contract (whose balance has to be stored on-chain), we recommend to deploy your ERC-20 contract on Ethereum, and use Phat Contract to operate it.
-
-Join our [Discord server](https://discord.com/invite/phala) and learn more in the `#dev` channel.
 
 
 ## When will you need it

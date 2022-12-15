@@ -1,6 +1,6 @@
 ---
 title: "Phala Blockchain in Detail"
-weight: 1001
+weight: 5001
 menu:
   build:
     parent: "infra"
@@ -10,7 +10,7 @@ menu:
 
 Phala is a trustless cloud computing solution for the next generation's internet, the [Web3](https://web3.foundation/). We build on [Parity's Substrate](https://www.parity.io/technologies/substrate/) and operate in the Polkadot ecosystem on the [Kusama](https://kusama.network/) parachain.
 
-Phala tackles the privacy and performance issues of legacy blockchain solutions operated in a cloud environment by decoupling the computation from the chain to off-chain secure workers (miners): the blockchain is only used as the canonical (encrypted) message queue, and the attested secure workers fetch requests (i.e., transactions) from the chain, verify and execute them, and then write the computation results back.
+Phala tackles the privacy and performance issues of legacy blockchain solutions operated in a cloud environment by decoupling the computation from the chain to off-chain secure workers: the blockchain is only used as the canonical (encrypted) message queue, and the attested secure workers fetch requests (i.e., transactions) from the chain, verify and execute them, and then write the computation results back.
 
 ![blockchain design](/images/learn/phala-design.png)
 

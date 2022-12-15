@@ -1,6 +1,6 @@
 ---
 title: Khala Governance
-weight: 1003
+weight: 2003
 draft: false
 menu:
   general:

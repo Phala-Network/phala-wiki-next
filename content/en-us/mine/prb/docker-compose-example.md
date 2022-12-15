@@ -1,6 +1,6 @@
 ---
 title: "Deployment: Docker Compose"
-weight: 3001
+weight: 4001
 menu:
   mine:
     parent: "mine-prb"

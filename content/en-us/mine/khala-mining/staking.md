@@ -11,7 +11,7 @@ menu:
 
 Unlike Polkadot or other Proof-of-Stake consensus systems, Phala can manage as many as one million CPU cores from over 100k nodes, which requires our staking mechanism to outperform existing PoS in both performance and efficiency. That’s why we propose **Stake Delegation**, which introduces an extra role of StakePool into our system to connect computing nodes with PHA holders. Anyone can create a StakePool, and a PHA holder can delegate their PHA to the pool. Then the pool Owner can manage and stake for any Workers belonging to the pool.
 
-To secure the cloud of workers (miners) and the assigned jobs, the network will set a [Confidence Level](/en-us/mine/solo/1-2-confidential-level-evaluation/#confidence-level-of-a-miner) for each worker’s CPU and require Staking (a delegation) to mine. Each worker can only earn value V if it first stakes several PHA tokens based on its CPU score, after which it can enter the mining system and start Secure Enclave Mining.
+To secure the cloud of workers and the assigned jobs, the network will set a [Confidence Level](/en-us/mine/solo/1-2-confidential-level-evaluation/#confidence-level-of-a-worker) for each worker’s CPU and require Staking (a delegation) to mine. Each worker can only earn value V if it first stakes several PHA tokens based on its CPU score, after which it can enter the mining system and start Secure Enclave Mining.
 
 Suppose a worker misbehaves or fails to respond. In that case, it will be punished by slashing the V, which strongly incentivizes participants to ensure their workers are running properly and disincentivizes attempts to cheat.
 
@@ -19,7 +19,7 @@ Suppose a worker misbehaves or fails to respond. In that case, it will be punish
 
 ### Secure Enclave Mining Roles
 
-It is vital to note two different roles in the mining (**worker**) and staking process (**delegator**). First, miners are responsible for the mining pool, which contains their miners. Second, Delegators, in return, are users that own PHA and wish to stake their PHA. Delegators and Miners can be two distinct users; however, miners can also delegate to their mining pools. More details in the table below.
+It is vital to note two different roles in the mining (**worker**) and staking process (**delegator**). First, workers are responsible for the mining pool, which contains their workers. Second, Delegators, in return, are users that own PHA and wish to stake their PHA. Delegators and Workers can be two distinct users; however, workers can also delegate to their mining pools. More details in the table below.
 
 |   **Role**    |                                                                                                                                    **Description**                                                                                                                                     |
 | :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |

@@ -1,5 +1,4 @@
 ---
-title: "mine-solo"
+title: "Khala Mining"
 weight: 1000
-draft: false
 ---

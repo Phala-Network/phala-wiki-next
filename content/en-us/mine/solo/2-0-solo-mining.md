@@ -1,22 +1,22 @@
 ---
-title: "Configure the Miner"
-weight: 1020
+title: "Configure the Worker"
+weight: 2020
 menu:
   mine:
     parent: "mine-solo"
 ---
 
-## Get the Miner Ready
+## Get the Worker Ready
 
 This section shows you how to set up your Phala mining CLI, the respective tools, and setting the last parameters for your drivers.
 
-Execute the following command to get your miner ready to launch for mining.
+Execute the following command to get your worker ready to launch for mining.
 
 ```bash
 sudo ~/solo-mining-scripts-main/phala.sh install
 ```
 
->`phala.sh` will update the miner to use your newly installed driver settings and configuration. This is required for first-time miners or whenever you update or change your driver configuration for this change to take effect.
+>`phala.sh` will update the worker to use your newly installed driver settings and configuration. This is required for first-time workers or whenever you update or change your driver configuration for this change to take effect.
 
 ## Mode selection
 
@@ -24,14 +24,14 @@ During the installation process, you will receive a prompt like:
 
 ```mode select ( full | prune ) (Default: PRUNE):```
 
-The default option here is "prune" mode, which means less hard disk space is used to install node data. Just click `Enter` to go to the next step. 
+The default option here is "prune" mode, which means less hard disk space is used to install node data. Just click `Enter` to go to the next step.
 
 If your hard disk has more than 2T space and you want to install the complete Kusama node data, type `full` and click `Enter` to go to the next step.
 
 
-## Miner Configuration
+## Worker Configuration
 
-> :warning: DO NOT reuse the same gas fee account across multiple solo miners.
+> :warning: DO NOT reuse the same gas fee account across multiple solo workers.
 
 ### Set Wallet Address & More
 
@@ -60,7 +60,7 @@ You will be prompted to set:
 
 > Note, the following command will show sensitive information (mnemonic seed).
 
-During the daily operation of miners (not in the installation process above), You can get the current parameters in use with
+During the daily operation of workers (not in the installation process above), You can get the current parameters in use with
 
 ```bash
 sudo phala config show
@@ -74,7 +74,7 @@ sudo phala config
 
 ## Headers update
 
-If you select the "Prune" mode, and this is the first time that you install the mining tools which means there is no headers data in the miner. 
+If you select the "Prune" mode, and this is the first time that you install the mining tools which means there is no headers data in the worker.
 
 After the Configuration, do remember to update headers with
 

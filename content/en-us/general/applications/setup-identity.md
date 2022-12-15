@@ -1,7 +1,7 @@
 ---
 title: Setup Account Identity
 description: Learn about on-chain identity, judgments, and registrars.
-weight: 1002
+weight: 3002
 draft: false
 menu:
   general:

@@ -1,6 +1,6 @@
 ---
 title: "3 Phala Runtime Bridge"
-weight: 1031
+weight: 2031
 draft: true
 menu:
   mine:
@@ -11,7 +11,7 @@ Github: https://github.com/Phala-Network/runtime-bridge
 
 ## What is Phala Management Development Component?
 
-Phala Management Development Component is an open-source development component which meant to serve Phala miners. It provides a Cloud Native RPC interface to manage Phala Workers' lifecycle through Redis. It can be utilized by:
+Phala Management Development Component is an open-source development component which meant to serve Phala workers. It provides a Cloud Native RPC interface to manage Phala Workers' lifecycle through Redis. It can be utilized by:
 
 - Public Mining Pool, a third-party service which enables its members to share their processing power and split the reward according to the amount of work they contributed;
 - Mining Cluster, a private network consisted of multiple TEE Workers.

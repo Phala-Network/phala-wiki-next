@@ -1,9 +1,9 @@
 ---
 title: "Create Contract"
-weight: 1002
+weight: 3002
 menu:
   build:
-    parent: "phat-basic"
+    parent: "phat-stateless"
 ---
 
 ## Create and Compile Your First Contract

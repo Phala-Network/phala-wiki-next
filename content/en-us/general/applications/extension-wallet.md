@@ -1,6 +1,6 @@
 ---
 title: "Use Browser Extension Wallet"
-weight: 1001
+weight: 3001
 draft: false
 menu:
   general:

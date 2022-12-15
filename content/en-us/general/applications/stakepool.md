@@ -1,6 +1,6 @@
 ---
 title: 'Delegate to a Stakepool'
-weight: 1005
+weight: 5005
 draft: false
 menu:
   general:

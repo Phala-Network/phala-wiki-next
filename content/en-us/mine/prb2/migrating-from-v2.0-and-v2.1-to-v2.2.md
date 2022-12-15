@@ -1,6 +1,6 @@
 ---
 title: "Migrating from v2.0 and v2.1 to v2.2"
-weight: 2001
+weight: 3001
 menu:
   mine:
     parent: "mine-prb2"

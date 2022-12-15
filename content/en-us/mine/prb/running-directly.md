@@ -1,6 +1,6 @@
 ---
 title: "Running Directly in Linux"
-weight: 3002
+weight: 4002
 menu:
   mine:
     parent: "mine-prb"

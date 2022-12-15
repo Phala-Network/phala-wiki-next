@@ -1,6 +1,6 @@
 ---
 title: "Run a Phala node"
-weight: 1002
+weight: 3002
 menu:
   maintain:
     parent: "maintain-node"

@@ -1,22 +1,22 @@
 ---
-title: "Monitor Miner's Status"
-weight: 1022
+title: "Monitor Worker's Status"
+weight: 2022
 menu:
   mine:
     parent: "mine-solo"
 ---
 
 
-## Verify the Status of your Miner
+## Verify the Status of your Worker
 
-You can see the synchronization progress at any time of your miner.
-Check your miner's status with:
+You can see the synchronization progress at any time of your worker.
+Check your worker's status with:
 
 ```bash
 sudo phala status
 ```
 
-Your miner's status shows the
+Your worker's status shows the
 * `node name`
 * `number of cores`
 * `gas account and balance`

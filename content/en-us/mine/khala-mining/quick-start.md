@@ -22,7 +22,7 @@ menu:
   <br>
 
 > We currently recommend using <a href="https://www.vultr.com/products/bare-metal/"><img alt="VULTR Bare Metal" src="/images/docs/quick-start/mine-phala/signet__on-dark-blue-bg.png" width="30">
->    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/). </b> Miner on VULTR [documentation](/en-us/general/mining/paas-miner/).
+>    <b class="heading">[VULTR](https://www.vultr.com/products/bare-metal/). </b> Worker on VULTR [documentation](/en-us/general/mining/paas-miner/).
 >  </a>
 > </p>
 
@@ -71,13 +71,13 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
   </div>
 </div>
 
-> Have the details of your Wallet (address, seed) ready when installing the miner.
+> Have the details of your Wallet (address, seed) ready when installing the worker.
 
 ## Quick Start
 
 <p align="left">
     <img alt="Phala Network" src="https://user-images.githubusercontent.com/37558304/145892648-bc3562f8-47e0-4cc9-a8a1-05b1ee8baab1.png" width="30">
-    <b class="heading">Ubuntu 21.10</b> <sub> GUI miner setup script [v0.01]</sub>
+    <b class="heading">Ubuntu 21.10</b> <sub> GUI worker setup script [v0.01]</sub>
   </a>
 </p>
 
@@ -85,11 +85,11 @@ If you do not have a wallet yet, [create one](https://polkadot.js.org/apps/?rpc=
 wget -O - https://raw.githubusercontent.com/Phala-Network/solo-mining-scripts/improvement-test/gui.sh | bash
 ```
 
-If you experience an issues with the installation script, you can always install the miner manually from our [GitHub repository](https://github.com/Phala-Network/solo-mining-scripts#manual-installation).
+If you experience an issues with the installation script, you can always install the worker manually from our [GitHub repository](https://github.com/Phala-Network/solo-mining-scripts#manual-installation).
 
-## Manage Miners
+## Manage Workers
 
-Create a pool if you do not have one yet. Once the miner is registered, you can add them to your pool.
+Create a pool if you do not have one yet. Once the worker is registered, you can add them to your pool.
 
 <div class="mediaList">
   <div class="item" style="text-align:center">
@@ -112,6 +112,6 @@ Create a pool if you do not have one yet. Once the miner is registered, you can 
 
 {{< button "/en-us/mine/solo/4-0-faq/#confidence-level" "Confidence Level" >}}
 
-{{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Miner" >}}
+{{< button "https://github.com/Phala-Network/solo-mining-scripts/tree/main#khala-node-stops-synching" "Stuck Worker" >}}
 
 {{< button "https://forum.phala.network/c/mai/42-category/42" "Forum" >}}

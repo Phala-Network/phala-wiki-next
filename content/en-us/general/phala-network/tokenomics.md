@@ -1,12 +1,14 @@
 ---
-title: "Tokenomics"
-weight: 1005
+title: "Worker Rewards"
+weight: 1006
 menu:
   general:
     parent: "phala-network"
 ---
 
-> After the approval of the “Gemini Tokenomics upgrade" democratic referendum on the block height #1,467,069, we have updated the content of the Tokenomics as follows:
+This document contains the *Supply-end Tokenomics* for Phala Network, which defines how workers get their rewards by sharing the computing power.
+
+> After the approval of the “Gemini Tokenomics upgrade" democratic referendum on the block height #1,467,069, we have updated the content of the Supply-end Tokenomics as follows:
 
 ## Design Targets
 
@@ -14,8 +16,8 @@ The overall economic design is built to address these points:
 
 1. Support Phala Network's trustless cloud computing architecture
    - Consensus-Computation Separation
-   - Linearly-scalable computing workers (100k order of magnitude number of miners)
-2. Incentivize miners to join the network
+   - Linearly-scalable computing workers (100k order of magnitude number of workers)
+2. Incentivize workers to join the network
    - Ensure payment for power supplied irrespective of demand, especially at network bootstrap
    - Subsidize mining pool with 70% of the initial supply over time
    - Bitcoin-like budget halving schedule
@@ -29,33 +31,33 @@ The following details some key elements of the economic model.
 
 ### Related Workers
 
-Phala Tokenomic is applicable to any workers running on Phala or Khala.
+Phala Supply-end Tokenomics is applicable to any workers running on Phala or Khala.
 
 ### Value Promise ($V$)
 
-- A virtual score for an individual miner representing value earned which is payable in the future, to motivate miners to behave honestly and reliably
-- Equal to the expected value of the revenues earned by the miner for providing power for the platform
-- Changes dynamically based on the miner's behaviors and the repayment of Rewards
+- A virtual score for an individual worker representing value earned which is payable in the future, to motivate workers to behave honestly and reliably
+- Equal to the expected value of the revenues earned by the worker for providing power for the platform
+- Changes dynamically based on the worker's behaviors and the repayment of Rewards
   - Mining honestly: $V$ grows gradually over time
   - Harmful conduct: punished by reduction of $V$
 
 ### Initial $V$
 
-A Miner will run a **_Performance Test_** and stake some tokens to get the initial $V$:
+A Worker will run a **_Performance Test_** and stake some tokens to get the initial $V$:
 
 $$V^e = f(R^e, \text{ConfidenceScore}) \times (S + C)$$
 
 - $R^e > 1$ is a **_Stake Multiplier_** set by the network (Khala or Phala).
-- $S$ is the miner stake; a **_Minimum Stake_** is required to start mining. The stake can't be increased or decreased while mining, but can be set higher than the Minimum.
-- $C$ is the estimated cost of the miner rigs, inferred from the **_Performance Test_**.
-- $\text{ConfidenceScore}$ is based on the miner's Intel© SGX capabilities.
+- $S$ is the worker stake; a **_Minimum Stake_** is required to start mining. The stake can't be increased or decreased while mining, but can be set higher than the Minimum.
+- $C$ is the estimated cost of the worker rigs, inferred from the **_Performance Test_**.
+- $\text{ConfidenceScore}$ is based on the worker's Intel© SGX capabilities.
 - $f(R^e, \text{ConfidenceScore}) = 1 + (\text{ConfidenceScore} \cdot (R^e - 1))$
 - $V$ is always less than or equals to $V_{max}$.
 
 Params used in simulation:
 
 - $R^e_{\text{Phala}} =R^e_{\text{Khala}} = 1.5$
-- $\text{ConfidenceScore}$ for different [Confidence Levels](/en-us/mine/solo/1-2-confidential-level-evaluation/#confidence-level-of-a-miner)
+- $\text{ConfidenceScore}$ for different [Confidence Levels](/en-us/mine/solo/1-2-confidential-level-evaluation/#confidence-level-of-a-worker)
   - $\text{ConfidenceScore}_{1,2,3} = 1$
   - $\text{ConfidenceScore}_{4} = 0.8$
   - $\text{ConfidenceScore}_{5} = 0.7$
@@ -103,7 +105,7 @@ $$C = \frac{0.3 P}{\phi}$$
 - $\phi$ is the current PHA/USD quote, dynamically updated on-chain via Oracles
 - $P$ is the initial **_Performance Test_** score.
 - In the early stages we are compensating the equipment cost $C$ with a higher Value Promise.
-- In the future we plan to compensate for higher amortization costs (adding equipment amortization cost to the running costs $c^i$ and $c^a$), thus increasing the speed of growth of the Miner's $V$.
+- In the future we plan to compensate for higher amortization costs (adding equipment amortization cost to the running costs $c^i$ and $c^a$), thus increasing the speed of growth of the Worker's $V$.
 
 ### General mining process
 
@@ -114,12 +116,12 @@ $$C = \frac{0.3 P}{\phi}$$
 Each individual's $V$ is updated at every block:
 
 - Increased by $\Delta V_t$ if the worker keeps mining
-- Decreased by $w(V_t)$ if the miner got a payout
-- Decreased according to the **_Slash Rules_** if the miner misbehaves
+- Decreased by $w(V_t)$ if the worker got a payout
+- Decreased according to the **_Slash Rules_** if the worker misbehaves
 
-When a miner gets a payout $w(V_t)$, they will receive the amount immediately in their Phala wallet. The payout follows **_Payout Schedule_** and cannot exceed the **_Subsidy Budget_**.
+When a worker gets a payout $w(V_t)$, they will receive the amount immediately in their Phala wallet. The payout follows **_Payout Schedule_** and cannot exceed the **_Subsidy Budget_**.
 
-Finally, once the miner decides to stop mining, they will wait for a Cooling Down period $\delta$. They will receive an one-time final payout after the cooldown.
+Finally, once the worker decides to stop mining, they will wait for a Cooling Down period $\delta$. They will receive an one-time final payout after the cooldown.
 
 | Block number  |     $t$      |    $t+1$     | $\dots$ |     $T$      |             $\dots$             |       $T+\delta$        |
 | :------------ | :----------: | :----------: | :-----: | :----------: | :-----------------------------: | :---------------------: |
@@ -137,8 +139,8 @@ When there's no payout or slash event:
 
 $$\Delta V_t = k_p \cdot \big((\rho^m - 1) V_t + c(s_t) + \gamma(V_t)h(V_t)\big)$$
 
-- $\rho^m$ is the unconditional $V$ increment factor for miner
-- $c(s_t)$ is the operational cost to run the miner
+- $\rho^m$ is the unconditional $V$ increment factor for worker
+- $c(s_t)$ is the operational cost to run the worker
 - $\gamma(V_t)h(V_t)$ represents a factor to compesate for accidental/unintentional slashing (ignored in simulated charts)
 - $k_p = \min(\frac{P_t}{P}, 120\\%)$, where $P_t$ is the instant performance score, and $P$ is the initial score
 - If $V > V_{max}$ after the update, it will be capped to $V_{max}$
@@ -149,21 +151,21 @@ Proposed parameters:
 
 ### Payout Event
 
-In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current **_Miner Shares_**:
+In order to stay within the subsidy budget, at every block the budget is distributed proportionally based on the current **_Worker Shares_**:
 
 $$w(V_t) = B \frac{\text{share}}{\Sigma \text{share}}$$
 
 where $B$ is the current network subsidy budget for the given payout period.
 
-Whenever $w(V_t)$ is paid to a miner, his $V$ will be updated accordingly:
+Whenever $w(V_t)$ is paid to a worker, his $V$ will be updated accordingly:
 
 $$\Delta V = -min(w(V_t),V_t-V_\text{last}).$$
 
 $V_\text{last}$ is the value promised at the last payout event, or $V^e$ if this is the first payout.
 
->The update of V is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure miners are well incentives to always accumulate credits in the network. Otherwise, miners are incentivized to constantly reset their mining session if V decreases over time.
+>The update of V is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure workers are well incentives to always accumulate credits in the network. Otherwise, workers are incentivized to constantly reset their mining session if V decreases over time.
 
-Share represents how much the miner is paid out from $V$. We expect it will approximate the share baseline, but with minor adjustment to reflect the property of the worker:
+Share represents how much the worker is paid out from $V$. We expect it will approximate the share baseline, but with minor adjustment to reflect the property of the worker:
 
 $$\text{share}_{\text{Baseline}} = V_t.$$
 
@@ -188,7 +190,7 @@ Proposed algorithm:
 
 ### Heartbeat & Payout Schedule
 
-In any block $t$, if the Miner's VRF is smaller than their current Heartbeat Threshold $\gamma(V_t)$, they must send the Heartbeat transaction to the chain, which will update the on-chain record of their Value Promise and send a Mining Reward $w(V_t)$ to their reward wallet:
+In any block $t$, if the Worker's VRF is smaller than their current Heartbeat Threshold $\gamma(V_t)$, they must send the Heartbeat transaction to the chain, which will update the on-chain record of their Value Promise and send a Mining Reward $w(V_t)$ to their reward wallet:
 
 $$\Delta V_t = - w(V_t).$$
 
@@ -206,7 +208,7 @@ Potential parameters:
 
 ### Slash rules
 
-The slash rules for miners are defined below. No slash rules have been implemented at the moment, but will start in the near future.
+The slash rules for workers are defined below. No slash rules have been implemented at the moment, but will start in the near future.
 
 | Severity | Fault                               | Punishment                                |
 | -------- | ----------------------------------- | ----------------------------------------- |
@@ -217,9 +219,9 @@ The slash rules for miners are defined below. No slash rules have been implement
 
 ### Final payout
 
-When a miner chooses to disconnect from the platform, they send an Exit Transaction and receives their Severance Pay after $\delta$ blocks.
+When a worker chooses to disconnect from the platform, they send an Exit Transaction and receives their Severance Pay after $\delta$ blocks.
 
-After the cooling down period, the miner gets their final payout, representing the return of the initial stake. However, if $V_T$ goes lower than the initial $V^e$, the miner will get less stake returned as a punishment:
+After the cooling down period, the worker gets their final payout, representing the return of the initial stake. However, if $V_T$ goes lower than the initial $V^e$, the worker will get less stake returned as a punishment:
 
 $$w(T + \sigma) = \min(\frac{V_T}{V^e}, 100\\%) \cdot S$$
 

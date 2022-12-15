@@ -1,5 +1,4 @@
 ---
-title: "general"
-weight: 1000
-draft: false
+title: "Khala Network"
+weight: 2000
 ---

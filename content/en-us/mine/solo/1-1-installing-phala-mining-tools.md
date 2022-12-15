@@ -1,6 +1,6 @@
 ---
 title: "Installing Phala Mining Tools"
-weight: 1002
+weight: 2002
 menu:
   mine:
     parent: "mine-solo"

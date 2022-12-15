@@ -1,6 +1,6 @@
 ---
 title: "Phala x Encode Club Workshop"
-weight: 1002
+weight: 9002
 draft: false
 menu:
   build:

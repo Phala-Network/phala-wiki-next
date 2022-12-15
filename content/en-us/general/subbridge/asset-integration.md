@@ -1,6 +1,6 @@
 ---
 title: 'Asset Integration Guide'
-weight: 1004
+weight: 4004
 menu:
   general:
     parent: "general-bridge"

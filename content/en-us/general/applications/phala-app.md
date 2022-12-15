@@ -1,6 +1,6 @@
 ---
 title: 'Use Phala App to Delegate'
-weight: 1007
+weight: 5007
 draft: false
 menu:
   general:
