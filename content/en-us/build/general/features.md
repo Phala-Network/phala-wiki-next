@@ -1,5 +1,5 @@
 ---
-title: "Why Using It"
+title: "Features"
 weight: 1002
 draft: false
 menu:
