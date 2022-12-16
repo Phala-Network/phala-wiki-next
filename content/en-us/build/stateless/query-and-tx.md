@@ -17,6 +17,7 @@ We recommend to use more queries in your contracts and only use the transactions
 | Encrypted             | ✅           | ✅     |
 | Posted on chain       | ✅           | ❌     |
 | Direct to worker      | ❌           | ✅     |
+| Read contract state   | ✅           | ✅     |
 | Change contract state | ✅           | ❌     |
 | No gas fee            | ❌           | ✅     |
 | Latency               | 6s          | 0s    |
