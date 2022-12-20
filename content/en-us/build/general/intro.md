@@ -15,7 +15,7 @@ Phat Contract is the innovative programming model enabling [*Off-chain Computati
 >
 > Every Phat contract is naturally a *distributed* program since it has multiple instances across every worker in a cluster. All these instances can handle the users' requests concurrently, but they can also cause troubles when they try to update the contract state at the same time.
 >
-> This is why we recommend beginners to start with building stateless applications.
+> This is why we recommend beginners to start with building stateless applications which is free of the problems above.
 
 ![](/images/build/phat-offchain-comp.png)
 

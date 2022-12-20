@@ -6,7 +6,6 @@ menu:
     parent: "phat-stateless"
 ---
 
-<!-- TODO.shelven: add example explanations -->
 ## Introduction
 
 All the unique capabilities of Phat Contract is implemented in [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink). Informally speaking:
