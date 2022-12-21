@@ -29,12 +29,12 @@ and more for us to explore together.
 
 ## Table of contents
 
-- [Getting Started](/en-us/build/getting-started/prep/) is prepared for everyone new to Phat Contract, even if you do not have any programming experience. It have no requirements on your operating system or environment. Follow our tutorial to
+- [Getting Started](/en-us/build/getting-started/prep/) is prepared for everyone new to Phat Contract, even if you do not have any programming experience. It has no requirements on your operating system or environment. Follow our tutorial to:
   - Generate the test account
   - Try Phat Contract Console
   - Deploy the pre-compiled contract to our testnet
   - Invoke the contract, it will use its network access to read the Ethereum account balance for you
-- [Build on Phat Contract](/en-us/build/stateless/intro/) will lead you to config your environment and compile your first stateless DApp with Phat Contract. It covers all the basic information includes
+- [Build on Phat Contract](/en-us/build/stateless/intro/) will lead you to config your environment and compile your first stateless DApp with Phat Contract. It covers all the basic information including:
   - Environment setup
   - Programming language basics
   - User interaction
@@ -43,7 +43,7 @@ and more for us to explore together.
   - Volatile local cache
   - Consistent on-chain storage
   - External storage services
-- [Advanced Techniques]() includes advanced features like system contract and SideVM, which further extend the capabilities of Phat Contract
+- [Advanced Techniques]() includes advanced features like system contract and SideVM, which further extend the capabilities of Phat Contract.
 - [Blockchain Infrastructure](/en-us/build/infrastructure/blockchain-detail/) contains the system design of the underlying infrastructure that supports Phat Contract. It helps to understand how your contract is deployed and why it's safe.
 
 ## Other resources

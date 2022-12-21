@@ -66,11 +66,17 @@
   url = "/build/stateless/"
   weight = 3000
 
-# [[build]]
-#   name = "Store Contract States"
-#   identifier = "phat-stateful"
-#   url = "/build/stateful/"
-#   weight = 4000
+[[build]]
+  name = "Store Contract States"
+  identifier = "phat-stateful"
+  url = "/build/stateful/"
+  weight = 4000
+
+[[build]]
+  name = "Advanced Topics"
+  identifier = "phat-advanced"
+  url = "/build/advanced/"
+  weight = 5000
 
 [[build]]
   name = "Blockchain Infrastructure"
