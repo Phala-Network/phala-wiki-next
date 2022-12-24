@@ -41,5 +41,5 @@ Here is an example:
 |Tom Create the Vault #001|0|0|1|The initial price is 1|
 |Bob delegates 10000 $PHA in #001|10000|10000|1|Bob has 1000 Shares|
 |#001 earned 50 $PHA rewards|10050|10000|1.005|Bob still has 1000 Shares|
-|Jack delegates 3000 $PHA in #001|13500|12985.07|1.005|Jack has 2,985.07 shares because the price is 1.005|
-|Tom execute the commission(5%) |13500|12988.3|1.00475|Tom got 3.23 Shares as the Vault owner reward|
+|Jack delegates 3000 $PHA in #001|13050|12985.07|1.005|Jack has 2,985.07 shares because the price is 1.005|
+|Tom execute the commission(5%) |13050|12988.3|1.00475|Tom got 3.23 Shares as the Vault owner reward|
