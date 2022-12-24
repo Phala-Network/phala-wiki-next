@@ -1,5 +1,5 @@
 ---
-title: 'What's Vault'
+title: 'What's vault'
 weight: 5006
 draft: false
 menu:
