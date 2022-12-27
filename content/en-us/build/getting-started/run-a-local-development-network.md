@@ -60,7 +60,7 @@ Then run the following command to build the Phala blockchain:
 cargo build --release
 ```
 
-It may take about 30 minutes to finish.
+It takes approximately 20 minutes to complete the building process on a laptop equipped with an AMD Ryzen 7 4700U processor with 8 cores, 8 threads, and 32GB of RAM.
 
 ### Start the locat testnet
 
