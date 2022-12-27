@@ -11,25 +11,26 @@ WrappedBalances is the name of a pallet with the function of wrapping W-PHA to d
 
 W-PHA (Wrapped PHA) is the token that users use PHA to wrap from WrappedBalances 1-to-1. Used to contribute to StakePool or Vault to obtain Delegation NFT and earn delegation rewards.
 
-## Why we need W-PHA
+## Why do we need W-PHA
 
 In the StakePool V1, the PHA could be used as a delegation. While delegated in the StakePool, the Delegator can also use it for daily community governance voting. Because when you delegate your PHA to the StakePool, the status of the token will be adjusted to "locked", but it will remain in your address. Then you can use it for governance voting. This logic caused the Delegation to be unable to be transferred or traded.
 
-In the process of NFTization of the Delegation, to improve the liquidity of the Delegation, we hope to set the NFTs in a tradable state and use a suitable mechanism to give these Delegation NFTs governance voting rights. 
+In the process of NFTization of the Delegation, to improve the liquidity of the Delegation, we hope to set the NFTs in a tradable state and use a suitable mechanism to give these Delegation NFTs governance voting rights.
 
 Therefore, we need to introduce the concept of WrappedBalances and W-PHA.
 
 ## How does it work
 
-W-PHA is an asset on the Khala chain (Delegation is not yet enabled on the Phala chain, so there is no W-PHA on Phala yet). Therefore, when you wrap a W-PHA from WrappedBalances, your PHA will be transferred to the pallet (WrappedBalances) and locked there. 
+W-PHA is an asset on the Khala chain (Delegation is not yet enabled on the Phala chain, so there is no W-PHA on Phala yet). Therefore, when you wrap a W-PHA from WrappedBalances, your PHA will be transferred to the pallet (WrappedBalances) and locked there.
 
-Delegators can only use W-PHA to delegate into a StakePool or a Vault. 
+Delegators can only use W-PHA to delegate into a StakePool or a Vault.
 
 * When the user delegates to a Vault or a StakePool, W-PHA will be transferred from the user address to the account of the pools
 * When the Vault delegates to a StakePool, W-PHA will be transferred from the Vault address to the StakePool account
 * When StakePool stakes the Delegation to the worker, W-PHA will be transferred to the worker staking account corresponding to the StakePool
-> Please Note that use the "contribute" for all delegating operations to the pools and use the "start working" to set the worker to the active state. 
-> 
+
+> Please Note that use the "contribute" for all delegating operations to the pools and use the "start working" to set the worker to the active state.
+>
 > Do not transfer tokens to any pool or worker address manually. The protocol controls these addresses, and the tokens you manually transfer in cannot be transferred out forever.
 
 WrappedBalances is a ledger responsible for calculating how much W-PHA each user has. When the user transfers W-PHA to the pool as a delegation, because of the existence of the Delegation NFT, it will treat the Delegation NFT as a delegation certificate. Therefore, the W-PHA will be counted into the address holding the Delegation NFT.
@@ -52,7 +53,7 @@ When you vote in WrappedBalances, you will not use any W-PHA or Delegation NFT t
 
 WrappedBalances uses a proxy voting mechanism.
 
-When you wrap PHA to W-PHA through WrappedBalances, your voting rights will be held by the pallet along with the transfer of PHA. Therefore, WrappedBalances' bookkeeping function records how many voting rights it manages that belong to you. Then, when you want to initiate a vote in the pallet, it will calculate how many equivalent PHA assets you have locked in it based on the W-PHA and Delegation NFT you hold, which means how many voting rights you are represented by it. Then, you can direct WrappedBalances to cast these votes on your behalf. 
+When you wrap PHA to W-PHA through WrappedBalances, your voting rights will be held by the pallet along with the transfer of PHA. Therefore, WrappedBalances' bookkeeping function records how many voting rights it manages that belong to you. Then, when you want to initiate a vote in the pallet, it will calculate how many equivalent PHA assets you have locked in it based on the W-PHA and Delegation NFT you hold, which means how many voting rights you are represented by it. Then, you can direct WrappedBalances to cast these votes on your behalf.
 
 This is the original logic of this proxy voting mechanism. The operation is to initiate a vote transaction in WrappedBalances, and the rest of the proxy voting will be completed by the protocol. As long as you have enough voting rights, the vote you initiate will be a success.
 
@@ -62,8 +63,7 @@ Once you vote for a proposal in WrappedBalances, it will temporarily lock a part
 
 You can still use PHA to initiate voting in the [Polkadot.js](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/democracy) or [Subsquare](https://www.subsquare.io/). At the same time, you can use your proxy voting rights through WrappedBalances. But you cannot use your W-PHA or Delegation NFT to vote on Subsquare. So, for the time being, you can only use the locked assets in WrappedBalances to vote through making transactions in [extrinsics page of Polkadot.js](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/extrinsics).
 
-This is a short-term phenomenon. 
+This is a short-term phenomenon.
 
-We are going to gather all the governance behaviors in the Phala APP. At that time, you will be able to use your PHA or Delegation for governance in the Phala App at the same time. 
+We are going to gather all the governance behaviors in the Phala APP. At that time, you will be able to use your PHA or Delegation for governance in the Phala App at the same time.
 Please look forward to it.
-

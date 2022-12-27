@@ -13,15 +13,15 @@ Welcome to the Closed Beta test of Phat Contract!
 
 ## What you will experience
 
-You will be able to use trustless offchain computation that doesn't suffer from the limitations traditionally faced by Web3 computation.
+You will be able to use trustless off-chain computation that doesn't suffer from the limitations traditionally faced by Web3 computation.
 
-- Phala Network brings the decentralization, scale, security, and manages the deployment of your compute offchain.
+- Phala Network brings decentralization, scale, and security, and manages the deployment of your compute off-chain.
 - Phat Contract brings a quantum leap in capability, a serverless SDK you can write almost anything with.
 
 For the first time, you can easily implement important Web3 services on a decentralized infrastructure, like
 
 - Easily building decentralized Oracle;
-- Allowing customers to sign in your DApps with Web2 accounts through OAuth;
+- Allowing customers to sign in to your DApps with Web2 accounts through OAuth;
 - Controlling your smart contracts even if they are on different chains;
 - Reading and storing data to any storage services while remaining private;
 
@@ -38,7 +38,7 @@ and more for us to explore together.
   - Environment setup
   - Programming language basics
   - User interaction
-  - Local unittest
+  - Local unit test
 - [Store Contract States](/en-us/build/stateful/understand-state/) introduces the different storages you can utilize to store your contract states and data, including
   - Volatile local cache
   - Consistent on-chain storage
@@ -57,7 +57,7 @@ and more for us to explore together.
     - Project manager
         - Quickly get a blank template and spin up a local cluster for testing with https://github.com/l00k/devphase
 - Basic Libraries
-    - Storage support: Wrapped Filecoin, Arweave, Storj and Amazon S3 with a S3-standard API
+    - Storage support: Wrapped Filecoin, Arweave, Storj, and Amazon S3 with an S3-standard API
         - [https://crates.io/crates/pink-s3](https://crates.io/crates/pink-s3)
     - Cross-chain transaction support: ETH and Substrate Tx's & Queries
         - [https://crates.io/crates/pink-web3](https://crates.io/crates/pink-web3)

@@ -8,7 +8,7 @@ menu:
 
 ## Introduction
 
-All the unique capabilities of Phat Contract is implemented in [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink). Informally speaking:
+All the unique capabilities of Phat Contract are implemented in [pink-extension](https://github.com/Phala-Network/phala-blockchain/tree/master/crates/pink). Informally speaking:
 
 $ Phat\ Contract = ink! + Pink\ Extension $
 

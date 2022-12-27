@@ -11,18 +11,18 @@ menu:
 
 SideVM is the core extension of Phat Contract. Despite the advantages above, the raw Phat Contract still has limitations compared with current Web2 backend programs:
 
-- Lifecycle limitation. The Phat Contract execution is triggerred when users send on-chain transactions or off-chain queries to it, and the instance is destroyed when the execution finishes. This makes it impossible to do async requests or keep a long-live network connection;
-- Program environment limitation. The Phat Contract inherits the limitations of Ink! and only supports `no_std` crates. This also limits the resources a contract can use (e.g. like listening to a port for connections).
+- Lifecycle limitation. The Phat Contract execution is triggered when users send on-chain transactions or off-chain queries to it, and the instance is destroyed when the execution finishes. This makes it impossible to do async requests or keep a long-live network connection;
+- Program environment limitation. The Phat Contract inherits the limitations of Ink! and only supports `no_std` crates. This also limits the resources a contract can use (e.g. listening to a port for connections).
 
-SideVM is proposed to tackle these limitations. It runs in a different runtime. This means it can continuously execute, support `std` library and listen to the port.
+SideVM is proposed to tackle these limitations. It runs in a different runtime. This means it can continuously execute, support `std` library, and listen to the port.
 
 
 ## Prepare Environment
 
-The SideVM support is already equipped to our public testnet. But it requires a manual authorization to your contract to enable it to call the `start_sidevm()` function. Contact us is the `#dev` channel in our [Discord server](https://discord.gg/phala) to get support.
+The SideVM support is already equipped to our public testnet. But it requires manual authorization to your contract to enable it to call the `start_sidevm()` function. Contact us is the `#dev` channel in our [Discord server](https://discord.gg/phala) to get support.
 
 <!-- TODO.shelven -->
-Also you can run your local testnet following our [tutorial](xxx) and then do the testing.
+Also, you can run your local testnet following our [tutorial](xxx) and then do the testing.
 
 ## Play with it
 
@@ -51,7 +51,7 @@ Use [Polkadot.js](https://polkadot.js.org/apps/) and change the endpoint to `Pha
 
 In `Developer` - `Extrinsics`, choose `phalaFatContracts` and `clusterUploadResource`. Change `resourceType` to `SidevmCode`, and drag your `sideprog.wasm` here.
 
-Submit the transaction and you shall see it success.
+Submit the transaction and you shall see its success.
 
 #### Interact with Phat UI
 
@@ -65,7 +65,7 @@ Click `Upload` and drag your `target/ink/start_sidevm.contract`. Choose the defa
 
 #### Start SideVM with Query
 
-You can directly interaction with your contract with Contract UI.
+You can directly interact with your contract with Contract UI.
 
 The `start_sidevm` query is used to start the SideVM program. It contains the [invoke](https://github.com/Phala-Network/phat-contract-examples/blob/master/start_sidevm/lib.rs#L29) to `pink::start_sidevm()`.
 
@@ -73,7 +73,7 @@ From the Worker log, we can see
 
 ![](https://i.imgur.com/DWjOeyh.png)
 
-Actually we implemented the log server with SideVM too ([ref](https://github.com/Phala-Network/phala-blockchain/pull/855)).
+Actually, we implemented the log server with SideVM too ([ref](https://github.com/Phala-Network/phala-blockchain/pull/855)).
 
 ## More Resources
 

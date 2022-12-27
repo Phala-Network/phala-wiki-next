@@ -7,7 +7,7 @@ menu:
     parent: "khala-network"
 ---
 
-Khala and Phala adopt the same governance mechanism as Kusama and Polkadot. This is a relatively mature mechanism that governs with a goal of ensuring majority of the stake can always command a network. No matter whether the proposal is submitted by the public (PHA token holders) or the council, it will eventually have to go through a referendum where all holders, weighted by stake, make decisions.
+Khala and Phala adopt the same governance mechanism as Kusama and Polkadot. This is a relatively mature mechanism that governs to ensure the majority of the stake can always command a network. No matter whether the proposal is submitted by the public (PHA token holders) or the council, it will eventually have to go through a referendum where all holders, weighted by stake, make decisions.
 
 To dive deeply into Phala/Khala governance, please refer to the [Governance](/en-us/maintain/governance/1-participate-in-democracy/) section.
 

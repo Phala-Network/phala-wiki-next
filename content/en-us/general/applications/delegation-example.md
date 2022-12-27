@@ -27,6 +27,6 @@ This begins with 1000 PHA Free Delegation in the StakePool.
 
 - 1st Day: Delegator A initiates a withdrawal application of 5000 PHA. Among them, 1000 PHA is immediately submitted, and the remaining 4000 PHA enters the withdrawal queue;
 - 2nd Day: Delegator B delegates 500 PHA. Then this 500 PHA will be withdrawn to Delegator A;
-- 3rd Day: Worker A in the StakePool completed shutdown and released 3000 PHA, which was withdrawal to Delegator A;
+- 3rd Day: Worker A in the StakePool completed shutdown and released 3000 PHA, which was withdrawn to Delegator A;
 - 8th Day: It has been 7 days since Delegator A applied for withdrawal, and his withdrawal had not been completed. At this time, all workers in the StakePool will be forced to stop;
 - 15th day: All workers in the Stakepool shut down. The withdrawal of Delegator A is then all satisfied.

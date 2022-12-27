@@ -17,33 +17,33 @@ Before you use it, make sure you have prepared your test account, or follow our 
 
 ![](/images/build/phat-ui.png)
 
-On the homepage, click *Connect Wallet* on the right top corner, and choose the wallet you are using. The browser will pop up an *Authorize* window. Click Yes to allow the authorization. Then you can connect to one of your accounts in the *Select Account* window.
+On the homepage, click *Connect Wallet* in the right top corner, and choose the wallet you are using. The browser will pop up an *Authorize* window. Click Yes to allow authorization. Then you can connect to one of your accounts in the *Select Account* window.
 
 ## Connect to Blockchain
 
 ![](/images/build/phat-ui-endpoint-setting.png)
 
-Click the green dot beside your account will tell you the information about the current chain your are connecting to.
+Click the green dot beside your account will tell you the information about the current chain you are connecting to.
 
 ![](/images/build/phat-ui-connection-info.png)
 
 By default, the UI will connect to our [public testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer).
 
-You can connect to any other chains by filling in the RPC Endpoint and click *Connect*. The UI will automatically read the cluster information from chain and fill in the PRuntime for you, but you can always customize it to other worker.
+You can connect to any other chains by filling in the RPC Endpoint and click *Connect*. The UI will automatically read the cluster information from the chain and fill in the PRuntime for you, but you can always set it to other workers.
 
 > **Why two endpoints**
 >
 > Unlike other blockchains like Ethereum where you have to call your contracts through on-chain transactions, Phat Contracts are finally deployed to the off-chain Secure Workers so you can interact with them directly without submitting any transactions. So the UI will ask for two endpoints, one to connect to the blockchain and another to the worker directly.
 
 To connect to our mainnet or your local testnet, you need to specify two endpoints here:
-- An RPC endpoint to connect to one of the Phala blockchain node to read the chain state and send transactions;
+- An RPC endpoint to connect to one of the Phala blockchain nodes to read the chain state and send transactions;
 - A pRuntime endpoint to directly connect to one of our Workers where the [off-chain computation](https://medium.com/phala-network/fat-contract-introduce-off-chain-computation-to-smart-contract-dfc5839d5fb8) really happens;
 
 ## Claim Test Tokens
 
-Once the account is connected, you can find the *Get Test-PHA* button on the right side of the page. You can request 100 test token by clicking it. Please do so if you haven't done it yet. The operations below require tokens as the transaction fee.
+Once the account is connected, you can find the *Get Test-PHA* button on the right side of the page. You can request 100 test tokens by clicking it. Please do so if you haven't done it yet. The operations below require tokens as the transaction fee.
 
-## Upload and Instantiate Contract
+## Upload and Instantiate the Contract
 
 Choose `Upload` and locate your `phat_hello.contract` file (you can download it from [previous section](/en-us/build/getting-started/prep/#hello-world-contract)). The UI will load the metadata of your contract and list all the constructor functions in the `Init Selector` section.
 
@@ -73,13 +73,13 @@ Also, you can expand the lower bar to see the raw events when deploying the cont
 
 ## Interact with Your Contract
 
-Scroll down the webpage and you can see all the interfaces of this contract, with their function names, types and descriptions.
+Scroll down the webpage and you can see all the interfaces of this contract, with their function names, types, and descriptions.
 
 The interfaces are divided into two types, labeled by `TX` and `QUERY` respectively. This contract only contains one `QUERY` handler. We will cover the `TX` handler in the following section. The phat-hello contract has only one `QUERY` interface `get_eth_balance()`.
 
 ![](/images/build/phat-ui-input.png)
 
-Click the run icon to send the request to the contract. For example, we can invoke the `get_eth_balance()` to get the current balance of certain ETH address. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
+Click the run icon to send the request to the contract. For example, we can invoke the `get_eth_balance()` to get the current balance of a certain ETH address. The Polkadot.js extension will ask for your permission in the first click to encrypt your following traffic to the contract.
 
 > **What happened**
 >

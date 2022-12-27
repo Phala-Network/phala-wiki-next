@@ -13,7 +13,7 @@ menu:
 $APR=\frac{PoolRewardPerHour \cdot 24\cdot 365\cdot(1-TreasuryRatio)\cdot(1-Commission)}{Delegated}$
 
 - *PoolRewardPerHour* is the theoretical estimation of the number of tokens mined in the next hour based on the status and attributes of the Workers in StakePool;
-- *TreasuryRatio* is a fixed amount of mining rewards that is handed over to the treasury, which remains as 20%;
+- *TreasuryRatio* is a fixed amount of mining rewards that is handed over to the treasury, which remains at 20%;
 - *Commission* is the management fee left to the StakePool's owner, which is also set by the owner;
 - *Delegated* is the total delegated amount in this StakePool.
 
@@ -27,7 +27,7 @@ $Delegator Reward = PoolMined \cdot (1-TreasuryRatio) \cdot (1-Commission) \cdot
 
 - *UserDelegation* is the delegation amount of a Delegator in the StakePool
 
-Vaults act as the same role as delegators when Vaults delegate to StakePool. But Vault owner will charge an additional commission for the management of funds. Click to learn more about [Vault commission](https://wiki.phala.network/en-us/general/applications/vault/).
+Vaults act in the same role as delegators when Vaults delegate to StakePool. But the Vault owner will charge an additional commission for the management of funds. Click to learn more about [Vault commission](https://wiki.phala.network/en-us/general/applications/vault/).
 
 ## Vault's APY
 

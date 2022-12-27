@@ -10,7 +10,7 @@ menu:
 
 Phala Network provides a naming system that allows participants to add personal information to their on-chain account and subsequently ask for verification of this information by [registrars](#khala-registrars).
 
-After your identity is added, it can be used in many applications in Phala or Khala ecosystem. For example, in Secure Worker Mining, this will help you attracting delegators to trust and vote for you.
+After your identity is added, it can be used in many applications in Phala or Khala ecosystem. For example, in Secure Worker Mining, this will help you attract delegators to trust and vote for you.
 
 <p align="center">
   <a href="https://app.phala.network/delegate/">
@@ -28,7 +28,7 @@ Users can set an identity by registering through default fields including:
 * Twitter handle
 * Element (formerly known as Riot) handle
 
-You can also add extra custom fields for which you can attest. Personalized fields are elaborated in the  [judgements](#judgements) section.
+You can also add extra custom fields to which you can attest. Personalized fields are elaborated in the  [judgements](#judgements) section.
 
 > Users must reserve funds in a bond to store their information on chain:` identity_reserve_funds `, and ` identity_field_funds`  per each field beyond the legal name. These funds are _locked_, can not be spent - they will be returned when the identity is cleared.
 >
@@ -60,7 +60,7 @@ A popup will appear, offering the default fields.
 #### Adding Custom Fields
 
 To add custom fields beyond the default ones, use the Extrinsics UI ("Developer" -> "Extrinsics").
-Select for  `submit the following extrinsic ` "identity" and in the field to the immediate right "setidentity(info)".
+Select `submit the following extrinsic ` "identity" and in the field to the immediate right "setidentity(info)".
 To submit a raw transaction, first click "Add Item" and add any field name you like. The display name also must be provided; otherwise, the Identity pallet would consider it wiped if you submitted it with "None" selected. Every time you change your identity values, you need to re-submit the entire set of fields: the write operation is always "overwrite" and never "append."
 
 <p align="center">
@@ -98,7 +98,7 @@ When a registrar provides judgement, they can select up to six levels of confide
 - Unknown: The default value, no judgement made yet.
 - Reasonable: The data appears reasonable, but no in-depth checks (e.g. formal KYC process) were performed.
 - Known Good: The registrar has certified that the information is correct.
-- Out of Date: The information used to be good, but is now out of date.
+- Out of Date: The information used to be good but is now out of date.
 - Low Quality: The information is low quality or imprecise, but can be fixed with an update.
 - Erroneous: The information is erroneous and may indicate malicious intent.
 
@@ -141,7 +141,7 @@ You may decide that you do not want to be judged by a registrar (for instance, b
 To do this, first, go to the ["Extrinsics UI"](https://polkadot.js.org/apps/#/extrinsics) and select
 the `identity` pallet, then `cancelRequest`. Ensure that you are calling this from the correct account (the one for which you initially requested judgement). For the `reg_index`, put the index of the registrar from which you requested judgement.
 
-Submit the transaction, and the requested judgement will be cancelled.
+Submit the transaction, and the requested judgement will be canceled.
 
 ### Khala Registrars
 
@@ -167,7 +167,7 @@ I am applying for identity verification on Khala, the information is as follows:
   "twitter": "https://twitter.com/marvin_tong"
 }
 ```
-Registrar 0 will reply for the next steps.
+Registrar 0 will reply with the next steps.
 
 ## Sub Accounts
 
@@ -198,4 +198,4 @@ To clear an identity:
 2. Click the three dots corresponding to the account you want to clear and select 'Set on-chain identity'.
 3. Select 'Clear Identity', and sign and submit the transaction.
 
-**Killing:** The Council can kill an identity that it deems erroneous. This results in a slash of the deposit.
+**Killing:** The Council can kill an identity that it deems erroneous. This results in a slash in the deposit.

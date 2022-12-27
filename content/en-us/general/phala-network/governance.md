@@ -18,7 +18,7 @@ To do this, we bring together various novel mechanisms, including an amorphous s
 
 To make any changes to the network, the idea is to compose active token holders and the council together to administrate a network upgrade decision. No matter whether the proposal is proposed by the public (PHA token holders) or the council, it finally will have to go through a referendum to let all holders, weighted by stake, make the decision.
 
-To better understand how the council is formed, please read council section.
+To better understand how the council is formed, please read the council section.
 
 ## Referenda
 
@@ -67,7 +67,7 @@ Multiple referenda cannot be voted upon in the same period, excluding emergency 
 
 #### Voting on a referendum
 
-To vote, a voter generally must lock their PHA up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling.
+To vote, a voter generally must lock their PHA up for at least the enactment delay period beyond the end of the referendum. This is to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling.
 
 It is possible to vote without locking at all, but your vote is worth a small fraction of a normal vote, given your stake. At the same time, holding only a small amount of tokens does not mean that the holder cannot influence the referendum result, thanks to time-locking. You can read more about this at Voluntary Locking.
 
@@ -162,13 +162,13 @@ period.
 
 #### Voluntary Locking
 
-Phala follows Polkadot's idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock up their tokens, hence, the number of votes for each token holder will be calculated by the following formula:
+Phala follows Polkadot's idea called `Voluntary Locking` which allows token holders to increase their voting power by declaring how long they are willing to lock up their tokens, hence, the number of votes for each token holder will be calculated by the following formula:
 
 ```
 votes = tokens * conviction_multiplier
 ```
 
-The conviction multiplier increases the vote multiplier by one every time the number of lock periods double.
+The conviction multiplier increases the vote multiplier by one every time the number of lock periods doubles.
 
 | Lock Periods | Vote Multiplier |
 | :----------: | :-------------: |
@@ -184,7 +184,7 @@ The maximum number of "doublings" of the lock period is set to 6 (and thus 32 lo
 
 While a token is locked, you can still use it for voting and staking; you are only prohibited from transferring these tokens to another account.
 
-Votes are still "counted" at the same time (at the end of the voting period), no matter for how long the tokens are locked.
+Votes are still "counted" at the same time (at the end of the voting period), no matter how long the tokens are locked.
 
 #### Adaptive Quorum Biasing
 
@@ -199,11 +199,11 @@ If a publicly submitted referendum only has a 25% turnout, the tally of "aye" vo
 
 In contrast, when it has a 75% turnout, the tally of "aye" votes has to reach 54%, which means that the super-majority required decreases as the turnout increases.
 
-When the council proposes a new proposal through unanimous consent, the referendum would be put to a vote using "Negative Turnout Bias". In this case, it is easier to pass this proposal with low turnout and requires a super-majority to reject. As more token holders participate in voting, the bias approaches a plain majority carries.
+When the council proposes a new proposal through unanimous consent, the referendum would be put to a vote using "Negative Turnout Bias". In this case, it is easier to pass this proposal with a low turnout and requires a super-majority to reject. As more token holders participate in voting, the bias approaches a plain majority carries.
 
-Referring to the above image, when a referendum only has 25% turnout, the tally of "aye" votes has to reach 34% for it to pass.
+Referring to the above image, when a referendum only has a 25% turnout, the tally of "aye" votes has to reach 34% for it to pass.
 
-In short, when the turnout rate is low, a super-majority is required to reject the proposal, which means a lower threshold of "aye" votes have to be reached, but as turnout increases towards 100%, it becomes a simple majority.
+In short, when the turnout rate is low, a super-majority is required to reject the proposal, which means a lower threshold of "aye" votes has to be reached, but as turnout increases towards 100%, it becomes a simple majority.
 
 All three tallying mechanisms - majority carries, super-majority approve, and super-majority against - equate to a simple majority-carries system at 100% turnout.
 
@@ -211,12 +211,12 @@ All three tallying mechanisms - majority carries, super-majority approve, and su
 
 To represent passive stakeholders, Phala introduces the idea of a "council". The council is an on-chain entity comprising several actors, each represented as an on-chain account. On Phala, the council currently consists of 5 members. This is expected to increase over the next few months to 11 seats. In general, the council will end up having a fixed number of seats.
 
-Along with controlling the treasury, the council is called upon primarily for three tasks of governance: proposing sensible referenda, cancelling uncontroversially dangerous or
+Along with controlling the treasury, the council is called upon primarily for three tasks of governance: proposing sensible referenda, canceling uncontroversially dangerous or
 malicious referenda, and electing the technical committee.
 
 For a referendum to be proposed by the council, a strict majority of members must be in favor, with no member exercising a veto. Vetoes may be exercised only once by a member for any single proposal; if, after a cool-down period, the proposal is resubmitted, they may not veto it a second time.
 
-Council motions which pass with a 3/5 (60%) super-majority - but without reaching unanimous
+Council motions that pass with a 3/5 (60%) super-majority - but without reaching unanimous
 support - will move to a public referendum under a neutral, majority-carries voting scheme. In the case that all members of the council vote in favor of a motion, the vote is considered unanimous and becomes a referendum with negative adaptive quorum biasing.
 
 
@@ -232,7 +232,7 @@ If the cancellation is controversial enough that the council cannot get a two-th
 
 ### Blacklisting
 
-A proposal can be blacklisted by Root origin (e.g. sudo). A blacklisted proposal and its related referendum (if any) is immediately canceled. Additionally, a blacklisted proposal's hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous proposals that could be submitted with the same hash, i.e.proposal #2 in which the submitter used plain text to make a suggestion.
+A proposal can be blacklisted by Root origin (e.g. sudo). A blacklisted proposal and its related referendum (if any) are immediately canceled. Additionally, a blacklisted proposal's hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous proposals that could be submitted with the same hash, i.e.proposal #2 in which the submitter used plain text to make a suggestion.
 
 Upon seeing their proposal removed, a submitter who is not properly introduced to the democracy system of Phala might be tempted to re-submit the same proposal. That said, this is far from a fool-proof method of preventing invalid proposals from being submitted - a single changed character in a proposal's text will also change the hash of the proposal, rendering the per-hash blacklist invalid.
 
@@ -247,33 +247,33 @@ Council elections are handled by the same Phragmén election process that select
 At the end of each term, Phragmén election algorithm runs and the result will choose the new councillors based on the vote configurations of all voters. The election also chooses
 a set number of runners up (currently 10 on Phala) that will remain in the queue with their votes intact.
 
-As opposed to a "first-past-the-post" electoral system, where voters can only vote for a single candidate from a list, a Phragmén election is a more expressive way to include each voters' views.
-Token holders can treat it as a way to support as many candidates as they want. The election algorithm will find a fair subset of the candidates that most closely matches the expressed indications of the electorate as a whole.
+As opposed to a "first-past-the-post" electoral system, where voters can only vote for a single candidate from a list, a Phragmén election is a more expressive way to include each voter's views.
+Token holders can treat it as a way to support as many candidates as they want. The election algorithm will find a fair subset of the candidates that most closely match the expressed indications of the electorate as a whole.
 
 Let's take a look at the example below.
 
-|      Round 1      |     |                |     |     |     |
-| :---------------: | :-: | :------------: | :-: | :-: | :-: |
-| **Token Holders** |     | **Candidates** |     |     |     |
-|                   |  A  |       B        |  C  |  D  |  E  |
-|       Peter       |  X  |                |  X  |  X  |  X  |
-|       Alice       |     |       X        |     |     |     |
-|        Bob        |     |                |  X  |  X  |  X  |
-|      Kelvin       |  X  |                |  X  |     |     |
-|     **Total**     |  2  |       1        |  3  |  2  |  2  |
+|      Round 1      |       |                |       |       |       |
+| :---------------: | :---: | :------------: | :---: | :---: | :---: |
+| **Token Holders** |       | **Candidates** |       |       |       |
+|                   |   A   |       B        |   C   |   D   |   E   |
+|       Peter       |   X   |                |   X   |   X   |   X   |
+|       Alice       |       |       X        |       |       |       |
+|        Bob        |       |                |   X   |   X   |   X   |
+|      Kelvin       |   X   |                |   X   |       |       |
+|     **Total**     |   2   |       1        |   3   |   2   |   2   |
 
 The above example shows that candidate C wins the election in round 1, while candidates A, B, D & E keep remaining on the candidates' list for the next round.
 
 
-|      Round 2      |     |                |     |     |
-| :---------------: | :-: | :------------: | :-: | :-: |
-| **Token Holders** |     | **Candidates** |     |     |
-|                   |  A  |       B        |  D  |  E  |
-|       Peter       |  X  |       X        |     |     |
-|       Alice       |  X  |       X        |     |     |
-|        Bob        |  X  |       X        |  X  |  X  |
-|      Kelvin       |  X  |       X        |     |     |
-|     **Total**     |  4  |       4        |  1  |  1  |
+|      Round 2      |       |                |       |       |
+| :---------------: | :---: | :------------: | :---: | :---: |
+| **Token Holders** |       | **Candidates** |       |       |
+|                   |   A   |       B        |   D   |   E   |
+|       Peter       |   X   |       X        |       |       |
+|       Alice       |   X   |       X        |       |       |
+|        Bob        |   X   |       X        |   X   |   X   |
+|      Kelvin       |   X   |       X        |       |       |
+|     **Total**     |   4   |       4        |   1   |   1   |
 
 For the top-N (say 4 in this example) runners-up, they can remain and their votes persist until the next election. After round 2, even though candidates A & B get the same number of votes in this round, candidate A gets elected because after adding the older unused approvals, it is higher than B.
 
@@ -297,7 +297,7 @@ The Technical Committee can, along with the Council, produce emergency referenda
 fast-tracked for voting and implementation. These are used for emergency bug fixes or rapid
 implementation of new but battle-tested features into the Phala parachain.
 
-Fast-tracked referenda are the only type of referenda that can be active alongside another active referendum. Thus, with fast-tracked referenda it is possible to have two active referendums at the same time. Voting on one does not prevent a user from voting on the other.
+Fast-tracked referenda are the only type of referenda that can be active alongside another active referendum. Thus, with fast-tracked referenda, it is possible to have two active referendums at the same time. Voting on one does not prevent a user from voting on the other.
 
 ## Frequently Asked Questions
 
@@ -307,4 +307,4 @@ In some circumstances, you may want to appeal to the on-chain council to enact a
 
 The first step to appeal to the council is to get in contact with the councillors. There is no singular place where you are guaranteed to grab every councillor's ear with your message. However, there are a handful of good places to start where you can get the attention of some of them. The Phala Forum is one such place. After creating an account and joining this room, you can post a well-thought-through message here that lays down your case and provides justification for why you think the council should consider enacting a change to the protocol on your behalf.
 
-At some point you will likely need a place for a longer-form discussion. For this, making a [post](https://khala.polkassembly.network/onchain) on [Khala's Polkassembly](https://khala.polkassembly.network/onchain) is the recommended place to do so. When you write a post on Polkassembly make sure you present all the evidence for your circumstances and state clearly what kind of change you would suggest to the councillors to enact. Remember - the councillors do not need to make the change, it is your responsibility to make a strong case for why the change should be made.
+At some points you will likely need a place for a longer-form discussion. For this, making a [post](https://khala.polkassembly.network/onchain) on [Khala's Polkassembly](https://khala.polkassembly.network/onchain) is the recommended place to do so. When you write a post on Polkassembly make sure you present all the evidence for your circumstances and state clearly what kind of change you would suggest to the councillors to enact. Remember - the councillors do not need to make the change, it is your responsibility to make a strong case for why the change should be made.

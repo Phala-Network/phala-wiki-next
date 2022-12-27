@@ -8,12 +8,12 @@ menu:
 
 ## Key Hierarchy Management
 
-The world's first key hierarchy for blockchain-TEE hybrid system was proposed by the [Ekiden paper](https://ieeexplore.ieee.org/document/8806762) in 2019, and serves as the basis for the Oasis project. As a compute cloud, Phala improves this design to make it viable for network of ~100k nodes. We also introduce novel mechanism like key rotation to further improve the robustness of the cloud.
+The world's first key hierarchy for blockchain-TEE hybrid system was proposed by the [Ekiden [paper](https://ieeexplore.ieee.org/document/8806762) in 2019 and serves as the basis for the Oasis project. As a compute cloud, Phala improves this design to make it viable for a network of ~100k nodes. We also introduce novel mechanisms like key rotation to further improve the robustness of the cloud.
 
 Before we really dig into the details of our contract key management, it's important for readers to know that every entity in our system has its own identity key. Every user has their account, and every worker and gatekeeper (which are elected by the workers) has its own sr25519 WorkerKey pair, which is generated inside pRuntime (so also in SGX) and the private key never leaves the SGX. The identity key is used to:
 
 - Identify an entity's message with signing;
-- Establish an encrypted communication channel between users, workers and gatekeepers with ECDH key agreement. **By default, any communication between any entities is encrypted in Phala**.
+- Establish an encrypted communication channel between users, workers, and gatekeepers with ECDH key agreement. **By default, any communication between any entities is encrypted in Phala**.
 
 ![](https://miro.medium.com/max/4800/0*Kncy1jrLZ6ZiLltq)
 
@@ -23,7 +23,7 @@ MasterKey is the root of trust for the whole network. All the contract-related k
 - Unlike normal workers, the endpoints of gatekeepers are not public and you cannot deploy contracts to them. This reduces remote access to gatekeepers;
 - Increased staking amounts are required from gatekeepers to discourage bad behavior from their operators.
 
-In Phala, workers are grouped into clusters to provide serverless compute service. A unique ClusterKey is generated for each cluster using the MasterKey (through [key derivation](https://en.wikipedia.org/wiki/Key_derivation_function)), but you cannot revert this process to infer the MasterKey given the ClusterKey. The ClusterKey is shared with all the workers in that cluster.
+In Phala, workers are grouped into clusters to provide serverless computing services. A unique ClusterKey is generated for each cluster using the MasterKey (through [key derivation](https://en.wikipedia.org/wiki/Key_derivation_function)), but you cannot revert this process to infer the MasterKey given the ClusterKey. The ClusterKey is shared with all the workers in that cluster.
 
 Finally, when a contract is deployed to a cluster, it's deployed to all the workers in that cluster. These workers will follow the deterministic process and derive the ClusterKey to get the same ContractKey. The ContractKeys are unique for different contracts.
 
@@ -46,4 +46,4 @@ Finally, when a contract is deployed to a cluster, it's deployed to all the work
 ## Future Security Mechanism
 
 - Use Multi-Party Computation to manage MasterKey
-  - Currently the same MasterKey is shared across all gatekeepers, so it's leaked if any one of them is compromised. By turning this into MPC, the attackers will have to compromise a majority of the gatekeepers to access the MasterKey.
+  - Currently, the same MasterKey is shared across all gatekeepers, so it's leaked if any one of them is compromised. By turning this into MPC, the attackers will have to compromise a majority of the gatekeepers to access the MasterKey.

@@ -14,7 +14,7 @@ Phala tackles the privacy and performance issues of legacy blockchain solutions 
 
 ![blockchain design](/images/learn/phala-design.png)
 
-Our secure workers utilize specific [Secure Enclave](https://en.wikipedia.org/wiki/Trusted_execution_environment) hardwares that ensure confidentiality, security, and performance of blockchain computation. Furthermore, our code is all open-source.
+Our secure workers utilize specific [Secure Enclave](https://en.wikipedia.org/wiki/Trusted_execution_environment) hardware that ensures confidentiality, security, and performance of blockchain computation. Furthermore, our code is all open-source.
 
 ## The Architecture
 
@@ -28,10 +28,10 @@ In general, Phala Network consists of the Phala blockchain and the off-chain run
 
 ### Transaction Security
 
-The core insight of our system design is that the blockchain can serve as a canonical input source for the Secure Enclave, and the Secure Enclave hardwares enforce confidential and faithful execution instructed by the chain even if the worker operators are malicious.
+The core insight of our system design is that the blockchain can serve as a canonical input source for the Secure Enclave, and the Secure Enclave hardware enforces confidential and faithful execution instructed by the chain even if the worker operators are malicious.
 
-Although attackers cannot peek at the Secure Enclave, they can trick the contracts in it by forging transactions or replaying/reordering valid transactions. It is important to ensure that confidential contracts only accept valid transactions and process transactions in an expected order. That’s why we introduce Phala blockchain and connect it to the `pRuntime` via `pherry`.
+Although attackers cannot peek at the Secure Enclave, they can trick the contracts in it by forging transactions or replaying/reordering valid transactions. It is important to ensure that confidential contracts only accept valid transactions and process transactions in an expected order. That’s why we introduce the Phala blockchain and connect it to the `pRuntime` via `pherry`.
 
 As illustrated, the Phala blockchain serves as a canonical source of valid transactions. Only submitted transactions can be accepted by `pRuntime`, and they will be processed in the same order as they are on the blockchain. We implement a light validation client in `pRuntime` to determine whether valid transactions are accepted in an expected order. Also, a key rotation mechanism will be introduced to prevent the replay of historical transactions. The great thing is that `pRuntime` hides all these complex implementation details from you to implement confidential contracts like developing ordinary programs.
 
-`pherry` works as the bridge between Phala blockchain and `pRuntime`. It ensures that all the transactions on the blockchain are faithfully forwarded to `pRuntime` and all the enclave instances are running an unmodified version of `pRuntime`. While it is worth noting that `pRuntime` does not trust `pherry`, it will still validate every block and transaction it receives from `pherry`.
+`pherry` works as the bridge between Phala blockchain and `pRuntime`. It ensures that all the transactions on the blockchain are faithfully forwarded to `pRuntime` and that all the enclave instances are running an unmodified version of `pRuntime`. While it is worth noting that `pRuntime` does not trust `pherry`, it will still validate every block and transaction it receives from `pherry`.

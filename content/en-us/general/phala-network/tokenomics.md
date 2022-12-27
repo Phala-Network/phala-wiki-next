@@ -31,7 +31,7 @@ The following details some key elements of the economic model.
 
 ### Related Workers
 
-Phala Supply-end Tokenomics is applicable to any workers running on Phala or Khala.
+Phala Supply-end Tokenomics applies to any workers running on Phala or Khala.
 
 ### Value Promise ($V$)
 
@@ -65,18 +65,18 @@ Params used in simulation:
 
 ### Performance Test
 
-A performance test measures how much computation can be done in a unit time:
+A performance test measures how much computation can be done in a unit of time:
 
 $$P = \frac{\text{Iterations}}{\Delta t}$$
 
 For reference,
 
-| Platform          | Cores | Score | Approximate Price |
-| ----------------- | ----- | ----- | ----------------- |
-| Low-End Celeron   | 4     | 450   | $150              |
-| Intel Xeon E Processor| 6     | 1900  | $500              |
-| Mid-End i5 10-Gen | 8     | 2000  | $500              |
-| High-End i9 9-Gen | 10    | 2800  | $790              |
+| Platform               | Cores | Score | Approximate Price |
+| ---------------------- | ----- | ----- | ----------------- |
+| Low-End Celeron        | 4     | 450   | $150              |
+| Intel Xeon E Processor | 6     | 1900  | $500              |
+| Mid-End i5 10-Gen      | 8     | 2000  | $500              |
+| High-End i9 9-Gen      | 10    | 2800  | $790              |
 
 > The table is based on the version while writing of this documentation and is subject to changes.
 
@@ -104,8 +104,8 @@ $$C = \frac{0.3 P}{\phi}$$
 
 - $\phi$ is the current PHA/USD quote, dynamically updated on-chain via Oracles
 - $P$ is the initial **_Performance Test_** score.
-- In the early stages we are compensating the equipment cost $C$ with a higher Value Promise.
-- In the future we plan to compensate for higher amortization costs (adding equipment amortization cost to the running costs $c^i$ and $c^a$), thus increasing the speed of growth of the Worker's $V$.
+- In the early stages, we are compensating the equipment cost $C$ with a higher Value Promise.
+- In the future, we plan to compensate for higher amortization costs (adding equipment amortization cost to the running costs $c^i$ and $c^a$), thus increasing the speed of growth of the Worker's $V$.
 
 ### General mining process
 
@@ -141,7 +141,7 @@ $$\Delta V_t = k_p \cdot \big((\rho^m - 1) V_t + c(s_t) + \gamma(V_t)h(V_t)\big)
 
 - $\rho^m$ is the unconditional $V$ increment factor for worker
 - $c(s_t)$ is the operational cost to run the worker
-- $\gamma(V_t)h(V_t)$ represents a factor to compesate for accidental/unintentional slashing (ignored in simulated charts)
+- $\gamma(V_t)h(V_t)$ represents a factor to compensate for accidental/unintentional slashing (ignored in simulated charts)
 - $k_p = \min(\frac{P_t}{P}, 120\\%)$, where $P_t$ is the instant performance score, and $P$ is the initial score
 - If $V > V_{max}$ after the update, it will be capped to $V_{max}$
 
@@ -163,13 +163,13 @@ $$\Delta V = -min(w(V_t),V_t-V_\text{last}).$$
 
 $V_\text{last}$ is the value promised at the last payout event, or $V^e$ if this is the first payout.
 
->The update of V is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure workers are well incentives to always accumulate credits in the network. Otherwise, workers are incentivized to constantly reset their mining session if V decreases over time.
+> The update of V is limited to ensure the payout doesn't cause $V$ to drop lower than it was in the last payout event. The limit is necessary to make sure workers are well incentives to always accumulate credits in the network. Otherwise, workers are incentivized to constantly reset their mining session if V decreases over time.
 
-Share represents how much the worker is paid out from $V$. We expect it will approximate the share baseline, but with minor adjustment to reflect the property of the worker:
+Share represents how much the worker is paid out from $V$. We expect it will approximate the share baseline, but with minor adjustments to reflect the property of the worker:
 
 $$\text{share}_{\text{Baseline}} = V_t.$$
 
-$\Sigma \text{share}$ contains the share of workers which are running on Phala or Khala with a same subsidy ratio.
+$\Sigma \text{share}$ contains the share of workers which are running on Phala or Khala with the same subsidy ratio.
 
 Proposed algorithm:
 
@@ -179,14 +179,14 @@ Proposed algorithm:
 
 ### Subsidy Budget
 
-|                    |    Phala / Khala   |
-| ------------------ |  :---------------: |
-| Relaychain         |  Polkadot/ Kusama  |
-| Budget for Mining  |       700 mln      |
-| Halving Period     |       180 days     |
-| Halving Discount   |         25%        |
-| Treasure Share     |         20%        |
-| First Month Reward |       21.6 mln     |
+|                    |  Phala / Khala   |
+| ------------------ | :--------------: |
+| Relaychain         | Polkadot/ Kusama |
+| Budget for Mining  |     700 mln      |
+| Halving Period     |     180 days     |
+| Halving Discount   |       25%        |
+| Treasure Share     |       20%        |
+| First Month Reward |     21.6 mln     |
 
 ### Heartbeat & Payout Schedule
 
@@ -208,7 +208,7 @@ Potential parameters:
 
 ### Slash rules
 
-The slash rules for workers are defined below. No slash rules have been implemented at the moment, but will start in the near future.
+The slash rules for workers are defined below. No slash rules have been implemented at the moment but will start in the near future.
 
 | Severity | Fault                               | Punishment                                |
 | -------- | ----------------------------------- | ----------------------------------------- |
@@ -219,7 +219,7 @@ The slash rules for workers are defined below. No slash rules have been implemen
 
 ### Final payout
 
-When a worker chooses to disconnect from the platform, they send an Exit Transaction and receives their Severance Pay after $\delta$ blocks.
+When a worker chooses to disconnect from the platform, they send an Exit Transaction and receive their Severance Pay after $\delta$ blocks.
 
 After the cooling down period, the worker gets their final payout, representing the return of the initial stake. However, if $V_T$ goes lower than the initial $V^e$, the worker will get less stake returned as a punishment:
 

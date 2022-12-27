@@ -109,6 +109,6 @@ You can transfer ERC-20 PHA and K-PHA on several decentralized and centralized p
 
 ## Launch Process
 
-Khala Network finished all launch plans, including enabling secure workers, removing Sudo, going live with governance, and opening two-way cross-chain between Khala and Ethereum in SubBridge.
+Khala Network finished all launch plans, including enabling secure workers, removing Sudo, going live with governance, and opening a two-way cross-chain between Khala and Ethereum in SubBridge.
 
 Full events available in: <https://github.com/orgs/Phala-Network/projects/1>

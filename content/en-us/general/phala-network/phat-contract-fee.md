@@ -25,7 +25,7 @@ This version is written by [Samuel Häfner](https://samuelhaefner.github.io/). I
 
 ## How to pay for the computing services
 
-This section consists of 2 parts: query tokenomics and transaction tokenomics. It applies to all the public good clusters that are managed by Phala team. In the future, users will be allowed to create their own clusters and define their own rules.
+This section consists of 2 parts: query tokenomics and transaction tokenomics. It applies to all the public good clusters that are managed by Phala team. In the future, users will be allowed to create their clusters and define their own rules.
 
 > Every contract must have some stake
 
@@ -33,7 +33,7 @@ This section consists of 2 parts: query tokenomics and transaction tokenomics. I
 
 Phat Contract utilizes a very simple tokenomics for queries. The rules can be summarized below:
 
-- The share of computing power a contract receives on each worker equals to the stake’s share of that in the cluster;
+- The share of computing power a contract receives on each worker equals the stake’s share of that in the cluster;
 - Anyone can stake to any contract;
 - The stake can be adjusted or withdrawn on-the-fly instantly.
 
@@ -41,36 +41,36 @@ It can be summarized as a one-liner:
 
 `The % of your stake = The % of your computing power share you receive`
 
-Usually, end-users will estimate the workload of the application, and then decide the amount to stake in order to get enough computing power. However, on Phala Network, the estimation turns out to be so tricky that the help of additional tools may be required. There will be a typical resource requirement of a few baseline applications to end-users as a reference in Phat Contract’s UI.
+Usually, end-users will estimate the workload of the application, and then decide the amount to stake to get enough computing power. However, on Phala Network, the estimation turns out to be so tricky that the help of additional tools may be required. There will be a typical resource requirement of a few baseline applications to end-users as a reference in Phat Contract’s UI.
 
 ### Transaction tokenomics
 
-The transaction tokenomics’ goal is to mitigate DoS attacks by charging some transaction fee (also called "gas fee"). Since the transaction is rarely used in Phat Contract, we tend to offer minimum interface to developers. (Users will mostly interact with Phat Contract by queries, while transaction is used to deploy and configure Phat Contracts by the developer.)
+The transaction tokenomics’ goal is to mitigate DoS attacks by charging some transaction fee (also called "gas fee"). Since the transaction is rarely used in Phat Contract, we tend to offer a minimum interface to developers. (Users will mostly interact with Phat Contract by queries, while the transaction is used to deploy and configure Phat Contracts by the developer.)
 
 Phat Contract adopts the same transaction payment mechanism as the vanilla ink! contracts - when sending a transaction call, it must attach some "gas fee" to the transaction.
 
 In the execution of the transaction in the VM:
 
-- Each instruction will charge some fee, until it finishes or the supplied gas fee is exhausted.
+- Each instruction will charge some fee until it finishes or the supplied gas fee is exhausted.
 - If there is any gas fee left, the blockchain will return the remaining token to the caller.
 
-This mechanism can mitigate the Halting Problem, preventing the VM from trapping into the infinite loop.
+This mechanism can mitigate the Halting Problem, preventing the VM from trapping in the infinite loop.
 
 ![](/images/general/demand-end-tokenomics-4.png)
 
-In the actual implementation, the transaction comes with a `gasLimit` and a `gasPrice`. The execution of the instructions is measured by `gas`, which should never exceed `gasLimit`. The user pays `gasLimit * gasPrice` first, and after the execution, if there is any remaining gas, the chain will refund the user `remainingGas & gasPrice`. Both Ethereum and ink! adopt the same mechanism.
+In the actual implementation, the transaction comes with a `gasLimit` and a `gasPrice`. The execution of the instructions is measured by `gas`, which should never exceed `gasLimit`. The user pays `gasLimit * gasPrice` first, and after the execution, if there is any remaining gas, the chain will refund the user `remainingGas & gasPrice`. Both Ethereum and ink! adopt the same mechanism.
 
 ## How it works
 
-It is different from the [Supply-end Tokenomics](/en-us/general/phala-network/tokenomics/) which mainly fixes the problem of how to incentivize workers to join and contribute to the network. Phat Contract’s tokenomics focus is on computing resources allocation.
+It is different from the [Supply-end Tokenomics](/en-us/general/phala-network/tokenomics/) which mainly fixes the problem of how to incentivize workers to join and contribute to the network. Phat Contract’s tokenomics focus is on computing resource allocation.
 
 Here is the structure diagram of Phala’s demand end - Phat Contract’s tokenomics, you can easily understand how it works.
 
 ![](/images/general/demand-end-tokenomics-1.png)
 
-| Layers       | Characters           | Functions                                                                                                                                                                                                                                                                     |
-| ------------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| First Layer  | Clusters & Workers   | Allocates the network’s computing resources across different clusters. Here, Phala employs a staking-based approach.                                                                                                                                                          |
+| Layers       | Characters           | Functions                                                                                                                                                                                                                                                               |
+| ------------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| First Layer  | Clusters & Workers   | Allocates the network’s computing resources across different clusters. Here, Phala employs a staking-based approach.                                                                                                                                                    |
 | Second Layer | Clusters & Contracts | Clusters allocate their computing power to the jobs that they receive from their end-users. The particular allocation mechanism at this stage is mostly left to the cluster owners. Phala provides a default staking-based implementation for the public good clusters. |
 
 ### Demand-end
@@ -136,22 +136,22 @@ At the beginning of each era, each contract cluster is presented with an ordered
 The algorithm,
 
 - First, it rearranges the different contract clusters so that their stakes are ordered; i.e., $S_{1t}\ge S_{2t}\ge S_{3t}\ge ...S_{n_tt}$, where contract clusters with identical stakes are ordered randomly.
-- Then, the algorithm goes through the contract clusters in decreasing order of their stakes and assigns them with their most preferred workers that have not been assigned before and that are still in their budget set.
+- Then, the algorithm goes through the contract clusters in decreasing order of their stakes and assigns them to their most preferred workers that have not been assigned before and that are still in their budget set.
 - **What if a worker doesn’t match with any contract clusters?**
   - As every contract cluster has all workers on its list, all contract clusters will be matched to some workers and the algorithm stops as soon as the least-staked contract cluster is assigned its workers. The workers that remain unmatched after this last step are then matched to the Phala contract cluster for general Phat contracts.
 - **Changing Factors**
     - New clusters
       - The resulting allocation will be the same from era to era, if the set of workers, the set of clusters, and their stakes do not change, and the developers submit the same preferences. If another cluster comes in at some point, then we want to reallocate workers without changing the overall allocation too dramatically. The design proposed above ensures that the more you stake the less you are affected by such a new entry.
-      - In particular, if the new entrant at $t + 1$ has a stake of size $\hat s$, then the budget of all remaining clusters are scaled, yet this rescaling is the less dramatic the more stake a cluster holds and the remaining clusters $i$ for which $s_{it} > \hat s$ holds still get their most preferred workers (up to their new budget).
+      - In particular, if the new entrant at $t + 1$ has a stake of size $\hat s$, then the budget of all remaining clusters is scaled, yet this rescaling is less dramatic the more stake a cluster holds and the remaining clusters $i$ for which $s_{it} > \hat s$ holds still get their most preferred workers (up to their new budget).
     - Fake clusters
       - One might also be worried about workers trying to manipulate their popularity measure by registering fake clusters. The algorithm prevents this by ***giving preference to higher-staked clusters over lower-staked ones***, making such manipulation attempts costly. In particular, it is the function $g(.)$, discussed in the next section, that can be used to steer how much the popularity of a worker affects its pay. So, if there is reason to worry that manipulations occur, $g(.)$  can in principle be changed at any time by governance to a function that does not change very much in its argument.
 
 
 ### Supply End - Worker Side
 
-Remuneration of a worker depends on the security of the TEE, the computing power that it contributes to the network and its general popularity.
+The remuneration of a worker depends on the security of the TEE, the computing power that it contributes to the network, and its general popularity.
 
-The former is objectively measurable, the latter is determined based on the lists that the clusters submit to the matching algorithm.
+The former is objectively measurable, and the latter is determined based on the lists that the clusters submit to the matching algorithm.
 
 To enhance Workers’ competitiveness in the system, here are several metrics that impact workers:
 

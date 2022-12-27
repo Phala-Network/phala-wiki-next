@@ -15,7 +15,7 @@ Phala Network won the 13th Polkadot Slot Auction with the support of 1,685 contr
 
 ## Reward Distribution
 
-Phala crowdloan reward pool consists of three parts: the basic reward, old gangster bonus, and time-limited reward. Each user’s account balance equals to 15% + unlock days/96\*7\*85%. The total budget is over a 14.6 million PHA.
+Phala crowdloan reward pool consists of three parts: the basic reward, the old gangster bonus, and the time-limited reward. Each user’s account balance equals 15% + unlock days/96\*7\*85%. The total budget is over 14.6 million PHA.
 
 In mid-July 2022, as previously agreed: 15% PHA in the reward pool was available immediately; about six weeks of rewards have been distributed.
-Furthermore, 1,661 Phala/Khala addresses got the PhalaWorld whitelist, which is the time-limited rewards.
+Furthermore, 1,661 Phala/Khala addresses got the PhalaWorld whitelist, which is the time-limited reward.

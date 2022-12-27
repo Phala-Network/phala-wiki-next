@@ -9,7 +9,7 @@ menu:
 
 ## Overview
 
-A Phat contract can utilize three kinds of storage solutions: local cache, contract state and any external storage services with HTTP requests. We list the differences between two native storage solutions in Phat Contract as follow.
+A Phat contract can utilize three kinds of storage solutions: local cache, contract state, and any external storage services with HTTP requests. We list the differences between the two native storage solutions in Phat Contract as follows.
 
 |                | Persistent | Consistent | Transparently Encrypted | Cost    |
 | -------------- | ---------- | ---------- | ----------------------- | ------- |
@@ -19,7 +19,7 @@ A Phat contract can utilize three kinds of storage solutions: local cache, contr
 
 ### Local Cache
 
-Local cache is stored in worker's memory. As its name, it should only be used as cache since all cached data is not shared across different workers, and can be lost if the worker is down. Also, you may experience unexpected value cleanup if the memory usage of the worker is high.
+The local cache is stored in the worker's memory. As its name, it should only be used as a cache since all cached data is not shared across different workers, and can be lost if the worker is down. Also, you may experience unexpected value cleanup if the memory usage of the worker is high.
 
 The cache can be easily accessed in [Pink extension](/en-us/build/stateless/pink-extension/). You can read and write cache in query handlers, but reading cache in transaction handlers is forbidden: the result of cache reading is nondeterministic.
 
@@ -57,7 +57,7 @@ Unlike other ink contracts in which such values are stored publicly on-chain, in
 
 With its HTTP support, you can connect to any storage services you like in your Phat contract.
 
-For simple key-value store, [pink-s3](https://crates.io/crates/pink-s3) enables you to store data to any storage services with S3-API support.
+For simple key-value storage, [pink-s3](https://crates.io/crates/pink-s3)](https://crates.io/crates/pink-s3) enables you to store data in any storage service with S3-API support.
 
 ```rust
 fn s3_example() {
@@ -97,6 +97,6 @@ Such storage service providers include:
 - [Storj](https://www.storj.io/) - 150GB free
 - [Filebase](https://filebase.com/) - 5GB free
 
-If you want relational database like MySql, you can also use DBaaS services like
+If you want a relational database like MySql, you can also use DBaaS services like
 
 - [PingCap](https://www.pingcap.com/), which is based on TiDB
