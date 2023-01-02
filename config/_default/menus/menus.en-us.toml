@@ -84,11 +84,11 @@
   url = "/build/infrastructure/"
   weight = 8000
 
-[[build]]
-  name = "Archived"
-  identifier = "phat-archived"
-  url = "/build/archived/"
-  weight = 9000
+# [[build]]
+#   name = "Archived"
+#   identifier = "phat-archived"
+#   url = "/build/archived/"
+#   weight = 9000
 
 [[mine]]
   name = "Mine Khala"
