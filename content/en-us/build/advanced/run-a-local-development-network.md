@@ -1,9 +1,9 @@
 ---
-title: "Run Your Own Local Testnet"
-weight: 2005
+title: "Run Local Testnet"
+weight: 8002
 menu:
   build:
-    parent: "phat-basic"
+    parent: "phat-advanced"
 ---
 
 
@@ -62,7 +62,7 @@ cargo build --release
 
 It takes approximately 20 minutes to complete the building process on a laptop equipped with an AMD Ryzen 7 4700U processor with 8 cores, 8 threads, and 32GB of RAM.
 
-### Start the locat testnet
+### Start the local testnet
 
 We have a dedicate set of scripts to get the blockchain to run, checkout out [this page](https://github.com/Phala-Network/phala-blockchain/tree/master/scripts/run) for full details. For simplicity we can start as simple as follows:
 
@@ -80,7 +80,7 @@ Then go ahead and run these 3 commands in 3 separate terminals:
 ./scripts/run/pherry.sh
 ```
 
-Now you have a full node at ws://localhost:19944, and the pruntime is at http://localhost:18000.
+Now you have a full node at <ws://localhost:19944>, and the pruntime is at <http://localhost:18000>.
 
 ### Alternatively, use devPHAse
 
@@ -118,7 +118,7 @@ We have a client-side application at [https://phat.phala.network/](https://phat.
 
 ![](/images/build/phat-ui-to-testnet.png)
 
-As the above figure shows, we first click the green dot at the upper-right cornor to set the `RPC Endpoint` to `ws://localhost:19944`, or `ws://localhost:9944` if you start the chain via the devPHAse approach, and change the PRuntime field accordingly. 
+As the above figure shows, we first click the green dot at the upper-right cornor to set the `RPC Endpoint` to `ws://localhost:19944`, or `ws://localhost:9944` if you start the chain via the devPHAse approach, and change the PRuntime field accordingly.
 
 Don't forget to claim some `Test-PHA`s, they're required to deploy Phat Contracts and send transactions.
 
