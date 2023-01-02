@@ -49,6 +49,10 @@ To connect to our mainnet or your local testnet, you need to specify two endpoin
 
 Once the account is connected, you can find the *Get Test-PHA* button on the right side of the page. You can request 100 test tokens by clicking it. Please do so if you haven't done it yet. The operations below require tokens as the transaction fee.
 
+> **For Closed Beta**
+>
+> The button will lead you to the `# faucet` channel in our Discord server. Post your account there to get the test tokens.
+
 ## Upload and Instantiate the Contract
 
 Choose `Upload` and locate your `phat_hello.contract` file (you can download it from [previous section](/en-us/build/getting-started/prep/#hello-world-contract)). The UI will load the metadata of your contract and list all the constructor functions in the `Init Selector` section.
