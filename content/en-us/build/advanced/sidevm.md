@@ -22,7 +22,7 @@ SideVM is proposed to tackle these limitations. It runs in a different runtime. 
 The SideVM support is already equipped to our public testnet. But it requires manual authorization to your contract to enable it to call the `start_sidevm()` function. Contact us is the `#dev` channel in our [Discord server](https://discord.gg/phala) to get support.
 
 <!-- TODO.shelven -->
-Also, you can run your local testnet following our [tutorial](xxx) and then do the testing.
+Also, you can run your local testnet following our [tutorial](/en-us/build/getting-started/run-a-local-development-network/) and then do the testing.
 
 ## Play with it
 
