@@ -1,6 +1,6 @@
 ---
 title: "Store States on Chain"
-weight: 4003
+weight: 5003
 draft: true
 menu:
   build:

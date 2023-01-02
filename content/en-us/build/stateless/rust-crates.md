@@ -1,6 +1,6 @@
 ---
 title: "Use Rust Crates"
-weight: 3005
+weight: 4005
 menu:
   build:
     parent: "phat-stateless"

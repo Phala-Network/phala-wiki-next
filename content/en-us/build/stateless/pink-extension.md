@@ -1,6 +1,6 @@
 ---
 title: "Use Pink Extension"
-weight: 3004
+weight: 4004
 menu:
   build:
     parent: "phat-stateless"
