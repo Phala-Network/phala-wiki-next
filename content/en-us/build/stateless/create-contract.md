@@ -1,6 +1,6 @@
 ---
 title: "Create Contract"
-weight: 3002
+weight: 4002
 menu:
   build:
     parent: "phat-stateless"

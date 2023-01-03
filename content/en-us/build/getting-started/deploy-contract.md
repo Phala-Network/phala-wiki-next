@@ -6,7 +6,10 @@ menu:
     parent: "phat-basic"
 ---
 
-[Phat Contract UI](https://phat.phala.network/) provides an easy way to upload your contract, instantiate it and interact with it.
+Phat Contract UI provides an easy way to upload your contract, instantiate it and interact with it.
+
+- For public testnet, visit <https://phat.phala.network>
+- For Closed Beta, visit <https://phat-cb.phala.network>
 
 Before you use it, make sure you have prepared your test account, or follow our [tutorial](/en-us/build/getting-started/account-prep) to create one.
 
@@ -27,7 +30,10 @@ Click the green dot beside your account will tell you the information about the 
 
 ![](/images/build/phat-ui-connection-info.png)
 
-By default, the UI will connect to our [public testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer).
+By default, the UI will connect to
+
+-  [PoC-5 Testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer)
+-  or [Closed Beta Testnet](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fphat-beta.phala.network%2Fkhala%2Fws#/explorer)
 
 You can connect to any other chains by filling in the RPC Endpoint and click *Connect*. The UI will automatically read the cluster information from the chain and fill in the PRuntime for you, but you can always set it to other workers.
 
@@ -42,6 +48,10 @@ To connect to our mainnet or your local testnet, you need to specify two endpoin
 ## Claim Test Tokens
 
 Once the account is connected, you can find the *Get Test-PHA* button on the right side of the page. You can request 100 test tokens by clicking it. Please do so if you haven't done it yet. The operations below require tokens as the transaction fee.
+
+> **For Closed Beta**
+>
+> The button will lead you to the `# faucet` channel in our Discord server. Post your account there to get the test tokens.
 
 ## Upload and Instantiate the Contract
 

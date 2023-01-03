@@ -1,6 +1,6 @@
 ---
 title: "Test Contract on Testnet"
-weight: 3006
+weight: 4006
 draft: true
 menu:
   build:

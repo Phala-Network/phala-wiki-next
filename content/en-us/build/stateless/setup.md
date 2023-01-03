@@ -1,6 +1,6 @@
 ---
 title: "Environment Setup"
-weight: 3001
+weight: 4001
 menu:
   build:
     parent: "phat-stateless"

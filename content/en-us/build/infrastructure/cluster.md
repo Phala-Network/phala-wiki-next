@@ -1,6 +1,6 @@
 ---
 title: "Cluster of Workers"
-weight: 5003
+weight: 6003
 menu:
   build:
     parent: "infra"

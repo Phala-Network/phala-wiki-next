@@ -1,7 +1,7 @@
 ---
 title: "Phala x Encode Club Workshop"
 weight: 9002
-draft: false
+draft: true
 menu:
   build:
     parent: "phat-archived"

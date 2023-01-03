@@ -1,5 +1,5 @@
 ---
-title: "Closed Beta Navigation"
+title: "Closed Beta"
 weight: 1009
 draft: false
 menu:
@@ -39,11 +39,11 @@ and more for us to explore together.
   - Programming language basics
   - User interaction
   - Local unit test
-- [Store Contract States](/en-us/build/stateful/understand-state/) introduces the different storages you can utilize to store your contract states and data, including
+- [Store Contract States](/en-us/build/stateful/storage-hierarchy/) introduces the different storages you can utilize to store your contract states and data, including
   - Volatile local cache
   - Consistent on-chain storage
   - External storage services
-- [Advanced Techniques]() includes advanced features like system contract and SideVM, which further extend the capabilities of Phat Contract.
+- [Advanced Techniques](/en-us/build/advanced/system-contract/) includes advanced features like system contract and SideVM, which further extend the capabilities of Phat Contract.
 - [Blockchain Infrastructure](/en-us/build/infrastructure/blockchain-detail/) contains the system design of the underlying infrastructure that supports Phat Contract. It helps to understand how your contract is deployed and why it's safe.
 
 ## Other resources
@@ -52,7 +52,7 @@ and more for us to explore together.
     - <https://github.com/Phala-Network/awesome-phat-contracts>
     - <https://github.com/Phala-Network/phat-contract-examples>
 - Developer toolings
-    - Web console: [https://phat.phala.network](https://phat.phala.network/)
+    - Web console: [https://phat-cb.phala.network](https://phat-cb.phala.network/)
         - Built out a frontend where you can deploy and interact with your contract
     - Project manager
         - Quickly get a blank template and spin up a local cluster for testing with https://github.com/l00k/devphase
