@@ -22,7 +22,7 @@ We recommend using more queries in your contracts and only using the transaction
 | No gas fee            | ❌           | ✅     |
 | Latency               | 6s          | 0s    |
 | Deterministic         | ✅           | ❌     |
-| Internet Access       | ✅           | ❌     |
+| Internet Access       | ❌           | ✅     |
 
 ## Handle Query and Transaction
 
