@@ -27,7 +27,7 @@ or sometimes "use of floating point type in locals is forbidden"
 This error occurs when the contract or its dependencies use floating point operations not allowed by the ink runtime.
 
 - To find the source of the problem, try recompiling the contract with `--keep-debug-symbols`, then convert the wasm file to wat using `wasm2wat my_contract.wasm > my_contract.wat`, and search for `f32` or `f64` in my_contract.wat to find the function using these instructions.
-- If the floating point operations are necessary, see the section "How to do floating point calculations" for more information.
+- If the floating point operations are necessary, see the section ["How to do floating point calculations"](#do-fp) for more information.
 
 #### Error: sign extension operations support is not enabled
 - We suggest compiling the contract on Linux and upgrading cargo-contract to version 1.5.1 or higher.
