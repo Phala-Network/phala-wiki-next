@@ -30,8 +30,20 @@ This error occurs when the contract or its dependencies use floating point opera
 - If the floating point operations are necessary, see the section ["How to do floating point calculations"](#do-fp) for more information.
 
 #### Error: sign extension operations support is not enabled
-- We suggest compiling the contract on Linux and upgrading cargo-contract to version 1.5.1 or higher.
-- If compiling on macOS, there is no guaranteed solution, but you can refer to this [issue](https://github.com/paritytech/cargo-contract/issues/832) for ideas.
+Upgrade cargo-contract to version 1.5.2 or higher once [this PR](https://github.com/paritytech/cargo-contract/pull/904) has been merged.
+
+### Avoiding FP Instructions in JSON Parsing
+A common case that introduces FP instructions is parsing JSON in a contract. Either serde or serde_json are designed to be able to handle FP numbers. In theory, if you don't use it to deal with FP data, the compiler and wasm-opt should be able to optimize the FP instructions away for many cases. However, in practice, if you use serde_json, it always emits FP instructions in the final output wasm file.
+
+If your JSON document contains FP numbers, you can skip this section and go to ["How to do floating point calculations"](#do-fp) for solutions. If your JSON document does not contain FP numbers, here are some suggestions for removing the instructions:
+
+- Use the crate [pink-json](https://crates.io/crates/pink-json) instead of `serde_json`.
+- Don't deserialize to `json::Value` or `serde::Value`. These are dynamically typed values and make it impossible for the compiler to optimize the code paths that contain FP ops. Instead, mark concrete types with `#[derive(Deserialize)]` and deserialize to them directly.
+- If using `pink-web3` and loading `Contract` from its JSON ABI, you may encounter FP problems in a function like `_ZN5serde9__private2de7content7Content10unexpected17h5ce9c505c30bc609E` from serde. To fix this, you can patch `serde` as shown below.
+  ```toml
+  [patch.crates-io]
+  serde = { git = "https://github.com/kvinwang/serde.git", branch = "pink" }
+  ```
 
 ### <a name="do-fp"></a>How to do Floating Point Calculations
 TODO
