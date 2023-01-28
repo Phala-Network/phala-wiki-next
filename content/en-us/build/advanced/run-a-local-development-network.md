@@ -82,6 +82,21 @@ Then go ahead and run these 3 commands in 3 separate terminals:
 
 Now you have a full node at <ws://localhost:19944>, and the pruntime is at <http://localhost:18000>.
 
+After you start the node and the pruntime, you need set up Phat Contract environment once. This can be done with our [phala-blockchain-setup repo](https://github.com/shelvenzhou/phala-blockchain-setup):
+
+```bash
+git clone https://github.com/shelvenzhou/phala-blockchain-setup.git
+cd phala-blockchain-setup
+yarn
+
+ENDPOINT=ws://localhost:19944 \
+WORKERS=http://localhost:18000 \
+GKS=http://localhost:18000 \
+yarn setup:drivers
+```
+
+After all, you testnet is ready. You can continue with the [Connect the polkadot app to the local testnet](#connect-the-phat-ui-to-the-local-testnet) section.
+
 ### Alternatively, use devPHAse
 
 Our community has [an excellent tool](https://github.com/l00k/devphase) to automate the setup process, developed by [100k](https://github.com/l00k), it is like the Phala version of [Hardhat](https://hardhat.org/) or [Truffle](https://trufflesuite.com/).
