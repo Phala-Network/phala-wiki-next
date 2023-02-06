@@ -7,7 +7,7 @@ menu:
     parent: "phat-general"
 ---
 
-# ***About the Phala Builders Program***
+## ***About the Phala Builders Program***
 *Funding and supporting innovative projects building with the Phala Compute Cloud via Phat Contract.*
 
 The Phala Builders Program provides funding, guidance, and support to developers that want to build high-value projects with Phat Contract, and add functionality to Phat Contract itself.
