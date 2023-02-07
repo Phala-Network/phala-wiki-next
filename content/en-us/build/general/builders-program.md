@@ -68,7 +68,7 @@ Criteria: Development of a compelling project or projects involving significant 
 ![](/images/build/builders-program.png)
 
 #### 1. Application
-- Fill out and submit an application [form](https://docs.google.com/forms/d/e/1FAIpQLSdaWa5YA-YJL7Cc0b0_cbpCdOvu1Ra7uJI95cudSLIduMrv_A/viewform?usp=sf_link).
+- Fill out and submit an application <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdaWa5YA-YJL7Cc0b0_cbpCdOvu1Ra7uJI95cudSLIduMrv_A/viewform?usp=sf_link">form</a>.
 
 #### 2. Introductory Call
 - The Phala Builders Program Committee will schedule a call with compelling applicants to review the details of their application and determine whether or not to move forward.
