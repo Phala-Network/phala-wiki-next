@@ -101,21 +101,20 @@ If you have questions about the Phala Builders Program or application process, p
 If you’d like to learn more about Phat Contract and our developer tooling, please explore our developer library below:
 
 - Detailed documents and more code examples as your reference
-  - https://github.com/Phala-Network/awesome-phat-contracts
-  - https://github.com/Phala-Network/phat-contract-examples
+  - [https://github.com/Phala-Network/awesome-phat-contracts](https://github.com/Phala-Network/awesome-phat-contracts)
+  - [https://github.com/Phala-Network/phat-contract-examples](https://github.com/Phala-Network/phat-contract-examples)
 - Developer toolings
-  - Web console: https://phat.phala.network
+  - Web console: [https://phat.phala.network](https://phat.phala.network)
     - Build out a frontend where you can deploy and interact with your contract
   - Project manager
-    - Quickly get a blank template and spin up a local cluster for testing with https://github.com/l00k/devphase
-    - Swanky CLI integration (wraps devphase into a swanky plugin) https://github.com/Phala-Network/swanky-plugin-phala
+    - Quickly get a blank template and spin up a local cluster for testing with [https://github.com/l00k/devphase](https://github.com/l00k/devphase)
+    - Swanky CLI integration (wraps devphase into a swanky plugin) [https://github.com/Phala-Network/swanky-plugin-phala](https://github.com/Phala-Network/swanky-plugin-phala)
 - Basic Libraries
   - Storage support: Wrapped Filecoin, Arweave, Storj and Amazon S3 with a S3-standard API
-    - https://crates.io/crates/pink-s3
+    - [https://crates.io/crates/pink-s3](https://crates.io/crates/pink-s3)
   - Cross-chain transaction support: ETH Queries & Transactions
-    - https://crates.io/crates/pink-web3
+    - [https://crates.io/crates/pink-web3](https://crates.io/crates/pink-web3)
 - Advanced Library
   - Stateful rollup: reliable cross-chain request processing
     - Allows you to monitor the requests from EVM contracts and Substrate-based chains and reliably send cross-chain transactions as replies
-    - https://github.com/Phala-Network/phat-stateful-rollup
-
+    - [https://github.com/Phala-Network/phat-stateful-rollup](https://github.com/Phala-Network/phat-stateful-rollup)
