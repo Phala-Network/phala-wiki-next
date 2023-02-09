@@ -93,7 +93,7 @@ Criteria: Development of a compelling project or projects involving significant 
 
 The Phala Builders Program is a unique opportunity to receive funding and support to build with Phat Contract, however we encourage applicants to seek support from complimentary grant programs or accelerators as well. The Phala Builders Program Committee will endeavor to be as collaborative as possible, and may offer support to successful applicants in securing external funding.
 
-If you have questions about the Phala Builders Program or application process, please reach out to us at build@phala.network or join the  #builders-program-support channel in our Discord.
+If you have questions about the Phala Builders Program or application process, please reach out to us at build@phala.network or in our [Discord](https://discord.gg/phala).
 
 
 ---
