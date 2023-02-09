@@ -29,7 +29,7 @@ The Phala Builders Program provides funding, guidance, and support to developers
 ### **What do we offer?**
 
 **Funding**
-- Up to 50k$ USD value in PHA token, paid out on-chain at agreed-upon intervals dictated by the Builder Agreement.
+- Up to $50,000 USD value in PHA token, paid out on-chain at agreed-upon intervals dictated by the Builder Agreement.
 
 **Technical Assistance**
 - Deep technical support from lead Phat Contract developers during the design, testing, and deployment phases of project development.
@@ -93,7 +93,7 @@ Criteria: Development of a compelling project or projects involving significant 
 
 The Phala Builders Program is a unique opportunity to receive funding and support to build with Phat Contract, however we encourage applicants to seek support from complimentary grant programs or accelerators as well. The Phala Builders Program Committee will endeavor to be as collaborative as possible, and may offer support to successful applicants in securing external funding.
 
-If you have questions about the Phala Builders Program or application process, please reach out to us at build@phala.network or in our [Discord](https://discord.gg/phala).
+If you have questions about the Phala Builders Program or application process, please reach out to us at build@phala.network or in our <a target="_blank" href="https://discord.gg/phala">Discord</a>.
 
 
 ---
