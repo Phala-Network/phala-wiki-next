@@ -47,3 +47,20 @@ If your JSON document contains FP numbers, you can skip this section and go to [
 
 ### <a name="do-fp"></a>How to do Floating Point Calculations
 TODO
+
+### Resource limits
+
+| Item  | Description | ink | SideVM |
+| ---- | ---- | ---- | ---- |
+| Supported languages | Supported developing language of phat contract | Currently only Rust is supported for developing a vanilla phat contract. Javascript can be run via the [phat-quickjs](https://github.com/Phala-Network/phat-quickjs) project.  | Currently only Rust is supported. More languages are possible in the future |
+| Maximum code size | The maximum size of the compiled contract code that can be deployed | 2 megabytes | 32 megabytes |
+| Maximum ingress requests | The maximum number of simultaneous query requests go into a single worker | 8 by default | unlimited |
+| Request fulfillment timeout | The maximum duration of an in-flight query request. | 10 seconds | unlimited |
+| Maximum request size | The maximum size of a incomming Request. This includes the all arguments| 16 kilobytes| unlimited, streaming is supported |
+| Maximum returned value size | The maximum size of the response of a query| 16 kilobytes | unlimited, streaming is supported |
+| Maximum source code execution time | The maximum amount of time that a single query can execute | 10 seconds | N/A (continiously running) |
+| Maximum memory allocated | The maximum amount of memory allocated to your source code during execution | 4 megabytes | 16 MB |
+| HTTP - Maximum queries | The maximum number of HTTP requests that your source code can make| 1 (because the API is synchronous) | unlimited |
+| HTTP - query timeout | The duration of an HTTP request before it times out | 10 seconds | unlimited |
+| HTTP - Maximum request length | The maximum size of an HTTP request, including the request body and HTTP headers | 16 kilobytes | unlimited |
+| HTTP - Maximum response length | The maximum size of an HTTP response | 16 kilobytes | unlimited |
