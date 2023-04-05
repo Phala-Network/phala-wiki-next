@@ -1,5 +1,5 @@
 ---
-title: 'How to use wPHA or delegation NFT for governance voting'
+title: 'Use wPHA or delegation NFT for governance voting'
 weight: 5012
 draft: false
 menu:
