@@ -1,7 +1,7 @@
 ---
 title: 'Use wPHA or delegation NFT for governance voting'
 weight: 5012
-draft: false
+draft: true
 menu:
   general:
     parent: "general-delegation"
@@ -19,7 +19,9 @@ When users use WrappedBalances to exchange between PHA and wPHA tokens, WrappedB
 
 In other words, WrappedBalances will provide a combined value of your Delegation NFT and wPHA holdings, and allowing you to utilize this value to participate in voting for PHA.
 
-## How to track my voting right
+## How to vote through Polkadot.js
+
+### track my voting right
 
 By utilizing on-chain queries, you can get the total value of your Delegation NFT and wPHA holdings. Within the Phala App, this information can be easily find it.
 
@@ -29,7 +31,7 @@ By utilizing on-chain queries, you can get the total value of your Delegation NF
 
 It means that you have the corresponding right to vote.
 
-## How to vote
+### How to vote
 
 * Using Polkadot.js, go to the [Extrinsics page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/extrinsics)
 * find `PhalaWrappedBalances`. Select `vote`. This is the entrance for voting.
@@ -40,11 +42,11 @@ It means that you have the corresponding right to vote.
 * Enter the Referendum id in the `voteId: u32 (ReferendumIndex)` column, and you can find it on the [democracy page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/democracy)
 * Click `Submit Transaction` and sign the signature. Then the voting will be finished.
 
-## How can I cancel my previous vote history and initiate a new vote?
+### How can I cancel my previous vote history and initiate a new vote?
 
 You just need to initiate a new voting transaction, and the previous voting transaction will be directly replaced by the new one.
 
-## The voting is over. How can I unlock my voting rights?
+### The voting is over. How can I unlock my voting rights?
 
 * Firstly, with the [same page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/extrinsics), select `democracy.removeVote(index)`, enter the ended Referendum ID, remove your vote.
 ![](https://i.imgur.com/zKV1Emp.png)
