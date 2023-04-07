@@ -22,7 +22,6 @@ Applications like NFT rendering, machine learning, and big data analytics
 
 Scenarios like a decentralized exchange and others where privacy matters
 - Check our design and implementation of [secret NFT](https://github.com/tenheadedlion/phat-nft) with Phat Contract
-![](/images/build/usecase-secret-nft.png)
 
 ## Composable
 

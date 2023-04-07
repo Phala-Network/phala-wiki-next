@@ -20,8 +20,6 @@ Let's take the unit test in our Phat Hello World as an example:
 mod tests {
     /// Imports all the definitions from the outer scope so we can use them here.
     use super::*;
-    /// Imports `ink_lang` so we can use `#[ink::test]`.
-    use ink_lang as ink;
 
     /// We test a simple use case of our contract.
     #[ink::test]
@@ -47,7 +45,7 @@ You can easily create a new contract instance in a unit test by calling its cons
 
 ## Setup Context of Blockchain
 
-The [ink_env](https://paritytech.github.io/ink/ink_env/test/index.html) crate contains all the functions to set up the blockchain calling context like the caller of the contract functions, the balance of a certain account, etc.
+The `ink` crate contains all the functions to set up the blockchain calling context like the caller of the contract functions, the balance of a certain account, etc.
 
 We recommend reading the [ink](https://ink.substrate.io/basics/contract-testing/)! official document](https://ink.substrate.io/basics/contract-testing/) to learn about its basic usage. And you can refer to the unit tests in [ink! Examples](https://github.com/paritytech/ink/tree/master/examples) to find useful pieces.
 
@@ -55,7 +53,7 @@ Also, we prepare a cheat sheet for you here:
 
 ```rust
 // this gives you the default test accounts [alice, bob, charlie, django, eve, frank]
-let accounts = ink_env::test::default_accounts::<ink_env::DefaultEnvironment>();
+let accounts = ink::env::test::default_accounts::<ink::env::DefaultEnvironment>();
 
 let phat_hello = PhatHello::new();
 
@@ -67,7 +65,7 @@ let res = phat_hello.get_eth_balance(account.clone());
 assert!(res.is_ok());
 
 // 1. get contract address
-let contract = ink_env::account_id::<ink_env::DefaultEnvironment>();
+let contract = ink::env::account_id::<ink::env::DefaultEnvironment>();
 // 2. set caller to bob and callee to the contract
 ink::env::test::set_callee::<ink::env::DefaultEnvironment>(contract);
 ink::env::test::set_caller::<ink::env::DefaultEnvironment>(accounts.bob);

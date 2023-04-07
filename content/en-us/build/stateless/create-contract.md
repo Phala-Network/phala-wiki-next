@@ -25,12 +25,10 @@ The `lib.rs` contains our hello world contract ‒ an ETH balance reader.
 
 In order to build the contract just execute this command in the `phat-hello` folder:
 ```
-cargo +nightly contract build
+cargo contract build
 ```
 
-> Always add `+nightly` when compiling your contract since ink! toolchain requires the nightly Rust. Otherwise you may encounter a lot of problems.
-
-As a result, you'll get the following files in the `target/ink` folder of your contract: `phat_hello.wasm`, `metadata.json`, and `phat_hello.contract`.
+As a result, you'll get the following files in the `target/ink` folder of your contract: `phat_hello.wasm`, `phat_hello.json`, and `phat_hello.contract`.
 The `.contract` file combines the WASM and metadata into one file and needs to be used when instantiating the contract.
 
 
@@ -40,11 +38,11 @@ Before you really upload and deploy your contract to the blockchain, you are enc
 
 In the `phat-hello` folder, run
 ```
-cargo +nightly test -- --nocapture
+cargo test -- --nocapture
 ```
 and ensure you see all tests passed.
 
-> Do not use `cargo +nightly contract test` here, `cargo +nightly test` will give you more details if something goes wrong.
+> Do not use `cargo contract test` here, `cargo test` will give you more details if something goes wrong.
 >
 > `-- --nocapture` is optional to see the output during testing.
 

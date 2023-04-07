@@ -10,7 +10,7 @@ menu:
 
 The Phat Contract uses Rust-based ink! language, and is finally compiled to WebAssembly (WASM for short).
 
-- You can get your contract compiled on both macOS and Linux distributions (we use Ubuntu 20.04 as the default Linux distribution);
+- You can get your contract compiled on both macOS and Linux distributions (we use Ubuntu 22.04 as the default Linux distribution);
 - For Windows users, we recommend to setup a Linux development environment with virtual machine ([video tutorial](https://www.youtube.com/watch?v=x5MhydijWmc)).
 
 <!-- ## Development Tool
@@ -31,20 +31,14 @@ The Rust official recommends using `rustup` tool to install and manage different
 
 We recommend installing [`cargo-contract`](https://github.com/paritytech/cargo-contract). It's a CLI tool that helps set up and manage contracts written with ink!.
 
-As a pre-requisite for the tool, you need to install the [binaryen](https://github.com/WebAssembly/binaryen) package, which is used to optimize the WebAssembly bytecode of the contract.
-- For macOS users, we recommend installing it with [Homebrew](https://brew.sh/) package manager.
-  ```bash
-  brew install binaryen
-  ```
-- For Ubuntu users, we recommend downloading the [latest](https://github.com/WebAssembly/binaryen/releases) release](https://github.com/WebAssembly/binaryen/releases) since apt can get you an outdated version.
-
-Then you can install the `cargo-contract` with
+You can install the `cargo-contract` with
 ```bash
-# install Rust nightly toolchain for contract compilation
-rustup install nightly
-rustup component add rust-src --toolchain nightly
-# install cargo-contract tool
-cargo install cargo-dylint dylint-link
 # use the `--force` to ensure you are updated to the most recent version
 cargo install cargo-contract --force
+```
+
+Then check your `cargo-contract` and ensure it's updated to `2.x` with ink! 4 support
+```bash
+cargo contract --version
+# cargo-contract-contract 2.1.0-unknown-x86_64-unknown-linux-gnu
 ```
