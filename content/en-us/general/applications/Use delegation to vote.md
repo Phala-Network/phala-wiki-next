@@ -23,19 +23,21 @@ In other words, WrappedBalances will provide a combined value of your Delegation
 
 ### track my voting right
 
-By utilizing on-chain queries, you can get the total value of your Delegation NFT and wPHA holdings. Within the Phala App, this information can be easily find it.
+By utilizing on-chain queries, you can get the total value of your Delegation NFT and wPHA holdings. Within [the Phala App](https://app.phala.network/delegate/my-delegation), this information can be easily find it.
 
 ![](https://i.imgur.com/HMHwrrv.png)
+*The total value of your Delegation NFT and wPHA is indicated in the top left corner of the image as Delegation. In this photo, I have the right to cast 234793 votes.*
 
-*The value of your Delegation NFT and wPHA is indicated in the top left corner of the image as Delegation.*
+### token-to-vote ratio
 
-It means that you have the corresponding right to vote.
+Your vote casted through WrappedBalances equals to 0.1x voting balance. It has no lockup period.
+
+Voting 200,000 PHA here is equivalent to 20,000 votes.
 
 ### How to vote
 
 * Using Polkadot.js, go to the [Extrinsics page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/extrinsics)
 * find `PhalaWrappedBalances`. Select `vote`. This is the entrance for voting.
-
 ![](https://i.imgur.com/Ssl3fdW.png)
 
 * Please enter the number of votes you agree/disagree in the `aye` or `nay` column. Note that since we're using the u128 format here, you need to add 12 zeros at the end of the input value. So you'll need to input `5000000000000` to represent `5` votes.
