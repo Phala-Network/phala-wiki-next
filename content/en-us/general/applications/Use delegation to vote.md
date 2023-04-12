@@ -36,10 +36,9 @@ Voting 200,000 PHA here is equivalent to 20,000 votes.
 
 ### How to vote
 
-* Using Polkadot.js, go to the [Extrinsics page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/extrinsics)
+* Use Polkadot.js, go to the [Extrinsics page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/extrinsics)
 * find `PhalaWrappedBalances`. Select `vote`. This is the entrance for voting.
 ![](https://i.imgur.com/Ssl3fdW.png)
-
 * Please enter the number of votes you agree/disagree in the `aye` or `nay` column. Note that since we're using the u128 format here, you need to add 12 zeros at the end of the input value. So you'll need to input `5000000000000` to represent `5` votes.
 * Enter the Referendum id in the `voteId: u32 (ReferendumIndex)` column, and you can find it on the [democracy page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/democracy)
 * Click `Submit Transaction` and sign the signature. Then the voting will be finished.
