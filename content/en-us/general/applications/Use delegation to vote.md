@@ -1,7 +1,7 @@
 ---
 title: 'Use wPHA or delegation NFT for governance voting'
 weight: 5012
-draft: true
+draft: false
 menu:
   general:
     parent: "general-delegation"
@@ -54,6 +54,12 @@ You just need to initiate a new voting transaction, and the previous voting tran
 ![](https://i.imgur.com/ttv0L5D.png)
 
 Now your tokens have been unlocked.
+
+* If you don't remember which Referendum you voted. Go to the [Chain state page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/chainstate), choose `phalaWrappedBalances.accountVoteMap(AccountId32, u32): Option<Null>`. Use the specific address to check its voted Referendum.
+![](https://i.imgur.com/dWpQLB9.png)
+* If you don't know how much tokens are used to vote in a Referendum. Go to the [Chain state page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/chainstate), choose `phalaWrappedBalances.voteAccountMap(u32, AccountId32): Option<(u128,u128)>`. Enter the Referendum id and use the specific address to check its locked tokens.
+![](https://i.imgur.com/RzAy4lY.png)
+
 
 **In summary, the voting process using WrappedBalance becomes to be challenging due to the need to transfer tokens during staking, which is not a seamless operation. However, we are actively working on improving this process to make it more user-friendly. Our goal is to create a separate voting page that enables users to vote and unlock with just one click, thus streamlining the process and making it more accessible for all.**
 
