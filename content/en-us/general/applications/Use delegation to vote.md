@@ -23,7 +23,7 @@ In other words, WrappedBalances will provide a combined value of your Delegation
 
 ### track my voting right
 
-By utilizing on-chain queries, you can get the total value of your Delegation NFT and wPHA holdings. Within [the Phala App](https://app.phala.network/delegate/my-delegation), this information can be easily find it.
+By utilizing on-chain queries, you can get the total value of your Delegation NFT and wPHA holdings. Within [the Phala App](https://app.phala.network/delegate/my-delegation), this information can be found easily.
 
 ![](https://i.imgur.com/HMHwrrv.png)
 *The total value of your Delegation NFT and wPHA is indicated in the top left corner of the image as Delegation. In this photo, I have the right to cast 234793 votes.*
