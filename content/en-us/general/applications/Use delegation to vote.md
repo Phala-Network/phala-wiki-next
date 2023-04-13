@@ -21,14 +21,14 @@ In other words, WrappedBalances will provide a combined value of your Delegation
 
 ## How to vote through Polkadot.js
 
-### track my voting right
+### Track my voting right
 
 By utilizing on-chain queries, you can get the total value of your Delegation NFT and wPHA holdings. Within [the Phala App](https://app.phala.network/delegate/my-delegation), this information can be found easily.
 
 ![](https://i.imgur.com/HMHwrrv.png)
 *The total value of your Delegation NFT and wPHA is indicated in the top left corner of the image as Delegation. In this photo, I can use 234793 tokens to participate in voting.*
 
-### token-to-vote ratio
+### Token-to-vote ratio
 
 Your vote casted through WrappedBalances equals to 0.1x voting balance. It has no lockup period.
 
@@ -42,6 +42,7 @@ Voting 200,000 PHA here is equivalent to 20,000 votes.
 * Please enter the number of votes you agree/disagree in the `aye` or `nay` column. Note that since we're using the u128 format here, you need to add 12 zeros at the end of the input value. So you'll need to input `5000000000000` to represent `5` votes.
 * Enter the Referendum id in the `voteId: u32 (ReferendumIndex)` column, and you can find it on the [democracy page](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala-api.phala.network%2Fws#/democracy)
 * Click `Submit Transaction` and sign the signature. Then the voting will be finished.
+> Due to some historical reasons, there is a possibility that even if you have enough Delegation or wPHA, you may still encounter the "VoteAmountLargerThanTotalStakes" error when making voting transactions. In this case, please add an extra 1PHA to each of the pools you have staked on (including StakePools and Vaults) to solve this issue.
 
 ### How can I cancel my previous vote history and initiate a new vote?
 
@@ -63,6 +64,5 @@ Now your tokens have been unlocked.
 
 
 **In summary, the voting process using WrappedBalance becomes to be challenging due to the need to transfer tokens during staking, which is not a seamless operation. However, we are actively working on improving this process to make it more user-friendly. Our goal is to create a separate voting page that enables users to vote and unlock with just one click, thus streamlining the process and making it more accessible for all.**
-
 
 
