@@ -212,7 +212,7 @@ Services with a Runtime Bridges setup are configured with environment variables.
 | Name | Description |
 | --- | --- |
 | PHALA_LOCAL_DB_PATH | The path to database, defaults to '/var/data/0'. |
-| PHALA_DATA_PROVIDER_LOCAL_SERVER_PORT | The listen port for the blob server, defaults to 8012. |
+| PHALA_DATA_PROVIDER_LOCAL_SERVER | The listen port for the blob server, defaults to 8012. |
 
 ### Items for lifecycle managers
 
