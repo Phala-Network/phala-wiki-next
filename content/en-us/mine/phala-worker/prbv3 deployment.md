@@ -1,5 +1,5 @@
 ---
-title: "Using PRBv3 for batch of workers deployment on Phala"
+title: "PRBv3 deployment for batch of workers"
 weight: 1020
 menu:
   mine:
@@ -9,7 +9,7 @@ menu:
 ## Basic Requirements
 
 To use PRBv3 for worker deployment, you need at least 1 additional device as the management server. The device connection is shown in the following diagram:
-![](https://hackmd.io/_uploads/SJs71n5N3.png)
+![image](https://github.com/doyleguo/phala-wiki-next/assets/110812052/5ccdd9d5-a4da-434b-b231-fd8e64800873)
 
 > The node service and PRB service can be run on the same server as needed (depending on the number of workers and server performance).
 
@@ -171,13 +171,11 @@ parachain:
       endpoint: ws://{node-ip}:9944
       pruned: false
 ```
-> There are 2 parameters here that need to be user-defined:
-> ws://{node-ip}:9945; 
-> ws://{node-ip}:9944;
+> There are 2 parameters here that need to be user-defined: ws://{node-ip}:9945 & ws://{node-ip}:9944;
 > 
 > You need to replace {node-ip} with the IP of the server where the node is located. If you are running the node and PRB on the same server, the easiest way is to replace both with 127.0.0.1, for example:
-> ws:/127.0.0.1:9945; 
-> ws:/127.0.0.1:9944;
+>  * ws:/127.0.0.1:9945; 
+>  * ws:/127.0.0.1:9944;
 
 After entering the content, save and return to the previous directory.
 ```
