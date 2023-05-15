@@ -97,7 +97,7 @@
 #   weight = 9000
 
 [[mine]]
-  name = "Mine Khala"
+  name = "Basic info"
   identifier = "khala-mining"
   url = "/mine/khala-mining/"
   weight = 1000
