@@ -101,9 +101,15 @@
   identifier = "khala-mining"
   url = "/mine/khala-mining/"
   weight = 1000
+  
+[[mine]]
+  name = "Run Workers on Phala"
+  identifier = "Phala-worker"
+  url = "/mine/phala-worker/"
+  weight = 1000
 
 [[mine]]
-  name = "Solo Mining Guide"
+  name = "Solo Workers on Khala"
   identifier = "mine-solo"
   url = "/mine/solo/"
   weight = 1000
