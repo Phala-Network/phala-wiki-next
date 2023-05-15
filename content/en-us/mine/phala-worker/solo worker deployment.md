@@ -1,5 +1,5 @@
 ---
-title: "Solo worker deployment on Phala Network"
+title: "Solo worker deployment"
 weight: 1010
 menu:
   mine:
@@ -13,11 +13,11 @@ Currently, there is no one-click deployment script for workers on Phala Network.
 ### SGX Function
 
 Running Phala worker requires SGX-capable CPU. Please choose a device that supports SGX and enable SGX in the BIOS.
-For more information, refer to:
+For more information, please check: [choose your CPU](https://wiki.phala.network/en-us/mine/khala-mining/hardware-requirements/#check-your-cpu)
 
 ### Device Configuration
 
-Solo workers on Phala need to run 3 components: Node, pherry, and pRuntime. The requirements for each component are as follows:
+Solo workers on Phala need to run 3 components: **Node**, **pherry**, and **pRuntime**. The requirements for each component are as follows:
 
 |Components|RAM Space|Harddisk Space|Remark|
 |:----------:|:----------:|:----------:|:----------:|
@@ -127,20 +127,17 @@ services:
     - /var/phala/pruntimev2:/opt/pruntime/data
     - /var/phala/pruntimev2/backups:/opt/pruntime/backups
 ```
-> Some parameters need to be customized by yourself, including:
-> 1. In phala-pherry, replace {gas fee memory seed} in “–mnemonic={gas fee memory seed}” with the mnemonic seed of the gas fee account.
-> For example: 
-> “–mnemonic=a b c d e … h”
-> 2. In phala-pherry, replace the {node ip} with your own node’s IP in both “–substrate-ws-endpoint=ws://{node ip}:9945” and “–collator-ws-endpoint=ws://{node ip}:9944”; 
-> Replace {pruntime ip} in “–pruntime-endpoint=http://{pruntime ip}:8000” with the IP of your own pruntime worker; If you are running these components on the same device, the easiest way is to replace them all with 127.0.0.1.
-> For example:
-> “–substrate-ws-endpoint=ws://127.0.0.1:9945”
-> “–collator-ws-endpoint=ws://127.0.0.1:9944”
-> “–pruntime-endpoint=http://127.0.0.1:8000”
-> 3. In phala-pherry, replace {owner address} in “–operator={owner address}” with the Phala network address of the mining pool’s main account.
-> For example:
-> “-operator=446u...WewDEZyv”
-> 4. In phala-pruntime, change --cores={core_num} to the number of cores of your machine, such as --cores=4.
+Some parameters need to be customized by yourself, including:
+* In phala-pherry, replace {gas fee memory seed} in “–mnemonic={gas fee memory seed}” with the mnemonic seed of the gas fee account. For example: 
+  * “–mnemonic=a b c d e … h” 
+* In phala-pherry, replace the {node ip} with your own node’s IP in both “–substrate-ws-endpoint=ws://{node ip}:9945” and “–collator-ws-endpoint=ws://{node ip}:9944”; 
+Replace {pruntime ip} in “–pruntime-endpoint=http://{pruntime ip}:8000” with the IP of your own pruntime worker; If you are running these components on the same device, the easiest way is to replace them all with 127.0.0.1. For example:
+  * “–substrate-ws-endpoint=ws://127.0.0.1:9945”
+  * “–collator-ws-endpoint=ws://127.0.0.1:9944”
+  * “–pruntime-endpoint=http://127.0.0.1:8000”
+* In phala-pherry, replace {owner address} in “–operator={owner address}” with the Phala network address of the mining pool’s main account. For example:
+  * “-operator=446u...WewDEZyv”
+* In phala-pruntime, change --cores={core_num} to the number of cores of your machine, such as --cores=4.
 
 After entering, complete the following steps to finish the text editing and save successfully.
 ```
