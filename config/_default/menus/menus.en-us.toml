@@ -104,7 +104,7 @@
   
 [[mine]]
   name = "Run Workers on Phala"
-  identifier = "Phala-worker"
+  identifier = "phala-worker"
   url = "/mine/phala-worker/"
   weight = 1000
 
