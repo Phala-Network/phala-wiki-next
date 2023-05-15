@@ -1,5 +1,5 @@
 ---
-title: "Configuration for the workers under PRB's management"
+title: "PRB worker deployment"
 weight: 1040
 menu:
   mine:
@@ -9,7 +9,8 @@ menu:
 ## Basic requirements
 
 Apart from the reduced requirements for hard disk and memory space, the process of deploying a PRB worker is the same as deploying a solo worker. The only difference is that the PRB worker only needs to run pRuntime, while the solo worker needs to run node and pherry additionally. 
-For details of solo worker deployment, please refer to:
+
+For details of solo worker deployment, please refer to: [Solo worker deployment](https://wiki.phala.network/en-us/mine/phala-worker/solo-worker-deployment/)
 
 Therefore, the requirements for running a PRB worker are:
 
@@ -108,7 +109,7 @@ You can determine whether the synchronization is proceeding normally by checking
 
 ## Configuration for adding worker to PRB server
 
-All on-chain information configuration, including transaction accounts, pool master's information, etc., can be done through the PRBv3 configuration interface. Here are the details:
+All on-chain information configuration, including transaction accounts, pool master's information, etc., can be done through the PRBv3 configuration interface. 
 
 At this stage, you only need to record the IP of this worker to be filled into the PRB database.
 
@@ -143,4 +144,4 @@ You can find your public or private IP after each `inet`.
 
 ## Create a connection between Worker and PRB
 
-For more details, please refer to the [PRB's UI guidance]().
+For more details, please refer to the [Using PRBv3](https://wiki.phala.network/en-us/mine/phala-worker/using-prbv3/)
