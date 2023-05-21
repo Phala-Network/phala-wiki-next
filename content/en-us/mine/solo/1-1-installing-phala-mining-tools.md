@@ -8,7 +8,7 @@ menu:
 
 ## Prerequisites
 
-Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "mine/khala-mining/hardware-requirements">}}).
+Before you go further, please ensure that your have correct setup your hardware, BIOS and operating system according to the [previous section]({{< relref "mine/khala-mining/requirements">}}).
 
 ## Download the Phala Scripts
 
