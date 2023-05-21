@@ -3,7 +3,7 @@ title: "Troubleshooting"
 weight: 2040
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 ## Quick Links
