@@ -4,7 +4,7 @@ weight: 1003
 draft: false
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-mining"
 ---
 
 ## Basic Requirements
