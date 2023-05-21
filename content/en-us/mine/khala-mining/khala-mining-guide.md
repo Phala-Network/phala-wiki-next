@@ -1,7 +1,7 @@
 ---
 title: "Khala Mining Guide"
 weight: 1000
-draft: true
+draft: false
 menu:
   mine:
     parent: "khala-mining"
