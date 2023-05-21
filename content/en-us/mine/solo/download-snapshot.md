@@ -3,7 +3,7 @@ title: "Accelerate Khala Syncing"
 weight: 2023
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 ## Check Your Status
