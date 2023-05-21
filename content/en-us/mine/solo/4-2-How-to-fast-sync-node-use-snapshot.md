@@ -4,7 +4,7 @@ weight: 2042
 draft: true
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 # Moved to the GitHub README to improve readability and minimize overall verbosity.
 ---
 
