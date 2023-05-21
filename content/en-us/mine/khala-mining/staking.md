@@ -1,6 +1,6 @@
 ---
 title: Staking Mechanism
-weight: 1001
+weight: 1002
 draft: false
 menu:
   mine:
