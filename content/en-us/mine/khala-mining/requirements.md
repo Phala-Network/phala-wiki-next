@@ -1,6 +1,6 @@
 ---
 title: "Requirements in Phala/Khala"
-weight: 1004
+weight: 1003
 draft: false
 menu:
   mine:
