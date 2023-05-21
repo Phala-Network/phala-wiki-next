@@ -1,9 +1,10 @@
 ---
 title: "Running Directly in Linux"
 weight: 4002
+draft: true
 menu:
   mine:
-    parent: "mine-prb"
+    parent: "khala-worker"
 ---
 
 Running `prb` directly in a Linux shell is not recommended since using Docker is more convenient in both development and production.
