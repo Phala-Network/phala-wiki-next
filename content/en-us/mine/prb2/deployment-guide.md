@@ -1,5 +1,5 @@
 ---
-title: "Deployment Guide for Latest Version"
+title: "Deployment Guide for PRBv2"
 weight: 3000
 menu:
   mine:
