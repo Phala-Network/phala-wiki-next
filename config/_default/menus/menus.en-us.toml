@@ -9,7 +9,7 @@
   weight = 20
 
 [[main]]
-  name = "Mine"
+  name = "Compute"
   url = "/en-us/mine/khala-mining/introduction/"
   weight = 30
 
