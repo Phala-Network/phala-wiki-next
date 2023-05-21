@@ -42,7 +42,7 @@ The following describes the device requirements for a solo-worker, and different
 |Harddisk Space|2 TB+|
 |Cores|4 Cores+|
 
-> If you have a batch of workers that need to run on Phala, please visit [here]() for more information.
+> If you have a batch of workers that need to run on Phala, please visit [here](https://wiki.phala.network/en-us/mine/phala-worker/prbv3-deployment/) for more information.
 
 ### For Khala workers
 
