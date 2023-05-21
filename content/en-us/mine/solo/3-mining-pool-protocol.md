@@ -4,7 +4,7 @@ weight: 2031
 draft: true
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 Github: https://github.com/Phala-Network/runtime-bridge
