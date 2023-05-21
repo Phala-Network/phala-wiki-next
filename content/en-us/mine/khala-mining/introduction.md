@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-weight: 1001
+weight: 1000
 menu:
   mine:
     parent: "khala-mining"
