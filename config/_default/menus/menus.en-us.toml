@@ -9,7 +9,7 @@
   weight = 20
 
 [[main]]
-  name = "Compute"
+  name = "Mine"
   url = "/en-us/mine/khala-mining/khala-mining-guide/"
   weight = 30
 
@@ -96,31 +96,31 @@
 #   url = "/build/archived/"
 #   weight = 9000
 
-[[compute]]
+[[mine]]
   name = "Basic info"
   identifier = "khala-mining"
   url = "/mine/khala-mining/"
   weight = 1000
   
-[[compute]]
+[[mine]]
   name = "Run Workers on Phala"
   identifier = "phala-worker"
   url = "/mine/phala-worker/"
   weight = 2000
 
-[[compute]]
+[[mine]]
   name = "Solo Workers on Khala"
   identifier = "mine-solo"
   url = "/mine/solo/"
   weight = 3000
 
-[[compute]]
+[[mine]]
   name = "Runtime Bridge v2"
   identifier = "mine-prb2"
   url = "/mine/prb2/"
   weight = 4000
 
-[[compute]]
+[[mine]]
   name = "(Deprecated) Runtime Bridge v0"
   identifier = "mine-prb"
   url = "/mine/prb/"
