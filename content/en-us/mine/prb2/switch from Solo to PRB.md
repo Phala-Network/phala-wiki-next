@@ -1,9 +1,9 @@
 ---
 title: "How to switch from Solo mining to PRB mining"
-weight: 3010
+weight: 3002
 menu:
   mine:
-    parent: "mine-prb2"
+    parent: "khala-worker"
 ---
 
 ## How Solo worker works

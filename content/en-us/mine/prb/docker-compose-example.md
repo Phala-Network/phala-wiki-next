@@ -1,9 +1,10 @@
 ---
 title: "Deployment: Docker Compose"
 weight: 4001
+draft: true
 menu:
   mine:
-    parent: "mine-prb"
+    parent: "khala-worker"
 ---
 
 Every release of `prb` is publish on [Docker Hub](https://hub.docker.com/r/phalanetwork/prb) once it gets on the Github release page, you can get the latest release by running:

@@ -1,9 +1,10 @@
 ---
 title: "Snapshot for Data Providers"
 weight: 3003
+draft: true
 menu:
   mine:
-    parent: "mine-prb2"
+    parent: "khala-worker"
 ---
 
 ## Download a Snapshot

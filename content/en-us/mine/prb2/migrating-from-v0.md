@@ -1,9 +1,10 @@
 ---
 title: "Migrating from v0"
 weight: 3002
+draft: true
 menu:
   mine:
-    parent: "mine-prb2"
+    parent: "khala-worker"
 ---
 
 ## Overview

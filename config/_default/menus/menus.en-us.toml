@@ -109,22 +109,10 @@
   weight = 2000
 
 [[mine]]
-  name = "Solo Workers on Khala"
-  identifier = "mine-solo"
+  name = "Run Workers on Khala"
+  identifier = "Khala-worker"
   url = "/mine/solo/"
   weight = 3000
-
-[[mine]]
-  name = "Runtime Bridge v2"
-  identifier = "mine-prb2"
-  url = "/mine/prb2/"
-  weight = 4000
-
-[[mine]]
-  name = "(Deprecated) Runtime Bridge v0"
-  identifier = "mine-prb"
-  url = "/mine/prb/"
-  weight = 4001
 
 [[maintain]]
   name = "Governance"

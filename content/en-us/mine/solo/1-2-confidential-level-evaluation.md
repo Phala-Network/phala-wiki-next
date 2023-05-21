@@ -3,7 +3,7 @@ title: "Worker Confidence Level"
 weight: 2003
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 ## Test your Intel® SGX Capability

@@ -3,7 +3,7 @@ title: "Configure the Worker"
 weight: 2020
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 ## Get the Worker Ready

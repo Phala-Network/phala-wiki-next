@@ -3,7 +3,7 @@ title: "Installing Phala Mining Tools"
 weight: 2002
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 ## Prerequisites

@@ -3,7 +3,7 @@ title: "Deploy the Worker"
 weight: 2021
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 ## Start Mining

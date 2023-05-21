@@ -3,7 +3,7 @@ title: "Deployment Guide for Latest Version"
 weight: 3000
 menu:
   mine:
-    parent: "mine-prb2"
+    parent: "khala-worker"
 ---
 
 ## Understanding Runtime Bridge
