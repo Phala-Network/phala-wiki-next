@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting"
-weight: 2040
+weight: 5001
 menu:
   mine:
     parent: "khala-worker"
