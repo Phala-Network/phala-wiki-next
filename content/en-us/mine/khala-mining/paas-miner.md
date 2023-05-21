@@ -1,6 +1,6 @@
 ---
 title: "Rent Hardware"
-weight: 1004
+weight: 1005
 draft: false
 menu:
   mine:
