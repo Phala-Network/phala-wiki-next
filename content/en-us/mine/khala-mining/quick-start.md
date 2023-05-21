@@ -1,6 +1,7 @@
 ---
 title: "Quick Start"
 weight: 1001
+draft: true
 menu:
   mine:
     parent: "khala-mining"

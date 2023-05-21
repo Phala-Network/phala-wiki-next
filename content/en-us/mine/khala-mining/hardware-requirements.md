@@ -1,6 +1,7 @@
 ---
 title: "Hardware Requirements"
 weight: 1002
+draft: true
 menu:
   mine:
     parent: "khala-mining"

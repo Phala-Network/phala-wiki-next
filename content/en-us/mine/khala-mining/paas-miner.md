@@ -1,13 +1,13 @@
 ---
 title: "Rent Hardware"
-weight: 1003
+weight: 1005
 draft: false
 menu:
   mine:
     parent: "khala-mining"
 ---
 
-## Khala Worker on Vultr
+## Worker on Vultr
 
 > This guide will show you how to set up your worker on the `VULTR Bare Metal Simplified™ Intel E-2286G` Instance. For mining on your own hardware check our guide [here](/en-us/mine/khala-mining/hardware-requirements/#requirements-checklist).
 

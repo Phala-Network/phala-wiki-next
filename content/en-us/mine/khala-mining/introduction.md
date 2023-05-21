@@ -1,44 +1,23 @@
 ---
-title: "Khala Mining Guide"
-weight: 1000
-draft: false
+title: "Introduction"
+weight: 1001
 menu:
   mine:
     parent: "khala-mining"
 ---
 
-Khala Network is Phala's canary network on Kusama Parachain featuring decentralized mining. We provide an overview to setup the mining environment, followed by a detailed explanation of each step.
+As introduced in the [Gemini Tokenomics](https://wiki.phala.network/en-us/general/phala-network/tokenomics/), computing power providers can choose to provide their workers on the Phala and Khala networks. 
 
-We highly recommend workers to first read about Phala's [tokenomics](https://wiki.phala.network/en-us/general/phala-network/tokenomics/) and [staking mechanism](https://wiki.phala.network/en-us/mine/khala-mining/staking/) to understand the calculation of incomings and how the mining proceeds.
+## Phala & Khala network
 
-## Introduction
+Khala started its staking mechanism earlier than Phala for 16 months. However, both of them currently accept workers deployment and share the same reward distribution mechanism.
 
-Workers provide computing power to the Phala Network. Anyone with the appropriate hardware can participate.
+We highly recommend computing power providers to first read about [Phala’s tokenomics](https://wiki.phala.network/en-us/general/phala-network/tokenomics/) and [staking mechanism](https://wiki.phala.network/en-us/mine/khala-mining/staking/) to understand the calculation of incomings and how the compute supplying proceeds.
+
+Anyone with the appropriate hardware can participate.
 
 > More information about hardware requirements: :point_right: [here](/en-us/mine/khala-mining/hardware-requirements/#general-khala-hardware-requirements)
 
-This section provides some theory about the mining concepts of Phala and additional background information.
-
-> To get directly started, feel free to check the quick start guide: :point_right: [here](/en-us/mine/khala-mining/quick-start/)
-
-## Worker Registration
-
-Registration is required before a worker or gatekeeper can join the network. After that, any parties with secure-enclave-supported devices can serve as workers. To register as a validated worker in the blockchain, Secure Enclave runners need to run `pRuntime` and let it send a signed attestation report to gatekeepers.
-
-`pRuntime` requests a Remote Attestation with a hash of the `WorkerInfo` committed in the attestation report. `WorkerInfo` includes the public key of `IdentityKey` and `EcdhKey` and other data collected from the enclave. By verifying the report, gatekeepers can know the hardware information of workers and ensure that they are running unmodified `pRuntime`.
-
-## Remote Attestation
-
-The attestation report is relayed to the blockchain by `register_worker()` call. The blockchain has the trusted certificates to validate the attestation report. It validates:
-
-1. The signature of the report is correct;
-2. The embedded hash in the report matches the hash of the submitted `WorkerInfo`;
-
-`register_worker()` is called by workers, and a worker can only be assigned contracts when it has certain amounts of staking PHA tokens. On the blockchain there is a `WorkerState` map from the worker to the `WorkerInfo` entry. Gatekeepers will update the `WorkerState` map after they receive and verify the submitted `WorkerInfo`.
-
-## Offline Worker Detection
-
-The `pRuntime` of a worker is regularly required to answer the online challenge as a heartbeat event on chain. The blockchain detects the liveness of workers by monitoring the interval of their heartbeat events. A worker is punished with the penalty of his staking tokens if it goes offline during a contract execution.
 
 ## Community
 
@@ -74,37 +53,3 @@ If you have any questions, you can always reach out to the Phala community for h
      </a>
   </div>
 </div>
-
-## Khala Components
-
-Khala requires the following components:
-
-<div class="mediaList">
-  <div class="item" style="text-align:center">
-     <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkhala.api.onfinality.io%2Fpublic-ws#/explorer" target="_blank">
-        <svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/khala-mining/polkadot-js.svg" alt="Khala Polkadot.js UI" width="60" class="center"/>
-           <p>Khala Polkadot.js</p>
-        </svg>
-     </a>
-  </div>
-  <div class="item" style="text-align:center">
-     <a href="https://khala.subscan.io/" target="_blank">
-        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/khala-mining/khala.png" alt="Khala Blockchain Explorer" width="60" class="center"/>
-           <p>Khala Explorer</p>
-        </svg>
-     </a>
-  </div>
-  <div class="item" style="text-align:center">
-     <a href="https://app.phala.network/mining/" target="_blank" rel="noopener noreferrer">
-        <svg svg width="0" height="0" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <img src="/images/docs/khala-mining/phala_logo.png" alt="Khala App" width="60" class="center"/>
-           <p>Khala App</p>
-        </svg>
-     </a>
-  </div>
-</div>
-
-- Khala RPC Endpoint: `wss://khala.api.onfinality.io/public-ws`
-- Khala Console: <a href="https://app.phala.network/mining/" target="_blank">Mining Console</a>
