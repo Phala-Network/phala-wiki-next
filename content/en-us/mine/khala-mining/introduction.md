@@ -6,9 +6,6 @@ menu:
     parent: "khala-mining"
 ---
 
-
-# Introduction
-
 As introduced in the [Gemini Tokenomics](https://wiki.phala.network/en-us/general/phala-network/tokenomics/), computing power providers can choose to provide their workers on the Phala and Khala networks. 
 
 ## Phala & Khala network
