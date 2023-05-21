@@ -3,7 +3,7 @@ title: "Manage the Worker"
 weight: 2030
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 > We highly recommend reading about our [staking mechanism](/en-us/learn/tokenomics/mining-staking) before using the [Phala App](https://app.phala.network/mining/).
