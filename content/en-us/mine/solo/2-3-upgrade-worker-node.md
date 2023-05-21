@@ -3,7 +3,7 @@ title: "Update your Worker's Node"
 weight: 2024
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 ---
 
 To upgrade your worker requires it to stop first.
