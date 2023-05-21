@@ -1,9 +1,10 @@
 ---
 title: "Migrating from v2.0 and v2.1 to v2.2"
 weight: 3001
+draft: true
 menu:
   mine:
-    parent: "mine-prb2"
+    parent: "khala-worker"
 ---
 
 > This page is contributed by community members. For more information about the v2.2 update, please refer to the [release notes](/en-us/mine/prb2/2.2-release-note/).
