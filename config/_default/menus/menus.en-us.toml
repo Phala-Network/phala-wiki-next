@@ -110,7 +110,7 @@
 
 [[mine]]
   name = "Run Workers on Khala"
-  identifier = "Khala-worker"
+  identifier = "khala-worker"
   url = "/mine/solo/"
   weight = 3000
 
