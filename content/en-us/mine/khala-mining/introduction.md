@@ -16,7 +16,7 @@ We highly recommend computing power providers to first read about [Phala’s tok
 
 Anyone with the appropriate hardware can participate.
 
-> More information about hardware requirements: :point_right: [here](/en-us/mine/khala-mining/hardware-requirements/#general-khala-hardware-requirements)
+> More information about hardware requirements: :point_right: [here](/en-us/mine/khala-mining/requirements/)
 
 
 ## Community
