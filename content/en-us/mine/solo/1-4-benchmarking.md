@@ -4,7 +4,7 @@ weight: 2004
 draft: true
 menu:
   mine:
-    parent: "mine-solo"
+    parent: "khala-worker"
 #Decommissioned, as benchmarking is no longer supported.
 ---
 
