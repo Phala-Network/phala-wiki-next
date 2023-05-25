@@ -48,11 +48,11 @@ Then create a folder locally, and create a docker-compose document and other nec
 ```
 mkdir prb-deployment
 cd ./prb-deployment
-mkdir docker-compose.yml
-mkdir wm.yml
+touch docker-compose.yml
+touch wm.yml
 mkdir prb-wm-data
 cd ./prb-wm-data
-mkdir ds.yml
+touch ds.yml
 cd ..
 ```
 
