@@ -34,7 +34,7 @@ Then create a folder locally, and create a docker-compose document within it.
 ```
 mkdir phala-deployment
 cd ./phala-deployment
-mkdir docker-compose.yml
+touch docker-compose.yml
 ```
 
 ### Document Editing
